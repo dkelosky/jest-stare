@@ -1,5 +1,7 @@
+import GlobalConfig = jest.GlobalConfig;
+
 export class Reporter {
-    constructor(private mGlobalConfig: jest.GlobalConfig, private mOptions: any) {
+    constructor(private mGlobalConfig: GlobalConfig, private mOptions: any) {
     }
 
     public onRunComplete(contexts: any, results: any) {
