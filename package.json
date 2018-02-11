@@ -1,6 +1,6 @@
 {
   "name": "jest-stare",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "jest html reporter",
   "license": "MIT",
   "repository": "",
@@ -10,7 +10,14 @@
     "url": "https://github.com/dkelosky/jest-stare"
   },
   "keywords": [
-    "jest", "html", "jest-stare", "mochawesome", "mocha", "jasmine", "reporters", "reporter"
+    "jest",
+    "html",
+    "jest-stare",
+    "mochawesome",
+    "mocha",
+    "jasmine",
+    "reporters",
+    "reporter"
   ],
   "files": [
     "lib",
