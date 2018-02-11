@@ -51,6 +51,7 @@ export class Reporter {
 
     public onRunComplete(contexts: Set<Context>, results: AggregatedResult) {
         Logger.get.debug("onRunComplete:");
+        // Logger.get.debug(results.snapshot);
         // Logger.get.debug("Contexts: " + inspect(contexts));
         // Logger.get.debug("Contexts: " + inspect(results));
         // console.log("GlobalConfig: ", this.mGlobalConfig);
