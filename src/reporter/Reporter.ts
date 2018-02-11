@@ -1,4 +1,7 @@
 import GlobalConfig = jest.GlobalConfig;
+import Test = jest.Test;
+import TestResult = jest.TestResult;
+import AggregatedResult = jest.AggregatedResult;
 import { Logger } from "../utils/Logger";
 
 /**
@@ -7,6 +10,14 @@ import { Logger } from "../utils/Logger";
  * @class Reporter
  */
 export class Reporter {
+
+    /**
+     * onTestResult?(test: Test, testResult: TestResult, aggregatedResult: AggregatedResult): void;
+     * onRunStart?(results: AggregatedResult, options: ReporterOnStartOptions): void;
+     * onTestStart?(test: Test): void;
+     * onRunComplete?(contexts: Set<Context>, results: AggregatedResult): Maybe<Promise<void>>;
+     * getLastError?(): Maybe<Error>;
+     */
 
     /**
      * Creates an instance of Reporter.
@@ -21,7 +32,7 @@ export class Reporter {
         Logger.get.debug("onTestStart");
     }
 
-    public onTestResult() {
+    public onTestResult(test: Test, testResult: TestResult, aggregatedResult: AggregatedResult) {
         Logger.get.debug("onTestResult");
     }
 
