@@ -1,5 +1,8 @@
 # Jest HTML Repoter
-* publish
+* fix lint
+* link coverage if used
+* snapshots updated, added, etc
 * test
 * travis
 * coveralls
+* publish

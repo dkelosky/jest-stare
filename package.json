@@ -1,16 +1,16 @@
 {
-  "name": "template",
+  "name": "jest-stare",
   "version": "0.0.0",
-  "description": "template",
+  "description": "jest html reporter",
   "license": "MIT",
   "repository": "",
   "author": {
-    "name": "",
+    "name": "dan kelosky",
     "email": "",
-    "url": ""
+    "url": "www.github.com/dkelosky"
   },
   "keywords": [
-    ""
+    "jest", "html", "jest-stare", "mochawesome", "mocha", "jasmine", "reporters", "reporter"
   ],
   "files": [
     "lib",
@@ -26,6 +26,7 @@
     "build": "tsc --pretty && browserify lib/render/view.js -o lib/render/view.js",
     "make": "browserify lib/render/view.js -o lib/render/view.js",
     "test": "jest",
+    "example": "tsc --pretty && npm run make && jest IO.test.ts --reporters=./",
     "coverage": "jest --coverage",
     "watch": "npm run build -- --watch",
     "watch:test": "jest --watch"
@@ -33,6 +34,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "chart.js": "^2.7.1",
+    "mustache": "^2.3.0",
     "jest": "^22.0.5",
     "jquery": "^3.2.1",
     "moment": "^2.20.1",
@@ -42,6 +44,7 @@
     "@types/chart.js": "^2.7.7",
     "@types/jest": "^22.0.5",
     "@types/jquery": "^3.2.16",
+    "@types/mustache": "^0.8.30",
     "@types/node": "^8.0.0",
     "coveralls": "^2.0.0",
     "jest-environment-node-debug": "^2.0.0",

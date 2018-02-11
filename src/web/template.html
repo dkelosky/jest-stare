@@ -6,7 +6,7 @@
     <title>Bootstrap &amp; jQuery Electron!</title>
     <link href="../src/web/css/photon/css/photon.icons.css" rel="stylesheet" type="text/css">
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../src/web/starter.css" rel="stylesheet" type="text/css">
+    <link href="../src/web/jest-stare.css" rel="stylesheet" type="text/css">
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../lib/render/view.js"></script>
     <!-- <script> -->
@@ -54,39 +54,27 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-lg-4">
-                <!-- <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" -->
-                <!-- width="140" height="140"> -->
-                <canvas id="test-suites" width="100" height="100"></canvas>
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula
-                    ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p>
-                    <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
-                </p>
+                <canvas id="test-suites-canvas" width="100" height="100"></canvas>
+                <h2>Test Suites</h2>
+                <div class="list-group">
+                    <p id="test-suites-results" class="list-group-item list-group-item-action">{{testSuitesPassed}} passed, {{testSuitesTotal}} total</p>
+                </div>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image"
-                    width="140" height="140">
-                <h2>Heading</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis
-                    consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                    nibh.</p>
-                <p>
-                    <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
-                </p>
+                <canvas id="tests-canvas" width="100" height="100"></canvas>
+                <h2>Tests</h2>
+                <div class="list-group">
+                    <p id="tests-results" class="list-group-item list-group-item-action">{{testsPassed}} passed, {{testsTotal}} total</p>
+                </div>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image"
-                    width="140" height="140">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-                    felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-                    massa justo sit amet risus.</p>
-                <p>
-                    <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
-                </p>
+                <canvas id="snapshots-canvas" width="100" height="100"></canvas>
+                <h2>Snapshots</h2>
+                <div class="list-group">
+                    <p id="snapshots-results" class="list-group-item list-group-item-action">{{snapshotsPassed}} passed, {{snapshotsTotal}} total</p>
+                </div>
             </div>
             <!-- /.col-lg-4 -->
         </div>
@@ -96,8 +84,8 @@
             <!-- <a href="#" class="list-group-item list-group-item-action">Test Suites: xx passed, yy total</a> -->
             <!-- <a href="#" class="list-group-item list-group-item-action">Test: xx passed, yy total</a> -->
             <!-- <a href="#" class="list-group-item list-group-item-action">Snapshots: xx passed, yy total</a> -->
-            <a href="#" class="list-group-item list-group-item-action list-group-item-info">Time: xxs, estimated yys</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-info">Ran all test suites</a>
+            <a href="#" class="list-group-item list-group-item-action">Time: xxs, estimated yys</a>
+            <a href="#" class="list-group-item list-group-item-action">Ran all test suites</a>
             <!-- <a href="#" class="list-group-item list-group-item-action list-group-item-success">Dapibus ac facilisis in</a> -->
             <!-- <a href="#" class="list-group-item list-group-item-action list-group-item-info">Cras sit amet nibh libero</a> -->
             <!-- <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Porta ac consectetur ac</a> -->
