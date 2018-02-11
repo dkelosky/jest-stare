@@ -8,11 +8,10 @@
       "jest"
     ],
     "lib": [
-      "esnext",
+      "es6",
       "dom"
     ],
     "target": "es2015",
-    "strict": true,
     "outDir": "./lib",
     "preserveConstEnums": true,
     "removeComments": true,

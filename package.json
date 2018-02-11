@@ -23,7 +23,8 @@
     "lint": "tslint --force --format verbose \"src/**/*.ts\"",
     "prepublish": "npm run build",
     "prebuild": "npm run clean && npm run lint && echo Using TypeScript && tsc --version",
-    "build": "tsc --pretty",
+    "build": "tsc --pretty && browserify lib/render/view.js -o lib/render/view.js",
+    "make": "browserify lib/render/view.js -o lib/render/view.js",
     "test": "jest",
     "coverage": "jest --coverage",
     "watch": "npm run build -- --watch",
@@ -31,12 +32,14 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
+    "chart.js": "^2.7.1",
     "jest": "^22.0.5",
     "jquery": "^3.2.1",
     "moment": "^2.20.1",
     "winston": "^2.4.0"
   },
   "devDependencies": {
+    "@types/chart.js": "^2.7.7",
     "@types/jest": "^22.0.5",
     "@types/jquery": "^3.2.16",
     "@types/node": "^8.0.0",

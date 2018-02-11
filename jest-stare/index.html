@@ -7,63 +7,105 @@
     <link href="../src/web/css/photon/css/photon.icons.css" rel="stylesheet" type="text/css">
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../src/web/starter.css" rel="stylesheet" type="text/css">
-    <script>
-        window.$ = window.jQuery = require('jquery');
-        require("./lib/render/view.js");
-    </script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../lib/render/view.js"></script>
 </head>
 
-<body><header>
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">jest-stare</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <!-- <li class="nav-item">
+<body>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">jest-stare</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
                 </li> -->
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Coverage</a>
-                </li>
-            </ul>
-            <form class="form-inline mt-2 mt-md-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Coverage</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+
+        <h1 class="mt-5"></h1>
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <!-- <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" -->
+                <!-- width="140" height="140"> -->
+                <canvas id="test-suites" width="100" height="100"></canvas>
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula
+                    ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <p>
+                    <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image"
+                    width="140" height="140">
+                <h2>Heading</h2>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis
+                    consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                    nibh.</p>
+                <p>
+                    <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image"
+                    width="140" height="140">
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
+                    felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+                    massa justo sit amet risus.</p>
+                <p>
+                    <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
         </div>
-    </nav>
-</header>
+        <!-- /.row -->
 
-<!-- Begin page content -->
-<main role="main" class="container">
-    <h1 class="mt-5">Summary</h1>
-    <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action">Test Suites: xx passed, yy total</a>
-        <a href="#" class="list-group-item list-group-item-action">Test: xx passed, yy total</a>
-        <a href="#" class="list-group-item list-group-item-action">Snapshots: xx passed, yy total</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info">Time: xxs, estimated yys</a>
-        <a href="#" class="list-group-item list-group-item-action">Ran all test suites</a>
-        <!-- <a href="#" class="list-group-item list-group-item-action list-group-item-success">Dapibus ac facilisis in</a> -->
-        <!-- <a href="#" class="list-group-item list-group-item-action list-group-item-info">Cras sit amet nibh libero</a> -->
-        <!-- <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Porta ac consectetur ac</a> -->
-        <!-- <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Vestibulum at eros</a> -->
-    </div>
-</main>
+        <div class="list-group">
+            <!-- <a href="#" class="list-group-item list-group-item-action">Test Suites: xx passed, yy total</a> -->
+            <!-- <a href="#" class="list-group-item list-group-item-action">Test: xx passed, yy total</a> -->
+            <!-- <a href="#" class="list-group-item list-group-item-action">Snapshots: xx passed, yy total</a> -->
+            <a href="#" class="list-group-item list-group-item-action list-group-item-info">Time: xxs, estimated yys</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-info">Ran all test suites</a>
+            <!-- <a href="#" class="list-group-item list-group-item-action list-group-item-success">Dapibus ac facilisis in</a> -->
+            <!-- <a href="#" class="list-group-item list-group-item-action list-group-item-info">Cras sit amet nibh libero</a> -->
+            <!-- <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Porta ac consectetur ac</a> -->
+            <!-- <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Vestibulum at eros</a> -->
+        </div>
+    </main>
 
-<footer class="footer">
-    <div class="container">
-        <span class="text-muted">&copy; jest-stare 2018</span>
-    </div>
-</footer>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">&copy; jest-stare 2018</span>
+        </div>
+    </footer>
 </body>
 
 </html>
