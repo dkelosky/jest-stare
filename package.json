@@ -3,11 +3,11 @@
   "version": "0.0.0-0",
   "description": "jest html reporter",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/dkelosky/jest-stare",
   "author": {
     "name": "dan kelosky",
     "email": "",
-    "url": "https://github.com/dkelosky/jest-stare"
+    "url": ""
   },
   "keywords": [
     "jest",
