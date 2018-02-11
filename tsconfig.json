@@ -3,6 +3,10 @@
     "declaration": true,
     "module": "commonjs",
     "moduleResolution": "node",
+    "types": [
+      "node",
+      "jest"
+    ],
     "lib": [
       "esnext"
     ],
