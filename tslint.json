@@ -24,7 +24,10 @@
   },
   "no-submodule-imports": [
     true,
-    "bootstrap"
+    "boostrap",
+    "bootstrap/dist",
+    "bootstrap/dist/js",
+    "bootstrap/dist/js/bootstrap.bundle.min.js"
   ],
   "exclude": "test/",
   "type-check": true
