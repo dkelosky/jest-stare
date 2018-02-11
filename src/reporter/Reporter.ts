@@ -3,6 +3,7 @@ import Test = jest.Test;
 import TestResult = jest.TestResult;
 import AggregatedResult = jest.AggregatedResult;
 import { Logger } from "../utils/Logger";
+import { IO } from "../utils/IO";
 
 /**
  * Class to implement basic reporter methods
@@ -26,6 +27,7 @@ export class Reporter {
      * @memberof Reporter
      */
     constructor(private mGlobalConfig: jest.GlobalConfig, private mOptions: any) {
+        this.init("./");
     }
 
     public onTestStart() {
@@ -47,4 +49,17 @@ export class Reporter {
         // console.log("GlobalConfig: ", this.mGlobalConfig);
         // console.log("Options: ", this.mOptions);
     }
+
+    private init(file: string) {
+        const base = "jest-stare";
+        const main = "/index.html";
+        IO.mkdirSync(base);
+        const html = this.generateBaseReport();
+        IO.writeFile(file + base + main, html);
+    }
+
+    private generateBaseReport(): string {
+        return IO.readFileSync("./src/web/template.html");
+    }
+
 }

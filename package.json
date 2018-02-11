@@ -13,7 +13,8 @@
     ""
   ],
   "files": [
-    "lib"
+    "lib",
+    "src/web"
   ],
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "@types/jest": "^22.0.5",
+    "@types/jquery": "^3.2.16",
     "@types/node": "^8.0.0",
     "coveralls": "^2.0.0",
     "jest-environment-node-debug": "^2.0.0",

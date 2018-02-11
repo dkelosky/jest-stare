@@ -22,6 +22,10 @@
     ],
     "prefer-conditional-expression": false
   },
+  "no-submodule-imports": [
+    true,
+    "bootstrap"
+  ],
   "exclude": "test/",
   "type-check": true
 }

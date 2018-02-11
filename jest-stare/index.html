@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap &amp; jQuery Electron!</title>
+    <link href="../src/web/css/photon/css/photon.icons.css" rel="stylesheet" type="text/css">
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script>
+        window.$ = window.jQuery = require('jquery');
+        require("./lib/render/view.js");
+    </script>
+</head>
+
+<body>
+
+    <!-- show some copy/pasted Bootstrap entities -->
+    <div class="container text-center">
+        <div class="jumbotron">
+            <h1 class="display-3">Bootstrap Styles</h1>
+            <p class="lead">With jQuery usage</p>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+
+                <form>
+                    <div class="form-group">
+                        <span class="icon icon-note"> See phonton icons too!</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" aria-describedby="input-email" placeholder="someone@somewhere.com" <small id="input-email"
+                            class="form-text text-muted">Enter email.</small>
+                    </div>
+                </form>
+
+                <!-- use this for some jQuery manipulation -->
+                <div id="os-div" class="text-center">Click button to set OS!</div>
+                <div class="form-group">
+                    <button id="button-id" type="button" class="btn btn-default center-block">Set OS</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

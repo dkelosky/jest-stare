@@ -25,4 +25,38 @@ export class IO {
             });
         });
     }
+
+    /**
+     * Make directory
+     * @static
+     * @param {string} dir - directory to make
+     * @memberof IO
+     */
+    public static mkdirSync(dir: string) {
+        if (!IO.existsSync(dir)) {
+            fs.mkdirSync(dir);
+        }
+    }
+
+    /**
+     * Read file and return to caller
+     * @static
+     * @param {string} path - path to read file
+     * @returns - file contents
+     * @memberof IO
+     */
+    public static readFileSync(path: string) {
+        return fs.readFileSync(path).toString();
+    }
+
+    /**
+     * Return whether a given file already exists
+     * @static
+     * @param {string} path - path of file to check
+     * @returns - true if file exists, false otherwise
+     * @memberof IO
+     */
+    public static existsSync(path: string) {
+        return fs.existsSync(path);
+    }
 }
