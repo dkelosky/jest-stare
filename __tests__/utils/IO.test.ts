@@ -24,4 +24,12 @@ describe("IO tests", () => {
         expect(error).toBeUndefined();
     });
 
+    it("should match snapshot", () => {
+        const data = {
+            name: "someone",
+            password: "secret",
+        };
+        expect(data).toMatchSnapshot();
+    });
+
 });

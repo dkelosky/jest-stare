@@ -2,8 +2,12 @@ import GlobalConfig = jest.GlobalConfig;
 import Test = jest.Test;
 import TestResult = jest.TestResult;
 import AggregatedResult = jest.AggregatedResult;
+import ReporterOnStartOptions = jest.ReporterOnStartOptions;
+import Context = jest.Context;
+
 import { Logger } from "../utils/Logger";
 import { IO } from "../utils/IO";
+import { inspect } from "util";
 
 /**
  * Class to implement basic reporter methods
@@ -13,9 +17,9 @@ import { IO } from "../utils/IO";
 export class Reporter {
 
     /**
-     * onTestResult?(test: Test, testResult: TestResult, aggregatedResult: AggregatedResult): void;
-     * onRunStart?(results: AggregatedResult, options: ReporterOnStartOptions): void;
-     * onTestStart?(test: Test): void;
+     * - onTestResult?(test: Test, testResult: TestResult, aggregatedResult: AggregatedResult): void;
+     * - onRunStart?(results: AggregatedResult, options: ReporterOnStartOptions): void;
+     * - onTestStart?(test: Test): void;
      * onRunComplete?(contexts: Set<Context>, results: AggregatedResult): Maybe<Promise<void>>;
      * getLastError?(): Maybe<Error>;
      */
@@ -30,22 +34,25 @@ export class Reporter {
         this.init("./");
     }
 
-    public onTestStart() {
-        Logger.get.debug("onTestStart");
+    public onRunStart(results: AggregatedResult, options: ReporterOnStartOptions) {
+        Logger.get.debug("onRunStart: "); //  + inspect(results));
+        // Logger.get.debug("onRunStart: " + inspect(results));
+    }
+
+    public onTestStart(test: Test) {
+        Logger.get.debug("onTestStart: "); // + inspect(test));
+        // Logger.get.debug("onTestStart: " + inspect(test));
     }
 
     public onTestResult(test: Test, testResult: TestResult, aggregatedResult: AggregatedResult) {
-        Logger.get.debug("onTestResult");
+        Logger.get.debug("onTestResult: "); // + inspect(testResult) + " agg: " + inspect(aggregatedResult));
+        // Logger.get.debug("onTestResult: " + inspect(testResult) + " agg: " + inspect(aggregatedResult));
     }
 
-    public onRunStart() {
-        Logger.get.debug("onRunStart");
-    }
-
-    public onRunComplete(contexts: any, results: any) {
-        Logger.get.debug("Custom reporter output:");
-        Logger.get.debug("Contexts: " + contexts);
-        Logger.get.debug("Contexts: " + results);
+    public onRunComplete(contexts: Set<Context>, results: AggregatedResult) {
+        Logger.get.debug("onRunComplete:");
+        // Logger.get.debug("Contexts: " + inspect(contexts));
+        // Logger.get.debug("Contexts: " + inspect(results));
         // console.log("GlobalConfig: ", this.mGlobalConfig);
         // console.log("Options: ", this.mOptions);
     }
