@@ -1,5 +1,5 @@
-# Jest HTML Repoter
-HTML Jest reporter.
+# Jest HTML Reporter
+Jest HTML reporter (for people that hate plain-text).
 
 ## WIP
 This is a work in progress project and contributions are welcome.  
