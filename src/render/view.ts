@@ -8,4 +8,5 @@ document.addEventListener("DOMContentLoaded", () => {
     const results: string = $("#test-results").text();
     const resultsParsed: IResultsProcessorInput = JSON.parse(results);
     const render = new Render(resultsParsed);
+    render.init();
 });

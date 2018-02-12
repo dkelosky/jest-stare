@@ -5,13 +5,26 @@ import { IResultsProcessorInput } from "../processor/doc/IResultsProcessorInput"
 import { ITestResults } from "../processor/doc/ITestResults";
 import { IInnerTestResults } from "../processor/doc/IInnerTestResults";
 
+/**
+ * Adjust DOM to display JSON data
+ * @export
+ * @class Render
+ */
 export class Render {
+
+    /**
+     * Creates an instance of Render.
+     * @param {IResultsProcessorInput} mResults - parsed test results from DOM
+     * @memberof Render
+     */
     constructor(private mResults: IResultsProcessorInput) {
     }
+
     /**
      * After DOM loaded, initialize charts
+     * @memberof Render
      */
-    private init() {
+    public init() {
         this.generateChartsFromTagIdPrefix("test-suites");
         this.generateChartsFromTagIdPrefix("tests");
         this.generateChartsFromTagIdPrefix("snapshots");
@@ -25,7 +38,13 @@ export class Render {
 
     }
 
-    private buildTables() {
+    /**
+     * Build table info for specific tests
+     * @private
+     * @returns {HTMLElement[]} - pupulated html elements
+     * @memberof Render
+     */
+    private buildTables(): HTMLElement[] {
         const results: string = $("#test-results").text();
         const resultsParsed: IResultsProcessorInput = JSON.parse(results);
         const elements: HTMLElement[] = [];
@@ -38,14 +57,17 @@ export class Render {
             elements.push(nextElement);
         });
 
-        // const h1 = document.createElement("h1") as HTMLHeadingElement;
-        // h1.classList.add("mb-5");
-        // elements.push(h1);
-
         return elements;
     }
 
-    private initTableSection(title: string) {
+    /**
+     * Build shadowed box for each suite of test
+     * @private
+     * @param {string} title - title of the test suite (test file)
+     * @returns {HTMLDivElement} - div for shadow box
+     * @memberof Render
+     */
+    private initTableSection(title: string): HTMLDivElement {
         const div = document.createElement("div") as HTMLDivElement;
         div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow");
 
@@ -57,7 +79,15 @@ export class Render {
         return div;
     }
 
-    private addTestToTableSection(innerTestResult: IInnerTestResults, element: HTMLDivElement) {
+    /**
+     * Add test to a section of the presented table
+     * @private
+     * @param {IInnerTestResults} innerTestResult - see object description
+     * @param {HTMLDivElement} element - base element to add to
+     * @returns {HTMLDivElement} - populated element
+     * @memberof Render
+     */
+    private addTestToTableSection(innerTestResult: IInnerTestResults, element: HTMLDivElement): HTMLDivElement {
         //     <div class="media text-muted pt-3">
         //         <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
         //         <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
@@ -114,17 +144,11 @@ export class Render {
         return element;
     }
 
-// function addToTableSection() {
-
-// }
-
-// function closeTableSection() {
-
-// }
-
     /**
      * Generate charts from input tag prefx
+     * @private
      * @param {string} tagPrefix - tag prefix for which expected conventions of -canvas and -results will have canvas and results
+     * @memberof Render
      */
     private generateChartsFromTagIdPrefix(tagPrefix: string) {
         const jqueryTag = "#" + tagPrefix;
@@ -187,8 +211,10 @@ export class Render {
 
     /**
      * Build charts at a canvas with input config
+     * @private
      * @param {HTMLCanvasElement} canvas - canvas location
      * @param {ChartConfiguration} config - config for chart
+     * @memberof Render
      */
     private buildCanvas(canvas: HTMLCanvasElement, config: ChartConfiguration) {
         const doughnut = new Chart(canvas, config);
