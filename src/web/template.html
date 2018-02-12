@@ -76,49 +76,19 @@
         </div>
         <!-- RED -->
         <!-- <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded"> -->
-    <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-blue rounded box-shadow">
-        <div class="lh-100">
-            <h6 class="mb-0 text-white text-center lh-100">Ran all tests</h6>
-            <small>TTime ...</small>
-        </div>
-    </div>
-    
-    <div class="my-3 p-3 bg-white rounded box-shadow">
-        <h6 class="border-bottom border-gray pb-2 mb-0">Suggestions</h6>
-        <div class="media text-muted pt-3">
-            <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
-            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                <div class="d-flex justify-content-between align-items-center w-100">
-                    <strong class="text-gray-dark">Full Name</strong>
-                    <a href="#">Follow</a>
-                </div>
-                <span class="d-block">@username</span>
+        <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-blue rounded box-shadow">
+            <div class="lh-100">
+                <h6 class="mb-0 text-white text-center lh-100">Ran all tests</h6>
+                <small>Time: 2.4s, estimated 3s</small>
             </div>
         </div>
-        <div class="media text-muted pt-3">
-            <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
-            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                <div class="d-flex justify-content-between align-items-center w-100">
-                    <strong class="text-gray-dark">Full Name</strong>
-                    <a href="#">Follow</a>
-                </div>
-                <span class="d-block">@username</span>
-            </div>
+
+        <div id="loading-info" class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100" style="width: 100%"></div>
         </div>
-        <div class="media text-muted pt-3">
-            <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
-            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                <div class="d-flex justify-content-between align-items-center w-100">
-                    <strong class="text-gray-dark">Full Name</strong>
-                    <a href="#">Follow</a>
-                </div>
-                <span class="d-block">@username</span>
-            </div>
-        </div>
-        <small class="d-block text-right mt-3">
-            <a href="#">All suggestions</a>
-        </small>
-    </div>
+
+        <div class="d-none" id="test-results">{{tests}}</div>
 
     </main>
 

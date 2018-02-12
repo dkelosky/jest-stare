@@ -22,6 +22,7 @@ export class Processor {
     public static resultsProcessor(results: IResultsProcessorInput) {
         const substitute: ISubstitute = {};
 
+        // TODO()
         // test suites
         substitute.testSuitesPassed = results.numPassedTestSuites;
         substitute.testSuitesTotal = results.numTotalTestSuites;
@@ -33,6 +34,9 @@ export class Processor {
         // snapshots
         substitute.snapshotsPassed = results.snapshot.matched;
         substitute.snapshotsTotal = results.snapshot.total;
+
+        // full report
+        substitute.tests = JSON.stringify(results);
 
         Processor.generateReport("./", substitute);
 

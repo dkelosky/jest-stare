@@ -10,6 +10,61 @@ function init() {
     generateChartsFromTagIdPrefix("test-suites");
     generateChartsFromTagIdPrefix("tests");
     generateChartsFromTagIdPrefix("snapshots");
+    const tableHtml = buildTables();
+    $("#loading-info").hide();
+    $("#test-results").replaceWith($(tableHtml));
+}
+function buildTables() {
+    const results = $("#test-results").text();
+    const resultsParsed = JSON.parse(results);
+    const elements = [];
+    resultsParsed.testResults.forEach((testResult) => {
+        let nextElement = initTableSection(testResult.testFilePath);
+        testResult.testResults.forEach((innerTestResult) => {
+            nextElement = addTestToTableSection(innerTestResult, nextElement);
+        });
+        elements.push(nextElement);
+    });
+    return elements;
+}
+function initTableSection(title) {
+    const div = document.createElement("div");
+    div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow");
+    const h6 = document.createElement("h6");
+    h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0");
+    h6.textContent = title;
+    div.appendChild(h6);
+    return div;
+}
+function addTestToTableSection(innerTestResult, element) {
+    const h6 = element.firstChild;
+    const firstDiv = document.createElement("div");
+    firstDiv.classList.add("media", "text-muted", "pt-3");
+    h6.appendChild(firstDiv);
+    const img = document.createElement("img");
+    img.classList.add("mr-2", "rounded");
+    img.alt = "";
+    img.setAttribute("data-src", "holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1");
+    firstDiv.appendChild(img);
+    const secondDiv = document.createElement("div");
+    secondDiv.classList.add("media-body", "pb-3", "mb-0", "small", "lh-125", "border-bottom", "border-gray");
+    firstDiv.appendChild(secondDiv);
+    const thirdDiv = document.createElement("div");
+    thirdDiv.classList.add("d-flex", "justify-content-between", "align-items-center", "w-100");
+    secondDiv.appendChild(thirdDiv);
+    const strong = document.createElement("strong");
+    strong.classList.add("text-gray-dark");
+    strong.textContent = innerTestResult.title;
+    thirdDiv.appendChild(strong);
+    const anchor = document.createElement("a");
+    anchor.href = "#";
+    anchor.textContent = "Minimize";
+    thirdDiv.appendChild(anchor);
+    const span = document.createElement("span");
+    span.classList.add("d-block");
+    span.textContent = "todo";
+    secondDiv.appendChild(span);
+    return element;
 }
 function generateChartsFromTagIdPrefix(tagPrefix) {
     const jqueryTag = "#" + tagPrefix;

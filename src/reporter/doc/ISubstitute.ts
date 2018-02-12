@@ -1,3 +1,5 @@
+import { IResultsProcessorInput } from "../../processor/doc/IResultsProcessorInput";
+
 
 /**
  * for HTML mustache rendering
@@ -47,4 +49,11 @@ export interface ISubstitute {
      * @memberof ISubstitute
      */
     snapshotsTotal?: number;
+
+    /**
+     * Full test content
+     * @type {string}
+     * @memberof ISubstitute
+     */
+    tests?: string;
 }
