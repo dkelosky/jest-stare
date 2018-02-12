@@ -103,7 +103,7 @@ export class Render {
         const firstDiv = document.createElement("div") as HTMLDivElement;
         firstDiv.classList.add("media", "text-muted", "pt-3");
 
-        h6.appendChild(firstDiv);
+        element.appendChild(firstDiv);
 
         const img = document.createElement("img") as HTMLImageElement;
         img.classList.add("mr-2", "rounded");
