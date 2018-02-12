@@ -38,7 +38,7 @@ code {
 
 .text-white-50 { color: rgba(255, 255, 255, .5); }
 
-.bg-blue { background-color: var(--blue); }
+.bg-green { background-color: var(--green); }
 
 .border-bottom { border-bottom: 1px solid #e5e5e5; }
 

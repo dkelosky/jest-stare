@@ -13,6 +13,25 @@ import { IInnerTestResults } from "../processor/doc/IInnerTestResults";
 export class Render {
 
     /**
+     * Pass color
+     * @private
+     * @static
+     * @memberof Render
+     */
+    private static readonly PASS_RAW = "009933";
+    private static readonly PASS = "#" + Render.PASS_RAW;
+
+    /**
+     * Fail color
+     * @private
+     * @static
+     * @memberof Render
+     */
+    private static readonly FAIL_RAW = "ce183d";
+    private static readonly FAIL = "#" + Render.FAIL_RAW;
+    // img.setAttribute("data-src", "holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1");
+
+    /**
      * Creates an instance of Render.
      * @param {IResultsProcessorInput} mResults - parsed test results from DOM
      * @memberof Render
@@ -108,7 +127,20 @@ export class Render {
         const img = document.createElement("img") as HTMLImageElement;
         img.classList.add("mr-2", "rounded");
         img.alt = "";
-        img.setAttribute("data-src", "holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1");
+
+        let color = Render.PASS_RAW;
+        switch (innerTestResult.status) {
+            case "failed":
+                color = Render.FAIL_RAW;
+                break;
+            case "pending":
+                break;
+            case "passed":
+                break;
+            default:
+                break;
+        }
+        img.setAttribute("data-src", "holder.js/32x32?theme=thumb&bg=" + color + "&fg=" + color + "&size=1");
 
         firstDiv.appendChild(img);
 
@@ -136,7 +168,7 @@ export class Render {
 
         const span = document.createElement("span") as HTMLSpanElement;
         span.classList.add("d-block");
-        span.textContent = "todo";
+        span.textContent = innerTestResult.status;
 
         secondDiv.appendChild(span);
 
@@ -160,9 +192,6 @@ export class Render {
         const separator = " ";
         const passedIndex = 0;
         const totalIndex = 2;
-
-        const green = "#008888";
-        const red = "#ce183d";
 
         const jqueryCanvas = jqueryTag + canvasPost;
         const jqueryResults = jqueryTag + resultsPost;
@@ -198,7 +227,7 @@ export class Render {
                 labels: [passLabel, failLabel],
                 datasets: [
                     {
-                        backgroundColor: [green, red],
+                        backgroundColor: [Render.PASS, Render.FAIL],
                         data: [passed, failed],
                     }
                 ]
