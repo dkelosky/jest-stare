@@ -1,6 +1,6 @@
 {
   "name": "jest-stare",
-  "version": "0.0.2-2",
+  "version": "0.0.2-3",
   "description": "jest html reporter (results processor)",
   "license": "MIT",
   "repository": "https://github.com/dkelosky/jest-stare",

@@ -16,6 +16,9 @@ Or
 ## WIP
 This is a work in progress project and contributions are welcome.  
 
+### Screenshot
+![alt text](images/sample.png "Sample Report - WIP")
+
 ## Development Building / Testing
 
 ### First time setup
@@ -27,9 +30,6 @@ This is a work in progress project and contributions are welcome.
 1. `tsc`
 2. `npm run make`
 3. `jest --reporters=./` OR `jest Reporter.test.ts --reporters=./`
-
-### Screenshot
-![alt text](images/sample.png "Sample Report - WIP")
 
 ##  To Do
 * fix lint
