@@ -21,9 +21,7 @@ This is a work in progress project and contributions are welcome.
 ### First time setup
 1. `git clone` this repo
 2. `npm install`
-3. `npm install browserify -g`
-4. `npm install typescript -g`
-5. `npm install jest -g`
+5. `npm install typescript jest browserify -g`
 
 ### Try example
 1. `tsc`
