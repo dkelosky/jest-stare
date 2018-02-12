@@ -1,9 +1,10 @@
-# Jest HTML Reporter
+# Jest HTML Reporter (Results Processor)
 Jest HTML reporter for people that hate plain-text.  Strictly speaking, this is a
-"testResultsProcessor" only.  It takes the summary tests results and parses into 
-an HTML file for readability. 
+"results processor" only.  That is, jest-stare takes the summary tests results and parses 
+them into an HTML file for readability. 
 
-This package does include a reporter component; however, that piece is disabled.
+This package also includes a reporter component (Reporter.ts); however, that piece is disabled
+and all methods are stub routines (for future reference /usage).
 
 ## Usage
 `jest --testResultsProcessor=jest-stare`
@@ -15,7 +16,7 @@ Or
 ## WIP
 This is a work in progress project and contributions are welcome.  
 
-## Testing
+## Development Building / Testing
 
 ### First time setup
 1. `git clone` this repo
