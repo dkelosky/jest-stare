@@ -39,6 +39,11 @@ function buildTables() {
         });
         elements.push(nextElement);
     });
+
+    // const h1 = document.createElement("h1") as HTMLHeadingElement;
+    // h1.classList.add("mb-5");
+    // elements.push(h1);
+
     return elements;
 }
 
