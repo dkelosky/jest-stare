@@ -1,5 +1,16 @@
 # Jest HTML Reporter
-Jest HTML reporter (for people that hate plain-text).
+Jest HTML reporter for people that hate plain-text.  Strictly speaking, this is a
+"testResultsProcessor" only.  It takes the summary tests results and parses into 
+an HTML file for readability. 
+
+This package does include a reporter component; however, that piece is disabled.
+
+## Usage
+`jest --testResultsProcessor=jest-stare`
+
+Or
+
+`"testResultsProcessor": "./node_modules/jest-html-reporter",`
 
 ## WIP
 This is a work in progress project and contributions are welcome.  

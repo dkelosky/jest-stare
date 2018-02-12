@@ -76,50 +76,6 @@ export class Reporter {
      * @memberof Reporter
      */
     public onRunComplete(contexts: Set<Context>, results: AggregatedResult) {
-        Logger.get.debug("onRunComplete:");
-        const substitute: ISubstitute = {};
-
-        // test suites
-        substitute.testSuitesPassed = results.numPassedTestSuites;
-        substitute.testSuitesTotal = results.numTotalTestSuites;
-
-        // tests
-        substitute.testsPassed = results.numPassedTests;
-        substitute.testsTotal = results.numTotalTests;
-
-        // snapshots
-        substitute.snapshotsPassed = results.snapshot.matched;
-        substitute.snapshotsTotal = results.snapshot.total;
-
-        this.generateReport("./", substitute);
+        // Logger.get.debug("onRunComplete:");
     }
-
-    /**
-     * Create HTML report
-     * @private
-     * @param {string} file - location of report
-     * @param {ISubstitute} substitute - substitution values for mustache render
-     * @memberof Reporter
-     */
-    private generateReport(file: string, substitute: ISubstitute) {
-        const base = "jest-stare";
-        const main = "/index.html";
-        IO.mkdirSync(base);
-
-        const html = this.obtainTemplateReport();
-        const rendered = mustache.render(html, substitute);
-
-        IO.writeFile(file + base + main, rendered);
-    }
-
-    /**
-     * Obtain template html report with mustache templates
-     * @private
-     * @returns {string} - html template file
-     * @memberof Reporter
-     */
-    private obtainTemplateReport(): string {
-        return IO.readFileSync("./src/web/template.html");
-    }
-
 }
