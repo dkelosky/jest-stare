@@ -3,6 +3,7 @@ import { inspect } from "util";
 import { ISubstitute } from "../reporter/doc/ISubstitute";
 import { IO } from "../utils/IO";
 import * as mustache from "mustache";
+import * as path from "path";
 
 /**
  * Class to post process jest output and summarize information in an html file
@@ -46,24 +47,47 @@ export class Processor {
      * @memberof Processor
      */
     private static generateReport(file: string, substitute: ISubstitute) {
-        const base = "jest-stare";
-        const main = "/index.html";
-        IO.mkdirSync(base);
+        const baseDir = "jest-stare/";
+        const cssDir = baseDir + "css/";
+        const jsDir = baseDir + "js/";
 
-        const html = Processor.obtainTemplateReport();
+        const main = "index.html";
+
+        IO.mkdirSync(baseDir);
+        IO.mkdirSync(jsDir);
+        IO.mkdirSync(cssDir);
+
+        const html = Processor.obtainWebFile("template.html");
         const rendered = mustache.render(html, substitute);
 
-        IO.writeFile(file + base + main, rendered);
+        IO.writeFile(file + baseDir + main, rendered);
+
+        const mainCss = "jest-stare.css";
+        const css = Processor.obtainWebFile(mainCss);
+        IO.writeFile(file + cssDir + mainCss, css);
+
+        const mainJs = "view.js";
+        const js = Processor.obtainJsFile(mainJs);
+        IO.writeFile(file + jsDir + mainJs, js);
     }
 
     /**
-     * Obtain template html report with mustache templates
+     * Obtain web files
      * @private
-     * @returns {string} - html template file
+     * @returns {string} - file contents from web directory
      * @memberof Processor
      */
-    private static obtainTemplateReport(): string {
-        return IO.readFileSync("../src/web/template.html");
+    private static obtainWebFile(name: string): string {
+        return IO.readFileSync(path.resolve(__dirname + "/../../src/web/" + name));
     }
 
+    /**
+     * Obtain js files
+     * @private
+     * @returns {string} - js file contents from js directory
+     * @memberof Processor
+     */
+    private static obtainJsFile(name: string): string {
+        return IO.readFileSync(path.resolve(__dirname + "/../render/" + name));
+    }
 }
