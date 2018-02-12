@@ -46,9 +46,8 @@ export class Render {
      */
     private buildTables(): HTMLElement[] {
         const results: string = $("#test-results").text();
-        const resultsParsed: IResultsProcessorInput = JSON.parse(results);
         const elements: HTMLElement[] = [];
-        resultsParsed.testResults.forEach((testResult) => {
+        this.mResults.testResults.forEach((testResult) => {
             let nextElement = this.initTableSection(testResult.testFilePath);
 
             testResult.testResults.forEach((innerTestResult) => {
