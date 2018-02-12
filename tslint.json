@@ -10,6 +10,10 @@
       true,
       150
     ],
+    "no-submodule-imports": [
+      true,
+      "bootstrap/dist/js/bootstrap.bundle.min.js"
+    ],
     "no-magic-numbers": [
       true,
       -1,
@@ -22,13 +26,6 @@
     ],
     "prefer-conditional-expression": false
   },
-  "no-submodule-imports": [
-    true,
-    "boostrap",
-    "bootstrap/dist",
-    "bootstrap/dist/js",
-    "bootstrap/dist/js/bootstrap.bundle.min.js"
-  ],
   "exclude": "test/",
   "type-check": true
 }
