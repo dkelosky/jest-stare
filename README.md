@@ -11,7 +11,7 @@ and all methods are stub routines (for future reference /usage).
 
 Or
 
-`"testResultsProcessor": "./node_modules/jest-html-reporter",`
+`"testResultsProcessor": "./node_modules/jest-stare",`
 
 ## WIP
 This is a work in progress project and contributions are welcome.  
