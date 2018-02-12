@@ -63,7 +63,7 @@ export class Processor {
      * @memberof Processor
      */
     private static obtainTemplateReport(): string {
-        return IO.readFileSync("./src/web/template.html");
+        return IO.readFileSync("../src/web/template.html");
     }
 
 }
