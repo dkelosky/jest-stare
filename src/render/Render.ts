@@ -129,10 +129,10 @@ export class Render {
         const small = document.createElement("small") as HTMLElement;
         small.classList.add("d-block", "text-right", "mt3");
 
-        const a = document.createElement("a") as HTMLAnchorElement;
-        a.href = "#";
-        a.textContent = "Collapse All";
-        small.appendChild(a);
+        // const a = document.createElement("a") as HTMLAnchorElement;
+        // a.href = "#";
+        // a.textContent = "Collapse All";
+        // small.appendChild(a);
 
         div.appendChild(small);
 
@@ -206,7 +206,7 @@ export class Render {
 
         const anchor = document.createElement("a") as HTMLAnchorElement;
         anchor.href = "#";
-        anchor.textContent = "Minimize";
+        anchor.textContent = "Expand";
 
         thirdDiv.appendChild(anchor);
 
