@@ -6,6 +6,7 @@
     "one-line": false,
     "trailing-comma": false,
     "space-within-parens": false,
+    "no-var-requires": false,
     "max-line-length": [
       true,
       150
@@ -26,6 +27,5 @@
     ],
     "prefer-conditional-expression": false
   },
-  "exclude": "test/",
   "type-check": true
 }

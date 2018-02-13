@@ -160,10 +160,12 @@ export class Render {
         //     </div>
         let color = Render.PASS_RAW;
         let testStatusClass = Render.PASSED_TEST;
+        let addFailDiv = false;
         switch (innerTestResult.status) {
             case "failed":
                 color = Render.FAIL_RAW;
                 testStatusClass = Render.FAILED_TEST;
+                addFailDiv = true;
                 break;
             case "pending":
                 break;
@@ -215,6 +217,18 @@ export class Render {
         span.textContent = innerTestResult.status;
 
         secondDiv.appendChild(span);
+        if (addFailDiv) {
+            const failDiv = document.createElement("div") as HTMLDivElement;
+            const pre = document.createElement("pre") as HTMLPreElement;
+            failDiv.appendChild(pre);
+
+            const code = document.createElement("code") as HTMLElement;
+            code.textContent = innerTestResult.failureMessages;
+
+            pre.appendChild(code);
+
+            secondDiv.appendChild(failDiv);
+        }
 
         return element;
     }
