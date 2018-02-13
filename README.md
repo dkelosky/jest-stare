@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/dkelosky/jest-stare.svg?branch=master)](https://travis-ci.org/dkelosky/jest-stare)
+[![npm](https://img.shields.io/npm/v/npm.svg)](https://github.com/dkelosky/jest-stare)
 
 # Jest HTML Reporter (Results Processor)
 Jest HTML reporter for people that hate plain-text.  Strictly speaking, this is a
