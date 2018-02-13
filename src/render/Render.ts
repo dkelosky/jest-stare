@@ -99,7 +99,7 @@ export class Render {
         //     </small>
 
         const small = document.createElement("small") as HTMLElement;
-        small.classList.add("d-block", "text-right mt3");
+        small.classList.add("d-block", "text-right", "mt3");
 
         const a = document.createElement("a") as HTMLAnchorElement;
         a.href = "#";

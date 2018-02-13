@@ -40,49 +40,40 @@ code {
 .lh-125 { line-height: 1.25; }
 .lh-150 { line-height: 1.5; }
 
-.onoffswitch {
+.onoff-switch {
     position: relative; width: 90px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
-.onoffswitch-checkbox {
-    display: none;
-}
-.onoffswitch-label {
+.onoff-switch-label {
     display: block; overflow: hidden; cursor: pointer;
     border: 2px solid #999999; border-radius: 20px;
 }
-.onoffswitch-inner {
+
+/* need to reuse more of this */
+.passoff-switch-checkbox {
+    display: none;
+}
+.passoff-switch-inner {
     display: block; width: 200%; margin-left: -100%;
     transition: margin 0.3s ease-in 0s;
 }
-.onoffswitch-inner:before, .onoffswitch-inner:after {
+.passoff-switch-inner:before, .passoff-switch-inner:after {
     display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
     font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
     box-sizing: border-box;
 }
-.onoffswitch-inner:before {
+.passoff-switch-inner:before {
     content: "PASS";
     padding-left: 10px;
     background-color: #009933; color: #FFFFFF;
 }
-.onoffswitch-inner:after {
+.passoff-switch-inner:after {
     content: "PASS";
     padding-right: 10px;
     background-color: #EEEEEE; color: #999999;
     text-align: right;
 }
-.failfailswitch-inner:before {
-    content: "FAIL";
-    padding-left: 10px;
-    background-color: #ce183d; color: #FFFFFF;
-}
-.failfailswitch-inner:after {
-    content: "FAIL";
-    padding-right: 10px;
-    background-color: #EEEEEE; color: #999999;
-    text-align: right;
-}
-.onoffswitch-switch {
+.passoff-switch-switch {
     display: block; width: 18px; margin: 6px;
     background: #FFFFFF;
     position: absolute; top: 0; bottom: 0;
@@ -90,9 +81,48 @@ code {
     border: 2px solid #999999; border-radius: 20px;
     transition: all 0.3s ease-in 0s; 
 }
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+.passoff-switch-checkbox:checked + .onoff-switch-label .passoff-switch-inner {
     margin-left: 0;
 }
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+.passoff-switch-checkbox:checked + .onoff-switch-label .passoff-switch-switch {
+    right: 0px; 
+}
+
+/* resuse more of this */
+.failoff-switch-checkbox {
+    display: none;
+}
+.failoff-switch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.failoff-switch-inner:before, .failoff-switch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.failoff-switch-inner:before {
+    content: "FAIL";
+    padding-left: 10px;
+    background-color: #ce183d; color: #FFFFFF;
+}
+.failoff-switch-inner:after {
+    content: "FAIL";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.failoff-switch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.failoff-switch-checkbox:checked + .onoff-switch-label .failoff-switch-inner {
+    margin-left: 0;
+}
+.failoff-switch-checkbox:checked + .onoff-switch-label .failoff-switch-switch {
     right: 0px; 
 }
