@@ -30,8 +30,8 @@ This is a work in progress project and contributions are welcome.
 
 ### Try example
 1. `tsc`
-2. `npm run make`
-3. `jest --reporters=./` OR `jest Reporter.test.ts --reporters=./`
+2. `npm run build`
+3. `jest --testResultsProcessor=./` OR `jest Reporter.test.ts --testResultsProcessor=./`
 
 ##  To Do
 * fix lint

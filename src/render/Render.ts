@@ -29,7 +29,6 @@ export class Render {
      */
     private static readonly FAIL_RAW = "ce183d";
     private static readonly FAIL = "#" + Render.FAIL_RAW;
-    // img.setAttribute("data-src", "holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1");
 
     /**
      * Creates an instance of Render.
@@ -94,6 +93,21 @@ export class Render {
         h6.textContent = title;
 
         div.appendChild(h6);
+
+        //     <small class="d-block text-right mt-3">
+        //         <a href="#">All suggestions</a>
+        //     </small>
+
+        const small = document.createElement("small") as HTMLElement;
+        small.classList.add("d-block text-right mt3");
+
+        const a = document.createElement("a") as HTMLAnchorElement;
+        a.href = "#";
+        a.textContent = "Collapse All";
+        small.appendChild(a);
+
+        div.appendChild(small);
+
         return div;
     }
 
