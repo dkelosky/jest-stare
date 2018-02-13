@@ -9,3 +9,6 @@ deploy:
   provider: npm
   email: "dkelosky@gmail.com"
   api_key: $NPM_TOKEN
+  skip_cleanup: true
+  on:
+    tags: true
