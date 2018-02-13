@@ -28,6 +28,7 @@ describe("IO tests", () => {
         const data = {
             name: "someone",
             password: "secret",
+            new: "secret",
         };
         expect(data).toMatchSnapshot();
     });

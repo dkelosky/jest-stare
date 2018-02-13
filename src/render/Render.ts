@@ -31,6 +31,22 @@ export class Render {
     private static readonly FAIL = "#" + Render.FAIL_RAW;
 
     /**
+     * Passed test class
+     * @private
+     * @static
+     * @memberof Render
+     */
+    private static readonly PASSED_TEST = "passed-test";
+
+    /**
+     * Failed test class
+     * @private
+     * @static
+     * @memberof Render
+     */
+    private static readonly FAILED_TEST = "failed-test";
+
+    /**
      * Creates an instance of Render.
      * @param {IResultsProcessorInput} mResults - parsed test results from DOM
      * @memberof Render
@@ -47,6 +63,22 @@ export class Render {
         this.generateChartsFromTagIdPrefix("tests");
         this.generateChartsFromTagIdPrefix("snapshots");
 
+        $("#lab-passoff-switch").change(() => {
+            if ($("#lab-passoff-switch").is(":checked")) {
+                $("." + Render.PASSED_TEST).show();
+            } else {
+                $("." + Render.PASSED_TEST).hide();
+            }
+        });
+
+        $("#lab-failoff-switch").change(() => {
+            if ($("#lab-failoff-switch").is(":checked")) {
+                $("." + Render.FAILED_TEST).show();
+            } else {
+                $("." + Render.FAILED_TEST).hide();
+            }
+        });
+
         // build tables
         const tableHtml = this.buildTables();
 
@@ -59,7 +91,7 @@ export class Render {
     /**
      * Build table info for specific tests
      * @private
-     * @returns {HTMLElement[]} - pupulated html elements
+     * @returns {HTMLElement[]} - populated html elements
      * @memberof Render
      */
     private buildTables(): HTMLElement[] {
@@ -94,10 +126,6 @@ export class Render {
 
         div.appendChild(h6);
 
-        //     <small class="d-block text-right mt-3">
-        //         <a href="#">All suggestions</a>
-        //     </small>
-
         const small = document.createElement("small") as HTMLElement;
         small.classList.add("d-block", "text-right", "mt3");
 
@@ -130,22 +158,12 @@ export class Render {
         //             <span class="d-block">@username</span>
         //         </div>
         //     </div>
-
-        const h6 = element.firstChild;
-
-        const firstDiv = document.createElement("div") as HTMLDivElement;
-        firstDiv.classList.add("media", "text-muted", "pt-3");
-
-        element.appendChild(firstDiv);
-
-        const img = document.createElement("img") as HTMLImageElement;
-        img.classList.add("mr-2", "rounded");
-        img.alt = "";
-
         let color = Render.PASS_RAW;
+        let testStatusClass = Render.PASSED_TEST;
         switch (innerTestResult.status) {
             case "failed":
                 color = Render.FAIL_RAW;
+                testStatusClass = Render.FAILED_TEST;
                 break;
             case "pending":
                 break;
@@ -154,6 +172,18 @@ export class Render {
             default:
                 break;
         }
+
+        const h6 = element.firstChild;
+
+        const firstDiv = document.createElement("div") as HTMLDivElement;
+        firstDiv.classList.add("media", "text-muted", "pt-3", testStatusClass);
+
+        element.appendChild(firstDiv);
+
+        const img = document.createElement("img") as HTMLImageElement;
+        img.classList.add("mr-2", "rounded");
+        img.alt = "";
+
         img.setAttribute("data-src", "holder.js/32x32?theme=thumb&bg=" + color + "&fg=" + color + "&size=1");
 
         firstDiv.appendChild(img);
