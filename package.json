@@ -50,6 +50,9 @@
     "mustache": "^2.3.0",
     "winston": "^2.4.0"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "@types/chart.js": "^2.7.7",
     "@types/jest": "^22.0.5",
