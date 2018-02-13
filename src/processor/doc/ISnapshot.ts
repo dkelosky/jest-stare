@@ -1,3 +1,8 @@
+/**
+ * Jest interface
+ * @export
+ * @interface ISnapshot
+ */
 export interface ISnapshot {
     added: number;
     didUpdate: boolean;

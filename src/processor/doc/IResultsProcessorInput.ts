@@ -1,6 +1,11 @@
 import { ITestResults } from "./ITestResults";
 import { ISnapshot } from "./ISnapshot";
 
+/**
+ * Jest interface
+ * @export
+ * @interface IResultsProcessorInput
+ */
 export interface IResultsProcessorInput {
     success: boolean;
     startTime: any;
