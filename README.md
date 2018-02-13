@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/jest-stare)
+[![Build Status](https://travis-ci.org/dkelosky/jest-stare.svg?branch=master)](https://travis-ci.org/dkelosky/jest-stare)
 [![npm](https://img.shields.io/npm/v/npm.svg)](https://github.com/dkelosky/jest-stare)
 
 # Jest HTML Reporter (Results Processor)
