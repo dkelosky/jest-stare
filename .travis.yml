@@ -10,5 +10,6 @@ deploy:
   email: "dkelosky@gmail.com"
   api_key: $NPM_TOKEN
   skip_cleanup: true
+  # npm version prerelease 0.0.0-x # npm version prepatch 0.0.1-0 # git push --tags
   on:
     tags: true
