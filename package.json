@@ -35,7 +35,7 @@
     "build": "tsc --pretty && browserify lib/render/view.js -o lib/render/view.js",
     "make": "browserify lib/render/view.js -o lib/render/view.js",
     "test": "jest",
-    "example": "tsc --pretty && npm run make && jest IO.test.ts --reporters=./",
+    "example": "tsc --pretty && npm run make && jest IO.test.ts",
     "coverage": "jest --coverage",
     "watch": "npm run build -- --watch",
     "watch:test": "jest --watch"
@@ -80,6 +80,7 @@
       "ts",
       "js"
     ],
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "testResultsProcessor": "./"
   }
 }
