@@ -8,7 +8,7 @@ describe("Reporter tests", () => {
     });
 
     it("should do something", async () => {
-        const failingTestReport = IO.readFileSync("./__tests__/src/reporter/simpleFailingTests.json");
+        const failingTestReport = IO.readFileSync("./__tests__/data/simpleFailingTests.json");
         expect(failingTestReport).toMatchSnapshot();
     });
 });
