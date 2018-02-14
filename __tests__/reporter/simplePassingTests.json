@@ -1,0 +1,143 @@
+{
+    "numFailedTestSuites": 0,
+    "numFailedTests": 0,
+    "numPassedTestSuites": 2,
+    "numPassedTests": 5,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTotalTestSuites": 2,
+    "numTotalTests": 5,
+    "snapshot": {
+        "added": 3,
+        "didUpdate": false,
+        "failure": false,
+        "filesAdded": 1,
+        "filesRemoved": 0,
+        "filesUnmatched": 0,
+        "filesUpdated": 0,
+        "matched": 0,
+        "total": 3,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+    },
+    "startTime": 1518610839040,
+    "success": true,
+    "testResults": [
+        {
+            "console": [],
+            "failureMessage": null,
+            "numFailingTests": 0,
+            "numPassingTests": 4,
+            "numPendingTests": 0,
+            "perfStats": {
+                "end": 1518610841037,
+                "start": 1518610839170
+            },
+            "snapshot": {
+                "added": 3,
+                "fileDeleted": false,
+                "matched": 0,
+                "unchecked": 0,
+                "unmatched": 0,
+                "updated": 0,
+                "uncheckedKeys": []
+            },
+            "testFilePath": "Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts",
+            "testResults": [
+                {
+                    "ancestorTitles": [
+                        "IO tests"
+                    ],
+                    "duration": 3,
+                    "failureMessages": [],
+                    "fullName": "IO tests should pretend to write to a file",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should pretend to write to a file"
+                },
+                {
+                    "ancestorTitles": [
+                        "IO tests"
+                    ],
+                    "duration": 1,
+                    "failureMessages": [],
+                    "fullName": "IO tests should match snapshot with one field",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should match snapshot with one field"
+                },
+                {
+                    "ancestorTitles": [
+                        "IO tests"
+                    ],
+                    "duration": 1,
+                    "failureMessages": [],
+                    "fullName": "IO tests should match snapshot with two fields",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should match snapshot with two fields"
+                },
+                {
+                    "ancestorTitles": [
+                        "IO tests"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "IO tests should match snapshot with three fields",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should match snapshot with three fields"
+                }
+            ],
+            "sourceMaps": {},
+            "skipped": false,
+            "leaks": false
+        },
+        {
+            "console": [],
+            "failureMessage": null,
+            "numFailingTests": 0,
+            "numPassingTests": 1,
+            "numPendingTests": 0,
+            "perfStats": {
+                "end": 1518610841123,
+                "start": 1518610841057
+            },
+            "snapshot": {
+                "added": 0,
+                "fileDeleted": false,
+                "matched": 0,
+                "unchecked": 0,
+                "unmatched": 0,
+                "updated": 0,
+                "uncheckedKeys": []
+            },
+            "testFilePath": "Work\\Dev\\node\\jest-stare\\__tests__\\reporter\\Reporter.test.ts",
+            "testResults": [
+                {
+                    "ancestorTitles": [
+                        "Reporter tests"
+                    ],
+                    "duration": 1,
+                    "failureMessages": [],
+                    "fullName": "Reporter tests should instantiate Reporter class",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should instantiate Reporter class"
+                }
+            ],
+            "sourceMaps": {},
+            "skipped": false,
+            "leaks": false
+        }
+    ],
+    "wasInterrupted": false
+}

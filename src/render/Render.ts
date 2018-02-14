@@ -209,6 +209,7 @@ export class Render {
 
         const anchor = document.createElement("a") as HTMLAnchorElement;
         anchor.href = "#";
+        anchor.classList.add("disabled");
         anchor.textContent = "Expand";
 
         thirdDiv.appendChild(anchor);
@@ -229,17 +230,23 @@ export class Render {
             const failMessage = AnsiParser.removeAnsi(innerTestResult.failureMessages[0]);
             const failMessageSplit = failMessage.split("\n");
             failMessageSplit.forEach((entry, index) => {
+                const codeSpan = document.createElement("span") as HTMLSpanElement;
                 if (entry[0] === "+") {
-                    failMessageSplit[index] = "<span style=\"color:" + Render.PASS + "\">" + entry + "</span>";
+                    codeSpan.setAttribute("style", "color:" + Render.PASS);
+                    codeSpan.textContent = entry;
                 } else if (entry[0] === "-") {
-                    failMessageSplit[index] = "<span style=\"color:" + Render.FAIL + "\">" + entry + "</span>";
+                    codeSpan.setAttribute("style", "color:" + Render.FAIL);
+                    codeSpan.textContent = entry;
                 } else {
-                    failMessageSplit[index] = "<span>" + entry + "</span>";
+                    codeSpan.textContent = entry;
                 }
+                const spanDiv = document.createElement("div") as HTMLDivElement;
+                spanDiv.appendChild(codeSpan);
+                code.appendChild(spanDiv);
             });
             const failMessageJoin = failMessageSplit.join("\n");
 
-            code.innerHTML = failMessageJoin;
+            // code.innerHTML = failMessageJoin;
         }
 
         return element;
