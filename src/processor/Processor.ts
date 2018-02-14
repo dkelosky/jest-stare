@@ -4,7 +4,7 @@ import { ISubstitute } from "../reporter/doc/ISubstitute";
 import { IO } from "../utils/IO";
 import * as mustache from "mustache";
 import * as path from "path";
-import { IJestStareConfig } from "./doc/IJestStareConfig";
+import { IJestStareConfig, PACKAGE_JSON_KEY } from "./doc/IJestStareConfig";
 
 /**
  * Class to post process jest output and summarize information in an html file
@@ -54,8 +54,7 @@ export class Processor {
      * @memberof Processor
      */
     private static generateReport(resultDir: string, substitute: ISubstitute) {
-
-        resultDir += "/"; // extra slash just in case it's ommitted by the user 
+        resultDir = resultDir + "/"; // append an extra slash in case the user didn't add one
         const cssDir = resultDir + "css/";
         const jsDir = resultDir + "js/";
 
@@ -108,14 +107,15 @@ export class Processor {
         if (packageJson !== null) {
             const packageJsonContents = require("fs").readFileSync(packageJson).toString();
             const packageJsonObject = JSON.parse(packageJsonContents);
-            if (packageJsonObject["jest-stare"] == null) {
-                // package json found, but no jest stare config 
+            if (packageJsonObject[PACKAGE_JSON_KEY] == null) {
+                // package json found, but no jest stare config
                 return {};
             } else {
-                console.log("Package json config " + require("util").inspect(packageJsonObject["jest-stare"]));
-                return packageJsonObject["jest-stare"];
+                // found the user's package.json config
+                return packageJsonObject[PACKAGE_JSON_KEY];
             }
         } else {
+            // if we can't find any package.json, return a blank config
             return {};
         }
 
