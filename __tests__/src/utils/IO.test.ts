@@ -1,7 +1,7 @@
 import Mock = jest.Mock;
 jest.mock("fs");
 import * as fs from "fs";
-import { IO } from "../../src/utils/IO";
+import { IO } from "../../../src/utils/IO";
 
 describe("IO tests", () => {
 
