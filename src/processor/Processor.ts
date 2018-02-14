@@ -76,6 +76,19 @@ export class Processor {
         const mainJs = "view.js";
         const js = Processor.obtainJsFile(mainJs);
         IO.writeFile(jsDir + mainJs, js);
+
+        // copy dependencies into the result folder, too
+        const bootstrapPath = require.resolve("bootstrap/dist/css/bootstrap.min.css");
+        const bootstrapContent = IO.readFileSync(bootstrapPath);
+        IO.writeFile(cssDir + "bootstrap.min.css", bootstrapContent);
+
+        const jqueryPath = require.resolve("jquery/dist/jquery.min.js");
+        const jqueryContent = IO.readFileSync(jqueryPath);
+        IO.writeFile(jsDir + "jquery.min.js", jqueryContent);
+
+        const holderPath = require.resolve("holderjs/holder.js");
+        const holderContent = IO.readFileSync(holderPath);
+        IO.writeFile(jsDir + "holder.js", holderContent);
     }
 
     /**
