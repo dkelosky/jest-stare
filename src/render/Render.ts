@@ -4,6 +4,7 @@ import { Chart, ChartConfiguration } from "chart.js";
 import { IResultsProcessorInput } from "../processor/doc/IResultsProcessorInput";
 import { ITestResults } from "../processor/doc/ITestResults";
 import { IInnerTestResults } from "../processor/doc/IInnerTestResults";
+import * as AnsiParser from "ansi-parser";
 
 /**
  * Adjust DOM to display JSON data
@@ -160,12 +161,12 @@ export class Render {
         //     </div>
         let color = Render.PASS_RAW;
         let testStatusClass = Render.PASSED_TEST;
-        let addFailDiv = false;
+        let failed = false;
         switch (innerTestResult.status) {
             case "failed":
                 color = Render.FAIL_RAW;
                 testStatusClass = Render.FAILED_TEST;
-                addFailDiv = true;
+                failed = true;
                 break;
             case "pending":
                 break;
@@ -217,17 +218,28 @@ export class Render {
         span.textContent = innerTestResult.status;
 
         secondDiv.appendChild(span);
-        if (addFailDiv) {
-            const failDiv = document.createElement("div") as HTMLDivElement;
+
+        if (failed) {
             const pre = document.createElement("pre") as HTMLPreElement;
-            failDiv.appendChild(pre);
+            secondDiv.appendChild(pre);
 
             const code = document.createElement("code") as HTMLElement;
-            code.textContent = innerTestResult.failureMessages;
-
             pre.appendChild(code);
 
-            secondDiv.appendChild(failDiv);
+            const failMessage = AnsiParser.removeAnsi(innerTestResult.failureMessages[0]);
+            const failMessageSplit = failMessage.split("\n");
+            failMessageSplit.forEach((entry, index) => {
+                if (entry[0] === "+") {
+                    failMessageSplit[index] = "<span style=\"color:" + Render.PASS + "\">" + entry + "</span>";
+                } else if (entry[0] === "-") {
+                    failMessageSplit[index] = "<span style=\"color:" + Render.FAIL + "\">" + entry + "</span>";
+                } else {
+                    failMessageSplit[index] = "<span>" + entry + "</span>";
+                }
+            });
+            const failMessageJoin = failMessageSplit.join("\n");
+
+            code.innerHTML = failMessageJoin;
         }
 
         return element;

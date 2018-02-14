@@ -27,14 +27,14 @@ export class IO {
     }
 
     /**
-     * Make directory
+     * Make directories (recursive)
      * @static
      * @param {string} dir - directory to make
      * @memberof IO
      */
-    public static mkdirSync(dir: string) {
+    public static mkdirsSync(dir: string) {
         if (!IO.existsSync(dir)) {
-            fs.mkdirSync(dir);
+            require("mkdirp").sync(dir);
         }
     }
 

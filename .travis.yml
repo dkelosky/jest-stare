@@ -15,6 +15,6 @@ deploy:
   # git commit -m "blah" 
   # npm version xxxxxx
   # git push --tags to deploy
-  # npm version prerelease 0.0.0-x # npm version prepatch 0.0.1-0 # git push --tags
+  # npm version prepatch 0.0.1-0 # git push --tags
   on:
     tags: true
