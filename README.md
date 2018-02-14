@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/dkelosky/jest-stare.svg?branch=master)](https://travis-ci.org/dkelosky/jest-stare)
-
-# Jest HTML Reporter (Results Processor)
+# Jest HTML Reporter (Results Processor) [![Build Status](https://travis-ci.org/dkelosky/jest-stare.svg?branch=master)](https://travis-ci.org/dkelosky/jest-stare)
 Jest HTML reporter for people that hate plain-text.  Strictly speaking, this is a
 "results processor" only.  That is, jest-stare takes the summary tests results and parses 
 them into an HTML file for readability. 
@@ -15,11 +13,16 @@ Or
 
 `"testResultsProcessor": "./node_modules/jest-stare",`
 
-## WIP
+## Status
 This is a work in progress project and contributions are welcome.  
 
 ### Screenshot
-![alt text](images/sample.png "Sample Report - WIP")
+
+#### Sample Report
+![alt text](images/sample.png "Sample Report")
+
+#### Sample Snapshot Diff
+![alt text](images/snapshotDiff.png "Snapshot diff")
 
 ## Development Building / Testing
 
@@ -30,8 +33,8 @@ This is a work in progress project and contributions are welcome.
 
 ### Try example
 1. `tsc`
-2. `npm run make`
-3. `jest --reporters=./` OR `jest Reporter.test.ts --reporters=./`
+2. `npm run build`
+3. `jest --testResultsProcessor=./` OR `jest Reporter.test.ts --testResultsProcessor=./`
 
 ##  To Do
 * fix lint
