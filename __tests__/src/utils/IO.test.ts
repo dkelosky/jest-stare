@@ -2,7 +2,9 @@ import Mock = jest.Mock;
 jest.mock("fs");
 import * as fs from "fs";
 import { IO } from "../../../src/utils/IO";
-
+it("should be out here", () => {
+    expect(true).toBe(test);
+});
 describe("IO tests", () => {
 
     beforeEach(() => {
@@ -61,4 +63,8 @@ describe("another section", () => {
     it("will run", () => {
         expect(true).toBe(false);
     });
+});
+
+it("should be out here too", () => {
+    expect(true).toBe(test);
 });

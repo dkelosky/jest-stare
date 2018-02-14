@@ -202,14 +202,6 @@ export class Render {
         const elements: HTMLElement[] = [];
         const describeLevels: number[] = [];
         this.mResults.testResults.forEach((testResult) => {
-            // let testStatusClass = Render.PASSED_TEST;
-
-            // for (const result of testResult.testResults) {
-            //     if (result.status === Render.TEST_STATUS_FAIL) {
-            //         testStatusClass = Render.FAILED_TEST;
-            //         break;
-            //     }
-            // }
             let testStatusClass = Render.PASSED_TEST;
 
             for (const result of testResult.testResults) {
@@ -223,138 +215,58 @@ export class Render {
             div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
 
             const h5 = document.createElement("h5") as HTMLHeadingElement;
-            h5.classList.add("border-bottom", "border-gray", "pb-2", "mb-0");
+            h5.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-5");
             h5.textContent = testResult.testFilePath;
 
             div.appendChild(h5);
-// ************************
 
-            // // let addTo = h5;
-            // let root;
-            // const divMap: Map<string, HTMLElement> = new Map<string, HTMLElement>();
-            // divMap.set("", div);
-            // testResult.testResults.forEach((innerTestResult) => {
+            const divMap: Map<string, HTMLElement> = new Map<string, HTMLElement>();
+            divMap.set("", div); // for entry where no ancestor title exists
 
-            //     if (innerTestResult.ancestorTitles.length > 0) {
-            //         let prev;
-            //         const key = innerTestResult.ancestorTitles.join();
-            //         console.log("@TEST + " + key);
-            //         if (!divMap.has(key)) {
-            //             innerTestResult.ancestorTitles.forEach((title, index) => {
-            //                 const nestDiv = document.createElement("div") as HTMLDivElement;
-            //                 if (isNullOrUndefined(root)) {
-            //                     root = nestDiv;
-            //                     h5.appendChild(root);
-            //                 }
-
-            //                 nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
-
-            //                 const h6 = document.createElement("h6") as HTMLHeadingElement;
-            //                 h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0");
-            //                 h6.textContent = innerTestResult.ancestorTitles[index];
-            //                 // h5.appendChild(nextDiv);
-            //                 nestDiv.appendChild(h6);
-            //                 if (!isNullOrUndefined(prev)) {
-            //                     prev.appendChild(nestDiv);
-            //                 }
-
-            //                 prev = h6;
-            //                 divMap.set(key, nestDiv);
-            //                 // addTo = h6;
-            //             });
-            //         }
-            //     } else {
-            //         //
-            //     }
-            // });
-            // if (!isNullOrUndefined(root)) {
-            //     h5.appendChild(root);
-            // }
-// ************************
             testResult.testResults.forEach((innerTestResult) => {
 
-                // let moreDivs;
-                // if (innerTestResult.ancestorTitles.length > 0) {
-                //     moreDivs = this.getDivs(innerTestResult.ancestorTitles, testStatusClass);
-                //     h5.appendChild(moreDivs);
-                // } else {
-                div.appendChild(this.addTestToSuite(innerTestResult));
-                // }
+                if (innerTestResult.ancestorTitles.length > 0) {
 
-                //     if (innerTestResult.ancestorTitles.length === 1) {
-                //         const nextDiv = document.createElement("div") as HTMLDivElement;
-                //         nextDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
+                    let innerRoot;
+                    const key = innerTestResult.ancestorTitles.join();
+                    if (!divMap.has(key)) {
+                        let prev;
+                        innerTestResult.ancestorTitles.forEach((title, index) => {
+                            const nestDiv = document.createElement("div") as HTMLDivElement;
+                            if (isNullOrUndefined(innerRoot)) {
+                                innerRoot = nestDiv;
+                            }
 
-                //         const h6 = document.createElement("h6") as HTMLHeadingElement;
-                //         h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0");
-                //         h6.textContent = innerTestResult.ancestorTitles[0];
-                //         h5.appendChild(nextDiv);
-                //         nextDiv.appendChild(h6);
-                //         addTo = h6;
-                //     }
+                            nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
 
-                //     if (innerTestResult.ancestorTitles.length === 2) {
-                //         const nextDiv = document.createElement("div") as HTMLDivElement;
-                //         nextDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
+                            const h6 = document.createElement("h6") as HTMLHeadingElement;
+                            h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
+                            h6.textContent = innerTestResult.ancestorTitles[index];
 
-                //         const h6 = document.createElement("h6") as HTMLHeadingElement;
-                //         h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0");
-                //         h6.textContent = innerTestResult.ancestorTitles[0];
-                //         h5.appendChild(nextDiv);
-                //         nextDiv.appendChild(h6);
-                //         addTo = h6;
-                //     }
-
-                //     const index = innerTestResult.ancestorTitles.length - 1;
-
-                //     if (isNullOrUndefined(describeLevels[index])) {
-                //         const nextDiv = document.createElement("div") as HTMLDivElement;
-                //         nextDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
-
-                //         const h6 = document.createElement("h6") as HTMLHeadingElement;
-                //         h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0");
-                //         h6.textContent = innerTestResult.ancestorTitles[index];
-                //         h5.appendChild(nextDiv);
-                //         nextDiv.appendChild(h6);
-                //         describeLevels.push(index);
-                //         addTo = h6;
-                //     }
-                // }
-                // h5.appendChild(this.addTestToSuite(innerTestResult));
+                            nestDiv.appendChild(h6);
+                            if (!isNullOrUndefined(prev)) {
+                                prev.appendChild(nestDiv);
+                            }
+                            prev = h6;
+                            divMap.set(key, nestDiv);
+                        });
+                        if (!isNullOrUndefined(innerRoot)) {
+                            h5.appendChild(innerRoot);
+                        }
+                    }
+                } else {
+                    //
+                }
+            });
+            testResult.testResults.forEach((innerTestResult) => {
+                const addToDiv = divMap.get(innerTestResult.ancestorTitles.join());
+                addToDiv.appendChild(this.addTestToSuite(innerTestResult));
             });
             elements.push(div);
         });
 
         return elements;
     }
-
-    private getDivs(ancestorTitles: string[], testStatusClass: string) {
-        let root;
-        let prev;
-        ancestorTitles.forEach( (title, index) => {
-            const div = document.createElement("div") as HTMLDivElement;
-            if (isNullOrUndefined(root)) {
-                root = div;
-            }
-
-            div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
-
-            const h6 = document.createElement("h6") as HTMLHeadingElement;
-            h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0");
-            h6.textContent = ancestorTitles[index];
-            // h5.appendChild(nextDiv);
-            div.appendChild(h6);
-            if (!isNullOrUndefined(prev)) {
-                prev.appendChild(div);
-            }
-
-            prev = h6;
-            // addTo = h6;
-        });
-
-        return root;
-    }
-
 
     /**
      * Build shadowed box for each suite of test
