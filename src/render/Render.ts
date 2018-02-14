@@ -4,6 +4,7 @@ import { Chart, ChartConfiguration } from "chart.js";
 import { IResultsProcessorInput } from "../processor/doc/IResultsProcessorInput";
 import { ITestResults } from "../processor/doc/ITestResults";
 import { IInnerTestResults } from "../processor/doc/IInnerTestResults";
+import * as AnsiParser from "ansi-parser";
 
 /**
  * Adjust DOM to display JSON data
@@ -29,7 +30,22 @@ export class Render {
      */
     private static readonly FAIL_RAW = "ce183d";
     private static readonly FAIL = "#" + Render.FAIL_RAW;
-    // img.setAttribute("data-src", "holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1");
+
+    /**
+     * Passed test class
+     * @private
+     * @static
+     * @memberof Render
+     */
+    private static readonly PASSED_TEST = "passed-test";
+
+    /**
+     * Failed test class
+     * @private
+     * @static
+     * @memberof Render
+     */
+    private static readonly FAILED_TEST = "failed-test";
 
     /**
      * Creates an instance of Render.
@@ -48,6 +64,22 @@ export class Render {
         this.generateChartsFromTagIdPrefix("tests");
         this.generateChartsFromTagIdPrefix("snapshots");
 
+        $("#lab-passoff-switch").change(() => {
+            if ($("#lab-passoff-switch").is(":checked")) {
+                $("." + Render.PASSED_TEST).show();
+            } else {
+                $("." + Render.PASSED_TEST).hide();
+            }
+        });
+
+        $("#lab-failoff-switch").change(() => {
+            if ($("#lab-failoff-switch").is(":checked")) {
+                $("." + Render.FAILED_TEST).show();
+            } else {
+                $("." + Render.FAILED_TEST).hide();
+            }
+        });
+
         // build tables
         const tableHtml = this.buildTables();
 
@@ -60,7 +92,7 @@ export class Render {
     /**
      * Build table info for specific tests
      * @private
-     * @returns {HTMLElement[]} - pupulated html elements
+     * @returns {HTMLElement[]} - populated html elements
      * @memberof Render
      */
     private buildTables(): HTMLElement[] {
@@ -94,6 +126,17 @@ export class Render {
         h6.textContent = title;
 
         div.appendChild(h6);
+
+        const small = document.createElement("small") as HTMLElement;
+        small.classList.add("d-block", "text-right", "mt3");
+
+        // const a = document.createElement("a") as HTMLAnchorElement;
+        // a.href = "#";
+        // a.textContent = "Collapse All";
+        // small.appendChild(a);
+
+        div.appendChild(small);
+
         return div;
     }
 
@@ -116,22 +159,14 @@ export class Render {
         //             <span class="d-block">@username</span>
         //         </div>
         //     </div>
-
-        const h6 = element.firstChild;
-
-        const firstDiv = document.createElement("div") as HTMLDivElement;
-        firstDiv.classList.add("media", "text-muted", "pt-3");
-
-        element.appendChild(firstDiv);
-
-        const img = document.createElement("img") as HTMLImageElement;
-        img.classList.add("mr-2", "rounded");
-        img.alt = "";
-
         let color = Render.PASS_RAW;
+        let testStatusClass = Render.PASSED_TEST;
+        let failed = false;
         switch (innerTestResult.status) {
             case "failed":
                 color = Render.FAIL_RAW;
+                testStatusClass = Render.FAILED_TEST;
+                failed = true;
                 break;
             case "pending":
                 break;
@@ -140,6 +175,18 @@ export class Render {
             default:
                 break;
         }
+
+        const h6 = element.firstChild;
+
+        const firstDiv = document.createElement("div") as HTMLDivElement;
+        firstDiv.classList.add("media", "text-muted", "pt-3", testStatusClass);
+
+        element.appendChild(firstDiv);
+
+        const img = document.createElement("img") as HTMLImageElement;
+        img.classList.add("mr-2", "rounded");
+        img.alt = "";
+
         img.setAttribute("data-src", "holder.js/32x32?theme=thumb&bg=" + color + "&fg=" + color + "&size=1");
 
         firstDiv.appendChild(img);
@@ -162,7 +209,7 @@ export class Render {
 
         const anchor = document.createElement("a") as HTMLAnchorElement;
         anchor.href = "#";
-        anchor.textContent = "Minimize";
+        anchor.textContent = "Expand";
 
         thirdDiv.appendChild(anchor);
 
@@ -171,6 +218,29 @@ export class Render {
         span.textContent = innerTestResult.status;
 
         secondDiv.appendChild(span);
+
+        if (failed) {
+            const pre = document.createElement("pre") as HTMLPreElement;
+            secondDiv.appendChild(pre);
+
+            const code = document.createElement("code") as HTMLElement;
+            pre.appendChild(code);
+
+            const failMessage = AnsiParser.removeAnsi(innerTestResult.failureMessages[0]);
+            const failMessageSplit = failMessage.split("\n");
+            failMessageSplit.forEach((entry, index) => {
+                if (entry[0] === "+") {
+                    failMessageSplit[index] = "<span style=\"color:" + Render.PASS + "\">" + entry + "</span>";
+                } else if (entry[0] === "-") {
+                    failMessageSplit[index] = "<span style=\"color:" + Render.FAIL + "\">" + entry + "</span>";
+                } else {
+                    failMessageSplit[index] = "<span>" + entry + "</span>";
+                }
+            });
+            const failMessageJoin = failMessageSplit.join("\n");
+
+            code.innerHTML = failMessageJoin;
+        }
 
         return element;
     }
