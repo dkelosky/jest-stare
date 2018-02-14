@@ -35,7 +35,6 @@ describe("IO tests", () => {
         const data = {
             name: "someone",
             password: "secret",
-            newThing: "here"
         };
         expect(data).toMatchSnapshot();
     });
@@ -44,6 +43,7 @@ describe("IO tests", () => {
         const data = {
             name: "someone",
             password: "secret",
+            data: "sample"
         };
         expect(data).toMatchSnapshot();
     });
