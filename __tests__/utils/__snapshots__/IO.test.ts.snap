@@ -1,6 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IO tests should match snapshot 1`] = `
+exports[`IO tests should match snapshot with one field 1`] = `
+Object {
+  "name": "someone",
+}
+`;
+
+exports[`IO tests should match snapshot with three fields 1`] = `
+Object {
+  "data": "sample",
+  "name": "someone",
+  "password": "secret",
+}
+`;
+
+exports[`IO tests should match snapshot with two fields 1`] = `
 Object {
   "name": "someone",
   "password": "secret",

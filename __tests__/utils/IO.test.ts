@@ -24,7 +24,23 @@ describe("IO tests", () => {
         expect(error).toBeUndefined();
     });
 
-    it("should match snapshot", () => {
+    it("should match snapshot with one field", () => {
+        const data = {
+            name: "someone",
+        };
+        expect(data).toMatchSnapshot();
+    });
+
+    it("should match snapshot with two fields", () => {
+        const data = {
+            name: "someone",
+            password: "secret",
+            newThing: "here"
+        };
+        expect(data).toMatchSnapshot();
+    });
+
+    it("should match snapshot with three fields", () => {
         const data = {
             name: "someone",
             password: "secret",
