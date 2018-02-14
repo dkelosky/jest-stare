@@ -5,4 +5,5 @@ npm-debug.log
 lib
 lib_test
 jest-stare
+results
 notes.txt
