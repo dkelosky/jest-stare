@@ -4,6 +4,7 @@ import { Chart, ChartConfiguration } from "chart.js";
 import { IResultsProcessorInput } from "../processor/doc/IResultsProcessorInput";
 import { ITestResults } from "../processor/doc/ITestResults";
 import { IInnerTestResults } from "../processor/doc/IInnerTestResults";
+import * as AnsiParser from "ansi-parser";
 
 /**
  * Adjust DOM to display JSON data
@@ -160,10 +161,12 @@ export class Render {
         //     </div>
         let color = Render.PASS_RAW;
         let testStatusClass = Render.PASSED_TEST;
+        let failed = false;
         switch (innerTestResult.status) {
             case "failed":
                 color = Render.FAIL_RAW;
                 testStatusClass = Render.FAILED_TEST;
+                failed = true;
                 break;
             case "pending":
                 break;
@@ -215,6 +218,29 @@ export class Render {
         span.textContent = innerTestResult.status;
 
         secondDiv.appendChild(span);
+
+        if (failed) {
+            const pre = document.createElement("pre") as HTMLPreElement;
+            secondDiv.appendChild(pre);
+
+            const code = document.createElement("code") as HTMLElement;
+            pre.appendChild(code);
+
+            const failMessage = AnsiParser.removeAnsi(innerTestResult.failureMessages[0]);
+            const failMessageSplit = failMessage.split("\n");
+            failMessageSplit.forEach((entry, index) => {
+                if (entry[0] === "+") {
+                    failMessageSplit[index] = "<span style=\"color:" + Render.PASS + "\">" + entry + "</span>";
+                } else if (entry[0] === "-") {
+                    failMessageSplit[index] = "<span style=\"color:" + Render.FAIL + "\">" + entry + "</span>";
+                } else {
+                    failMessageSplit[index] = "<span>" + entry + "</span>";
+                }
+            });
+            const failMessageJoin = failMessageSplit.join("\n");
+
+            code.innerHTML = failMessageJoin;
+        }
 
         return element;
     }
