@@ -35,7 +35,7 @@
     "build": "tsc --pretty && npx browserify lib/render/view.js -o lib/render/view.js",
     "make": "tsc --pretty && npx browserify lib/render/view.js -o lib/render/view.js",
     "test": "jest",
-    "example": "tsc --pretty && npm run make && jest IO.test.ts",
+    "example": "npm run make && jest",
     "coverage": "jest --coverage",
     "watch": "npm run build -- --watch",
     "watch:test": "jest --watch"
