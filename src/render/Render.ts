@@ -198,9 +198,9 @@ export class Render {
      * @memberof Render
      */
     private buildSuites(): HTMLElement[] {
-        const results: string = $("#test-results").text();
         const elements: HTMLElement[] = [];
         const describeLevels: number[] = [];
+
         this.mResults.testResults.forEach((testResult) => {
             let testStatusClass = Render.PASSED_TEST;
 
@@ -222,50 +222,113 @@ export class Render {
 
             const divMap: Map<string, HTMLElement> = new Map<string, HTMLElement>();
             divMap.set("", div); // for entry where no ancestor title exists
+            // divMap.set(-1 + undefined, div); // for entry where no ancestor title exists
 
             testResult.testResults.forEach((innerTestResult) => {
+                    // console.log("titles: " + innerTestResult.ancestorTitles);
+                // console.log(innerTestResult.ancestorTitles);
 
                 if (innerTestResult.ancestorTitles.length > 0) {
-
-                    let innerRoot;
-                    const key = innerTestResult.ancestorTitles.join();
-                    if (!divMap.has(key)) {
-                        let prev;
-                        innerTestResult.ancestorTitles.forEach((title, index) => {
+                    innerTestResult.ancestorTitles.forEach((title, index) => {
+                        if (!divMap.has(this.getKey(index, title))) {
                             const nestDiv = document.createElement("div") as HTMLDivElement;
-                            if (isNullOrUndefined(innerRoot)) {
-                                innerRoot = nestDiv;
-                            }
-
                             nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
-
                             const h6 = document.createElement("h6") as HTMLHeadingElement;
                             h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
-                            h6.textContent = innerTestResult.ancestorTitles[index];
-
+                            h6.textContent = title;
                             nestDiv.appendChild(h6);
-                            if (!isNullOrUndefined(prev)) {
-                                prev.appendChild(nestDiv);
-                            }
-                            prev = h6;
-                            divMap.set(key, nestDiv);
-                        });
-                        if (!isNullOrUndefined(innerRoot)) {
-                            h5.appendChild(innerRoot);
+                            divMap.set(this.getKey(index, title), nestDiv);
+                            const parentKey = this.getParentKey(innerTestResult.ancestorTitles, divMap);
+                            // console.log("parentkey " + parentKey + " + " + index +  " + " + title);
+                            const parentElement = divMap.get(parentKey);
+                            parentElement.firstChild.appendChild(nestDiv);
                         }
-                    }
-                } else {
-                    //
+                    });
                 }
+
+                    // let innerRoot;
+                    // console.log("@TEST " + key);
+
+                    // if (!divMap.has(innerTestResult.ancestorTitles)) {
+                    //     // let prev;
+                    //         const nestDiv = document.createElement("div") as HTMLDivElement;
+                    //         // if (isNullOrUndefined(innerRoot)) {
+                    //             // innerRoot = nestDiv;
+                    //         // }
+
+                    //         nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
+
+                    //         const h6 = document.createElement("h6") as HTMLHeadingElement;
+                    //         h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
+                    //         h6.textContent = innerTestResult.ancestorTitles[index];
+
+                    //         nestDiv.appendChild(h6);
+                    //         // if (!isNullOrUndefined(prev)) {
+                    //             // prev.appendChild(nestDiv);
+                    //         // }
+                    //         // prev = h6;
+                    //         divMap.set(innerTestResult.ancestorTitles, nestDiv);
+                    //     });
+                    //     // if (!isNullOrUndefined(innerRoot)) {
+                    //         // h5.appendChild(innerRoot);
+                    //     // }
+                    // }
+                // }
             });
+
+            divMap.forEach( (value, key) => {
+                console.log("ENTRY " + key);
+                console.log(value.firstChild.textContent);
+            //     key.pop();
+            //     console.log("Popped key: " + key);
+            //     if (divMap.has(key)) {
+            //         const parent = divMap.get(key);
+            //         console.log(parent);
+            //         parent.firstChild.appendChild(value);
+            //     }
+            });
+
             testResult.testResults.forEach((innerTestResult) => {
-                const addToDiv = divMap.get(innerTestResult.ancestorTitles.join());
+                const index = innerTestResult.ancestorTitles.length - 1;
+                // console.log("@TEST " + index + innerTestResult.ancestorTitles[index])
+                const addToDiv = divMap.get(this.getKeyFromTitle(innerTestResult.ancestorTitles));
                 addToDiv.appendChild(this.addTestToSuite(innerTestResult));
             });
+
             elements.push(div);
         });
 
         return elements;
+    }
+
+    private getKey(index, title) {
+        return index + title;
+    }
+
+    private getKeyFromTitle(titles: string[]) {
+        if (titles.length > 0) {
+            return this.getKey(titles.length - 1, titles[titles.length - 1]);
+        }
+        return "";
+    }
+
+    private getParentKey(titles: string[], divMap: Map<string, HTMLElement>) {
+        // if (titles.length < 1) {
+            // return "";
+        // }
+        for (let i = titles.length - 1 - 1; i >= 0; i--) {
+            if (divMap.has(i + titles[i])) {
+                return i + titles[i];
+            }
+        }
+        // titles.forEach( (title) => {
+        //     if (divMap.has(titleBuild)) {
+        //         return titleCopy;
+        //     }
+        //     titleCopy.pop();
+        // });
+
+        return "";
     }
 
     /**
@@ -311,7 +374,6 @@ export class Render {
      * @memberof Render
      */
     private addTestToSuite(innerTestResult: IInnerTestResults): HTMLElement {
-
         let color = Render.PASS_RAW;
         let testStatusClass = Render.PASSED_TEST;
         let failed = false;
@@ -330,12 +392,8 @@ export class Render {
                 break;
         }
 
-        // const h5 = element.firstChild;
-
         const firstDiv = document.createElement("div") as HTMLDivElement;
         firstDiv.classList.add("media", "text-muted", "pt-3", testStatusClass);
-
-        // element.appendChild(firstDiv);
 
         const img = document.createElement("img") as HTMLImageElement;
         img.classList.add("mr-2", "rounded");
@@ -383,6 +441,7 @@ export class Render {
 
             const failMessage = AnsiParser.removeAnsi(innerTestResult.failureMessages[0]);
             const failMessageSplit = failMessage.split("\n");
+
             failMessageSplit.forEach((entry, index) => {
                 const codeSpan = document.createElement("span") as HTMLSpanElement;
                 if (entry[0] === "+") {
@@ -398,6 +457,7 @@ export class Render {
                 spanDiv.appendChild(codeSpan);
                 code.appendChild(spanDiv);
             });
+
             const failMessageJoin = failMessageSplit.join("\n");
         }
 

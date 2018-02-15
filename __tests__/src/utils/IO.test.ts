@@ -56,7 +56,7 @@ describe("IO tests", () => {
 
     it("should be here", () => {
         expect(true).toBe(true);
-    })
+    });
 });
 
 describe("another section", () => {
