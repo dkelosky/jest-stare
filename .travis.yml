@@ -17,5 +17,4 @@ deploy:
   # git push --tags to deploy
   # npm version prepatch 0.0.1-0 # git push --tags
   on:
-    branch: master
-    tags: next
+    tags: true
