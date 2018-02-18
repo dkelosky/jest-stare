@@ -241,10 +241,6 @@ export class Render {
                             // nestDiv.insertAdjacentElement(position, h6);
                             nestDiv.appendChild(h6);
                             divMap.set(this.getKey(index, title), nestDiv);
-                            const parentKey = this.getParentKey(innerTestResult.ancestorTitles, divMap);
-                            // console.log("parentkey " + parentKey + " + " + index +  " + " + title);
-                            const parentElement = divMap.get(parentKey);
-                            parentElement.appendChild(nestDiv);
                         }
                     });
                 }
@@ -279,8 +275,8 @@ export class Render {
                 // }
             });
 
-            divMap.forEach( (value, key) => {
-                console.log("ENTRY " + key);
+            // divMap.forEach( (value, key) => {
+                // console.log("ENTRY " + key);
                 // console.log(value.firstChild.textContent);
             //     key.pop();
             //     console.log("Popped key: " + key);
@@ -289,12 +285,23 @@ export class Render {
             //         console.log(parent);
             //         parent.firstChild.appendChild(value);
             //     }
-            });
+            // });
 
             testResult.testResults.forEach((innerTestResult) => {
+                // console.log(innerTestResult.title)
                 const index = innerTestResult.ancestorTitles.length - 1;
                 // console.log("@TEST " + index + innerTestResult.ancestorTitles[index])
                 const addToDiv = divMap.get(this.getKeyFromTitle(innerTestResult.ancestorTitles));
+
+                const parentKey = this.getParentKey(innerTestResult.ancestorTitles, divMap);
+                // console.log("parentkey " + parentKey + " + " + index +  " + " + title);
+                const parentElement = divMap.get(parentKey);
+
+                if (parentElement !== addToDiv) {
+
+                    parentElement.appendChild(addToDiv);
+                }
+
                 addToDiv.appendChild(this.addTestToSuite(innerTestResult));
             });
 
@@ -422,12 +429,12 @@ export class Render {
 
         thirdDiv.appendChild(strong);
 
-        const anchor = document.createElement("a") as HTMLAnchorElement;
-        anchor.href = "#";
-        anchor.classList.add("disabled");
-        anchor.textContent = "Expand";
+        // const anchor = document.createElement("a") as HTMLAnchorElement;
+        // anchor.href = "#";
+        // anchor.classList.add("disabled");
+        // anchor.textContent = "Expand";
 
-        thirdDiv.appendChild(anchor);
+        // thirdDiv.appendChild(anchor);
 
         const span = document.createElement("span") as HTMLSpanElement;
         span.classList.add("d-block");
