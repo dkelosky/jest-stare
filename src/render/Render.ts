@@ -214,17 +214,14 @@ export class Render {
 
             const testSectionStatus: Map<string, string> = new Map<string, string>();
             for (const result of testResult.testResults) {
-                console.log(result.status + " " + result.ancestorTitles)
 
                 // mark overall status for a suite
                 if (result.status === Render.TEST_STATUS_FAIL && testStatusClass !== Render.BOTH_TEST) {
                     testStatusClass = Render.FAILED_TEST; // overall
-                    console.log(result.status + " " + result.ancestorTitles)
                     // mark all lower test sections as containing a failed test for filtering
                 }
                 if (result.status === Render.TEST_STATUS_FAIL) {
                     for (const ancestorTitle of result.ancestorTitles) {
-                        console.log("an " + ancestorTitle)
                         testSectionStatus.set(ancestorTitle, Render.FAILED_TEST);
                     }
                 }

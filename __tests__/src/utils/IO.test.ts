@@ -34,9 +34,9 @@ describe("IO tests", () => {
             expect(data).toMatchSnapshot();
         });
 
-        it("fails a lot", () => {
-            expect(false).toBe(true);
-        });
+        // it("fails a lot", () => {
+        //     expect(false).toBe(true);
+        // });
 
         it("should match snapshot with two fields", () => {
             const data = {
@@ -63,12 +63,12 @@ describe("IO tests", () => {
     });
 });
 
-describe("another section", () => {
-    it("will run", () => {
-        expect(true).toBe(false);
-    });
-});
+// describe("another section", () => {
+//     it("will run", () => {
+//         expect(true).toBe(false);
+//     });
+// });
 
-it("should be out here too", () => {
-    expect(true).toBe(test);
-});
+// it("should be out here too", () => {
+//     expect(true).toBe(test);
+// });
