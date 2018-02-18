@@ -73,6 +73,14 @@ export class Render {
     private static readonly FAILED_TEST = "failed-test";
 
     /**
+     * Both passed and failed test class
+     * @private
+     * @static
+     * @memberof Render
+     */
+    private static readonly BOTH_TEST = "both-test";
+
+    /**
      * Creates an instance of Render.
      * @param {IResultsProcessorInput} mResults - parsed test results from DOM
      * @memberof Render
@@ -206,21 +214,45 @@ export class Render {
 
             const testSectionStatus: Map<string, string> = new Map<string, string>();
             for (const result of testResult.testResults) {
+                console.log(result.status + " " + result.ancestorTitles)
 
                 // mark overall status for a suite
-                if (result.status === Render.TEST_STATUS_FAIL) {
+                if (result.status === Render.TEST_STATUS_FAIL && testStatusClass !== Render.BOTH_TEST) {
                     testStatusClass = Render.FAILED_TEST; // overall
+                    console.log(result.status + " " + result.ancestorTitles)
+                    // mark all lower test sections as containing a failed test for filtering
+                }
+                if (result.status === Render.TEST_STATUS_FAIL) {
+                    for (const ancestorTitle of result.ancestorTitles) {
+                        console.log("an " + ancestorTitle)
+                        testSectionStatus.set(ancestorTitle, Render.FAILED_TEST);
+                    }
+                }
+                // mark overall status for a suite
+                if (result.status === Render.TEST_STATUS_PASS) {
+                    if (testStatusClass === Render.FAILED_TEST) {
+                        testStatusClass = Render.BOTH_TEST;
+                    }
 
                     // mark all lower test sections as containing a failed test for filtering
                     for (const ancestorTitle of result.ancestorTitles) {
-                        testSectionStatus.set(ancestorTitle, Render.FAILED_TEST);
+                        const checkStatus = testSectionStatus.get(ancestorTitle);
+                        if (!isNullOrUndefined(checkStatus)) {
+                            if (checkStatus === Render.FAILED_TEST) {
+                                testSectionStatus.set(ancestorTitle, Render.BOTH_TEST);
+                            }
+                        }
                     }
                 }
             }
 
 
             const div = document.createElement("div") as HTMLDivElement;
-            div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
+            if (testStatusClass === Render.BOTH_TEST) {
+                div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow");
+            } else {
+                div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
+            }
 
             const h5 = document.createElement("h5") as HTMLHeadingElement;
             h5.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-5");
@@ -238,7 +270,11 @@ export class Render {
                         if (!divMap.has(this.getKey(index, title))) {
                             const nestDiv = document.createElement("div") as HTMLDivElement;
                             const statusClass = testSectionStatus.get(title) || Render.PASSED_TEST;
-                            nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
+                            if (statusClass === Render.BOTH_TEST) {
+                                nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow");
+                            } else {
+                                nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
+                            }
                             const h6 = document.createElement("h6") as HTMLHeadingElement;
                             h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
                             h6.textContent = title;
