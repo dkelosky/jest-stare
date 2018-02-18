@@ -34,6 +34,10 @@ describe("IO tests", () => {
             expect(data).toMatchSnapshot();
         });
 
+        it("fails a lot", () => {
+            expect(false).toBe(true);
+        });
+
         it("should match snapshot with two fields", () => {
             const data = {
                 name: "someone",

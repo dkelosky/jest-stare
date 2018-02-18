@@ -204,10 +204,15 @@ export class Render {
         this.mResults.testResults.forEach((testResult) => {
             let testStatusClass = Render.PASSED_TEST;
 
+            const testSectionStatus: Map<string, string> = new Map<string, string>();
             for (const result of testResult.testResults) {
                 if (result.status === Render.TEST_STATUS_FAIL) {
-                    testStatusClass = Render.FAILED_TEST;
-                    break;
+                    testStatusClass = Render.FAILED_TEST; // overall
+                    for (const ancestorTitle of result.ancestorTitles) {
+                        testSectionStatus.set(ancestorTitle, Render.FAILED_TEST);
+                    }
+
+                    console.log("@TEST " + result.ancestorTitles[result.ancestorTitles.length - 1])
                 }
             }
 
@@ -222,86 +227,40 @@ export class Render {
 
             const divMap: Map<string, HTMLElement> = new Map<string, HTMLElement>();
             divMap.set("", div); // for entry where no ancestor title exists
-            // divMap.set(-1 + undefined, div); // for entry where no ancestor title exists
 
             testResult.testResults.forEach((innerTestResult) => {
-                    // console.log("titles: " + innerTestResult.ancestorTitles);
-                // console.log(innerTestResult.ancestorTitles);
 
                 if (innerTestResult.ancestorTitles.length > 0) {
                     innerTestResult.ancestorTitles.forEach((title, index) => {
                         if (!divMap.has(this.getKey(index, title))) {
                             const nestDiv = document.createElement("div") as HTMLDivElement;
-                            nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
+                            const statusClass = testSectionStatus.get(title) || Render.PASSED_TEST;
+                            console.log("@TEST2 " + testSectionStatus.get(title) + " from " + title)
+                            nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
                             const h6 = document.createElement("h6") as HTMLHeadingElement;
                             h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
                             h6.textContent = title;
-                            // nestDiv.appendChild(h6);
-                            // const position: InsertPosition = "afterend";
-                            // nestDiv.insertAdjacentElement(position, h6);
                             nestDiv.appendChild(h6);
                             divMap.set(this.getKey(index, title), nestDiv);
                         }
                     });
                 }
-
-                    // let innerRoot;
-                    // console.log("@TEST " + key);
-
-                    // if (!divMap.has(innerTestResult.ancestorTitles)) {
-                    //     // let prev;
-                    //         const nestDiv = document.createElement("div") as HTMLDivElement;
-                    //         // if (isNullOrUndefined(innerRoot)) {
-                    //             // innerRoot = nestDiv;
-                    //         // }
-
-                    //         nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
-
-                    //         const h6 = document.createElement("h6") as HTMLHeadingElement;
-                    //         h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
-                    //         h6.textContent = innerTestResult.ancestorTitles[index];
-
-                    //         nestDiv.appendChild(h6);
-                    //         // if (!isNullOrUndefined(prev)) {
-                    //             // prev.appendChild(nestDiv);
-                    //         // }
-                    //         // prev = h6;
-                    //         divMap.set(innerTestResult.ancestorTitles, nestDiv);
-                    //     });
-                    //     // if (!isNullOrUndefined(innerRoot)) {
-                    //         // h5.appendChild(innerRoot);
-                    //     // }
-                    // }
-                // }
             });
 
-            // divMap.forEach( (value, key) => {
-                // console.log("ENTRY " + key);
-                // console.log(value.firstChild.textContent);
-            //     key.pop();
-            //     console.log("Popped key: " + key);
-            //     if (divMap.has(key)) {
-            //         const parent = divMap.get(key);
-            //         console.log(parent);
-            //         parent.firstChild.appendChild(value);
-            //     }
-            // });
-
             testResult.testResults.forEach((innerTestResult) => {
-                // console.log(innerTestResult.title)
                 const index = innerTestResult.ancestorTitles.length - 1;
-                // console.log("@TEST " + index + innerTestResult.ancestorTitles[index])
                 const addToDiv = divMap.get(this.getKeyFromTitle(innerTestResult.ancestorTitles));
 
                 const parentKey = this.getParentKey(innerTestResult.ancestorTitles, divMap);
-                // console.log("parentkey " + parentKey + " + " + index +  " + " + title);
                 const parentElement = divMap.get(parentKey);
 
+                // if we get the parent is the sample as the div we're intending to add to, just append test
+                // instead of appending a parent to itself
                 if (parentElement !== addToDiv) {
-
                     parentElement.appendChild(addToDiv);
                 }
 
+                // add test result
                 addToDiv.appendChild(this.addTestToSuite(innerTestResult));
             });
 
