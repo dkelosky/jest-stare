@@ -236,12 +236,15 @@ export class Render {
                             const h6 = document.createElement("h6") as HTMLHeadingElement;
                             h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
                             h6.textContent = title;
+                            // nestDiv.appendChild(h6);
+                            // const position: InsertPosition = "afterend";
+                            // nestDiv.insertAdjacentElement(position, h6);
                             nestDiv.appendChild(h6);
                             divMap.set(this.getKey(index, title), nestDiv);
                             const parentKey = this.getParentKey(innerTestResult.ancestorTitles, divMap);
                             // console.log("parentkey " + parentKey + " + " + index +  " + " + title);
                             const parentElement = divMap.get(parentKey);
-                            parentElement.firstChild.appendChild(nestDiv);
+                            parentElement.appendChild(nestDiv);
                         }
                     });
                 }
@@ -278,7 +281,7 @@ export class Render {
 
             divMap.forEach( (value, key) => {
                 console.log("ENTRY " + key);
-                console.log(value.firstChild.textContent);
+                // console.log(value.firstChild.textContent);
             //     key.pop();
             //     console.log("Popped key: " + key);
             //     if (divMap.has(key)) {
