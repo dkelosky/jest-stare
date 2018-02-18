@@ -206,15 +206,18 @@ export class Render {
 
             const testSectionStatus: Map<string, string> = new Map<string, string>();
             for (const result of testResult.testResults) {
+
+                // mark overall status for a suite
                 if (result.status === Render.TEST_STATUS_FAIL) {
                     testStatusClass = Render.FAILED_TEST; // overall
+
+                    // mark all lower test sections as containing a failed test for filtering
                     for (const ancestorTitle of result.ancestorTitles) {
                         testSectionStatus.set(ancestorTitle, Render.FAILED_TEST);
                     }
-
-                    console.log("@TEST " + result.ancestorTitles[result.ancestorTitles.length - 1])
                 }
             }
+
 
             const div = document.createElement("div") as HTMLDivElement;
             div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
@@ -235,7 +238,6 @@ export class Render {
                         if (!divMap.has(this.getKey(index, title))) {
                             const nestDiv = document.createElement("div") as HTMLDivElement;
                             const statusClass = testSectionStatus.get(title) || Render.PASSED_TEST;
-                            console.log("@TEST2 " + testSectionStatus.get(title) + " from " + title)
                             nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
                             const h6 = document.createElement("h6") as HTMLHeadingElement;
                             h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
@@ -270,10 +272,25 @@ export class Render {
         return elements;
     }
 
+    /**
+     * Make a key from input index and title to encapsulate what makes up the key
+     * @private
+     * @param {any} index - index number, can be any value
+     * @param {any} title - title of an ancestor array
+     * @returns index + title (in the future the key may be different)
+     * @memberof Render
+     */
     private getKey(index, title) {
         return index + title;
     }
 
+    /**
+     * For input ancestor titles, return the appropriate key that represents this element
+     * @private
+     * @param {string[]} titles - ancestor titles
+     * @returns {string} - key representing title
+     * @memberof Render
+     */
     private getKeyFromTitle(titles: string[]) {
         if (titles.length > 0) {
             return this.getKey(titles.length - 1, titles[titles.length - 1]);
@@ -281,21 +298,21 @@ export class Render {
         return "";
     }
 
+    /**
+     * Get parent key.  If ancestor title is ["one", "two", "three"], then current
+     * key is "3three" and parent is "2two".
+     * @private
+     * @param {string[]} titles - ancestor titles
+     * @param {Map<string, HTMLElement>} divMap - mapping of keys of index + 2 to a given div
+     * @returns {string} - key representing parent
+     * @memberof Render
+     */
     private getParentKey(titles: string[], divMap: Map<string, HTMLElement>) {
-        // if (titles.length < 1) {
-            // return "";
-        // }
         for (let i = titles.length - 1 - 1; i >= 0; i--) {
             if (divMap.has(i + titles[i])) {
-                return i + titles[i];
+                return this.getKey(i, titles[i]);
             }
         }
-        // titles.forEach( (title) => {
-        //     if (divMap.has(titleBuild)) {
-        //         return titleCopy;
-        //     }
-        //     titleCopy.pop();
-        // });
 
         return "";
     }
@@ -319,17 +336,6 @@ export class Render {
 
         const div = document.createElement("div") as HTMLDivElement;
         div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
-
-        // const small = document.createElement("small") as HTMLElement;
-        // small.classList.add("d-block", "text-right", "mt3");
-
-        // TODO(Kelosky): shrink entire suite pass or fail
-        // const a = document.createElement("a") as HTMLAnchorElement;
-        // a.href = "#";
-        // a.textContent = "Collapse All";
-        // small.appendChild(a);
-
-        // div.appendChild(small);
 
         return div;
     }
@@ -388,6 +394,15 @@ export class Render {
 
         thirdDiv.appendChild(strong);
 
+            //     <small class="d-block text-right mt-3">
+    //         <a href="#">All suggestions</a>
+    //     </small>
+        const small = document.createElement("small") as HTMLElement;
+        small.classList.add("d-block", "text-right", "mt-3");
+        const conversionValu = 1000;
+        small.textContent = innerTestResult.duration / conversionValu + "s";
+
+        thirdDiv.appendChild(small);
         // const anchor = document.createElement("a") as HTMLAnchorElement;
         // anchor.href = "#";
         // anchor.classList.add("disabled");
