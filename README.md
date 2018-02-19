@@ -19,7 +19,7 @@ jest-stare: {
 ```
 
 ## Status
-This is a work in progress project and contributions are welcome.  
+This is a work in progress project and contributions / suggestions are welcome.  
 
 ### Screenshot
 Simple examples below.
