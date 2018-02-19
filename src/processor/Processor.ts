@@ -5,6 +5,7 @@ import { IO } from "../utils/IO";
 import * as mustache from "mustache";
 import * as path from "path";
 import { IJestStareConfig, PACKAGE_JSON_KEY } from "./doc/IJestStareConfig";
+import { Logger } from "../utils/Logger";
 
 /**
  * Class to post process jest output and summarize information in an html file
@@ -68,6 +69,10 @@ export class Processor {
         const rendered = mustache.render(html, substitute);
 
         IO.writeFile(resultDir + main, rendered);
+
+        const logger = Logger.get;
+        logger.prefix = false;
+        logger.debug("jest-stare --testResultsProcessor: wrote output report to " + resultDir + main);
 
         const mainCss = "jest-stare.css";
         const css = Processor.obtainWebFile(mainCss);
