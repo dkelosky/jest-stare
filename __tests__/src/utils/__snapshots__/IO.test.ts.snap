@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IO tests should pretend to write to a file and reject promise for IO errors 1`] = `"Pretent IO message"`;

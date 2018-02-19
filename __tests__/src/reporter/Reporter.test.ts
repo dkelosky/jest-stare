@@ -1,5 +1,5 @@
-import { Reporter } from "../../src/reporter/Reporter";
-import { IO } from "../../src/utils/IO";
+import { Reporter } from "../../../src/reporter/Reporter";
+import { IO } from "../../../src/utils/IO";
 
 describe("Reporter tests", () => {
 
@@ -8,7 +8,7 @@ describe("Reporter tests", () => {
     });
 
     it("should do something", async () => {
-        const failingTestReport = IO.readFileSync("./__tests__/reporter/simpleFailingTests.json");
+        const failingTestReport = IO.readFileSync("./__tests__/data/simpleFailingTests.json");
         expect(failingTestReport).toMatchSnapshot();
     });
 });

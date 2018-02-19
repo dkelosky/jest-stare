@@ -124,4 +124,8 @@ export class Logger {
     get prefix(): boolean {
         return this.mPrefix;
     }
+
+    set prefix(prefix) {
+        this.mPrefix = prefix;
+    }
 }
