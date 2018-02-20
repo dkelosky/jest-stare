@@ -34,7 +34,7 @@
     "prebuild": "npm run clean && npm run lint && echo Using TypeScript && tsc --version",
     "build": "tsc --pretty && npx browserify lib/render/view.js -o lib/render/view.js",
     "make": "tsc --pretty && npx browserify lib/render/view.js -o lib/render/view.js",
-    "test": "jest",
+    "test": "npx jest",
     "example": "npm run make && jest",
     "coverage": "jest --coverage",
     "watch": "npm run build -- --watch",
@@ -66,7 +66,7 @@
     "ts-node": "^3.2.0",
     "tslint": "^5.0.0",
     "tslint-config-prettier": "^1.1.0",
-    "typescript": "^2.3.0"
+    "typescript": "^2.6.0"
   },
   "engines": {
     "node": ">=6.0.0"

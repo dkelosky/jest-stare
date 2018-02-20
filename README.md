@@ -44,9 +44,7 @@ If you'd like to submit a PR, here are some basic steps to test out code changes
 ### First time setup
 1. `git clone` this repo
 2. `npm install`
-5. `npm install typescript jest browserify -g`
 
 ### Try example
-1. `tsc`
-2. `npm run build`
-3. `jest --testResultsProcessor=./` OR `jest Reporter.test.ts --testResultsProcessor=./`
+1. `npm run build`
+2. `npx jest`
