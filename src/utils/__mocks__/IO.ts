@@ -39,7 +39,7 @@ export class IO {
      * @memberof IO
      */
     public static readFileSync(path: string) {
-        throw new Error("Mock read not implemented yet");
+        return "{}";
     }
 
     /**

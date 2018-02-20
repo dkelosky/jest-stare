@@ -7,8 +7,7 @@ import {inspect} from "util";
 describe("Processor tests", () => {
 
     it("should pretend to create a report form an input object", async () => {
-        // console.log("XXX" inspect(simplePassingTests));
-        // const processed = Processor.resultsProcessor(JSON.parse(simplePassingTests));
-        expect(true).toBe(true);
+        const processed = Processor.resultsProcessor(simplePassingTests);
+        expect(processed).toMatchSnapshot();
     });
 });
