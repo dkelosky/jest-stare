@@ -6,6 +6,7 @@ import * as mustache from "mustache";
 import * as path from "path";
 import { IJestStareConfig, PACKAGE_JSON_KEY } from "./doc/IJestStareConfig";
 import { Logger } from "../utils/Logger";
+const pkgUp = require("pkg-up");
 
 /**
  * Class to post process jest output and summarize information in an html file
@@ -118,12 +119,15 @@ export class Processor {
 
     /**
      * Read from the user's package.json, if present
+     * @private
+     * @static
+     * @returns {IJestStareConfig} - config object
+     * @memberof Processor
      */
     private static readPackageJson(): IJestStareConfig {
-        const pkgUp = require("pkg-up");
         const packageJson = pkgUp.sync();
         if (packageJson !== null) {
-            const packageJsonContents = require("fs").readFileSync(packageJson).toString();
+            const packageJsonContents = IO.readFileSync(packageJson).toString();
             const packageJsonObject = JSON.parse(packageJsonContents);
             if (packageJsonObject[PACKAGE_JSON_KEY] == null) {
                 // package json found, but no jest stare config
