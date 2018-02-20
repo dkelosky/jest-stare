@@ -1,11 +1,33 @@
 import { format, isNullOrUndefined } from "util";
 import * as moment from "moment";
 
+/**
+ * Class to contain writing log messages
+ * @export
+ * @class Logger
+ */
 export class Logger {
 
+    /**
+     * Supported levels of logging
+     * @static
+     * @memberof Logger
+     */
     public static readonly LEVELS = ["trace", "debug", "info", "warn", "error", "fatal"];
+
+    /**
+     * Default log level
+     * @static
+     * @memberof Logger
+     */
     public static readonly LEVEL_DEFAULT = "debug";
 
+    /**
+     * Obtain instance of logger
+     * @readonly
+     * @static
+     * @memberof Logger
+     */
     public static get get() {
         if (isNullOrUndefined(this.mLog)) {
             this.mLog = new Logger();
@@ -13,22 +35,74 @@ export class Logger {
         return this.mLog;
     }
 
+    /**
+     * Determine if level is valid
+     * @static
+     * @param {string} level - level to validate
+     * @returns - true if level exists, false otherwise
+     * @memberof Logger
+     */
     public static isValidLevel(level: string) {
         return Logger.LEVELS.indexOf(level) < 0 ? false : true;
     }
 
+    /**
+     * Validate levels of logging
+     * @static
+     * @param {string} level - level to validate
+     * @memberof Logger
+     */
     public static validateLevel(level: string) {
         if (!Logger.isValidLevel(level)) {
             throw new Error("invalid level");
         }
     }
 
+    /**
+     * Static instance of logger object
+     * @private
+     * @static
+     * @type {Logger}
+     * @memberof Logger
+     */
     private static mLog: Logger;
+
+    /**
+     * Whether or not to prefix log messages
+     * @private
+     * @type {boolean}
+     * @memberof Logger
+     */
     private mPrefix: boolean;
+
+    /**
+     * Whether or not to color log messages
+     * @private
+     * @type {boolean}
+     * @memberof Logger
+     */
     private mColor: boolean;
+
+    /**
+     * Whether or not logging should be suppressed
+     * @private
+     * @type {boolean}
+     * @memberof Logger
+     */
     private mIsOn: boolean;
+
+    /**
+     * Current set log level
+     * @private
+     * @type {string}
+     * @memberof Logger
+     */
     private mLevel: string;
 
+    /**
+     * Creates an instance of Logger.
+     * @memberof Logger
+     */
     constructor() {
         this.mLevel = Logger.LEVEL_DEFAULT;
         this.mPrefix = true;
