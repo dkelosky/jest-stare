@@ -36,6 +36,8 @@ Simple examples below.
 * increase local tests 
 * increase coverage
 * minify / bundle distribution
+* capture invocation options & record / store raw test json data
+* generate report from raw test json data
 * add overall test time
 
 ## Development Building / Testing
