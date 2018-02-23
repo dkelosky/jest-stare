@@ -469,28 +469,29 @@ export class Render {
             // does the failure message contain a snapshot difference?
             if (failMessage.search(TestDifference.DIFF_INDICATOR) >= 0) {
                 codeSpan.innerHTML = TestDifference.generate(failMessage);
-                console.log("generated html:\n" + codeSpan.textContent);
+                console.log("generated html:\n" + codeSpan.innerHTML);
                 const spanDiv = document.createElement("div") as HTMLDivElement;
                 spanDiv.appendChild(codeSpan);
                 code.appendChild(spanDiv);
             }
-
-
-            // failMessageSplit.forEach((entry, index) => {
-            //     const codeSpan = document.createElement("span") as HTMLSpanElement;
-            //     if (entry[0] === "+") {
-            //         codeSpan.setAttribute("style", "color:" + Render.PASS);
-            //         codeSpan.textContent = entry;
-            //     } else if (entry[0] === "-") {
-            //         codeSpan.setAttribute("style", "color:" + Render.FAIL);
-            //         codeSpan.textContent = entry;
-            //     } else {
-            //         codeSpan.textContent = entry;
-            //     }
-            //     const spanDiv = document.createElement("div") as HTMLDivElement;
-            //     spanDiv.appendChild(codeSpan);
-            //     code.appendChild(spanDiv);
-            // });
+            else {
+            // non-diff failure message 
+            failMessageSplit.forEach((entry, index) => {
+                const codeSpan = document.createElement("span") as HTMLSpanElement;
+                if (entry[0] === "+") {
+                    codeSpan.setAttribute("style", "color:" + Render.PASS);
+                    codeSpan.textContent = entry;
+                } else if (entry[0] === "-") {
+                    codeSpan.setAttribute("style", "color:" + Render.FAIL);
+                    codeSpan.textContent = entry;
+                } else {
+                    codeSpan.textContent = entry;
+                }
+                const spanDiv = document.createElement("div") as HTMLDivElement;
+                spanDiv.appendChild(codeSpan);
+                code.appendChild(spanDiv);
+            });
+            }
 
             const failMessageJoin = failMessageSplit.join("\n");
         }
