@@ -1,6 +1,6 @@
 {
   "name": "jest-stare",
-  "version": "0.1.10-0",
+  "version": "0.1.11-0",
   "description": "jest html reporter (results processor)",
   "license": "MIT",
   "repository": "https://github.com/dkelosky/jest-stare",
@@ -43,7 +43,9 @@
   "dependencies": {
     "ansi-parser": "^3.2.8",
     "bootstrap": "^4.0.0-beta.2",
+    "chalk": "^2.3.1",
     "chart.js": "^2.7.1",
+    "diff2html": "^2.3.3",
     "holderjs": "^2.9.4",
     "jest": "^22.0.5",
     "jquery": "^3.2.1",
