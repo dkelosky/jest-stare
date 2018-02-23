@@ -1,8 +1,7 @@
-
+import * as diff2html from "diff2html";
 /**
  * Generate a side by side comparison of Jest snapshot differences
  */
-
 export class TestDifference {
 
     /**
@@ -22,10 +21,9 @@ export class TestDifference {
     }
 
     public static generate(jestFailureMessage: any): string {
-        const Diff2Html = require("diff2html").Diff2Html;
         const jestDiff = TestDifference.isolateDiff(jestFailureMessage);
-
-        return Diff2Html.getPrettyHtml(
+        
+        return diff2html.Diff2Html.getPrettyHtml(
             jestDiff,
             {
                 inputFormat: "diff",
