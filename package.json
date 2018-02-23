@@ -23,7 +23,7 @@
   ],
   "files": [
     "lib",
-    "src/web"
+    "web"
   ],
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
