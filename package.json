@@ -54,6 +54,7 @@
     "pkg-up": "^2.0.0"
   },
   "devDependencies": {
+    "@types/chalk": "^2.2.0",
     "@types/chart.js": "^2.7.7",
     "@types/jest": "^22.0.5",
     "@types/jquery": "^3.2.16",

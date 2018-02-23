@@ -6,6 +6,7 @@ import * as mustache from "mustache";
 import * as path from "path";
 import { IJestStareConfig, PACKAGE_JSON_KEY } from "./doc/IJestStareConfig";
 import { Logger } from "../utils/Logger";
+import * as chalk from "chalk";
 const pkgUp = require("pkg-up");
 
 /**
@@ -73,10 +74,9 @@ export class Processor {
 
         const logger = Logger.get;
         logger.prefix = false;
-        const chalk = require("chalk");
-        const logo = chalk.green("**  ") + chalk.green("jest") + chalk.yellow("-") + chalk.red("stare");
+        const logo = chalk.default.green("**  ") + chalk.default.green("jest") + chalk.default.yellow("-") + chalk.default.red("stare");
         logger.debug(logo + " --testResultsProcessor: wrote output report to " + resultDir + main +
-            chalk.green("\t**"));
+            chalk.default.green("\t**"));
 
         const mainCss = "jest-stare.css";
         const css = Processor.obtainWebFile(mainCss);
