@@ -6,6 +6,7 @@ import { ITestResults } from "../processor/doc/ITestResults";
 import { IInnerTestResults } from "../processor/doc/IInnerTestResults";
 import * as AnsiParser from "ansi-parser";
 import { isNullOrUndefined } from "util";
+import { TestDifference } from "../elements/TestDifference";
 
 /**
  * Adjust DOM to display JSON data
@@ -427,9 +428,9 @@ export class Render {
 
         thirdDiv.appendChild(strong);
 
-            //     <small class="d-block text-right mt-3">
-    //         <a href="#">All suggestions</a>
-    //     </small>
+        //     <small class="d-block text-right mt-3">
+        //         <a href="#">All suggestions</a>
+        //     </small>
         const small = document.createElement("small") as HTMLElement;
         small.classList.add("d-block", "text-right", "mt-3");
         const conversionValu = 1000;
@@ -456,24 +457,40 @@ export class Render {
             const code = document.createElement("code") as HTMLElement;
             pre.appendChild(code);
 
+
             const failMessage = AnsiParser.removeAnsi(innerTestResult.failureMessages[0]);
             const failMessageSplit = failMessage.split("\n");
 
-            failMessageSplit.forEach((entry, index) => {
-                const codeSpan = document.createElement("span") as HTMLSpanElement;
-                if (entry[0] === "+") {
-                    codeSpan.setAttribute("style", "color:" + Render.PASS);
-                    codeSpan.textContent = entry;
-                } else if (entry[0] === "-") {
-                    codeSpan.setAttribute("style", "color:" + Render.FAIL);
-                    codeSpan.textContent = entry;
-                } else {
-                    codeSpan.textContent = entry;
-                }
+            const codeSpan = document.createElement("span") as HTMLSpanElement;
+
+            console.log("Raw message: \n" + failMessage);
+            console.log("\nIsolated:\n\n" + TestDifference.isolateDiff(failMessage));
+
+            // does the failure message contain a snapshot difference?
+            if (failMessage.search(TestDifference.DIFF_INDICATOR) >= 0) {
+                codeSpan.innerHTML = TestDifference.generate(failMessage);
+                console.log("generated html:\n" + codeSpan.textContent);
                 const spanDiv = document.createElement("div") as HTMLDivElement;
                 spanDiv.appendChild(codeSpan);
                 code.appendChild(spanDiv);
-            });
+            }
+
+
+            // failMessageSplit.forEach((entry, index) => {
+            //     const codeSpan = document.createElement("span") as HTMLSpanElement;
+            //     if (entry[0] === "+") {
+            //         codeSpan.setAttribute("style", "color:" + Render.PASS);
+            //         codeSpan.textContent = entry;
+            //     } else if (entry[0] === "-") {
+            //         codeSpan.setAttribute("style", "color:" + Render.FAIL);
+            //         codeSpan.textContent = entry;
+            //     } else {
+            //         codeSpan.textContent = entry;
+            //     }
+            //     const spanDiv = document.createElement("div") as HTMLDivElement;
+            //     spanDiv.appendChild(codeSpan);
+            //     code.appendChild(spanDiv);
+            // });
 
             const failMessageJoin = failMessageSplit.join("\n");
         }
