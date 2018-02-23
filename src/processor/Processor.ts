@@ -75,7 +75,7 @@ export class Processor {
         logger.prefix = false;
         const chalk = require("chalk");
         const logo = chalk.green("**  ") + chalk.green("jest") + chalk.yellow("-") + chalk.red("stare");
-        logger.debug(logo + " --testResultsProcessor: wrote output report to " + resultDir + main + 
+        logger.debug(logo + " --testResultsProcessor: wrote output report to " + resultDir + main +
             chalk.green("\t**"));
 
         const mainCss = "jest-stare.css";

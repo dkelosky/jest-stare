@@ -461,36 +461,32 @@ export class Render {
             const failMessage = AnsiParser.removeAnsi(innerTestResult.failureMessages[0]);
             const failMessageSplit = failMessage.split("\n");
 
-            const codeSpan = document.createElement("span") as HTMLSpanElement;
-
-            console.log("Raw message: \n" + failMessage);
-            console.log("\nIsolated:\n\n" + TestDifference.isolateDiff(failMessage));
 
             // does the failure message contain a snapshot difference?
             if (failMessage.search(TestDifference.DIFF_INDICATOR) >= 0) {
+                const codeSpan = document.createElement("span") as HTMLSpanElement;
                 codeSpan.innerHTML = TestDifference.generate(failMessage);
-                console.log("generated html:\n" + codeSpan.innerHTML);
                 const spanDiv = document.createElement("div") as HTMLDivElement;
                 spanDiv.appendChild(codeSpan);
                 code.appendChild(spanDiv);
             }
             else {
-            // non-diff failure message 
-            failMessageSplit.forEach((entry, index) => {
-                const codeSpan = document.createElement("span") as HTMLSpanElement;
-                if (entry[0] === "+") {
-                    codeSpan.setAttribute("style", "color:" + Render.PASS);
-                    codeSpan.textContent = entry;
-                } else if (entry[0] === "-") {
-                    codeSpan.setAttribute("style", "color:" + Render.FAIL);
-                    codeSpan.textContent = entry;
-                } else {
-                    codeSpan.textContent = entry;
-                }
-                const spanDiv = document.createElement("div") as HTMLDivElement;
-                spanDiv.appendChild(codeSpan);
-                code.appendChild(spanDiv);
-            });
+                // non-diff failure message
+                failMessageSplit.forEach((entry, index) => {
+                    const codeSpan = document.createElement("span") as HTMLSpanElement;
+                    if (entry[0] === "+") {
+                        codeSpan.setAttribute("style", "color:" + Render.PASS);
+                        codeSpan.textContent = entry;
+                    } else if (entry[0] === "-") {
+                        codeSpan.setAttribute("style", "color:" + Render.FAIL);
+                        codeSpan.textContent = entry;
+                    } else {
+                        codeSpan.textContent = entry;
+                    }
+                    const spanDiv = document.createElement("div") as HTMLDivElement;
+                    spanDiv.appendChild(codeSpan);
+                    code.appendChild(spanDiv);
+                });
             }
 
             const failMessageJoin = failMessageSplit.join("\n");

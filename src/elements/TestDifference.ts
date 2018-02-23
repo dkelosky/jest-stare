@@ -14,7 +14,7 @@ export class TestDifference {
     public static DIFF_END_INDICATOR: RegExp = /(at .*? \(.*?:[0-9]+:[0-9]+\)\s)/g;
 
     /**
-     * Test whether a failure message contains a diff that we can render 
+     * Test whether a failure message contains a diff that we can render
      * @param jestFailureMessage the failureMessage provided in the jest result object
      */
     public static containsDiff(jestFailureMessage: string): boolean {
