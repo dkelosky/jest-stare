@@ -43,7 +43,9 @@
   "dependencies": {
     "ansi-parser": "^3.2.8",
     "bootstrap": "^4.0.0-beta.2",
+    "chalk": "^2.3.1",
     "chart.js": "^2.7.1",
+    "diff2html": "^2.3.3",
     "holderjs": "^2.9.4",
     "jest": "^22.0.5",
     "jquery": "^3.2.1",
