@@ -107,7 +107,7 @@ export class Processor {
      * @memberof Processor
      */
     private static obtainWebFile(name: string): string {
-        return IO.readFileSync(path.resolve(__dirname + "/../../src/web/" + name));
+        return IO.readFileSync(path.resolve(__dirname + "/../../web/" + name));
     }
 
     /**
