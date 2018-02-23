@@ -1,6 +1,10 @@
 import * as diff2html from "diff2html";
+import * as $ from "jquery";
+
 /**
  * Generate a side by side comparison of Jest snapshot differences
+ * @export
+ * @class TestDifference
  */
 export class TestDifference {
 
@@ -20,10 +24,17 @@ export class TestDifference {
         return jestFailureMessage.search(TestDifference.DIFF_INDICATOR) >= 0;
     }
 
-    public static generate(jestFailureMessage: any): string {
+    /**
+     * Generate diff html from jest diff message
+     * @static
+     * @param {string} jestFailureMessage - jest failure message
+     * @returns {HTMLElement} - diff2html built html
+     * @memberof TestDifference
+     */
+    public static generate(jestFailureMessage: string): HTMLElement {
         const jestDiff = TestDifference.isolateDiff(jestFailureMessage);
-        
-        return diff2html.Diff2Html.getPrettyHtml(
+
+        const diffHtml = diff2html.Diff2Html.getPrettyHtml(
             jestDiff,
             {
                 inputFormat: "diff",
@@ -32,6 +43,8 @@ export class TestDifference {
                 matching: "lines"
             }
         );
+
+        return $(diffHtml).get(0); // jquery iz kewl
     }
 
     public static isolateDiff(jestFailureMessage: string): string {

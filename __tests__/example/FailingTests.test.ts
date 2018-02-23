@@ -7,6 +7,10 @@ describe("Failing Tests", () => {
             height: 2,
             color: "brown and white"
         };
-        expect(JSON.stringify(jsonObject,null, 2)).toMatchSnapshot();
+        expect(JSON.stringify(jsonObject, null, 2)).toMatchSnapshot();
+    });
+
+    it("should fail without a snapshot difference", () => {
+        expect(true).toBe(false);
     });
 });
