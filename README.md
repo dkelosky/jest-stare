@@ -1,7 +1,14 @@
 # Jest HTML Reporter (Results Processor) [![Build Status](https://travis-ci.org/dkelosky/jest-stare.svg?branch=master)](https://travis-ci.org/dkelosky/jest-stare)
-Jest HTML reporter for people that hate plain-text.  Strictly speaking, this is a
-"results processor" only.  That is, jest-stare takes the summary tests results and parses 
-them into an HTML file for readability. 
+This is a Jest HTML reporter (technically a "results processor") based primarily on:
+* [jQuery](https://jquery.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Holder.js](http://holderjs.com/)
+* [Chart.js](http://www.chartjs.org/)
+* [diff2html](https://diff2html.xyz/)
+
+See [package.json](/package.json) dependencies for a full list of dependencies that make up `jest-stare`.
+
+jest-stare takes the summary tests results and parses them into an HTML file for improved readability and filtering. 
 
 ## Usage
 `jest --testResultsProcessor=jest-stare`
@@ -33,8 +40,8 @@ Simple examples below.
 ##  To Do
 * link coverage if used or custom coverage reporter
 * note snapshots updated, added, etc
-* increase local tests 
-* increase coverage
+* increase coverage of this project
+* refactor render class
 * minify / bundle distribution
 * capture invocation options & record / store raw test json data
 * generate report from raw test json data

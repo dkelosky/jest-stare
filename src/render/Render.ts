@@ -6,6 +6,7 @@ import { ITestResults } from "../processor/doc/ITestResults";
 import { IInnerTestResults } from "../processor/doc/IInnerTestResults";
 import * as AnsiParser from "ansi-parser";
 import { isNullOrUndefined } from "util";
+import { TestDifference } from "../elements/TestDifference";
 
 /**
  * Adjust DOM to display JSON data
@@ -425,11 +426,13 @@ export class Render {
         strong.classList.add("text-gray-dark");
         strong.textContent = innerTestResult.title;
 
+        // NOTE(Kelosky): technically, this may not be unique, but it's unlikely to be the case
+        const titleId = innerTestResult.title.replace(/\s+/g, "-").toLowerCase();
         thirdDiv.appendChild(strong);
 
-            //     <small class="d-block text-right mt-3">
-    //         <a href="#">All suggestions</a>
-    //     </small>
+        //     <small class="d-block text-right mt-3">
+        //         <a href="#">All suggestions</a>
+        //     </small>
         const small = document.createElement("small") as HTMLElement;
         small.classList.add("d-block", "text-right", "mt-3");
         const conversionValu = 1000;
@@ -444,21 +447,62 @@ export class Render {
         // thirdDiv.appendChild(anchor);
 
         const span = document.createElement("span") as HTMLSpanElement;
-        span.classList.add("d-block");
+        span.classList.add("d-block", "mb-2");
         span.textContent = innerTestResult.status;
 
         secondDiv.appendChild(span);
 
         if (failed) {
+
+            const failMessage: string = AnsiParser.removeAnsi(innerTestResult.failureMessages[0]);
+            const failMessageSplit = failMessage.split("\n");
+
+            // does the failure message contain a snapshot difference?
+            if (failMessage.search(TestDifference.DIFF_INDICATOR) >= 0) {
+                // const codeSpan = document.createElement("span") as HTMLSpanElement;
+                const diffHtml = TestDifference.generate(failMessage);
+                // const spanDiv = document.createElement("div") as HTMLDivElement;
+                // spanDiv.appendChild(codeSpan);
+                secondDiv.appendChild(diffHtml);
+            }
+            // <button class="btn btn-primary" type = "button"
+            // data - toggle="collapse" data - target="#collapseExample" aria - expanded="false" aria - controls="collapseExample" >
+            //     Button with data - target
+            //     < /button>
+
+            // <div class="d-flex justify-content-between align-items-center w-100" >
+            //     <strong class="text-gray-dark" > Full Name < /strong>
+            //         < a href = "#" > Follow < /a>
+            //             < /div>
+
+
+            const collapseDiv = document.createElement("div") as HTMLDivElement;
+            collapseDiv.classList.add("d-flex", "justify-content-between", "align-items-center", "w-100");
+            const worthlessDiv = document.createElement("div") as HTMLDivElement;
+            secondDiv.appendChild(collapseDiv);
+            collapseDiv.appendChild(worthlessDiv);
+
+            const button = document.createElement("button") as HTMLButtonElement;
+            button.classList.add("btn", "btn-light", "btn-sm");
+            button.type = "button";
+            button.setAttribute("data-toggle", "collapse");
+            button.setAttribute("data-target", "#" + titleId);
+            button.setAttribute("aria-expanded", "false");
+            button.setAttribute("aria-controls", titleId);
+            button.textContent = "raw";
+            collapseDiv.appendChild(button);
+
             const pre = document.createElement("pre") as HTMLPreElement;
             secondDiv.appendChild(pre);
+            pre.classList.add("collapse");
+            pre.id = titleId;
 
             const code = document.createElement("code") as HTMLElement;
             pre.appendChild(code);
 
-            const failMessage = AnsiParser.removeAnsi(innerTestResult.failureMessages[0]);
-            const failMessageSplit = failMessage.split("\n");
 
+            // else {
+            // non-diff failure message
             failMessageSplit.forEach((entry, index) => {
                 const codeSpan = document.createElement("span") as HTMLSpanElement;
                 if (entry[0] === "+") {
@@ -474,6 +518,7 @@ export class Render {
                 spanDiv.appendChild(codeSpan);
                 code.appendChild(spanDiv);
             });
+            // }
 
             const failMessageJoin = failMessageSplit.join("\n");
         }

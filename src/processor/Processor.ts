@@ -6,6 +6,7 @@ import * as mustache from "mustache";
 import * as path from "path";
 import { IJestStareConfig, PACKAGE_JSON_KEY } from "./doc/IJestStareConfig";
 import { Logger } from "../utils/Logger";
+import * as chalk from "chalk";
 const pkgUp = require("pkg-up");
 
 /**
@@ -73,7 +74,9 @@ export class Processor {
 
         const logger = Logger.get;
         logger.prefix = false;
-        logger.debug("jest-stare --testResultsProcessor: wrote output report to " + resultDir + main);
+        const logo = chalk.default.green("**  ") + chalk.default.green("jest") + chalk.default.yellow("-") + chalk.default.red("stare");
+        logger.debug(logo + " --testResultsProcessor: wrote output report to " + resultDir + main +
+            chalk.default.green("\t**"));
 
         const mainCss = "jest-stare.css";
         const css = Processor.obtainWebFile(mainCss);
@@ -83,10 +86,22 @@ export class Processor {
         const js = Processor.obtainJsFile(mainJs);
         IO.writeFile(jsDir + mainJs, js);
 
-        // copy dependencies into the result folder, too
-        const bootstrapPath = require.resolve("bootstrap/dist/css/bootstrap.min.css");
-        const bootstrapContent = IO.readFileSync(bootstrapPath);
-        IO.writeFile(cssDir + "bootstrap.min.css", bootstrapContent);
+        // TODO(Kelosky): encapsulate this loading / copying in some helper routine
+        const bootstrapCssPath = require.resolve("bootstrap/dist/css/bootstrap.min.css");
+        const bootstrapCssContent = IO.readFileSync(bootstrapCssPath);
+        IO.writeFile(cssDir + "bootstrap.min.css", bootstrapCssContent);
+
+        const bootstrapJsPath = require.resolve("bootstrap/dist/js/bootstrap.min.js");
+        const bootstrapJsContent = IO.readFileSync(bootstrapJsPath);
+        IO.writeFile(jsDir + "bootstrap.min.js", bootstrapJsContent);
+
+        const diff2htmlCssPath = require.resolve("diff2html/dist/diff2html.min.css");
+        const diff2htmlCssContent = IO.readFileSync(diff2htmlCssPath);
+        IO.writeFile(cssDir + "diff2html.min.css", diff2htmlCssContent);
+
+        const diff2htmlJsPath = require.resolve("diff2html/dist/diff2html.min.js");
+        const diff2htmlJsContent = IO.readFileSync(diff2htmlJsPath);
+        IO.writeFile(jsDir + "diff2html.min.js", diff2htmlJsContent);
 
         const jqueryPath = require.resolve("jquery/dist/jquery.min.js");
         const jqueryContent = IO.readFileSync(jqueryPath);
@@ -104,7 +119,7 @@ export class Processor {
      * @memberof Processor
      */
     private static obtainWebFile(name: string): string {
-        return IO.readFileSync(path.resolve(__dirname + "/../../src/web/" + name));
+        return IO.readFileSync(path.resolve(__dirname + "/../../web/" + name));
     }
 
     /**
