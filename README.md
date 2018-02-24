@@ -71,18 +71,19 @@ processor(simplePassingTests, {log: false, resultDir: __dirname + "/output"}); /
 You can invoke jest-stare as a CLI after installing globally via `npm install -g jest-stare`.  
 Or if jest-stare is a local dependency you can invoke the CLI via `npx jest-stare...`
 
-Assuming you have a relative file to your current location in a folder "data" and 
+Assuming that you have a relative file to your current location in a folder "data" and 
 simplePassingTests.json contains saved JSON output from a jest test invocation, you can
-run the CLI via:
+run the CLI providing a single positional input jest JSON file:
 ```
 jest-stare data/simplePassingTests.json
 ```
 
-Optionally control saved location as a second positional:
+Optionally you can control where the report will be stored using a a second positional:
 ```
 jest-stare data/simplePassingTests.json c:/users/myId/desktop/output
 ```
-Response:
+
+The command reponse takes a form of:
 ```
 jest-stare was called with programmatic config
 **  jest-stare --testResultsProcessor: wrote output report to c:/users/myId/desktop/output/index.html  **
