@@ -35,7 +35,7 @@ Simple examples below.
 ![alt text](images/sample.png "Sample Report")
 
 #### Sample Snapshot Diff
-![alt text](images/snapshotDiff.png "Snapshot diff")
+![alt text](images/snapshotSideBySideDiff.png "Snapshot diff")
 
 ##  To Do
 * link coverage if used or custom coverage reporter

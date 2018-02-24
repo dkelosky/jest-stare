@@ -2,8 +2,8 @@ describe("Failing Tests", () => {
 
     // it("should fail with a snapshot difference", () => {
     //     const jsonObject: any = {
-    //         name: "pointy",
-    //         breed: "corgi",
+    //         name: "test",
+    //         breed: "test",
     //         height: 2,
     //         color: "brown and white"
     //     };

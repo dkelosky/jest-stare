@@ -457,6 +457,8 @@ export class Render {
             const failMessage: string = AnsiParser.removeAnsi(innerTestResult.failureMessages[0]);
             const failMessageSplit = failMessage.split("\n");
 
+            let show = true;
+
             // does the failure message contain a snapshot difference?
             if (failMessage.search(TestDifference.DIFF_INDICATOR) >= 0) {
                 // const codeSpan = document.createElement("span") as HTMLSpanElement;
@@ -464,6 +466,7 @@ export class Render {
                 // const spanDiv = document.createElement("div") as HTMLDivElement;
                 // spanDiv.appendChild(codeSpan);
                 secondDiv.appendChild(diffHtml);
+                show = false;
             }
             // <button class="btn btn-primary" type = "button"
             // data - toggle="collapse" data - target="#collapseExample" aria - expanded="false" aria - controls="collapseExample" >
@@ -495,6 +498,9 @@ export class Render {
             const pre = document.createElement("pre") as HTMLPreElement;
             secondDiv.appendChild(pre);
             pre.classList.add("collapse");
+            if (show) {
+                pre.classList.add("show");
+            }
             pre.id = titleId;
 
             const code = document.createElement("code") as HTMLElement;
