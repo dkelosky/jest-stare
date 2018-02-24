@@ -1,5 +1,5 @@
-import { IResultsProcessorInput } from "./doc/IResultsProcessorInput";
-import { inspect } from "util";
+import { Constants } from "./Constants";
+import { IResultsProcessorInput } from "./doc/jest/IResultsProcessorInput";
 import { ISubstitute } from "../reporter/doc/ISubstitute";
 import { IO } from "../utils/IO";
 import * as mustache from "mustache";
@@ -7,6 +7,9 @@ import * as path from "path";
 import { IJestStareConfig, PACKAGE_JSON_KEY } from "./doc/IJestStareConfig";
 import { Logger } from "../utils/Logger";
 import * as chalk from "chalk";
+import { IThirdPartyDependency } from "./doc/IThirdPartyDependency";
+import { Dependencies } from "./Dependencies";
+import * as $ from "jquery";
 const pkgUp = require("pkg-up");
 
 /**
@@ -45,59 +48,46 @@ export class Processor {
      * @memberof Processor
      */
     private static generateReport(resultDir: string, substitute: ISubstitute) {
+
+        // create base html file
         resultDir = resultDir + "/"; // append an extra slash in case the user didn't add one
-        const cssDir = resultDir + "css/";
-        const jsDir = resultDir + "js/";
-
-        const main = "index.html";
-
         IO.mkdirsSync(resultDir);
-        IO.mkdirsSync(jsDir);
+        IO.writeFile(resultDir + Constants.MAIN_HTML, mustache.render(Processor.obtainWebFile(Constants.TEMPLATE_HTML), substitute));
+
+        // create raw json
+        IO.writeFile(resultDir + Constants.RESULTS_RAW, substitute.rawResults);
+
+        // create our css
+        const cssDir = resultDir + Constants.CSS_DIR;
         IO.mkdirsSync(cssDir);
+        IO.writeFile(cssDir + Constants.JEST_STARE_CSS, Processor.obtainWebFile(Constants.JEST_STARE_CSS));
 
-        const html = Processor.obtainWebFile("template.html");
-        const rendered = mustache.render(html, substitute);
+        // create our js
+        const jsDir = resultDir + Constants.JS_DIR;
+        IO.mkdirsSync(jsDir);
+        IO.writeFile(jsDir + Constants.JEST_STARE_JS, Processor.obtainJsRenderFile(Constants.JEST_STARE_JS));
 
-        IO.writeFile(resultDir + main, rendered);
+        // add third party dependencies
+        Dependencies.THIRD_PARTY_DEPENDENCIES.forEach( (dependency) => {
+            dependency.targetDir = resultDir + dependency.targetDir;
+            Processor.addThirdParty(dependency);
+        });
 
-        const logger = Logger.get;
-        logger.prefix = false;
-        const logo = chalk.default.green("**  ") + chalk.default.green("jest") + chalk.default.yellow("-") + chalk.default.red("stare");
-        logger.debug(logo + " --testResultsProcessor: wrote output report to " + resultDir + main +
-            chalk.default.green("\t**"));
+        // log complete
+        Logger.get.prefix = false;
+        Logger.get.debug(Constants.LOGO + Constants.LOGO + resultDir + Constants.MAIN_HTML + chalk.default.green("\t**"));
+    }
 
-        const mainCss = "jest-stare.css";
-        const css = Processor.obtainWebFile(mainCss);
-        IO.writeFile(cssDir + mainCss, css);
-
-        const mainJs = "view.js";
-        const js = Processor.obtainJsFile(mainJs);
-        IO.writeFile(jsDir + mainJs, js);
-
-        // TODO(Kelosky): encapsulate this loading / copying in some helper routine
-        const bootstrapCssPath = require.resolve("bootstrap/dist/css/bootstrap.min.css");
-        const bootstrapCssContent = IO.readFileSync(bootstrapCssPath);
-        IO.writeFile(cssDir + "bootstrap.min.css", bootstrapCssContent);
-
-        const bootstrapJsPath = require.resolve("bootstrap/dist/js/bootstrap.min.js");
-        const bootstrapJsContent = IO.readFileSync(bootstrapJsPath);
-        IO.writeFile(jsDir + "bootstrap.min.js", bootstrapJsContent);
-
-        const diff2htmlCssPath = require.resolve("diff2html/dist/diff2html.min.css");
-        const diff2htmlCssContent = IO.readFileSync(diff2htmlCssPath);
-        IO.writeFile(cssDir + "diff2html.min.css", diff2htmlCssContent);
-
-        const diff2htmlJsPath = require.resolve("diff2html/dist/diff2html.min.js");
-        const diff2htmlJsContent = IO.readFileSync(diff2htmlJsPath);
-        IO.writeFile(jsDir + "diff2html.min.js", diff2htmlJsContent);
-
-        const jqueryPath = require.resolve("jquery/dist/jquery.min.js");
-        const jqueryContent = IO.readFileSync(jqueryPath);
-        IO.writeFile(jsDir + "jquery.min.js", jqueryContent);
-
-        const holderPath = require.resolve("holderjs/holder.js");
-        const holderContent = IO.readFileSync(holderPath);
-        IO.writeFile(jsDir + "holder.js", holderContent);
+    /**
+     * Add all third party dependencies
+     * @private
+     * @static
+     * @param {IThirdPartyDependency} dependency - a dependency to add
+     * @memberof Processor
+     */
+    private static addThirdParty(dependency: IThirdPartyDependency) {
+        const location = require.resolve(dependency.requireDir + dependency.file);
+        IO.writeFile(dependency.targetDir + dependency.file, IO.readFileSync(location));
     }
 
     /**
@@ -116,7 +106,7 @@ export class Processor {
      * @returns {string} - js file contents from js directory
      * @memberof Processor
      */
-    private static obtainJsFile(name: string): string {
+    private static obtainJsRenderFile(name: string): string {
         return IO.readFileSync(path.resolve(__dirname + "/../render/" + name));
     }
 

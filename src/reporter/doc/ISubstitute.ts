@@ -1,4 +1,4 @@
-import { IResultsProcessorInput } from "../../processor/doc/IResultsProcessorInput";
+import { IResultsProcessorInput } from "../../processor/doc/jest/IResultsProcessorInput";
 
 
 /**

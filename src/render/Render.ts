@@ -1,9 +1,9 @@
 import * as bootstrap from "bootstrap/dist/js/bootstrap.bundle.min.js";
 import * as $ from "jquery";
 import { Chart, ChartConfiguration } from "chart.js";
-import { IResultsProcessorInput } from "../processor/doc/IResultsProcessorInput";
-import { ITestResults } from "../processor/doc/ITestResults";
-import { IInnerTestResults } from "../processor/doc/IInnerTestResults";
+import { IResultsProcessorInput } from "../processor/doc/jest/IResultsProcessorInput";
+import { ITestResults } from "../processor/doc/jest/ITestResults";
+import { IInnerTestResults } from "../processor/doc/jest/IInnerTestResults";
 import * as AnsiParser from "ansi-parser";
 import { isNullOrUndefined } from "util";
 import { TestDifference } from "../elements/TestDifference";
