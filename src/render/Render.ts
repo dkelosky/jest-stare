@@ -108,19 +108,23 @@ export class Render {
         $("#test-results").replaceWith($(tableHtml));
 
         // listen for filtering requests
-        $("#lab-passoff-switch").change(() => {
-            if ($("#lab-passoff-switch").is(":checked")) {
-                $("." + Render.PASSED_TEST).show();
-            } else {
-                $("." + Render.PASSED_TEST).hide();
-            }
-        });
+        this.activateFilters($("#lab-passoff-switch") as JQuery<HTMLInputElement>, $("." + Render.PASSED_TEST) as JQuery<HTMLDivElement>);
+        this.activateFilters($("#lab-failoff-switch") as JQuery<HTMLInputElement>, $("." + Render.FAILED_TEST) as JQuery<HTMLDivElement>);
+    }
 
-        $("#lab-failoff-switch").change(() => {
-            if ($("#lab-failoff-switch").is(":checked")) {
-                $("." + Render.FAILED_TEST).show();
+    /**
+     * Activate checkbox listeners to filter on passed or failed tests
+     * @private
+     * @param {JQuery<HTMLInputElement>} checkBox - checkbox element
+     * @param {JQuery<HTMLDivElement>} divClass - class to toggle showing / hiding
+     * @memberof Render
+     */
+    private activateFilters(checkBox: JQuery<HTMLInputElement>, divClass: JQuery<HTMLDivElement>) {
+        checkBox.change(() => {
+            if (checkBox.is(":checked")) {
+                divClass.show();
             } else {
-                $("." + Render.FAILED_TEST).hide();
+                divClass.hide();
             }
         });
     }

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Failing Tests should fail with a snapshot difference 1`] = `
+"{
+  \\"name\\": \\"pointy\\",
+  \\"breed\\": \\"beagle\\",
+  \\"height\\": 2,
+  \\"color\\": \\"brown and yellow\\"
+}"
+`;
