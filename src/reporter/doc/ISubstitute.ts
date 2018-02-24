@@ -9,51 +9,16 @@ import { IResultsProcessorInput } from "../../processor/doc/IResultsProcessorInp
 export interface ISubstitute {
 
     /**
-     * total test suites passed
-     * @type {number}
-     * @memberof ISubstitute
-     */
-    testSuitesPassed?: number;
-
-    /**
-     * total tests suites ran
-     * @type {number}
-     * @memberof ISubstitute
-     */
-    testSuitesTotal?: number;
-
-    /**
-     * total tests passed
-     * @type {number}
-     * @memberof ISubstitute
-     */
-    testsPassed?: number;
-
-    /**
-     * total tests ran
-     * @type {number}
-     * @memberof ISubstitute
-     */
-    testsTotal?: number;
-
-    /**
-     * total snapshots passed
-     * @type {number}
-     * @memberof ISubstitute
-     */
-    snapshotsPassed?: number;
-
-    /**
-     * total snapshot tests ran
-     * @type {number}
-     * @memberof ISubstitute
-     */
-    snapshotsTotal?: number;
-
-    /**
      * Full test content
+     * @type {IResultsProcessorInput}
+     * @memberof ISubstitute
+     */
+    results?: IResultsProcessorInput;
+
+    /**
+     * This probably isn't needed, but this is what is serialized
      * @type {string}
      * @memberof ISubstitute
      */
-    tests?: string;
+    rawResults?: string;
 }

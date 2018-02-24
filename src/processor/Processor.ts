@@ -27,21 +27,9 @@ export class Processor {
         const substitute: ISubstitute = {};
 
         const config = Processor.readPackageJson();
-        // TODO()
-        // test suites
-        substitute.testSuitesPassed = results.numPassedTestSuites;
-        substitute.testSuitesTotal = results.numTotalTestSuites;
 
-        // tests
-        substitute.testsPassed = results.numPassedTests;
-        substitute.testsTotal = results.numTotalTests;
-
-        // snapshots
-        substitute.snapshotsPassed = results.snapshot.matched;
-        substitute.snapshotsTotal = results.snapshot.total;
-
-        // full report
-        substitute.tests = JSON.stringify(results);
+        substitute.results = results;
+        substitute.rawResults = JSON.stringify(results);
 
         const resultDirectory = config.resultDir == null ? "./jest-stare" : config.resultDir;
         Processor.generateReport(resultDirectory, substitute);
