@@ -217,19 +217,30 @@ export class Render {
             for (const result of testResult.testResults) {
 
                 // mark overall status for a suite
-                if (result.status === Render.TEST_STATUS_FAIL && testStatusClass !== Render.BOTH_TEST) {
-                    testStatusClass = Render.FAILED_TEST; // overall
-                    // mark all lower test sections as containing a failed test for filtering
-                }
                 if (result.status === Render.TEST_STATUS_FAIL) {
+                    if (testStatusClass === Render.PASSED_TEST) {
+                        testStatusClass = Render.BOTH_TEST;
+                    } else {
+                        testStatusClass = Render.FAILED_TEST; // overall
+                    }
+                    // mark all lower test sections as containing a failed test for filtering
                     for (const ancestorTitle of result.ancestorTitles) {
-                        testSectionStatus.set(ancestorTitle, Render.FAILED_TEST);
+                        const checkStatus = testSectionStatus.get(ancestorTitle);
+                        if (!isNullOrUndefined(checkStatus)) {
+                            if (checkStatus === Render.FAILED_TEST) {
+                                testSectionStatus.set(ancestorTitle, Render.BOTH_TEST);
+                            }
+                        } else {
+                            testSectionStatus.set(ancestorTitle, Render.FAILED_TEST);
+                        }
                     }
                 }
                 // mark overall status for a suite
                 if (result.status === Render.TEST_STATUS_PASS) {
                     if (testStatusClass === Render.FAILED_TEST) {
                         testStatusClass = Render.BOTH_TEST;
+                    } else {
+                        testStatusClass = Render.PASSED_TEST;
                     }
 
                     // mark all lower test sections as containing a failed test for filtering
@@ -239,6 +250,8 @@ export class Render {
                             if (checkStatus === Render.FAILED_TEST) {
                                 testSectionStatus.set(ancestorTitle, Render.BOTH_TEST);
                             }
+                        } else {
+                            testSectionStatus.set(ancestorTitle, Render.PASSED_TEST);
                         }
                     }
                 }

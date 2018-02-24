@@ -51,7 +51,7 @@ export class TestDifference {
         const beginIndex = jestFailureMessage.search(TestDifference.DIFF_INDICATOR);
         const endIndex = jestFailureMessage.search(TestDifference.DIFF_END_INDICATOR);
         let isolated = jestFailureMessage.substring(beginIndex, endIndex);
-        const changesIndicator = "\n@@ -1035,6 +1035,17\n"; // todo: find a way to get accurate numbers?
+        const changesIndicator = "\n@@ -1035,6 +1035,17 @@\n"; // todo: find a way to get accurate numbers?
         isolated = isolated.replace("- Snapshot", "--- Snapshot");
         isolated = isolated.replace("+ Received\n", "+++ Received" + changesIndicator);
         return isolated;
