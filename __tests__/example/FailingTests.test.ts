@@ -2,9 +2,9 @@ describe("Failing Tests", () => {
 
     // it("should fail with a snapshot difference", () => {
     //     const jsonObject: any = {
-    //         name: "pointy",
+    //         name: "test",
     //         breed: "beagle",
-    //         height: 2,
+    //         height: 1,
     //         color: "brown and yellow"
     //     };
     //     expect(JSON.stringify(jsonObject, null, 2)).toMatchSnapshot();

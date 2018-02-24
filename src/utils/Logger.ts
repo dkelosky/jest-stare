@@ -1,5 +1,6 @@
 import { format, isNullOrUndefined } from "util";
 import * as moment from "moment";
+import * as chalk from "chalk";
 
 /**
  * Class to contain writing log messages
@@ -105,7 +106,7 @@ export class Logger {
      */
     constructor() {
         this.mLevel = Logger.LEVEL_DEFAULT;
-        this.mPrefix = true;
+        this.mPrefix = false;
         this.mColor = true;
         this.mLevel = this.mLevel.toLocaleLowerCase();
         this.mIsOn = true;
@@ -114,6 +115,10 @@ export class Logger {
 
     public isDebugEnabled() {
         return Logger.LEVELS.indexOf("debug") >= Logger.LEVELS.indexOf(this.level) ? true : false;
+    }
+
+    public isErrorEnabled() {
+        return Logger.LEVELS.indexOf("error") >= Logger.LEVELS.indexOf(this.level) ? true : false;
     }
 
     public debug(message: string, ...args: any[]) {
@@ -125,9 +130,23 @@ export class Logger {
             adjustedMessage = this.buildPrefix("DEBUG") + message;
         }
         if (this.color) {
-            // adjustedMessage = TextUtils.chalk.blue(adjustedMessage);
+            adjustedMessage = chalk.default.blue(adjustedMessage);
         }
         return this.writeStdout(adjustedMessage, args);
+    }
+
+    public error(message: string, ...args: any[]) {
+        if (!this.isErrorEnabled()) {
+            return;
+        }
+        let adjustedMessage = message;
+        if (this.prefix) {
+            adjustedMessage = this.buildPrefix("ERROR") + message;
+        }
+        if (this.color) {
+            adjustedMessage = chalk.default.red(adjustedMessage);
+        }
+        return this.writeStderr(adjustedMessage, args);
     }
 
     private writeStderr(message: string, ...args: any[]) {

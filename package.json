@@ -1,6 +1,6 @@
 {
   "name": "jest-stare",
-  "version": "0.1.13-0",
+  "version": "0.1.14-0",
   "description": "jest html reporter (results processor)",
   "license": "MIT",
   "repository": "https://github.com/dkelosky/jest-stare",
@@ -8,6 +8,9 @@
     "name": "dan kelosky",
     "email": "",
     "url": ""
+  },
+  "bin": {
+    "jest-stare": "./lib/jest-stare.js"
   },
   "keywords": [
     "jest",

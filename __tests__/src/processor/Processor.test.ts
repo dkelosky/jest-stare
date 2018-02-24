@@ -6,8 +6,19 @@ import {inspect} from "util";
 
 describe("Processor tests", () => {
 
-    it("should pretend to create a report form an input object", async () => {
+    it("should create a report form an input object", async () => {
         const processed = Processor.resultsProcessor(simplePassingTests);
         expect(processed).toMatchSnapshot();
+    });
+
+    it("should error when called without input", () => {
+        let error;
+        try {
+            Processor.resultsProcessor(null);
+        } catch (thrownError) {
+            error = thrownError;
+        }
+
+        expect(error.message).toMatchSnapshot();
     });
 });
