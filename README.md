@@ -1,4 +1,4 @@
-# Jest HTML Reporter (Results Processor) [![Build Status](https://travis-ci.org/dkelosky/jest-stare.svg?branch=master)](https://travis-ci.org/dkelosky/jest-stare) [![jest](https://facebook.github.io/jest/img/jest-badge.svg)](https://github.com/facebook/jest)
+# Jest HTML Reporter (Results Processor) [![Build Status](https://travis-ci.org/dkelosky/jest-stare.svg?branch=master)](https://travis-ci.org/dkelosky/jest-stare) [![jest](https://facebook.github.io/jest/img/jest-badge.svg)](https://github.com/facebook/jest) [![npm](https://img.shields.io/badge/npm-v5.6.0-blue.svg)](https://www.npmjs.com/package/jest-stare)
 This is a Jest HTML reporter (technically a "results processor") based primarily on:
 * [jQuery](https://jquery.com/)
 * [Bootstrap](https://getbootstrap.com/)
