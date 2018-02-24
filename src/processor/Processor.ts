@@ -30,28 +30,35 @@ export class Processor {
 
         const substitute: ISubstitute = {};
 
+        // build mustache render substitution values
         substitute.results = results;
         substitute.rawResults = JSON.stringify(results);
 
+        // throw error if no input object
         if (isNullOrUndefined(results)) {
             throw new Error(Constants.NO_INPUT);
         }
 
+        // get configuration
         const config = explicitConfig || Processor.readPackageJson();
         const resultDirectory = config.resultDir == null ? Constants.DEFAULT_RESULTS_DIR : config.resultDir;
 
+        // suppress logging if requested
         if (!isNullOrUndefined(config.log)) {
             if (!config.log) {
                 Logger.get.on = false;
             }
         }
 
+        // record if we were invoked programmaticall
         if (!isNullOrUndefined(explicitConfig)) {
             Logger.get.debug(Constants.OVERRIDE_JEST_STARE_CONFIG);
         }
 
+        // generate report
         Processor.generateReport(resultDirectory, substitute);
 
+        // return back to jest
         return results;
     }
 
