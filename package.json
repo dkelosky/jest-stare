@@ -38,6 +38,8 @@
     "build": "tsc --pretty && npx browserify lib/render/view.js -o lib/render/view.js",
     "test": "npx jest",
     "example": "npm run build && jest --testRegex __tests__.*\\.example\\.ts$",
+    "examplePassing": "npm run build && jest --testRegex __tests__.*\\.example\\.ts$ Passing",
+    "exampleFailing": "npm run build && jest --testRegex __tests__.*\\.example\\.ts$ Failing",
     "coverage": "jest --coverage",
     "watch": "npm run build -- --watch",
     "watch:test": "jest --watch"

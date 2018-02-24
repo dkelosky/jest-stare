@@ -8,3 +8,14 @@ exports[`Mixed Passing and Failing Tests Snapshot differences should fail with a
   \\"color\\": \\"brown and white\\"
 }"
 `;
+
+exports[`Mixed Passing and Failing Tests Snapshot tests should fail with a snapshot difference 1`] = `
+"{
+  \\"name\\": \\"ein\\",
+  \\"breed\\": \\"corgi\\",
+  \\"height\\": 1,
+  \\"color\\": \\"brown and white\\"
+}"
+`;
+
+exports[`Mixed Passing and Failing Tests Snapshot tests should pass a snapshot error comparison 1`] = `"Error stays the same"`;
