@@ -1,0 +1,347 @@
+{
+    "numFailedTestSuites": 1,
+    "numFailedTests": 2,
+    "numPassedTestSuites": 5,
+    "numPassedTests": 11,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTotalTestSuites": 6,
+    "numTotalTests": 13,
+    "snapshot": {
+        "added": 0,
+        "didUpdate": false,
+        "failure": true,
+        "filesAdded": 0,
+        "filesRemoved": 0,
+        "filesUnmatched": 1,
+        "filesUpdated": 0,
+        "matched": 5,
+        "total": 7,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 2,
+        "updated": 0
+    },
+    "startTime": 1519452971984,
+    "success": false,
+    "testResults": [
+        {
+            "console": [],
+            "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[1mFailing Tests › should fail with a snapshot difference\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mvalue\u001b[39m\u001b[2m).toMatchSnapshot(\u001b[22m\u001b[2m)\u001b[22m\n    \n    \u001b[31mReceived value\u001b[39m does not match \u001b[32mstored snapshot 1\u001b[39m.\n    \n    \u001b[32m- Snapshot\u001b[39m\n    \u001b[31m+ Received\u001b[39m\n    \n    \u001b[2m  \"{\u001b[22m\n    \u001b[32m-   \"name\": \"test\",\u001b[39m\n    \u001b[31m+   \"name\": \"nest\",\u001b[39m\n    \u001b[2m    \"breed\": \"beagle\",\u001b[22m\n    \u001b[2m    \"height\": 1,\u001b[22m\n    \u001b[2m    \"color\": \"brown and yellow\"\u001b[22m\n    \u001b[2m  }\"\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m  8 | \u001b[39m            color\u001b[33m:\u001b[39m \u001b[32m\"brown and yellow\"\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m  9 | \u001b[39m        }\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[2m\u001b[39m\u001b[90m 10 | \u001b[39m        expect(\u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(jsonObject\u001b[33m,\u001b[39m \u001b[36mnull\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2\u001b[39m))\u001b[33m.\u001b[39mtoMatchSnapshot()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 11 | \u001b[39m    })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 12 | \u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 13 | \u001b[39m    it(\u001b[32m\"should be a placeholder\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m      \u001b[22m\n\u001b[2m      \u001b[2mat Object.it (\u001b[2m\u001b[0m\u001b[36m__tests__/example/FailingTests.test.ts\u001b[39m\u001b[0m\u001b[2m:10:53)\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[1mFailing Tests › should fail with a snapshot difference 2\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mvalue\u001b[39m\u001b[2m).toMatchSnapshot(\u001b[22m\u001b[2m)\u001b[22m\n    \n    \u001b[31mReceived value\u001b[39m does not match \u001b[32mstored snapshot 1\u001b[39m.\n    \n    \u001b[32m- Snapshot\u001b[39m\n    \u001b[31m+ Received\u001b[39m\n    \n    \u001b[2m  \"{\u001b[22m\n    \u001b[2m    \"name\": \"test\",\u001b[22m\n    \u001b[32m-   \"breed\": \"beagle\",\u001b[39m\n    \u001b[32m-   \"height\": 1,\u001b[39m\n    \u001b[32m-   \"color\": \"brown and yellow\"\u001b[39m\n    \u001b[31m+   \"breed\": \"beagle\"\u001b[39m\n    \u001b[2m  }\"\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 19 | \u001b[39m            breed\u001b[33m:\u001b[39m \u001b[32m\"beagle\"\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 20 | \u001b[39m        }\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[2m\u001b[39m\u001b[90m 21 | \u001b[39m        expect(\u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(jsonObject\u001b[33m,\u001b[39m \u001b[36mnull\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2\u001b[39m))\u001b[33m.\u001b[39mtoMatchSnapshot()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 22 | \u001b[39m    })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 23 | \u001b[39m    \u001b[90m// it(\"should fail without a snapshot difference\", () => {\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 24 | \u001b[39m    \u001b[90m//     expect(true).toBe(false);\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m      \u001b[22m\n\u001b[2m      \u001b[2mat Object.it (\u001b[2m\u001b[0m\u001b[36m__tests__/example/FailingTests.test.ts\u001b[39m\u001b[0m\u001b[2m:21:53)\u001b[2m\u001b[22m\n",
+            "numFailingTests": 2,
+            "numPassingTests": 1,
+            "numPendingTests": 0,
+            "perfStats": {
+                "end": 1519452974122,
+                "start": 1519452972163
+            },
+            "snapshot": {
+                "added": 0,
+                "fileDeleted": false,
+                "matched": 0,
+                "unchecked": 0,
+                "unmatched": 2,
+                "updated": 0,
+                "uncheckedKeys": []
+            },
+            "testFilePath": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\example\\FailingTests.test.ts",
+            "testResults": [
+                {
+                    "ancestorTitles": [
+                        "Failing Tests"
+                    ],
+                    "duration": 93,
+                    "failureMessages": [
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mvalue\u001b[39m\u001b[2m).toMatchSnapshot(\u001b[22m\u001b[2m)\u001b[22m\n\n\u001b[31mReceived value\u001b[39m does not match \u001b[32mstored snapshot 1\u001b[39m.\n\n\u001b[32m- Snapshot\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[2m  \"{\u001b[22m\n\u001b[32m-   \"name\": \"test\",\u001b[39m\n\u001b[31m+   \"name\": \"nest\",\u001b[39m\n\u001b[2m    \"breed\": \"beagle\",\u001b[22m\n\u001b[2m    \"height\": 1,\u001b[22m\n\u001b[2m    \"color\": \"brown and yellow\"\u001b[22m\n\u001b[2m  }\"\u001b[22m\n    at Object.it (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\example\\FailingTests.test.ts:10:53)\n    at Object.asyncFn (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\jasmine_async.js:129:432)\n    at resolve (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:51:12)\n    at new Promise (<anonymous>)\n    at mapper (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:40:274)\n    at promise.then (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:83:39)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+                    ],
+                    "fullName": "Failing Tests should fail with a snapshot difference",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "failed",
+                    "title": "should fail with a snapshot difference"
+                },
+                {
+                    "ancestorTitles": [
+                        "Failing Tests"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "Failing Tests should be a placeholder",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should be a placeholder"
+                },
+                {
+                    "ancestorTitles": [
+                        "Failing Tests"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mvalue\u001b[39m\u001b[2m).toMatchSnapshot(\u001b[22m\u001b[2m)\u001b[22m\n\n\u001b[31mReceived value\u001b[39m does not match \u001b[32mstored snapshot 1\u001b[39m.\n\n\u001b[32m- Snapshot\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[2m  \"{\u001b[22m\n\u001b[2m    \"name\": \"test\",\u001b[22m\n\u001b[32m-   \"breed\": \"beagle\",\u001b[39m\n\u001b[32m-   \"height\": 1,\u001b[39m\n\u001b[32m-   \"color\": \"brown and yellow\"\u001b[39m\n\u001b[31m+   \"breed\": \"beagle\"\u001b[39m\n\u001b[2m  }\"\u001b[22m\n    at Object.it (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\example\\FailingTests.test.ts:21:53)\n    at Object.asyncFn (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\jasmine_async.js:129:432)\n    at resolve (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:51:12)\n    at new Promise (<anonymous>)\n    at mapper (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:40:274)\n    at promise.then (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:83:39)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+                    ],
+                    "fullName": "Failing Tests should fail with a snapshot difference 2",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "failed",
+                    "title": "should fail with a snapshot difference 2"
+                }
+            ],
+            "sourceMaps": {},
+            "skipped": false,
+            "leaks": false
+        },
+        {
+            "console": [],
+            "failureMessage": null,
+            "numFailingTests": 0,
+            "numPassingTests": 1,
+            "numPendingTests": 0,
+            "perfStats": {
+                "end": 1519452974581,
+                "start": 1519452974154
+            },
+            "snapshot": {
+                "added": 0,
+                "fileDeleted": false,
+                "matched": 0,
+                "unchecked": 0,
+                "unmatched": 0,
+                "updated": 0,
+                "uncheckedKeys": []
+            },
+            "testFilePath": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\src\\render\\Render.test.ts",
+            "testResults": [
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "duration": 1,
+                    "failureMessages": [],
+                    "fullName": "Render tests should pass",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should pass"
+                }
+            ],
+            "sourceMaps": {},
+            "skipped": false,
+            "leaks": false
+        },
+        {
+            "console": [],
+            "failureMessage": null,
+            "numFailingTests": 0,
+            "numPassingTests": 2,
+            "numPendingTests": 0,
+            "perfStats": {
+                "end": 1519452974718,
+                "start": 1519452974590
+            },
+            "snapshot": {
+                "added": 0,
+                "fileDeleted": false,
+                "matched": 2,
+                "unchecked": 0,
+                "unmatched": 0,
+                "updated": 0,
+                "uncheckedKeys": []
+            },
+            "testFilePath": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\src\\processor\\Processor.test.ts",
+            "testResults": [
+                {
+                    "ancestorTitles": [
+                        "Processor tests"
+                    ],
+                    "duration": 15,
+                    "failureMessages": [],
+                    "fullName": "Processor tests should create a report form an input object",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should create a report form an input object"
+                },
+                {
+                    "ancestorTitles": [
+                        "Processor tests"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "Processor tests should error when called without input",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should error when called without input"
+                }
+            ],
+            "sourceMaps": {},
+            "skipped": false,
+            "leaks": false
+        },
+        {
+            "console": [],
+            "failureMessage": null,
+            "numFailingTests": 0,
+            "numPassingTests": 4,
+            "numPendingTests": 0,
+            "perfStats": {
+                "end": 1519452974810,
+                "start": 1519452974734
+            },
+            "snapshot": {
+                "added": 0,
+                "fileDeleted": false,
+                "matched": 1,
+                "unchecked": 0,
+                "unmatched": 0,
+                "updated": 0,
+                "uncheckedKeys": []
+            },
+            "testFilePath": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\src\\utils\\IO.test.ts",
+            "testResults": [
+                {
+                    "ancestorTitles": [
+                        "IO tests"
+                    ],
+                    "duration": 2,
+                    "failureMessages": [],
+                    "fullName": "IO tests should pretend to write to a file",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should pretend to write to a file"
+                },
+                {
+                    "ancestorTitles": [
+                        "IO tests"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "IO tests should pretend to write to a file and reject promise for IO errors",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should pretend to write to a file and reject promise for IO errors"
+                },
+                {
+                    "ancestorTitles": [
+                        "IO tests"
+                    ],
+                    "duration": 1,
+                    "failureMessages": [],
+                    "fullName": "IO tests should say true if dir exists",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should say true if dir exists"
+                },
+                {
+                    "ancestorTitles": [
+                        "IO tests"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "IO tests should false if dir does not exist",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should false if dir does not exist"
+                }
+            ],
+            "sourceMaps": {},
+            "skipped": false,
+            "leaks": false
+        },
+        {
+            "console": [],
+            "failureMessage": null,
+            "numFailingTests": 0,
+            "numPassingTests": 1,
+            "numPendingTests": 0,
+            "perfStats": {
+                "end": 1519452974874,
+                "start": 1519452974817
+            },
+            "snapshot": {
+                "added": 0,
+                "fileDeleted": false,
+                "matched": 1,
+                "unchecked": 0,
+                "unmatched": 0,
+                "updated": 0,
+                "uncheckedKeys": []
+            },
+            "testFilePath": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\src\\utils\\Logger.test.ts",
+            "testResults": [
+                {
+                    "ancestorTitles": [
+                        "Logger tests"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "Logger tests should get a log instance",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should get a log instance"
+                }
+            ],
+            "sourceMaps": {},
+            "skipped": false,
+            "leaks": false
+        },
+        {
+            "console": [],
+            "failureMessage": null,
+            "numFailingTests": 0,
+            "numPassingTests": 2,
+            "numPendingTests": 0,
+            "perfStats": {
+                "end": 1519452974966,
+                "start": 1519452974889
+            },
+            "snapshot": {
+                "added": 0,
+                "fileDeleted": false,
+                "matched": 1,
+                "unchecked": 0,
+                "unmatched": 0,
+                "updated": 0,
+                "uncheckedKeys": []
+            },
+            "testFilePath": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\src\\reporter\\Reporter.test.ts",
+            "testResults": [
+                {
+                    "ancestorTitles": [
+                        "Reporter tests"
+                    ],
+                    "duration": 1,
+                    "failureMessages": [],
+                    "fullName": "Reporter tests should instantiate Reporter class",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should instantiate Reporter class"
+                },
+                {
+                    "ancestorTitles": [
+                        "Reporter tests"
+                    ],
+                    "duration": 1,
+                    "failureMessages": [],
+                    "fullName": "Reporter tests should do something",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should do something"
+                }
+            ],
+            "sourceMaps": {},
+            "skipped": false,
+            "leaks": false
+        }
+    ],
+    "wasInterrupted": false
+}
