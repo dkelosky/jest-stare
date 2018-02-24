@@ -18,8 +18,6 @@ This project is based primarily on:
 * [Chart.js](http://www.chartjs.org/)
 * [diff2html](https://diff2html.xyz/)
 
-See [package.json](/package.json) dependencies for a full list of dependencies that make up `jest-stare`.
-
 ## Usage
 `jest --testResultsProcessor=jest-stare`
 
