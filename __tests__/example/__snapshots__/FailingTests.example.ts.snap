@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Failing Tests Snapshot differences should fail with a large snapshot difference 1`] = `
+"{
+  \\"a\\": \\"aardvark\\",
+  \\"b\\": \\"bat\\",
+  \\"c\\": \\"cat\\",
+  \\"d\\": \\"dog\\",
+  \\"e\\": \\"elephant\\",
+  \\"f\\": \\"frog\\",
+  \\"g\\": \\"gecko\\",
+  \\"h\\": \\"hyena\\",
+  \\"i\\": \\"iguana\\",
+  \\"j\\": \\"jackal\\",
+  \\"k\\": \\"koala\\",
+  \\"l\\": \\"llama\\",
+  \\"m\\": \\"magpie\\",
+  \\"n\\": \\"newt\\",
+  \\"o\\": \\"ocelot\\",
+  \\"p\\": \\"parrot\\"
+}"
+`;
+
+exports[`Failing Tests Snapshot differences should fail with a small snapshot difference 1`] = `
+"{
+  \\"name\\": \\"floppy\\",
+  \\"breed\\": \\"beagle\\",
+  \\"height\\": 1,
+  \\"color\\": \\"brown and white\\"
+}"
+`;
+
+exports[`Failing Tests Snapshot differences should fail with a snapshot difference 1`] = `
+"{
+  \\"name\\": \\"floppy\\",
+  \\"breed\\": \\"beagle\\",
+  \\"height\\": 1,
+  \\"color\\": \\"brown and yellow\\"
+}"
+`;
+
+exports[`Failing Tests Snapshot differences should fail with an error snapshot difference 1`] = `
+"Here is the old error.
+It contains various old information such as how to write on paper
+,and a reminder to rewind your VHS tapes before returning them."
+`;

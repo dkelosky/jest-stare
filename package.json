@@ -37,7 +37,7 @@
     "prebuild": "npm run clean && npm run lint && echo Using TypeScript && tsc --version",
     "build": "tsc --pretty && npx browserify lib/render/view.js -o lib/render/view.js",
     "test": "npx jest",
-    "example": "npm run make && jest",
+    "example": "npm run build && jest --testRegex __tests__.*\\.example\\.ts$",
     "coverage": "jest --coverage",
     "watch": "npm run build -- --watch",
     "watch:test": "jest --watch"

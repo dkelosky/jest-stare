@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Passing Tests A category of tests should pass a snapshot comparison 1`] = `
+"{
+  \\"name\\": \\"fluffo\\",
+  \\"breed\\": \\"samoyed\\",
+  \\"height\\": 1,
+  \\"color\\": \\"white\\"
+}"
+`;
