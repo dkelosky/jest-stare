@@ -9,6 +9,9 @@
     "email": "",
     "url": ""
   },
+  "bin": {
+    "jest-stare": "./lib/jest-stare.js"
+  },
   "keywords": [
     "jest",
     "html",

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Processor tests should pretend to create a report form an input object 1`] = `
+exports[`Processor tests should create a report form an input object 1`] = `
 Object {
   "numFailedTestSuites": "0",
   "numFailedTests": "0",
@@ -145,3 +145,5 @@ Object {
   "wasInterrupted": "false",
 }
 `;
+
+exports[`Processor tests should error when called without input 1`] = `"jest-stare was called without input results"`;

@@ -6,12 +6,20 @@ import { Constants } from "../Constants";
  * @interface IJestStareConfig
  */
 export interface IJestStareConfig {
+
      /**
       * The directory you would like the results to go to
       * @type {string}
       * @memberof IJestStareConfig
       */
-     "resultDir"?: string;
+     resultDir?: string;
+
+     /**
+      * Configure whether logging is on (true) or off (false)
+      * @type {boolean}
+      * @memberof IJestStareConfig
+      */
+     log?: boolean;
 }
 
 /**

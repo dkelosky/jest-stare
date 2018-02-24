@@ -83,4 +83,25 @@ export class Constants {
      * @memberof Constants
      */
     public static readonly LOG_MESSAGE = " --testResultsProcessor: wrote output report to ";
+
+    /**
+     * Error for whenever called without test results
+     * @static
+     * @memberof Constants
+     */
+    public static readonly NO_INPUT = Constants.NAME + " was called without input results";
+
+    /**
+     * Error for whenever the CLI is called without an input file is specified containing jest JSON
+     * @static
+     * @memberof Constants
+     */
+    public static readonly NO_CLI_INPUT = Constants.NAME + " CLI was called without input JSON file to read";
+
+    /**
+     * Notification called with programmatic config
+     * @static
+     * @memberof Constants
+     */
+    public static readonly OVERRIDE_JEST_STARE_CONFIG = Constants.NAME + " was called with programmatic config";
 }

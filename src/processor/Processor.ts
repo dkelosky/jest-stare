@@ -9,7 +9,7 @@ import { Logger } from "../utils/Logger";
 import * as chalk from "chalk";
 import { IThirdPartyDependency } from "./doc/IThirdPartyDependency";
 import { Dependencies } from "./Dependencies";
-import * as $ from "jquery";
+import { isNullOrUndefined } from "util";
 const pkgUp = require("pkg-up");
 
 /**
@@ -26,15 +26,30 @@ export class Processor {
      * @returns - returns input results object
      * @memberof Processor
      */
-    public static resultsProcessor(results: IResultsProcessorInput) {
-        const substitute: ISubstitute = {};
+    public static resultsProcessor(results: IResultsProcessorInput, explicitConfig?: IJestStareConfig) {
 
-        const config = Processor.readPackageJson();
+        const substitute: ISubstitute = {};
 
         substitute.results = results;
         substitute.rawResults = JSON.stringify(results);
 
-        const resultDirectory = config.resultDir == null ? "./jest-stare" : config.resultDir;
+        if (isNullOrUndefined(results)) {
+            throw new Error(Constants.NO_INPUT);
+        }
+
+        const config = explicitConfig || Processor.readPackageJson();
+        const resultDirectory = config.resultDir == null ? Constants.DEFAULT_RESULTS_DIR : config.resultDir;
+
+        if (!isNullOrUndefined(config.log)) {
+            if (!config.log) {
+                Logger.get.on = false;
+            }
+        }
+
+        if (!isNullOrUndefined(explicitConfig)) {
+            Logger.get.debug(Constants.OVERRIDE_JEST_STARE_CONFIG);
+        }
+
         Processor.generateReport(resultDirectory, substitute);
 
         return results;
@@ -74,8 +89,7 @@ export class Processor {
         });
 
         // log complete
-        Logger.get.prefix = false;
-        Logger.get.debug(Constants.LOGO + Constants.LOGO + resultDir + Constants.MAIN_HTML + chalk.default.green("\t**"));
+        Logger.get.debug(Constants.LOGO + Constants.LOG_MESSAGE + resultDir + Constants.MAIN_HTML + chalk.default.green("\t**"));
     }
 
     /**
