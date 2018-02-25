@@ -5,8 +5,6 @@ import { IResultsProcessorInput } from "../processor/doc/jest/IResultsProcessorI
 
 // await for DOM load
 document.addEventListener("DOMContentLoaded", () => {
-    const results: string = $("#test-results").text();
-    const resultsParsed: IResultsProcessorInput = JSON.parse(results);
-    const render = new Render(resultsParsed);
-    render.init();
+    const results: IResultsProcessorInput = JSON.parse($("#test-results").text());
+    new Render(results).init();
 });
