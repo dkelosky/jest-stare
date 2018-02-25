@@ -48,7 +48,7 @@ export class TestDifference {
     }
 
     /**
-     * Take a full jest failure message and return a diff string that can be used 
+     * Take a full jest failure message and return a diff string that can be used
      * with the diff2html package
      * @param jestFailureMessage the full jest failure message from which to parse the diff
      */
