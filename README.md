@@ -4,8 +4,7 @@
 This is a Jest HTML reporter (really a "results processor").  Summary test results are parsed into an 
 HTML file for improved readability and filtering. 
 
-## Snapshot
-![alt text](images/sample.png "Sample Report")
+![Sample](images/sampleReport.png "Sample Report")
 
 ## Features
 It provides:

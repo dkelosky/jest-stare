@@ -5,7 +5,7 @@ import { ITestResults } from "../processor/doc/jest/ITestResults";
 import { IInnerTestResults } from "../processor/doc/jest/IInnerTestResults";
 import * as AnsiParser from "ansi-parser";
 import { isNullOrUndefined } from "util";
-import { TestDifference } from "../elements/TestDifference";
+import { TestDifference } from "./diff/TestDifference";
 import { Switch } from "./navigation/Switch";
 import { Constants } from "./Constants";
 import { Status } from "./charts/Status";
@@ -222,29 +222,6 @@ export class Render {
         }
 
         return "";
-    }
-
-    /**
-     * Build shadowed box for each suite of test
-     * @private
-     * @param {ITestResults} testResults - test results
-     * @returns {HTMLDivElement} - div for shadow box
-     * @memberof Render
-     */
-    private initSuiteSection(testResults: ITestResults): HTMLDivElement {
-        let testStatusClass = Constants.PASSED_TEST;
-
-        for (const result of testResults.testResults) {
-            if (result.status === Constants.TEST_STATUS_FAIL) {
-                testStatusClass = Constants.FAILED_TEST;
-                break;
-            }
-        }
-
-        const div = document.createElement("div") as HTMLDivElement;
-        div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
-
-        return div;
     }
 
     /**

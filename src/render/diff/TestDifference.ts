@@ -18,7 +18,9 @@ export class TestDifference {
 
     /**
      * Test whether a failure message contains a diff that we can render
+     * @static
      * @param jestFailureMessage the failureMessage provided in the jest result object
+     * @memberof TestDifference
      */
     public static containsDiff(jestFailureMessage: string): boolean {
         return jestFailureMessage.search(TestDifference.DIFF_INDICATOR) >= 0;
@@ -50,9 +52,13 @@ export class TestDifference {
     /**
      * Take a full jest failure message and return a diff string that can be used
      * with the diff2html package
-     * @param jestFailureMessage the full jest failure message from which to parse the diff
+     * @private
+     * @static
+     * @param jestFailureMessage - the full jest failure message from which to parse the diff
+     * @returns {string} - diff section
+     * @memberof TestDifference
      */
-    public static isolateDiff(jestFailureMessage: string): string {
+    private static isolateDiff(jestFailureMessage: string): string {
         const beginIndex = jestFailureMessage.search(TestDifference.DIFF_INDICATOR);
         const endIndex = jestFailureMessage.search(TestDifference.DIFF_END_INDICATOR);
         let isolated = jestFailureMessage.substring(beginIndex, endIndex);
