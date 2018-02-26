@@ -47,23 +47,28 @@ export class TestDifference {
         return $(diffHtml).get(0); // jquery iz kewl
     }
 
+    /**
+     * Take a full jest failure message and return a diff string that can be used
+     * with the diff2html package
+     * @param jestFailureMessage the full jest failure message from which to parse the diff
+     */
     public static isolateDiff(jestFailureMessage: string): string {
         const beginIndex = jestFailureMessage.search(TestDifference.DIFF_INDICATOR);
         const endIndex = jestFailureMessage.search(TestDifference.DIFF_END_INDICATOR);
         let isolated = jestFailureMessage.substring(beginIndex, endIndex);
 
-        //get a rough count of the changes in the file 
-        let snapshotChanges =0;
-        let receivedChanges = 0
+        // get a rough count of the changes in the file
+        let snapshotChanges = 0;
+        let receivedChanges = 0;
         const changeLines = isolated.split(/\r?\n/g);
-        for (const line of changeLines){
-            if (/^- /.test(line)){
+        for (const line of changeLines) {
+            if (/^- /.test(line)) {
                 snapshotChanges++;
-            } else if (/^\+ /.test(line)){
+            } else if (/^\+ /.test(line)) {
                 receivedChanges++;
             }
         }
-        const changesIndicator = `\n@@ -0,${snapshotChanges} +0,${receivedChanges} @@\n`; // todo: find a way to get accurate numbers?
+        const changesIndicator = `\n@@ -0,${snapshotChanges} +0,${receivedChanges} @@\n`;
         isolated = isolated.replace("- Snapshot", "--- Snapshot");
         isolated = isolated.replace("+ Received\n", "+++ Received" + changesIndicator);
         return isolated;

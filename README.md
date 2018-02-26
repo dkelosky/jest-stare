@@ -1,9 +1,13 @@
 [![Build Status](https://travis-ci.org/dkelosky/jest-stare.svg?branch=master)](https://travis-ci.org/dkelosky/jest-stare) [![jest](https://facebook.github.io/jest/img/jest-badge.svg)](https://github.com/facebook/jest) [![npm](https://img.shields.io/badge/npm-v5.6.0-blue.svg)](https://www.npmjs.com/package/jest-stare)
 
 # Jest HTML Reporter (Results Processor)
-This is a Jest HTML reporter (really a "results processor").  jest-stare takes the summary tests results and parses them into an 
+This is a Jest HTML reporter (really a "results processor").  Summary test results are parsed into an 
 HTML file for improved readability and filtering. 
 
+## Snapshot
+![alt text](images/sample.png "Sample Report")
+
+## Features
 It provides:
 * filtering of passed / failed tests
 * side-by-side snapshot diff
@@ -44,19 +48,7 @@ jest-stare: {
 }
 ```
 
-### Screenshot
-Simple examples below.
-
-#### Sample Report
-![alt text](images/sample.png "Sample Report")
-
-#### Sample Snapshot Diff
-![alt text](images/snapshotSideBySideDiff.png "Snapshot diff")
-
-## Status
-This is a work in progress project and contributions / suggestions are welcome.  
-
-## API
+### API
 You can programmatically invoke jest-stare and provide jest response data via:
 ```typescript
 const simplePassingTests = require("../__tests__/data/simplePassingTests.json"); // example JSON data
@@ -65,7 +57,7 @@ const processor = require("jest-stare");
 processor(simplePassingTests, {log: false, resultDir: __dirname + "/output"}); // first parm is jest json results, second is jest-stare config
 ```
 
-## CLI
+### CLI
 You can invoke jest-stare as a CLI after installing globally via `npm install -g jest-stare`.  
 Or if jest-stare is a local dependency you can invoke the CLI via `npx jest-stare...`
 
@@ -87,18 +79,8 @@ jest-stare was called with programmatic config
 **  jest-stare --testResultsProcessor: wrote output report to c:/users/myId/desktop/output/index.html  **
 ```
 
-## TODO
-* link coverage if used or custom coverage reporter
-* note snapshots updated, added, etc
-* increase coverage of this project
-* refactor render class
-* minify / bundle distribution
-* generate report from raw test json data
-* add overall test time
-* piping for CLI?
-
 ## Development Building / Testing
-If you'd like to submit a PR, here are some basic steps to test out code changes.
+If you'd like to submit a PR, here are some basic steps to test out code changes.  Suggestions and improvements are welcome!
 
 ### First time setup
 1. `git clone` this repo
