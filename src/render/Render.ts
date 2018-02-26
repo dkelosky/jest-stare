@@ -41,11 +41,11 @@ export class Render {
             $("#snapshots-canvas") as JQuery<HTMLCanvasElement>, this.mResults.snapshot.matched, this.mResults.snapshot.total);
 
         // update status area
-        Status.setResultsColor(
+        Status.setResultsClass(
             $("#test-suites-results") as JQuery<HTMLParagraphElement>, this.mResults.numPassedTestSuites, this.mResults.numTotalTestSuites);
-        Status.setResultsColor(
+        Status.setResultsClass(
             $("#tests-results") as JQuery<HTMLParagraphElement>, this.mResults.numPassedTests, this.mResults.numTotalTests);
-        Status.setResultsColor(
+        Status.setResultsClass(
             $("#snapshots-results") as JQuery<HTMLParagraphElement>, this.mResults.snapshot.matched, this.mResults.snapshot.total);
 
         // build suites

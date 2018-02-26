@@ -13,7 +13,7 @@ export class Status {
      * @param {number} total - total tests
      * @memberof Status
      */
-    public static setResultsColor(statusElement: JQuery<HTMLParagraphElement>, passed: number, total: number) {
+    public static setResultsClass(statusElement: JQuery<HTMLParagraphElement>, passed: number, total: number) {
 
         const failed: number = total - passed;
 
