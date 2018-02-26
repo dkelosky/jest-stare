@@ -1,6 +1,5 @@
 import * as bootstrap from "bootstrap/dist/js/bootstrap.bundle.min.js";
 import * as $ from "jquery";
-import { Chart, ChartConfiguration } from "chart.js";
 import { IResultsProcessorInput } from "../processor/doc/jest/IResultsProcessorInput";
 import { ITestResults } from "../processor/doc/jest/ITestResults";
 import { IInnerTestResults } from "../processor/doc/jest/IInnerTestResults";
@@ -9,6 +8,8 @@ import { isNullOrUndefined } from "util";
 import { TestDifference } from "../elements/TestDifference";
 import { Switch } from "./navigation/Switch";
 import { Constants } from "./Constants";
+import { Status } from "./charts/Status";
+import { Doughnut } from "./charts/Doughnut";
 
 /**
  * Adjust DOM to display JSON data
@@ -32,9 +33,20 @@ export class Render {
     public init() {
 
         // build charts
-        this.generateChartsFromTagIdPrefix("test-suites");
-        this.generateChartsFromTagIdPrefix("tests");
-        this.generateChartsFromTagIdPrefix("snapshots");
+        Doughnut.createChart(
+            $("#test-suites-canvas") as JQuery<HTMLCanvasElement>, this.mResults.numPassedTestSuites, this.mResults.numTotalTestSuites);
+        Doughnut.createChart(
+            $("#tests-canvas") as JQuery<HTMLCanvasElement>, this.mResults.numPassedTests, this.mResults.numTotalTests);
+        Doughnut.createChart(
+            $("#snapshots-canvas") as JQuery<HTMLCanvasElement>, this.mResults.snapshot.matched, this.mResults.snapshot.total);
+
+        // update status area
+        Status.setResultsColor(
+            $("#test-suites-results") as JQuery<HTMLParagraphElement>, this.mResults.numPassedTestSuites, this.mResults.numTotalTestSuites);
+        Status.setResultsColor(
+            $("#test-results") as JQuery<HTMLParagraphElement>, this.mResults.numPassedTests, this.mResults.numTotalTests);
+        Status.setResultsColor(
+            $("#snapshots-results") as JQuery<HTMLParagraphElement>, this.mResults.snapshot.matched, this.mResults.snapshot.total);
 
         // build suites
         const tableHtml = this.buildSuites();
@@ -46,81 +58,6 @@ export class Render {
         // listen for filtering requests
         const passSwitch = new Switch($("#lab-passoff-switch") as JQuery<HTMLInputElement>, $("." + Constants.PASSED_TEST) as JQuery<HTMLDivElement>);
         const failSwitch = new Switch($("#lab-failoff-switch") as JQuery<HTMLInputElement>, $("." + Constants.FAILED_TEST) as JQuery<HTMLDivElement>);
-    }
-
-    /**
-     * Generate charts from input tag prefx
-     * @private
-     * @param {string} tagPrefix - tag prefix for which expected conventions of -canvas and -results will have canvas and results
-     * @memberof Render
-     */
-    private generateChartsFromTagIdPrefix(tagPrefix: string) {
-
-        // TODO(Kelosky): refactor to not parse from html tags
-        const jqueryTag = "#" + tagPrefix;
-
-        const chartType = "doughnut";
-
-        const canvasPost = "-canvas";
-        const resultsPost = "-results";
-
-        const separator = " ";
-        const passedIndex = 0;
-        const totalIndex = 2;
-
-        const jqueryCanvas = jqueryTag + canvasPost;
-        const jqueryResults = jqueryTag + resultsPost;
-
-        const canvas = $(jqueryCanvas).get(0) as HTMLCanvasElement;
-        const results = $(jqueryResults).text();
-        const resultsParsed = results.split(separator);
-
-        const baseTen = 10;
-
-        const passed: number = parseInt(resultsParsed[passedIndex], baseTen);
-        const total: number = parseInt(resultsParsed[totalIndex], baseTen);
-        const failed: number = total - passed;
-
-        if (total === 0) {
-            $(jqueryResults).addClass("list-group-item-info");
-        } else {
-            if (passed === 0) {
-                $(jqueryResults).addClass("list-group-item-danger");
-            } else if (passed === total) {
-                $(jqueryResults).addClass("list-group-item-success");
-            } else {
-                $(jqueryResults).addClass("list-group-item-warning");
-            }
-        }
-
-        const passLabel = "Passed";
-        const failLabel = "Failed";
-
-        const config: ChartConfiguration = {
-            type: chartType,
-            data: {
-                labels: [passLabel, failLabel],
-                datasets: [
-                    {
-                        backgroundColor: [Constants.PASS, Constants.FAIL],
-                        data: [passed, failed],
-                    }
-                ]
-            }
-        };
-
-        this.buildCanvas(canvas, config);
-    }
-
-    /**
-     * Build charts at a canvas with input config
-     * @private
-     * @param {HTMLCanvasElement} canvas - canvas location
-     * @param {ChartConfiguration} config - config for chart
-     * @memberof Render
-     */
-    private buildCanvas(canvas: HTMLCanvasElement, config: ChartConfiguration) {
-        const doughnut = new Chart(canvas, config);
     }
 
     /**

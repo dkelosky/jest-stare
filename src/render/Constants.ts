@@ -6,6 +6,20 @@
 export class Constants {
 
     /**
+     * Label for passed tests
+     * @static
+     * @memberof Constants
+     */
+    public static readonly PASSED_LABEL = "Passed";
+
+    /**
+     * Label for failed tests
+     * @static
+     * @memberof Constants
+     */
+    public static readonly FAILED_LABEL = "Failed";
+
+    /**
      * Passed jest status
      * @static
      * @memberof Constants
