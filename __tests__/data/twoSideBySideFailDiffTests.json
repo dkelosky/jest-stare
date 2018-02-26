@@ -45,7 +45,7 @@
                 "updated": 0,
                 "uncheckedKeys": []
             },
-            "testFilePath": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\example\\FailingTests.test.ts",
+            "testFilePath": "jest-stare\\__tests__\\example\\FailingTests.test.ts",
             "testResults": [
                 {
                     "ancestorTitles": [
@@ -53,7 +53,7 @@
                     ],
                     "duration": 93,
                     "failureMessages": [
-                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mvalue\u001b[39m\u001b[2m).toMatchSnapshot(\u001b[22m\u001b[2m)\u001b[22m\n\n\u001b[31mReceived value\u001b[39m does not match \u001b[32mstored snapshot 1\u001b[39m.\n\n\u001b[32m- Snapshot\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[2m  \"{\u001b[22m\n\u001b[32m-   \"name\": \"test\",\u001b[39m\n\u001b[31m+   \"name\": \"nest\",\u001b[39m\n\u001b[2m    \"breed\": \"beagle\",\u001b[22m\n\u001b[2m    \"height\": 1,\u001b[22m\n\u001b[2m    \"color\": \"brown and yellow\"\u001b[22m\n\u001b[2m  }\"\u001b[22m\n    at Object.it (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\example\\FailingTests.test.ts:10:53)\n    at Object.asyncFn (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\jasmine_async.js:129:432)\n    at resolve (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:51:12)\n    at new Promise (<anonymous>)\n    at mapper (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:40:274)\n    at promise.then (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:83:39)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mvalue\u001b[39m\u001b[2m).toMatchSnapshot(\u001b[22m\u001b[2m)\u001b[22m\n\n\u001b[31mReceived value\u001b[39m does not match \u001b[32mstored snapshot 1\u001b[39m.\n\n\u001b[32m- Snapshot\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[2m  \"{\u001b[22m\n\u001b[32m-   \"name\": \"test\",\u001b[39m\n\u001b[31m+   \"name\": \"nest\",\u001b[39m\n\u001b[2m    \"breed\": \"beagle\",\u001b[22m\n\u001b[2m    \"height\": 1,\u001b[22m\n\u001b[2m    \"color\": \"brown and yellow\"\u001b[22m\n\u001b[2m  }\"\u001b[22m\n    at Object.it (jest-stare\\__tests__\\example\\FailingTests.test.ts:10:53)\n    at Object.asyncFn (jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\jasmine_async.js:129:432)\n    at resolve (jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:51:12)\n    at new Promise (<anonymous>)\n    at mapper (jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:40:274)\n    at promise.then (jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:83:39)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
                     ],
                     "fullName": "Failing Tests should fail with a snapshot difference",
                     "location": null,
@@ -79,7 +79,7 @@
                     ],
                     "duration": 0,
                     "failureMessages": [
-                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mvalue\u001b[39m\u001b[2m).toMatchSnapshot(\u001b[22m\u001b[2m)\u001b[22m\n\n\u001b[31mReceived value\u001b[39m does not match \u001b[32mstored snapshot 1\u001b[39m.\n\n\u001b[32m- Snapshot\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[2m  \"{\u001b[22m\n\u001b[2m    \"name\": \"test\",\u001b[22m\n\u001b[32m-   \"breed\": \"beagle\",\u001b[39m\n\u001b[32m-   \"height\": 1,\u001b[39m\n\u001b[32m-   \"color\": \"brown and yellow\"\u001b[39m\n\u001b[31m+   \"breed\": \"beagle\"\u001b[39m\n\u001b[2m  }\"\u001b[22m\n    at Object.it (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\example\\FailingTests.test.ts:21:53)\n    at Object.asyncFn (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\jasmine_async.js:129:432)\n    at resolve (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:51:12)\n    at new Promise (<anonymous>)\n    at mapper (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:40:274)\n    at promise.then (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:83:39)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mvalue\u001b[39m\u001b[2m).toMatchSnapshot(\u001b[22m\u001b[2m)\u001b[22m\n\n\u001b[31mReceived value\u001b[39m does not match \u001b[32mstored snapshot 1\u001b[39m.\n\n\u001b[32m- Snapshot\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[2m  \"{\u001b[22m\n\u001b[2m    \"name\": \"test\",\u001b[22m\n\u001b[32m-   \"breed\": \"beagle\",\u001b[39m\n\u001b[32m-   \"height\": 1,\u001b[39m\n\u001b[32m-   \"color\": \"brown and yellow\"\u001b[39m\n\u001b[31m+   \"breed\": \"beagle\"\u001b[39m\n\u001b[2m  }\"\u001b[22m\n    at Object.it (jest-stare\\__tests__\\example\\FailingTests.test.ts:21:53)\n    at Object.asyncFn (jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\jasmine_async.js:129:432)\n    at resolve (jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:51:12)\n    at new Promise (<anonymous>)\n    at mapper (jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:40:274)\n    at promise.then (jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:83:39)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
                     ],
                     "fullName": "Failing Tests should fail with a snapshot difference 2",
                     "location": null,
@@ -111,7 +111,7 @@
                 "updated": 0,
                 "uncheckedKeys": []
             },
-            "testFilePath": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\src\\render\\Render.test.ts",
+            "testFilePath": "jest-stare\\__tests__\\src\\render\\Render.test.ts",
             "testResults": [
                 {
                     "ancestorTitles": [
@@ -149,7 +149,7 @@
                 "updated": 0,
                 "uncheckedKeys": []
             },
-            "testFilePath": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\src\\processor\\Processor.test.ts",
+            "testFilePath": "jest-stare\\__tests__\\src\\processor\\Processor.test.ts",
             "testResults": [
                 {
                     "ancestorTitles": [
@@ -199,7 +199,7 @@
                 "updated": 0,
                 "uncheckedKeys": []
             },
-            "testFilePath": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\src\\utils\\IO.test.ts",
+            "testFilePath": "jest-stare\\__tests__\\src\\utils\\IO.test.ts",
             "testResults": [
                 {
                     "ancestorTitles": [
@@ -273,7 +273,7 @@
                 "updated": 0,
                 "uncheckedKeys": []
             },
-            "testFilePath": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\src\\utils\\Logger.test.ts",
+            "testFilePath": "jest-stare\\__tests__\\src\\utils\\Logger.test.ts",
             "testResults": [
                 {
                     "ancestorTitles": [
@@ -311,7 +311,7 @@
                 "updated": 0,
                 "uncheckedKeys": []
             },
-            "testFilePath": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\src\\reporter\\Reporter.test.ts",
+            "testFilePath": "jest-stare\\__tests__\\src\\reporter\\Reporter.test.ts",
             "testResults": [
                 {
                     "ancestorTitles": [

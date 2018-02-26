@@ -38,8 +38,8 @@
     "build": "tsc --pretty && npx browserify lib/render/view.js -o lib/render/view.js",
     "test": "npx jest",
     "example": "npm run build && jest --testRegex __tests__.*\\.example\\.ts$",
-    "examplePassing": "npm run build && jest --testRegex __tests__.*\\.example\\.ts$ Passing",
-    "exampleFailing": "npm run build && jest --testRegex __tests__.*\\.example\\.ts$ Failing",
+    "examplePassing": "npm run build && npx jest --testRegex __tests__.*\\.example\\.ts$ Passing",
+    "exampleFailing": "npm run build && npx jest --testRegex __tests__.*\\.example\\.ts$ Failing",
     "coverage": "jest --coverage",
     "watch": "npm run build -- --watch",
     "watch:test": "jest --watch"
@@ -68,6 +68,7 @@
     "@types/node": "^8.0.0",
     "browserify": "^16.1.0",
     "coveralls": "^2.0.0",
+    "jest-environment-jsdom": "^22.4.1",
     "jest-environment-node-debug": "^2.0.0",
     "rimraf": "^2.0.0",
     "ts-jest": "^20.0.7",
@@ -91,7 +92,7 @@
       "ts",
       "js"
     ],
-    "testEnvironment": "node",
+    "testEnvironment": "jsdom",
     "testResultsProcessor": "./"
   },
   "jest-stare": {

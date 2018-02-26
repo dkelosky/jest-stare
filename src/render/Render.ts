@@ -1,12 +1,15 @@
 import * as bootstrap from "bootstrap/dist/js/bootstrap.bundle.min.js";
 import * as $ from "jquery";
-import { Chart, ChartConfiguration } from "chart.js";
 import { IResultsProcessorInput } from "../processor/doc/jest/IResultsProcessorInput";
 import { ITestResults } from "../processor/doc/jest/ITestResults";
 import { IInnerTestResults } from "../processor/doc/jest/IInnerTestResults";
 import * as AnsiParser from "ansi-parser";
 import { isNullOrUndefined } from "util";
 import { TestDifference } from "../elements/TestDifference";
+import { Switch } from "./navigation/Switch";
+import { Constants } from "./Constants";
+import { Status } from "./charts/Status";
+import { Doughnut } from "./charts/Doughnut";
 
 /**
  * Adjust DOM to display JSON data
@@ -16,73 +19,7 @@ import { TestDifference } from "../elements/TestDifference";
 export class Render {
 
     /**
-     * Passed jest status
-     * @private
-     * @static
-     * @memberof Render
-     */
-    private static readonly TEST_STATUS_PASS = "passed";
-
-    /**
-     * Failed jest status
-     * @private
-     * @static
-     * @memberof Render
-     */
-    private static readonly TEST_STATUS_FAIL = "failed";
-
-    /**
-     * Pending jest status
-     * @private
-     * @static
-     * @memberof Render
-     */
-    private static readonly TEST_STATUS_PEND = "pending";
-
-    /**
-     * Pass color
-     * @private
-     * @static
-     * @memberof Render
-     */
-    private static readonly PASS_RAW = "009933";
-    private static readonly PASS = "#" + Render.PASS_RAW;
-
-    /**
-     * Fail color
-     * @private
-     * @static
-     * @memberof Render
-     */
-    private static readonly FAIL_RAW = "ce183d";
-    private static readonly FAIL = "#" + Render.FAIL_RAW;
-
-    /**
-     * Passed test class
-     * @private
-     * @static
-     * @memberof Render
-     */
-    private static readonly PASSED_TEST = "passed-test";
-
-    /**
-     * Failed test class
-     * @private
-     * @static
-     * @memberof Render
-     */
-    private static readonly FAILED_TEST = "failed-test";
-
-    /**
-     * Both passed and failed test class
-     * @private
-     * @static
-     * @memberof Render
-     */
-    private static readonly BOTH_TEST = "both-test";
-
-    /**
-     * Creates an instance of Render.
+     * Creates an instance of Constants.
      * @param {IResultsProcessorInput} mResults - parsed test results from DOM
      * @memberof Render
      */
@@ -96,9 +33,20 @@ export class Render {
     public init() {
 
         // build charts
-        this.generateChartsFromTagIdPrefix("test-suites");
-        this.generateChartsFromTagIdPrefix("tests");
-        this.generateChartsFromTagIdPrefix("snapshots");
+        Doughnut.createChart(
+            $("#test-suites-canvas") as JQuery<HTMLCanvasElement>, this.mResults.numPassedTestSuites, this.mResults.numTotalTestSuites);
+        Doughnut.createChart(
+            $("#tests-canvas") as JQuery<HTMLCanvasElement>, this.mResults.numPassedTests, this.mResults.numTotalTests);
+        Doughnut.createChart(
+            $("#snapshots-canvas") as JQuery<HTMLCanvasElement>, this.mResults.snapshot.matched, this.mResults.snapshot.total);
+
+        // update status area
+        Status.setResultsClass(
+            $("#test-suites-results") as JQuery<HTMLParagraphElement>, this.mResults.numPassedTestSuites, this.mResults.numTotalTestSuites);
+        Status.setResultsClass(
+            $("#tests-results") as JQuery<HTMLParagraphElement>, this.mResults.numPassedTests, this.mResults.numTotalTests);
+        Status.setResultsClass(
+            $("#snapshots-results") as JQuery<HTMLParagraphElement>, this.mResults.snapshot.matched, this.mResults.snapshot.total);
 
         // build suites
         const tableHtml = this.buildSuites();
@@ -108,100 +56,8 @@ export class Render {
         $("#test-results").replaceWith($(tableHtml));
 
         // listen for filtering requests
-        this.activateFilters($("#lab-passoff-switch") as JQuery<HTMLInputElement>, $("." + Render.PASSED_TEST) as JQuery<HTMLDivElement>);
-        this.activateFilters($("#lab-failoff-switch") as JQuery<HTMLInputElement>, $("." + Render.FAILED_TEST) as JQuery<HTMLDivElement>);
-    }
-
-    /**
-     * Activate checkbox listeners to filter on passed or failed tests
-     * @private
-     * @param {JQuery<HTMLInputElement>} checkBox - checkbox element
-     * @param {JQuery<HTMLDivElement>} divClass - class to toggle showing / hiding
-     * @memberof Render
-     */
-    private activateFilters(checkBox: JQuery<HTMLInputElement>, divClass: JQuery<HTMLDivElement>) {
-        checkBox.change(() => {
-            if (checkBox.is(":checked")) {
-                divClass.show();
-            } else {
-                divClass.hide();
-            }
-        });
-    }
-
-    /**
-     * Generate charts from input tag prefx
-     * @private
-     * @param {string} tagPrefix - tag prefix for which expected conventions of -canvas and -results will have canvas and results
-     * @memberof Render
-     */
-    private generateChartsFromTagIdPrefix(tagPrefix: string) {
-
-        // TODO(Kelosky): refactor to not parse from html tags
-        const jqueryTag = "#" + tagPrefix;
-
-        const chartType = "doughnut";
-
-        const canvasPost = "-canvas";
-        const resultsPost = "-results";
-
-        const separator = " ";
-        const passedIndex = 0;
-        const totalIndex = 2;
-
-        const jqueryCanvas = jqueryTag + canvasPost;
-        const jqueryResults = jqueryTag + resultsPost;
-
-        const canvas = $(jqueryCanvas).get(0) as HTMLCanvasElement;
-        const results = $(jqueryResults).text();
-        const resultsParsed = results.split(separator);
-
-        const baseTen = 10;
-
-        const passed: number = parseInt(resultsParsed[passedIndex], baseTen);
-        const total: number = parseInt(resultsParsed[totalIndex], baseTen);
-        const failed: number = total - passed;
-
-        if (total === 0) {
-            $(jqueryResults).addClass("list-group-item-info");
-        } else {
-            if (passed === 0) {
-                $(jqueryResults).addClass("list-group-item-danger");
-            } else if (passed === total) {
-                $(jqueryResults).addClass("list-group-item-success");
-            } else {
-                $(jqueryResults).addClass("list-group-item-warning");
-            }
-        }
-
-        const passLabel = "Passed";
-        const failLabel = "Failed";
-
-        const config: ChartConfiguration = {
-            type: chartType,
-            data: {
-                labels: [passLabel, failLabel],
-                datasets: [
-                    {
-                        backgroundColor: [Render.PASS, Render.FAIL],
-                        data: [passed, failed],
-                    }
-                ]
-            }
-        };
-
-        this.buildCanvas(canvas, config);
-    }
-
-    /**
-     * Build charts at a canvas with input config
-     * @private
-     * @param {HTMLCanvasElement} canvas - canvas location
-     * @param {ChartConfiguration} config - config for chart
-     * @memberof Render
-     */
-    private buildCanvas(canvas: HTMLCanvasElement, config: ChartConfiguration) {
-        const doughnut = new Chart(canvas, config);
+        const passSwitch = new Switch($("#lab-passoff-switch") as JQuery<HTMLInputElement>, $("." + Constants.PASSED_TEST) as JQuery<HTMLDivElement>);
+        const failSwitch = new Switch($("#lab-failoff-switch") as JQuery<HTMLInputElement>, $("." + Constants.FAILED_TEST) as JQuery<HTMLDivElement>);
     }
 
     /**
@@ -215,47 +71,47 @@ export class Render {
         const describeLevels: number[] = [];
 
         this.mResults.testResults.forEach((testResult) => {
-            let testStatusClass = Render.PASSED_TEST;
+            let testStatusClass = Constants.PASSED_TEST;
 
             const testSectionStatus: Map<string, string> = new Map<string, string>();
             for (const result of testResult.testResults) {
 
                 // mark overall status for a suite
-                if (result.status === Render.TEST_STATUS_FAIL) {
-                    if (testStatusClass === Render.PASSED_TEST) {
-                        testStatusClass = Render.BOTH_TEST;
+                if (result.status === Constants.TEST_STATUS_FAIL) {
+                    if (testStatusClass === Constants.PASSED_TEST) {
+                        testStatusClass = Constants.BOTH_TEST;
                     } else {
-                        testStatusClass = Render.FAILED_TEST; // overall
+                        testStatusClass = Constants.FAILED_TEST; // overall
                     }
                     // mark all lower test sections as containing a failed test for filtering
                     for (const ancestorTitle of result.ancestorTitles) {
                         const checkStatus = testSectionStatus.get(ancestorTitle);
                         if (!isNullOrUndefined(checkStatus)) {
-                            if (checkStatus === Render.FAILED_TEST) {
-                                testSectionStatus.set(ancestorTitle, Render.BOTH_TEST);
+                            if (checkStatus === Constants.FAILED_TEST) {
+                                testSectionStatus.set(ancestorTitle, Constants.BOTH_TEST);
                             }
                         } else {
-                            testSectionStatus.set(ancestorTitle, Render.FAILED_TEST);
+                            testSectionStatus.set(ancestorTitle, Constants.FAILED_TEST);
                         }
                     }
                 }
                 // mark overall status for a suite
-                if (result.status === Render.TEST_STATUS_PASS) {
-                    if (testStatusClass === Render.FAILED_TEST) {
-                        testStatusClass = Render.BOTH_TEST;
+                if (result.status === Constants.TEST_STATUS_PASS) {
+                    if (testStatusClass === Constants.FAILED_TEST) {
+                        testStatusClass = Constants.BOTH_TEST;
                     } else {
-                        testStatusClass = Render.PASSED_TEST;
+                        testStatusClass = Constants.PASSED_TEST;
                     }
 
                     // mark all lower test sections as containing a failed test for filtering
                     for (const ancestorTitle of result.ancestorTitles) {
                         const checkStatus = testSectionStatus.get(ancestorTitle);
                         if (!isNullOrUndefined(checkStatus)) {
-                            if (checkStatus === Render.FAILED_TEST) {
-                                testSectionStatus.set(ancestorTitle, Render.BOTH_TEST);
+                            if (checkStatus === Constants.FAILED_TEST) {
+                                testSectionStatus.set(ancestorTitle, Constants.BOTH_TEST);
                             }
                         } else {
-                            testSectionStatus.set(ancestorTitle, Render.PASSED_TEST);
+                            testSectionStatus.set(ancestorTitle, Constants.PASSED_TEST);
                         }
                     }
                 }
@@ -263,7 +119,7 @@ export class Render {
 
 
             const div = document.createElement("div") as HTMLDivElement;
-            if (testStatusClass === Render.BOTH_TEST) {
+            if (testStatusClass === Constants.BOTH_TEST) {
                 div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow");
             } else {
                 div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
@@ -284,8 +140,8 @@ export class Render {
                     innerTestResult.ancestorTitles.forEach((title, index) => {
                         if (!divMap.has(this.getKey(index, title))) {
                             const nestDiv = document.createElement("div") as HTMLDivElement;
-                            const statusClass = testSectionStatus.get(title) || Render.PASSED_TEST;
-                            if (statusClass === Render.BOTH_TEST) {
+                            const statusClass = testSectionStatus.get(title) || Constants.PASSED_TEST;
+                            if (statusClass === Constants.BOTH_TEST) {
                                 nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow");
                             } else {
                                 nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
@@ -376,11 +232,11 @@ export class Render {
      * @memberof Render
      */
     private initSuiteSection(testResults: ITestResults): HTMLDivElement {
-        let testStatusClass = Render.PASSED_TEST;
+        let testStatusClass = Constants.PASSED_TEST;
 
         for (const result of testResults.testResults) {
-            if (result.status === Render.TEST_STATUS_FAIL) {
-                testStatusClass = Render.FAILED_TEST;
+            if (result.status === Constants.TEST_STATUS_FAIL) {
+                testStatusClass = Constants.FAILED_TEST;
                 break;
             }
         }
@@ -400,19 +256,19 @@ export class Render {
      * @memberof Render
      */
     private addTestToSuite(innerTestResult: IInnerTestResults): HTMLElement {
-        let color = Render.PASS_RAW;
-        let testStatusClass = Render.PASSED_TEST;
+        let color = Constants.PASS_RAW;
+        let testStatusClass = Constants.PASSED_TEST;
         let failed = false;
 
         switch (innerTestResult.status) {
-            case Render.TEST_STATUS_FAIL:
-                color = Render.FAIL_RAW;
-                testStatusClass = Render.FAILED_TEST;
+            case Constants.TEST_STATUS_FAIL:
+                color = Constants.FAIL_RAW;
+                testStatusClass = Constants.FAILED_TEST;
                 failed = true;
                 break;
-            case Render.TEST_STATUS_PEND:
+            case Constants.TEST_STATUS_PEND:
                 break;
-            case Render.TEST_STATUS_PASS:
+            case Constants.TEST_STATUS_PASS:
                 break;
             default:
                 break;
@@ -529,10 +385,10 @@ export class Render {
             failMessageSplit.forEach((entry, index) => {
                 const codeSpan = document.createElement("span") as HTMLSpanElement;
                 if (entry[0] === "+") {
-                    codeSpan.setAttribute("style", "color:" + Render.PASS);
+                    codeSpan.setAttribute("style", "color:" + Constants.PASS);
                     codeSpan.textContent = entry;
                 } else if (entry[0] === "-") {
-                    codeSpan.setAttribute("style", "color:" + Render.FAIL);
+                    codeSpan.setAttribute("style", "color:" + Constants.FAIL);
                     codeSpan.textContent = entry;
                 } else {
                     codeSpan.textContent = entry;

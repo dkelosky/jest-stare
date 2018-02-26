@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Status tests should set proper class for failed tests 1`] = `"list-group-item-danger"`;
+
+exports[`Status tests should set proper class for passed and failed tests 1`] = `"list-group-item-warning"`;
+
+exports[`Status tests should set proper class for passed tests 1`] = `"list-group-item-success"`;
