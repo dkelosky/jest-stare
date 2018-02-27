@@ -50,7 +50,7 @@ export class Processor {
             }
         }
 
-        // record if we were invoked programmaticall
+        // record if we were invoked programmatically
         if (!isNullOrUndefined(explicitConfig)) {
             Logger.get.debug(Constants.OVERRIDE_JEST_STARE_CONFIG);
         }

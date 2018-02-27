@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestSuite tests should create proper elements for passing json tests 1`] = `
+Array [
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        IO tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      Work\\Dev\\node\\jest-stare\\__tests__\\reporter\\Reporter.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        Reporter tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+]
+`;

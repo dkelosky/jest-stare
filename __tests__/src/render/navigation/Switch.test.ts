@@ -1,5 +1,6 @@
 import * as $ from "jquery";
 import { Switch } from "../../../../src/render/navigation/Switch";
+
 describe("Switch tests", () => {
 
     it("should change classes shown when toggled", () => {
