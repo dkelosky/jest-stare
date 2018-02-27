@@ -16,37 +16,45 @@ import { TestSuite } from "./suites/TestSuite";
 export class Render {
 
     /**
-     * Creates an instance of Constants.
-     * @param {IResultsProcessorInput} mResults - parsed test results from DOM
+     * Wait for DOM load then show
+     * @static
+     * @param {IResultsProcessorInput} results - jest results
      * @memberof Render
      */
-    constructor(private mResults: IResultsProcessorInput) {
+    public static init() {
+        document.addEventListener("DOMContentLoaded", () => {
+            const results: IResultsProcessorInput = JSON.parse($("#test-results").text());
+            Render.show(results);
+        });
     }
 
     /**
-     * After DOM loaded, initialize charts
+     * Render content
+     * @static
+     * @private
+     * @param {IResultsProcessorInput} results - jest results
      * @memberof Render
      */
-    public init() {
+    private static show(results: IResultsProcessorInput) {
 
         // build charts
         Doughnut.createChart(
-            $("#test-suites-canvas") as JQuery<HTMLCanvasElement>, this.mResults.numPassedTestSuites, this.mResults.numTotalTestSuites);
+            $("#test-suites-canvas") as JQuery<HTMLCanvasElement>, results.numPassedTestSuites, results.numTotalTestSuites);
         Doughnut.createChart(
-            $("#tests-canvas") as JQuery<HTMLCanvasElement>, this.mResults.numPassedTests, this.mResults.numTotalTests);
+            $("#tests-canvas") as JQuery<HTMLCanvasElement>, results.numPassedTests, results.numTotalTests);
         Doughnut.createChart(
-            $("#snapshots-canvas") as JQuery<HTMLCanvasElement>, this.mResults.snapshot.matched, this.mResults.snapshot.total);
+            $("#snapshots-canvas") as JQuery<HTMLCanvasElement>, results.snapshot.matched, results.snapshot.total);
 
         // update status area
         Status.setResultsClass(
-            $("#test-suites-results") as JQuery<HTMLParagraphElement>, this.mResults.numPassedTestSuites, this.mResults.numTotalTestSuites);
+            $("#test-suites-results") as JQuery<HTMLParagraphElement>, results.numPassedTestSuites, results.numTotalTestSuites);
         Status.setResultsClass(
-            $("#tests-results") as JQuery<HTMLParagraphElement>, this.mResults.numPassedTests, this.mResults.numTotalTests);
+            $("#tests-results") as JQuery<HTMLParagraphElement>, results.numPassedTests, results.numTotalTests);
         Status.setResultsClass(
-            $("#snapshots-results") as JQuery<HTMLParagraphElement>, this.mResults.snapshot.matched, this.mResults.snapshot.total);
+            $("#snapshots-results") as JQuery<HTMLParagraphElement>, results.snapshot.matched, results.snapshot.total);
 
         // build suites
-        const tableHtml = TestSuite.create(this.mResults);
+        const tableHtml = TestSuite.create(results);
 
         // hide loading and show suites
         $("#loading-info").hide();
