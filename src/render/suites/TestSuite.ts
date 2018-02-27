@@ -90,35 +90,32 @@ export class TestSuite {
             testMap.set("", div); // for entry where no ancestor title exists
 
             testResult.testResults.forEach((innerTestResult) => {
-
-                if (innerTestResult.ancestorTitles.length > 0) {
-                    innerTestResult.ancestorTitles.forEach((title, index) => {
-                        if (!describeMap.has(TestSuite.getKey(index, title))) {
-                            const nestDiv = document.createElement("div") as HTMLDivElement;
-                            const statusClass = testSectionStatus.get(title) || Constants.PASSED_TEST;
-                            if (statusClass === Constants.BOTH_TEST) {
-                                nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow");
-                            } else {
-                                nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
-                            }
-                            const h6 = document.createElement("h6") as HTMLHeadingElement;
-                            h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
-                            h6.textContent = title;
-                            nestDiv.appendChild(h6);
-                            describeMap.set(TestSuite.getKey(index, title), nestDiv);
-
-                            // append this "describe" section to it's parent
-                            const titlesCopy = innerTestResult.ancestorTitles.slice();
-                            titlesCopy.splice(index + 1);
-                            const parentKey = TestSuite.getParentKey(titlesCopy, describeMap);
-                            const parentElement = describeMap.get(parentKey);
-                            parentElement.appendChild(nestDiv);
-
-                            // assign a test to it's describe div
-                            testMap.set(TestSuite.getKey(index, title), nestDiv);
+                innerTestResult.ancestorTitles.forEach((title, index) => {
+                    if (!describeMap.has(TestSuite.getKey(index, title))) {
+                        const nestDiv = document.createElement("div") as HTMLDivElement;
+                        const statusClass = testSectionStatus.get(title) || Constants.PASSED_TEST;
+                        if (statusClass === Constants.BOTH_TEST) {
+                            nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow");
+                        } else {
+                            nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
                         }
-                    });
-                }
+                        const h6 = document.createElement("h6") as HTMLHeadingElement;
+                        h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
+                        h6.textContent = title;
+                        nestDiv.appendChild(h6);
+                        describeMap.set(TestSuite.getKey(index, title), nestDiv);
+
+                        // append this "describe" section to it's parent
+                        const titlesCopy = innerTestResult.ancestorTitles.slice();
+                        titlesCopy.splice(index + 1);
+                        const parentKey = TestSuite.getParentKey(titlesCopy, describeMap);
+                        const parentElement = describeMap.get(parentKey);
+                        parentElement.appendChild(nestDiv);
+
+                        // assign a test to it's describe div
+                        testMap.set(TestSuite.getKey(index, title), nestDiv);
+                    }
+                });
             });
 
             testResult.testResults.forEach((innerTestResult) => {
