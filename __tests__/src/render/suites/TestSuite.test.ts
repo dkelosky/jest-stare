@@ -2,12 +2,14 @@ jest.mock("../../../../src/render/tests/Test");
 
 import { TestSuite } from "../../../../src/render/suites/TestSuite";
 import { Test } from "../../../../src/render/tests/Test";
+import { IResultsProcessorInput } from "../../../../src/processor/doc/jest/IResultsProcessorInput";
 
-const simplePassingTests = require("../../../data/simplePassingTests.json");
-const simpleFailingTests = require("../../../data/simpleFailingTests.json");
-const twoSideBySideFailDiffTests = require("../../../data/twoSideBySideFailDiffTests.json");
-const largeTests = require("../../../data/largeTests.json");
+const simplePassingTests: IResultsProcessorInput = require("../../../data/simplePassingTests.json");
+const simpleFailingTests: IResultsProcessorInput = require("../../../data/simpleFailingTests.json");
+const twoSideBySideFailDiffTests: IResultsProcessorInput = require("../../../data/twoSideBySideFailDiffTests.json");
+const largeTests: IResultsProcessorInput = require("../../../data/largeTests.json");
 
+// mock out the individual tests within describe blocks
 (Test.create as any) = jest.fn( () => {
     const div = document.createElement("div") as HTMLDivElement;
     div.textContent = "dummy div";

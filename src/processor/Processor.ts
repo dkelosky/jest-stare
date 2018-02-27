@@ -32,7 +32,7 @@ export class Processor {
 
         // build mustache render substitution values
         substitute.results = results;
-        substitute.rawResults = JSON.stringify(results);
+        substitute.rawResults = JSON.stringify(results, null, 2);
 
         // throw error if no input object
         if (isNullOrUndefined(results)) {
