@@ -67,7 +67,6 @@ export class TestSuite {
                 }
             }
 
-
             const div = document.createElement("div") as HTMLDivElement;
             if (testStatusClass === Constants.BOTH_TEST) {
                 div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow");
