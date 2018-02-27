@@ -27,7 +27,7 @@ describe("IO tests", () => {
     it("should pretend to write to a file and reject promise for IO errors", async () => {
         const fn = (fs.writeFile as any) as Mock<typeof fs.writeFile>;
         fn.mockImplementation((path: string, data: any, callback: (err?: Error) => void) => {
-            const ioError = new Error("Pretent IO message");
+            const ioError = new Error("Pretend IO message");
             callback(ioError);
         });
 
