@@ -106,7 +106,7 @@ export class TestSuite {
 
                         // append this "describe" section to it's parent
                         const titlesCopy = innerTestResult.ancestorTitles.slice();
-                        titlesCopy.splice(index + 1);
+                        titlesCopy.splice(index);
                         const parentKey = TestSuite.getParentKey(titlesCopy, describeMap);
                         const parentElement = describeMap.get(parentKey);
                         parentElement.appendChild(nestDiv);
