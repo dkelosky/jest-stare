@@ -3,7 +3,7 @@ const simplePassingTests = require("../../data/simplePassingTests.json");
 
 describe("Render tests", () => {
     it("should pass", () => {
-        const render = new Render(simplePassingTests);
+        // const render = Render(simplePassingTests);
 
         expect(true).toBe(true);
     });

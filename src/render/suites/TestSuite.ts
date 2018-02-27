@@ -82,7 +82,9 @@ export class TestSuite {
             div.appendChild(h5);
 
             const divMap: Map<string, HTMLElement> = new Map<string, HTMLElement>();
+            const divMap2: Map<string, HTMLElement> = new Map<string, HTMLElement>();
             divMap.set("", div); // for entry where no ancestor title exists
+            divMap2.set("", div); // for entry where no ancestor title exists
 
             testResult.testResults.forEach((innerTestResult) => {
 
@@ -101,25 +103,24 @@ export class TestSuite {
                             h6.textContent = title;
                             nestDiv.appendChild(h6);
                             divMap.set(this.getKey(index, title), nestDiv);
+
+                            // append this "describe" section to it's parent
+                            const titlesCopy = innerTestResult.ancestorTitles.slice();
+                            titlesCopy.splice(index + 1);
+                            const parentKey = TestSuite.getParentKey(titlesCopy, divMap);
+                            const parentElement = divMap.get(parentKey);
+                            parentElement.appendChild(nestDiv);
+
+                            // if (index === innerTestResult.ancestorTitles.length) {
+                            divMap2.set(this.getKey(index, title), nestDiv);
+                            // }
                         }
                     });
                 }
             });
 
             testResult.testResults.forEach((innerTestResult) => {
-                const index = innerTestResult.ancestorTitles.length - 1;
-                const addToDiv = divMap.get(this.getKeyFromTitle(innerTestResult.ancestorTitles));
-
-                const parentKey = TestSuite.getParentKey(innerTestResult.ancestorTitles, divMap);
-                const parentElement = divMap.get(parentKey);
-
-                // if we get the parent is the sample as the div we're intending to add to, just append test
-                // instead of appending a parent to itself
-                if (parentElement !== addToDiv) {
-                    parentElement.appendChild(addToDiv);
-                }
-
-                // add test result
+                const addToDiv = divMap2.get(this.getKeyFromTitle(innerTestResult.ancestorTitles));
                 addToDiv.appendChild(Test.create(innerTestResult));
             });
 

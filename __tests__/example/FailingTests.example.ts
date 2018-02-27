@@ -41,7 +41,6 @@ describe("Failing Tests", () => {
                 "and a reminder to scrape an avocado onto your toast.");
             }).toThrowErrorMatchingSnapshot();
         });
-    });
 
     it("should fail due to an error", () => {
         throw new Error("This is an error failure");
@@ -50,4 +49,5 @@ describe("Failing Tests", () => {
     it("Should fail due to a bad expectation", () => {
         expect(false).toEqual(true);
     })
+    });
 });
