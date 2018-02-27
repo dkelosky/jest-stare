@@ -90,7 +90,7 @@ export class TestSuite {
 
                 if (innerTestResult.ancestorTitles.length > 0) {
                     innerTestResult.ancestorTitles.forEach((title, index) => {
-                        if (!divMap.has(this.getKey(index, title))) {
+                        if (!divMap.has(TestSuite.getKey(index, title))) {
                             const nestDiv = document.createElement("div") as HTMLDivElement;
                             const statusClass = testSectionStatus.get(title) || Constants.PASSED_TEST;
                             if (statusClass === Constants.BOTH_TEST) {
@@ -102,7 +102,7 @@ export class TestSuite {
                             h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
                             h6.textContent = title;
                             nestDiv.appendChild(h6);
-                            divMap.set(this.getKey(index, title), nestDiv);
+                            divMap.set(TestSuite.getKey(index, title), nestDiv);
 
                             // append this "describe" section to it's parent
                             const titlesCopy = innerTestResult.ancestorTitles.slice();
@@ -112,7 +112,7 @@ export class TestSuite {
                             parentElement.appendChild(nestDiv);
 
                             // if (index === innerTestResult.ancestorTitles.length) {
-                            divMap2.set(this.getKey(index, title), nestDiv);
+                            divMap2.set(TestSuite.getKey(index, title), nestDiv);
                             // }
                         }
                     });
@@ -120,7 +120,7 @@ export class TestSuite {
             });
 
             testResult.testResults.forEach((innerTestResult) => {
-                const addToDiv = divMap2.get(this.getKeyFromTitle(innerTestResult.ancestorTitles));
+                const addToDiv = divMap2.get(TestSuite.getKeyFromTitle(innerTestResult.ancestorTitles));
                 addToDiv.appendChild(Test.create(innerTestResult));
             });
 
@@ -153,7 +153,7 @@ export class TestSuite {
      */
     private static getKeyFromTitle(titles: string[]) {
         if (titles.length > 0) {
-            return this.getKey(titles.length - 1, titles[titles.length - 1]);
+            return TestSuite.getKey(titles.length - 1, titles[titles.length - 1]);
         }
         return "";
     }
@@ -171,7 +171,7 @@ export class TestSuite {
     private static getParentKey(titles: string[], divMap: Map<string, HTMLElement>) {
         for (let i = titles.length - 1 - 1; i >= 0; i--) {
             if (divMap.has(i + titles[i])) {
-                return this.getKey(i, titles[i]);
+                return TestSuite.getKey(i, titles[i]);
             }
         }
 
