@@ -1,8 +1,12 @@
 jest.mock("../../../src/utils/IO");
+jest.mock("../../../src/utils/Logger");
+
 import { IO } from "../../../src/utils/IO";
 import { Processor } from "../../../src/processor/Processor";
-const simplePassingTests = require("../../data/simplePassingTests.json");
 import {inspect} from "util";
+import { Logger } from "../../../src/utils/Logger";
+
+const simplePassingTests = require("../../data/simplePassingTests.json");
 
 describe("Processor tests", () => {
 
