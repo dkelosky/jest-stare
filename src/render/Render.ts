@@ -37,13 +37,31 @@ export class Render {
      */
     private static show(results: IResultsProcessorInput) {
 
+        const labels = [Constants.PASSED_LABEL, Constants.FAILED_LABEL];
+        const backgroundColor = [Constants.PASS, Constants.FAIL];
+
         // build charts
         Doughnut.createChart(
-            $("#test-suites-canvas") as JQuery<HTMLCanvasElement>, results.numPassedTestSuites, results.numTotalTestSuites);
+            $("#test-suites-canvas") as JQuery<HTMLCanvasElement>, labels, backgroundColor,
+            [results.numPassedTestSuites, results.numTotalTestSuites]);
+
         Doughnut.createChart(
-            $("#tests-canvas") as JQuery<HTMLCanvasElement>, results.numPassedTests, results.numTotalTests);
+            $("#tests-canvas") as JQuery<HTMLCanvasElement>, labels, backgroundColor,
+            [results.numPassedTests, results.numTotalTests]);
+
+        // base snapshot data
+        const snapshotData = [results.snapshot.matched, results.snapshot.total];
+
+        // add info about added snapshots if present
+        if (results.snapshot.filesAdded > 0) {
+            labels.push(Constants.ADDED_LABEL);
+            backgroundColor.push(Constants.ADDED);
+            snapshotData.push(results.snapshot.filesAdded);
+        }
+
         Doughnut.createChart(
-            $("#snapshots-canvas") as JQuery<HTMLCanvasElement>, results.snapshot.matched, results.snapshot.total);
+            $("#snapshots-canvas") as JQuery<HTMLCanvasElement>, labels, backgroundColor,
+            snapshotData);
 
         // update status area
         Status.setResultsClass(

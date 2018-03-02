@@ -20,6 +20,27 @@ export class Constants {
     public static readonly FAILED_LABEL = "Failed";
 
     /**
+     * Label for obsolete info
+     * @static
+     * @memberof Constants
+     */
+    public static readonly OBSOLETE_LABEL = "Obsolete";
+
+    /**
+     * Label for changed info
+     * @static
+     * @memberof Constants
+     */
+    public static readonly CHANGED_LABEL = "Changed";
+
+    /**
+     * Label for added info
+     * @static
+     * @memberof Constants
+     */
+    public static readonly ADDED_LABEL = "Added";
+
+    /**
      * Passed jest status
      * @static
      * @memberof Constants
@@ -45,7 +66,21 @@ export class Constants {
      * @static
      * @memberof Constants
      */
-    public static readonly OBSOLETE = "xx";
+    public static readonly OBSOLETE = "#ffc107";
+
+    /**
+     * Added color
+     * @static
+     * @memberof Constants
+     */
+    public static readonly ADDED = "#007bff";
+
+    /**
+     * Changed color
+     * @static
+     * @memberof Constants
+     */
+    public static readonly CHANGED = "#6c757d";
 
     /**
      * Pass color
