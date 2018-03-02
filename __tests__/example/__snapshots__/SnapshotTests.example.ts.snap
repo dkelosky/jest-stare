@@ -2,6 +2,6 @@
 
 exports[`Snapshot tests should add a snapshot 1`] = `
 Object {
-  "snapshot": "data",
+  "snapshot": "new",
 }
 `;

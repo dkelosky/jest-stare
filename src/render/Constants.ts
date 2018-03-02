@@ -41,6 +41,13 @@ export class Constants {
     public static readonly ADDED_LABEL = "Added";
 
     /**
+     * Label for removed info
+     * @static
+     * @memberof Constants
+     */
+    public static readonly REMOVED_LABEL = "Removed";
+
+    /**
      * Passed jest status
      * @static
      * @memberof Constants
@@ -74,6 +81,13 @@ export class Constants {
      * @memberof Constants
      */
     public static readonly ADDED = "#007bff";
+
+    /**
+     * Removed color
+     * @static
+     * @memberof Constants
+     */
+    public static readonly REMOVED = "#343a40";
 
     /**
      * Changed color

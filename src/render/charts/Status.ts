@@ -13,9 +13,9 @@ export class Status {
      * @param {number} total - total tests
      * @memberof Status
      */
-    public static setResultsClass(statusElement: JQuery<HTMLParagraphElement>, passed: number, total: number) {
+    public static setResultsClass(statusElement: JQuery<HTMLParagraphElement>, passed: number, failed: number) {
 
-        const failed: number = total - passed;
+        const total: number = passed - failed;
 
         if (total === 0) {
             statusElement.addClass("list-group-item-info");

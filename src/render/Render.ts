@@ -42,25 +42,28 @@ export class Render {
         const backgroundColor = [Constants.PASS, Constants.FAIL];
 
         // build suites chart
-        const suitesData = Render.buildChartsData(results.numPassedTestSuites, results.numTotalTestSuites);
+        const suitesData = Render.buildChartsData(results.numPassedTestSuites, results.numTotalTestSuites - results.numPassedTestSuites);
         Doughnut.createChart($("#test-suites-canvas") as JQuery<HTMLCanvasElement>, suitesData);
 
         // build tests chart
-        const testsChart = Render.buildChartsData(results.numPassedTests, results.numTotalTests);
+        const testsChart = Render.buildChartsData(results.numPassedTests, results.numTotalTests - results.numPassedTests);
         Doughnut.createChart($("#tests-canvas") as JQuery<HTMLCanvasElement>, testsChart);
 
         // base snapshot data
-        let snapshotChart = Render.buildChartsData(results.snapshot.matched, results.snapshot.total);
+        let snapshotChart = Render.buildChartsData(results.snapshot.matched, results.snapshot.unmatched);
         snapshotChart = Render.addSnapshotChartData(results, snapshotChart);
         Doughnut.createChart($("#snapshots-canvas") as JQuery<HTMLCanvasElement>, snapshotChart);
 
         // update status area
         Status.setResultsClass(
-            $("#test-suites-results") as JQuery<HTMLParagraphElement>, results.numPassedTestSuites, results.numTotalTestSuites);
+            $("#test-suites-results") as JQuery<HTMLParagraphElement>,
+            results.numPassedTestSuites, results.numTotalTestSuites - results.numPassedTestSuites);
         Status.setResultsClass(
-            $("#tests-results") as JQuery<HTMLParagraphElement>, results.numPassedTests, results.numTotalTests);
+            $("#tests-results") as JQuery<HTMLParagraphElement>,
+            results.numPassedTests, results.numTotalTests - results.numPassedTests);
         Status.setResultsClass(
-            $("#snapshots-results") as JQuery<HTMLParagraphElement>, results.snapshot.matched, results.snapshot.total);
+            $("#snapshots-results") as JQuery<HTMLParagraphElement>,
+            results.snapshot.matched, results.snapshot.unmatched);
 
         // build suites
         const tableHtml = TestSuite.create(results);
@@ -88,31 +91,29 @@ export class Render {
      * @private
      * @static
      * @param {number} passedTests - number of passed tests
-     * @param {number} totalTests - number of total tests
+     * @param {number} failedTests - number of failed tests
      * @returns {IChartData} - populated chart data object
      * @memberof Render
      */
-    private static buildChartsData(passedTests: number, totalTests: number): IChartData {
+    private static buildChartsData(passedTests: number, failedTests: number): IChartData {
         const chartData: IChartData = {
             labels: [],
             backgroundColor: [],
             data: [],
         };
 
-        if (totalTests > 0) {
-            if (passedTests > 0) {
-                chartData.labels.push(Constants.PASSED_LABEL);
-                chartData.backgroundColor.push(Constants.PASS);
-                chartData.data.push(passedTests);
-            }
-
-            const failedTests = totalTests - passedTests;
-            if (failedTests > 0) {
-                chartData.labels.push(Constants.FAILED_LABEL);
-                chartData.backgroundColor.push(Constants.FAIL);
-                chartData.data.push(failedTests);
-            }
+        if (passedTests > 0) {
+            chartData.labels.push(Constants.PASSED_LABEL);
+            chartData.backgroundColor.push(Constants.PASS);
+            chartData.data.push(passedTests);
         }
+
+        if (failedTests > 0) {
+            chartData.labels.push(Constants.FAILED_LABEL);
+            chartData.backgroundColor.push(Constants.FAIL);
+            chartData.data.push(failedTests);
+        }
+
         return chartData;
     }
 
@@ -134,6 +135,28 @@ export class Render {
             snapshotChart.data.push(results.snapshot.filesAdded);
         }
 
+        // add info about unchecked snapshots if present
+        if (results.snapshot.unchecked > 0) {
+            snapshotChart.labels.push(Constants.OBSOLETE_LABEL);
+            snapshotChart.backgroundColor.push(Constants.OBSOLETE);
+            snapshotChart.data.push(results.snapshot.unchecked);
+        }
+
+        // add info about changed snapshots if present
+        if (results.snapshot.updated > 0) {
+            snapshotChart.labels.push(Constants.CHANGED_LABEL);
+            snapshotChart.backgroundColor.push(Constants.CHANGED);
+            snapshotChart.data.push(results.snapshot.updated);
+        }
+
+        // add info about removed snapshots if present
+        if (results.snapshot.filesRemoved > 0) {
+            snapshotChart.labels.push(Constants.REMOVED_LABEL);
+            snapshotChart.backgroundColor.push(Constants.REMOVED);
+            snapshotChart.data.push(results.snapshot.filesRemoved);
+        }
+
         return snapshotChart;
     }
+
 }
