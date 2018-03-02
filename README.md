@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/dkelosky/jest-stare.svg?branch=master)](https://travis-ci.org/dkelosky/jest-stare) [![jest](https://facebook.github.io/jest/img/jest-badge.svg)](https://github.com/facebook/jest) [![npm](https://img.shields.io/badge/npm-v5.6.0-blue.svg)](https://www.npmjs.com/package/jest-stare)
 
 # Jest HTML Reporter (Results Processor)
-This is a Jest HTML reporter (really a "results processor").  Summary test results are parsed into an 
-HTML file for improved readability and filtering. 
+This is a Jest HTML reporter (really a "results processor").  It takes summary test results from jest
+and parses into an HTML file for improved readability and filtering. 
 
 ![Sample](images/sampleReport.png "Sample Report")
 
