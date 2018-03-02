@@ -30,7 +30,7 @@ export class Switch {
      */
     private activateFilters(
         checkBox: JQuery<HTMLInputElement>, divClass: JQuery<HTMLDivElement>,
-        addtnlCheckBox: JQuery<HTMLInputElement>?, addtnlDivClass?: JQuery<HTMLDivElement>) {
+        addtnlCheckBox?: JQuery<HTMLInputElement>, addtnlDivClass?: JQuery<HTMLDivElement>) {
             checkBox.change(() => {
                 if (checkBox.is(":checked")) {
                     divClass.show();
