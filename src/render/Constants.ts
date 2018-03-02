@@ -41,11 +41,18 @@ export class Constants {
     public static readonly TEST_STATUS_PEND = "pending";
 
     /**
+     * Obsolete color
+     * @static
+     * @memberof Constants
+     */
+    public static readonly OBSOLETE = "xx";
+
+    /**
      * Pass color
      * @static
      * @memberof Constants
      */
-    public static readonly PASS_RAW = "009933";
+    public static readonly PASS_RAW = "28a745";
     public static readonly PASS = "#" + Constants.PASS_RAW;
 
     /**
@@ -53,7 +60,7 @@ export class Constants {
      * @static
      * @memberof Constants
      */
-    public static readonly FAIL_RAW = "ce183d";
+    public static readonly FAIL_RAW = "dc3545";
     public static readonly FAIL = "#" + Constants.FAIL_RAW;
 
     /**

@@ -11,8 +11,8 @@ describe("Mixed Passing and Failing Tests", () => {
             expect(JSON.stringify(jsonObject, null, 2)).toMatchSnapshot();
         });
 
-        it("should pass a snapshot error comparison", ()=>{
-            expect(()=>{
+        it("should pass a snapshot error comparison", () => {
+            expect(() => {
                 throw new Error("Error stays the same");
             }).toThrowErrorMatchingSnapshot();
         });
@@ -22,13 +22,11 @@ describe("Mixed Passing and Failing Tests", () => {
         throw new Error("This is an error failure");
     });
 
-
-
     it("Should fail due to a bad expectation", () => {
         expect(false).toEqual(true);
     });
 
-    it("Should pass an expect statement", ()=>{
+    it("Should pass an expect statement", () => {
         expect(0).toEqual(0);
     });
 });
