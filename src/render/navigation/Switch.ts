@@ -9,10 +9,14 @@ export class Switch {
      * Creates an instance of Switch.
      * @param {JQuery<HTMLInputElement>} checkBox - checkbox to listen to
      * @param {JQuery<HTMLDivElement>} divClass - class to hide if checkbox is unchecked
+     * @param {JQuery<HTMLInputElement>} addtnlCheckBox - additional check box to listen to
+     * @param {JQuery<HTMLDivElement>} addtnlDivClass - additional div to hide of additional checkbox is off
      * @memberof Switch
      */
-    constructor(checkBox: JQuery<HTMLInputElement>, private divClass: JQuery<HTMLDivElement>) {
-        this.activateFilters(checkBox, divClass);
+    constructor(
+        checkBox: JQuery<HTMLInputElement>, divClass: JQuery<HTMLDivElement>,
+        addtnlCheckBox?: JQuery<HTMLInputElement>, addtnlDivClass?: JQuery<HTMLDivElement>) {
+            this.activateFilters(checkBox, divClass, addtnlCheckBox, addtnlDivClass);
     }
 
     /**
@@ -20,15 +24,25 @@ export class Switch {
      * @private
      * @param {JQuery<HTMLInputElement>} checkBox - checkbox element
      * @param {JQuery<HTMLDivElement>} divClass - class to toggle showing / hiding
-     * @memberof Render
+     * @param {JQuery<HTMLInputElement>} addtnlCheckBox - additional check box to listen to
+     * @param {JQuery<HTMLDivElement>} addtnlDivClass - additional div to hide of additional checkbox is off
+     * @memberof Switch
      */
-    private activateFilters(checkBox: JQuery<HTMLInputElement>, divClass: JQuery<HTMLDivElement>) {
-        checkBox.change(() => {
-            if (checkBox.is(":checked")) {
-                divClass.show();
-            } else {
-                divClass.hide();
-            }
-        });
+    private activateFilters(
+        checkBox: JQuery<HTMLInputElement>, divClass: JQuery<HTMLDivElement>,
+        addtnlCheckBox: JQuery<HTMLInputElement>?, addtnlDivClass?: JQuery<HTMLDivElement>) {
+            checkBox.change(() => {
+                if (checkBox.is(":checked")) {
+                    divClass.show();
+                    if (!addtnlCheckBox.is(":checked")) {
+                        addtnlDivClass.show();
+                    }
+                } else {
+                    divClass.hide();
+                    if (!addtnlCheckBox.is(":checked")) {
+                        addtnlDivClass.hide();
+                    }
+                }
+            });
     }
 }

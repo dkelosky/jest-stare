@@ -37,7 +37,7 @@ export class TestSuite {
                     for (const ancestorTitle of result.ancestorTitles) {
                         const checkStatus = testSectionStatus.get(ancestorTitle);
                         if (!isNullOrUndefined(checkStatus)) {
-                            if (checkStatus === Constants.FAILED_TEST) {
+                            if (checkStatus === Constants.PASSED_TEST) {
                                 testSectionStatus.set(ancestorTitle, Constants.BOTH_TEST);
                             }
                         } else {
@@ -68,11 +68,7 @@ export class TestSuite {
             }
 
             const div = document.createElement("div") as HTMLDivElement;
-            if (testStatusClass === Constants.BOTH_TEST) {
-                div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow");
-            } else {
-                div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
-            }
+            div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
 
             const h5 = document.createElement("h5") as HTMLHeadingElement;
             h5.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-5");
@@ -93,11 +89,7 @@ export class TestSuite {
                     if (!describeMap.has(TestSuite.getKey(index, title))) {
                         const nestDiv = document.createElement("div") as HTMLDivElement;
                         const statusClass = testSectionStatus.get(title) || Constants.PASSED_TEST;
-                        if (statusClass === Constants.BOTH_TEST) {
-                            nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow");
-                        } else {
-                            nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
-                        }
+                        nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
                         const h6 = document.createElement("h6") as HTMLHeadingElement;
                         h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
                         h6.textContent = title;
