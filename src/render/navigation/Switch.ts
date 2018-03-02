@@ -1,3 +1,5 @@
+import { isNullOrUndefined } from "util";
+
 /**
  * Associates a switch (checkbox) to a class to show if checked or hide if unchecked)
  * @export
@@ -34,12 +36,12 @@ export class Switch {
             checkBox.change(() => {
                 if (checkBox.is(":checked")) {
                     divClass.show();
-                    if (!addtnlCheckBox.is(":checked")) {
+                    if (!isNullOrUndefined(addtnlCheckBox) && !addtnlCheckBox.is(":checked")) {
                         addtnlDivClass.show();
                     }
                 } else {
                     divClass.hide();
-                    if (!addtnlCheckBox.is(":checked")) {
+                    if (!isNullOrUndefined(addtnlCheckBox) && !addtnlCheckBox.is(":checked")) {
                         addtnlDivClass.hide();
                     }
                 }
