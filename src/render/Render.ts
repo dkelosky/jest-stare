@@ -61,7 +61,16 @@ export class Render {
         $("#test-results").replaceWith($(tableHtml));
 
         // listen for filtering requests
-        const passSwitch = new Switch($("#lab-passoff-switch") as JQuery<HTMLInputElement>, $("." + Constants.PASSED_TEST) as JQuery<HTMLDivElement>);
-        const failSwitch = new Switch($("#lab-failoff-switch") as JQuery<HTMLInputElement>, $("." + Constants.FAILED_TEST) as JQuery<HTMLDivElement>);
+        const passSwitch = new Switch(
+            $("#lab-passoff-switch") as JQuery<HTMLInputElement>,
+            $("." + Constants.PASSED_TEST) as JQuery<HTMLDivElement>,
+            $("#lab-failoff-switch") as JQuery<HTMLInputElement>,
+            $("." + Constants.BOTH_TEST) as JQuery<HTMLDivElement>);
+
+        const failSwitch = new Switch(
+            $("#lab-failoff-switch") as JQuery<HTMLInputElement>,
+            $("." + Constants.FAILED_TEST) as JQuery<HTMLDivElement>,
+            $("#lab-passoff-switch") as JQuery<HTMLInputElement>,
+            $("." + Constants.BOTH_TEST) as JQuery<HTMLDivElement>);
     }
 }

@@ -113,15 +113,32 @@ export class Logger {
         Logger.validateLevel(this.mLevel);
     }
 
-    public isDebugEnabled() {
-        return Logger.LEVELS.indexOf("debug") >= Logger.LEVELS.indexOf(this.level) ? true : false;
+    /**
+     * Return whether ot not debug level logging is enabled
+     * @returns {boolean} - true if level is enabled
+     * @memberof Logger
+     */
+    public isDebugEnabled(): boolean {
+        return Logger.LEVELS.indexOf("debug") >= Logger.LEVELS.indexOf(this.level) ? this.on : false;
     }
 
-    public isErrorEnabled() {
-        return Logger.LEVELS.indexOf("error") >= Logger.LEVELS.indexOf(this.level) ? true : false;
+    /**
+     * Return whether ot not error level logging is enabled
+     * @returns {boolean} - true if level is enabled
+     * @memberof Logger
+     */
+    public isErrorEnabled(): boolean {
+        return Logger.LEVELS.indexOf("error") >= Logger.LEVELS.indexOf(this.level) ? this.on : false;
     }
 
-    public debug(message: string, ...args: any[]) {
+    /**
+     * Debug level message
+     * @param {string} message - message to write
+     * @param {...any[]} args - arguments for the message
+     * @returns {string} - data written
+     * @memberof Logger
+     */
+    public debug(message: string, ...args: any[]): string {
         if (!this.isDebugEnabled()) {
             return;
         }
@@ -135,7 +152,14 @@ export class Logger {
         return this.writeStdout(adjustedMessage, args);
     }
 
-    public error(message: string, ...args: any[]) {
+    /**
+     * Error level message
+     * @param {string} message - message to write
+     * @param {...any[]} args - arguments for the message
+     * @returns {string} - data written
+     * @memberof Logger
+     */
+    public error(message: string, ...args: any[]): string {
         if (!this.isErrorEnabled()) {
             return;
         }
@@ -149,22 +173,42 @@ export class Logger {
         return this.writeStderr(adjustedMessage, args);
     }
 
-    private writeStderr(message: string, ...args: any[]) {
+    /**
+     * Write to stderr
+     * @private
+     * @param {string} message - message to write
+     * @param {...any[]} args - arguments for the message
+     * @returns {string} - data written
+     * @memberof Logger
+     */
+    private writeStderr(message: string, ...args: any[]): string {
         const data = this.format(message, args);
-        if (this.on) {
-            process.stderr.write(this.format(message, args));
-        }
+        process.stderr.write(this.format(message, args));
         return data;
     }
 
-    private writeStdout(message: string, ...args: any[]) {
+    /**
+     * Write to stdout
+     * @private
+     * @param {string} message - message to write
+     * @param {...any[]} args - arguments for the message
+     * @returns {string} - data written
+     * @memberof Logger
+     */
+    private writeStdout(message: string, ...args: any[]): string {
         const data = this.format(message, args);
-        if (this.on) {
-            process.stdout.write(data);
-        }
+        process.stdout.write(data);
         return data;
     }
 
+    /**
+     * Formats a message for argument substitution
+     * @private
+     * @param {string} data - message to write
+     * @param {...any[]} args - arguments for the message
+     * @returns {string} - substituted strong
+     * @memberof Logger
+     */
     private format(data: string, ...args: any[]) {
         let formatted = data;
         // TODO(Kelosky): this is not ideal, but works for simple cases of
@@ -186,38 +230,81 @@ export class Logger {
         return formatted + "\n";
     }
 
+    /**
+     * Build a message prefix
+     * @private
+     * @param {string} type - type for this message prefix (e.g. DEBUG)
+     * @returns {string} - built prefix
+     * @memberof Logger
+     */
     private buildPrefix(type: string) {
         return "[" + moment().format("YYYY/MM/DD HH:MM:SS") + "]" + " " + "[" + type + "]" + " ";
     }
 
+    /**
+     * Get whether or not format is enabled
+     * @readonly
+     * @memberof Logger
+     */
     get formatEnabled() {
         return true;
     }
 
+    /**
+     * Set whether or not color is enabled
+     * @memberof Logger
+     */
     set color(isEnabled: boolean) {
         this.mColor = isEnabled;
     }
 
+    /**
+     * Get whether or not color is enabled
+     * @type {boolean}
+     * @memberof Logger
+     */
     get color(): boolean {
         return this.mColor;
     }
 
+    /**
+     * Set whether or not logging should occur
+     * @memberof Logger
+     */
     set on(isOn: boolean) {
         this.mIsOn = isOn;
     }
 
+    /**
+     * Get if logging is on
+     * @memberof Logger
+     */
     get on() {
         return this.mIsOn;
     }
 
+    /**
+     * Get current logging level
+     * @readonly
+     * @memberof Logger
+     */
     get level() {
         return this.mLevel;
     }
 
+    /**
+     * Get whether or not messages are prefixed
+     * @type {boolean}
+     * @memberof Logger
+     */
     get prefix(): boolean {
         return this.mPrefix;
     }
 
+    /**
+     * Set whether ot not to prefix messages
+     * @memberof Logger
+     */
     set prefix(prefix) {
         this.mPrefix = prefix;
     }

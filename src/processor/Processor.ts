@@ -32,7 +32,7 @@ export class Processor {
 
         // build mustache render substitution values
         substitute.results = results;
-        substitute.rawResults = JSON.stringify(results);
+        substitute.rawResults = JSON.stringify(results, null, 2);
 
         // throw error if no input object
         if (isNullOrUndefined(results)) {
@@ -46,13 +46,13 @@ export class Processor {
         // suppress logging if requested
         if (!isNullOrUndefined(config.log)) {
             if (!config.log) {
-                Logger.get.on = false;
+                Processor.logger.on = false;
             }
         }
 
-        // record if we were invoked programmaticall
+        // record if we were invoked programmatically
         if (!isNullOrUndefined(explicitConfig)) {
-            Logger.get.debug(Constants.OVERRIDE_JEST_STARE_CONFIG);
+            Processor.logger.debug(Constants.OVERRIDE_JEST_STARE_CONFIG);
         }
 
         // generate report
@@ -61,6 +61,16 @@ export class Processor {
         // return back to jest
         return results;
     }
+
+
+    /**
+     * Instance of our logger
+     * @private
+     * @static
+     * @type {Logger}
+     * @memberof Processor
+     */
+    private static mLog: Logger;
 
     /**
      * Create HTML report
@@ -96,7 +106,7 @@ export class Processor {
         });
 
         // log complete
-        Logger.get.debug(Constants.LOGO + Constants.LOG_MESSAGE + resultDir + Constants.MAIN_HTML + chalk.default.green("\t**"));
+        Processor.logger.debug(Constants.LOGO + Constants.LOG_MESSAGE + resultDir + Constants.MAIN_HTML + chalk.default.green("\t**"));
     }
 
     /**
@@ -155,5 +165,30 @@ export class Processor {
             return {};
         }
 
+    }
+
+    /**
+     * Set logger instance
+     * @private
+     * @static
+     * @memberof Processor
+     */
+    private static set logger(logger: Logger) {
+        this.mLog = logger;
+    }
+
+    /**
+     * Get log instance
+     * @readonly
+     * @private
+     * @static
+     * @memberof Processor
+     */
+    private static get logger() {
+        if (isNullOrUndefined(this.mLog)) {
+            this.logger = new Logger();
+        }
+        // console.log((this.mLog as any).writeStdout)
+        return this.mLog;
     }
 }

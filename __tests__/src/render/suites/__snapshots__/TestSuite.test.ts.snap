@@ -1,0 +1,417 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestSuite tests should create proper elements for large test > 500 tests 1`] = `
+Array [
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow both-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      jest-stare\\__tests__\\example\\FailingTests.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow both-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        Failing Tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      jest-stare\\__tests__\\src\\render\\Render.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        Render tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      jest-stare\\__tests__\\src\\processor\\Processor.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        Processor tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      jest-stare\\__tests__\\src\\utils\\IO.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        IO tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      jest-stare\\__tests__\\src\\utils\\Logger.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        Logger tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      jest-stare\\__tests__\\src\\reporter\\Reporter.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        Reporter tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`TestSuite tests should create proper elements for simple failing tests 1`] = `
+Array [
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow failed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow both-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        IO tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      Work\\Dev\\node\\jest-stare\\__tests__\\reporter\\Reporter.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        Reporter tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`TestSuite tests should create proper elements for simple passing tests 1`] = `
+Array [
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        IO tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      Work\\Dev\\node\\jest-stare\\__tests__\\reporter\\Reporter.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        Reporter tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`TestSuite tests should create proper elements for two diffs in html 1`] = `
+Array [
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow both-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      jest-stare\\__tests__\\example\\FailingTests.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow both-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        Failing Tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      jest-stare\\__tests__\\src\\render\\Render.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        Render tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      jest-stare\\__tests__\\src\\processor\\Processor.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        Processor tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      jest-stare\\__tests__\\src\\utils\\IO.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        IO tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      jest-stare\\__tests__\\src\\utils\\Logger.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        Logger tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      jest-stare\\__tests__\\src\\reporter\\Reporter.test.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        Reporter tests
+      </h6>
+      <div>
+        dummy div
+      </div>
+      <div>
+        dummy div
+      </div>
+    </div>
+  </div>,
+]
+`;
