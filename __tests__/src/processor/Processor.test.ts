@@ -1,5 +1,4 @@
 jest.mock("../../../src/utils/IO");
-jest.mock("../../../src/utils/Logger");
 
 import { IO } from "../../../src/utils/IO";
 import { Processor } from "../../../src/processor/Processor";
@@ -9,20 +8,44 @@ import { IResultsProcessorInput } from "../../../src/processor/doc/jest/IResults
 
 const simplePassingTests: IResultsProcessorInput = require("../../data/simplePassingTests.json");
 
-(Logger as any).writeStdout = jest.fn<string>((msg: string) => {
-    return msg;
-});
-
-(Logger as any).writeStderr = jest.fn<string>((msg: string) => {
-    return msg;
-});
-
 describe("Processor tests", () => {
 
+    beforeEach(() => {
+        jest.resetAllMocks();
+    });
+
     it("should accept override config on input and not log when requested not to", () => {
+        const log = new Logger();
+
+        (log as any).writeStdout = jest.fn<string>((msg: string) => {
+            return msg;
+        });
+
+        (log as any).writeStderr = jest.fn<string>((msg: string) => {
+            return msg;
+        });
+
+        (Processor as any).logger = log;
         const processed = Processor.resultsProcessor(simplePassingTests, {log: false});
-        expect((Logger as any).writeStdout).not.toHaveBeenCalled();
-        expect((Logger as any).writeStderr).not.toHaveBeenCalled();
+        expect((log as any).writeStdout).not.toHaveBeenCalled();
+        expect((log as any).writeStderr).not.toHaveBeenCalled();
+    });
+
+    it("should accept override config on input and log when requested to", () => {
+        const log = new Logger();
+
+        (log as any).writeStdout = jest.fn<string>((msg: string) => {
+            return msg;
+        });
+
+        (log as any).writeStderr = jest.fn<string>((msg: string) => {
+            return msg;
+        });
+
+        (Processor as any).logger = log;
+        const processed = Processor.resultsProcessor(simplePassingTests, { log: true });
+        expect((log as any).writeStdout).toHaveBeenCalled();
+        expect((log as any).writeStderr).not.toHaveBeenCalled();
     });
 
     it("should create a report form an input object", async () => {

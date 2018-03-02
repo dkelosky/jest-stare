@@ -119,7 +119,7 @@ export class Logger {
      * @memberof Logger
      */
     public isDebugEnabled(): boolean {
-        return Logger.LEVELS.indexOf("debug") >= Logger.LEVELS.indexOf(this.level) ? true : false;
+        return Logger.LEVELS.indexOf("debug") >= Logger.LEVELS.indexOf(this.level) ? this.on : false;
     }
 
     /**
@@ -128,7 +128,7 @@ export class Logger {
      * @memberof Logger
      */
     public isErrorEnabled(): boolean {
-        return Logger.LEVELS.indexOf("error") >= Logger.LEVELS.indexOf(this.level) ? true : false;
+        return Logger.LEVELS.indexOf("error") >= Logger.LEVELS.indexOf(this.level) ? this.on : false;
     }
 
     /**
@@ -183,9 +183,7 @@ export class Logger {
      */
     private writeStderr(message: string, ...args: any[]): string {
         const data = this.format(message, args);
-        if (this.on) {
-            process.stderr.write(this.format(message, args));
-        }
+        process.stderr.write(this.format(message, args));
         return data;
     }
 
@@ -199,9 +197,7 @@ export class Logger {
      */
     private writeStdout(message: string, ...args: any[]): string {
         const data = this.format(message, args);
-        if (this.on) {
-            process.stdout.write(data);
-        }
+        process.stdout.write(data);
         return data;
     }
 
