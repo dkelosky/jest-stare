@@ -1,5 +1,6 @@
 import { Constants } from "../Constants";
 import { Chart, ChartConfiguration } from "chart.js";
+import { IChartData } from "../doc/IChartData";
 
 /**
  * Handles creating doughnut charts
@@ -17,18 +18,18 @@ export class Doughnut {
      * @param {number[]} data - data values
      * @memberof Doughnut
      */
-    public static createChart(canvas: JQuery<HTMLCanvasElement>, labels: string[], backgroundColor: string[], data: number[]) {
+    public static createChart(canvas: JQuery<HTMLCanvasElement>, chartData: IChartData) {
 
         const doughnut = "doughnut";
 
         const config: ChartConfiguration = {
             type: doughnut,
             data: {
-                labels,
+                labels: chartData.labels,
                 datasets: [
                     {
-                        backgroundColor,
-                        data,
+                        backgroundColor: chartData.backgroundColor,
+                        data: chartData.data,
                     }
                 ]
             }
