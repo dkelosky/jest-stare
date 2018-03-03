@@ -1,5 +1,6 @@
 import { Constants } from "../Constants";
 import { Chart, ChartConfiguration } from "chart.js";
+import { IChartData } from "../doc/IChartData";
 
 /**
  * Handles creating doughnut charts
@@ -12,25 +13,23 @@ export class Doughnut {
      * Generate charts from input tag prefx
      * @static
      * @param {JQuery<HTMLCanvasElement>} canvas - canvas for chart to add to
-     * @param {number} passed - number of passed tests
-     * @param {number} total - total tests
+     * @param {string[]} labels - labels for data
+     * @param {string[]} backgroundColor - background colors for data
+     * @param {number[]} data - data values
      * @memberof Doughnut
      */
-    public static createChart(canvas: JQuery<HTMLCanvasElement>, passed: number, total: number) {
+    public static createChart(canvas: JQuery<HTMLCanvasElement>, chartData: IChartData) {
 
-        const failed: number = total - passed;
         const doughnut = "doughnut";
-        const passLabel = "Passed";
-        const failLabel = "Failed";
 
         const config: ChartConfiguration = {
             type: doughnut,
             data: {
-                labels: [passLabel, failLabel],
+                labels: chartData.labels,
                 datasets: [
                     {
-                        backgroundColor: [Constants.PASS, Constants.FAIL],
-                        data: [passed, failed],
+                        backgroundColor: chartData.backgroundColor,
+                        data: chartData.data,
                     }
                 ]
             }

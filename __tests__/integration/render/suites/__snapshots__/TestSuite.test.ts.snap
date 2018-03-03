@@ -24,7 +24,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=ce183d&fg=ce183d&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=dc3545&fg=dc3545&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -884,14 +884,14 @@ Array [
               </div>
               <div>
                 <span
-                  style="color:#ce183d"
+                  style="color:#dc3545"
                 >
                   - Snapshot
                 </span>
               </div>
               <div>
                 <span
-                  style="color:#009933"
+                  style="color:#28a745"
                 >
                   + Received
                 </span>
@@ -906,14 +906,14 @@ Array [
               </div>
               <div>
                 <span
-                  style="color:#ce183d"
+                  style="color:#dc3545"
                 >
                   -   "name": "test",
                 </span>
               </div>
               <div>
                 <span
-                  style="color:#009933"
+                  style="color:#28a745"
                 >
                   +   "name": "nest",
                 </span>
@@ -988,7 +988,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -1020,7 +1020,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=ce183d&fg=ce183d&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=dc3545&fg=dc3545&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -1850,14 +1850,14 @@ Array [
               </div>
               <div>
                 <span
-                  style="color:#ce183d"
+                  style="color:#dc3545"
                 >
                   - Snapshot
                 </span>
               </div>
               <div>
                 <span
-                  style="color:#009933"
+                  style="color:#28a745"
                 >
                   + Received
                 </span>
@@ -1877,28 +1877,28 @@ Array [
               </div>
               <div>
                 <span
-                  style="color:#ce183d"
+                  style="color:#dc3545"
                 >
                   -   "breed": "beagle",
                 </span>
               </div>
               <div>
                 <span
-                  style="color:#ce183d"
+                  style="color:#dc3545"
                 >
                   -   "height": 1,
                 </span>
               </div>
               <div>
                 <span
-                  style="color:#ce183d"
+                  style="color:#dc3545"
                 >
                   -   "color": "brown and yellow"
                 </span>
               </div>
               <div>
                 <span
-                  style="color:#009933"
+                  style="color:#28a745"
                 >
                   +   "breed": "beagle"
                 </span>
@@ -1976,7 +1976,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -2026,7 +2026,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -2058,7 +2058,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -2108,7 +2108,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -2140,7 +2140,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -2172,7 +2172,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -2204,7 +2204,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -2254,7 +2254,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -2304,7 +2304,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -2336,7 +2336,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -2391,7 +2391,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -2423,7 +2423,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -2455,7 +2455,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=ce183d&fg=ce183d&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=dc3545&fg=dc3545&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -3207,14 +3207,14 @@ Array [
               </div>
               <div>
                 <span
-                  style="color:#ce183d"
+                  style="color:#dc3545"
                 >
                   - Snapshot
                 </span>
               </div>
               <div>
                 <span
-                  style="color:#009933"
+                  style="color:#28a745"
                 >
                   + Received
                 </span>
@@ -3234,7 +3234,7 @@ Array [
               </div>
               <div>
                 <span
-                  style="color:#009933"
+                  style="color:#28a745"
                 >
                   +   "newThing": "here",
                 </span>
@@ -3299,7 +3299,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=ce183d&fg=ce183d&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=dc3545&fg=dc3545&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -4051,14 +4051,14 @@ Array [
               </div>
               <div>
                 <span
-                  style="color:#ce183d"
+                  style="color:#dc3545"
                 >
                   - Snapshot
                 </span>
               </div>
               <div>
                 <span
-                  style="color:#009933"
+                  style="color:#28a745"
                 >
                   + Received
                 </span>
@@ -4073,7 +4073,7 @@ Array [
               </div>
               <div>
                 <span
-                  style="color:#ce183d"
+                  style="color:#dc3545"
                 >
                   -   "data": "sample",
                 </span>
@@ -4161,7 +4161,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -4216,7 +4216,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -4248,7 +4248,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -4280,7 +4280,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -4312,7 +4312,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -4362,7 +4362,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -4417,7 +4417,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=ce183d&fg=ce183d&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=dc3545&fg=dc3545&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -5277,14 +5277,14 @@ Array [
               </div>
               <div>
                 <span
-                  style="color:#ce183d"
+                  style="color:#dc3545"
                 >
                   - Snapshot
                 </span>
               </div>
               <div>
                 <span
-                  style="color:#009933"
+                  style="color:#28a745"
                 >
                   + Received
                 </span>
@@ -5299,14 +5299,14 @@ Array [
               </div>
               <div>
                 <span
-                  style="color:#ce183d"
+                  style="color:#dc3545"
                 >
                   -   "name": "test",
                 </span>
               </div>
               <div>
                 <span
-                  style="color:#009933"
+                  style="color:#28a745"
                 >
                   +   "name": "nest",
                 </span>
@@ -5381,7 +5381,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -5413,7 +5413,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=ce183d&fg=ce183d&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=dc3545&fg=dc3545&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -6243,14 +6243,14 @@ Array [
               </div>
               <div>
                 <span
-                  style="color:#ce183d"
+                  style="color:#dc3545"
                 >
                   - Snapshot
                 </span>
               </div>
               <div>
                 <span
-                  style="color:#009933"
+                  style="color:#28a745"
                 >
                   + Received
                 </span>
@@ -6270,28 +6270,28 @@ Array [
               </div>
               <div>
                 <span
-                  style="color:#ce183d"
+                  style="color:#dc3545"
                 >
                   -   "breed": "beagle",
                 </span>
               </div>
               <div>
                 <span
-                  style="color:#ce183d"
+                  style="color:#dc3545"
                 >
                   -   "height": 1,
                 </span>
               </div>
               <div>
                 <span
-                  style="color:#ce183d"
+                  style="color:#dc3545"
                 >
                   -   "color": "brown and yellow"
                 </span>
               </div>
               <div>
                 <span
-                  style="color:#009933"
+                  style="color:#28a745"
                 >
                   +   "breed": "beagle"
                 </span>
@@ -6369,7 +6369,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -6419,7 +6419,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -6451,7 +6451,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -6501,7 +6501,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -6533,7 +6533,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -6565,7 +6565,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -6597,7 +6597,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -6647,7 +6647,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -6697,7 +6697,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
@@ -6729,7 +6729,7 @@ Array [
         <img
           alt=""
           class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=009933&fg=009933&size=1"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
         />
         <div
           class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"

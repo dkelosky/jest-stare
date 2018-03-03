@@ -1,0 +1,69 @@
+{
+    "numFailedTestSuites": 0,
+    "numFailedTests": 0,
+    "numPassedTestSuites": 1,
+    "numPassedTests": 1,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTotalTestSuites": 1,
+    "numTotalTests": 1,
+    "snapshot": {
+        "added": 1,
+        "didUpdate": false,
+        "failure": false,
+        "filesAdded": 1,
+        "filesRemoved": 0,
+        "filesUnmatched": 0,
+        "filesUpdated": 0,
+        "matched": 0,
+        "total": 1,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+    },
+    "startTime": 1519964546751,
+    "success": true,
+    "testResults": [
+        {
+            "console": null,
+            "failureMessage": null,
+            "numFailingTests": 0,
+            "numPassingTests": 1,
+            "numPendingTests": 0,
+            "perfStats": {
+                "end": 1519964551149,
+                "start": 1519964548364
+            },
+            "snapshot": {
+                "added": 1,
+                "fileDeleted": false,
+                "matched": 0,
+                "unchecked": 0,
+                "unmatched": 0,
+                "updated": 0,
+                "uncheckedKeys": []
+            },
+            "testFilePath": "jest-stare\\__tests__\\example\\SnapshotTests.example.ts",
+            "testResults": [
+                {
+                    "ancestorTitles": [
+                        "Snapshot tests"
+                    ],
+                    "duration": 6,
+                    "failureMessages": [],
+                    "fullName": "Snapshot tests should add a snapshot",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should add a snapshot"
+                }
+            ],
+            "sourceMaps": {},
+            "skipped": false,
+            "leaks": false
+        }
+    ],
+    "wasInterrupted": false
+}

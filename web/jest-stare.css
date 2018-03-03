@@ -65,7 +65,7 @@ code {
 .passoff-switch-inner:before {
     content: "PASS";
     padding-left: 10px;
-    background-color: #009933; color: #FFFFFF;
+    background-color: #28a745; color: #FFFFFF;
 }
 .passoff-switch-inner:after {
     content: "PASS";
@@ -104,7 +104,7 @@ code {
 .failoff-switch-inner:before {
     content: "FAIL";
     padding-left: 10px;
-    background-color: #ce183d; color: #FFFFFF;
+    background-color: #dc3545; color: #FFFFFF;
 }
 .failoff-switch-inner:after {
     content: "FAIL";

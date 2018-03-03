@@ -8,6 +8,18 @@ import * as fs from "fs";
 export class IO {
 
     /**
+     * Delete a file if it exists
+     * @static
+     * @param {string} file - file to delete
+     * @memberof IO
+     */
+    public static unlinkSync(file: string) {
+        if (IO.existsSync(file)) {
+            fs.unlinkSync(file);
+        }
+    }
+
+    /**
      * Wrap fs.writeFile for promise-based calling
      * @static
      * @param {string} path - place to write to

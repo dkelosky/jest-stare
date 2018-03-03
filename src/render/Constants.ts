@@ -20,6 +20,34 @@ export class Constants {
     public static readonly FAILED_LABEL = "Failed";
 
     /**
+     * Label for obsolete info
+     * @static
+     * @memberof Constants
+     */
+    public static readonly OBSOLETE_LABEL = "Obsolete";
+
+    /**
+     * Label for changed info
+     * @static
+     * @memberof Constants
+     */
+    public static readonly CHANGED_LABEL = "Changed";
+
+    /**
+     * Label for added info
+     * @static
+     * @memberof Constants
+     */
+    public static readonly ADDED_LABEL = "Added";
+
+    /**
+     * Label for removed info
+     * @static
+     * @memberof Constants
+     */
+    public static readonly REMOVED_LABEL = "Removed";
+
+    /**
      * Passed jest status
      * @static
      * @memberof Constants
@@ -41,11 +69,39 @@ export class Constants {
     public static readonly TEST_STATUS_PEND = "pending";
 
     /**
+     * Obsolete color
+     * @static
+     * @memberof Constants
+     */
+    public static readonly OBSOLETE = "#ffc107";
+
+    /**
+     * Added color
+     * @static
+     * @memberof Constants
+     */
+    public static readonly ADDED = "#007bff";
+
+    /**
+     * Removed color
+     * @static
+     * @memberof Constants
+     */
+    public static readonly REMOVED = "#343a40";
+
+    /**
+     * Changed color
+     * @static
+     * @memberof Constants
+     */
+    public static readonly CHANGED = "#6c757d";
+
+    /**
      * Pass color
      * @static
      * @memberof Constants
      */
-    public static readonly PASS_RAW = "009933";
+    public static readonly PASS_RAW = "28a745";
     public static readonly PASS = "#" + Constants.PASS_RAW;
 
     /**
@@ -53,7 +109,7 @@ export class Constants {
      * @static
      * @memberof Constants
      */
-    public static readonly FAIL_RAW = "ce183d";
+    public static readonly FAIL_RAW = "dc3545";
     public static readonly FAIL = "#" + Constants.FAIL_RAW;
 
     /**

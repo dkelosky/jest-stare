@@ -1,0 +1,69 @@
+{
+    "numFailedTestSuites": 0,
+    "numFailedTests": 0,
+    "numPassedTestSuites": 1,
+    "numPassedTests": 1,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTotalTestSuites": 1,
+    "numTotalTests": 1,
+    "snapshot": {
+        "added": 0,
+        "didUpdate": true,
+        "failure": false,
+        "filesAdded": 0,
+        "filesRemoved": 0,
+        "filesUnmatched": 0,
+        "filesUpdated": 1,
+        "matched": 0,
+        "total": 1,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 1
+    },
+    "startTime": 1519965508943,
+    "success": true,
+    "testResults": [
+        {
+            "console": null,
+            "failureMessage": null,
+            "numFailingTests": 0,
+            "numPassingTests": 1,
+            "numPendingTests": 0,
+            "perfStats": {
+                "end": 1519965513004,
+                "start": 1519965510513
+            },
+            "snapshot": {
+                "added": 0,
+                "fileDeleted": false,
+                "matched": 0,
+                "unchecked": 0,
+                "unmatched": 0,
+                "updated": 1,
+                "uncheckedKeys": []
+            },
+            "testFilePath": "node\\jest-stare\\__tests__\\example\\SnapshotTests.example.ts",
+            "testResults": [
+                {
+                    "ancestorTitles": [
+                        "Snapshot tests"
+                    ],
+                    "duration": 5,
+                    "failureMessages": [],
+                    "fullName": "Snapshot tests should add a snapshot",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should add a snapshot"
+                }
+            ],
+            "sourceMaps": {},
+            "skipped": false,
+            "leaks": false
+        }
+    ],
+    "wasInterrupted": false
+}
