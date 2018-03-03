@@ -5,7 +5,7 @@ describe("Status tests", () => {
     it("should set proper class for passed tests", () => {
         const p = document.createElement("p") as HTMLParagraphElement;
         document.body.appendChild(p);
-        Status.setResultsClass($(p) as JQuery<HTMLParagraphElement>, 1, 1);
+        Status.setResultsClass($(p) as JQuery<HTMLParagraphElement>, 1, 0);
         expect(p.classList.item(0)).toMatchSnapshot();
     });
 

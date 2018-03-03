@@ -15,7 +15,7 @@ export class Status {
      */
     public static setResultsClass(statusElement: JQuery<HTMLParagraphElement>, passed: number, failed: number) {
 
-        const total: number = passed - failed;
+        const total: number = passed + failed;
 
         if (total === 0) {
             statusElement.addClass("list-group-item-info");
