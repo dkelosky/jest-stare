@@ -11,6 +11,7 @@ It provides:
 * filtering of passed / failed tests
 * side-by-side snapshot diff
 * doughnut chart-summarized information
+* ability to pass through test results to additional test results processors 
 * [api](#api)
 * [cli](#cli)
 

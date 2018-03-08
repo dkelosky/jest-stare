@@ -72,6 +72,7 @@
     "jest-environment-jsdom": "^22.4.1",
     "jest-environment-node-debug": "^2.0.0",
     "jest-html-reporter": "^2.0.0",
+    "jest-junit": "^3.6.0",
     "rimraf": "^2.0.0",
     "ts-jest": "^20.0.7",
     "ts-node": "^3.2.0",
@@ -99,9 +100,16 @@
   },
   "jest-stare": {
     "resultDir": "results/jest-stare",
-    "additionalResultsProcessors": ["jest-html-reporter"]
+    "additionalResultsProcessors": ["jest-html-reporter", "jest-junit"]
   },
   "jest-html-reporter": {
     "outputPath": "results/jest-html-reporter/index.html"
+  },
+  "jest-junit": {
+    "output": "./results/jest-junit/junit.xml",
+    "classNameTemplate": "{classname}-{title}",
+    "titleTemplate": "{classname}-{title}",
+    "ancestorSeparator": " › ",
+    "usePathForSuiteName": "true"
   }
 }

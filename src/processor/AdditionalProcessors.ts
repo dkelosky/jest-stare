@@ -17,8 +17,8 @@ export class AdditionalProcessors {
         for (const processor of processors) {
             try {
                 require(processor)(jestTestData);
-                AdditionalProcessors.logger.debug(Constants.LOGO + " passed results to additional processor \"" +
-                    processor + "\"" + chalk.default.green("\t**"));
+                AdditionalProcessors.logger.debug(Constants.LOGO + " passed results to additional processor " +
+                    chalk.white("\"" + processor + "\"") + chalk.default.green("\t**"));
             } catch (e) {
                 AdditionalProcessors.logger.error("Error executing additional processor: \"" + processor + "\"" + e);
             }
