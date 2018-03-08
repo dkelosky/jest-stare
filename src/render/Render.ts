@@ -136,10 +136,19 @@ export class Render {
         }
 
         // add info about unchecked snapshots if present
+        // accompanies "1 obsolete snapshot found, re - run jest with `-u` to remove them.""
+        // have a snapshot file which contains old snapshots
+        // if didUpdate = true, the file was removed, otherwise its just a warning
         if (results.snapshot.unchecked > 0) {
-            snapshotChart.labels.push(Constants.OBSOLETE_LABEL);
-            snapshotChart.backgroundColor.push(Constants.OBSOLETE);
-            snapshotChart.data.push(results.snapshot.unchecked);
+            if (results.snapshot.didUpdate) {
+                snapshotChart.labels.push(Constants.UPDATED_SNAPSHOT_TEST_LABEL);
+                snapshotChart.backgroundColor.push(Constants.UPDATED_SNAPSHOT_TEST);
+                snapshotChart.data.push(results.snapshot.unchecked);
+            } else {
+                snapshotChart.labels.push(Constants.OBSOLETE_SNAPSHOT_TEST_LABEL);
+                snapshotChart.backgroundColor.push(Constants.OBSOLETE_SNAPSHOT_TEST);
+                snapshotChart.data.push(results.snapshot.unchecked);
+            }
         }
 
         // add info about changed snapshots if present
@@ -150,10 +159,20 @@ export class Render {
         }
 
         // add info about removed snapshots if present
+        // accompanies "1 obsolete snapshot file found, re-run jest with `-u` to remove it"
+        // have a snapshot file which contains just a comment and not snapshots
+        // if didUpdate = true, the file was removed, otherwise its just a warning
         if (results.snapshot.filesRemoved > 0) {
-            snapshotChart.labels.push(Constants.REMOVED_LABEL);
-            snapshotChart.backgroundColor.push(Constants.REMOVED);
-            snapshotChart.data.push(results.snapshot.filesRemoved);
+
+            if (results.snapshot.didUpdate) {
+                snapshotChart.labels.push(Constants.REMOVED_OBSOLETE_SNAPSHOT_FILE_LABEL);
+                snapshotChart.backgroundColor.push(Constants.REMOVED_OBSOLETE_SNAPSHOT_FILE);
+                snapshotChart.data.push(results.snapshot.filesRemoved);
+            } else {
+                snapshotChart.labels.push(Constants.OBSOLETE_SNAPSHOT_FILE_LABEL);
+                snapshotChart.backgroundColor.push(Constants.OBSOLETE_SNAPSHOT_FILE);
+                snapshotChart.data.push(results.snapshot.filesRemoved);
+            }
         }
 
         return snapshotChart;

@@ -24,7 +24,7 @@ export class Constants {
      * @static
      * @memberof Constants
      */
-    public static readonly OBSOLETE_LABEL = "Obsolete";
+    public static readonly OBSOLETE_SNAPSHOT_TEST_LABEL = "Obsolete Test";
 
     /**
      * Label for changed info
@@ -40,12 +40,27 @@ export class Constants {
      */
     public static readonly ADDED_LABEL = "Added";
 
+
+    /**
+     * Label for removed snapshot tests
+     * @static
+     * @memberof Constants
+     */
+    public static readonly UPDATED_SNAPSHOT_TEST_LABEL = "Updated Snapshot Test";
+
+    /**
+     * Label for removed snapshot files
+     * @static
+     * @memberof Constants
+     */
+    public static readonly REMOVED_OBSOLETE_SNAPSHOT_FILE_LABEL = "Removed Obsolete Snapshot File";
+
     /**
      * Label for removed info
      * @static
      * @memberof Constants
      */
-    public static readonly REMOVED_LABEL = "Removed";
+    public static readonly OBSOLETE_SNAPSHOT_FILE_LABEL = "Obsolete File";
 
     /**
      * Passed jest status
@@ -69,39 +84,53 @@ export class Constants {
     public static readonly TEST_STATUS_PEND = "pending";
 
     /**
+     * Obsolete snapshot file
+     * @static
+     * @memberof Constants
+     */
+    public static readonly OBSOLETE_SNAPSHOT_FILE = "#f8f9fa"; // btn-light
+
+    /**
      * Obsolete color
      * @static
      * @memberof Constants
      */
-    public static readonly OBSOLETE = "#ffc107";
+    public static readonly OBSOLETE_SNAPSHOT_TEST = "#ffc107"; // btn-warning
 
     /**
      * Added color
      * @static
      * @memberof Constants
      */
-    public static readonly ADDED = "#007bff";
+    public static readonly ADDED = "#007bff"; // btn-primary
 
     /**
-     * Removed color
+     * Removed snapshot test color
      * @static
      * @memberof Constants
      */
-    public static readonly REMOVED = "#343a40";
+    public static readonly UPDATED_SNAPSHOT_TEST = "#17a2b8"; // btn-info
+
+    /**
+     * Removed snapshot file color
+     * @static
+     * @memberof Constants
+     */
+    public static readonly REMOVED_OBSOLETE_SNAPSHOT_FILE = "#343a40"; // btn-dark
 
     /**
      * Changed color
      * @static
      * @memberof Constants
      */
-    public static readonly CHANGED = "#6c757d";
+    public static readonly CHANGED = "#6c757d"; // btn-secondary
 
     /**
      * Pass color
      * @static
      * @memberof Constants
      */
-    public static readonly PASS_RAW = "28a745";
+    public static readonly PASS_RAW = "28a745"; // btn-success
     public static readonly PASS = "#" + Constants.PASS_RAW;
 
     /**
@@ -109,7 +138,7 @@ export class Constants {
      * @static
      * @memberof Constants
      */
-    public static readonly FAIL_RAW = "dc3545";
+    public static readonly FAIL_RAW = "dc3545"; // btn-danger
     public static readonly FAIL = "#" + Constants.FAIL_RAW;
 
     /**
