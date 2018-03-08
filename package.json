@@ -100,7 +100,7 @@
   },
   "jest-stare": {
     "resultDir": "results/jest-stare",
-    "additionalResultsProcessors": ["jest-html-reporter", "jest-junit"]
+    "additionalResultsProcessors": ["jest-html-reporter", "jest-junit", "jest-stare"]
   },
   "jest-html-reporter": {
     "outputPath": "results/jest-html-reporter/index.html"

@@ -15,12 +15,17 @@ export class AdditionalProcessors {
     public static execute(jestTestData: IResultsProcessorInput, processors: string[]): void {
         const chalk = require("chalk");
         for (const processor of processors) {
+            if (processor === "jest-stare") {
+                AdditionalProcessors.logger.error("Error: In order to avoid infinite loops, " +
+                    "jest-stare cannot be listed as an additional processor. Skipping... ");
+                continue;
+            }
             try {
                 require(processor)(jestTestData);
                 AdditionalProcessors.logger.debug(Constants.LOGO + " passed results to additional processor " +
                     chalk.white("\"" + processor + "\"") + chalk.default.green("\t**"));
             } catch (e) {
-                AdditionalProcessors.logger.error("Error executing additional processor: \"" + processor + "\"" + e);
+                AdditionalProcessors.logger.error("Error executing additional processor: \"" + processor + "\" " + e);
             }
         }
     }
