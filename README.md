@@ -11,6 +11,7 @@ It provides:
 * filtering of passed / failed tests
 * side-by-side snapshot diff
 * doughnut chart-summarized information
+* ability to pass through test results to additional test results processors 
 * [api](#api)
 * [cli](#cli)
 
@@ -41,6 +42,13 @@ jest-stare: {
     "resultDir": "results/jest-stare"
 }
 ```
+
+You can add additional test result processors to produce multiple reports: 
+```
+ "jest-stare": {
+    "additionalResultsProcessors": ["jest-html-reporter", "jest-junit"]
+  },
+ ```
 
 Additionally, you can configure whether or not jest-stare should log to the console via:
 ```

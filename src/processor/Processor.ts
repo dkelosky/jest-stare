@@ -10,6 +10,7 @@ import * as chalk from "chalk";
 import { IThirdPartyDependency } from "./doc/IThirdPartyDependency";
 import { Dependencies } from "./Dependencies";
 import { isNullOrUndefined } from "util";
+import { AdditionalProcessors } from "./AdditionalProcessors";
 const pkgUp = require("pkg-up");
 
 /**
@@ -58,6 +59,9 @@ export class Processor {
         // generate report
         Processor.generateReport(resultDirectory, substitute);
 
+        if (config.additionalResultsProcessors != null) {
+            AdditionalProcessors.execute(results, config.additionalResultsProcessors);
+        }
         // return back to jest
         return results;
     }
@@ -100,13 +104,15 @@ export class Processor {
         IO.writeFile(jsDir + Constants.JEST_STARE_JS, Processor.obtainJsRenderFile(Constants.JEST_STARE_JS));
 
         // add third party dependencies
-        Dependencies.THIRD_PARTY_DEPENDENCIES.forEach( (dependency) => {
+        Dependencies.THIRD_PARTY_DEPENDENCIES.forEach((dependency) => {
             dependency.targetDir = resultDir + dependency.targetDir;
             Processor.addThirdParty(dependency);
         });
 
         // log complete
         Processor.logger.debug(Constants.LOGO + Constants.LOG_MESSAGE + resultDir + Constants.MAIN_HTML + chalk.default.green("\t**"));
+
+
     }
 
     /**
