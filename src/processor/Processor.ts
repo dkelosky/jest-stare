@@ -10,7 +10,7 @@ import * as chalk from "chalk";
 import { IThirdPartyDependency } from "./doc/IThirdPartyDependency";
 import { Dependencies } from "./Dependencies";
 import { isNullOrUndefined } from "util";
-import { AdditionalProcessors } from "./AdditionalProcessors";
+import { ISettings } from "./doc/ISettings";
 const pkgUp = require("pkg-up");
 
 /**
@@ -24,6 +24,7 @@ export class Processor {
      * Main exported method to obtain and return summary results
      * @static
      * @param {IResultsProcessorInput} results - input results object
+     * @param {IJestStareConfig} [explicitConfig] - programmatic config
      * @returns - returns input results object
      * @memberof Processor
      */
@@ -45,6 +46,7 @@ export class Processor {
         const resultDirectory = config.resultDir == null ? Constants.DEFAULT_RESULTS_DIR : config.resultDir;
 
         // suppress logging if requested
+        // NOTE(Kelosky): must be first, to suppress all logging
         if (!isNullOrUndefined(config.log)) {
             if (!config.log) {
                 Processor.logger.on = false;
@@ -52,20 +54,26 @@ export class Processor {
         }
 
         // record if we were invoked programmatically
+        // NOTE(Kelosky): should be second, to record if override config
         if (!isNullOrUndefined(explicitConfig)) {
             Processor.logger.debug(Constants.OVERRIDE_JEST_STARE_CONFIG);
         }
 
+        // NOTE(Kelosky): from here on out, we reference the "config", not explicitConfig
+        const settings: ISettings = {
+            htmlName: config.resultHtml || Constants.MAIN_HTML,
+            jsonName: config.resultJson || Constants.RESULTS_RAW,
+        };
+
         // generate report
-        Processor.generateReport(resultDirectory, substitute);
+        Processor.generateReport(resultDirectory, substitute, settings);
 
         if (config.additionalResultsProcessors != null) {
-            AdditionalProcessors.execute(results, config.additionalResultsProcessors);
+            Processor.execute(results, config.additionalResultsProcessors);
         }
         // return back to jest
         return results;
     }
-
 
     /**
      * Instance of our logger
@@ -81,17 +89,18 @@ export class Processor {
      * @private
      * @param {string} resultDir -  directory to save report
      * @param {ISubstitute} substitute - substitution values for mustache render
+     * @param {ISettings} settings - settings for IO
      * @memberof Processor
      */
-    private static generateReport(resultDir: string, substitute: ISubstitute) {
+    private static generateReport(resultDir: string, substitute: ISubstitute, settings: ISettings) {
 
         // create base html file
         resultDir = resultDir + "/"; // append an extra slash in case the user didn't add one
         IO.mkdirsSync(resultDir);
-        IO.writeFile(resultDir + Constants.MAIN_HTML, mustache.render(Processor.obtainWebFile(Constants.TEMPLATE_HTML), substitute));
+        IO.writeFile(resultDir + settings.htmlName, mustache.render(Processor.obtainWebFile(Constants.TEMPLATE_HTML), substitute));
 
         // create raw json
-        IO.writeFile(resultDir + Constants.RESULTS_RAW, substitute.rawResults);
+        IO.writeFile(resultDir + settings.jsonName, substitute.rawResults);
 
         // create our css
         const cssDir = resultDir + Constants.CSS_DIR;
@@ -111,8 +120,31 @@ export class Processor {
 
         // log complete
         Processor.logger.debug(Constants.LOGO + Constants.LOG_MESSAGE + resultDir + Constants.MAIN_HTML + chalk.default.green("\t**"));
+    }
 
-
+    /**
+     * Pass the result processor input given to jest-stare to additional
+     * test results processors
+     * @param jestTestData - input passed to jest-stare
+     * @param processors - list of test results processors (e.g. ["jest-html-reporter"])
+     *                     to forward the data to
+     * @memberof Processor
+     */
+    private static execute(jestTestData: IResultsProcessorInput, processors: string[]): void {
+        for (const processor of processors) {
+            if (processor === Constants.NAME) {
+                Processor.logger.error("Error: In order to avoid infinite loops, " +
+                    "jest-stare cannot be listed as an additional processor. Skipping... ");
+                continue;
+            }
+            try {
+                require(processor)(jestTestData);
+                Processor.logger.debug(Constants.LOGO + " passed results to additional processor " +
+                    chalk.default.white("\"" + processor + "\"") + chalk.default.green("\t**"));
+            } catch (e) {
+                Processor.logger.error("Error executing additional processor: \"" + processor + "\" " + e);
+            }
+        }
     }
 
     /**

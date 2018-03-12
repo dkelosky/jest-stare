@@ -1,3 +1,4 @@
+import Mock = jest.Mock;
 jest.mock("../../../src/utils/IO");
 
 import { IO } from "../../../src/utils/IO";
@@ -5,6 +6,8 @@ import { Processor } from "../../../src/processor/Processor";
 import { inspect } from "util";
 import { Logger } from "../../../src/utils/Logger";
 import { IResultsProcessorInput } from "../../../src/processor/doc/jest/IResultsProcessorInput";
+import { ISubstitute } from "../../../src/reporter/doc/ISubstitute";
+import { ISettings } from "../../../src/processor/doc/ISettings";
 
 const simplePassingTests: IResultsProcessorInput = require("../../data/simplePassingTests.json");
 
@@ -46,6 +49,36 @@ describe("Processor tests", () => {
         const processed = Processor.resultsProcessor(simplePassingTests, { log: true });
         expect((log as any).writeStdout).toHaveBeenCalled();
         expect((log as any).writeStderr).not.toHaveBeenCalled();
+    });
+
+    it("should accept override html and JSON file name", async () => {
+        const log = new Logger();
+
+        (log as any).writeStdout = jest.fn<string>((msg: string) => {
+            return msg;
+        });
+
+        (log as any).writeStderr = jest.fn<string>((msg: string) => {
+            return msg;
+        });
+
+        (Processor as any).logger = log;
+
+        // default file name
+        (Processor as any).generateReport = jest.fn((resultDir: string, substitute: ISubstitute, settings: ISettings) => {
+            expect(settings).toMatchSnapshot();
+        });
+
+        Processor.resultsProcessor(simplePassingTests);
+        expect((Processor as any).generateReport).toHaveBeenCalled();
+
+
+        (Processor as any).generateReport = jest.fn((resultDir: string, substitute: ISubstitute, settings: ISettings) => {
+            expect(settings).toMatchSnapshot();
+        });
+
+        Processor.resultsProcessor(simplePassingTests, {resultHtml: "test.html", resultJson: "test.json"});
+        expect((Processor as any).generateReport).toHaveBeenCalled();
     });
 
     it("should create a report form an input object", async () => {
