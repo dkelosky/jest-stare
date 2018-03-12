@@ -100,7 +100,6 @@
   },
   "jest-stare": {
     "resultDir": "results/jest-stare",
-    "resultHtml": "yipp.t",
     "additionalResultsProcessors": [
       "jest-html-reporter",
       "jest-junit",
