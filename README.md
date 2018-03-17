@@ -12,8 +12,10 @@ It provides:
 * side-by-side snapshot diff
 * doughnut chart-summarized information
 * ability to pass through test results to additional test results processors 
+* capturing of raw jest results JSON file
+* [configuration](#config) overrides
+* [cli](#cli) - create `jest-stare` or other jest HTML reports from raw JSON results
 * [api](#api)
-* [cli](#cli)
 
 This project is based on:
 * [jQuery](https://jquery.com/)
@@ -36,26 +38,26 @@ By default, after a report is generated, the output will go to `./jest-stare` an
 * `/css` - css stylings
 
 ### Config 
-Thanks to [dogboydog](https://github.com/dogboydog) you can configure the default output location of the jest-stare html files in your package.json via:
+Thanks to [dogboydog](https://github.com/dogboydog) for additions to configuration!
+
+Currently, if you need to config `jest-stare`, do so by adding a `jest-stare` object to your package.json
 ```
 jest-stare: {
-    "resultDir": "results/jest-stare"
+    ...
 }
 ```
 
-You can add additional test result processors to produce multiple reports: 
-```
- "jest-stare": {
-    "additionalResultsProcessors": ["jest-html-reporter", "jest-junit"]
-  },
- ```
-
-Additionally, you can configure whether or not jest-stare should log to the console via:
-```
-jest-stare: {
-    "log": "false"
-}
-```
+Within this object you:
+* configure the results directory (default: `jest-stare`):
+  * `"resultDir": "results/jest-stare"`
+* add additional test result processors to produce multiple report (default: `undefined`): 
+  * `"additionalResultsProcessors": ["jest-html-reporter", "jest-junit"]`
+* configure whether or not jest-stare should log to the console via (default: `true`):
+  * `"log": "false"`
+* indicate default main html file name (default: `index.html`):
+  * `"resultHtml": "main.html"`
+* indicate default raw JSON results file name (default: `jest-results.json`):
+  * `"resultJson": "data.json"`
 
 ### API
 You can programmatically invoke jest-stare and provide jest response data via:
@@ -94,6 +96,18 @@ The command response takes a form of:
 ```
 jest-stare was called with programmatic config
 **  jest-stare --testResultsProcessor: wrote output report to c:/users/myId/desktop/output/index.html  **
+```
+### Jest Watch
+Because jest-stare writes *.js files when generating a report, you may get an infinite loop when using
+`jest-stare` and `jest --watch`.  Samples of the problem are documented here:
+* https://github.com/facebook/jest/issues/3923
+* https://github.com/facebook/jest/issues/2516
+
+To get around this problem, consider excluding `jest-stare` *.js files from watch via something like this:
+```json
+    "watchPathIgnorePatterns": [
+      ".*jest-stare.*\\.js"
+    ],
 ```
 
 ## Development Building / Testing

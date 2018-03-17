@@ -92,6 +92,9 @@
       ".(ts)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "__tests__.*\\.(spec|test)\\.ts$",
+    "watchPathIgnorePatterns": [
+      ".*jest-stare.*\\.js"
+    ],
     "moduleFileExtensions": [
       "ts",
       "js"
