@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import * as  mkdirp from "mkdirp";
 
 /**
  * class for simple IO
@@ -46,7 +47,7 @@ export class IO {
      */
     public static mkdirsSync(dir: string) {
         if (!IO.existsSync(dir)) {
-            require("mkdirp").sync(dir);
+            mkdirp.sync(dir);
         }
     }
 

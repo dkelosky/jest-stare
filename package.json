@@ -1,6 +1,6 @@
 {
   "name": "jest-stare",
-  "version": "0.1.21-0",
+  "version": "0.1.23-0",
   "description": "jest html reporter (results processor)",
   "license": "MIT",
   "repository": "https://github.com/dkelosky/jest-stare",
@@ -64,6 +64,7 @@
     "@types/diff2html": "0.0.4",
     "@types/jest": "^22.0.5",
     "@types/jquery": "^3.2.16",
+    "@types/mkdirp": "^0.5.2",
     "@types/mustache": "^0.8.30",
     "@types/node": "^8.0.0",
     "browserify": "^16.1.0",
@@ -91,6 +92,9 @@
       ".(ts)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "__tests__.*\\.(spec|test)\\.ts$",
+    "watchPathIgnorePatterns": [
+      ".*jest-stare.*\\.js"
+    ],
     "moduleFileExtensions": [
       "ts",
       "js"
@@ -100,7 +104,10 @@
   },
   "jest-stare": {
     "resultDir": "results/jest-stare",
-    "additionalResultsProcessors": ["jest-html-reporter", "jest-junit", "jest-stare"]
+    "additionalResultsProcessors": [
+      "jest-html-reporter",
+      "jest-junit"
+    ]
   },
   "jest-html-reporter": {
     "outputPath": "results/jest-html-reporter/index.html"

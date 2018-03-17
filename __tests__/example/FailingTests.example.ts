@@ -34,20 +34,20 @@ describe("Failing Tests", () => {
             expect(JSON.stringify(jsonObject, null, 2)).toMatchSnapshot();
         });
 
-        it("should fail with an error snapshot difference", ()=>{
-            expect(()=>{
-                throw new Error("Here is the new error.\nIt contains various new "+
-                "information such as how to write on a computer\n," +
-                "and a reminder to scrape an avocado onto your toast.");
+        it("should fail with an error snapshot difference", () => {
+            expect(() => {
+                throw new Error("Here is the new error.\nIt contains various new " +
+                    "information such as how to write on a computer\n," +
+                    "and a reminder to scrape an avocado onto your toast.");
             }).toThrowErrorMatchingSnapshot();
         });
 
-    it("should fail due to an error", () => {
-        throw new Error("This is an error failure");
-    });
+        it("should fail due to an error", () => {
+            throw new Error("This is an error failure");
+        });
 
-    it("Should fail due to a bad expectation", () => {
-        expect(false).toEqual(true);
-    })
+        it("Should fail due to a bad expectation", () => {
+            expect(false).toEqual(true);
+        })
     });
 });
