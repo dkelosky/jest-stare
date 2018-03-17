@@ -114,8 +114,10 @@ export class Processor {
 
         // add third party dependencies
         Dependencies.THIRD_PARTY_DEPENDENCIES.forEach((dependency) => {
-            dependency.targetDir = resultDir + dependency.targetDir;
-            Processor.addThirdParty(dependency);
+            // dependency.targetDir = resultDir + dependency.targetDir;
+            const updatedDependency = Object.assign({}, ...[dependency]);
+            updatedDependency.targetDir = resultDir + dependency.targetDir;
+            Processor.addThirdParty(updatedDependency);
         });
 
         // log complete
@@ -154,9 +156,9 @@ export class Processor {
      * @param {IThirdPartyDependency} dependency - a dependency to add
      * @memberof Processor
      */
-    private static addThirdParty(dependency: IThirdPartyDependency) {
+    private static async addThirdParty(dependency: IThirdPartyDependency) {
         const location = require.resolve(dependency.requireDir + dependency.file);
-        IO.writeFile(dependency.targetDir + dependency.file, IO.readFileSync(location));
+        await IO.writeFile(dependency.targetDir + dependency.file, IO.readFileSync(location));
     }
 
     /**
