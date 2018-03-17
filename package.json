@@ -64,6 +64,7 @@
     "@types/diff2html": "0.0.4",
     "@types/jest": "^22.0.5",
     "@types/jquery": "^3.2.16",
+    "@types/mkdirp": "^0.5.2",
     "@types/mustache": "^0.8.30",
     "@types/node": "^8.0.0",
     "browserify": "^16.1.0",
@@ -102,8 +103,7 @@
     "resultDir": "results/jest-stare",
     "additionalResultsProcessors": [
       "jest-html-reporter",
-      "jest-junit",
-      "jest-stare"
+      "jest-junit"
     ]
   },
   "jest-html-reporter": {
