@@ -1,7 +1,7 @@
 {
   "name": "jest-stare",
   "version": "1.0.0",
-  "description": "jest html reporter (results processor)",
+  "description": "jest html reporter (results processor) to view HTML jest results, save raw JSON, and invoke multiple reporters",
   "license": "MIT",
   "repository": "https://github.com/dkelosky/jest-stare",
   "author": {
@@ -107,7 +107,9 @@
     "additionalResultsProcessors": [
       "jest-html-reporter",
       "jest-junit"
-    ]
+    ],
+    "coverageLink": "../../coverage/lcov-report/index.html",
+    "jestStareConfigJson": "jest-stare.json"
   },
   "jest-html-reporter": {
     "outputPath": "results/jest-html-reporter/index.html"

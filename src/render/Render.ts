@@ -8,6 +8,8 @@ import { Status } from "./charts/Status";
 import { Doughnut } from "./charts/Doughnut";
 import { TestSuite } from "./suites/TestSuite";
 import { IChartData } from "./doc/IChartData";
+import { IJestStareConfig } from "../processor/doc/IJestStareConfig";
+import { isNullOrUndefined } from "util";
 
 /**
  * Adjust DOM to display JSON data
@@ -25,7 +27,8 @@ export class Render {
     public static init() {
         document.addEventListener("DOMContentLoaded", () => {
             const results: IResultsProcessorInput = JSON.parse($("#test-results").text());
-            Render.show(results);
+            const config: IJestStareConfig = JSON.parse($("#test-config").text());
+            Render.show(results, config);
         });
     }
 
@@ -34,12 +37,16 @@ export class Render {
      * @static
      * @private
      * @param {IResultsProcessorInput} results - jest results
+     * @param {IJestStareConfig} config - jest stare config
      * @memberof Render
      */
-    private static show(results: IResultsProcessorInput) {
+    private static show(results: IResultsProcessorInput, config: IJestStareConfig) {
 
         const labels = [Constants.PASSED_LABEL, Constants.FAILED_LABEL];
         const backgroundColor = [Constants.PASS, Constants.FAIL];
+
+        // link to coverage if available
+        Render.setCoverageLink(config);
 
         // build suites chart
         const suitesData = Render.buildChartsData(results.numPassedTestSuites, results.numTotalTestSuites - results.numPassedTestSuites);
@@ -84,6 +91,22 @@ export class Render {
             $("." + Constants.FAILED_TEST) as JQuery<HTMLDivElement>,
             $("#lab-passoff-switch") as JQuery<HTMLInputElement>,
             $("." + Constants.BOTH_TEST) as JQuery<HTMLDivElement>);
+    }
+
+    /**
+     * Set coverage link if presented in jest-stare config
+     * @private
+     * @static
+     * @param {IJestStareConfig} config - jest-stare config object
+     * @memberof Render
+     */
+    private static setCoverageLink(config: IJestStareConfig) {
+        if (!isNullOrUndefined(config.coverageLink)) {
+            const a = $("#coverage-link");
+            a.addClass("active");
+            a.removeClass("disabled");
+            a.attr("href", config.coverageLink);
+        }
     }
 
     /**

@@ -11,8 +11,9 @@ It provides:
 * filtering of passed / failed tests
 * side-by-side snapshot diff
 * doughnut chart-summarized information
-* ability to pass through test results to additional test results processors 
+* ability to pass test results to additional test results processors 
 * capturing of raw jest results JSON file
+* a link to generated coverage report (if configured)
 * [configuration](#config) overrides
 * [cli](#cli) - create `jest-stare` or other jest HTML reports from raw JSON results
 * [api](#api)
@@ -47,17 +48,17 @@ jest-stare: {
 }
 ```
 
-Within this object you:
-* configure the results directory (default: `jest-stare`):
-  * `"resultDir": "results/jest-stare"`
-* add additional test result processors to produce multiple report (default: `undefined`): 
-  * `"additionalResultsProcessors": ["jest-html-reporter", "jest-junit"]`
-* configure whether or not jest-stare should log to the console via (default: `true`):
-  * `"log": "false"`
-* indicate default main html file name (default: `index.html`):
-  * `"resultHtml": "main.html"`
-* indicate default raw JSON results file name (default: `jest-results.json`):
-  * `"resultJson": "data.json"`
+Within this object you can configure the following fields:
+
+Field | Default | Description | Example
+--- | --- | --- | ---
+`resultDir` | `jest-stare` | set the results directory | `"resultDir": "results/jest-stare"`
+`additionalResultsProcessors` | `undefined` | add additional test result processors to produce multiple report |`"additionalResultsProcessors": ["jest-html-reporter", "jest-junit"]`
+`log` | `true` | specify whether or not jest-stare should log to the console | `"log": "false"`
+`resultHtml` | `index.html` | indicate the main html file name | `"resultHtml": "main.html"`
+`resultJson` | `jest-results.json` | indicate the raw JSON results file name | `"resultJson": "data.json"`
+`jestStareConfigJson` | `undefined` | request to save jest-stare config raw JSON results in the file name | `"jestStareConfigJson": "jest-stare-config.json"`
+`coverageLink` | `undefined` | link to coverage report if available | `"coverageReport": "../../coverage/lcov-report/index.html"`
 
 ### API
 You can programmatically invoke jest-stare and provide jest response data via:
