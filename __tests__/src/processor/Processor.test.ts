@@ -7,7 +7,6 @@ import { inspect } from "util";
 import { Logger } from "../../../src/utils/Logger";
 import { IResultsProcessorInput } from "../../../src/processor/doc/jest/IResultsProcessorInput";
 import { ISubstitute } from "../../../src/reporter/doc/ISubstitute";
-import { ISettings } from "../../../src/processor/doc/ISettings";
 
 const simplePassingTests: IResultsProcessorInput = require("../../data/simplePassingTests.json");
 
@@ -65,16 +64,16 @@ describe("Processor tests", () => {
         (Processor as any).logger = log;
 
         // default file name
-        (Processor as any).generateReport = jest.fn((resultDir: string, substitute: ISubstitute, settings: ISettings) => {
-            expect(settings).toMatchSnapshot();
+        (Processor as any).generateReport = jest.fn((resultDir: string, substitute: ISubstitute) => {
+            expect(substitute).toMatchSnapshot();
         });
 
         Processor.resultsProcessor(simplePassingTests);
         expect((Processor as any).generateReport).toHaveBeenCalled();
 
 
-        (Processor as any).generateReport = jest.fn((resultDir: string, substitute: ISubstitute, settings: ISettings) => {
-            expect(settings).toMatchSnapshot();
+        (Processor as any).generateReport = jest.fn((resultDir: string, substitute: ISubstitute) => {
+            expect(substitute).toMatchSnapshot();
         });
 
         Processor.resultsProcessor(simplePassingTests, {resultHtml: "test.html", resultJson: "test.json"});

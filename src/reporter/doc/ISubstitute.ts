@@ -1,4 +1,5 @@
 import { IResultsProcessorInput } from "../../processor/doc/jest/IResultsProcessorInput";
+import { IJestStareConfig } from "../../processor/doc/IJestStareConfig";
 
 
 /**
@@ -21,4 +22,18 @@ export interface ISubstitute {
      * @memberof ISubstitute
      */
     rawResults?: string;
+
+    /**
+     * jest-stare config object
+     * @type {IJestStareConfig}
+     * @memberof ISubstitute
+     */
+    jestStareConfig?: IJestStareConfig;
+
+    /**
+     * jest-stare config object
+     * @type {string}
+     * @memberof ISubstitute
+     */
+    rawJestStareConfig?: string;
 }
