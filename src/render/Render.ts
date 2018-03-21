@@ -46,12 +46,7 @@ export class Render {
         const backgroundColor = [Constants.PASS, Constants.FAIL];
 
         // link to coverage if available
-        if (!isNullOrUndefined(config.coverageLink)) {
-            const a = $("#coverage-link");
-            a.addClass("active");
-            a.removeClass("disabled");
-            a.attr("href", config.coverageLink);
-        }
+        Render.setCoverageLink(config);
 
         // build suites chart
         const suitesData = Render.buildChartsData(results.numPassedTestSuites, results.numTotalTestSuites - results.numPassedTestSuites);
@@ -96,6 +91,22 @@ export class Render {
             $("." + Constants.FAILED_TEST) as JQuery<HTMLDivElement>,
             $("#lab-passoff-switch") as JQuery<HTMLInputElement>,
             $("." + Constants.BOTH_TEST) as JQuery<HTMLDivElement>);
+    }
+
+    /**
+     * Set coverage link if presented in jest-stare config
+     * @private
+     * @static
+     * @param {IJestStareConfig} config - jest-stare config object
+     * @memberof Render
+     */
+    private static setCoverageLink(config: IJestStareConfig) {
+        if (!isNullOrUndefined(config.coverageLink)) {
+            const a = $("#coverage-link");
+            a.addClass("active");
+            a.removeClass("disabled");
+            a.attr("href", config.coverageLink);
+        }
     }
 
     /**

@@ -4,34 +4,41 @@ import { Processor } from "../../../src/processor/Processor";
 import { Constants } from "../../../src/processor/Constants";
 import { IResultsProcessorInput } from "../../../src/processor/doc/jest/IResultsProcessorInput";
 import { IChartData } from "../../../src/render/doc/IChartData";
+import { IJestStareConfig } from "../../../src/processor/doc/IJestStareConfig";
 
-const simplePassingTests: IResultsProcessorInput = require("../../../data/simplePassingTests.json");
-const simpleFailingTests: IResultsProcessorInput = require("../../../data/simpleFailingTests.json");
+const simplePassingTests: IResultsProcessorInput = require("../../data/simplePassingTests.json");
+const simpleFailingTests: IResultsProcessorInput = require("../../data/simpleFailingTests.json");
 
 describe("Render tests", () => {
-    it("should create passing tests", () => {
+    it("should not create link to coverage report if not in config", () => {
+
+        const template = (Processor as any).obtainWebFile(Constants.TEMPLATE_HTML);
+        document.write(template);
+
+        const config: IJestStareConfig = {
+        };
+
+        (Render as any).setCoverageLink(config);
+        expect($("#coverage-link").attr("href")).toMatchSnapshot();
+        expect($("#coverage-link").hasClass("disabled")).toBe(true);
+    });
+
+    it("should create link to coverage report if in config", () => {
 
         /**
          * Need css & js collocated and to use document.write to invoke scripts
          */
+        const template = (Processor as any).obtainWebFile(Constants.TEMPLATE_HTML);
+        document.write(template);
 
-        // const template = (Processor as any).obtainWebFile(Constants.TEMPLATE_HTML);
-        // // const el = document.createElement("html") as HTMLHtmlElement;
-        // // el.innerHTML = template;
-        // document.write(template);
+        const config: IJestStareConfig = {
+            coverageLink: "/some/place/index.html",
+        };
 
-        // // $.parseHTML(template);
-        // // const div = document.createElement("div") as HTMLDivElement;
-        // // const divId = "test-results";
-        // const data = $("#test-results").text();
-        // const results = $("#test-results").text(JSON.stringify(simplePassingTests, null, 2));
-        // // coso$("#test-results").text();
-        // // div.textContent = ;
-        // // console.log(data);
-        // (Render as any).show(simplePassingTests);
-        // const newdata = $("#test-results").text();
-        // console.log(newdata)
-        expect(true).toBe(true); // MatchSnapshot();
+        $("#test-config").text(JSON.stringify(config, null, 2)); // this isn't needed but keeping for future reference
+        (Render as any).setCoverageLink(config);
+        expect($("#coverage-link").attr("href")).toMatchSnapshot();
+        expect($("#coverage-link").hasClass("active")).toBe(true);
     });
 
     it("should build chart data with no examples", () => {
@@ -50,9 +57,19 @@ describe("Render tests", () => {
         expect((Render as any).buildChartsData(1, 2)).toMatchSnapshot();
     });
 
+    it("should add snapshot chart data with no examples", () => {
+        const chartData: IChartData = (Render as any).buildChartsData(0, 0);
+        expect((Render as any).addSnapshotChartData(simplePassingTests, chartData)).toMatchSnapshot();
+    });
+
     it("should add snapshot chart data with pass examples", () => {
         const chartData: IChartData = (Render as any).buildChartsData(2, 0);
         expect((Render as any).addSnapshotChartData(simplePassingTests, chartData)).toMatchSnapshot();
+    });
+
+    it("should add snapshot chart data with fail examples", () => {
+        const chartData: IChartData = (Render as any).buildChartsData(0, 2);
+        expect((Render as any).addSnapshotChartData(simpleFailingTests, chartData)).toMatchSnapshot();
     });
 
 });
