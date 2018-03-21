@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/dkelosky/jest-stare.svg?branch=master)](https://travis-ci.org/dkelosky/jest-stare) [![jest](https://facebook.github.io/jest/img/jest-badge.svg)](https://github.com/facebook/jest) [![npm](https://img.shields.io/badge/npm-v5.6.0-blue.svg)](https://www.npmjs.com/package/jest-stare)
 
 # Jest HTML Reporter / Results Processor
-This is a Jest HTML reporter (really a "results processor").  That is, it takes summary test results from jest
+This is a Jest HTML reporter (technically "results processor").  That is, it takes summary test results from jest
 and parses into an HTML file for improved readability and filtering. 
 
 ![Sample](images/sampleReport.png "Sample Report")
@@ -47,17 +47,16 @@ jest-stare: {
 }
 ```
 
-Within this object you:
-* configure the results directory (default: `jest-stare`):
-  * `"resultDir": "results/jest-stare"`
-* add additional test result processors to produce multiple report (default: `undefined`): 
-  * `"additionalResultsProcessors": ["jest-html-reporter", "jest-junit"]`
-* configure whether or not jest-stare should log to the console via (default: `true`):
-  * `"log": "false"`
-* indicate default main html file name (default: `index.html`):
-  * `"resultHtml": "main.html"`
-* indicate default raw JSON results file name (default: `jest-results.json`):
-  * `"resultJson": "data.json"`
+Within this object you can configure the following fields:
+
+Field | Default | Description | Example
+--- | --- | --- | ---
+`resultDir` | `jest-stare` | set the results directory | `"resultDir": "results/jest-stare"`
+`additionalResultsProcessors` | `undefined` | add additional test result processors to produce multiple report |`"additionalResultsProcessors": ["jest-html-reporter", "jest-junit"]`
+`log` | `true` | specify whether or not jest-stare should log to the console | `"log": "false"`
+`resultHtml` | `index.html` | indicate the main html file name | `"resultHtml": "main.html"`
+`resultJson` | `jest-results.json` | indicate the raw JSON results file name | `"resultJson": "data.json"`
+`jestStareConfigJson` | `undefined` | request to save jest-stare config raw JSON results in the file name | `"jestStareConfigJson": "jest-stare-config.json"`
 
 ### API
 You can programmatically invoke jest-stare and provide jest response data via:

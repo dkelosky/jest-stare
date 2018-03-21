@@ -1,18 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Processor tests should accept override html and JSON file name 1`] = `
-Object {
-  "htmlName": "index.html",
-  "jsonName": "jest-results.json",
-}
-`;
+exports[`Processor tests should accept override html and JSON file name 1`] = `undefined`;
 
-exports[`Processor tests should accept override html and JSON file name 2`] = `
-Object {
-  "htmlName": "test.html",
-  "jsonName": "test.json",
-}
-`;
+exports[`Processor tests should accept override html and JSON file name 2`] = `undefined`;
 
 exports[`Processor tests should create a report form an input object 1`] = `
 Object {

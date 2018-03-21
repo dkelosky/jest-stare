@@ -10,7 +10,6 @@ import * as chalk from "chalk";
 import { IThirdPartyDependency } from "./doc/IThirdPartyDependency";
 import { Dependencies } from "./Dependencies";
 import { isNullOrUndefined } from "util";
-import { ISettings } from "./doc/ISettings";
 const pkgUp = require("pkg-up");
 
 /**
@@ -31,10 +30,6 @@ export class Processor {
     public static resultsProcessor(results: IResultsProcessorInput, explicitConfig?: IJestStareConfig) {
 
         const substitute: ISubstitute = {};
-
-        // build mustache render substitution values
-        substitute.results = results;
-        substitute.rawResults = JSON.stringify(results, null, 2);
 
         // throw error if no input object
         if (isNullOrUndefined(results)) {
@@ -59,14 +54,22 @@ export class Processor {
             Processor.logger.debug(Constants.OVERRIDE_JEST_STARE_CONFIG);
         }
 
-        // NOTE(Kelosky): from here on out, we reference the "config", not explicitConfig
-        const settings: ISettings = {
-            htmlName: config.resultHtml || Constants.MAIN_HTML,
-            jsonName: config.resultJson || Constants.RESULTS_RAW,
-        };
+        if (isNullOrUndefined(config.resultHtml)) {
+            config.resultHtml = Constants.MAIN_HTML;
+        }
+
+        if (isNullOrUndefined(config.resultJson)) {
+            config.resultJson = Constants.RESULTS_RAW;
+        }
+
+        // build mustache render substitution values
+        substitute.results = results;
+        substitute.rawResults = JSON.stringify(results, null, 2);
+        substitute.jestStareConfig = config;
+        substitute.rawJestStareConfig = JSON.stringify(config, null, 2);
 
         // generate report
-        Processor.generateReport(resultDirectory, substitute, settings);
+        Processor.generateReport(resultDirectory, substitute);
 
         if (config.additionalResultsProcessors != null) {
             Processor.execute(results, config.additionalResultsProcessors);
@@ -92,15 +95,21 @@ export class Processor {
      * @param {ISettings} settings - settings for IO
      * @memberof Processor
      */
-    private static generateReport(resultDir: string, substitute: ISubstitute, settings: ISettings) {
+    private static generateReport(resultDir: string, substitute: ISubstitute) {
 
         // create base html file
         resultDir = resultDir + "/"; // append an extra slash in case the user didn't add one
         IO.mkdirsSync(resultDir);
-        IO.writeFile(resultDir + settings.htmlName, mustache.render(Processor.obtainWebFile(Constants.TEMPLATE_HTML), substitute));
+        IO.writeFile(resultDir + substitute.jestStareConfig.resultHtml,
+            mustache.render(Processor.obtainWebFile(Constants.TEMPLATE_HTML), substitute));
 
         // create raw json
-        IO.writeFile(resultDir + settings.jsonName, substitute.rawResults);
+        IO.writeFile(resultDir + substitute.jestStareConfig.resultJson, substitute.rawResults);
+
+        // create jest-stare config if requested
+        if (!isNullOrUndefined(substitute.jestStareConfig.jestStareConfigJson)) {
+            IO.writeFile(resultDir + substitute.jestStareConfig.jestStareConfigJson, substitute.rawJestStareConfig);
+        }
 
         // create our css
         const cssDir = resultDir + Constants.CSS_DIR;
