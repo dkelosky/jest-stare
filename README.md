@@ -58,7 +58,7 @@ Field | Default | Description | Example
 `resultHtml` | `index.html` | indicate the main html file name | `"resultHtml": "main.html"`
 `resultJson` | `jest-results.json` | indicate the raw JSON results file name | `"resultJson": "data.json"`
 `jestStareConfigJson` | `undefined` | request to save jest-stare config raw JSON results in the file name | `"jestStareConfigJson": "jest-stare-config.json"`
-`coverageLink` | `undefined` | link to coverage report if available | `"coverageReport": "../../coverage/lcov-report/index.html"`
+`coverageLink` | `undefined` | link to coverage report if available | `"coverageLink": "../../coverage/lcov-report/index.html"`
 
 ### API
 You can programmatically invoke jest-stare and provide jest response data via:
