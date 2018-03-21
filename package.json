@@ -108,6 +108,7 @@
       "jest-html-reporter",
       "jest-junit"
     ],
+    "coverageLink": "../../coverage/lcov-report/index.html",
     "jestStareConfigJson": "jest-stare.json"
   },
   "jest-html-reporter": {

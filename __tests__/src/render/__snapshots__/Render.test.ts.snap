@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render tests should build chart data with fail examples 1`] = `
+Object {
+  "backgroundColor": Array [
+    "#dc3545",
+  ],
+  "data": Array [
+    1,
+  ],
+  "labels": Array [
+    "Failed",
+  ],
+}
+`;
+
+exports[`Render tests should build chart data with no examples 1`] = `
+Object {
+  "backgroundColor": Array [],
+  "data": Array [],
+  "labels": Array [],
+}
+`;
+
+exports[`Render tests should build chart data with pass and fail examples 1`] = `
+Object {
+  "backgroundColor": Array [
+    "#28a745",
+    "#dc3545",
+  ],
+  "data": Array [
+    1,
+    2,
+  ],
+  "labels": Array [
+    "Passed",
+    "Failed",
+  ],
+}
+`;
+
+exports[`Render tests should build chart data with pass examples 1`] = `
+Object {
+  "backgroundColor": Array [
+    "#28a745",
+  ],
+  "data": Array [
+    1,
+  ],
+  "labels": Array [
+    "Passed",
+  ],
+}
+`;
