@@ -18,13 +18,6 @@ It provides:
 * [cli](#cli) - create `jest-stare` or other jest HTML reports from raw JSON results
 * [api](#api)
 
-This project is based on:
-* [jQuery](https://jquery.com/)
-* [Bootstrap](https://getbootstrap.com/)
-* [Holder.js](http://holderjs.com/)
-* [Chart.js](http://www.chartjs.org/)
-* [diff2html](https://diff2html.xyz/)
-
 ## Usage
 Run tests or a test with jest and specify `jest-stare` on the `--testResultsProcessor` option:
 `jest --testResultsProcessor=jest-stare`
@@ -41,8 +34,8 @@ By default, after a report is generated, the output will go to `./jest-stare` an
 ### Config 
 Thanks to [dogboydog](https://github.com/dogboydog) for additions to configuration!
 
-Currently, if you need to config `jest-stare`, do so by adding a `jest-stare` object to your package.json
-```
+Currently, if you need to config `jest-stare`, do so by adding a `jest-stare` object to your package.json, for example:
+```json
 jest-stare: {
     ...
 }
@@ -125,3 +118,12 @@ If you'd like to submit a Pull Request, here are some basic steps to test out co
 ### Run an Example
 You can create a report from tests in the `__tests__/example` by issuing: `jest --testRegex __tests__.*\\.example\\.ts`
 Or, you can use `npm run example` (which includes a build before creating a sample report).
+
+## Acknowledgements
+
+This project is based on:
+* [jQuery](https://jquery.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Holder.js](http://holderjs.com/)
+* [Chart.js](http://www.chartjs.org/)
+* [diff2html](https://diff2html.xyz/)
