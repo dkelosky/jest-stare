@@ -113,7 +113,7 @@ If you'd like to submit a Pull Request, here are some basic steps to test out co
 
 ### Build & Test
 1. `npm run build`
-2. `npx jest`
+2. `npm run test`
 
 ### Run an Example
 You can create a report from tests in the `__tests__/example` by issuing: `jest --testRegex __tests__.*\\.example\\.ts`
