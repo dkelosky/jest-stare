@@ -28,7 +28,9 @@ export class TestSuite {
 
                 // mark overall status for a suite
                 if (result.status === Constants.TEST_STATUS_FAIL) {
-                    if (testStatusClass === Constants.PASSED_TEST) {
+                    if (testStatusClass === Constants.BOTH_TEST) {
+                        // do nothing
+                    } else if (testStatusClass === Constants.PASSED_TEST) {
                         testStatusClass = Constants.BOTH_TEST;
                     } else {
                         testStatusClass = Constants.FAILED_TEST; // overall
@@ -47,7 +49,10 @@ export class TestSuite {
                 }
                 // mark overall status for a suite
                 if (result.status === Constants.TEST_STATUS_PASS) {
-                    if (testStatusClass === Constants.FAILED_TEST) {
+                    if (testStatusClass === Constants.BOTH_TEST) {
+                        // do nothing
+                    }
+                    else if (testStatusClass === Constants.FAILED_TEST) {
                         testStatusClass = Constants.BOTH_TEST;
                     } else {
                         testStatusClass = Constants.PASSED_TEST;
