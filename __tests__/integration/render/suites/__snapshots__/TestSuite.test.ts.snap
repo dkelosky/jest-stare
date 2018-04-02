@@ -2370,7 +2370,7 @@ Array [
 exports[`TestSuite tests should create proper elements for simple failing tests 1`] = `
 Array [
   <div
-    class="my-3 p-3 bg-white rounded box-shadow failed-test"
+    class="my-3 p-3 bg-white rounded box-shadow both-test"
   >
     <h5
       class="border-bottom border-gray pb-2 mb-0 display-5"
