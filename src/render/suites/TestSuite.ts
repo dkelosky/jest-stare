@@ -129,13 +129,13 @@ export class TestSuite {
      * Make a key from input index and title to encapsulate what makes up the key
      * @private
      * @static
-     * @param {any} index - index number, can be any value
-     * @param {any} title - title of an ancestor array
+     * @param {number} index - index number, can be any value
+     * @param {string[]} title - titles of an ancestor array
      * @returns index + title (in the future the key may be different)
      * @memberof TestSuite
      */
-    private static getKey(index, title) {
-        return index + title;
+    private static getKey(index: number, title: string[]) {
+        return title;
     }
 
     /**

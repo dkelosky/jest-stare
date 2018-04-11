@@ -1,13 +1,13 @@
 import * as $ from "jquery";
-import { Render } from "../../../src/render/Render";
-import { Processor } from "../../../src/processor/Processor";
-import { Constants } from "../../../src/processor/Constants";
-import { IResultsProcessorInput } from "../../../src/processor/doc/jest/IResultsProcessorInput";
-import { IChartData } from "../../../src/render/doc/IChartData";
-import { IJestStareConfig } from "../../../src/processor/doc/IJestStareConfig";
+import { Render } from "../../src/render/Render";
+import { Processor } from "../../src/processor/Processor";
+import { Constants } from "../../src/processor/Constants";
+import { IResultsProcessorInput } from "../../src/processor/doc/jest/IResultsProcessorInput";
+import { IChartData } from "../../src/render/doc/IChartData";
+import { IJestStareConfig } from "../../src/processor/doc/IJestStareConfig";
 
-const simplePassingTests: IResultsProcessorInput = require("../../data/simplePassingTests.json");
-const simpleFailingTests: IResultsProcessorInput = require("../../data/simpleFailingTests.json");
+const simplePassingTests: IResultsProcessorInput = require("../__resources__/simplePassingTests.json");
+const simpleFailingTests: IResultsProcessorInput = require("../__resources__/simpleFailingTests.json");
 
 describe("Render tests", () => {
     it("should not create link to coverage report if not in config", () => {

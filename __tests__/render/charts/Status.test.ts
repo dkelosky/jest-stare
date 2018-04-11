@@ -1,5 +1,5 @@
 import * as $ from "jquery";
-import { Status } from "../../../../src/render/charts/Status";
+import { Status } from "../../../src/render/charts/Status";
 describe("Status tests", () => {
 
     it("should set proper class for passed tests", () => {
