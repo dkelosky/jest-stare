@@ -58,7 +58,7 @@ export class TestSuite {
                         testStatusClass = Constants.PASSED_TEST;
                     }
 
-                    // mark all lower test sections as containing a failed test for filtering
+                    // mark all lower test sections as containing a passed test for filtering
                     for (const ancestorTitle of result.ancestorTitles) {
                         const checkStatus = testSectionStatus.get(ancestorTitle);
                         if (!isNullOrUndefined(checkStatus)) {

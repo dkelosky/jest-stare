@@ -11,11 +11,10 @@ describe("Passing Tests", () => {
             expect(JSON.stringify(jsonObject, null, 2)).toMatchSnapshot();
         });
 
-        
+
     });
 
-    
-    it ("should pass an expect statement", ()=>{
+    it ("should pass an expect statement", () => {
         expect(true).toEqual(true);
     });
 
