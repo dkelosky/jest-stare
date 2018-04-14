@@ -53,6 +53,14 @@ describe("Render tests", () => {
         expect((Render as any).buildChartsData(1, 0)).toMatchSnapshot();
     });
 
+    it("should build chart data with passing, pending, and failing examples", () => {
+        expect((Render as any).buildChartsData(1, 2, 1)).toMatchSnapshot();
+    });
+
+    it("should build chart data with pending and fail examples only", () => {
+        expect((Render as any).buildChartsData(0, 1, 1)).toMatchSnapshot();
+    });
+
     it("should build chart data with pass and fail examples", () => {
         expect((Render as any).buildChartsData(1, 2)).toMatchSnapshot();
     });
