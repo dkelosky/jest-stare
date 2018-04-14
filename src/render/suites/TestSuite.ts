@@ -115,131 +115,15 @@ export class TestSuite {
                                 divMap.get(parentKey).appendChild(nestDiv);
                             }
                         }
-
-                        // describeMap.set(TestSuite.getKey(index, innerTestResult.ancestorTitles), nestDiv);
-
-                        // append this "describe" section to it's parent
-                        // divMap.set(titlesCopy.join("."), nestDiv);
-                        // console.log("@TEST: " + titlesCopy);
-                        // const parentKey = TestSuite.getParentKey(titlesCopy, describeMap);
-                        // const parentElement = describeMap.get(parentKey);
-                        // parentElement.appendChild(nestDiv);
-
-                        // assign a test to it's describe div
-                        // testMap.set(TestSuite.getKey(index, innerTestResult.ancestorTitles), nestDiv);
                     });
                 } else {
                     div.appendChild(element);
                 }
             });
 
-            // map for describe divs
-            // const describeMap: Map<string, HTMLElement> = new Map<string, HTMLElement>();
-            // describeMap.set("", div); // for entry where no ancestor title exists
-
-            // map for test and the five that it should belong to
-            // const testMap: Map<string, HTMLElement> = new Map<string, HTMLElement>();
-            // testMap.set("", div); // for entry where no ancestor title exists
-
-            // testResult.testResults.forEach((innerTestResult) => {
-
-                // if(innerTestResult.ancestorTitles.length > 0) {
-
-                // } else {
-                //     const nestDiv = document.createElement("div") as HTMLDivElement;
-                //     const statusClass = testSectionStatus.get(title) || Constants.PASSED_TEST;
-                //     nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
-                //     const h6 = document.createElement("h6") as HTMLHeadingElement;
-                //     h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
-                //     h6.textContent = title;
-                //     nestDiv.appendChild(h6);
-                // }
-                // innerTestResult.ancestorTitles.forEach((title, index) => {
-                //     // if (!describeMap.has(TestSuite.getKey(index, innerTestResult.ancestorTitles))) {
-                //         const nestDiv = document.createElement("div") as HTMLDivElement;
-                //         const statusClass = testSectionStatus.get(title) || Constants.PASSED_TEST;
-                //         nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
-                //         const h6 = document.createElement("h6") as HTMLHeadingElement;
-                //         h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
-                //         h6.textContent = title;
-                //         nestDiv.appendChild(h6);
-                //         // describeMap.set(TestSuite.getKey(index, innerTestResult.ancestorTitles), nestDiv);
-
-                //         // append this "describe" section to it's parent
-                //         const titlesCopy = innerTestResult.ancestorTitles.slice();
-                //         titlesCopy.splice(index + 1);
-                //         // const parentKey = TestSuite.getParentKey(titlesCopy, describeMap);
-                //         // const parentElement = describeMap.get(parentKey);
-                //         parentElement.appendChild(nestDiv);
-
-                //         // assign a test to it's describe div
-                //         // testMap.set(TestSuite.getKey(index, innerTestResult.ancestorTitles), nestDiv);
-                //     // }
-                // });
-            // });
-
-            // testResult.testResults.forEach((innerTestResult) => {
-            //     const addToDiv = testMap.get(TestSuite.getKeyFromTitle(innerTestResult.ancestorTitles));
-            //     addToDiv.appendChild(Test.create(innerTestResult));
-            // });
-
             elements.push(div);
         });
 
         return elements;
     }
-
-    // /**
-    //  * Make a key from input index and title to encapsulate what makes up the key
-    //  * @private
-    //  * @static
-    //  * @param {number} index - index number, can be any value
-    //  * @param {string[]} title - titles of an ancestor array
-    //  * @returns index + title (in the future the key may be different)
-    //  * @memberof TestSuite
-    //  */
-    // private static getKey(index: number, titles: string[]) {
-    //     const joiner = ".";
-
-    //     if (titles.length > index && titles.length > 0) {
-    //         return index + titles.splice(0, index + 1).join(joiner);
-    //     } else {
-    //         return "";
-    //     }
-    // }
-
-    // /**
-    //  * For input ancestor titles, return the appropriate key that represents this element
-    //  * @private
-    //  * @static
-    //  * @param {string[]} titles - ancestor titles
-    //  * @returns {string} - key representing title
-    //  * @memberof TestSuite
-    //  */
-    // private static getKeyFromTitle(titles: string[]) {
-    //     // if (titles.length > 0) {
-    //         return TestSuite.getKey(titles.length - 1, titles);
-    //     // }
-    //     // return "";
-    // }
-
-    // /**
-    //  * Get parent key.  If ancestor title is ["one", "two", "three"], then current
-    //  * key is "3three" and parent is "2two".
-    //  * @private
-    //  * @static
-    //  * @param {string[]} titles - ancestor titles
-    //  * @param {Map<string, HTMLElement>} divMap - mapping of keys of index + 2 to a given div
-    //  * @returns {string} - key representing parent
-    //  * @memberof TestSuite
-    //  */
-    // private static getParentKey(titles: string[], divMap: Map<string, HTMLElement>) {
-    //     for (let i = titles.length - 1 - 1; i >= 0; i--) {
-    //         if (divMap.has(TestSuite.getKey(i, titles))) {
-    //             return TestSuite.getKey(i, titles);
-    //         }
-    //     }
-
-    //     return "";
-    // }
 }

@@ -9,16 +9,6 @@ const largeTests: IResultsProcessorInput = require("../../../__resources__/large
 
 describe("TestSuite tests", () => {
 
-    it("should generate a key from a proper title", () => {
-        const key = (TestSuite as any).getKey(2, ["zero", "one", "two", "three", "four"]);
-        expect(key).toMatchSnapshot();
-    });
-
-    it("should generate a key from a proper short title", () => {
-        const key = (TestSuite as any).getKey(0, ["zero", "one", "two", "three", "four"]);
-        expect(key).toMatchSnapshot();
-    });
-
     it("should create proper elements for simple passing tests", () => {
         expect(TestSuite.create(simplePassingTests)).toMatchSnapshot();
     });
