@@ -1,4 +1,4 @@
-import { Doughnut } from "../../../../src/render/charts/Doughnut";
+import { Doughnut } from "../../../src/render/charts/Doughnut";
 describe("Doughnut tests", () => {
 
     it("should do something", () => {

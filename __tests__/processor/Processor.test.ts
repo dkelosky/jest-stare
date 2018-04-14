@@ -1,14 +1,14 @@
 import Mock = jest.Mock;
-jest.mock("../../../src/utils/IO");
+jest.mock("../../src/utils/IO");
 
-import { IO } from "../../../src/utils/IO";
-import { Processor } from "../../../src/processor/Processor";
+import { IO } from "../../src/utils/IO";
+import { Processor } from "../../src/processor/Processor";
 import { inspect } from "util";
-import { Logger } from "../../../src/utils/Logger";
-import { IResultsProcessorInput } from "../../../src/processor/doc/jest/IResultsProcessorInput";
-import { ISubstitute } from "../../../src/reporter/doc/ISubstitute";
+import { Logger } from "../../src/utils/Logger";
+import { IResultsProcessorInput } from "../../src/processor/doc/jest/IResultsProcessorInput";
+import { ISubstitute } from "../../src/reporter/doc/ISubstitute";
 
-const simplePassingTests: IResultsProcessorInput = require("../../data/simplePassingTests.json");
+const simplePassingTests: IResultsProcessorInput = require("../__resources__/simplePassingTests.json");
 
 describe("Processor tests", () => {
 

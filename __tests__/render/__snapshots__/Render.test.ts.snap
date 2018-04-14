@@ -98,6 +98,43 @@ Object {
 }
 `;
 
+exports[`Render tests should build chart data with passing, pending, and failing examples 1`] = `
+Object {
+  "backgroundColor": Array [
+    "#28a745",
+    "#dc3545",
+    "#ffc107",
+  ],
+  "data": Array [
+    1,
+    2,
+    1,
+  ],
+  "labels": Array [
+    "Passed",
+    "Failed",
+    "Pending",
+  ],
+}
+`;
+
+exports[`Render tests should build chart data with pending and fail examples only 1`] = `
+Object {
+  "backgroundColor": Array [
+    "#dc3545",
+    "#ffc107",
+  ],
+  "data": Array [
+    1,
+    1,
+  ],
+  "labels": Array [
+    "Failed",
+    "Pending",
+  ],
+}
+`;
+
 exports[`Render tests should create link to coverage report if in config 1`] = `"/some/place/index.html"`;
 
 exports[`Render tests should not create link to coverage report if not in config 1`] = `"#"`;

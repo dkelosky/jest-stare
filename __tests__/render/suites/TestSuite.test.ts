@@ -1,13 +1,13 @@
-jest.mock("../../../../src/render/tests/Test");
+jest.mock("../../../src/render/tests/Test");
 
-import { TestSuite } from "../../../../src/render/suites/TestSuite";
-import { Test } from "../../../../src/render/tests/Test";
-import { IResultsProcessorInput } from "../../../../src/processor/doc/jest/IResultsProcessorInput";
+import { TestSuite } from "../../../src/render/suites/TestSuite";
+import { Test } from "../../../src/render/tests/Test";
+import { IResultsProcessorInput } from "../../../src/processor/doc/jest/IResultsProcessorInput";
 
-const simplePassingTests: IResultsProcessorInput = require("../../../data/simplePassingTests.json");
-const simpleFailingTests: IResultsProcessorInput = require("../../../data/simpleFailingTests.json");
-const twoSideBySideFailDiffTests: IResultsProcessorInput = require("../../../data/twoSideBySideFailDiffTests.json");
-const largeTests: IResultsProcessorInput = require("../../../data/largeTests.json");
+const simplePassingTests: IResultsProcessorInput = require("../../__resources__/simplePassingTests.json");
+const simpleFailingTests: IResultsProcessorInput = require("../../__resources__/simpleFailingTests.json");
+const twoSideBySideFailDiffTests: IResultsProcessorInput = require("../../__resources__/twoSideBySideFailDiffTests.json");
+const largeTests: IResultsProcessorInput = require("../../__resources__/largeTests.json");
 
 // mock out the individual tests within describe blocks
 (Test.create as any) = jest.fn( () => {

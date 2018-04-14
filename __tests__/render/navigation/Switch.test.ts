@@ -1,5 +1,5 @@
 import * as $ from "jquery";
-import { Switch } from "../../../../src/render/navigation/Switch";
+import { Switch } from "../../../src/render/navigation/Switch";
 
 describe("Switch tests", () => {
 

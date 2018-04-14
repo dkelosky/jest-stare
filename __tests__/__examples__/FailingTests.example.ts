@@ -48,6 +48,6 @@ describe("Failing Tests", () => {
 
         it("Should fail due to a bad expectation", () => {
             expect(false).toEqual(true);
-        })
+        });
     });
 });

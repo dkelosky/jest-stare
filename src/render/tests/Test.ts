@@ -72,6 +72,8 @@ export class Test {
                 failed = true;
                 break;
             case Constants.TEST_STATUS_PEND:
+                color = Constants.PENDING_RAW;
+                testStatusClass = Constants.PENDING_TEST;
                 break;
             case Constants.TEST_STATUS_PASS:
                 break;
