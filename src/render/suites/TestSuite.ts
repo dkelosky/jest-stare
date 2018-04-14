@@ -21,6 +21,8 @@ export class TestSuite {
         const describeLevels: number[] = [];
 
         results.testResults.forEach((testResult) => {
+
+            // TODO(Kelosky): set for pending
             let testStatusClass = Constants.PASSED_TEST;
 
             const testSectionStatus: Map<string, string> = new Map<string, string>();
@@ -81,8 +83,54 @@ export class TestSuite {
 
             div.appendChild(h5);
 
+            // let lastNoAncestorParent: HTMLElement = div;
+            const divMap: Map<string, HTMLElement> = new Map<string, HTMLElement>();
             testResult.testResults.forEach((test) => {
-                div.appendChild(Test.create(test));
+                const element = Test.create(test);
+                if (test.ancestorTitles.length > 0) {
+                    test.ancestorTitles.forEach((title, index) => {
+
+                        const titlesCopy = test.ancestorTitles.slice();
+                        titlesCopy.splice(index + 1);
+                        const key = titlesCopy.join(".");
+                        if (divMap.has(key)) {
+                            divMap.get(key).appendChild(element);
+                        } else {
+                            const nestDiv = document.createElement("div") as HTMLDivElement;
+                            const statusClass = testSectionStatus.get(title) || Constants.PASSED_TEST;
+                            nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
+                            const h6 = document.createElement("h6") as HTMLHeadingElement;
+                            h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
+                            h6.textContent = title;
+                            nestDiv.appendChild(h6);
+                            nestDiv.appendChild(element);
+
+                            divMap.set(key, nestDiv);
+
+                            if (index === 0) {
+                                div.appendChild(nestDiv);
+                            } else {
+                                titlesCopy.pop();
+                                const parentKey = titlesCopy.join(".");
+                                divMap.get(parentKey).appendChild(nestDiv);
+                            }
+                        }
+
+                        // describeMap.set(TestSuite.getKey(index, innerTestResult.ancestorTitles), nestDiv);
+
+                        // append this "describe" section to it's parent
+                        // divMap.set(titlesCopy.join("."), nestDiv);
+                        // console.log("@TEST: " + titlesCopy);
+                        // const parentKey = TestSuite.getParentKey(titlesCopy, describeMap);
+                        // const parentElement = describeMap.get(parentKey);
+                        // parentElement.appendChild(nestDiv);
+
+                        // assign a test to it's describe div
+                        // testMap.set(TestSuite.getKey(index, innerTestResult.ancestorTitles), nestDiv);
+                    });
+                } else {
+                    div.appendChild(element);
+                }
             });
 
             // map for describe divs

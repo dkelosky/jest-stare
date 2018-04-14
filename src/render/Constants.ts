@@ -171,6 +171,13 @@ export class Constants {
     public static readonly FAILED_TEST = "failed-test";
 
     /**
+     * Pending test class
+     * @static
+     * @memberof Constants
+     */
+    public static readonly PENDING_TEST = "pending-test";
+
+    /**
      * Both passed and failed test class
      * @static
      * @memberof Constants
