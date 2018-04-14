@@ -11,6 +11,13 @@ import { IResultsProcessorInput } from "../../processor/doc/jest/IResultsProcess
 export class TestSuite {
 
     /**
+     * Ancestor title join character
+     * @static
+     * @memberof TestSuite
+     */
+    public static readonly JOIN_CHAR = ".";
+
+    /**
      * Build table info for specific tests
      * @static
      * @returns {HTMLElement[]} - populated html elements
@@ -38,14 +45,16 @@ export class TestSuite {
                         testStatusClass = Constants.FAILED_TEST; // overall
                     }
                     // mark all lower test sections as containing a failed test for filtering
-                    for (const ancestorTitle of result.ancestorTitles) {
-                        const checkStatus = testSectionStatus.get(ancestorTitle);
-                        if (!isNullOrUndefined(checkStatus)) {
-                            if (checkStatus === Constants.PASSED_TEST) {
-                                testSectionStatus.set(ancestorTitle, Constants.BOTH_TEST);
+                    for (let index = 0; index < result.ancestorTitles.length; index++) {
+                        const titlesCopy = result.ancestorTitles.slice();
+                        titlesCopy.splice(index + 1);
+                        const key = titlesCopy.join(TestSuite.JOIN_CHAR);
+                        if (testSectionStatus.has(key)) {
+                            if (testSectionStatus.get(key) === Constants.PASSED_TEST) {
+                                testSectionStatus.set(key, Constants.BOTH_TEST);
                             }
                         } else {
-                            testSectionStatus.set(ancestorTitle, Constants.FAILED_TEST);
+                            testSectionStatus.set(key, Constants.FAILED_TEST);
                         }
                     }
                 }
@@ -61,14 +70,16 @@ export class TestSuite {
                     }
 
                     // mark all lower test sections as containing a passed test for filtering
-                    for (const ancestorTitle of result.ancestorTitles) {
-                        const checkStatus = testSectionStatus.get(ancestorTitle);
-                        if (!isNullOrUndefined(checkStatus)) {
-                            if (checkStatus === Constants.FAILED_TEST) {
-                                testSectionStatus.set(ancestorTitle, Constants.BOTH_TEST);
+                    for (let index = 0; index < result.ancestorTitles.length; index++) {
+                        const titlesCopy = result.ancestorTitles.slice();
+                        titlesCopy.splice(index + 1);
+                        const key = titlesCopy.join(TestSuite.JOIN_CHAR);
+                        if (testSectionStatus.has(key)) {
+                            if (testSectionStatus.get(key) === Constants.FAILED_TEST) {
+                                testSectionStatus.set(key, Constants.BOTH_TEST);
                             }
                         } else {
-                            testSectionStatus.set(ancestorTitle, Constants.PASSED_TEST);
+                            testSectionStatus.set(key, Constants.PASSED_TEST);
                         }
                     }
                 }
@@ -83,7 +94,11 @@ export class TestSuite {
 
             div.appendChild(h5);
 
-            // let lastNoAncestorParent: HTMLElement = div;
+            // if a flat test report were to be used, simply
+            // testResult.testResults.forEach((test) => {
+            //   div.appendChild(Test.create(test));
+            // });
+
             const divMap: Map<string, HTMLElement> = new Map<string, HTMLElement>();
             testResult.testResults.forEach((test) => {
                 const element = Test.create(test);
@@ -92,12 +107,12 @@ export class TestSuite {
 
                         const titlesCopy = test.ancestorTitles.slice();
                         titlesCopy.splice(index + 1);
-                        const key = titlesCopy.join(".");
+                        const key = titlesCopy.join(TestSuite.JOIN_CHAR);
                         if (divMap.has(key)) {
                             divMap.get(key).appendChild(element);
                         } else {
                             const nestDiv = document.createElement("div") as HTMLDivElement;
-                            const statusClass = testSectionStatus.get(title) || Constants.PASSED_TEST;
+                            const statusClass = testSectionStatus.get(key) || Constants.PASSED_TEST;
                             nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
                             const h6 = document.createElement("h6") as HTMLHeadingElement;
                             h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
@@ -111,7 +126,7 @@ export class TestSuite {
                                 div.appendChild(nestDiv);
                             } else {
                                 titlesCopy.pop();
-                                const parentKey = titlesCopy.join(".");
+                                const parentKey = titlesCopy.join(TestSuite.JOIN_CHAR);
                                 divMap.get(parentKey).appendChild(nestDiv);
                             }
                         }

@@ -22,6 +22,9 @@ describe("outer 0", () => {
                 });
             });
             describe("next outer 3", () => {
+                it("should be around", () => {
+                    // pass
+                });
                 describe("outer 4", () => {
                     it("should pass", () => {
                         //
@@ -29,6 +32,9 @@ describe("outer 0", () => {
                     it("should fail", () => {
                         expect(true).toBe(false);
                     });
+                });
+                it("should be around too", () => {
+                    // pass
                 });
             });
             describe("last outer 3", () => {
