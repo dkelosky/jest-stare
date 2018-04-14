@@ -49,11 +49,11 @@ export class Render {
         Render.setCoverageLink(config);
 
         // build suites chart
-        const suitesData = Render.buildChartsData(results.numPassedTestSuites, results.numTotalTestSuites - results.numPassedTestSuites);
+        const suitesData = Render.buildChartsData(results.numPassedTestSuites, results.numFailedTestSuites, results.numPendingTestSuites);
         Doughnut.createChart($("#test-suites-canvas") as JQuery<HTMLCanvasElement>, suitesData);
 
         // build tests chart
-        const testsChart = Render.buildChartsData(results.numPassedTests, results.numTotalTests - results.numPassedTests);
+        const testsChart = Render.buildChartsData(results.numPassedTests, results.numFailedTests, results.numPendingTests);
         Doughnut.createChart($("#tests-canvas") as JQuery<HTMLCanvasElement>, testsChart);
 
         // base snapshot data
@@ -118,7 +118,7 @@ export class Render {
      * @returns {IChartData} - populated chart data object
      * @memberof Render
      */
-    private static buildChartsData(passedTests: number, failedTests: number): IChartData {
+    private static buildChartsData(passedTests: number, failedTests: number, pendingTests?: number): IChartData {
         const chartData: IChartData = {
             labels: [],
             backgroundColor: [],
@@ -135,6 +135,12 @@ export class Render {
             chartData.labels.push(Constants.FAILED_LABEL);
             chartData.backgroundColor.push(Constants.FAIL);
             chartData.data.push(failedTests);
+        }
+
+        if (pendingTests > 0) {
+            chartData.labels.push(Constants.PENDING_LABEL);
+            chartData.backgroundColor.push(Constants.PENDING);
+            chartData.data.push(pendingTests);
         }
 
         return chartData;

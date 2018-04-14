@@ -6759,3 +6759,7 @@ Array [
   </div>,
 ]
 `;
+
+exports[`TestSuite tests should generate a key from a proper short title 1`] = `"0"`;
+
+exports[`TestSuite tests should generate a key from a proper title 1`] = `"2zero.one"`;

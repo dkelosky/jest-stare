@@ -20,6 +20,13 @@ export class Constants {
     public static readonly FAILED_LABEL = "Failed";
 
     /**
+     * Label for pending tests
+     * @static
+     * @memberof Constants
+     */
+    public static readonly PENDING_LABEL = "Pending";
+
+    /**
      * Label for obsolete info
      * @static
      * @memberof Constants
@@ -140,6 +147,14 @@ export class Constants {
      */
     public static readonly FAIL_RAW = "dc3545"; // btn-danger
     public static readonly FAIL = "#" + Constants.FAIL_RAW;
+
+    /**
+     * Pending color
+     * @static
+     * @memberof Constants
+     */
+    public static readonly PENDING_RAW = "ffc107";
+    public static readonly PENDING = "#" + Constants.PENDING_RAW; // btn-warning
 
     /**
      * Passed test class
