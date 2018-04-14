@@ -1,0 +1,201 @@
+{
+    "numFailedTestSuites": 1,
+    "numFailedTests": 2,
+    "numPassedTestSuites": 0,
+    "numPassedTests": 7,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTotalTestSuites": 1,
+    "numTotalTests": 9,
+    "snapshot": {
+        "added": 0,
+        "didUpdate": false,
+        "failure": false,
+        "filesAdded": 0,
+        "filesRemoved": 0,
+        "filesUnmatched": 0,
+        "filesUpdated": 0,
+        "matched": 0,
+        "total": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+    },
+    "startTime": 1523673776447,
+    "success": false,
+    "testResults": [
+        {
+            "console": null,
+            "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[1mouter 0 › outer 1 › outer 2 › outer 3 › outer 4 › should fail\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBe(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n    \n    Expected value to be:\n      \u001b[32mfalse\u001b[39m\n    Received:\n      \u001b[31mtrue\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 18 | \u001b[39m                    })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 19 | \u001b[39m                    it(\u001b[32m\"should fail\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[2m\u001b[39m\u001b[90m 20 | \u001b[39m                        expect(\u001b[36mtrue\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 21 | \u001b[39m                    })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 22 | \u001b[39m                })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 23 | \u001b[39m            })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m      \u001b[22m\n\u001b[2m      \u001b[2mat Object.it (\u001b[2m\u001b[0m\u001b[36m__tests__/__examples__/NestedDescribeTests.example.ts\u001b[39m\u001b[0m\u001b[2m:20:38)\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[1mouter 0 › outer 1 › outer 2 › next outer 3 › outer 4 › should fail\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBe(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n    \n    Expected value to be:\n      \u001b[32mfalse\u001b[39m\n    Received:\n      \u001b[31mtrue\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 31 | \u001b[39m                    })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 32 | \u001b[39m                    it(\u001b[32m\"should fail\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[2m\u001b[39m\u001b[90m 33 | \u001b[39m                        expect(\u001b[36mtrue\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 34 | \u001b[39m                    })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 35 | \u001b[39m                })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 36 | \u001b[39m                it(\u001b[32m\"should be around too\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m      \u001b[22m\n\u001b[2m      \u001b[2mat Object.it (\u001b[2m\u001b[0m\u001b[36m__tests__/__examples__/NestedDescribeTests.example.ts\u001b[39m\u001b[0m\u001b[2m:33:38)\u001b[2m\u001b[22m\n",
+            "numFailingTests": 2,
+            "numPassingTests": 7,
+            "numPendingTests": 0,
+            "perfStats": {
+                "end": 1523673779362,
+                "start": 1523673777474
+            },
+            "snapshot": {
+                "added": 0,
+                "fileDeleted": false,
+                "matched": 0,
+                "unchecked": 0,
+                "unmatched": 0,
+                "updated": 0,
+                "uncheckedKeys": []
+            },
+            "testFilePath": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\__examples__\\NestedDescribeTests.example.ts",
+            "testResults": [
+                {
+                    "ancestorTitles": [
+                        "outer 0",
+                        "outer 1",
+                        "outer 2"
+                    ],
+                    "duration": 2,
+                    "failureMessages": [],
+                    "fullName": "outer 0 outer 1 outer 2 should pass",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should pass"
+                },
+                {
+                    "ancestorTitles": [
+                        "outer 0",
+                        "outer 1",
+                        "outer 2",
+                        "first outer 3",
+                        "outer 4"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "outer 0 outer 1 outer 2 first outer 3 outer 4 should pass",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should pass"
+                },
+                {
+                    "ancestorTitles": [
+                        "outer 0",
+                        "outer 1",
+                        "outer 2",
+                        "outer 3",
+                        "outer 4"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "outer 0 outer 1 outer 2 outer 3 outer 4 should pass",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should pass"
+                },
+                {
+                    "ancestorTitles": [
+                        "outer 0",
+                        "outer 1",
+                        "outer 2",
+                        "outer 3",
+                        "outer 4"
+                    ],
+                    "duration": 110,
+                    "failureMessages": [
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBe(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected value to be:\n  \u001b[32mfalse\u001b[39m\nReceived:\n  \u001b[31mtrue\u001b[39m\n    at Object.it (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\__examples__\\NestedDescribeTests.example.ts:20:38)\n    at Object.asyncFn (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\jasmine_async.js:129:432)\n    at resolve (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:51:12)\n    at new Promise (<anonymous>)\n    at mapper (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:40:274)\n    at promise.then (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:83:39)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+                    ],
+                    "fullName": "outer 0 outer 1 outer 2 outer 3 outer 4 should fail",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "failed",
+                    "title": "should fail"
+                },
+                {
+                    "ancestorTitles": [
+                        "outer 0",
+                        "outer 1",
+                        "outer 2",
+                        "next outer 3"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "outer 0 outer 1 outer 2 next outer 3 should be around",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should be around"
+                },
+                {
+                    "ancestorTitles": [
+                        "outer 0",
+                        "outer 1",
+                        "outer 2",
+                        "next outer 3",
+                        "outer 4"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "outer 0 outer 1 outer 2 next outer 3 outer 4 should pass",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should pass"
+                },
+                {
+                    "ancestorTitles": [
+                        "outer 0",
+                        "outer 1",
+                        "outer 2",
+                        "next outer 3",
+                        "outer 4"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBe(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected value to be:\n  \u001b[32mfalse\u001b[39m\nReceived:\n  \u001b[31mtrue\u001b[39m\n    at Object.it (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\__examples__\\NestedDescribeTests.example.ts:33:38)\n    at Object.asyncFn (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\jasmine_async.js:129:432)\n    at resolve (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:51:12)\n    at new Promise (<anonymous>)\n    at mapper (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:40:274)\n    at promise.then (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:83:39)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+                    ],
+                    "fullName": "outer 0 outer 1 outer 2 next outer 3 outer 4 should fail",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "failed",
+                    "title": "should fail"
+                },
+                {
+                    "ancestorTitles": [
+                        "outer 0",
+                        "outer 1",
+                        "outer 2",
+                        "next outer 3"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "outer 0 outer 1 outer 2 next outer 3 should be around too",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should be around too"
+                },
+                {
+                    "ancestorTitles": [
+                        "outer 0",
+                        "outer 1",
+                        "outer 2",
+                        "last outer 3",
+                        "outer 4"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "outer 0 outer 1 outer 2 last outer 3 outer 4 should pass",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should pass"
+                }
+            ],
+            "sourceMaps": {},
+            "skipped": false,
+            "leaks": false
+        }
+    ],
+    "wasInterrupted": false
+}

@@ -2367,6 +2367,773 @@ Array [
 ]
 `;
 
+exports[`TestSuite tests should create proper elements for nested describes with reused names 1`] = `
+Array [
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow both-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\__examples__\\NestedDescribeTests.example.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow both-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        outer 0
+      </h6>
+      <div
+        class="my-3 p-3 bg-white rounded box-shadow both-test"
+      >
+        <h6
+          class="border-bottom border-gray pb-2 mb-0 display-6"
+        >
+          outer 1
+        </h6>
+        <div
+          class="my-3 p-3 bg-white rounded box-shadow both-test"
+        >
+          <h6
+            class="border-bottom border-gray pb-2 mb-0 display-6"
+          >
+            outer 2
+          </h6>
+          <div
+            class="media text-muted pt-3 passed-test"
+          >
+            <img
+              alt=""
+              class="mr-2 rounded"
+              data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+            />
+            <div
+              class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center w-100"
+              >
+                <strong
+                  class="text-gray-dark"
+                >
+                  should pass
+                </strong>
+                <small
+                  class="d-block text-right mt-3"
+                >
+                  0.002s
+                </small>
+              </div>
+              <span
+                class="d-block mb-2"
+              >
+                passed
+              </span>
+            </div>
+          </div>
+          <div
+            class="my-3 p-3 bg-white rounded box-shadow passed-test"
+          >
+            <h6
+              class="border-bottom border-gray pb-2 mb-0 display-6"
+            >
+              first outer 3
+            </h6>
+            <div
+              class="my-3 p-3 bg-white rounded box-shadow passed-test"
+            >
+              <h6
+                class="border-bottom border-gray pb-2 mb-0 display-6"
+              >
+                outer 4
+              </h6>
+              <div
+                class="media text-muted pt-3 passed-test"
+              >
+                <img
+                  alt=""
+                  class="mr-2 rounded"
+                  data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+                />
+                <div
+                  class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <strong
+                      class="text-gray-dark"
+                    >
+                      should pass
+                    </strong>
+                    <small
+                      class="d-block text-right mt-3"
+                    >
+                      0s
+                    </small>
+                  </div>
+                  <span
+                    class="d-block mb-2"
+                  >
+                    passed
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="my-3 p-3 bg-white rounded box-shadow both-test"
+          >
+            <h6
+              class="border-bottom border-gray pb-2 mb-0 display-6"
+            >
+              outer 3
+            </h6>
+            <div
+              class="my-3 p-3 bg-white rounded box-shadow both-test"
+            >
+              <h6
+                class="border-bottom border-gray pb-2 mb-0 display-6"
+              >
+                outer 4
+              </h6>
+              <div
+                class="media text-muted pt-3 passed-test"
+              >
+                <img
+                  alt=""
+                  class="mr-2 rounded"
+                  data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+                />
+                <div
+                  class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <strong
+                      class="text-gray-dark"
+                    >
+                      should pass
+                    </strong>
+                    <small
+                      class="d-block text-right mt-3"
+                    >
+                      0s
+                    </small>
+                  </div>
+                  <span
+                    class="d-block mb-2"
+                  >
+                    passed
+                  </span>
+                </div>
+              </div>
+              <div
+                class="media text-muted pt-3 failed-test"
+              >
+                <img
+                  alt=""
+                  class="mr-2 rounded"
+                  data-src="holder.js/32x32?theme=thumb&bg=dc3545&fg=dc3545&size=1"
+                />
+                <div
+                  class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <strong
+                      class="text-gray-dark"
+                    >
+                      should fail
+                    </strong>
+                    <small
+                      class="d-block text-right mt-3"
+                    >
+                      0.11s
+                    </small>
+                  </div>
+                  <span
+                    class="d-block mb-2"
+                  >
+                    failed
+                  </span>
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <div />
+                    <button
+                      aria-controls="should-fail"
+                      aria-expanded="false"
+                      class="btn btn-light btn-sm"
+                      data-target="#should-fail"
+                      data-toggle="collapse"
+                      type="button"
+                    >
+                      raw
+                    </button>
+                  </div>
+                  <pre
+                    class="collapse show"
+                    id="should-fail"
+                  >
+                    <code>
+                      <div>
+                        <span>
+                          Error: expect(received).toBe(expected) // Object.is equality
+                        </span>
+                      </div>
+                      <div>
+                        <span />
+                      </div>
+                      <div>
+                        <span>
+                          Expected value to be:
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                            false
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                          Received:
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                            true
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at Object.it (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\__examples__\\NestedDescribeTests.example.ts:20:38)
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at Object.asyncFn (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\jasmine_async.js:129:432)
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at resolve (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:51:12)
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at new Promise (&lt;anonymous&gt;)
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at mapper (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:40:274)
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at promise.then (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:83:39)
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at &lt;anonymous&gt;
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at process._tickCallback (internal/process/next_tick.js:188:7)
+                        </span>
+                      </div>
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="my-3 p-3 bg-white rounded box-shadow both-test"
+          >
+            <h6
+              class="border-bottom border-gray pb-2 mb-0 display-6"
+            >
+              next outer 3
+            </h6>
+            <div
+              class="media text-muted pt-3 passed-test"
+            >
+              <img
+                alt=""
+                class="mr-2 rounded"
+                data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+              />
+              <div
+                class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+              >
+                <div
+                  class="d-flex justify-content-between align-items-center w-100"
+                >
+                  <strong
+                    class="text-gray-dark"
+                  >
+                    should be around
+                  </strong>
+                  <small
+                    class="d-block text-right mt-3"
+                  >
+                    0s
+                  </small>
+                </div>
+                <span
+                  class="d-block mb-2"
+                >
+                  passed
+                </span>
+              </div>
+            </div>
+            <div
+              class="my-3 p-3 bg-white rounded box-shadow both-test"
+            >
+              <h6
+                class="border-bottom border-gray pb-2 mb-0 display-6"
+              >
+                outer 4
+              </h6>
+              <div
+                class="media text-muted pt-3 passed-test"
+              >
+                <img
+                  alt=""
+                  class="mr-2 rounded"
+                  data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+                />
+                <div
+                  class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <strong
+                      class="text-gray-dark"
+                    >
+                      should pass
+                    </strong>
+                    <small
+                      class="d-block text-right mt-3"
+                    >
+                      0s
+                    </small>
+                  </div>
+                  <span
+                    class="d-block mb-2"
+                  >
+                    passed
+                  </span>
+                </div>
+              </div>
+              <div
+                class="media text-muted pt-3 failed-test"
+              >
+                <img
+                  alt=""
+                  class="mr-2 rounded"
+                  data-src="holder.js/32x32?theme=thumb&bg=dc3545&fg=dc3545&size=1"
+                />
+                <div
+                  class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <strong
+                      class="text-gray-dark"
+                    >
+                      should fail
+                    </strong>
+                    <small
+                      class="d-block text-right mt-3"
+                    >
+                      0s
+                    </small>
+                  </div>
+                  <span
+                    class="d-block mb-2"
+                  >
+                    failed
+                  </span>
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <div />
+                    <button
+                      aria-controls="should-fail"
+                      aria-expanded="false"
+                      class="btn btn-light btn-sm"
+                      data-target="#should-fail"
+                      data-toggle="collapse"
+                      type="button"
+                    >
+                      raw
+                    </button>
+                  </div>
+                  <pre
+                    class="collapse show"
+                    id="should-fail"
+                  >
+                    <code>
+                      <div>
+                        <span>
+                          Error: expect(received).toBe(expected) // Object.is equality
+                        </span>
+                      </div>
+                      <div>
+                        <span />
+                      </div>
+                      <div>
+                        <span>
+                          Expected value to be:
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                            false
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                          Received:
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                            true
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at Object.it (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\__examples__\\NestedDescribeTests.example.ts:33:38)
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at Object.asyncFn (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\jasmine_async.js:129:432)
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at resolve (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:51:12)
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at new Promise (&lt;anonymous&gt;)
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at mapper (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:40:274)
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at promise.then (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:83:39)
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at &lt;anonymous&gt;
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                              at process._tickCallback (internal/process/next_tick.js:188:7)
+                        </span>
+                      </div>
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <div
+              class="media text-muted pt-3 passed-test"
+            >
+              <img
+                alt=""
+                class="mr-2 rounded"
+                data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+              />
+              <div
+                class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+              >
+                <div
+                  class="d-flex justify-content-between align-items-center w-100"
+                >
+                  <strong
+                    class="text-gray-dark"
+                  >
+                    should be around too
+                  </strong>
+                  <small
+                    class="d-block text-right mt-3"
+                  >
+                    0s
+                  </small>
+                </div>
+                <span
+                  class="d-block mb-2"
+                >
+                  passed
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="my-3 p-3 bg-white rounded box-shadow passed-test"
+          >
+            <h6
+              class="border-bottom border-gray pb-2 mb-0 display-6"
+            >
+              last outer 3
+            </h6>
+            <div
+              class="my-3 p-3 bg-white rounded box-shadow passed-test"
+            >
+              <h6
+                class="border-bottom border-gray pb-2 mb-0 display-6"
+              >
+                outer 4
+              </h6>
+              <div
+                class="media text-muted pt-3 passed-test"
+              >
+                <img
+                  alt=""
+                  class="mr-2 rounded"
+                  data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+                />
+                <div
+                  class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <strong
+                      class="text-gray-dark"
+                    >
+                      should pass
+                    </strong>
+                    <small
+                      class="d-block text-right mt-3"
+                    >
+                      0s
+                    </small>
+                  </div>
+                  <span
+                    class="d-block mb-2"
+                  >
+                    passed
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`TestSuite tests should create proper elements for pending tests 1`] = `
+Array [
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow both-test"
+  >
+    <h5
+      class="border-bottom border-gray pb-2 mb-0 display-5"
+    >
+      C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\__examples__\\PendingTests.example.ts
+    </h5>
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow both-test"
+    >
+      <h6
+        class="border-bottom border-gray pb-2 mb-0 display-6"
+      >
+        pending tests
+      </h6>
+      <div
+        class="media text-muted pt-3 pending-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=ffc107&fg=ffc107&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should pend
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              0s
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            pending
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should pass
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              0s
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 failed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=dc3545&fg=dc3545&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should fail
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              0.09s
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            failed
+          </span>
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <div />
+            <button
+              aria-controls="should-fail"
+              aria-expanded="false"
+              class="btn btn-light btn-sm"
+              data-target="#should-fail"
+              data-toggle="collapse"
+              type="button"
+            >
+              raw
+            </button>
+          </div>
+          <pre
+            class="collapse show"
+            id="should-fail"
+          >
+            <code>
+              <div>
+                <span>
+                  Error: Failure here
+                </span>
+              </div>
+              <div>
+                <span>
+                      at Object.it (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\__examples__\\PendingTests.example.ts:9:15)
+                </span>
+              </div>
+              <div>
+                <span>
+                      at Object.asyncFn (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\jasmine_async.js:129:432)
+                </span>
+              </div>
+              <div>
+                <span>
+                      at resolve (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:51:12)
+                </span>
+              </div>
+              <div>
+                <span>
+                      at new Promise (&lt;anonymous&gt;)
+                </span>
+              </div>
+              <div>
+                <span>
+                      at mapper (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:40:274)
+                </span>
+              </div>
+              <div>
+                <span>
+                      at promise.then (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:83:39)
+                </span>
+              </div>
+              <div>
+                <span>
+                      at &lt;anonymous&gt;
+                </span>
+              </div>
+              <div>
+                <span>
+                      at process._tickCallback (internal/process/next_tick.js:188:7)
+                </span>
+              </div>
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
 exports[`TestSuite tests should create proper elements for simple failing tests 1`] = `
 Array [
   <div
