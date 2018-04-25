@@ -19,6 +19,7 @@
     "jest-stare",
     "mochawesome",
     "mocha",
+    "json",
     "jasmine",
     "reporters",
     "results",
