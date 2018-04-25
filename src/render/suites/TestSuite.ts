@@ -11,6 +11,13 @@ import { IResultsProcessorInput } from "../../processor/doc/jest/IResultsProcess
 export class TestSuite {
 
     /**
+     * Ancestor title join character
+     * @static
+     * @memberof TestSuite
+     */
+    public static readonly JOIN_CHAR = ".";
+
+    /**
      * Build table info for specific tests
      * @static
      * @returns {HTMLElement[]} - populated html elements
@@ -21,6 +28,8 @@ export class TestSuite {
         const describeLevels: number[] = [];
 
         results.testResults.forEach((testResult) => {
+
+            // TODO(Kelosky): set for pending
             let testStatusClass = Constants.PASSED_TEST;
 
             const testSectionStatus: Map<string, string> = new Map<string, string>();
@@ -28,40 +37,49 @@ export class TestSuite {
 
                 // mark overall status for a suite
                 if (result.status === Constants.TEST_STATUS_FAIL) {
-                    if (testStatusClass === Constants.PASSED_TEST) {
+                    if (testStatusClass === Constants.BOTH_TEST) {
+                        // do nothing
+                    } else if (testStatusClass === Constants.PASSED_TEST) {
                         testStatusClass = Constants.BOTH_TEST;
                     } else {
                         testStatusClass = Constants.FAILED_TEST; // overall
                     }
                     // mark all lower test sections as containing a failed test for filtering
-                    for (const ancestorTitle of result.ancestorTitles) {
-                        const checkStatus = testSectionStatus.get(ancestorTitle);
-                        if (!isNullOrUndefined(checkStatus)) {
-                            if (checkStatus === Constants.PASSED_TEST) {
-                                testSectionStatus.set(ancestorTitle, Constants.BOTH_TEST);
+                    for (let index = 0; index < result.ancestorTitles.length; index++) {
+                        const titlesCopy = result.ancestorTitles.slice();
+                        titlesCopy.splice(index + 1);
+                        const key = titlesCopy.join(TestSuite.JOIN_CHAR);
+                        if (testSectionStatus.has(key)) {
+                            if (testSectionStatus.get(key) === Constants.PASSED_TEST) {
+                                testSectionStatus.set(key, Constants.BOTH_TEST);
                             }
                         } else {
-                            testSectionStatus.set(ancestorTitle, Constants.FAILED_TEST);
+                            testSectionStatus.set(key, Constants.FAILED_TEST);
                         }
                     }
                 }
                 // mark overall status for a suite
                 if (result.status === Constants.TEST_STATUS_PASS) {
-                    if (testStatusClass === Constants.FAILED_TEST) {
+                    if (testStatusClass === Constants.BOTH_TEST) {
+                        // do nothing
+                    }
+                    else if (testStatusClass === Constants.FAILED_TEST) {
                         testStatusClass = Constants.BOTH_TEST;
                     } else {
                         testStatusClass = Constants.PASSED_TEST;
                     }
 
-                    // mark all lower test sections as containing a failed test for filtering
-                    for (const ancestorTitle of result.ancestorTitles) {
-                        const checkStatus = testSectionStatus.get(ancestorTitle);
-                        if (!isNullOrUndefined(checkStatus)) {
-                            if (checkStatus === Constants.FAILED_TEST) {
-                                testSectionStatus.set(ancestorTitle, Constants.BOTH_TEST);
+                    // mark all lower test sections as containing a passed test for filtering
+                    for (let index = 0; index < result.ancestorTitles.length; index++) {
+                        const titlesCopy = result.ancestorTitles.slice();
+                        titlesCopy.splice(index + 1);
+                        const key = titlesCopy.join(TestSuite.JOIN_CHAR);
+                        if (testSectionStatus.has(key)) {
+                            if (testSectionStatus.get(key) === Constants.FAILED_TEST) {
+                                testSectionStatus.set(key, Constants.BOTH_TEST);
                             }
                         } else {
-                            testSectionStatus.set(ancestorTitle, Constants.PASSED_TEST);
+                            testSectionStatus.set(key, Constants.PASSED_TEST);
                         }
                     }
                 }
@@ -76,95 +94,51 @@ export class TestSuite {
 
             div.appendChild(h5);
 
-            // map for describe divs
-            const describeMap: Map<string, HTMLElement> = new Map<string, HTMLElement>();
-            describeMap.set("", div); // for entry where no ancestor title exists
+            // if a flat test report were to be used, simply
+            // testResult.testResults.forEach((test) => {
+            //   div.appendChild(Test.create(test));
+            // });
 
-            // map for test and the five that it should belong to
-            const testMap: Map<string, HTMLElement> = new Map<string, HTMLElement>();
-            testMap.set("", div); // for entry where no ancestor title exists
+            const divMap: Map<string, HTMLElement> = new Map<string, HTMLElement>();
+            testResult.testResults.forEach((test) => {
+                const element = Test.create(test);
+                if (test.ancestorTitles.length > 0) {
+                    test.ancestorTitles.forEach((title, index) => {
 
-            testResult.testResults.forEach((innerTestResult) => {
-                innerTestResult.ancestorTitles.forEach((title, index) => {
-                    if (!describeMap.has(TestSuite.getKey(index, title))) {
-                        const nestDiv = document.createElement("div") as HTMLDivElement;
-                        const statusClass = testSectionStatus.get(title) || Constants.PASSED_TEST;
-                        nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
-                        const h6 = document.createElement("h6") as HTMLHeadingElement;
-                        h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
-                        h6.textContent = title;
-                        nestDiv.appendChild(h6);
-                        describeMap.set(TestSuite.getKey(index, title), nestDiv);
-
-                        // append this "describe" section to it's parent
-                        const titlesCopy = innerTestResult.ancestorTitles.slice();
+                        const titlesCopy = test.ancestorTitles.slice();
                         titlesCopy.splice(index + 1);
-                        const parentKey = TestSuite.getParentKey(titlesCopy, describeMap);
-                        const parentElement = describeMap.get(parentKey);
-                        parentElement.appendChild(nestDiv);
+                        const key = titlesCopy.join(TestSuite.JOIN_CHAR);
+                        if (divMap.has(key)) {
+                            divMap.get(key).appendChild(element);
+                        } else {
+                            const nestDiv = document.createElement("div") as HTMLDivElement;
+                            const statusClass = testSectionStatus.get(key) || Constants.PASSED_TEST;
+                            nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
+                            const h6 = document.createElement("h6") as HTMLHeadingElement;
+                            h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
+                            h6.textContent = title;
+                            nestDiv.appendChild(h6);
+                            nestDiv.appendChild(element);
 
-                        // assign a test to it's describe div
-                        testMap.set(TestSuite.getKey(index, title), nestDiv);
-                    }
-                });
-            });
+                            divMap.set(key, nestDiv);
 
-            testResult.testResults.forEach((innerTestResult) => {
-                const addToDiv = testMap.get(TestSuite.getKeyFromTitle(innerTestResult.ancestorTitles));
-                addToDiv.appendChild(Test.create(innerTestResult));
+                            if (index === 0) {
+                                div.appendChild(nestDiv);
+                            } else {
+                                titlesCopy.pop();
+                                const parentKey = titlesCopy.join(TestSuite.JOIN_CHAR);
+                                divMap.get(parentKey).appendChild(nestDiv);
+                            }
+                        }
+                    });
+                } else {
+                    div.appendChild(element);
+                }
             });
 
             elements.push(div);
         });
 
         return elements;
-    }
-
-    /**
-     * Make a key from input index and title to encapsulate what makes up the key
-     * @private
-     * @static
-     * @param {any} index - index number, can be any value
-     * @param {any} title - title of an ancestor array
-     * @returns index + title (in the future the key may be different)
-     * @memberof TestSuite
-     */
-    private static getKey(index, title) {
-        return index + title;
-    }
-
-    /**
-     * For input ancestor titles, return the appropriate key that represents this element
-     * @private
-     * @static
-     * @param {string[]} titles - ancestor titles
-     * @returns {string} - key representing title
-     * @memberof TestSuite
-     */
-    private static getKeyFromTitle(titles: string[]) {
-        if (titles.length > 0) {
-            return TestSuite.getKey(titles.length - 1, titles[titles.length - 1]);
-        }
-        return "";
-    }
-
-    /**
-     * Get parent key.  If ancestor title is ["one", "two", "three"], then current
-     * key is "3three" and parent is "2two".
-     * @private
-     * @static
-     * @param {string[]} titles - ancestor titles
-     * @param {Map<string, HTMLElement>} divMap - mapping of keys of index + 2 to a given div
-     * @returns {string} - key representing parent
-     * @memberof TestSuite
-     */
-    private static getParentKey(titles: string[], divMap: Map<string, HTMLElement>) {
-        for (let i = titles.length - 1 - 1; i >= 0; i--) {
-            if (divMap.has(i + titles[i])) {
-                return TestSuite.getKey(i, titles[i]);
-            }
-        }
-
-        return "";
     }
 }

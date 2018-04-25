@@ -16,6 +16,7 @@ export interface IResultsProcessorInput {
     numTotalTests: number;
     numPassedTests: number;
     numFailedTests: number;
+    numPendingTestSuites: number;
     numPendingTests: number;
     snapshot: ISnapshot;
     testResults: ITestResults[];

@@ -1,0 +1,95 @@
+{
+    "numFailedTestSuites": 1,
+    "numFailedTests": 1,
+    "numPassedTestSuites": 0,
+    "numPassedTests": 1,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 1,
+    "numRuntimeErrorTestSuites": 0,
+    "numTotalTestSuites": 1,
+    "numTotalTests": 3,
+    "snapshot": {
+        "added": 0,
+        "didUpdate": false,
+        "failure": false,
+        "filesAdded": 0,
+        "filesRemoved": 0,
+        "filesUnmatched": 0,
+        "filesUpdated": 0,
+        "matched": 0,
+        "total": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+    },
+    "startTime": 1523673656492,
+    "success": false,
+    "testResults": [
+        {
+            "console": null,
+            "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[1mpending tests › should fail\u001b[39m\u001b[22m\n\n    Failure here\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m  7 | \u001b[39m    })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m  8 | \u001b[39m    it(\u001b[32m\"should fail\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[2m\u001b[39m\u001b[90m  9 | \u001b[39m        \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Failure here\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 10 | \u001b[39m    })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 11 | \u001b[39m})\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 12 | \u001b[39m\u001b[0m\u001b[22m\n\u001b[2m      \u001b[22m\n\u001b[2m      \u001b[2mat Object.it (\u001b[2m\u001b[0m\u001b[36m__tests__/__examples__/PendingTests.example.ts\u001b[39m\u001b[0m\u001b[2m:9:15)\u001b[2m\u001b[22m\n",
+            "numFailingTests": 1,
+            "numPassingTests": 1,
+            "numPendingTests": 1,
+            "perfStats": {
+                "end": 1523673659470,
+                "start": 1523673657496
+            },
+            "snapshot": {
+                "added": 0,
+                "fileDeleted": false,
+                "matched": 0,
+                "unchecked": 0,
+                "unmatched": 0,
+                "updated": 0,
+                "uncheckedKeys": []
+            },
+            "testFilePath": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\__examples__\\PendingTests.example.ts",
+            "testResults": [
+                {
+                    "ancestorTitles": [
+                        "pending tests"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "pending tests should pend",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "pending",
+                    "title": "should pend"
+                },
+                {
+                    "ancestorTitles": [
+                        "pending tests"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "pending tests should pass",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should pass"
+                },
+                {
+                    "ancestorTitles": [
+                        "pending tests"
+                    ],
+                    "duration": 90,
+                    "failureMessages": [
+                        "Error: Failure here\n    at Object.it (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\__examples__\\PendingTests.example.ts:9:15)\n    at Object.asyncFn (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\jasmine_async.js:129:432)\n    at resolve (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:51:12)\n    at new Promise (<anonymous>)\n    at mapper (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:40:274)\n    at promise.then (C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:83:39)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+                    ],
+                    "fullName": "pending tests should fail",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "failed",
+                    "title": "should fail"
+                }
+            ],
+            "sourceMaps": {},
+            "skipped": false,
+            "leaks": false
+        }
+    ],
+    "wasInterrupted": false
+}
