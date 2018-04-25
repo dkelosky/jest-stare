@@ -35,7 +35,7 @@ By default, after a report is generated, the output will go to `./jest-stare` an
 Thanks to [dogboydog](https://github.com/dogboydog) for additions to configuration!
 
 Currently, if you need to config `jest-stare`, do so by adding a `jest-stare` object to your package.json, for example:
-```json
+```typescript
 jest-stare: {
     ...
 }
@@ -120,7 +120,6 @@ You can create a report from tests in the `__tests__/example` by issuing: `jest 
 Or, you can use `npm run example` (which includes a build before creating a sample report).
 
 ## Acknowledgements
-
 This project is based on:
 * [jQuery](https://jquery.com/)
 * [Bootstrap](https://getbootstrap.com/)
