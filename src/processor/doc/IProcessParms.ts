@@ -1,3 +1,5 @@
+import { Reporter } from "../../reporter/Reporter";
+
 /**
  * Configuration for process calls
  * @export
@@ -10,5 +12,5 @@ export interface IProcessParms {
      * @type {boolean}
      * @memberof IProcessParms
      */
-    reporterInvocation: boolean;
+    reporter: Reporter;
 }

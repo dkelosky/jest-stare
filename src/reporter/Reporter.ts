@@ -85,6 +85,6 @@ export class Reporter {
         // Logger.get.debug("onRunComplete:");
 
         // disallow results processors from a reporter invocation
-        Processor.resultsProcessor(results, {additionalResultsProcessors: []}, {reporterInvocation: true});
+        Processor.resultsProcessor(results, {additionalResultsProcessors: []}, {reporter: this});
     }
 }

@@ -66,7 +66,7 @@ export class Processor {
         if (!isNullOrUndefined(explicitConfig)) {
 
             // display if not internal invocation
-            if (parms && parms.reporterInvocation) {
+            if (parms && parms.reporter) {
                 // do nothing
             } else {
                 Processor.logger.debug(Constants.OVERRIDE_JEST_STARE_CONFIG);
@@ -150,7 +150,7 @@ export class Processor {
 
         // log complete
         let type = " ";
-        type += (parms && parms.reporterInvocation) ? Constants.REPORTERS : Constants.TEST_RESULTS_PROCESSOR;
+        type += (parms && parms.reporter) ? Constants.REPORTERS : Constants.TEST_RESULTS_PROCESSOR;
         Processor.logger.debug(Constants.LOGO + type + Constants.LOG_MESSAGE + resultDir + Constants.MAIN_HTML + chalk.default.green("\t**"));
     }
 
