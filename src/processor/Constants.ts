@@ -78,11 +78,25 @@ export class Constants {
     public static readonly JS_DIR = "js/";
 
     /**
+     * jest option for test results processors
+     * @static
+     * @memberof Constants
+     */
+    public static readonly TEST_RESULTS_PROCESSOR = "--testResultsProcessor";
+
+    /**
+     * jest option for reporters
+     * @static
+     * @memberof Constants
+     */
+    public static readonly REPORTERS = "--reporters";
+
+    /**
      * Log content after logo
      * @static
      * @memberof Constants
      */
-    public static readonly LOG_MESSAGE = " --testResultsProcessor: wrote output report to ";
+    public static readonly LOG_MESSAGE = ": wrote output report to ";
 
     /**
      * Error for whenever called without test results
