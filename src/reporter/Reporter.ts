@@ -6,11 +6,14 @@ import ReporterOnStartOptions = jest.ReporterOnStartOptions;
 import Context = jest.Context;
 
 import * as mustache from "mustache";
-import { ISubstitute } from "./doc/ISubstitute";
+import { ISubstitute } from "../processor/doc/ISubstitute";
 
 import { Logger } from "../utils/Logger";
 import { IO } from "../utils/IO";
 import { inspect } from "util";
+import { Processor } from "../processor/Processor";
+import { IJestStareConfig } from "../processor/doc/IJestStareConfig";
+import { IResultsProcessorInput } from "../processor/doc/jest/IResultsProcessorInput";
 
 /**
  * Class to implement basic reporter methods
@@ -72,10 +75,16 @@ export class Reporter {
     /**
      * Called when all is complete?
      * @param {Set<Context>} contexts - jest context
-     * @param {AggregatedResult} results - jest summarized results
+     * @param {IResultsProcessorInput} results - jest summarized results
      * @memberof Reporter
      */
-    public onRunComplete(contexts: Set<Context>, results: AggregatedResult) {
+    // Note(Kelosky): jest config appears to be missing some items from its interfaces
+    // so we'll use our custom interface instead of
+    // public onRunComplete(contexts: Set<Context>, results: AggregatedResult) {
+    public onRunComplete(contexts: Set<Context>, results: IResultsProcessorInput) {
         // Logger.get.debug("onRunComplete:");
+
+        // disallow results processors from a reporter invocation
+        Processor.resultsProcessor(results, {additionalResultsProcessors: []}, {reporter: this});
     }
 }

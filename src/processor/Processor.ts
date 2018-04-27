@@ -1,6 +1,6 @@
 import { Constants } from "./Constants";
 import { IResultsProcessorInput } from "./doc/jest/IResultsProcessorInput";
-import { ISubstitute } from "../reporter/doc/ISubstitute";
+import { ISubstitute } from "./doc/ISubstitute";
 import { IO } from "../utils/IO";
 import * as mustache from "mustache";
 import * as path from "path";
@@ -10,6 +10,7 @@ import * as chalk from "chalk";
 import { IThirdPartyDependency } from "./doc/IThirdPartyDependency";
 import { Dependencies } from "./Dependencies";
 import { isNullOrUndefined } from "util";
+import { IProcessParms } from "./doc/IProcessParms";
 const pkgUp = require("pkg-up");
 
 /**
@@ -27,7 +28,8 @@ export class Processor {
      * @returns - returns input results object
      * @memberof Processor
      */
-    public static resultsProcessor(results: IResultsProcessorInput, explicitConfig?: IJestStareConfig) {
+    public static resultsProcessor(results: IResultsProcessorInput, explicitConfig?: IJestStareConfig,
+                                   parms?: IProcessParms) {
 
         const substitute: ISubstitute = {};
 
@@ -37,7 +39,18 @@ export class Processor {
         }
 
         // get configuration
-        const config = explicitConfig || Processor.readPackageJson();
+        const packageJsonConfig = Processor.readPackageJson();
+        const config = explicitConfig || packageJsonConfig;
+
+        // take packagejson options after setting explicit config (concatenate both)
+        if (explicitConfig != null) {
+            Object.keys(packageJsonConfig).forEach((key) => {
+                if (isNullOrUndefined(explicitConfig[key]) && !isNullOrUndefined(packageJsonConfig[key])) {
+                    config[key] = packageJsonConfig[key];
+                }
+            });
+        }
+
         const resultDirectory = config.resultDir == null ? Constants.DEFAULT_RESULTS_DIR : config.resultDir;
 
         // suppress logging if requested
@@ -51,7 +64,13 @@ export class Processor {
         // record if we were invoked programmatically
         // NOTE(Kelosky): should be second, to record if override config
         if (!isNullOrUndefined(explicitConfig)) {
-            Processor.logger.debug(Constants.OVERRIDE_JEST_STARE_CONFIG);
+
+            // display if not internal invocation
+            if (parms && parms.reporter) {
+                // do nothing
+            } else {
+                Processor.logger.debug(Constants.OVERRIDE_JEST_STARE_CONFIG);
+            }
         }
 
         if (isNullOrUndefined(config.resultHtml)) {
@@ -69,7 +88,7 @@ export class Processor {
         substitute.rawJestStareConfig = JSON.stringify(config, null, 2);
 
         // generate report
-        Processor.generateReport(resultDirectory, substitute);
+        Processor.generateReport(resultDirectory, substitute, parms);
 
         if (config.additionalResultsProcessors != null) {
             Processor.execute(results, config.additionalResultsProcessors);
@@ -95,31 +114,31 @@ export class Processor {
      * @param {ISettings} settings - settings for IO
      * @memberof Processor
      */
-    private static generateReport(resultDir: string, substitute: ISubstitute) {
+    private static generateReport(resultDir: string, substitute: ISubstitute, parms: IProcessParms) {
 
         // create base html file
         resultDir = resultDir + "/"; // append an extra slash in case the user didn't add one
         IO.mkdirsSync(resultDir);
-        IO.writeFile(resultDir + substitute.jestStareConfig.resultHtml,
+        IO.writeFileSync(resultDir + substitute.jestStareConfig.resultHtml,
             mustache.render(Processor.obtainWebFile(Constants.TEMPLATE_HTML), substitute));
 
         // create raw json
-        IO.writeFile(resultDir + substitute.jestStareConfig.resultJson, substitute.rawResults);
+        IO.writeFileSync(resultDir + substitute.jestStareConfig.resultJson, substitute.rawResults);
 
         // create jest-stare config if requested
         if (!isNullOrUndefined(substitute.jestStareConfig.jestStareConfigJson)) {
-            IO.writeFile(resultDir + substitute.jestStareConfig.jestStareConfigJson, substitute.rawJestStareConfig);
+            IO.writeFileSync(resultDir + substitute.jestStareConfig.jestStareConfigJson, substitute.rawJestStareConfig);
         }
 
         // create our css
         const cssDir = resultDir + Constants.CSS_DIR;
         IO.mkdirsSync(cssDir);
-        IO.writeFile(cssDir + Constants.JEST_STARE_CSS, Processor.obtainWebFile(Constants.JEST_STARE_CSS));
+        IO.writeFileSync(cssDir + Constants.JEST_STARE_CSS, Processor.obtainWebFile(Constants.JEST_STARE_CSS));
 
         // create our js
         const jsDir = resultDir + Constants.JS_DIR;
         IO.mkdirsSync(jsDir);
-        IO.writeFile(jsDir + Constants.JEST_STARE_JS, Processor.obtainJsRenderFile(Constants.JEST_STARE_JS));
+        IO.writeFileSync(jsDir + Constants.JEST_STARE_JS, Processor.obtainJsRenderFile(Constants.JEST_STARE_JS));
 
         // add third party dependencies
         Dependencies.THIRD_PARTY_DEPENDENCIES.forEach((dependency) => {
@@ -130,7 +149,9 @@ export class Processor {
         });
 
         // log complete
-        Processor.logger.debug(Constants.LOGO + Constants.LOG_MESSAGE + resultDir + Constants.MAIN_HTML + chalk.default.green("\t**"));
+        let type = " ";
+        type += (parms && parms.reporter) ? Constants.REPORTERS : Constants.TEST_RESULTS_PROCESSOR;
+        Processor.logger.debug(Constants.LOGO + type + Constants.LOG_MESSAGE + resultDir + Constants.MAIN_HTML + chalk.default.green("\t**"));
     }
 
     /**
@@ -167,7 +188,7 @@ export class Processor {
      */
     private static async addThirdParty(dependency: IThirdPartyDependency) {
         const location = require.resolve(dependency.requireDir + dependency.file);
-        await IO.writeFile(dependency.targetDir + dependency.file, IO.readFileSync(location));
+        await IO.writeFileSync(dependency.targetDir + dependency.file, IO.readFileSync(location));
     }
 
     /**

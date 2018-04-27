@@ -6,7 +6,7 @@ import { Processor } from "../../src/processor/Processor";
 import { inspect } from "util";
 import { Logger } from "../../src/utils/Logger";
 import { IResultsProcessorInput } from "../../src/processor/doc/jest/IResultsProcessorInput";
-import { ISubstitute } from "../../src/reporter/doc/ISubstitute";
+import { ISubstitute } from "../../src/processor/doc/ISubstitute";
 
 const simplePassingTests: IResultsProcessorInput = require("../__resources__/simplePassingTests.json");
 

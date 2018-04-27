@@ -22,6 +22,18 @@ export class IO {
     }
 
     /**
+     * Wrap fs.writeFile for promise-based calling
+     * @static
+     * @param {string} path - place to write to
+     * @param {*} data - content to write
+     * @returns {Promise<void>} - when write is complete
+     * @memberof IO
+     */
+    public static writeFileSync(path: string, data: any) {
+        return;
+    }
+
+    /**
      * Make directories (recursive)
      * @static
      * @param {string} dir - directory to make

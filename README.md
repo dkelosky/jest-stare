@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/dkelosky/jest-stare.svg?branch=master)](https://travis-ci.org/dkelosky/jest-stare) [![jest](https://facebook.github.io/jest/img/jest-badge.svg)](https://github.com/facebook/jest) [![npm](https://img.shields.io/badge/npm-v5.6.0-blue.svg)](https://www.npmjs.com/package/jest-stare)
 
 # Jest HTML Reporter / Results Processor
-This is a Jest HTML reporter (really a "results processor").  That is, it takes summary test results from jest
+This is a Jest HTML reporter and results processor.  That is, it takes summary test results from jest
 and parses into an HTML file for improved readability and filtering. 
 
 ![Sample](images/sampleReport.png "Sample Report")
@@ -19,11 +19,18 @@ It provides:
 * [api](#api)
 
 ## Usage
-Run tests or a test with jest and specify `jest-stare` on the `--testResultsProcessor` option:
-`jest --testResultsProcessor=jest-stare`
+Run tests or a test with jest and specify `jest-stare` on the `--reporters` or `--testResultsProcessor` option:
 
-Or, add `testResultsProcessor` to `jest` config to specfy `jest-stare`:
+* `jest --testResultsProcessor=jest-stare`
+* `jest --reporters default jest-stare`
+
+Add `testResultsProcessor` to `jest` config to specify `jest-stare`:
+
 `"testResultsProcessor": "./node_modules/jest-stare",`
+
+Add `reporters` to `jest` config to specify `jest-stare`:
+
+`"reporters: ["default", "jest-stare"]`
 
 By default, after a report is generated, the output will go to `./jest-stare` and will contain:
 * `index.html` - html report
@@ -60,7 +67,7 @@ You can programmatically invoke jest-stare and provide jest response data via:
 const processor = require("jest-stare");
 
 // load some jest results JSON data
-const simplePassingTests = require("../__tests__/data/simplePassingTests.json");
+const simplePassingTests = require("../__tests__/__resources__/simplePassingTests.json");
 
 // call jest-stare processor, passing a first parm of the jest json results,
 // and optionally a second parm of jest-stare config

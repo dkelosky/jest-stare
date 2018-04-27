@@ -1,5 +1,5 @@
-import { IResultsProcessorInput } from "../../processor/doc/jest/IResultsProcessorInput";
-import { IJestStareConfig } from "../../processor/doc/IJestStareConfig";
+import { IResultsProcessorInput } from "./jest/IResultsProcessorInput";
+import { IJestStareConfig } from "./IJestStareConfig";
 
 
 /**
