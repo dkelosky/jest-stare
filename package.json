@@ -22,6 +22,8 @@
     "json",
     "jasmine",
     "reporters",
+    "custom",
+    "spec",
     "results",
     "processor",
     "reporter"
@@ -101,6 +103,7 @@
       "js"
     ],
     "testEnvironment": "jsdom",
+    "reporters": ["default", "./"],
     "testResultsProcessor": "./"
   },
   "jest-stare": {
