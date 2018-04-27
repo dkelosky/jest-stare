@@ -1,2 +1,2 @@
-import { entry } from "./Entry";
+import { entry } from "./entry";
 module.exports = entry;
