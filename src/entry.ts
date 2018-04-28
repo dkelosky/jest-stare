@@ -11,7 +11,7 @@ import { IResultsProcessorInput } from "./processor/doc/jest/IResultsProcessorIn
  * @param {any} parm1 - reporter or results processor second paramter
  * @returns
  */
-export function entry(parm0: any, parm1: any) {
+export function entry(parm0: any, parm1?: any) {
 
     // if called with new, go reporter route
     if (this instanceof entry) {
@@ -19,6 +19,6 @@ export function entry(parm0: any, parm1: any) {
 
     // otherwise, result processor
     } else {
-        return Processor.resultsProcessor(parm0);
+        return Processor.run(parm0, undefined);
     }
 }

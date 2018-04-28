@@ -14,6 +14,7 @@ import { inspect } from "util";
 import { Processor } from "../processor/Processor";
 import { IJestStareConfig } from "../processor/doc/IJestStareConfig";
 import { IResultsProcessorInput } from "../processor/doc/jest/IResultsProcessorInput";
+import { Constants } from "../processor/Constants";
 
 /**
  * Class to implement basic reporter methods
@@ -31,6 +32,14 @@ export class Reporter {
      */
 
     /**
+     * jest-stare configuration
+     * @private
+     * @type {IJestStareConfig}
+     * @memberof Reporter
+     */
+    private mJestStareConfig: IJestStareConfig;
+
+    /**
      * Creates an instance of Reporter.
      * @param {GlobalConfig} mGlobalConfig - jest global config
      * @param {*} mOptions - jest options in effect
@@ -39,15 +48,18 @@ export class Reporter {
     constructor(private mGlobalConfig: jest.GlobalConfig, private mOptions: any) {
     }
 
+
     /**
      * Call for tests starting
      * @param {AggregatedResult} results - jest results
      * @param {ReporterOnStartOptions} options - jest invoked options
      * @memberof Reporter
      */
-    public onRunStart(results: AggregatedResult, options: ReporterOnStartOptions) {
+    public onRunStart(results: IResultsProcessorInput, options: ReporterOnStartOptions) {
         // Logger.get.debug("onRunStart: "); //  + inspect(results));
         // Logger.get.debug("onRunStart: " + inspect(results));
+        Processor.run(results, { additionalResultsProcessors: [], log: false }, { reporter: this });
+        Logger.get.debug(Constants.LOGO + Constants.REPORTER_WRITTING + this.jestStareConfig.resultDir + Constants.SUFFIX);
     }
 
     /**
@@ -67,9 +79,10 @@ export class Reporter {
      * @param {AggregatedResult} aggregatedResult - jest summarized results
      * @memberof Reporter
      */
-    public onTestResult(test: Test, testResult: TestResult, aggregatedResult: AggregatedResult) {
+    public onTestResult(test: Test, testResult: TestResult, results: IResultsProcessorInput) {
         // Logger.get.debug("onTestResult: "); // + inspect(testResult) + " agg: " + inspect(aggregatedResult));
         // Logger.get.debug("onTestResult: " + inspect(testResult) + " agg: " + inspect(aggregatedResult));
+        Processor.run(results, { additionalResultsProcessors: [], log: false }, { reporter: this });
     }
 
     /**
@@ -85,6 +98,23 @@ export class Reporter {
         // Logger.get.debug("onRunComplete:");
 
         // disallow results processors from a reporter invocation
-        Processor.resultsProcessor(results, {additionalResultsProcessors: []}, {reporter: this});
+        Processor.run(results, {additionalResultsProcessors: []}, {reporter: this});
+    }
+
+    /**
+     * Get jest config after set
+     * @readonly
+     * @memberof Reporter
+     */
+    public get jestStareConfig() {
+        return this.mJestStareConfig || {};
+    }
+
+    /**
+     * Set jest config
+     * @memberof Reporter
+     */
+    public set jestStareConfig(config: IJestStareConfig) {
+        this.mJestStareConfig = config;
     }
 }

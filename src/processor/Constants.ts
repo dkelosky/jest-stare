@@ -22,6 +22,13 @@ export class Constants {
     public static readonly LOGO = chalk.default.green("**  ") + chalk.default.green("jest") + chalk.default.yellow("-") + chalk.default.red("stare");
 
     /**
+     * Suffix for logo
+     * @static
+     * @memberof Constants
+     */
+    public static readonly SUFFIX = chalk.default.green("\t**");
+
+    /**
      * Default jest-stare results directory
      * @static
      * @memberof Constants
@@ -41,6 +48,13 @@ export class Constants {
      * @memberof Constants
      */
     public static readonly JEST_STARE_JS = "view.js";
+
+    /**
+     * Message for reporter run of jest-stare
+     * @static
+     * @memberof Constants
+     */
+    public static readonly REPORTER_WRITTING = " will write each completed run to ";
 
     /**
      * Raw JSON response results

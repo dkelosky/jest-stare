@@ -28,7 +28,7 @@ describe("Processor tests", () => {
         });
 
         (Processor as any).logger = log;
-        const processed = Processor.resultsProcessor(simplePassingTests, {log: false});
+        const processed = Processor.run(simplePassingTests, {log: false});
         expect((log as any).writeStdout).not.toHaveBeenCalled();
         expect((log as any).writeStderr).not.toHaveBeenCalled();
     });
@@ -44,8 +44,9 @@ describe("Processor tests", () => {
             return msg;
         });
 
-        (Processor as any).logger = log;
-        const processed = Processor.resultsProcessor(simplePassingTests, { log: true });
+        const processor = new Processor(simplePassingTests, { log: true });
+        (processor as any).logger = log;
+        const processed = (processor as any).generate();
         expect((log as any).writeStdout).toHaveBeenCalled();
         expect((log as any).writeStderr).not.toHaveBeenCalled();
     });
@@ -61,34 +62,36 @@ describe("Processor tests", () => {
             return msg;
         });
 
-        (Processor as any).logger = log;
+        const processor = new Processor(simplePassingTests);
+        (new Processor(undefined) as any).logger = log;
 
         // default file name
-        (Processor as any).generateReport = jest.fn((resultDir: string, substitute: ISubstitute) => {
+        (processor as any).generateReport = jest.fn((resultDir: string, substitute: ISubstitute) => {
             expect(substitute).toMatchSnapshot();
         });
 
-        Processor.resultsProcessor(simplePassingTests);
-        expect((Processor as any).generateReport).toHaveBeenCalled();
+        (processor as any).generate();
+        expect((processor as any).generateReport).toHaveBeenCalled();
 
 
-        (Processor as any).generateReport = jest.fn((resultDir: string, substitute: ISubstitute) => {
+        const secondProcessor = new Processor(simplePassingTests, { resultHtml: "test.html", resultJson: "test.json" });
+        (secondProcessor as any).generateReport = jest.fn((resultDir: string, substitute: ISubstitute) => {
             expect(substitute).toMatchSnapshot();
         });
 
-        Processor.resultsProcessor(simplePassingTests, {resultHtml: "test.html", resultJson: "test.json"});
-        expect((Processor as any).generateReport).toHaveBeenCalled();
+        (secondProcessor as any).generate();
+        expect((secondProcessor as any).generateReport).toHaveBeenCalled();
     });
 
     it("should create a report form an input object", async () => {
-        const processed = Processor.resultsProcessor(simplePassingTests);
+        const processed = Processor.run(simplePassingTests);
         expect(processed).toMatchSnapshot();
     });
 
     it("should error when called without input", () => {
         let error;
         try {
-            Processor.resultsProcessor(null);
+            Processor.run(null);
         } catch (thrownError) {
             error = thrownError;
         }
