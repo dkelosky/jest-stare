@@ -25,51 +25,114 @@ export class Processor {
      * @static
      * @param {IResultsProcessorInput} results - input results object
      * @param {IJestStareConfig} [explicitConfig] - programmatic config
+     * @param {IProcessParms} [mProcessParms] - parms object to control process behavior
      * @returns - returns input results object
      * @memberof Processor
      */
-    public static resultsProcessor(results: IResultsProcessorInput, explicitConfig?: IJestStareConfig,
-                                   parms?: IProcessParms) {
+    public static run(results: IResultsProcessorInput, explicitConfig?: IJestStareConfig,
+                      parms?: IProcessParms) {
 
+        return new Processor(results, explicitConfig, parms).generate();
+    }
+
+    /**
+     * Instance of our logger
+     * @private
+     * @type {Logger}
+     * @memberof Processor
+     */
+    private mLog: Logger;
+
+    /**
+     * Creates an instance of Processor.
+     * @param {IResultsProcessorInput} results - input results object
+     * @param {IJestStareConfig} [explicitConfig] - programmatic config
+     * @param {IProcessParms} [mProcessParms] - parms object to control process behavior
+     * @memberof Processor
+     */
+    constructor(private mResults: IResultsProcessorInput, private mExplicitConfig?: IJestStareConfig,
+                private mProcessParms?: IProcessParms) {
+    }
+
+    /**
+     * Generate a report after constructed
+     * @private
+     * @returns
+     * @memberof Processor
+     */
+    private generate() {
         const substitute: ISubstitute = {};
 
         // throw error if no input object
-        if (isNullOrUndefined(results)) {
+        if (isNullOrUndefined(this.mResults)) {
             throw new Error(Constants.NO_INPUT);
         }
 
+        const config = this.buildConfig();
+
+        // build mustache render substitution values
+        substitute.results = this.mResults;
+        substitute.rawResults = JSON.stringify(this.mResults, null, 2);
+        substitute.jestStareConfig = config;
+        substitute.rawJestStareConfig = JSON.stringify(config, null, 2);
+
+        // save in reporter
+        if (this.mProcessParms && this.mProcessParms.reporter) {
+            this.mProcessParms.reporter.jestStareConfig = config;
+        }
+
+        // generate report
+        this.generateReport(config.resultDir, substitute, this.mProcessParms);
+
+        if (config.additionalResultsProcessors != null) {
+            this.execute(this.mResults, config.additionalResultsProcessors);
+        }
+        // return back to jest
+        return this.mResults;
+    }
+
+    /**
+     * Build config from explicit config, package.json, and defaults
+     * @private
+     * @returns {IJestStareConfig} - constructed config
+     * @memberof Processor
+     */
+    private buildConfig(): IJestStareConfig {
+
         // get configuration
-        const packageJsonConfig = Processor.readPackageJson();
-        const config = explicitConfig || packageJsonConfig;
+        const packageJsonConfig = this.readPackageJson();
+        const config = this.mExplicitConfig || packageJsonConfig;
 
         // take packagejson options after setting explicit config (concatenate both)
-        if (explicitConfig != null) {
+        if (this.mExplicitConfig != null) {
             Object.keys(packageJsonConfig).forEach((key) => {
-                if (isNullOrUndefined(explicitConfig[key]) && !isNullOrUndefined(packageJsonConfig[key])) {
+                if (isNullOrUndefined(this.mExplicitConfig[key]) && !isNullOrUndefined(packageJsonConfig[key])) {
                     config[key] = packageJsonConfig[key];
                 }
             });
         }
 
-        const resultDirectory = config.resultDir == null ? Constants.DEFAULT_RESULTS_DIR : config.resultDir;
+        if (config.resultDir == null) {
+            config.resultDir = Constants.DEFAULT_RESULTS_DIR;
+        }
 
         // suppress logging if requested
         // NOTE(Kelosky): must be first, to suppress all logging
         if (!isNullOrUndefined(config.log)) {
             if (!config.log) {
-                Processor.logger.on = false;
+                this.logger.on = false;
             }
         }
 
         // record if we were invoked programmatically
         // NOTE(Kelosky): should be second, to record if override config
-        if (!isNullOrUndefined(explicitConfig)) {
+        if (!isNullOrUndefined(this.mExplicitConfig)) {
 
             // display if not internal invocation
-            if (parms && parms.reporter) {
+            if (this.mProcessParms && this.mProcessParms.reporter) {
                 // do nothing
             } else {
-                Processor.logger.debug(Constants.OVERRIDE_JEST_STARE_CONFIG);
+                this.logger.debug(Constants.OVERRIDE_JEST_STARE_CONFIG);
             }
         }
 
@@ -81,30 +144,8 @@ export class Processor {
             config.resultJson = Constants.RESULTS_RAW;
         }
 
-        // build mustache render substitution values
-        substitute.results = results;
-        substitute.rawResults = JSON.stringify(results, null, 2);
-        substitute.jestStareConfig = config;
-        substitute.rawJestStareConfig = JSON.stringify(config, null, 2);
-
-        // generate report
-        Processor.generateReport(resultDirectory, substitute, parms);
-
-        if (config.additionalResultsProcessors != null) {
-            Processor.execute(results, config.additionalResultsProcessors);
-        }
-        // return back to jest
-        return results;
+        return config;
     }
-
-    /**
-     * Instance of our logger
-     * @private
-     * @static
-     * @type {Logger}
-     * @memberof Processor
-     */
-    private static mLog: Logger;
 
     /**
      * Create HTML report
@@ -114,13 +155,13 @@ export class Processor {
      * @param {ISettings} settings - settings for IO
      * @memberof Processor
      */
-    private static generateReport(resultDir: string, substitute: ISubstitute, parms: IProcessParms) {
+    private generateReport(resultDir: string, substitute: ISubstitute, parms: IProcessParms) {
 
         // create base html file
         resultDir = resultDir + "/"; // append an extra slash in case the user didn't add one
         IO.mkdirsSync(resultDir);
         IO.writeFileSync(resultDir + substitute.jestStareConfig.resultHtml,
-            mustache.render(Processor.obtainWebFile(Constants.TEMPLATE_HTML), substitute));
+            mustache.render(this.obtainWebFile(Constants.TEMPLATE_HTML), substitute));
 
         // create raw json
         IO.writeFileSync(resultDir + substitute.jestStareConfig.resultJson, substitute.rawResults);
@@ -133,48 +174,50 @@ export class Processor {
         // create our css
         const cssDir = resultDir + Constants.CSS_DIR;
         IO.mkdirsSync(cssDir);
-        IO.writeFileSync(cssDir + Constants.JEST_STARE_CSS, Processor.obtainWebFile(Constants.JEST_STARE_CSS));
+        IO.writeFileSync(cssDir + Constants.JEST_STARE_CSS, this.obtainWebFile(Constants.JEST_STARE_CSS));
 
         // create our js
         const jsDir = resultDir + Constants.JS_DIR;
         IO.mkdirsSync(jsDir);
-        IO.writeFileSync(jsDir + Constants.JEST_STARE_JS, Processor.obtainJsRenderFile(Constants.JEST_STARE_JS));
+        IO.writeFileSync(jsDir + Constants.JEST_STARE_JS, this.obtainJsRenderFile(Constants.JEST_STARE_JS));
 
         // add third party dependencies
         Dependencies.THIRD_PARTY_DEPENDENCIES.forEach((dependency) => {
             // dependency.targetDir = resultDir + dependency.targetDir;
             const updatedDependency = Object.assign({}, ...[dependency]);
             updatedDependency.targetDir = resultDir + dependency.targetDir;
-            Processor.addThirdParty(updatedDependency);
+            this.addThirdParty(updatedDependency);
         });
 
         // log complete
         let type = " ";
         type += (parms && parms.reporter) ? Constants.REPORTERS : Constants.TEST_RESULTS_PROCESSOR;
-        Processor.logger.debug(Constants.LOGO + type + Constants.LOG_MESSAGE + resultDir + Constants.MAIN_HTML + chalk.default.green("\t**"));
+        this.logger.debug(Constants.LOGO + type + Constants.LOG_MESSAGE + resultDir + Constants.MAIN_HTML + Constants.SUFFIX);
     }
 
     /**
      * Pass the result processor input given to jest-stare to additional
      * test results processors
      * @param jestTestData - input passed to jest-stare
+     * @param {IResultsProcessorInput} jestTestData - input passed to jest-stare
+     * @param {string[]} processors - processors
      * @param processors - list of test results processors (e.g. ["jest-html-reporter"])
      *                     to forward the data to
      * @memberof Processor
      */
-    private static execute(jestTestData: IResultsProcessorInput, processors: string[]): void {
+    private execute(jestTestData: IResultsProcessorInput, processors: string[]): void {
         for (const processor of processors) {
             if (processor === Constants.NAME) {
-                Processor.logger.error("Error: In order to avoid infinite loops, " +
+                this.logger.error("Error: In order to avoid infinite loops, " +
                     "jest-stare cannot be listed as an additional processor. Skipping... ");
                 continue;
             }
             try {
                 require(processor)(jestTestData);
-                Processor.logger.debug(Constants.LOGO + " passed results to additional processor " +
-                    chalk.default.white("\"" + processor + "\"") + chalk.default.green("\t**"));
+                this.logger.debug(Constants.LOGO + " passed results to additional processor " +
+                    chalk.default.white("\"" + processor + "\"") + Constants.SUFFIX);
             } catch (e) {
-                Processor.logger.error("Error executing additional processor: \"" + processor + "\" " + e);
+                this.logger.error("Error executing additional processor: \"" + processor + "\" " + e);
             }
         }
     }
@@ -182,11 +225,10 @@ export class Processor {
     /**
      * Add all third party dependencies
      * @private
-     * @static
      * @param {IThirdPartyDependency} dependency - a dependency to add
      * @memberof Processor
      */
-    private static async addThirdParty(dependency: IThirdPartyDependency) {
+    private async addThirdParty(dependency: IThirdPartyDependency) {
         const location = require.resolve(dependency.requireDir + dependency.file);
         await IO.writeFileSync(dependency.targetDir + dependency.file, IO.readFileSync(location));
     }
@@ -197,7 +239,7 @@ export class Processor {
      * @returns {string} - file contents from web directory
      * @memberof Processor
      */
-    private static obtainWebFile(name: string): string {
+    private obtainWebFile(name: string): string {
         return IO.readFileSync(path.resolve(__dirname + "/../../web/" + name));
     }
 
@@ -207,18 +249,17 @@ export class Processor {
      * @returns {string} - js file contents from js directory
      * @memberof Processor
      */
-    private static obtainJsRenderFile(name: string): string {
+    private obtainJsRenderFile(name: string): string {
         return IO.readFileSync(path.resolve(__dirname + "/../render/" + name));
     }
 
     /**
      * Read from the user's package.json, if present
      * @private
-     * @static
      * @returns {IJestStareConfig} - config object
      * @memberof Processor
      */
-    private static readPackageJson(): IJestStareConfig {
+    private readPackageJson(): IJestStareConfig {
         const packageJson = pkgUp.sync();
         if (packageJson !== null) {
             const packageJsonContents = IO.readFileSync(packageJson).toString();
@@ -240,10 +281,9 @@ export class Processor {
     /**
      * Set logger instance
      * @private
-     * @static
      * @memberof Processor
      */
-    private static set logger(logger: Logger) {
+    set logger(logger: Logger) {
         this.mLog = logger;
     }
 
@@ -251,10 +291,9 @@ export class Processor {
      * Get log instance
      * @readonly
      * @private
-     * @static
      * @memberof Processor
      */
-    private static get logger() {
+    get logger() {
         if (isNullOrUndefined(this.mLog)) {
             this.logger = new Logger();
         }

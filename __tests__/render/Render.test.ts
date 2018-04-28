@@ -12,7 +12,8 @@ const simpleFailingTests: IResultsProcessorInput = require("../__resources__/sim
 describe("Render tests", () => {
     it("should not create link to coverage report if not in config", () => {
 
-        const template = (Processor as any).obtainWebFile(Constants.TEMPLATE_HTML);
+
+        const template = (new Processor(undefined) as any).obtainWebFile(Constants.TEMPLATE_HTML);
         document.write(template);
 
         const config: IJestStareConfig = {
@@ -28,7 +29,7 @@ describe("Render tests", () => {
         /**
          * Need css & js collocated and to use document.write to invoke scripts
          */
-        const template = (Processor as any).obtainWebFile(Constants.TEMPLATE_HTML);
+        const template = (new Processor(undefined) as any).obtainWebFile(Constants.TEMPLATE_HTML);
         document.write(template);
 
         const config: IJestStareConfig = {

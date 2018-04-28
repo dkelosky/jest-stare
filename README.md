@@ -14,23 +14,27 @@ It provides:
 * ability to pass test results to additional test results processors 
 * capturing of raw jest results JSON file
 * a link to generated coverage report (if configured)
+* results processor & reporter
 * [configuration](#config) overrides
 * [cli](#cli) - create `jest-stare` or other jest HTML reports from raw JSON results
 * [api](#api)
 
 ## Usage
-Run tests or a test with jest and specify `jest-stare` on the `--reporters` or `--testResultsProcessor` option:
+Run tests or a test with jest and specify `jest-stare` on the `--testResultsProcessor` or `--reporters` option:
 
 * `jest --testResultsProcessor=jest-stare`
 * `jest --reporters default jest-stare`
 
-Add `testResultsProcessor` to `jest` config to specify `jest-stare`:
+Add `testResultsProcessor` to your `jest` config to specify `jest-stare`:
 
 `"testResultsProcessor": "./node_modules/jest-stare",`
 
-Add `reporters` to `jest` config to specify `jest-stare`:
+Add `reporters` to your `jest` config to specify `jest-stare`:
 
 `"reporters: ["default", "jest-stare"]`
+
+jest-stare in reporter mode updates with ever completed test run so you can begin to view test output
+even before each test suite completes.  Refresh your browser window to see new tests as each suite completes.
 
 By default, after a report is generated, the output will go to `./jest-stare` and will contain:
 * `index.html` - html report
