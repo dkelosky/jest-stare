@@ -4,7 +4,7 @@
 This is a Jest HTML reporter and results processor.  That is, it takes summary test results from jest
 and parses into an HTML file for improved readability and filtering. 
 
-![Sample](images/sampleReport.png "Sample Report")
+![Sample](images/newSampleReport.png "Sample Report")
 
 ## Features
 It provides:
@@ -14,7 +14,7 @@ It provides:
 * ability to pass test results to additional test results processors 
 * capturing of raw jest results JSON file
 * a link to generated coverage report (if configured)
-* results processor & reporter
+* dual usage as results processor & reporter
 * [configuration](#config) overrides
 * [cli](#cli) - create `jest-stare` or other jest HTML reports from raw JSON results
 * [api](#api)
@@ -33,7 +33,7 @@ Add `reporters` to your `jest` config to specify `jest-stare`:
 
 `"reporters: ["default", "jest-stare"]`
 
-jest-stare in reporter mode updates with ever completed test run so you can begin to view test output
+`jest-stare` in reporter mode updates with ever completed test run so you can begin to view test output
 even before each test suite completes.  Refresh your browser window to see new tests as each suite completes.
 
 By default, after a report is generated, the output will go to `./jest-stare` and will contain:
@@ -43,8 +43,6 @@ By default, after a report is generated, the output will go to `./jest-stare` an
 * `/css` - css stylings
 
 ### Config 
-Thanks to [dogboydog](https://github.com/dogboydog) for additions to configuration!
-
 Currently, if you need to config `jest-stare`, do so by adding a `jest-stare` object to your package.json, for example:
 ```typescript
 jest-stare: {
@@ -131,6 +129,8 @@ You can create a report from tests in the `__tests__/example` by issuing: `jest 
 Or, you can use `npm run example` (which includes a build before creating a sample report).
 
 ## Acknowledgements
+Thanks to [dogboydog](https://github.com/dogboydog) for additions to configuration!
+
 This project is based on:
 * [jQuery](https://jquery.com/)
 * [Bootstrap](https://getbootstrap.com/)

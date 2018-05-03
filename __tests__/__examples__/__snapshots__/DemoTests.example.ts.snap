@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Demonstrate a jest-stare report should add a snapshot 1`] = `"randomString"`;
+
+exports[`Demonstrate a jest-stare report should fail with mismatched snapshot 1`] = `
+Object {
+  "firstKey": "firstValue",
+  "secondKey": "secondValue",
+}
+`;
+
+exports[`Demonstrate a jest-stare report should pass with snapshot 1`] = `
+Object {
+  "firstKey": "firstValue",
+  "secondKey": "secondValue",
+}
+`;

@@ -1,0 +1,157 @@
+{
+    "numFailedTestSuites": 1,
+    "numFailedTests": 1,
+    "numPassedTestSuites": 1,
+    "numPassedTests": 4,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 1,
+    "numRuntimeErrorTestSuites": 0,
+    "numTotalTestSuites": 2,
+    "numTotalTests": 6,
+    "snapshot": {
+        "added": 1,
+        "didUpdate": false,
+        "failure": true,
+        "filesAdded": 1,
+        "filesRemoved": 0,
+        "filesUnmatched": 1,
+        "filesUpdated": 0,
+        "matched": 1,
+        "total": 3,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 1,
+        "updated": 0
+    },
+    "startTime": 1525356568421,
+    "success": false,
+    "testResults": [
+        {
+            "console": [],
+            "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[1mDemonstrate a jest-stare report › should fail with mismatched snapshot\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mvalue\u001b[39m\u001b[2m).toMatchSnapshot(\u001b[22m\u001b[2m)\u001b[22m\n    \n    \u001b[31mReceived value\u001b[39m does not match \u001b[32mstored snapshot 1\u001b[39m.\n    \n    \u001b[32m- Snapshot\u001b[39m\n    \u001b[31m+ Received\u001b[39m\n    \n    \u001b[2m  Object {\u001b[22m\n    \u001b[2m    \"firstKey\": \"firstValue\",\u001b[22m\n    \u001b[32m-   \"secondKey\": \"secondValue\",\u001b[39m\n    \u001b[31m+   \"secondKey\": \"wrongValue\",\u001b[39m\n    \u001b[2m  }\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m  9 | \u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 10 | \u001b[39m    it(\u001b[32m\"should fail with mismatched snapshot\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[2m\u001b[39m\u001b[90m 11 | \u001b[39m        expect({ firstKey\u001b[33m:\u001b[39m \u001b[32m\"firstValue\"\u001b[39m\u001b[33m,\u001b[39m secondKey\u001b[33m:\u001b[39m \u001b[32m\"wrongValue\"\u001b[39m })\u001b[33m.\u001b[39mtoMatchSnapshot()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 12 | \u001b[39m    })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 13 | \u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 14 | \u001b[39m    it(\u001b[32m\"should pass with snapshot\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m      \u001b[22m\n\u001b[2m      \u001b[2mat Object.it (\u001b[2m\u001b[0m\u001b[36m__tests__/__examples__/DemoTests.example.ts\u001b[39m\u001b[0m\u001b[2m:11:69)\u001b[2m\u001b[22m\n",
+            "numFailingTests": 1,
+            "numPassingTests": 3,
+            "numPendingTests": 1,
+            "perfStats": {
+                "end": 1525356574112,
+                "start": 1525356570130
+            },
+            "snapshot": {
+                "added": 1,
+                "fileDeleted": false,
+                "matched": 1,
+                "unchecked": 0,
+                "unmatched": 1,
+                "updated": 0,
+                "uncheckedKeys": []
+            },
+            "testFilePath": "C:\\Dev\\node\\jest-stare\\__tests__\\__examples__\\DemoTests.example.ts",
+            "testResults": [
+                {
+                    "ancestorTitles": [
+                        "Demonstrate a jest-stare report"
+                    ],
+                    "duration": 2,
+                    "failureMessages": [],
+                    "fullName": "Demonstrate a jest-stare report should be pending",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "pending",
+                    "title": "should be pending"
+                },
+                {
+                    "ancestorTitles": [
+                        "Demonstrate a jest-stare report"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "Demonstrate a jest-stare report should pass",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should pass"
+                },
+                {
+                    "ancestorTitles": [
+                        "Demonstrate a jest-stare report"
+                    ],
+                    "duration": 136,
+                    "failureMessages": [
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mvalue\u001b[39m\u001b[2m).toMatchSnapshot(\u001b[22m\u001b[2m)\u001b[22m\n\n\u001b[31mReceived value\u001b[39m does not match \u001b[32mstored snapshot 1\u001b[39m.\n\n\u001b[32m- Snapshot\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"firstKey\": \"firstValue\",\u001b[22m\n\u001b[32m-   \"secondKey\": \"secondValue\",\u001b[39m\n\u001b[31m+   \"secondKey\": \"wrongValue\",\u001b[39m\n\u001b[2m  }\u001b[22m\n    at Object.it (C:\\Dev\\node\\jest-stare\\__tests__\\__examples__\\DemoTests.example.ts:11:69)\n    at Object.asyncFn (C:\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\jasmine_async.js:129:432)\n    at resolve (C:\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:51:12)\n    at new Promise (<anonymous>)\n    at mapper (C:\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:40:274)\n    at promise.then (C:\\Dev\\node\\jest-stare\\node_modules\\jest-config\\node_modules\\jest-jasmine2\\build\\queue_runner.js:83:39)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+                    ],
+                    "fullName": "Demonstrate a jest-stare report should fail with mismatched snapshot",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "failed",
+                    "title": "should fail with mismatched snapshot"
+                },
+                {
+                    "ancestorTitles": [
+                        "Demonstrate a jest-stare report"
+                    ],
+                    "duration": 1,
+                    "failureMessages": [],
+                    "fullName": "Demonstrate a jest-stare report should pass with snapshot",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should pass with snapshot"
+                },
+                {
+                    "ancestorTitles": [
+                        "Demonstrate a jest-stare report"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "Demonstrate a jest-stare report should add a snapshot",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should add a snapshot"
+                }
+            ],
+            "sourceMaps": {},
+            "skipped": false,
+            "leaks": false
+        },
+        {
+            "console": [],
+            "failureMessage": null,
+            "numFailingTests": 0,
+            "numPassingTests": 1,
+            "numPendingTests": 0,
+            "perfStats": {
+                "end": 1525356574392,
+                "start": 1525356574292
+            },
+            "snapshot": {
+                "added": 0,
+                "fileDeleted": false,
+                "matched": 0,
+                "unchecked": 0,
+                "unmatched": 0,
+                "updated": 0,
+                "uncheckedKeys": []
+            },
+            "testFilePath": "C:\\Dev\\node\\jest-stare\\__tests__\\__examples__\\AdditionalDemoTests.example.ts",
+            "testResults": [
+                {
+                    "ancestorTitles": [
+                        "Also demonstrate a jest-stare report"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "Also demonstrate a jest-stare report should pass also",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "passed",
+                    "title": "should pass also"
+                }
+            ],
+            "sourceMaps": {},
+            "skipped": false,
+            "leaks": false
+        }
+    ],
+    "wasInterrupted": false
+}
