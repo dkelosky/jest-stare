@@ -11,6 +11,7 @@ import { IThirdPartyDependency } from "./doc/IThirdPartyDependency";
 import { Dependencies } from "./Dependencies";
 import { isNullOrUndefined } from "util";
 import { IProcessParms } from "./doc/IProcessParms";
+import { EnvironmentalVariables } from "../config/EnvironmentalVariables";
 const pkgUp = require("pkg-up");
 
 /**
@@ -101,13 +102,18 @@ export class Processor {
 
         // get configuration
         const packageJsonConfig = this.readPackageJson();
-        const config = this.mExplicitConfig || packageJsonConfig;
+
+        // read environmental variables and merge them with the package.json config (env takes precedence)
+        const mergedEnvAndPackageJsonConfig = EnvironmentalVariables.resolve(packageJsonConfig, EnvironmentalVariables.read());
+
+        // explicit config takes precedence over  env and package.json
+        const config = this.mExplicitConfig || mergedEnvAndPackageJsonConfig;
 
         // take packagejson options after setting explicit config (concatenate both)
         if (this.mExplicitConfig != null) {
             Object.keys(packageJsonConfig).forEach((key) => {
-                if (isNullOrUndefined(this.mExplicitConfig[key]) && !isNullOrUndefined(packageJsonConfig[key])) {
-                    config[key] = packageJsonConfig[key];
+                if (isNullOrUndefined(this.mExplicitConfig[key]) && !isNullOrUndefined(mergedEnvAndPackageJsonConfig[key])) {
+                    config[key] = mergedEnvAndPackageJsonConfig[key];
                 }
             });
         }
@@ -137,7 +143,13 @@ export class Processor {
         }
 
         if (isNullOrUndefined(config.resultHtml)) {
+            this.logger.debug("Setting to default resultHtml");
             config.resultHtml = Constants.MAIN_HTML;
+        } else {
+            if (config.resultHtml.indexOf( Constants.HTML_EXTENSION) === -1){
+                // add .html if the user did not specify it
+                config.resultHtml = config.resultHtml + Constants.HTML_EXTENSION;
+            }
         }
 
         if (isNullOrUndefined(config.resultJson)) {
@@ -192,7 +204,7 @@ export class Processor {
         // log complete
         let type = " ";
         type += (parms && parms.reporter) ? Constants.REPORTERS : Constants.TEST_RESULTS_PROCESSOR;
-        this.logger.debug(Constants.LOGO + type + Constants.LOG_MESSAGE + resultDir + Constants.MAIN_HTML + Constants.SUFFIX);
+        this.logger.debug(Constants.LOGO + type + Constants.LOG_MESSAGE + resultDir + substitute.jestStareConfig.resultHtml + Constants.SUFFIX);
     }
 
     /**
