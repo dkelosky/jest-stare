@@ -11,7 +11,7 @@ import { IThirdPartyDependency } from "./doc/IThirdPartyDependency";
 import { Dependencies } from "./Dependencies";
 import { isNullOrUndefined } from "util";
 import { IProcessParms } from "./doc/IProcessParms";
-import { EnvironmentalVariables } from "../config/EnvironmentalVariables";
+import { EnvironmentalVariables } from "../utils/EnvironmentalVariables";
 const pkgUp = require("pkg-up");
 
 /**
@@ -104,14 +104,15 @@ export class Processor {
         const packageJsonConfig = this.readPackageJson();
 
         // read environmental variables and merge them with the package.json config (env takes precedence)
-        const mergedEnvAndPackageJsonConfig = EnvironmentalVariables.resolve(packageJsonConfig, EnvironmentalVariables.read());
+        const envVars = new EnvironmentalVariables();
+        const mergedEnvAndPackageJsonConfig = envVars.resolve(packageJsonConfig, envVars.read());
 
         // explicit config takes precedence over  env and package.json
         const config = this.mExplicitConfig || mergedEnvAndPackageJsonConfig;
 
         // take packagejson options after setting explicit config (concatenate both)
         if (this.mExplicitConfig != null) {
-            Object.keys(packageJsonConfig).forEach((key) => {
+            Object.keys(mergedEnvAndPackageJsonConfig).forEach((key) => {
                 if (isNullOrUndefined(this.mExplicitConfig[key]) && !isNullOrUndefined(mergedEnvAndPackageJsonConfig[key])) {
                     config[key] = mergedEnvAndPackageJsonConfig[key];
                 }
@@ -122,6 +123,8 @@ export class Processor {
             config.resultDir = Constants.DEFAULT_RESULTS_DIR;
         }
 
+
+        console.log(config.log + " " + process.env.JEST_STARE_LOG)
         // suppress logging if requested
         // NOTE(Kelosky): must be first, to suppress all logging
         if (!isNullOrUndefined(config.log)) {
@@ -138,7 +141,7 @@ export class Processor {
             if (this.mProcessParms && this.mProcessParms.reporter) {
                 // do nothing
             } else {
-                this.logger.debug(Constants.OVERRIDE_JEST_STARE_CONFIG);
+                this.logger.info(Constants.OVERRIDE_JEST_STARE_CONFIG);
             }
         }
 
@@ -204,7 +207,7 @@ export class Processor {
         // log complete
         let type = " ";
         type += (parms && parms.reporter) ? Constants.REPORTERS : Constants.TEST_RESULTS_PROCESSOR;
-        this.logger.debug(Constants.LOGO + type + Constants.LOG_MESSAGE + resultDir + substitute.jestStareConfig.resultHtml + Constants.SUFFIX);
+        this.logger.info(Constants.LOGO + type + Constants.LOG_MESSAGE + resultDir + substitute.jestStareConfig.resultHtml + Constants.SUFFIX);
     }
 
     /**
@@ -226,7 +229,7 @@ export class Processor {
             }
             try {
                 require(processor)(jestTestData);
-                this.logger.debug(Constants.LOGO + " passed results to additional processor " +
+                this.logger.info(Constants.LOGO + " passed results to additional processor " +
                     chalk.default.white("\"" + processor + "\"") + Constants.SUFFIX);
             } catch (e) {
                 this.logger.error("Error executing additional processor: \"" + processor + "\" " + e);

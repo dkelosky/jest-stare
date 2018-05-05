@@ -21,7 +21,7 @@ export class Logger {
      * @static
      * @memberof Logger
      */
-    public static readonly LEVEL_DEFAULT = "debug";
+    public static readonly LEVEL_DEFAULT = "info";
 
     /**
      * Obtain instance of logger
@@ -114,6 +114,15 @@ export class Logger {
     }
 
     /**
+     * Return whether ot not trace level logging is enabled
+     * @returns {boolean} - true if level is enabled
+     * @memberof Logger
+     */
+    public isTraceEnabled(): boolean {
+        return Logger.LEVELS.indexOf("trace") >= Logger.LEVELS.indexOf(this.level) ? this.on : false;
+    }
+
+    /**
      * Return whether ot not debug level logging is enabled
      * @returns {boolean} - true if level is enabled
      * @memberof Logger
@@ -123,12 +132,60 @@ export class Logger {
     }
 
     /**
+     * Return whether ot not info level logging is enabled
+     * @returns {boolean} - true if level is enabled
+     * @memberof Logger
+     */
+    public isInfoEnabled(): boolean {
+        return Logger.LEVELS.indexOf("info") >= Logger.LEVELS.indexOf(this.level) ? this.on : false;
+    }
+
+    /**
+     * Return whether ot not warn level logging is enabled
+     * @returns {boolean} - true if level is enabled
+     * @memberof Logger
+     */
+    public isWarnEnabled(): boolean {
+        return Logger.LEVELS.indexOf("wanr") >= Logger.LEVELS.indexOf(this.level) ? this.on : false;
+    }
+
+    /**
      * Return whether ot not error level logging is enabled
      * @returns {boolean} - true if level is enabled
      * @memberof Logger
      */
     public isErrorEnabled(): boolean {
         return Logger.LEVELS.indexOf("error") >= Logger.LEVELS.indexOf(this.level) ? this.on : false;
+    }
+
+    /**
+     * Return whether ot not fatal level logging is enabled
+     * @returns {boolean} - true if level is enabled
+     * @memberof Logger
+     */
+    public isFatalEnabled(): boolean {
+        return Logger.LEVELS.indexOf("fatal") >= Logger.LEVELS.indexOf(this.level) ? this.on : false;
+    }
+
+    /**
+     * Trace level message
+     * @param {string} message - message to write
+     * @param {...any[]} args - arguments for the message
+     * @returns {string} - data written
+     * @memberof Logger
+     */
+    public trace(message: string, ...args: any[]): string {
+        if (!this.isTraceEnabled()) {
+            return;
+        }
+        let adjustedMessage = message;
+        if (this.prefix) {
+            adjustedMessage = this.buildPrefix("TRACE") + message;
+        }
+        if (this.color) {
+            adjustedMessage = chalk.default.cyan(adjustedMessage);
+        }
+        return this.writeStdout(adjustedMessage, args);
     }
 
     /**
@@ -147,9 +204,51 @@ export class Logger {
             adjustedMessage = this.buildPrefix("DEBUG") + message;
         }
         if (this.color) {
+            adjustedMessage = chalk.default.green(adjustedMessage);
+        }
+        return this.writeStdout(adjustedMessage, args);
+    }
+
+    /**
+     * Info level message
+     * @param {string} message - message to write
+     * @param {...any[]} args - arguments for the message
+     * @returns {string} - data written
+     * @memberof Logger
+     */
+    public info(message: string, ...args: any[]): string {
+        if (!this.isInfoEnabled()) {
+            return;
+        }
+        let adjustedMessage = message;
+        if (this.prefix) {
+            adjustedMessage = this.buildPrefix("INFO") + message;
+        }
+        if (this.color) {
             adjustedMessage = chalk.default.blue(adjustedMessage);
         }
         return this.writeStdout(adjustedMessage, args);
+    }
+
+    /**
+     * Warns level message
+     * @param {string} message - message to write
+     * @param {...any[]} args - arguments for the message
+     * @returns {string} - data written
+     * @memberof Logger
+     */
+    public warn(message: string, ...args: any[]): string {
+        if (!this.isWarnEnabled()) {
+            return;
+        }
+        let adjustedMessage = message;
+        if (this.prefix) {
+            adjustedMessage = this.buildPrefix("WARN") + message;
+        }
+        if (this.color) {
+            adjustedMessage = chalk.default.yellow(adjustedMessage);
+        }
+        return this.writeStderr(adjustedMessage, args);
     }
 
     /**
@@ -169,6 +268,27 @@ export class Logger {
         }
         if (this.color) {
             adjustedMessage = chalk.default.red(adjustedMessage);
+        }
+        return this.writeStderr(adjustedMessage, args);
+    }
+
+    /**
+     * Fatal level message
+     * @param {string} message - message to write
+     * @param {...any[]} args - arguments for the message
+     * @returns {string} - data written
+     * @memberof Logger
+     */
+    public fatal(message: string, ...args: any[]): string {
+        if (!this.isFatalEnabled()) {
+            return;
+        }
+        let adjustedMessage = message;
+        if (this.prefix) {
+            adjustedMessage = this.buildPrefix("FATAL") + message;
+        }
+        if (this.color) {
+            adjustedMessage = chalk.default.magenta(adjustedMessage);
         }
         return this.writeStderr(adjustedMessage, args);
     }

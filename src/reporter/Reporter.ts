@@ -59,7 +59,7 @@ export class Reporter {
         // Logger.get.debug("onRunStart: "); //  + inspect(results));
         // Logger.get.debug("onRunStart: " + inspect(results));
         Processor.run(results, { additionalResultsProcessors: [], log: false }, { reporter: this });
-        Logger.get.debug(Constants.LOGO + Constants.REPORTER_WRITTING + this.jestStareConfig.resultDir + Constants.SUFFIX);
+        Logger.get.info(Constants.LOGO + Constants.REPORTER_WRITTING + this.jestStareConfig.resultDir + Constants.SUFFIX);
     }
 
     /**
