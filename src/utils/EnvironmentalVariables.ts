@@ -58,43 +58,43 @@ export class EnvironmentalVariables {
     public resolve(packageJsonConfig: IJestStareConfig, envConfig: IJestStareConfig): IJestStareConfig {
         const mergedConfig: IJestStareConfig = {};
 
-        if (envConfig.resultDir || packageJsonConfig.resultDir) {
+        if (envConfig.resultDir != null || packageJsonConfig.resultDir != null) {
             mergedConfig.resultDir = envConfig.resultDir == null ? packageJsonConfig.resultDir : envConfig.resultDir;
         }
 
-        if (envConfig.resultJson || packageJsonConfig.resultJson) {
+        if (envConfig.resultJson != null || packageJsonConfig.resultJson != null) {
             mergedConfig.resultJson = envConfig.resultJson == null ? packageJsonConfig.resultJson : envConfig.resultJson;
         }
 
-        if (envConfig.resultHtml || packageJsonConfig.resultHtml) {
+        if (envConfig.resultHtml != null || packageJsonConfig.resultHtml != null) {
             mergedConfig.resultHtml = envConfig.resultHtml == null ? packageJsonConfig.resultHtml : envConfig.resultHtml;
         }
 
-        if (envConfig.jsonOnly || packageJsonConfig.jsonOnly) {
+        if (envConfig.jsonOnly != null || packageJsonConfig.jsonOnly != null) {
             mergedConfig.jsonOnly = envConfig.jsonOnly == null ? packageJsonConfig.jsonOnly : envConfig.jsonOnly;
         }
 
-        if (envConfig.jestStareConfigJson || packageJsonConfig.jestStareConfigJson) {
+        if (envConfig.jestStareConfigJson != null || packageJsonConfig.jestStareConfigJson != null) {
             mergedConfig.jestStareConfigJson =
-            envConfig.jestStareConfigJson == null ? packageJsonConfig.jestStareConfigJson : envConfig.jestStareConfigJson;
+                envConfig.jestStareConfigJson == null ? packageJsonConfig.jestStareConfigJson : envConfig.jestStareConfigJson;
         }
 
-        if (envConfig.log || packageJsonConfig.log) {
+        if (envConfig.log != null || packageJsonConfig.log != null) {
             mergedConfig.log = envConfig.log == null ? packageJsonConfig.log : envConfig.log;
         }
 
-        if (envConfig.jestStareConfigJson || packageJsonConfig.jestStareConfigJson) {
+        if (envConfig.jestStareConfigJson != null || packageJsonConfig.jestStareConfigJson != null) {
             mergedConfig.jestStareConfigJson =
-            envConfig.jestStareConfigJson == null ? packageJsonConfig.jestStareConfigJson : envConfig.jestStareConfigJson;
+                envConfig.jestStareConfigJson == null ? packageJsonConfig.jestStareConfigJson : envConfig.jestStareConfigJson;
         }
 
-        if (envConfig.coverageLink || packageJsonConfig.coverageLink) {
+        if (envConfig.coverageLink != null || packageJsonConfig.coverageLink != null) {
             mergedConfig.coverageLink = envConfig.coverageLink == null ? packageJsonConfig.coverageLink : envConfig.coverageLink;
         }
 
-        if (envConfig.additionalResultsProcessors || packageJsonConfig.additionalResultsProcessors) {
+        if (envConfig.additionalResultsProcessors != null || packageJsonConfig.additionalResultsProcessors != null) {
             mergedConfig.additionalResultsProcessors =
-            envConfig.additionalResultsProcessors == null ? packageJsonConfig.additionalResultsProcessors : envConfig.additionalResultsProcessors;
+                envConfig.additionalResultsProcessors == null ? packageJsonConfig.additionalResultsProcessors : envConfig.additionalResultsProcessors;
         }
 
         return mergedConfig;

@@ -123,8 +123,6 @@ export class Processor {
             config.resultDir = Constants.DEFAULT_RESULTS_DIR;
         }
 
-
-        console.log(config.log + " " + process.env.JEST_STARE_LOG)
         // suppress logging if requested
         // NOTE(Kelosky): must be first, to suppress all logging
         if (!isNullOrUndefined(config.log)) {
