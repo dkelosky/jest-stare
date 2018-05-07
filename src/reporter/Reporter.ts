@@ -40,6 +40,14 @@ export class Reporter {
     private mJestStareConfig: IJestStareConfig;
 
     /**
+     * Instance of our logger
+     * @private
+     * @type {Logger}
+     * @memberof Processor
+     */
+    private mLog: Logger;
+
+    /**
      * Creates an instance of Reporter.
      * @param {GlobalConfig} mGlobalConfig - jest global config
      * @param {*} mOptions - jest options in effect
@@ -59,7 +67,7 @@ export class Reporter {
         // Logger.get.debug("onRunStart: "); //  + inspect(results));
         // Logger.get.debug("onRunStart: " + inspect(results));
         Processor.run(results, { additionalResultsProcessors: [], log: false }, { reporter: this });
-        Logger.get.debug(Constants.LOGO + Constants.REPORTER_WRITTING + this.jestStareConfig.resultDir + Constants.SUFFIX);
+        this.logger.info(Constants.LOGO + Constants.REPORTER_WRITTING + this.jestStareConfig.resultDir + Constants.SUFFIX);
     }
 
     /**
@@ -116,5 +124,29 @@ export class Reporter {
      */
     public set jestStareConfig(config: IJestStareConfig) {
         this.mJestStareConfig = config;
+    }
+
+
+    /**
+     * Set logger instance
+     * @private
+     * @memberof Processor
+     */
+    set logger(logger: Logger) {
+        this.mLog = logger;
+    }
+
+    /**
+     * Get log instance
+     * @readonly
+     * @private
+     * @memberof Processor
+     */
+    get logger() {
+        if (this.mLog == null) {
+            this.logger = new Logger();
+        }
+        // console.log((this.mLog as any).writeStdout)
+        return this.mLog;
     }
 }
