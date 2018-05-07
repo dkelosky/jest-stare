@@ -126,9 +126,7 @@ export class Processor {
         // suppress logging if requested
         // NOTE(Kelosky): must be first, to suppress all logging
         if (!isNullOrUndefined(config.log)) {
-            if (!config.log) {
-                this.logger.on = false;
-            }
+            this.logger.on = config.log;
         }
 
         // record if we were invoked programmatically
