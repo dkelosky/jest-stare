@@ -36,11 +36,19 @@ export class Constants {
     public static readonly DEFAULT_RESULTS_DIR = "./" + Constants.NAME;
 
     /**
+     * File extension for HTML files
+     * @static
+     * @memberof Constants
+     */
+    public static readonly HTML_EXTENSION = ".html";
+
+
+    /**
      * Main HTML index file for report
      * @static
      * @memberof Constants
      */
-    public static readonly MAIN_HTML = "index.html";
+    public static readonly MAIN_HTML = "index" + Constants.HTML_EXTENSION;
 
     /**
      * jest-stare render JS file
