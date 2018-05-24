@@ -71,15 +71,15 @@ export class Processor {
 
         const config = this.buildConfig();
 
-        // if (config.merge) {
-        //     const mergeDir = config.resultDir + config.resultJson;
-        //     if (IO.existsSync(mergeDir)) {
-        //         const old = IO.readFileSync(mergeDir);
-        //         const temp = deepmerge(this.mResults, old);
-        //         this.mResults = temp;
-        //         this.logger.info(Constants.LOGO + Constants.MERGE_MESSAGE + mergeDir + Constants.SUFFIX);
-        //     }
-        // }
+        if (config.merge) {
+            const mergeDir = config.resultDir + config.resultJson;
+            if (IO.existsSync(mergeDir)) {
+                const old = JSON.parse(IO.readFileSync(mergeDir));
+                const temp = deepmerge(this.mResults, old);
+                this.mResults = temp;
+                this.logger.info(Constants.LOGO + Constants.MERGE_MESSAGE + mergeDir + Constants.SUFFIX);
+            }
+        }
 
         // build mustache render substitution values
         substitute.results = this.mResults;
