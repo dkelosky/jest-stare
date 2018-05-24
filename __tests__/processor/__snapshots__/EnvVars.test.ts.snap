@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EnvVars tests should have a complete config for all env variables set 1`] = `
+Object {
+  "additionalResultsProcessors": Array [
+    "one",
+    "two",
+    "three",
+  ],
+  "coverageLink": "www.walmart.com",
+  "jestStareConfigJson": "true",
+  "log": false,
+  "merge": true,
+  "resultDir": "some/dir",
+  "resultHtml": "some.html",
+  "resultJson": "some.json",
+}
+`;
+
+exports[`EnvVars tests should have an empty config for no env variables set 1`] = `
+Object {
+  "additionalResultsProcessors": undefined,
+  "coverageLink": undefined,
+  "jestStareConfigJson": undefined,
+  "log": undefined,
+  "merge": undefined,
+  "resultDir": undefined,
+  "resultHtml": undefined,
+  "resultJson": undefined,
+}
+`;
