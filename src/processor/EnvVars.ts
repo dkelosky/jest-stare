@@ -82,19 +82,23 @@ export class EnvVars {
             mergedConfig.jsonOnly = envConfig.jsonOnly == null ? packageJsonConfig.jsonOnly : envConfig.jsonOnly;
         }
 
-        if (envConfig.jestStareConfigJson != null || packageJsonConfig.jestStareConfigJson != null) {
-            mergedConfig.jestStareConfigJson =
-                envConfig.jestStareConfigJson == null ? packageJsonConfig.jestStareConfigJson : envConfig.jestStareConfigJson;
+        if (envConfig.jestStareResults != null || packageJsonConfig.jestStareResults != null) {
+            mergedConfig.jestStareResults = envConfig.jestStareResults == null ? packageJsonConfig.jestStareResults : envConfig.jestStareResults;
         }
 
         if (envConfig.log != null || packageJsonConfig.log != null) {
             mergedConfig.log = envConfig.log == null ? packageJsonConfig.log : envConfig.log;
         }
 
+        if (envConfig.merge != null || packageJsonConfig.merge != null) {
+            mergedConfig.merge = envConfig.merge == null ? packageJsonConfig.merge : envConfig.merge;
+        }
+
         if (envConfig.jestStareConfigJson != null || packageJsonConfig.jestStareConfigJson != null) {
             mergedConfig.jestStareConfigJson =
                 envConfig.jestStareConfigJson == null ? packageJsonConfig.jestStareConfigJson : envConfig.jestStareConfigJson;
         }
+
 
         if (envConfig.coverageLink != null || packageJsonConfig.coverageLink != null) {
             mergedConfig.coverageLink = envConfig.coverageLink == null ? packageJsonConfig.coverageLink : envConfig.coverageLink;

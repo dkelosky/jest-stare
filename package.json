@@ -112,6 +112,7 @@
     "testResultsProcessor": "./"
   },
   "jest-stare": {
+    "jestStareResults": "false",
     "resultDir": "results/jest-stare",
     "additionalResultsProcessors": [
       "jest-html-reporter",

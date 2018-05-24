@@ -12,6 +12,7 @@ import { Dependencies } from "./Dependencies";
 import { isNullOrUndefined } from "util";
 import { IProcessParms } from "./doc/IProcessParms";
 import { EnvVars } from "./EnvVars";
+import * as deepmerge from "deepmerge";
 
 /**
  * Class to post process jest output and summarize information in an html file
@@ -69,6 +70,10 @@ export class Processor {
         }
 
         const config = this.buildConfig();
+
+        // if (config.merge) {
+        //     if (IO.readFileSync(config.resultDir))
+        // }
 
         // build mustache render substitution values
         substitute.results = this.mResults;
@@ -174,10 +179,13 @@ export class Processor {
             mustache.render(this.obtainWebFile(Constants.TEMPLATE_HTML), substitute));
 
         // create raw json
-        IO.writeFileSync(resultDir + substitute.jestStareConfig.resultJson, substitute.rawResults);
+        if (substitute.jestStareConfig.jestStareResults === undefined ||
+            substitute.jestStareConfig.jestStareResults === true) {
+            IO.writeFileSync(resultDir + substitute.jestStareConfig.resultJson, substitute.rawResults);
+        }
 
         // create jest-stare config if requested
-        if (!isNullOrUndefined(substitute.jestStareConfig.jestStareConfigJson)) {
+        if (substitute.jestStareConfig.jestStareConfigJson) {
             IO.writeFileSync(resultDir + substitute.jestStareConfig.jestStareConfigJson, substitute.rawJestStareConfig);
         }
 
