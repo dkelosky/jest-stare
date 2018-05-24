@@ -44,8 +44,6 @@ export class EnvVars {
             resultDir: this.mEnvSrv.readEnvValue("RESULT_DIR"),
             resultJson: this.mEnvSrv.readEnvValue("RESULT_JSON"),
             resultHtml: this.mEnvSrv.readEnvValue("RESULT_HTML"),
-            jsonOnly: this.mEnvSrv.readBoolEnvValue("JSON_ONLY"),
-            jestStareResults: this.mEnvSrv.readBoolEnvValue("RESULTS"),
             log: this.mEnvSrv.readBoolEnvValue("LOG"),
             merge: this.mEnvSrv.readBoolEnvValue("MERGE"),
             jestStareConfigJson: this.mEnvSrv.readEnvValue("CONFIG_JSON"),
@@ -76,14 +74,6 @@ export class EnvVars {
 
         if (envConfig.resultHtml != null || packageJsonConfig.resultHtml != null) {
             mergedConfig.resultHtml = envConfig.resultHtml == null ? packageJsonConfig.resultHtml : envConfig.resultHtml;
-        }
-
-        if (envConfig.jsonOnly != null || packageJsonConfig.jsonOnly != null) {
-            mergedConfig.jsonOnly = envConfig.jsonOnly == null ? packageJsonConfig.jsonOnly : envConfig.jsonOnly;
-        }
-
-        if (envConfig.jestStareResults != null || packageJsonConfig.jestStareResults != null) {
-            mergedConfig.jestStareResults = envConfig.jestStareResults == null ? packageJsonConfig.jestStareResults : envConfig.jestStareResults;
         }
 
         if (envConfig.log != null || packageJsonConfig.log != null) {

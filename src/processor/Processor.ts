@@ -72,7 +72,13 @@ export class Processor {
         const config = this.buildConfig();
 
         // if (config.merge) {
-        //     if (IO.readFileSync(config.resultDir))
+        //     const mergeDir = config.resultDir + config.resultJson;
+        //     if (IO.existsSync(mergeDir)) {
+        //         const old = IO.readFileSync(mergeDir);
+        //         const temp = deepmerge(this.mResults, old);
+        //         this.mResults = temp;
+        //         this.logger.info(Constants.LOGO + Constants.MERGE_MESSAGE + mergeDir + Constants.SUFFIX);
+        //     }
         // }
 
         // build mustache render substitution values
@@ -125,6 +131,8 @@ export class Processor {
 
         if (config.resultDir == null) {
             config.resultDir = Constants.DEFAULT_RESULTS_DIR;
+        } else {
+            config.resultDir = config.resultDir + "/"; // append an extra slash in case the user didn't add one
         }
 
         // suppress logging if requested
@@ -173,16 +181,12 @@ export class Processor {
     private generateReport(resultDir: string, substitute: ISubstitute, parms: IProcessParms) {
 
         // create base html file
-        resultDir = resultDir + "/"; // append an extra slash in case the user didn't add one
         IO.mkdirsSync(resultDir);
         IO.writeFileSync(resultDir + substitute.jestStareConfig.resultHtml,
             mustache.render(this.obtainWebFile(Constants.TEMPLATE_HTML), substitute));
 
         // create raw json
-        if (substitute.jestStareConfig.jestStareResults === undefined ||
-            substitute.jestStareConfig.jestStareResults === true) {
-            IO.writeFileSync(resultDir + substitute.jestStareConfig.resultJson, substitute.rawResults);
-        }
+        IO.writeFileSync(resultDir + substitute.jestStareConfig.resultJson, substitute.rawResults);
 
         // create jest-stare config if requested
         if (substitute.jestStareConfig.jestStareConfigJson) {
