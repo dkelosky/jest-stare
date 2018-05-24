@@ -11,8 +11,7 @@ import { IThirdPartyDependency } from "./doc/IThirdPartyDependency";
 import { Dependencies } from "./Dependencies";
 import { isNullOrUndefined } from "util";
 import { IProcessParms } from "./doc/IProcessParms";
-import { EnvironmentalVariables } from "../utils/EnvironmentalVariables";
-const pkgUp = require("pkg-up");
+import { EnvVars } from "./EnvVars";
 
 /**
  * Class to post process jest output and summarize information in an html file
@@ -101,10 +100,10 @@ export class Processor {
     private buildConfig(): IJestStareConfig {
 
         // get configuration
-        const packageJsonConfig = this.readPackageJson();
+        const packageJsonConfig = this.getJestStareConfig();
 
         // read environmental variables and merge them with the package.json config (env takes precedence)
-        const envVars = new EnvironmentalVariables();
+        const envVars = new EnvVars();
         const mergedEnvAndPackageJsonConfig = envVars.resolve(packageJsonConfig, envVars.read());
 
         // explicit config takes precedence over  env and package.json
@@ -270,23 +269,15 @@ export class Processor {
      * @returns {IJestStareConfig} - config object
      * @memberof Processor
      */
-    private readPackageJson(): IJestStareConfig {
-        const packageJson = pkgUp.sync();
-        if (packageJson !== null) {
-            const packageJsonContents = IO.readFileSync(packageJson).toString();
-            const packageJsonObject = JSON.parse(packageJsonContents);
-            if (packageJsonObject[PACKAGE_JSON_KEY] == null) {
-                // package json found, but no jest stare config
-                return {};
-            } else {
-                // found the user's package.json config
-                return packageJsonObject[PACKAGE_JSON_KEY];
-            }
-        } else {
-            // if we can't find any package.json, return a blank config
+    private getJestStareConfig(): IJestStareConfig {
+        const packageJsonObject = IO.readPackageJson();
+        if (packageJsonObject[PACKAGE_JSON_KEY] == null) {
+            // package json found, but no jest stare config
             return {};
+        } else {
+            // found the user's package.json config
+            return packageJsonObject[PACKAGE_JSON_KEY];
         }
-
     }
 
     /**

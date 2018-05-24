@@ -1,5 +1,6 @@
 import * as fs from "fs";
 import * as  mkdirp from "mkdirp";
+const pkgUp = require("pkg-up");
 
 /**
  * class for simple IO
@@ -83,5 +84,22 @@ export class IO {
      */
     public static existsSync(path: string) {
         return fs.existsSync(path);
+    }
+
+    /**
+     * Read from the user's package.json, if present
+     * @static
+     * @returns {IJestStareConfig} - config object
+     * @returns {object} - full package JSON
+     * @memberof IO
+     */
+    public static readPackageJson(): object {
+        const packageJson = pkgUp.sync();
+        if (packageJson !== null) {
+            return JSON.parse(IO.readFileSync(packageJson));
+        } else {
+            // if we can't find any package.json, return a blank config
+            return {};
+        }
     }
 }

@@ -57,6 +57,13 @@ export interface IJestStareConfig {
     log?: boolean;
 
     /**
+     * Configure whether to merge test results instead of overwriting them is on (true) or off (false)
+     * @type {boolean}
+     * @memberof IJestStareConfig
+     */
+    merge?: boolean;
+
+    /**
      * Request that the jest-stare configuration be also saved in the results output directory
      * by indicating a file name here.
      * @type {string}
