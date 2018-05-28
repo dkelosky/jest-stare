@@ -4,7 +4,7 @@ import { ISubstitute } from "./doc/ISubstitute";
 import { IO } from "../utils/IO";
 import * as mustache from "mustache";
 import * as path from "path";
-import { IJestStareConfig, PACKAGE_JSON_KEY } from "./doc/IJestStareConfig";
+import { IJestStareConfig } from "./doc/IJestStareConfig";
 import { Logger } from "../utils/Logger";
 import * as chalk from "chalk";
 import { IThirdPartyDependency } from "./doc/IThirdPartyDependency";
@@ -13,6 +13,7 @@ import { isNullOrUndefined } from "util";
 import { IProcessParms } from "./doc/IProcessParms";
 import { EnvVars } from "./EnvVars";
 import * as deepmerge from "deepmerge";
+import { Config } from "./Config";
 
 /**
  * Class to post process jest output and summarize information in an html file
@@ -69,7 +70,7 @@ export class Processor {
             throw new Error(Constants.NO_INPUT);
         }
 
-        const config = this.buildConfig();
+        const config = new Config(this.logger, this.mExplicitConfig, this.mProcessParms).buildConfig();
 
         if (config.merge) {
             const mergeDir = config.resultDir + config.resultJson;
@@ -100,74 +101,6 @@ export class Processor {
         }
         // return back to jest
         return this.mResults;
-    }
-
-    /**
-     * Build config from explicit config, package.json, and defaults
-     * @private
-     * @returns {IJestStareConfig} - constructed config
-     * @memberof Processor
-     */
-    private buildConfig(): IJestStareConfig {
-
-        // get configuration
-        const packageJsonConfig = this.getJestStareConfig();
-
-        // read environmental variables and merge them with the package.json config (env takes precedence)
-        const envVars = new EnvVars();
-        const mergedEnvAndPackageJsonConfig = envVars.resolve(packageJsonConfig, envVars.read());
-
-        // explicit config takes precedence over  env and package.json
-        const config = this.mExplicitConfig || mergedEnvAndPackageJsonConfig;
-
-        // take packagejson options after setting explicit config (concatenate both)
-        if (this.mExplicitConfig != null) {
-            Object.keys(mergedEnvAndPackageJsonConfig).forEach((key) => {
-                if (isNullOrUndefined(this.mExplicitConfig[key]) && !isNullOrUndefined(mergedEnvAndPackageJsonConfig[key])) {
-                    config[key] = mergedEnvAndPackageJsonConfig[key];
-                }
-            });
-        }
-
-        if (config.resultDir == null) {
-            config.resultDir = Constants.DEFAULT_RESULTS_DIR;
-        } else {
-            config.resultDir = config.resultDir + "/"; // append an extra slash in case the user didn't add one
-        }
-
-        // suppress logging if requested
-        // NOTE(Kelosky): must be first, to suppress all logging
-        if (!isNullOrUndefined(config.log)) {
-            this.logger.on = config.log;
-        }
-
-        // record if we were invoked programmatically
-        // NOTE(Kelosky): should be second, to record if override config
-        if (!isNullOrUndefined(this.mExplicitConfig)) {
-
-            // display if not internal invocation
-            if (this.mProcessParms && this.mProcessParms.reporter) {
-                // do nothing
-            } else {
-                this.logger.info(Constants.OVERRIDE_JEST_STARE_CONFIG);
-            }
-        }
-
-        if (isNullOrUndefined(config.resultHtml)) {
-            this.logger.debug("Setting to default resultHtml");
-            config.resultHtml = Constants.MAIN_HTML;
-        } else {
-            if (config.resultHtml.indexOf( Constants.HTML_EXTENSION) === -1){
-                // add .html if the user did not specify it
-                config.resultHtml = config.resultHtml + Constants.HTML_EXTENSION;
-            }
-        }
-
-        if (isNullOrUndefined(config.resultJson)) {
-            config.resultJson = Constants.RESULTS_RAW;
-        }
-
-        return config;
     }
 
     /**
@@ -273,23 +206,6 @@ export class Processor {
      */
     private obtainJsRenderFile(name: string): string {
         return IO.readFileSync(path.resolve(__dirname + "/../render/" + name));
-    }
-
-    /**
-     * Read from the user's package.json, if present
-     * @private
-     * @returns {IJestStareConfig} - config object
-     * @memberof Processor
-     */
-    private getJestStareConfig(): IJestStareConfig {
-        const packageJsonObject = IO.readPackageJson();
-        if (packageJsonObject[PACKAGE_JSON_KEY] == null) {
-            // package json found, but no jest stare config
-            return {};
-        } else {
-            // found the user's package.json config
-            return packageJsonObject[PACKAGE_JSON_KEY];
-        }
     }
 
     /**
