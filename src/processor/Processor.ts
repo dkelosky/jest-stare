@@ -12,8 +12,9 @@ import { Dependencies } from "./Dependencies";
 import { isNullOrUndefined } from "util";
 import { IProcessParms } from "./doc/IProcessParms";
 import { EnvVars } from "./EnvVars";
-import * as deepmerge from "deepmerge";
 import { Config } from "./Config";
+import { ITestResults } from "./doc/jest/ITestResults";
+import { Merger } from "./Merger";
 
 /**
  * Class to post process jest output and summarize information in an html file
@@ -75,9 +76,8 @@ export class Processor {
         if (config.merge) {
             const mergeDir = config.resultDir + config.resultJson;
             if (IO.existsSync(mergeDir)) {
-                const old = JSON.parse(IO.readFileSync(mergeDir));
-                const temp = deepmerge(this.mResults, old);
-                this.mResults = temp;
+                const old: IResultsProcessorInput = JSON.parse(IO.readFileSync(mergeDir));
+                this.mResults = new Merger().combine(old, this.mResults);
                 this.logger.info(Constants.LOGO + Constants.MERGE_MESSAGE + mergeDir + Constants.SUFFIX);
             }
         }
