@@ -53,7 +53,6 @@
     "bootstrap": "^4.0.0-beta.2",
     "chalk": "^2.3.1",
     "chart.js": "^2.7.1",
-    "deepmerge": "^2.1.0",
     "diff2html": "^2.3.3",
     "holderjs": "^2.9.4",
     "jquery": "^3.2.1",
@@ -65,7 +64,6 @@
   "devDependencies": {
     "@types/chalk": "^2.2.0",
     "@types/chart.js": "^2.7.7",
-    "@types/deepmerge": "^2.1.0",
     "@types/diff2html": "0.0.4",
     "@types/jest": "^22.0.5",
     "@types/jquery": "^3.2.16",

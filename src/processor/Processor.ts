@@ -11,8 +11,6 @@ import { IThirdPartyDependency } from "./doc/IThirdPartyDependency";
 import { Dependencies } from "./Dependencies";
 import { isNullOrUndefined } from "util";
 import { IProcessParms } from "./doc/IProcessParms";
-import { EnvVars } from "./EnvVars";
-import * as deepmerge from "deepmerge";
 import { Config } from "./Config";
 
 /**
@@ -72,15 +70,15 @@ export class Processor {
 
         const config = new Config(this.logger, this.mExplicitConfig, this.mProcessParms).buildConfig();
 
-        if (config.merge) {
-            const mergeDir = config.resultDir + config.resultJson;
-            if (IO.existsSync(mergeDir)) {
-                const old = JSON.parse(IO.readFileSync(mergeDir));
-                const temp = deepmerge(this.mResults, old);
-                this.mResults = temp;
-                this.logger.info(Constants.LOGO + Constants.MERGE_MESSAGE + mergeDir + Constants.SUFFIX);
-            }
-        }
+        // if (config.merge) {
+        //     const mergeDir = config.resultDir + config.resultJson;
+        //     if (IO.existsSync(mergeDir)) {
+        //         const old = JSON.parse(IO.readFileSync(mergeDir));
+        //         const temp = deepmerge(this.mResults, old);
+        //         this.mResults = temp;
+        //         this.logger.info(Constants.LOGO + Constants.MERGE_MESSAGE + mergeDir + Constants.SUFFIX);
+        //     }
+        // }
 
         // build mustache render substitution values
         substitute.results = this.mResults;
