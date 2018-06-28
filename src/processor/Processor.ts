@@ -73,9 +73,8 @@ export class Processor {
         // if (config.merge) {
         //     const mergeDir = config.resultDir + config.resultJson;
         //     if (IO.existsSync(mergeDir)) {
-        //         const old = JSON.parse(IO.readFileSync(mergeDir));
-        //         const temp = deepmerge(this.mResults, old);
-        //         this.mResults = temp;
+        //         const old: IResultsProcessorInput = JSON.parse(IO.readFileSync(mergeDir));
+        //         this.mResults = new Merger().combine(old, this.mResults);
         //         this.logger.info(Constants.LOGO + Constants.MERGE_MESSAGE + mergeDir + Constants.SUFFIX);
         //     }
         // }
