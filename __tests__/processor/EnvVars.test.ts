@@ -27,19 +27,4 @@ describe("EnvVars tests", () => {
         const response = new EnvVars().read();
         expect(response).toMatchSnapshot();
     });
-
-    // it("should throw error when using jest-stare as an additional processor", () => {
-    //     const JEST_STARE_ADDITIONAL_RESULTS_PROCESSORS = "JEST_STARE_ADDITIONAL_RESULTS_PROCESSORS";
-
-    //     process.env[JEST_STARE_ADDITIONAL_RESULTS_PROCESSORS] = "bad json";
-
-    //     let error;
-    //     try {
-    //         const response = new EnvVars().read();
-    //     } catch (thrownError) {
-    //         error = thrownError;
-    //     }
-    //     expect(error).toBeDefined();
-    //     expect(error.msg).toMatchSnapshot();
-    // });
 });
