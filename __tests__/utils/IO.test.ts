@@ -1,5 +1,8 @@
 import Mock = jest.Mock;
 jest.mock("fs");
+jest.mock("pkg-up");
+jest.mock("mkdirp");
+const pkgUp = require("pkg-up");
 import * as fs from "fs";
 import { IO } from "../../src/utils/IO";
 
@@ -54,5 +57,21 @@ describe("IO tests", () => {
             return false;
         });
         expect(IO.existsSync("/pretend/this/does/not/exist")).toBe(false);
+    });
+
+    it("should read return an empty object if no package.json is found", () => {
+        pkgUp.sync = jest.fn(() => null);
+        const result = IO.readPackageJson();
+        expect(result).toMatchSnapshot();
+    });
+
+    it("should read return a populated object if package.json is found", () => {
+        pkgUp.sync = jest.fn(() => "some/path");
+        const fn = (fs.readFileSync as any) as Mock<typeof fs.readFileSync>;
+        fn.mockImplementation((path: fs.PathLike) => {
+            return "{\"data\": \"value\"}";
+        });
+        const result = IO.readPackageJson();
+        expect(result).toMatchSnapshot();
     });
 });

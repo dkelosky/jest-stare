@@ -121,6 +121,13 @@ export class Constants {
     public static readonly LOG_MESSAGE = ": wrote output report to ";
 
     /**
+     * Merging content message
+     * @static
+     * @memberof Constants
+     */
+    public static readonly MERGE_MESSAGE = ": will merge with ";
+
+    /**
      * Error for whenever called without test results
      * @static
      * @memberof Constants

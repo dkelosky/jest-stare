@@ -4,15 +4,14 @@ import { ISubstitute } from "./doc/ISubstitute";
 import { IO } from "../utils/IO";
 import * as mustache from "mustache";
 import * as path from "path";
-import { IJestStareConfig, PACKAGE_JSON_KEY } from "./doc/IJestStareConfig";
+import { IJestStareConfig } from "./doc/IJestStareConfig";
 import { Logger } from "../utils/Logger";
 import * as chalk from "chalk";
 import { IThirdPartyDependency } from "./doc/IThirdPartyDependency";
 import { Dependencies } from "./Dependencies";
 import { isNullOrUndefined } from "util";
 import { IProcessParms } from "./doc/IProcessParms";
-import { EnvironmentalVariables } from "../utils/EnvironmentalVariables";
-const pkgUp = require("pkg-up");
+import { Config } from "./Config";
 
 /**
  * Class to post process jest output and summarize information in an html file
@@ -69,7 +68,16 @@ export class Processor {
             throw new Error(Constants.NO_INPUT);
         }
 
-        const config = this.buildConfig();
+        const config = new Config(this.logger, this.mExplicitConfig, this.mProcessParms).buildConfig();
+
+        // if (config.merge) {
+        //     const mergeDir = config.resultDir + config.resultJson;
+        //     if (IO.existsSync(mergeDir)) {
+        //         const old: IResultsProcessorInput = JSON.parse(IO.readFileSync(mergeDir));
+        //         this.mResults = new Merger().combine(old, this.mResults);
+        //         this.logger.info(Constants.LOGO + Constants.MERGE_MESSAGE + mergeDir + Constants.SUFFIX);
+        //     }
+        // }
 
         // build mustache render substitution values
         substitute.results = this.mResults;
@@ -93,72 +101,6 @@ export class Processor {
     }
 
     /**
-     * Build config from explicit config, package.json, and defaults
-     * @private
-     * @returns {IJestStareConfig} - constructed config
-     * @memberof Processor
-     */
-    private buildConfig(): IJestStareConfig {
-
-        // get configuration
-        const packageJsonConfig = this.readPackageJson();
-
-        // read environmental variables and merge them with the package.json config (env takes precedence)
-        const envVars = new EnvironmentalVariables();
-        const mergedEnvAndPackageJsonConfig = envVars.resolve(packageJsonConfig, envVars.read());
-
-        // explicit config takes precedence over  env and package.json
-        const config = this.mExplicitConfig || mergedEnvAndPackageJsonConfig;
-
-        // take packagejson options after setting explicit config (concatenate both)
-        if (this.mExplicitConfig != null) {
-            Object.keys(mergedEnvAndPackageJsonConfig).forEach((key) => {
-                if (isNullOrUndefined(this.mExplicitConfig[key]) && !isNullOrUndefined(mergedEnvAndPackageJsonConfig[key])) {
-                    config[key] = mergedEnvAndPackageJsonConfig[key];
-                }
-            });
-        }
-
-        if (config.resultDir == null) {
-            config.resultDir = Constants.DEFAULT_RESULTS_DIR;
-        }
-
-        // suppress logging if requested
-        // NOTE(Kelosky): must be first, to suppress all logging
-        if (!isNullOrUndefined(config.log)) {
-            this.logger.on = config.log;
-        }
-
-        // record if we were invoked programmatically
-        // NOTE(Kelosky): should be second, to record if override config
-        if (!isNullOrUndefined(this.mExplicitConfig)) {
-
-            // display if not internal invocation
-            if (this.mProcessParms && this.mProcessParms.reporter) {
-                // do nothing
-            } else {
-                this.logger.info(Constants.OVERRIDE_JEST_STARE_CONFIG);
-            }
-        }
-
-        if (isNullOrUndefined(config.resultHtml)) {
-            this.logger.debug("Setting to default resultHtml");
-            config.resultHtml = Constants.MAIN_HTML;
-        } else {
-            if (config.resultHtml.indexOf( Constants.HTML_EXTENSION) === -1){
-                // add .html if the user did not specify it
-                config.resultHtml = config.resultHtml + Constants.HTML_EXTENSION;
-            }
-        }
-
-        if (isNullOrUndefined(config.resultJson)) {
-            config.resultJson = Constants.RESULTS_RAW;
-        }
-
-        return config;
-    }
-
-    /**
      * Create HTML report
      * @private
      * @param {string} resultDir -  directory to save report
@@ -169,7 +111,6 @@ export class Processor {
     private generateReport(resultDir: string, substitute: ISubstitute, parms: IProcessParms) {
 
         // create base html file
-        resultDir = resultDir + "/"; // append an extra slash in case the user didn't add one
         IO.mkdirsSync(resultDir);
         IO.writeFileSync(resultDir + substitute.jestStareConfig.resultHtml,
             mustache.render(this.obtainWebFile(Constants.TEMPLATE_HTML), substitute));
@@ -178,7 +119,7 @@ export class Processor {
         IO.writeFileSync(resultDir + substitute.jestStareConfig.resultJson, substitute.rawResults);
 
         // create jest-stare config if requested
-        if (!isNullOrUndefined(substitute.jestStareConfig.jestStareConfigJson)) {
+        if (substitute.jestStareConfig.jestStareConfigJson) {
             IO.writeFileSync(resultDir + substitute.jestStareConfig.jestStareConfigJson, substitute.rawJestStareConfig);
         }
 
@@ -262,31 +203,6 @@ export class Processor {
      */
     private obtainJsRenderFile(name: string): string {
         return IO.readFileSync(path.resolve(__dirname + "/../render/" + name));
-    }
-
-    /**
-     * Read from the user's package.json, if present
-     * @private
-     * @returns {IJestStareConfig} - config object
-     * @memberof Processor
-     */
-    private readPackageJson(): IJestStareConfig {
-        const packageJson = pkgUp.sync();
-        if (packageJson !== null) {
-            const packageJsonContents = IO.readFileSync(packageJson).toString();
-            const packageJsonObject = JSON.parse(packageJsonContents);
-            if (packageJsonObject[PACKAGE_JSON_KEY] == null) {
-                // package json found, but no jest stare config
-                return {};
-            } else {
-                // found the user's package.json config
-                return packageJsonObject[PACKAGE_JSON_KEY];
-            }
-        } else {
-            // if we can't find any package.json, return a blank config
-            return {};
-        }
-
     }
 
     /**

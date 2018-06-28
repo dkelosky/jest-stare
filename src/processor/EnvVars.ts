@@ -1,28 +1,35 @@
-import { IJestStareConfig } from "../processor/doc/IJestStareConfig";
+import { IJestStareConfig } from "./doc/IJestStareConfig";
 import { Logger } from "../utils/Logger";
+import { EnvVarService } from "../utils/EnvVarService";
 
 /**
  * Service for reading environmental variables
  * @export
- * @class EnvironmentalVariables
+ * @class EnvVars
  */
-export class EnvironmentalVariables {
+export class EnvVars {
 
     /**
      * Prefix for all jest-stare related environmental variables
      * @static
      * @type {string}
-     * @memberof EnvironmentalVariables
+     * @memberof EnvVars
      */
     public static readonly ENV_PREFIX: string = "JEST_STARE_";
 
     /**
+     * Creates an instance of EnvVars.
+     * @memberof EnvVars
+     */
+    constructor(private mEnvSrv = new EnvVarService(EnvVars.ENV_PREFIX)) {}
+
+    /**
      * Read all jest-stare related environmental variables
      * @returns {IJestStareConfig} - jest stare config from env vars
-     * @memberof EnvironmentalVariables
+     * @memberof EnvVars
      */
     public read(): IJestStareConfig {
-        const additionalResultsProcessorsValue = this.readEnvValue("ADDITIONAL_RESULTS_PROCESSORS");
+        const additionalResultsProcessorsValue = this.mEnvSrv.readEnvValue("ADDITIONAL_RESULTS_PROCESSORS");
         let additionalResultsProcessors: string[];
         if (additionalResultsProcessorsValue != null) {
             try {
@@ -34,14 +41,13 @@ export class EnvironmentalVariables {
             }
         }
         return {
-            resultDir: this.readEnvValue("RESULT_DIR"),
-            resultJson: this.readEnvValue("RESULT_JSON"),
-            resultHtml: this.readEnvValue("RESULT_HTML"),
-            jsonOnly: this.readBoolEnvValue("JSON_ONLY"),
-            jestStareResults: this.readBoolEnvValue("RESULTS"),
-            log: this.readBoolEnvValue("LOG"),
-            jestStareConfigJson: this.readEnvValue("CONFIG_JSON"),
-            coverageLink: this.readEnvValue("COVERAGE_LINK"),
+            resultDir: this.mEnvSrv.readEnvValue("RESULT_DIR"),
+            resultJson: this.mEnvSrv.readEnvValue("RESULT_JSON"),
+            resultHtml: this.mEnvSrv.readEnvValue("RESULT_HTML"),
+            log: this.mEnvSrv.readBoolEnvValue("LOG"),
+            merge: this.mEnvSrv.readBoolEnvValue("MERGE"),
+            jestStareConfigJson: this.mEnvSrv.readEnvValue("CONFIG_JSON"),
+            coverageLink: this.mEnvSrv.readEnvValue("COVERAGE_LINK"),
             additionalResultsProcessors
         };
     }
@@ -53,7 +59,7 @@ export class EnvironmentalVariables {
      * @param {IJestStareConfig} packageJsonConfig - package json config
      * @param {IJestStareConfig} envConfig - env based config
      * @returns {IJestStareConfig} - merged config
-     * @memberof EnvironmentalVariables
+     * @memberof EnvVars
      */
     public resolve(packageJsonConfig: IJestStareConfig, envConfig: IJestStareConfig): IJestStareConfig {
         const mergedConfig: IJestStareConfig = {};
@@ -70,23 +76,19 @@ export class EnvironmentalVariables {
             mergedConfig.resultHtml = envConfig.resultHtml == null ? packageJsonConfig.resultHtml : envConfig.resultHtml;
         }
 
-        if (envConfig.jsonOnly != null || packageJsonConfig.jsonOnly != null) {
-            mergedConfig.jsonOnly = envConfig.jsonOnly == null ? packageJsonConfig.jsonOnly : envConfig.jsonOnly;
-        }
-
-        if (envConfig.jestStareConfigJson != null || packageJsonConfig.jestStareConfigJson != null) {
-            mergedConfig.jestStareConfigJson =
-                envConfig.jestStareConfigJson == null ? packageJsonConfig.jestStareConfigJson : envConfig.jestStareConfigJson;
-        }
-
         if (envConfig.log != null || packageJsonConfig.log != null) {
             mergedConfig.log = envConfig.log == null ? packageJsonConfig.log : envConfig.log;
         }
 
+        if (envConfig.merge != null || packageJsonConfig.merge != null) {
+            mergedConfig.merge = envConfig.merge == null ? packageJsonConfig.merge : envConfig.merge;
+        }
+
         if (envConfig.jestStareConfigJson != null || packageJsonConfig.jestStareConfigJson != null) {
             mergedConfig.jestStareConfigJson =
                 envConfig.jestStareConfigJson == null ? packageJsonConfig.jestStareConfigJson : envConfig.jestStareConfigJson;
         }
+
 
         if (envConfig.coverageLink != null || packageJsonConfig.coverageLink != null) {
             mergedConfig.coverageLink = envConfig.coverageLink == null ? packageJsonConfig.coverageLink : envConfig.coverageLink;
@@ -98,38 +100,5 @@ export class EnvironmentalVariables {
         }
 
         return mergedConfig;
-    }
-
-
-    /**
-     * Read a jest-stare environmental variable's value
-     * @private
-     * @param {string} suffix - the suffix of the environmental variable to read e.g. JSON_ONLY
-     * @returns {string} - env value
-     * @memberof EnvironmentalVariables
-     */
-    private readEnvValue(suffix: string): string {
-        return process.env[EnvironmentalVariables.ENV_PREFIX + suffix];
-    }
-
-    /**
-     * Determine whether a boolean-type environmental variable was set
-     * @private
-     * @param {string} envVariableSuffix suffix of the boolean type environmental variable to check
-     * @returns {boolean} - whether or not set
-     * @memberof EnvironmentalVariables
-     */
-    private readBoolEnvValue(suffix: string): boolean {
-        const value = this.readEnvValue(suffix);
-        if (value == null) {
-            return undefined;
-        }
-        if ((value).toUpperCase() === "TRUE" || (value === "1")) {
-            return true;
-        } else if ((value).toUpperCase() === "FALSE" || (value === "0")) {
-            return false;
-        } else {
-            return undefined;
-        }
     }
 }

@@ -29,32 +29,18 @@ export interface IJestStareConfig {
     resultHtml?: string;
 
     /**
-     * Control whether or not just the JSON test results are retained.  The default file
-     * emitted will be jest-results.json and you can use the jest-stare CLI to create
-     * an HTML report later from the results.
-     *
-     * You can create additional HTML results from the JSON-only file by using the
-     * "additionalResultsProcessors" config option.
-     * @type {boolean}
-     * @memberof IJestStareConfig
-     */
-    jsonOnly?: boolean;
-
-    /**
-     * Control whether or not the jest-stare results are generated.  You may use jest-stare
-     * to retain JSON-only results and then later use the jest-stare CLI to create a non-jest-stare
-     * HTML results report with the "additionalResultsProcessors" config option.
-     * @type {boolean}
-     * @memberof IJestStareConfig
-     */
-    jestStareResults?: boolean;
-
-    /**
      * Configure whether logging is on (true) or off (false)
      * @type {boolean}
      * @memberof IJestStareConfig
      */
     log?: boolean;
+
+    /**
+     * Configure whether to merge test results instead of overwriting them is on (true) or off (false)
+     * @type {boolean}
+     * @memberof IJestStareConfig
+     */
+    merge?: boolean;
 
     /**
      * Request that the jest-stare configuration be also saved in the results output directory

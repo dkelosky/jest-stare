@@ -1,3 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`IO tests should pretend to write to a file and reject promise for IO errors 1`] = `"Pretend IO message"`;
+
+exports[`IO tests should read return a populated object if package.json is found 1`] = `
+Object {
+  "data": "value",
+}
+`;
+
+exports[`IO tests should read return an empty object if no package.json is found 1`] = `Object {}`;
