@@ -110,6 +110,7 @@
     "testResultsProcessor": "./"
   },
   "jest-stare": {
+    "resultDir": "results/jest-stare",
     "additionalResultsProcessors": [
       "jest-html-reporter",
       "jest-junit"
