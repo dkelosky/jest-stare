@@ -18,7 +18,7 @@ export class Config {
      * @param {IJestStareConfig} mExplicitConfig - explicit configuration
      * @memberof Config
      */
-    constructor(private mLogger: Logger, private mExplicitConfig: IJestStareConfig, private mProcessParms: IProcessParms) {}
+    constructor(private mLogger: Logger, private mExplicitConfig: IJestStareConfig, private mProcessParms: IProcessParms) { }
 
     /**
      * Build config from explicit config, package.json, and defaults
@@ -47,7 +47,7 @@ export class Config {
         }
 
         if (config.resultDir == null) {
-            config.resultDir = Constants.DEFAULT_RESULTS_DIR;
+            config.resultDir = Constants.DEFAULT_RESULTS_DIR + "/";
         } else {
             config.resultDir = config.resultDir + "/"; // append an extra slash in case the user didn't add one
         }

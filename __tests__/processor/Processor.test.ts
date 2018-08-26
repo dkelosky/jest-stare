@@ -7,6 +7,7 @@ import { inspect } from "util";
 import { Logger } from "../../src/utils/Logger";
 import { IResultsProcessorInput } from "../../src/processor/doc/jest/IResultsProcessorInput";
 import { ISubstitute } from "../../src/processor/doc/ISubstitute";
+import { Constants } from "../../src/processor/Constants";
 
 const simplePassingTests: IResultsProcessorInput = require("../__resources__/simplePassingTests.json");
 
@@ -28,7 +29,7 @@ describe("Processor tests", () => {
         });
 
         (Processor as any).logger = log;
-        const processed = Processor.run(simplePassingTests, {log: false});
+        const processed = Processor.run(simplePassingTests, { log: false });
         expect((log as any).writeStdout).not.toHaveBeenCalled();
         expect((log as any).writeStderr).not.toHaveBeenCalled();
     });
@@ -87,6 +88,20 @@ describe("Processor tests", () => {
         const processed = Processor.run(simplePassingTests);
         expect(processed).toMatchSnapshot();
     });
+
+
+    it("should create file names correctly when default 'resultDir' is used", async () => {
+        IO.mkdirsSync = jest.fn(
+            () => {
+                // do nothing
+            }
+        );
+        const processed = Processor.run(simplePassingTests, { resultDir: undefined }); // don't specify result dir
+        // old version left off the slash after the default result directory
+        expect(IO.mkdirsSync).toHaveBeenCalledWith(Constants.DEFAULT_RESULTS_DIR + "/css/");
+        expect(IO.mkdirsSync).toHaveBeenCalledWith(Constants.DEFAULT_RESULTS_DIR + "/js/");
+    });
+
 
     it("should error when called without input", () => {
         let error;
