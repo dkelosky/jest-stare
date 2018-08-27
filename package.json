@@ -37,7 +37,6 @@
   "scripts": {
     "clean": "rimraf lib && rimraf coverage",
     "lint": "tslint --force --format verbose \"src/**/*.ts\"",
-    "postinstall": "npm run build",
     "prebuild": "npm run clean && npm run lint && echo Using TypeScript && tsc --version",
     "build": "tsc --pretty && browserify lib/render/view.js -o lib/render/view.js",
     "test": "jest",
