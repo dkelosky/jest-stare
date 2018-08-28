@@ -5,6 +5,8 @@ script:
   - npm run coverage # jest test with coverage flag does coverage too
 after_script:
   - 'cat coverage/lcov.info | ./node_modules/.bin/coveralls' # sends the coverage report to coveralls
+after_install:
+  - 'npm run build'
 deploy:
   provider: npm
   email: "dkelosky@gmail.com"
