@@ -58,7 +58,8 @@
     "mkdirp": "^0.5.1",
     "moment": "^2.22.2",
     "mustache": "^2.3.2",
-    "pkg-up": "^2.0.0"
+    "pkg-up": "^2.0.0",
+    "popper.js": "^1.14.4"
   },
   "devDependencies": {
     "@types/chalk": "^2.2.0",
