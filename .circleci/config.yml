@@ -58,7 +58,13 @@ jobs:
 
 workflows:
   version: 2
-  test-deploy:
+  build-test:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
+  build-test-deploy:
     jobs:
       - build
       - test:
