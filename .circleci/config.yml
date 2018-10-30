@@ -12,7 +12,6 @@ defaults: &defaults
 jobs:
   build:
     <<: *defaults 
-
     steps:
       - checkout
 
@@ -37,7 +36,6 @@ jobs:
           
   test:
     <<: *defaults 
-
     steps:
       - attach_workspace:
           at: ~/repo
@@ -62,7 +60,7 @@ workflows:
   version: 2
   test-deploy:
     jobs:
-      - build:
+      - build
       - test:
           requires:
             - build
