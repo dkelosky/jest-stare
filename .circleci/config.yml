@@ -68,7 +68,7 @@ workflows:
             tags:
               only: /^v.*/
       - deploy:
-          contex: NPM
+          context: NPM
           requires:
             - test
           filters:
