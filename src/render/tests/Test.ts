@@ -93,7 +93,7 @@ export class Test {
         firstDiv.appendChild(img);
 
         const secondDiv = document.createElement("div") as HTMLDivElement;
-        secondDiv.classList.add("media-body", "pb-3", "mb-0", "small", "lh-125", "border-bottom", "border-gray");
+        secondDiv.classList.add("media-body", "pb-3", "mb-0", "small", "lh-125", "border-bottom", "overflow-auto");
 
         firstDiv.appendChild(secondDiv);
 

@@ -6,7 +6,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow both-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       jest-stare\\__tests__\\example\\FailingTests.test.ts
     </h5>
@@ -14,7 +14,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow both-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         Failing Tests
       </h6>
@@ -33,7 +33,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       jest-stare\\__tests__\\src\\render\\Render.test.ts
     </h5>
@@ -41,7 +41,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         Render tests
       </h6>
@@ -54,7 +54,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       jest-stare\\__tests__\\src\\processor\\Processor.test.ts
     </h5>
@@ -62,7 +62,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         Processor tests
       </h6>
@@ -78,7 +78,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       jest-stare\\__tests__\\src\\utils\\IO.test.ts
     </h5>
@@ -86,7 +86,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         IO tests
       </h6>
@@ -108,7 +108,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       jest-stare\\__tests__\\src\\utils\\Logger.test.ts
     </h5>
@@ -116,7 +116,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         Logger tests
       </h6>
@@ -129,7 +129,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       jest-stare\\__tests__\\src\\reporter\\Reporter.test.ts
     </h5>
@@ -137,7 +137,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         Reporter tests
       </h6>
@@ -158,7 +158,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow both-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts
     </h5>
@@ -166,7 +166,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow both-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         IO tests
       </h6>
@@ -188,7 +188,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       Work\\Dev\\node\\jest-stare\\__tests__\\reporter\\Reporter.test.ts
     </h5>
@@ -196,7 +196,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         Reporter tests
       </h6>
@@ -214,7 +214,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts
     </h5>
@@ -222,7 +222,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         IO tests
       </h6>
@@ -244,7 +244,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       Work\\Dev\\node\\jest-stare\\__tests__\\reporter\\Reporter.test.ts
     </h5>
@@ -252,7 +252,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         Reporter tests
       </h6>
@@ -270,7 +270,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow both-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       jest-stare\\__tests__\\example\\FailingTests.test.ts
     </h5>
@@ -278,7 +278,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow both-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         Failing Tests
       </h6>
@@ -297,7 +297,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       jest-stare\\__tests__\\src\\render\\Render.test.ts
     </h5>
@@ -305,7 +305,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         Render tests
       </h6>
@@ -318,7 +318,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       jest-stare\\__tests__\\src\\processor\\Processor.test.ts
     </h5>
@@ -326,7 +326,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         Processor tests
       </h6>
@@ -342,7 +342,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       jest-stare\\__tests__\\src\\utils\\IO.test.ts
     </h5>
@@ -350,7 +350,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         IO tests
       </h6>
@@ -372,7 +372,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       jest-stare\\__tests__\\src\\utils\\Logger.test.ts
     </h5>
@@ -380,7 +380,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         Logger tests
       </h6>
@@ -393,7 +393,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
   >
     <h5
-      class="border-bottom border-gray pb-2 mb-0 display-5"
+      class="border-bottom pb-2 mb-0 display-5"
     >
       jest-stare\\__tests__\\src\\reporter\\Reporter.test.ts
     </h5>
@@ -401,7 +401,7 @@ Array [
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
     >
       <h6
-        class="border-bottom border-gray pb-2 mb-0 display-6"
+        class="border-bottom pb-2 mb-0 display-6"
       >
         Reporter tests
       </h6>

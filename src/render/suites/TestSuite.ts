@@ -89,7 +89,7 @@ export class TestSuite {
             div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
 
             const h5 = document.createElement("h5") as HTMLHeadingElement;
-            h5.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-5");
+            h5.classList.add("border-bottom", "pb-2", "mb-0", "display-5");
             h5.textContent = testResult.testFilePath;
 
             div.appendChild(h5);
@@ -115,7 +115,7 @@ export class TestSuite {
                             const statusClass = testSectionStatus.get(key) || Constants.PASSED_TEST;
                             nestDiv.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", statusClass);
                             const h6 = document.createElement("h6") as HTMLHeadingElement;
-                            h6.classList.add("border-bottom", "border-gray", "pb-2", "mb-0", "display-6");
+                            h6.classList.add("border-bottom", "pb-2", "mb-0", "display-6");
                             h6.textContent = title;
                             nestDiv.appendChild(h6);
                             nestDiv.appendChild(element);

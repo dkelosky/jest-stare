@@ -36,6 +36,8 @@ code {
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
+.overflow-auto { overflow: auto; /* Fixes long line breaking flow */ }
+
 .lh-100 { line-height: 1; }
 .lh-125 { line-height: 1.25; }
 .lh-150 { line-height: 1.5; }
