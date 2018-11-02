@@ -73,13 +73,13 @@ workflows:
           filters:
             tags:
               only: /^v.*/
-      - deploy:
-          context: NPM
-          requires:
-            - test
-          filters:
-            tags:
-              only: /^v.*/
-            branches:
-              only: master
+#       - deploy:
+#           context: NPM
+#           requires:
+#             - test
+#           filters:
+#             tags:
+#               only: /^v.*/
+#             branches:
+#               only: master
 
