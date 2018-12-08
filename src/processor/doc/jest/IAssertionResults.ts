@@ -3,9 +3,9 @@ import { ILocation } from "./ILocation";
 /**
  * Jest interface
  * @export
- * @interface IInnerTestResults
+ * @interface IAssertionResults
  */
-export interface IInnerTestResults {
+export interface IAssertionResults {
     title: string;
     status: "failed" | "pending" | "passed";
     ancestorTitles: string[];
