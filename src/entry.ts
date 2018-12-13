@@ -1,9 +1,6 @@
 import { Reporter } from "./reporter/Reporter";
 import { Processor } from "./processor/Processor";
 
-import { IJestStareConfig } from "./processor/doc/IJestStareConfig";
-import { IResultsProcessorInput } from "./processor/doc/jest/IResultsProcessorInput";
-
 /**
  * Generic entry from Jest for reporter or test results processor
  * @export

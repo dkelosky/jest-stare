@@ -1,7 +1,7 @@
-import * as bootstrap from "bootstrap/dist/js/bootstrap.bundle.min.js";
+// import * as bootstrap from "bootstrap/dist/js/bootstrap.bundle.min.js";
 import * as $ from "jquery";
-import { IResultsProcessorInput } from "../processor/doc/jest/IResultsProcessorInput";
-import { IInnerTestResults } from "../processor/doc/jest/IInnerTestResults";
+// import { jest.AggregatedResult } from "../processor/doc/jest/jest.AggregatedResult";
+// import { IInnerTestResults } from "../processor/doc/jest/IInnerTestResults";
 import { Switch } from "./navigation/Switch";
 import { Constants } from "./Constants";
 import { Status } from "./charts/Status";
@@ -21,12 +21,12 @@ export class Render {
     /**
      * Wait for DOM load then show
      * @static
-     * @param {IResultsProcessorInput} results - jest results
+     * @param {jest.AggregatedResult} results - jest results
      * @memberof Render
      */
     public static init() {
         document.addEventListener("DOMContentLoaded", () => {
-            const results: IResultsProcessorInput = JSON.parse($("#test-results").text());
+            const results: jest.AggregatedResult = JSON.parse($("#test-results").text());
             const config: IJestStareConfig = JSON.parse($("#test-config").text());
             Render.show(results, config);
         });
@@ -36,11 +36,11 @@ export class Render {
      * Render content
      * @static
      * @private
-     * @param {IResultsProcessorInput} results - jest results
+     * @param {jest.AggregatedResult} results - jest results
      * @param {IJestStareConfig} config - jest stare config
      * @memberof Render
      */
-    private static show(results: IResultsProcessorInput, config: IJestStareConfig) {
+    private static show(results: jest.AggregatedResult, config: IJestStareConfig) {
 
         const labels = [Constants.PASSED_LABEL, Constants.FAILED_LABEL];
         const backgroundColor = [Constants.PASS, Constants.FAIL];
@@ -150,12 +150,12 @@ export class Render {
      * Add snapshot specific data
      * @private
      * @static
-     * @param {IResultsProcessorInput} results - input raw results
+     * @param {jest.AggregatedResult} results - input raw results
      * @param {IChartData} snapshotChart - prepopulated snapshot chart
      * @returns {IChartData} - completed snapshot chart
      * @memberof Render
      */
-    private static addSnapshotChartData(results: IResultsProcessorInput, snapshotChart: IChartData): IChartData {
+    private static addSnapshotChartData(results: jest.AggregatedResult, snapshotChart: IChartData): IChartData {
 
         // add info about added snapshots if present
         if (results.snapshot.filesAdded > 0) {

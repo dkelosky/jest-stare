@@ -107,8 +107,7 @@
     "reporters": [
       "default",
       "./"
-    ],
-    "testResultsProcessor": "./"
+    ]
   },
   "jest-stare": {
     "resultDir": "results/jest-stare",

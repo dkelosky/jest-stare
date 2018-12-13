@@ -2,9 +2,13 @@
 [![npm](https://img.shields.io/badge/npm-v5.6.0-blue.svg)](https://www.npmjs.com/package/jest-stare) 
 [![CircleCI](https://circleci.com/gh/dkelosky/jest-stare.svg?style=svg)](https://circleci.com/gh/dkelosky/jest-stare)
 
-# Jest HTML Reporter / Results Processor
-This is a Jest HTML reporter and results processor.  That is, it takes summary test results from jest
-and parses them into an HTML file for improved readability and filtering. 
+# Jest HTML Reporter
+This is a Jest HTML reporter.  It takes summary test results from jest
+and parses them into an HTML file for improved readability and filtering.
+
+In previous versions, jest-stare was also a "testResultsProcessor" but this capability
+appears to be deprecated by Jest.  Previous versions of jest-stare document how to configure this,
+but this capability will go away in the next major version of jest-stare.
 
 ![Sample](images/newSampleReport.png "Sample Report")
 
@@ -12,24 +16,20 @@ and parses them into an HTML file for improved readability and filtering.
 * filter on pass / failed tests
 * side-by-side snapshot diff
 * chart-summarized information
-* runs multiple test results processors 
 * captures raw jest results JSON file
 * link to generated coverage report (if configured)
-* results processor & reporter
 * [configuration](#config)
 * [cli](#cli)
 * [api](#api)
 
 ## Usage
-Run tests or a test with jest and specify `jest-stare` on the `--reporters` or `--testResultsProcessor` options:
+Run tests or a test with jest and specify `jest-stare` on the `--reporters` option:
 
 * `jest --reporters default jest-stare`
-* `jest --testResultsProcessor=jest-stare`
 
-Alternatively, in your `jest` config within `package.json` set `reporters` or `testResultsProcessor` to `jest-stare` :
+Alternatively, in your `jest` config within `package.json` set `reporters` to `jest-stare` :
 
 * `"reporters: ["default", "jest-stare"]`
-* `"testResultsProcessor": "./node_modules/jest-stare",`
 
 `jest-stare` when used as a reporter updates the HTML report on each completed test run.  You can use this to view test output
 that is incomplete (before each test suite completes).  Refresh your browser to see new tests as each suite completes.
@@ -60,8 +60,6 @@ Field | Environmental Variable | Default | Description | Example
 `log` |  `JEST_STARE_LOG` | `true` | specify whether or not jest-stare should log to the console | `"log": "false"`
 `jestStareConfigJson` |  `JEST_STARE_CONFIG_JSON` |  `undefined` | request to save jest-stare config raw JSON results in the file name | `"jestStareConfigJson": "jest-stare-config.json"`
 `coverageLink` |  `JEST_STARE_COVERAGE_LINK` | `undefined` | link to coverage report if available | `"coverageLink": "../../coverage/lcov-report/index.html"`
-`additionalResultsProcessors` |  `JEST_STARE_ADDITIONAL_RESULTS_PROCESSORS` | `undefined` | add additional test result processors to produce multiple report |`"additionalResultsProcessors": ["jest-html-reporter", "jest-junit"]`
-<!-- `merge` |  `JEST_STARE_MERGE` | `false` | merge new results in instead of overwriting results (experimental) | `"merge": "true"` -->
 
 ### API
 You can programmatically invoke jest-stare and provide jest response data via:
@@ -99,7 +97,7 @@ jest-stare data/simplePassingTests.json c:/users/myId/desktop/output
 The command response takes a form of:
 ```
 jest-stare was called with programmatic config
-**  jest-stare --testResultsProcessor: wrote output report to c:/users/myId/desktop/output/index.html  **
+**  jest-stare: wrote output report to c:/users/myId/desktop/output/index.html  **
 ```
 
 ### Jest Watch

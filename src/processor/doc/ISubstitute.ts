@@ -1,4 +1,3 @@
-import { IResultsProcessorInput } from "./jest/IResultsProcessorInput";
 import { IJestStareConfig } from "./IJestStareConfig";
 
 
@@ -14,7 +13,7 @@ export interface ISubstitute {
      * @type {IResultsProcessorInput}
      * @memberof ISubstitute
      */
-    results?: IResultsProcessorInput;
+    results?: jest.AggregatedResult;
 
     /**
      * This probably isn't needed, but this is what is serialized

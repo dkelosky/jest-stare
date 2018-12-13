@@ -1,12 +1,10 @@
 import { TestSuite } from "../../../../src/render/suites/TestSuite";
-import { IResultsProcessorInput } from "../../../../src/processor/doc/jest/IResultsProcessorInput";
 
-const simplePassingTests: IResultsProcessorInput = require("../../../__resources__/simplePassingTests.json");
-const simpleFailingTests: IResultsProcessorInput = require("../../../__resources__/simpleFailingTests.json");
-const twoSideBySideFailDiffTests: IResultsProcessorInput = require("../../../__resources__/twoSideBySideFailDiffTests.json");
-const largeTests: IResultsProcessorInput = require("../../../__resources__/largeTests.json");
-const nestedDescribeTests: IResultsProcessorInput = require("../../../__resources__/nestedDescribeTests.json");
-const pendingTests: IResultsProcessorInput = require("../../../__resources__/pendingTests.json");
+const simplePassingTests: jest.AggregatedResult = require("../../../__resources__/simplePassingTests.json");
+const simpleFailingTests: jest.AggregatedResult = require("../../../__resources__/simpleFailingTests.json");
+const twoSideBySideFailDiffTests: jest.AggregatedResult = require("../../../__resources__/twoSideBySideFailDiffTests.json");
+const nestedDescribeTests: jest.AggregatedResult = require("../../../__resources__/nestedDescribeTests.json");
+const pendingTests: jest.AggregatedResult = require("../../../__resources__/pendingTests.json");
 
 describe("TestSuite tests", () => {
 
@@ -33,5 +31,10 @@ describe("TestSuite tests", () => {
 
     it("should create proper elements for pending tests", () => {
         expect(TestSuite.create(pendingTests)).toMatchSnapshot();
+    });
+
+    it("should create proper elements for assertion results", () => {
+        pending();
+        // expect(TestSuite.create(assertionResults)).toMatchSnapshot();
     });
 });

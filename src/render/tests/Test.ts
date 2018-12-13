@@ -1,5 +1,4 @@
 import { Constants } from "../Constants";
-import { IInnerTestResults } from "../../processor/doc/jest/IInnerTestResults";
 import * as AnsiParser from "ansi-parser";
 import { TestDifference } from "../diff/TestDifference";
 
@@ -60,7 +59,7 @@ export class Test {
      * @returns {HTMLDivElement} - populated element
      * @memberof Test
      */
-    public static create(innerTestResult: IInnerTestResults): HTMLElement {
+    public static create(innerTestResult: jest.AssertionResult): HTMLElement {
         let color = Constants.PASS_RAW;
         let testStatusClass = Constants.PASSED_TEST;
         let failed = false;
@@ -116,7 +115,8 @@ export class Test {
         const small = document.createElement("small") as HTMLElement;
         small.classList.add("d-block", "text-right", "mt-3");
         const conversionValu = 1000;
-        small.textContent = innerTestResult.duration / conversionValu + "s";
+        // TODO(Kelosky): clean up small.textContent = innerTestResult.duration as any / conversionValu + "s";
+        small.textContent = innerTestResult.duration as any / conversionValu + "s";
 
         thirdDiv.appendChild(small);
         // const anchor = document.createElement("a") as HTMLAnchorElement;

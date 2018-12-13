@@ -1,9 +1,7 @@
-import Mock = jest.Mock;
 jest.mock("../../src/utils/IO");
 
 import { IO } from "../../src/utils/IO";
 import { Processor } from "../../src/processor/Processor";
-import { inspect } from "util";
 import { Logger } from "../../src/utils/Logger";
 import { IResultsProcessorInput } from "../../src/processor/doc/jest/IResultsProcessorInput";
 import { ISubstitute } from "../../src/processor/doc/ISubstitute";
