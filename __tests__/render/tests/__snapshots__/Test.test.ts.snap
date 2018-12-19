@@ -18022,7 +18022,7 @@ Array [
                       
     
                       <td
-                        class="d2h-code-side-linenumber d2h-cntx"
+                        class="d2h-code-side-linenumber d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
                       >
                         
       
@@ -18031,12 +18031,12 @@ Array [
                       
     
                       <td
-                        class="d2h-cntx"
+                        class="d2h-cntx d2h-emptyplaceholder"
                       >
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
                         >
                           
         
@@ -19137,7 +19137,7 @@ Array [
                       
     
                       <td
-                        class="d2h-code-side-linenumber d2h-cntx"
+                        class="d2h-code-side-linenumber d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
                       >
                         
       
@@ -19146,12 +19146,12 @@ Array [
                       
     
                       <td
-                        class="d2h-cntx"
+                        class="d2h-cntx d2h-emptyplaceholder"
                       >
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
                         >
                           
         
@@ -21314,7 +21314,7 @@ Array [
                       
     
                       <td
-                        class="d2h-code-side-linenumber d2h-cntx"
+                        class="d2h-code-side-linenumber d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
                       >
                         
       
@@ -21323,12 +21323,12 @@ Array [
                       
     
                       <td
-                        class="d2h-cntx"
+                        class="d2h-cntx d2h-emptyplaceholder"
                       >
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
                         >
                           
         
@@ -21343,7 +21343,7 @@ Array [
                       
     
                       <td
-                        class="d2h-code-side-linenumber d2h-cntx"
+                        class="d2h-code-side-linenumber d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
                       >
                         
       
@@ -21352,12 +21352,12 @@ Array [
                       
     
                       <td
-                        class="d2h-cntx"
+                        class="d2h-cntx d2h-emptyplaceholder"
                       >
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
                         >
                           
         
