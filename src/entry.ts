@@ -16,6 +16,6 @@ export function entry(parm0: any, parm1?: any) {
 
     // otherwise, result processor
     } else {
-        return Processor.run(parm0, undefined);
+        return Processor.run(parm0, parm1);
     }
 }
