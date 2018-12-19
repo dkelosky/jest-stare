@@ -64,15 +64,15 @@ workflows:
       - test:
           requires:
             - build
-  build-test-deploy:
-    jobs:
-      - build
-      - test:
-          requires:
-            - build
-          filters:
-            tags:
-              only: /^v.*/
+  # build-test-deploy:
+    # jobs:
+      # - build
+      # - test:
+          # requires:
+            # - build
+          # filters:
+            # tags:
+              # only: /^v.*/
 #       - deploy:
 #           context: NPM
 #           requires:

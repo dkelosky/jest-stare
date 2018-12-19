@@ -1,6 +1,3 @@
-import { IJestStareConfig } from "../processor/doc/IJestStareConfig";
-import { Logger } from "../utils/Logger";
-
 /**
  * Service for reading environmental variables
  * @export

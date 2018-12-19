@@ -1,19 +1,12 @@
 import GlobalConfig = jest.GlobalConfig;
 import Test = jest.Test;
 import TestResult = jest.TestResult;
-import AggregatedResult = jest.AggregatedResult;
 import ReporterOnStartOptions = jest.ReporterOnStartOptions;
 import Context = jest.Context;
 
-import * as mustache from "mustache";
-import { ISubstitute } from "../processor/doc/ISubstitute";
-
 import { Logger } from "../utils/Logger";
-import { IO } from "../utils/IO";
-import { inspect } from "util";
 import { Processor } from "../processor/Processor";
 import { IJestStareConfig } from "../processor/doc/IJestStareConfig";
-import { IResultsProcessorInput } from "../processor/doc/jest/IResultsProcessorInput";
 import { Constants } from "../processor/Constants";
 
 /**
@@ -63,7 +56,7 @@ export class Reporter {
      * @param {ReporterOnStartOptions} options - jest invoked options
      * @memberof Reporter
      */
-    public onRunStart(results: IResultsProcessorInput, options: ReporterOnStartOptions) {
+    public onRunStart(results: jest.AggregatedResult, options: ReporterOnStartOptions) {
         // Logger.get.debug("onRunStart: "); //  + inspect(results));
         // Logger.get.debug("onRunStart: " + inspect(results));
         Processor.run(results, { additionalResultsProcessors: [], log: false }, { reporter: this });
@@ -87,7 +80,7 @@ export class Reporter {
      * @param {AggregatedResult} aggregatedResult - jest summarized results
      * @memberof Reporter
      */
-    public onTestResult(test: Test, testResult: TestResult, results: IResultsProcessorInput) {
+    public onTestResult(test: Test, testResult: TestResult, results: jest.AggregatedResult) {
         // Logger.get.debug("onTestResult: "); // + inspect(testResult) + " agg: " + inspect(aggregatedResult));
         // Logger.get.debug("onTestResult: " + inspect(testResult) + " agg: " + inspect(aggregatedResult));
         Processor.run(results, { additionalResultsProcessors: [], log: false }, { reporter: this });
@@ -102,7 +95,7 @@ export class Reporter {
     // Note(Kelosky): jest config appears to be missing some items from its interfaces
     // so we'll use our custom interface instead of
     // public onRunComplete(contexts: Set<Context>, results: AggregatedResult) {
-    public onRunComplete(contexts: Set<Context>, results: IResultsProcessorInput) {
+    public onRunComplete(contexts: Set<Context>, results: jest.AggregatedResult) {
         // Logger.get.debug("onRunComplete:");
 
         // disallow results processors from a reporter invocation

@@ -1,5 +1,4 @@
 import { Constants } from "./Constants";
-import { IResultsProcessorInput } from "./doc/jest/IResultsProcessorInput";
 import { ISubstitute } from "./doc/ISubstitute";
 import { IO } from "../utils/IO";
 import * as mustache from "mustache";
@@ -29,7 +28,7 @@ export class Processor {
      * @returns - returns input results object
      * @memberof Processor
      */
-    public static run(results: IResultsProcessorInput, explicitConfig?: IJestStareConfig,
+    public static run(results: jest.AggregatedResult, explicitConfig?: IJestStareConfig,
                       parms?: IProcessParms) {
 
         return new Processor(results, explicitConfig, parms).generate();
@@ -50,7 +49,7 @@ export class Processor {
      * @param {IProcessParms} [mProcessParms] - parms object to control process behavior
      * @memberof Processor
      */
-    constructor(private mResults: IResultsProcessorInput, private mExplicitConfig?: IJestStareConfig,
+    constructor(private mResults: jest.AggregatedResult, private mExplicitConfig?: IJestStareConfig,
                 private mProcessParms?: IProcessParms) {
     }
 
@@ -157,7 +156,7 @@ export class Processor {
      *                     to forward the data to
      * @memberof Processor
      */
-    private execute(jestTestData: IResultsProcessorInput, processors: string[]): void {
+    private execute(jestTestData: jest.AggregatedResult, processors: string[]): void {
         for (const processor of processors) {
             if (processor === Constants.NAME) {
                 this.logger.error("Error: In order to avoid infinite loops, " +

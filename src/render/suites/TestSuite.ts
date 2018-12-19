@@ -1,7 +1,5 @@
 import { Constants } from "../Constants";
-import { isNullOrUndefined } from "util";
 import { Test } from "../tests/Test";
-import { IResultsProcessorInput } from "../../processor/doc/jest/IResultsProcessorInput";
 
 /**
  * Create test suites
@@ -23,9 +21,8 @@ export class TestSuite {
      * @returns {HTMLElement[]} - populated html elements
      * @memberof TestSuite
      */
-    public static create(results: IResultsProcessorInput): HTMLElement[] {
+    public static create(results: jest.AggregatedResult): HTMLElement[] {
         const elements: HTMLElement[] = [];
-        const describeLevels: number[] = [];
 
         results.testResults.forEach((testResult) => {
 

@@ -1,0 +1,752 @@
+{
+    "numFailedTestSuites": 0,
+    "numFailedTests": 0,
+    "numPassedTestSuites": 15,
+    "numPassedTests": 57,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTotalTestSuites": 15,
+    "numTotalTests": 57,
+    "openHandles": [],
+    "snapshot": {
+        "added": 0,
+        "didUpdate": false,
+        "failure": false,
+        "filesAdded": 0,
+        "filesRemoved": 0,
+        "filesUnmatched": 0,
+        "filesUpdated": 0,
+        "matched": 39,
+        "total": 39,
+        "unchecked": 0,
+        "uncheckedKeysByFile": [],
+        "unmatched": 0,
+        "updated": 0
+    },
+    "startTime": 1544281306340,
+    "success": true,
+    "testResults": [
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "Logger tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Logger tests should get a log instance",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should get a log instance"
+                }
+            ],
+            "endTime": 1544281311396,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\utils\\Logger.test.ts",
+            "startTime": 1544281308347,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "EnvVarService tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "EnvVarService tests should read my env value",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should read my env value"
+                },
+                {
+                    "ancestorTitles": [
+                        "EnvVarService tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "EnvVarService tests should not find unset env value",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should not find unset env value"
+                },
+                {
+                    "ancestorTitles": [
+                        "EnvVarService tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "EnvVarService tests should read my env value that is boolean set to true",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should read my env value that is boolean set to true"
+                },
+                {
+                    "ancestorTitles": [
+                        "EnvVarService tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "EnvVarService tests should read my env value that is boolean set to false",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should read my env value that is boolean set to false"
+                },
+                {
+                    "ancestorTitles": [
+                        "EnvVarService tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "EnvVarService tests should not find my env value that is not set",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should not find my env value that is not set"
+                }
+            ],
+            "endTime": 1544281311514,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\utils\\EnvVarService.test.ts",
+            "startTime": 1544281308402,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "EnvVars tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "EnvVars tests should have an empty config for no env variables set",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should have an empty config for no env variables set"
+                },
+                {
+                    "ancestorTitles": [
+                        "EnvVars tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "EnvVars tests should have a complete config for all env variables set",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should have a complete config for all env variables set"
+                }
+            ],
+            "endTime": 1544281311656,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\processor\\EnvVars.test.ts",
+            "startTime": 1544281308410,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "Processor tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Processor tests should accept override config on input and not log when requested not to",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should accept override config on input and not log when requested not to"
+                },
+                {
+                    "ancestorTitles": [
+                        "Processor tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Processor tests should accept override config on input and log when requested to",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should accept override config on input and log when requested to"
+                },
+                {
+                    "ancestorTitles": [
+                        "Processor tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Processor tests should accept override html and JSON file name",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should accept override html and JSON file name"
+                },
+                {
+                    "ancestorTitles": [
+                        "Processor tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Processor tests should create a report form an input object",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create a report form an input object"
+                },
+                {
+                    "ancestorTitles": [
+                        "Processor tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Processor tests should create file names correctly when default 'resultDir' is used",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create file names correctly when default 'resultDir' is used"
+                },
+                {
+                    "ancestorTitles": [
+                        "Processor tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Processor tests should error when called without input",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should error when called without input"
+                }
+            ],
+            "endTime": 1544281311753,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\processor\\Processor.test.ts",
+            "startTime": 1544281308410,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "Doughnut tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Doughnut tests should do something",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should do something"
+                }
+            ],
+            "endTime": 1544281312168,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\render\\charts\\Doughnut.test.ts",
+            "startTime": 1544281308879,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "Switch tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Switch tests should change classes shown when toggled",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should change classes shown when toggled"
+                },
+                {
+                    "ancestorTitles": [
+                        "Switch tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Switch tests should change classes shown when toggled and change classes for a second toggle too",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should change classes shown when toggled and change classes for a second toggle too"
+                }
+            ],
+            "endTime": 1544281312336,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\render\\navigation\\Switch.test.ts",
+            "startTime": 1544281312018,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "entry tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "entry tests should call processor when not using 'new'",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should call processor when not using 'new'"
+                },
+                {
+                    "ancestorTitles": [
+                        "entry tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "entry tests should call reporter when using 'new'",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should call reporter when using 'new'"
+                }
+            ],
+            "endTime": 1544281312349,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\entry.test.ts",
+            "startTime": 1544281308807,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "IO tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "IO tests should pretend to write to a file",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should pretend to write to a file"
+                },
+                {
+                    "ancestorTitles": [
+                        "IO tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "IO tests should pretend to write to a file and reject promise for IO errors",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should pretend to write to a file and reject promise for IO errors"
+                },
+                {
+                    "ancestorTitles": [
+                        "IO tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "IO tests should say true if dir exists",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should say true if dir exists"
+                },
+                {
+                    "ancestorTitles": [
+                        "IO tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "IO tests should false if dir does not exist",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should false if dir does not exist"
+                },
+                {
+                    "ancestorTitles": [
+                        "IO tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "IO tests should read return an empty object if no package.json is found",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should read return an empty object if no package.json is found"
+                },
+                {
+                    "ancestorTitles": [
+                        "IO tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "IO tests should read return a populated object if package.json is found",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should read return a populated object if package.json is found"
+                }
+            ],
+            "endTime": 1544281312571,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts",
+            "startTime": 1544281312273,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should not create link to coverage report if not in config",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should not create link to coverage report if not in config"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should create link to coverage report if in config",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create link to coverage report if in config"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should build chart data with no examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should build chart data with no examples"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should build chart data with fail examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should build chart data with fail examples"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should build chart data with pass examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should build chart data with pass examples"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should build chart data with passing, pending, and failing examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should build chart data with passing, pending, and failing examples"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should build chart data with pending and fail examples only",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should build chart data with pending and fail examples only"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should build chart data with pass and fail examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should build chart data with pass and fail examples"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should add snapshot chart data with no examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should add snapshot chart data with no examples"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should add snapshot chart data with pass examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should add snapshot chart data with pass examples"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should add snapshot chart data with fail examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should add snapshot chart data with fail examples"
+                }
+            ],
+            "endTime": 1544281312664,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\render\\Render.test.ts",
+            "startTime": 1544281308419,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "TestSuite tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "TestSuite tests should create proper elements for simple passing tests",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create proper elements for simple passing tests"
+                },
+                {
+                    "ancestorTitles": [
+                        "TestSuite tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "TestSuite tests should create proper elements for simple failing tests",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create proper elements for simple failing tests"
+                },
+                {
+                    "ancestorTitles": [
+                        "TestSuite tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "TestSuite tests should create proper elements for two diffs in html",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create proper elements for two diffs in html"
+                },
+                {
+                    "ancestorTitles": [
+                        "TestSuite tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "TestSuite tests should create proper elements for large test > 500 tests",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create proper elements for large test > 500 tests"
+                }
+            ],
+            "endTime": 1544281312778,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\render\\suites\\TestSuite.test.ts",
+            "startTime": 1544281311974,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "jest-stare cli tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "jest-stare cli tests should",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should"
+                },
+                {
+                    "ancestorTitles": [
+                        "jest-stare cli tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "jest-stare cli tests should",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should"
+                },
+                {
+                    "ancestorTitles": [
+                        "jest-stare cli tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "jest-stare cli tests should",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should"
+                }
+            ],
+            "endTime": 1544281312903,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\cli\\CLI.test.ts",
+            "startTime": 1544281312667,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "TestSuite tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "TestSuite tests should create proper elements for simple passing tests",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create proper elements for simple passing tests"
+                },
+                {
+                    "ancestorTitles": [
+                        "TestSuite tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "TestSuite tests should create proper elements for simple failing tests",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create proper elements for simple failing tests"
+                },
+                {
+                    "ancestorTitles": [
+                        "TestSuite tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "TestSuite tests should create proper elements for two diffs in html",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create proper elements for two diffs in html"
+                },
+                {
+                    "ancestorTitles": [
+                        "TestSuite tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "TestSuite tests should create proper elements for large test > 500 tests",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create proper elements for large test > 500 tests"
+                },
+                {
+                    "ancestorTitles": [
+                        "TestSuite tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "TestSuite tests should create proper elements for nested describes with reused names",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create proper elements for nested describes with reused names"
+                },
+                {
+                    "ancestorTitles": [
+                        "TestSuite tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "TestSuite tests should create proper elements for pending tests",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create proper elements for pending tests"
+                }
+            ],
+            "endTime": 1544281313110,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\__integration__\\render\\suites\\TestSuite.test.ts",
+            "startTime": 1544281311802,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "Status tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Status tests should set proper class for passed tests",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should set proper class for passed tests"
+                },
+                {
+                    "ancestorTitles": [
+                        "Status tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Status tests should set proper class for failed tests",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should set proper class for failed tests"
+                },
+                {
+                    "ancestorTitles": [
+                        "Status tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Status tests should set proper class for passed and failed tests",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should set proper class for passed and failed tests"
+                }
+            ],
+            "endTime": 1544281313132,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\render\\charts\\Status.test.ts",
+            "startTime": 1544281312869,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "Test tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Test tests should create proper elements for simple passing tests",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create proper elements for simple passing tests"
+                },
+                {
+                    "ancestorTitles": [
+                        "Test tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Test tests should create proper elements for simple failing tests",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create proper elements for simple failing tests"
+                },
+                {
+                    "ancestorTitles": [
+                        "Test tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Test tests should create proper elements for two diffs in html",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create proper elements for two diffs in html"
+                },
+                {
+                    "ancestorTitles": [
+                        "Test tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Test tests should create proper elements for large test > 500 tests",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create proper elements for large test > 500 tests"
+                }
+            ],
+            "endTime": 1544281313132,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\render\\tests\\Test.test.ts",
+            "startTime": 1544281311562,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "Config tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Config tests should be able to read a config",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should be able to read a config"
+                }
+            ],
+            "endTime": 1544281313224,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\processor\\Config.test.ts",
+            "startTime": 1544281312978,
+            "status": "passed",
+            "summary": ""
+        }
+    ],
+    "wasInterrupted": false
+}
