@@ -64,10 +64,10 @@ export class Render {
         // update status area
         Status.setResultsClass(
             $("#test-suites-results") as JQuery<HTMLParagraphElement>,
-            results.numPassedTestSuites, results.numTotalTestSuites - results.numPassedTestSuites);
+            results.numPassedTestSuites, results.numTotalTestSuites - results.numPassedTestSuites - results.numPendingTestSuites);
         Status.setResultsClass(
             $("#tests-results") as JQuery<HTMLParagraphElement>,
-            results.numPassedTests, results.numTotalTests - results.numPassedTests);
+            results.numPassedTests, results.numTotalTests - results.numPassedTests - results.numPendingTests);
         Status.setResultsClass(
             $("#snapshots-results") as JQuery<HTMLParagraphElement>,
             results.snapshot.matched, results.snapshot.unmatched);
