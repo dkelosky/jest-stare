@@ -35,4 +35,12 @@ export interface ISubstitute {
      * @memberof ISubstitute
      */
     rawJestStareConfig?: string;
+
+
+    /**
+     * jest global config object
+     * @type {string}
+     * @memberof ISubstitute
+     */
+    globalConfig?: string;
 }

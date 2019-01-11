@@ -8,6 +8,7 @@ Object {
     "three",
   ],
   "coverageLink": "www.walmart.com",
+  "jestGlobalConfigJson": undefined,
   "jestStareConfigJson": "true",
   "log": false,
   "merge": true,
@@ -21,6 +22,7 @@ exports[`EnvVars tests should have an empty config for no env variables set 1`] 
 Object {
   "additionalResultsProcessors": undefined,
   "coverageLink": undefined,
+  "jestGlobalConfigJson": undefined,
   "jestStareConfigJson": undefined,
   "log": undefined,
   "merge": undefined,

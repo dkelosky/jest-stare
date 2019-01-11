@@ -46,7 +46,7 @@ export class Reporter {
      * @param {*} mOptions - jest options in effect
      * @memberof Reporter
      */
-    constructor(private mGlobalConfig: jest.GlobalConfig, private mOptions: any) {
+    constructor(public mGlobalConfig: jest.GlobalConfig, private mOptions: any) {
     }
 
 
