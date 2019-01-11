@@ -72,6 +72,10 @@ export class Render {
             $("#snapshots-results") as JQuery<HTMLParagraphElement>,
             results.snapshot.matched, results.snapshot.unmatched);
 
+        if (results.snapshot.matched === 0 && results.snapshot.unmatched === 0) {
+            $("#snapshots-group").hide();
+        }
+
         // build suites
         const tableHtml = TestSuite.create(results);
 
