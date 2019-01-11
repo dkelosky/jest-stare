@@ -45,11 +45,11 @@ export class EnvVars {
             resultJson: this.mEnvSrv.readEnvValue("RESULT_JSON"),
             resultHtml: this.mEnvSrv.readEnvValue("RESULT_HTML"),
             log: this.mEnvSrv.readBoolEnvValue("LOG"),
-            merge: this.mEnvSrv.readBoolEnvValue("MERGE"),
             jestStareConfigJson: this.mEnvSrv.readEnvValue("CONFIG_JSON"),
             jestGlobalConfigJson: this.mEnvSrv.readEnvValue("GLOBAL_CONFIG_JSON"),
             coverageLink: this.mEnvSrv.readEnvValue("COVERAGE_LINK"),
-            additionalResultsProcessors
+            report: this.mEnvSrv.readBoolEnvValue("REPORT"),
+            additionalResultsProcessors,
         };
     }
 
@@ -81,8 +81,8 @@ export class EnvVars {
             mergedConfig.log = envConfig.log == null ? packageJsonConfig.log : envConfig.log;
         }
 
-        if (envConfig.merge != null || packageJsonConfig.merge != null) {
-            mergedConfig.merge = envConfig.merge == null ? packageJsonConfig.merge : envConfig.merge;
+        if (envConfig.report != null || packageJsonConfig.report != null) {
+            mergedConfig.report = envConfig.report == null ? packageJsonConfig.report : envConfig.report;
         }
 
         if (envConfig.jestStareConfigJson != null || packageJsonConfig.jestStareConfigJson != null) {
