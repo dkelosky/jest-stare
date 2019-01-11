@@ -7,10 +7,30 @@ import { IJestStareConfig } from "../../src/processor/doc/IJestStareConfig";
 
 const simplePassingTests: jest.AggregatedResult = require("../__resources__/simplePassingTests.json");
 const simpleFailingTests: jest.AggregatedResult = require("../__resources__/simpleFailingTests.json");
+const pendingOnlyTests: jest.AggregatedResult = require("../__resources__/pendingOnlyTests.json");
 
 describe("Render tests", () => {
-    it("should not create link to coverage report if not in config", () => {
 
+    it("should show snapshots area if snapshots", () => {
+        const template = (new Processor(undefined) as any).obtainWebFile(Constants.TEMPLATE_HTML);
+        document.write(template);
+
+        (Render as any).updateStatusArea(simplePassingTests);
+        const div = $("#snapshots-group") as JQuery<HTMLDivElement>;
+        expect(div.css("display")).toBe("block");
+    });
+
+    it("should not show snapshots area if no snapshots", () => {
+        const template = (new Processor(undefined) as any).obtainWebFile(Constants.TEMPLATE_HTML);
+        document.write(template);
+
+        (Render as any).updateStatusArea(pendingOnlyTests);
+        const div = $("#snapshots-group") as JQuery<HTMLDivElement>;
+        const p = $("#snapshots-results") as JQuery<HTMLParagraphElement>;
+        expect(div.css("display")).toBe("none");
+    });
+
+    it("should not create link to coverage report if not in config", () => {
 
         const template = (new Processor(undefined) as any).obtainWebFile(Constants.TEMPLATE_HTML);
         document.write(template);

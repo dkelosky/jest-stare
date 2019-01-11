@@ -138,3 +138,5 @@ Object {
 exports[`Render tests should create link to coverage report if in config 1`] = `"/some/place/index.html"`;
 
 exports[`Render tests should not create link to coverage report if not in config 1`] = `"#"`;
+
+exports[`Render tests should not show snapshots area if no snapshots 1`] = `""`;

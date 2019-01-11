@@ -62,19 +62,7 @@ export class Render {
         Doughnut.createChart($("#snapshots-canvas") as JQuery<HTMLCanvasElement>, snapshotChart);
 
         // update status area
-        Status.setResultsClass(
-            $("#test-suites-results") as JQuery<HTMLParagraphElement>,
-            results.numPassedTestSuites, results.numTotalTestSuites - results.numPassedTestSuites - results.numPendingTestSuites);
-        Status.setResultsClass(
-            $("#tests-results") as JQuery<HTMLParagraphElement>,
-            results.numPassedTests, results.numTotalTests - results.numPassedTests - results.numPendingTests);
-        Status.setResultsClass(
-            $("#snapshots-results") as JQuery<HTMLParagraphElement>,
-            results.snapshot.matched, results.snapshot.unmatched);
-
-        if (results.snapshot.matched === 0 && results.snapshot.unmatched === 0) {
-            $("#snapshots-group").hide();
-        }
+        this.updateStatusArea(results);
 
         // build suites
         const tableHtml = TestSuite.create(results);
@@ -95,6 +83,29 @@ export class Render {
             $("." + Constants.FAILED_TEST) as JQuery<HTMLDivElement>,
             $("#lab-passoff-switch") as JQuery<HTMLInputElement>,
             $("." + Constants.BOTH_TEST) as JQuery<HTMLDivElement>);
+    }
+
+    /**
+     * Set status area
+     * @private
+     * @static
+     * @param {jest.AggregatedResult} results
+     * @memberof Render
+     */
+    private static updateStatusArea(results: jest.AggregatedResult) {
+        Status.setResultsClass(
+            $("#test-suites-results") as JQuery<HTMLParagraphElement>,
+            results.numPassedTestSuites, results.numTotalTestSuites - results.numPassedTestSuites - results.numPendingTestSuites);
+        Status.setResultsClass(
+            $("#tests-results") as JQuery<HTMLParagraphElement>,
+            results.numPassedTests, results.numTotalTests - results.numPassedTests - results.numPendingTests);
+        Status.setResultsClass(
+            $("#snapshots-results") as JQuery<HTMLParagraphElement>,
+            results.snapshot.matched, results.snapshot.unmatched);
+
+        if (results.snapshot.matched === 0 && results.snapshot.unmatched === 0) {
+            $("#snapshots-group").hide();
+        }
     }
 
     /**
