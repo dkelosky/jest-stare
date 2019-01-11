@@ -26,10 +26,33 @@ export class Render {
      */
     public static init() {
         document.addEventListener("DOMContentLoaded", () => {
-            const results: jest.AggregatedResult = JSON.parse($("#test-results").text());
             const config: IJestStareConfig = JSON.parse($("#test-config").text());
+            const results: jest.AggregatedResult = JSON.parse($("#test-results").text());
+
+            try {
+                const globalConfig: jest.GlobalConfig = JSON.parse($("#test-global-config").text());
+                const regex = new RegExp(Render.escapeRegExp(globalConfig.rootDir), "g");
+                results.testResults.forEach((testResult) => {
+                    testResult.testFilePath = testResult.testFilePath.replace(regex, "");
+                });
+            } catch (e) {
+                // do nothing
+            }
+
             Render.show(results, config);
         });
+    }
+
+    /**
+     * Escape special characters
+     * @private
+     * @static
+     * @param {string} str - string to escape
+     * @returns
+     * @memberof Render
+     */
+    private static escapeRegExp(str: string) {
+        return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
     }
 
     /**
