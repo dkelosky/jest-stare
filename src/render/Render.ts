@@ -1,7 +1,4 @@
-// import * as bootstrap from "bootstrap/dist/js/bootstrap.bundle.min.js";
 import * as $ from "jquery";
-// import { jest.AggregatedResult } from "../processor/doc/jest/jest.AggregatedResult";
-// import { IInnerTestResults } from "../processor/doc/jest/IInnerTestResults";
 import { Switch } from "./navigation/Switch";
 import { Constants } from "./Constants";
 import { Status } from "./charts/Status";
