@@ -69,15 +69,6 @@ export class Processor {
 
         const config = new Config(this.logger, this.mExplicitConfig, this.mProcessParms).buildConfig();
 
-        // if (config.merge) {
-        //     const mergeDir = config.resultDir + config.resultJson;
-        //     if (IO.existsSync(mergeDir)) {
-        //         const old: IResultsProcessorInput = JSON.parse(IO.readFileSync(mergeDir));
-        //         this.mResults = new Merger().combine(old, this.mResults);
-        //         this.logger.info(Constants.LOGO + Constants.MERGE_MESSAGE + mergeDir + Constants.SUFFIX);
-        //     }
-        // }
-
         // build mustache render substitution values
         substitute.results = this.mResults;
         substitute.rawResults = JSON.stringify(this.mResults, null, 2);
@@ -87,6 +78,7 @@ export class Processor {
         // save in reporter
         if (this.mProcessParms && this.mProcessParms.reporter) {
             this.mProcessParms.reporter.jestStareConfig = config;
+            substitute.globalConfig = JSON.stringify(this.mProcessParms.reporter.mGlobalConfig, null, 2);
         }
 
         // generate report
@@ -120,6 +112,11 @@ export class Processor {
         // create jest-stare config if requested
         if (substitute.jestStareConfig.jestStareConfigJson) {
             IO.writeFileSync(resultDir + substitute.jestStareConfig.jestStareConfigJson, substitute.rawJestStareConfig);
+        }
+
+        // create global config if requested
+        if (substitute.globalConfig && substitute.jestStareConfig.jestGlobalConfigJson) {
+            IO.writeFileSync(resultDir + substitute.jestStareConfig.jestGlobalConfigJson, substitute.globalConfig);
         }
 
         // create our css

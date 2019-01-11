@@ -51,6 +51,14 @@ export interface IJestStareConfig {
     jestStareConfigJson?: string;
 
     /**
+     * Request that the jest global configuration be also saved in the results output directory
+     * by indicating a file name here.  This can only be written if run in "reporter" mode.
+     * @type {string}
+     * @memberof IJestStareConfig
+     */
+    jestGlobalConfigJson?: string;
+
+    /**
      * Link to coverage report for convenient referencing in top left of HTML report
      * @type {string}
      * @memberof IJestStareConfig

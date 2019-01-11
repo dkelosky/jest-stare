@@ -3,11 +3,10 @@ jest.mock("../../src/utils/IO");
 import { IO } from "../../src/utils/IO";
 import { Processor } from "../../src/processor/Processor";
 import { Logger } from "../../src/utils/Logger";
-import { IResultsProcessorInput } from "../../src/processor/doc/jest/IResultsProcessorInput";
 import { ISubstitute } from "../../src/processor/doc/ISubstitute";
 import { Constants } from "../../src/processor/Constants";
 
-const simplePassingTests: IResultsProcessorInput = require("../__resources__/simplePassingTests.json");
+const simplePassingTests: jest.AggregatedResult = require("../__resources__/simplePassingTests.json");
 
 describe("Processor tests", () => {
 

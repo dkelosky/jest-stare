@@ -47,6 +47,7 @@ export class EnvVars {
             log: this.mEnvSrv.readBoolEnvValue("LOG"),
             merge: this.mEnvSrv.readBoolEnvValue("MERGE"),
             jestStareConfigJson: this.mEnvSrv.readEnvValue("CONFIG_JSON"),
+            jestGlobalConfigJson: this.mEnvSrv.readEnvValue("GLOBAL_CONFIG_JSON"),
             coverageLink: this.mEnvSrv.readEnvValue("COVERAGE_LINK"),
             additionalResultsProcessors
         };
@@ -89,6 +90,10 @@ export class EnvVars {
                 envConfig.jestStareConfigJson == null ? packageJsonConfig.jestStareConfigJson : envConfig.jestStareConfigJson;
         }
 
+        if (envConfig.jestGlobalConfigJson != null || packageJsonConfig.jestGlobalConfigJson != null) {
+            mergedConfig.jestGlobalConfigJson =
+                envConfig.jestGlobalConfigJson == null ? packageJsonConfig.jestGlobalConfigJson : envConfig.jestGlobalConfigJson;
+        }
 
         if (envConfig.coverageLink != null || packageJsonConfig.coverageLink != null) {
             mergedConfig.coverageLink = envConfig.coverageLink == null ? packageJsonConfig.coverageLink : envConfig.coverageLink;

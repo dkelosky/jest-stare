@@ -5,6 +5,7 @@ const simpleFailingTests: jest.AggregatedResult = require("../../../__resources_
 const twoSideBySideFailDiffTests: jest.AggregatedResult = require("../../../__resources__/twoSideBySideFailDiffTests.json");
 const nestedDescribeTests: jest.AggregatedResult = require("../../../__resources__/nestedDescribeTests.json");
 const pendingTests: jest.AggregatedResult = require("../../../__resources__/pendingTests.json");
+const pendingOnlyTests: jest.AggregatedResult = require("../../../__resources__/pendingOnlyTests.json");
 
 describe("TestSuite tests", () => {
 
@@ -18,6 +19,10 @@ describe("TestSuite tests", () => {
 
     it("should create proper elements for two diffs in html", () => {
         expect(TestSuite.create(twoSideBySideFailDiffTests)).toMatchSnapshot();
+    });
+
+    it("should show no red box if all tests are pending", () => {
+        expect(TestSuite.create(pendingOnlyTests)).toMatchSnapshot();
     });
 
     it("should create proper elements for large test > 500 tests", () => {

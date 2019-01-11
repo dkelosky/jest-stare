@@ -1,10 +1,9 @@
 import { Test } from "../../../src/render/tests/Test";
-import { IResultsProcessorInput } from "../../../src/processor/doc/jest/IResultsProcessorInput";
 
-const simplePassingTests: IResultsProcessorInput = require("../../__resources__/simplePassingTests.json");
-const simpleFailingTests: IResultsProcessorInput = require("../../__resources__/simpleFailingTests.json");
-const twoSideBySideFailDiffTests: IResultsProcessorInput = require("../../__resources__/twoSideBySideFailDiffTests.json");
-const largeTests: IResultsProcessorInput = require("../../__resources__/largeTests.json");
+const simplePassingTests: jest.AggregatedResult = require("../../__resources__/simplePassingTests.json");
+const simpleFailingTests: jest.AggregatedResult = require("../../__resources__/simpleFailingTests.json");
+const twoSideBySideFailDiffTests: jest.AggregatedResult = require("../../__resources__/twoSideBySideFailDiffTests.json");
+const largeTests: jest.AggregatedResult = require("../../__resources__/largeTests.json");
 
 describe("Test tests", () => {
 

@@ -1,7 +1,4 @@
-// import * as bootstrap from "bootstrap/dist/js/bootstrap.bundle.min.js";
 import * as $ from "jquery";
-// import { jest.AggregatedResult } from "../processor/doc/jest/jest.AggregatedResult";
-// import { IInnerTestResults } from "../processor/doc/jest/IInnerTestResults";
 import { Switch } from "./navigation/Switch";
 import { Constants } from "./Constants";
 import { Status } from "./charts/Status";
@@ -26,10 +23,33 @@ export class Render {
      */
     public static init() {
         document.addEventListener("DOMContentLoaded", () => {
-            const results: jest.AggregatedResult = JSON.parse($("#test-results").text());
             const config: IJestStareConfig = JSON.parse($("#test-config").text());
+            const results: jest.AggregatedResult = JSON.parse($("#test-results").text());
+
+            try {
+                const globalConfig: jest.GlobalConfig = JSON.parse($("#test-global-config").text());
+                const regex = new RegExp(Render.escapeRegExp(globalConfig.rootDir), "g");
+                results.testResults.forEach((testResult) => {
+                    testResult.testFilePath = testResult.testFilePath.replace(regex, "");
+                });
+            } catch (e) {
+                // do nothing
+            }
+
             Render.show(results, config);
         });
+    }
+
+    /**
+     * Escape special characters
+     * @private
+     * @static
+     * @param {string} str - string to escape
+     * @returns
+     * @memberof Render
+     */
+    private static escapeRegExp(str: string) {
+        return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
     }
 
     /**
@@ -62,15 +82,7 @@ export class Render {
         Doughnut.createChart($("#snapshots-canvas") as JQuery<HTMLCanvasElement>, snapshotChart);
 
         // update status area
-        Status.setResultsClass(
-            $("#test-suites-results") as JQuery<HTMLParagraphElement>,
-            results.numPassedTestSuites, results.numTotalTestSuites - results.numPassedTestSuites);
-        Status.setResultsClass(
-            $("#tests-results") as JQuery<HTMLParagraphElement>,
-            results.numPassedTests, results.numTotalTests - results.numPassedTests);
-        Status.setResultsClass(
-            $("#snapshots-results") as JQuery<HTMLParagraphElement>,
-            results.snapshot.matched, results.snapshot.unmatched);
+        this.updateStatusArea(results);
 
         // build suites
         const tableHtml = TestSuite.create(results);
@@ -91,6 +103,29 @@ export class Render {
             $("." + Constants.FAILED_TEST) as JQuery<HTMLDivElement>,
             $("#lab-passoff-switch") as JQuery<HTMLInputElement>,
             $("." + Constants.BOTH_TEST) as JQuery<HTMLDivElement>);
+    }
+
+    /**
+     * Set status area
+     * @private
+     * @static
+     * @param {jest.AggregatedResult} results
+     * @memberof Render
+     */
+    private static updateStatusArea(results: jest.AggregatedResult) {
+        Status.setResultsClass(
+            $("#test-suites-results") as JQuery<HTMLParagraphElement>,
+            results.numPassedTestSuites, results.numTotalTestSuites - results.numPassedTestSuites - results.numPendingTestSuites);
+        Status.setResultsClass(
+            $("#tests-results") as JQuery<HTMLParagraphElement>,
+            results.numPassedTests, results.numTotalTests - results.numPassedTests - results.numPendingTests);
+        Status.setResultsClass(
+            $("#snapshots-results") as JQuery<HTMLParagraphElement>,
+            results.snapshot.matched, results.snapshot.unmatched);
+
+        if (results.snapshot.matched === 0 && results.snapshot.unmatched === 0) {
+            $("#snapshots-group").hide();
+        }
     }
 
     /**
