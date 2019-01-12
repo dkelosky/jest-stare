@@ -9,7 +9,6 @@ Object {
   ],
   "coverageLink": "../../coverage/lcov-report/index.html",
   "jestStareConfigJson": "jest-stare.json",
-  "merge": "true",
   "resultDir": "results/jest-stare//",
   "resultHtml": "index.html",
   "resultJson": "jest-results.json",

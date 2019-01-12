@@ -1,5 +1,2074 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`TestSuite tests should create proper elements for assertion results 1`] = `
+Array [
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom pb-2 mb-0 display-5"
+    />
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom pb-2 mb-0 display-6"
+      >
+        Logger tests
+      </h6>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should get a log instance
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom pb-2 mb-0 display-5"
+    />
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom pb-2 mb-0 display-6"
+      >
+        EnvVarService tests
+      </h6>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should read my env value
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should not find unset env value
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should read my env value that is boolean set to true
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should read my env value that is boolean set to false
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should not find my env value that is not set
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom pb-2 mb-0 display-5"
+    />
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom pb-2 mb-0 display-6"
+      >
+        EnvVars tests
+      </h6>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should have an empty config for no env variables set
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should have a complete config for all env variables set
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom pb-2 mb-0 display-5"
+    />
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom pb-2 mb-0 display-6"
+      >
+        Processor tests
+      </h6>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should accept override config on input and not log when requested not to
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should accept override config on input and log when requested to
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should accept override html and JSON file name
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create a report form an input object
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create file names correctly when default 'resultDir' is used
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should error when called without input
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom pb-2 mb-0 display-5"
+    />
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom pb-2 mb-0 display-6"
+      >
+        Doughnut tests
+      </h6>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should do something
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom pb-2 mb-0 display-5"
+    />
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom pb-2 mb-0 display-6"
+      >
+        Switch tests
+      </h6>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should change classes shown when toggled
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should change classes shown when toggled and change classes for a second toggle too
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom pb-2 mb-0 display-5"
+    />
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom pb-2 mb-0 display-6"
+      >
+        entry tests
+      </h6>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should call processor when not using 'new'
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should call reporter when using 'new'
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom pb-2 mb-0 display-5"
+    />
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom pb-2 mb-0 display-6"
+      >
+        IO tests
+      </h6>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should pretend to write to a file
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should pretend to write to a file and reject promise for IO errors
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should say true if dir exists
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should false if dir does not exist
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should read return an empty object if no package.json is found
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should read return a populated object if package.json is found
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom pb-2 mb-0 display-5"
+    />
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom pb-2 mb-0 display-6"
+      >
+        Render tests
+      </h6>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should not create link to coverage report if not in config
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create link to coverage report if in config
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should build chart data with no examples
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should build chart data with fail examples
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should build chart data with pass examples
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should build chart data with passing, pending, and failing examples
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should build chart data with pending and fail examples only
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should build chart data with pass and fail examples
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should add snapshot chart data with no examples
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should add snapshot chart data with pass examples
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should add snapshot chart data with fail examples
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom pb-2 mb-0 display-5"
+    />
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom pb-2 mb-0 display-6"
+      >
+        TestSuite tests
+      </h6>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create proper elements for simple passing tests
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create proper elements for simple failing tests
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create proper elements for two diffs in html
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create proper elements for large test &gt; 500 tests
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom pb-2 mb-0 display-5"
+    />
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom pb-2 mb-0 display-6"
+      >
+        jest-stare cli tests
+      </h6>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom pb-2 mb-0 display-5"
+    />
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom pb-2 mb-0 display-6"
+      >
+        TestSuite tests
+      </h6>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create proper elements for simple passing tests
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create proper elements for simple failing tests
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create proper elements for two diffs in html
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create proper elements for large test &gt; 500 tests
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create proper elements for nested describes with reused names
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create proper elements for pending tests
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom pb-2 mb-0 display-5"
+    />
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom pb-2 mb-0 display-6"
+      >
+        Status tests
+      </h6>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should set proper class for passed tests
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should set proper class for failed tests
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should set proper class for passed and failed tests
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom pb-2 mb-0 display-5"
+    />
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom pb-2 mb-0 display-6"
+      >
+        Test tests
+      </h6>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create proper elements for simple passing tests
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create proper elements for simple failing tests
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create proper elements for two diffs in html
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should create proper elements for large test &gt; 500 tests
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow passed-test"
+  >
+    <h5
+      class="border-bottom pb-2 mb-0 display-5"
+    />
+    <div
+      class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    >
+      <h6
+        class="border-bottom pb-2 mb-0 display-6"
+      >
+        Config tests
+      </h6>
+      <div
+        class="media text-muted pt-3 passed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should be able to read a config
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              NaNs
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            passed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
 exports[`TestSuite tests should create proper elements for large test > 500 tests 1`] = `
 Array [
   <div

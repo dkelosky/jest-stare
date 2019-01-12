@@ -100,11 +100,8 @@ export class Processor {
      * @memberof Processor
      */
     private generateReport(resultDir: string, substitute: ISubstitute, parms: IProcessParms) {
-
-        // create base html file
+        // create directory
         IO.mkdirsSync(resultDir);
-        IO.writeFileSync(resultDir + substitute.jestStareConfig.resultHtml,
-            mustache.render(this.obtainWebFile(Constants.TEMPLATE_HTML), substitute));
 
         // create raw json
         IO.writeFileSync(resultDir + substitute.jestStareConfig.resultJson, substitute.rawResults);
@@ -118,6 +115,15 @@ export class Processor {
         if (substitute.globalConfig && substitute.jestStareConfig.jestGlobalConfigJson) {
             IO.writeFileSync(resultDir + substitute.jestStareConfig.jestGlobalConfigJson, substitute.globalConfig);
         }
+
+        // exit here for JSON only retain
+        if (substitute.jestStareConfig.report != null && !substitute.jestStareConfig.report) {
+            return;
+        }
+
+        // create base html file
+        IO.writeFileSync(resultDir + substitute.jestStareConfig.resultHtml,
+            mustache.render(this.obtainWebFile(Constants.TEMPLATE_HTML), substitute));
 
         // create our css
         const cssDir = resultDir + Constants.CSS_DIR;
