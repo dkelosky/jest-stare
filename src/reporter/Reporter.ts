@@ -17,14 +17,6 @@ import { Constants } from "../processor/Constants";
 export class Reporter {
 
     /**
-     * - onTestResult?(test: Test, testResult: TestResult, aggregatedResult: AggregatedResult): void;
-     * - onRunStart?(results: AggregatedResult, options: ReporterOnStartOptions): void;
-     * - onTestStart?(test: Test): void;
-     * onRunComplete?(contexts: Set<Context>, results: AggregatedResult): Maybe<Promise<void>>;
-     * getLastError?(): Maybe<Error>;
-     */
-
-    /**
      * jest-stare configuration
      * @private
      * @type {IJestStareConfig}
@@ -57,8 +49,6 @@ export class Reporter {
      * @memberof Reporter
      */
     public onRunStart(results: jest.AggregatedResult, options: ReporterOnStartOptions) {
-        // Logger.get.debug("onRunStart: "); //  + inspect(results));
-        // Logger.get.debug("onRunStart: " + inspect(results));
         Processor.run(results, { additionalResultsProcessors: [], log: false }, { reporter: this });
         this.logger.info(Constants.LOGO + Constants.REPORTER_WRITTING + this.jestStareConfig.resultDir + Constants.SUFFIX);
     }
@@ -69,8 +59,7 @@ export class Reporter {
      * @memberof Reporter
      */
     public onTestStart(test: Test) {
-        // Logger.get.debug("onTestStart: "); // + inspect(test));
-        // Logger.get.debug("onTestStart: " + inspect(test));
+        // do nothing
     }
 
     /**
@@ -81,8 +70,6 @@ export class Reporter {
      * @memberof Reporter
      */
     public onTestResult(test: Test, testResult: TestResult, results: jest.AggregatedResult) {
-        // Logger.get.debug("onTestResult: "); // + inspect(testResult) + " agg: " + inspect(aggregatedResult));
-        // Logger.get.debug("onTestResult: " + inspect(testResult) + " agg: " + inspect(aggregatedResult));
         Processor.run(results, { additionalResultsProcessors: [], log: false }, { reporter: this });
     }
 
@@ -92,9 +79,6 @@ export class Reporter {
      * @param {IResultsProcessorInput} results - jest summarized results
      * @memberof Reporter
      */
-    // Note(Kelosky): jest config appears to be missing some items from its interfaces
-    // so we'll use our custom interface instead of
-    // public onRunComplete(contexts: Set<Context>, results: AggregatedResult) {
     public onRunComplete(contexts: Set<Context>, results: jest.AggregatedResult) {
         // Logger.get.debug("onRunComplete:");
 
@@ -139,7 +123,6 @@ export class Reporter {
         if (this.mLog == null) {
             this.logger = new Logger();
         }
-        // console.log((this.mLog as any).writeStdout)
         return this.mLog;
     }
 }

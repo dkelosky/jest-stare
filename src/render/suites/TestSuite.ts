@@ -26,6 +26,22 @@ export class TestSuite {
 
         results.testResults.forEach((testResult) => {
 
+            // NOTE(Kelosky): jest.AggregateResult has a testResults array
+            // which contains a jest.TestResults array.  jest.TestResults array
+            // is of type AssertionResults array.  however, it looks like they
+            // somehow allow for the the field name to be assertionResults instead
+            // of the documented interface testResults.  So, we'll cast to any, and attempt
+            // access assertionResults if testsResults are missing
+            if (testResult.testResults == null) {
+                // tslint:disable-next-line:no-console
+                console.error("Unexpected testResults field missing");
+                if ((testResult as any).assertionResults != null) {
+                    // tslint:disable-next-line:no-console
+                    console.warn("Attempting to use assertionResults: results are unpredictable");
+                    testResult.testResults  = (testResult as any).assertionResults;
+                }
+            }
+
             // TODO(Kelosky): set for pending
             let testStatusClass = Constants.PASSED_TEST;
 

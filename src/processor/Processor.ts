@@ -117,7 +117,7 @@ export class Processor {
         }
 
         // exit here for JSON only retain
-        if (!substitute.jestStareConfig.report) {
+        if (substitute.jestStareConfig.report != null && !substitute.jestStareConfig.report) {
             return;
         }
 

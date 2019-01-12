@@ -1,0 +1,171 @@
+{
+    "numFailedTestSuites": 0,
+    "numFailedTests": 0,
+    "numPassedTestSuites": 1,
+    "numPassedTests": 13,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTotalTestSuites": 1,
+    "numTotalTests": 13,
+    "snapshot": {
+        "added": 0,
+        "didUpdate": false,
+        "failure": false,
+        "filesAdded": 0,
+        "filesRemoved": 0,
+        "filesUnmatched": 0,
+        "filesUpdated": 0,
+        "matched": 11,
+        "total": 11,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+    },
+    "startTime": 1547249396207,
+    "success": true,
+    "testResults": [
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should show snapshots area if snapshots",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should show snapshots area if snapshots"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should not show snapshots area if no snapshots",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should not show snapshots area if no snapshots"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should not create link to coverage report if not in config",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should not create link to coverage report if not in config"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should create link to coverage report if in config",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should create link to coverage report if in config"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should build chart data with no examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should build chart data with no examples"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should build chart data with fail examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should build chart data with fail examples"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should build chart data with pass examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should build chart data with pass examples"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should build chart data with passing, pending, and failing examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should build chart data with passing, pending, and failing examples"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should build chart data with pending and fail examples only",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should build chart data with pending and fail examples only"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should build chart data with pass and fail examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should build chart data with pass and fail examples"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should add snapshot chart data with no examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should add snapshot chart data with no examples"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should add snapshot chart data with pass examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should add snapshot chart data with pass examples"
+                },
+                {
+                    "ancestorTitles": [
+                        "Render tests"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Render tests should add snapshot chart data with fail examples",
+                    "location": null,
+                    "status": "passed",
+                    "title": "should add snapshot chart data with fail examples"
+                }
+            ],
+            "endTime": 1547249400935,
+            "message": "",
+            "name": "C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\render\\Render.test.ts",
+            "startTime": 1547249397820,
+            "status": "passed",
+            "summary": ""
+        }
+    ],
+    "wasInterrupted": false
+}

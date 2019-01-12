@@ -6,6 +6,7 @@ const twoSideBySideFailDiffTests: jest.AggregatedResult = require("../../../__re
 const nestedDescribeTests: jest.AggregatedResult = require("../../../__resources__/nestedDescribeTests.json");
 const pendingTests: jest.AggregatedResult = require("../../../__resources__/pendingTests.json");
 const pendingOnlyTests: jest.AggregatedResult = require("../../../__resources__/pendingOnlyTests.json");
+const assertionRestultsTests: jest.AggregatedResult = require("../../../__resources__/assertionRestultsTests.json");
 
 describe("TestSuite tests", () => {
 
@@ -39,7 +40,9 @@ describe("TestSuite tests", () => {
     });
 
     it("should create proper elements for assertion results", () => {
+        // TODO(Kelosky): remove pending to test - issues console messages so
+        // marking as pending for now
         pending();
-        // expect(TestSuite.create(assertionResults)).toMatchSnapshot();
+        expect(TestSuite.create(assertionRestultsTests)).toMatchSnapshot();
     });
 });
