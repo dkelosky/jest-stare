@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import * as  mkdirp from "mkdirp";
+import { sep } from "path";
 const pkgUp = require("pkg-up");
 
 /**
@@ -30,7 +30,7 @@ export class IO {
      * @memberof IO
      */
     public static writeFile(path: string, data: any): Promise<void> {
-        return new Promise<void>( (resolve, reject) => {
+        return new Promise<void>((resolve, reject) => {
             fs.writeFile(path, data, (error) => {
                 if (error) {
                     reject(error);
@@ -51,6 +51,17 @@ export class IO {
     public static writeFileSync(path: string, data: any) {
         fs.writeFileSync(path, data);
     }
+    /**
+     * Create a directory if it does not yet exist synchronously.
+     * @param  {string} dir - directory to create
+     * @return {undefined}
+     * @memberof IO
+     */
+    public static mkDirSync(dir: string) {
+        if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir);
+        }
+    }
 
     /**
      * Make directories (recursive)
@@ -59,9 +70,10 @@ export class IO {
      * @memberof IO
      */
     public static mkdirsSync(dir: string) {
-        if (!IO.existsSync(dir)) {
-            mkdirp.sync(dir);
-        }
+        const dirs = dir.split(sep);
+        dirs.forEach((d) => {
+            IO.mkDirSync(d);
+        });
     }
 
     /**

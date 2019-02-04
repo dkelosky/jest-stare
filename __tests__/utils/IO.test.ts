@@ -1,10 +1,10 @@
 import Mock = jest.Mock;
 jest.mock("fs");
 jest.mock("pkg-up");
-jest.mock("mkdirp");
 const pkgUp = require("pkg-up");
 import * as fs from "fs";
 import { IO } from "../../src/utils/IO";
+import { sep } from "path";
 
 describe("IO tests", () => {
 
@@ -41,6 +41,135 @@ describe("IO tests", () => {
             error = thrownError;
         }
         expect(error.message).toMatchSnapshot();
+    });
+
+    describe("mkdirsSync tests", () => {
+
+        it("should not be called for each directory if all exist", () => {
+            const fn = (fs.existsSync as any) as Mock<typeof fs.existsSync>;
+            fn.mockImplementation((path: fs.PathLike) => {
+                return true; // all exist
+            });
+
+            const fnMkDir = (fs.mkdirSync as any) as Mock<typeof fs.mkdirSync>;
+            fnMkDir.mockImplementation((path: fs.PathLike, mode?: string | number) => {
+                // do nothing
+            });
+
+            const dir = (`one${sep}two${sep}three${sep}four`);
+            IO.mkdirsSync(dir);
+            expect(fnMkDir).not.toBeCalled();
+        });
+
+        it("should be called for each directory if non exist", () => {
+            const fn = (fs.existsSync as any) as Mock<typeof fs.existsSync>;
+            fn.mockImplementation((path: fs.PathLike) => {
+                return false;
+            });
+
+            const fnMkDir = (fs.mkdirSync as any) as Mock<typeof fs.mkdirSync>;
+            fnMkDir.mockImplementation((path: fs.PathLike, mode?: string | number) => {
+                // do nothing
+            });
+
+            const dir = (`one${sep}two${sep}three${sep}four`);
+            IO.mkdirsSync(dir);
+            expect(fnMkDir).toHaveBeenCalledTimes(dir.split(sep).length);
+        });
+
+        it("should be called for each directory that does not exist", () => {
+            const fn = (fs.existsSync as any) as Mock<typeof fs.existsSync>;
+            const dir = (`one${sep}two${sep}three${sep}four`);
+
+            fn.mockImplementation((path: fs.PathLike) => {
+                if (path === "one" || path === "three") {
+                    return false;
+                } else {
+                    return true;
+                }
+            });
+
+            const fnMkDir = (fs.mkdirSync as any) as Mock<typeof fs.mkdirSync>;
+            fnMkDir.mockImplementation((path: fs.PathLike, mode?: string | number) => {
+                // do nothing
+            });
+
+            IO.mkdirsSync(dir);
+            expect(fn).toHaveBeenCalledTimes(dir.split(sep).length); // called every time
+            expect(fnMkDir).toHaveBeenCalledTimes(dir.split(sep).length / 2); // called half the time
+        });
+    });
+
+    describe("writeFileSync tests", () => {
+
+        it("should call fs writeFileSync", () => {
+            const fn = (fs.writeFileSync as any) as Mock<typeof fs.writeFileSync>;
+            fn.mockImplementation((path: string | number | Buffer | URL, data: any, options?: any) => {
+                // do nothing
+            });
+            IO.writeFileSync("/some/random/file", "lots of words");
+            expect(fn).toBeCalled();
+        });
+    });
+
+    describe("mkDirSync tests", () => {
+        it("should be called if dir does not exist", () => {
+            const fn = (fs.existsSync as any) as Mock<typeof fs.existsSync>;
+            fn.mockImplementation((path: fs.PathLike) => {
+                return false;
+            });
+            const fnMkDir = (fs.mkdirSync as any) as Mock<typeof fs.mkdirSync>;
+            fnMkDir.mockImplementation((path: fs.PathLike, mode?: string | number) => {
+                // do nothing
+            });
+
+            IO.mkDirSync("blah/blah");
+            expect(fnMkDir).toBeCalled();
+        });
+
+        it("should not be called if dir does exist", () => {
+            const fn = (fs.existsSync as any) as Mock<typeof fs.existsSync>;
+            fn.mockImplementation((path: fs.PathLike) => {
+                return true;
+            });
+            const fnMkDir = (fs.mkdirSync as any) as Mock<typeof fs.mkdirSync>;
+            fnMkDir.mockImplementation((path: fs.PathLike, mode?: string | number) => {
+                // do nothing
+            });
+
+            IO.mkDirSync("blah/blah");
+            expect(fnMkDir).not.toBeCalled();
+        });
+    });
+
+    describe("unlinkSync tests", () => {
+        it("should not be called if dir does not exist", () => {
+            const fn = (fs.existsSync as any) as Mock<typeof fs.existsSync>;
+            fn.mockImplementation((path: fs.PathLike) => {
+                return false;
+            });
+            const fnUnlink = (fs.unlinkSync as any) as Mock<typeof fs.unlinkSync>;
+            fnUnlink.mockImplementation((path: fs.PathLike) => {
+                // do nothing
+            });
+
+            IO.unlinkSync("blah/blah");
+            expect(fnUnlink).not.toBeCalled();
+        });
+
+        it("should be called if dir exists", () => {
+            const fn = (fs.existsSync as any) as Mock<typeof fs.existsSync>;
+            fn.mockImplementation((path: fs.PathLike) => {
+                return true;
+            });
+            const fnUnlink = (fs.unlinkSync as any) as Mock<typeof fs.unlinkSync>;
+            fnUnlink.mockImplementation((path: fs.PathLike) => {
+                // do nothing
+            });
+
+            IO.unlinkSync("blah/blah");
+            expect(fnUnlink).toBeCalled();
+        });
     });
 
     it("should say true if dir exists", () => {
