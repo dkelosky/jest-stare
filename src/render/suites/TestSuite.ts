@@ -38,12 +38,12 @@ export class TestSuite {
                 if ((testResult as any).assertionResults != null) {
                     // tslint:disable-next-line:no-console
                     console.warn("Attempting to use assertionResults: results are unpredictable");
-                    testResult.testResults  = (testResult as any).assertionResults;
+                    testResult.testResults = (testResult as any).assertionResults;
                 }
             }
 
             // TODO(Kelosky): set for pending
-            let testStatusClass = Constants.PASSED_TEST;
+            let testStatusClass; // = Constants.PASSED_TEST;
 
             const testSectionStatus: Map<string, string> = new Map<string, string>();
             for (const result of testResult.testResults) {
@@ -96,6 +96,10 @@ export class TestSuite {
                         }
                     }
                 }
+            }
+
+            if (testStatusClass === undefined) {
+                testStatusClass = Constants.PASSED_TEST;
             }
 
             const div = document.createElement("div") as HTMLDivElement;
