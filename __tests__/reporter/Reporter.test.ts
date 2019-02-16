@@ -2,7 +2,7 @@ import { Processor } from "../../src/processor/Processor";
 import { Reporter } from "../../src/Reporter/Reporter";
 
 describe("Reporter tests", () => {
-    it("should test the repoter", () => {
+    it("should test the repoter runs without crashing", () => {
         const mockFn = jest.fn((data) => {
             return data;
         });

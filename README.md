@@ -115,20 +115,9 @@ To get around this problem, consider excluding `jest-stare` *.js files from watc
     ],
 ```
 
-## Development Building / Testing
-If you'd like to submit a Pull Request, here are some basic steps to test out code changes.  Suggestions and improvements are welcome!
+## Contributing
 
-### First time setup
-1. `git clone` this repo
-2. `npm install`
-
-### Build & Test
-1. `npm run build`
-2. `npm run test`
-
-### Run an Example
-You can create a report from tests in the `__tests__/example` by issuing: `jest --testRegex __tests__.*\\.example\\.ts`
-Or, you can use `npm run example` (which includes a build before creating a sample report).
+See [contributing](/CONTRIBUTING.md).
 
 ## Acknowledgements
 Thanks to [dogboydog](https://github.com/dogboydog) for additions to configuration!
