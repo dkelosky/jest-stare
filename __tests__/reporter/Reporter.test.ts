@@ -1,5 +1,5 @@
 import { Processor } from "../../src/processor/Processor";
-import { Reporter } from "../../src/Reporter/Reporter";
+import { Reporter } from "../../src/reporter/Reporter";
 
 describe("Reporter tests", () => {
     it("should test the repoter runs without crashing", () => {
