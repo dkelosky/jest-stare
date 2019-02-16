@@ -1,4 +1,3 @@
-import GlobalConfig = jest.GlobalConfig;
 import Test = jest.Test;
 import TestResult = jest.TestResult;
 import ReporterOnStartOptions = jest.ReporterOnStartOptions;

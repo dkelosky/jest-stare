@@ -6,9 +6,7 @@
 This is a Jest HTML reporter.  It takes summary test results from jest
 and parses them into an HTML file for improved readability and filtering.
 
-In previous versions, jest-stare was also a "testResultsProcessor" but this capability
-appears to be deprecated by Jest.  Previous versions of jest-stare document how to configure this,
-but this capability will go away in the next major version of jest-stare.
+jest-stare may also run as a "testResultsProcessor".
 
 ![Sample](images/newSampleReport.png "Sample Report")
 
@@ -26,10 +24,12 @@ but this capability will go away in the next major version of jest-stare.
 Run tests or a test with jest and specify `jest-stare` on the `--reporters` option:
 
 * `jest --reporters default jest-stare`
+* `jest --testResultsProcessor=jest-stare`
 
 Alternatively, in your `jest` config within `package.json` set `reporters` to `jest-stare` :
 
 * `"reporters: ["default", "jest-stare"]`
+* `"testResultsProcessor": "./node_modules/jest-stare"`
 
 `jest-stare` when used as a reporter updates the HTML report on each completed test run.  You can use this to view test output
 that is incomplete (before each test suite completes).  Refresh your browser to see new tests as each suite completes.

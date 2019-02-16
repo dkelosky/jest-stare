@@ -1,6 +1,6 @@
 {
   "name": "jest-stare",
-  "version": "1.11.0",
+  "version": "1.11.1",
   "description": "jest html reporter (results processor) to view HTML jest results, save raw JSON, and invoke multiple reporters",
   "license": "MIT",
   "repository": "https://github.com/dkelosky/jest-stare",
@@ -55,7 +55,6 @@
     "diff2html": "^2.7.0",
     "holderjs": "^2.9.6",
     "jquery": "^3.2.1",
-    "mkdirp": "^0.5.1",
     "moment": "^2.23.0",
     "mustache": "^2.3.2",
     "pkg-up": "^2.0.0",
@@ -67,7 +66,6 @@
     "@types/diff2html": "0.0.4",
     "@types/jest": "^22.2.3",
     "@types/jquery": "^3.3.29",
-    "@types/mkdirp": "^0.5.2",
     "@types/mustache": "^0.8.32",
     "@types/node": "^8.10.39",
     "browserify": "^16.2.3",
