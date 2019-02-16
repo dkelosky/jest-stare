@@ -4,7 +4,8 @@ jest.mock("pkg-up");
 const pkgUp = require("pkg-up");
 import * as fs from "fs";
 import { IO } from "../../src/utils/IO";
-import { sep } from "path";
+// import { sep } from "path";
+const sep = "/";
 
 describe("IO tests", () => {
 
@@ -82,7 +83,9 @@ describe("IO tests", () => {
             const dir = (`one${sep}two${sep}three${sep}four`);
 
             fn.mockImplementation((path: fs.PathLike) => {
-                if (path === "one" || path === "three") {
+                // console.log(path)
+
+                if (path === "one/" || path === "one/two/three/") {
                     return false;
                 } else {
                     return true;

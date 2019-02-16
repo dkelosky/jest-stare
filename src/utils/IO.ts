@@ -1,5 +1,4 @@
 import * as fs from "fs";
-import { sep } from "path";
 const pkgUp = require("pkg-up");
 
 /**
@@ -70,9 +69,13 @@ export class IO {
      * @memberof IO
      */
     public static mkdirsSync(dir: string) {
-        const dirs = dir.split(sep);
+
+        let built = "";
+        const dirs = dir.split("/");
+        // dirs.shift();
         dirs.forEach((d) => {
-            IO.mkDirSync(d);
+            built += (d + "/");
+            IO.mkDirSync(built);
         });
     }
 
