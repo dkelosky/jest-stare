@@ -43,7 +43,7 @@ export class TestSuite {
             }
 
             // TODO(Kelosky): set for pending
-            let testStatusClass = Constants.PASSED_TEST;
+            let testStatusClass; // = Constants.PASSED_TEST;
 
             const testSectionStatus: Map<string, string> = new Map<string, string>();
             for (const result of testResult.testResults) {
