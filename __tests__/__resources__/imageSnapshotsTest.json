@@ -1,0 +1,83 @@
+{
+  "numFailedTestSuites": 1,
+  "numFailedTests": 1,
+  "numPassedTestSuites": 0,
+  "numPassedTests": 1,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTotalTestSuites": 1,
+  "numTotalTests": 2,
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": true,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesUnmatched": 1,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 1,
+    "unchecked": 0,
+    "uncheckedKeys": [],
+    "unmatched": 1,
+    "updated": 0
+  },
+  "startTime": 1550776271412,
+  "success": false,
+  "testResults": [
+    {
+      "console": null,
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[1mimage snapshot test › should fail with image snapshot\u001b[39m\u001b[22m\n\n    Expected image to match or be a close match to snapshot but was 10.4736328125% different from snapshot (429 differing pixels).\n    \u001b[1m\u001b[31mSee diff for details:\u001b[39m\u001b[22m \u001b[31m/tmp/jest-stare/__tests__/__examples__/__image_snapshots__/__diff_output__/foo-ts-image-snapshot-test-should-fail-with-image-snapshot-1-diff.png\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 15 | \u001b[39m        \u001b[36mconst\u001b[39m imageAtTest \u001b[33m=\u001b[39m fs\u001b[33m.\u001b[39mreadFileSync(referenceImage)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 16 | \u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[2m\u001b[39m\u001b[90m 17 | \u001b[39m        expect(imageAtTest)\u001b[33m.\u001b[39mtoMatchImageSnapshot()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 18 | \u001b[39m    })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 19 | \u001b[39m})\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 20 | \u001b[39m\u001b[0m\u001b[22m\n\u001b[2m      \u001b[22m\n\u001b[2m      \u001b[2mat Object.it (\u001b[2m\u001b[0m\u001b[36m__tests__/__examples__/foo.ts\u001b[39m\u001b[0m\u001b[2m:17:29)\u001b[2m\u001b[22m\n",
+      "numFailingTests": 1,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "perfStats": {
+        "end": 1550776273274,
+        "start": 1550776271971
+      },
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "unmatched": 1,
+        "updated": 0,
+        "uncheckedKeys": []
+      },
+      "testFilePath": "/tmp/jest-stare/__tests__/__examples__/foo.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "image snapshot test"
+          ],
+          "duration": 109,
+          "failureMessages": [],
+          "fullName": "image snapshot test should pass with image snapshot",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should pass with image snapshot"
+        },
+        {
+          "ancestorTitles": [
+            "image snapshot test"
+          ],
+          "duration": 213,
+          "failureMessages": [
+            "Error: Expected image to match or be a close match to snapshot but was 10.4736328125% different from snapshot (429 differing pixels).\n\u001b[1m\u001b[31mSee diff for details:\u001b[39m\u001b[22m \u001b[31m/tmp/jest-stare/__tests__/__examples__/__image_snapshots__/__diff_output__/foo-ts-image-snapshot-test-should-fail-with-image-snapshot-1-diff.png\u001b[39m\n    at Object.it (/tmp/jest-stare/__tests__/__examples__/foo.ts:17:29)\n    at Object.asyncFn (/tmp/jest-stare/node_modules/jest-config/node_modules/jest-jasmine2/build/jasmine_async.js:82:37)\n    at resolve (/tmp/jest-stare/node_modules/jest-config/node_modules/jest-jasmine2/build/queue_runner.js:52:12)\n    at new Promise (<anonymous>)\n    at mapper (/tmp/jest-stare/node_modules/jest-config/node_modules/jest-jasmine2/build/queue_runner.js:39:19)\n    at promise.then (/tmp/jest-stare/node_modules/jest-config/node_modules/jest-jasmine2/build/queue_runner.js:73:82)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+          ],
+          "fullName": "image snapshot test should fail with image snapshot",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "failed",
+          "title": "should fail with image snapshot"
+        }
+      ],
+      "sourceMaps": {},
+      "skipped": false,
+      "leaks": false
+    }
+  ],
+  "wasInterrupted": false
+}

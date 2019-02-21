@@ -7,6 +7,7 @@ const nestedDescribeTests: jest.AggregatedResult = require("../../../__resources
 const pendingTests: jest.AggregatedResult = require("../../../__resources__/pendingTests.json");
 const pendingOnlyTests: jest.AggregatedResult = require("../../../__resources__/pendingOnlyTests.json");
 const assertionRestultsTests: jest.AggregatedResult = require("../../../__resources__/assertionRestultsTests.json");
+const imageSnapshotTests: jest.AggregatedResult = require("../../../__resources__/imageSnapshotsTest.json");
 
 describe("TestSuite tests", () => {
 
@@ -44,5 +45,9 @@ describe("TestSuite tests", () => {
         // marking as pending for now
         pending();
         expect(TestSuite.create(assertionRestultsTests)).toMatchSnapshot();
+    });
+
+    it("should create proper elements for passing and failing image snapshots", () => {
+        expect(TestSuite.create(imageSnapshotTests)).toMatchSnapshot();
     });
 });

@@ -127,3 +127,19 @@ code {
 .failoff-switch-checkbox:checked + .onoff-switch-label .failoff-switch-switch {
     right: 0px; 
 }
+
+.image-snapshot-diff {
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    padding: 5px 10px;
+}
+.image-snapshot-diff span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.image-snapshot-diff img {
+    max-width: 100%;
+    max-height: 300px;
+}

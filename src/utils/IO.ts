@@ -117,4 +117,14 @@ export class IO {
             return {};
         }
     }
+
+    /**
+     * Copy src file to dest file.
+     *
+     * @param src
+     * @param dest
+     */
+    public static copyFileSync(src: fs.PathLike, dest: fs.PathLike): void {
+        fs.copyFileSync(src, dest);
+    }
 }
