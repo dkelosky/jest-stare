@@ -1,6 +1,7 @@
 import { Constants } from "../Constants";
 import * as AnsiParser from "ansi-parser";
 import { TestDifference } from "../diff/TestDifference";
+import { ImageSnapshotDifference } from "../diff/ImageSnapshotDifference";
 
 
 /**
@@ -145,6 +146,12 @@ export class Test {
                 const diffHtml = TestDifference.generate(failMessage);
                 // const spanDiv = document.createElement("div") as HTMLDivElement;
                 // spanDiv.appendChild(codeSpan);
+                secondDiv.appendChild(diffHtml);
+                show = false;
+            }
+
+            if (ImageSnapshotDifference.containsDiff(failMessage)) {
+                const diffHtml = ImageSnapshotDifference.generate(failMessage);
                 secondDiv.appendChild(diffHtml);
                 show = false;
             }

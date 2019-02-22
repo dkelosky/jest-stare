@@ -11,6 +11,7 @@ import { Dependencies } from "./Dependencies";
 import { isNullOrUndefined } from "util";
 import { IProcessParms } from "./doc/IProcessParms";
 import { Config } from "./Config";
+import { ImageSnapshotDifference } from "../render/diff/ImageSnapshotDifference";
 
 /**
  * Class to post process jest output and summarize information in an html file
@@ -84,11 +85,39 @@ export class Processor {
         // generate report
         this.generateReport(config.resultDir, substitute, this.mProcessParms);
 
+        this.collectImageSnapshots(config.resultDir, this.mResults);
+
         if (config.additionalResultsProcessors != null) {
             this.execute(this.mResults, config.additionalResultsProcessors);
         }
         // return back to jest
         return this.mResults;
+    }
+
+    /**
+     * Save image snapshot files to image snapshot diff dir
+     * @param resultDir
+     * @param parms
+     */
+    private collectImageSnapshots(resultDir: string, results: jest.AggregatedResult) {
+        results.testResults.forEach((testResult) => {
+            if (testResult.numFailingTests &&
+                typeof testResult.failureMessage === "string" &&
+                ImageSnapshotDifference.containsDiff(testResult.failureMessage)) {
+
+                const diffImagePath = ImageSnapshotDifference.parseDiffImagePath(testResult.failureMessage);
+                const diffImageName = ImageSnapshotDifference.parseDiffImageName(testResult.failureMessage);
+
+                if (IO.existsSync(diffImagePath)) {
+                    IO.mkdirsSync(resultDir + Constants.IMAGE_SNAPSHOT_DIFF_DIR);
+
+                    const reportDiffImagePath = resultDir + Constants.IMAGE_SNAPSHOT_DIFF_DIR + diffImageName;
+
+                    IO.copyFileSync(diffImagePath, reportDiffImagePath);
+                }
+            }
+        });
+
     }
 
     /**

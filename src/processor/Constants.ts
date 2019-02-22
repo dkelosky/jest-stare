@@ -100,6 +100,13 @@ export class Constants {
     public static readonly JS_DIR = "js/";
 
     /**
+     * Base dir to contain image snapshot diff files
+     * @static
+     * @memberof Constants
+     */
+    public static readonly IMAGE_SNAPSHOT_DIFF_DIR = "image_snapshot_diff/";
+
+    /**
      * jest option for test results processors
      * @static
      * @memberof Constants
