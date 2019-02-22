@@ -107,8 +107,10 @@ export class Processor {
 
                 const diffImagePath = ImageSnapshotDifference.parseDiffImagePath(testResult.failureMessage);
                 const diffImageName = ImageSnapshotDifference.parseDiffImageName(testResult.failureMessage);
+                console.log(`@!@@@@@ first`)
 
                 if (IO.existsSync(diffImagePath)) {
+                    console.log(`@!@@@@@ here`)
                     IO.mkdirsSync(resultDir + Constants.IMAGE_SNAPSHOT_DIFF_DIR);
 
                     const reportDiffImagePath = resultDir + Constants.IMAGE_SNAPSHOT_DIFF_DIR + diffImageName;

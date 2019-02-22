@@ -9,7 +9,7 @@ import {Constants} from "../../processor/Constants";
 export class ImageSnapshotDifference {
 
     public static DIFF_INDICATOR: string = "different from snapshot";
-    public static DIFF_IMAGE: RegExp = /See diff for details:[^\/]*(\/.+\.png)/;
+    public static DIFF_IMAGE: RegExp = /See diff for details:\s*((.*?)\.png)/;
     public static DIFF_DETAILS: RegExp = /Error: (.*)/;
 
     /**
@@ -78,12 +78,13 @@ export class ImageSnapshotDifference {
     public static parseDiffImageName(jestFailureMessage: string): string {
 
         const path = ImageSnapshotDifference.parseDiffImagePath(jestFailureMessage);
+        console.log(`@@@@@ path ${path}`)
 
-        if (path) {
-            return path.replace(/^.*[\\\/]/, "");
-        }
+        // if (path) {
+        //     return path.replace(/^.*[\\\/]/, "");
+        // }
 
-        return null;
+        return path;
     }
 
     /**
