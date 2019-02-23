@@ -30,7 +30,7 @@ export class Processor {
      * @memberof Processor
      */
     public static run(results: jest.AggregatedResult, explicitConfig?: IJestStareConfig,
-                      parms?: IProcessParms) {
+        parms?: IProcessParms) {
 
         return new Processor(results, explicitConfig, parms).generate();
     }
@@ -51,7 +51,7 @@ export class Processor {
      * @memberof Processor
      */
     constructor(private mResults: jest.AggregatedResult, private mExplicitConfig?: IJestStareConfig,
-                private mProcessParms?: IProcessParms) {
+        private mProcessParms?: IProcessParms) {
     }
 
     /**
@@ -105,16 +105,14 @@ export class Processor {
                 typeof testResult.failureMessage === "string" &&
                 ImageSnapshotDifference.containsDiff(testResult.failureMessage)) {
 
+
                 const diffImagePath = ImageSnapshotDifference.parseDiffImagePath(testResult.failureMessage);
                 const diffImageName = ImageSnapshotDifference.parseDiffImageName(testResult.failureMessage);
-                console.log(`@!@@@@@ first`)
 
                 if (IO.existsSync(diffImagePath)) {
-                    console.log(`@!@@@@@ here`)
                     IO.mkdirsSync(resultDir + Constants.IMAGE_SNAPSHOT_DIFF_DIR);
 
                     const reportDiffImagePath = resultDir + Constants.IMAGE_SNAPSHOT_DIFF_DIR + diffImageName;
-
                     IO.copyFileSync(diffImagePath, reportDiffImagePath);
                 }
             }

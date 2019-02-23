@@ -1,5 +1,6 @@
 import * as $ from "jquery";
-import {Constants} from "../../processor/Constants";
+import { Constants } from "../../processor/Constants";
+import * as AnsiParser from "ansi-parser";
 
 /**
  * Generate a side by side comparison of Jest image snapshot differences
@@ -63,7 +64,7 @@ export class ImageSnapshotDifference {
         const match = ImageSnapshotDifference.DIFF_IMAGE.exec(jestFailureMessage);
 
         if (match) {
-            return match[1].trim();
+            return AnsiParser.removeAnsi(match[1]).trim();
         }
 
         return null;
@@ -78,13 +79,10 @@ export class ImageSnapshotDifference {
     public static parseDiffImageName(jestFailureMessage: string): string {
 
         const path = ImageSnapshotDifference.parseDiffImagePath(jestFailureMessage);
-        console.log(`@@@@@ path ${path}`)
 
-        // if (path) {
-        //     return path.replace(/^.*[\\\/]/, "");
-        // }
-
-        return path;
+        if (path) {
+            return path.replace(/^.*[\\\/]/, "");
+        }
     }
 
     /**
