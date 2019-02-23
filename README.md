@@ -8,8 +8,6 @@
 This is a Jest HTML reporter.  It takes summary test results from jest
 and parses them into an HTML file for improved readability and filtering.
 
-jest-stare may also run as a "testResultsProcessor".
-
 ![Sample](images/newSampleReport.png "Sample Report")
 
 ## Features
@@ -63,6 +61,7 @@ Field | Environmental Variable | Default | Description | Example
 `jestStareConfigJson` |  `JEST_STARE_CONFIG_JSON` |  `undefined` | request to save jest-stare config raw JSON results in the file name | `"jestStareConfigJson": "jest-stare-config.json"`
 `jestGlobalConfigJson` |  `JEST_STARE_GLOBAL_CONFIG_JSON` |  `undefined` | request to save global config results in the file name | `"jestGlobalConfigJson": "global-config.json"`
 `report` |  `JEST_STARE_REPORT` |  `undefined` | boolean, set to false to suppress creating a HTML report (JSON only retained) | `"report": false`
+`additionalResultsProcessors` |  `JEST_STARE_ADDITIONAL_RESULTS_PROCESSORS` | `undefined` | add additional test result processors to produce multiple report |`"additionalResultsProcessors": ["jest-html-reporter", "jest-junit"]`
 `coverageLink` |  `JEST_STARE_COVERAGE_LINK` | `undefined` | link to coverage report if available | `"coverageLink": "../../coverage/lcov-report/index.html"`
 
 ### API

@@ -29,8 +29,7 @@ export class Processor {
      * @returns - returns input results object
      * @memberof Processor
      */
-    public static run(results: jest.AggregatedResult, explicitConfig?: IJestStareConfig,
-        parms?: IProcessParms) {
+    public static run(results: jest.AggregatedResult, explicitConfig?: IJestStareConfig, parms?: IProcessParms) {
 
         return new Processor(results, explicitConfig, parms).generate();
     }
@@ -50,8 +49,7 @@ export class Processor {
      * @param {IProcessParms} [mProcessParms] - parms object to control process behavior
      * @memberof Processor
      */
-    constructor(private mResults: jest.AggregatedResult, private mExplicitConfig?: IJestStareConfig,
-        private mProcessParms?: IProcessParms) {
+    constructor(private mResults: jest.AggregatedResult, private mExplicitConfig?: IJestStareConfig, private mProcessParms?: IProcessParms) {
     }
 
     /**

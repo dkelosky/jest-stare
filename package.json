@@ -1,6 +1,6 @@
 {
   "name": "jest-stare",
-  "version": "1.12.1",
+  "version": "1.12.2",
   "description": "jest html reporter (results processor) to view HTML jest results, save raw JSON, and invoke multiple reporters",
   "license": "MIT",
   "repository": "https://github.com/dkelosky/jest-stare",
@@ -44,6 +44,7 @@
     "examplePassing": "npm run build && jest --testRegex __tests__.*\\.example\\.ts$ Passing",
     "exampleFailing": "npm run build && jest --testRegex __tests__.*\\.example\\.ts$ Failing",
     "coverage": "jest --coverage",
+    "codecov": "codecov",
     "watch": "npm run build -- --watch",
     "watch:test": "jest --watch"
   },
