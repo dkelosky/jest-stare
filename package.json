@@ -44,6 +44,7 @@
     "examplePassing": "npm run build && jest --testRegex __tests__.*\\.example\\.ts$ Passing",
     "exampleFailing": "npm run build && jest --testRegex __tests__.*\\.example\\.ts$ Failing",
     "coverage": "jest --coverage",
+    "codecov": "codecov",
     "watch": "npm run build -- --watch",
     "watch:test": "jest --watch"
   },
