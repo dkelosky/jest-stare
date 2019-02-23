@@ -5,18 +5,19 @@ script:
   - npm run coverage # jest test with coverage flag does coverage too
 after_script:
   - 'cat coverage/lcov.info | ./node_modules/.bin/coveralls' # sends the coverage report to coveralls
+  - npm run codecov
 install:
   - 'npm ci && npm run build'
-deploy:
-  provider: npm
-  email: "dkelosky@gmail.com"
-  api_key: $NPM_TOKEN
-  skip_cleanup: true
+# deploy:
+#   provider: npm
+#   email: "dkelosky@gmail.com"
+#   api_key: $NPM_TOKEN
+#   skip_cleanup: true
   # before push:
   # git add .
   # git commit -m "blah" 
   # npm version xxxxxx
   # git push --tags to deploy
   # npm version prepatch 0.0.1-0 # git push --tags
-  on:
-    tags: true
+  # on:
+    # tags: true

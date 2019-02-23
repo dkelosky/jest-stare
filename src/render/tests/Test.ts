@@ -3,48 +3,6 @@ import * as AnsiParser from "ansi-parser";
 import { TestDifference } from "../diff/TestDifference";
 import { ImageSnapshotDifference } from "../diff/ImageSnapshotDifference";
 
-
-/**
- * Individual sections of report look like this
- */
-
-// <div class="my-3 p-3 bg-white rounded box-shadow">
-//     <h6 class="border-bottom border-gray pb-2 mb-0">Suggestions</h6>
-//     <div class="media text-muted pt-3">
-//         <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
-//         <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-//             <div class="d-flex justify-content-between align-items-center w-100">
-//                 <strong class="text-gray-dark">Full Name</strong>
-//                 <a href="#">Follow</a>
-//             </div>
-//             <span class="d-block">@username</span>
-//         </div>
-//     </div>
-//     <div class="media text-muted pt-3">
-//         <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
-//         <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-//             <div class="d-flex justify-content-between align-items-center w-100">
-//                 <strong class="text-gray-dark">Full Name</strong>
-//                 <a href="#">Follow</a>
-//             </div>
-//             <span class="d-block">@username</span>
-//         </div>
-//     </div>
-//     <div class="media text-muted pt-3">
-//         <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
-//         <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-//             <div class="d-flex justify-content-between align-items-center w-100">
-//                 <strong class="text-gray-dark">Full Name</strong>
-//                 <a href="#">Follow</a>
-//             </div>
-//             <span class="d-block">@username</span>
-//         </div>
-//     </div>
-//     <small class="d-block text-right mt-3">
-//         <a href="#">All suggestions</a>
-//     </small>
-// </div>
-
 /**
  * Create elements for a test
  * @export
@@ -110,22 +68,12 @@ export class Test {
         const titleId = innerTestResult.title.replace(/\s+/g, "-").toLowerCase();
         thirdDiv.appendChild(strong);
 
-        //     <small class="d-block text-right mt-3">
-        //         <a href="#">All suggestions</a>
-        //     </small>
         const small = document.createElement("small") as HTMLElement;
         small.classList.add("d-block", "text-right", "mt-3");
         const conversionValu = 1000;
-        // TODO(Kelosky): clean up small.textContent = innerTestResult.duration as any / conversionValu + "s";
         small.textContent = innerTestResult.duration as any / conversionValu + "s";
 
         thirdDiv.appendChild(small);
-        // const anchor = document.createElement("a") as HTMLAnchorElement;
-        // anchor.href = "#";
-        // anchor.classList.add("disabled");
-        // anchor.textContent = "Expand";
-
-        // thirdDiv.appendChild(anchor);
 
         const span = document.createElement("span") as HTMLSpanElement;
         span.classList.add("d-block", "mb-2");
@@ -142,10 +90,7 @@ export class Test {
 
             // does the failure message contain a snapshot difference?
             if (failMessage.search(TestDifference.DIFF_INDICATOR) >= 0) {
-                // const codeSpan = document.createElement("span") as HTMLSpanElement;
                 const diffHtml = TestDifference.generate(failMessage);
-                // const spanDiv = document.createElement("div") as HTMLDivElement;
-                // spanDiv.appendChild(codeSpan);
                 secondDiv.appendChild(diffHtml);
                 show = false;
             }
@@ -155,16 +100,6 @@ export class Test {
                 secondDiv.appendChild(diffHtml);
                 show = false;
             }
-            // <button class="btn btn-primary" type = "button"
-            // data - toggle="collapse" data - target="#collapseExample" aria - expanded="false" aria - controls="collapseExample" >
-            //     Button with data - target
-            //     < /button>
-
-            // <div class="d-flex justify-content-between align-items-center w-100" >
-            //     <strong class="text-gray-dark" > Full Name < /strong>
-            //         < a href = "#" > Follow < /a>
-            //             < /div>
-
 
             const collapseDiv = document.createElement("div") as HTMLDivElement;
             collapseDiv.classList.add("d-flex", "justify-content-between", "align-items-center", "w-100");
@@ -194,8 +129,6 @@ export class Test {
             pre.appendChild(code);
 
 
-            // else {
-            // non-diff failure message
             failMessageSplit.forEach((entry, index) => {
                 const codeSpan = document.createElement("span") as HTMLSpanElement;
                 if (entry[0] === "+") {
@@ -211,9 +144,6 @@ export class Test {
                 spanDiv.appendChild(codeSpan);
                 code.appendChild(spanDiv);
             });
-            // }
-
-            const failMessageJoin = failMessageSplit.join("\n");
         }
 
         return firstDiv;
