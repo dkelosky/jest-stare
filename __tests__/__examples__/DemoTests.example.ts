@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+import * as fs from "fs";
+import * as path from "path";
 
 describe("Demonstrate a jest-stare report", () => {
     it("should be pending", () => {
@@ -23,15 +23,15 @@ describe("Demonstrate a jest-stare report", () => {
     });
 
     it("should pass with image snapshot", () => {
-        const referenceImage = path.resolve(__dirname, 'reference_images', 'A.png');
+        const referenceImage = path.resolve(__dirname, "reference_images", "A.png");
         const imageAtTest = fs.readFileSync(referenceImage);
 
         expect(imageAtTest).toMatchImageSnapshot();
     });
 
     it("should fail with image snapshot", () => {
-        //Stored snapshot is for A.png, so should fail
-        const referenceImage = path.resolve(__dirname, 'reference_images', 'B.png');
+        // Stored snapshot is for A.png, so should fail
+        const referenceImage = path.resolve(__dirname, "reference_images", "B.png");
         const imageAtTest = fs.readFileSync(referenceImage);
 
         expect(imageAtTest).toMatchImageSnapshot();
