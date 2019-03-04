@@ -98,21 +98,29 @@ export class Processor {
      * @param parms
      */
     private collectImageSnapshots(resultDir: string, results: jest.AggregatedResult) {
-        results.testResults.forEach((testResult) => {
-            if (testResult.numFailingTests &&
-                typeof testResult.failureMessage === "string" &&
-                ImageSnapshotDifference.containsDiff(testResult.failureMessage)) {
+        results.testResults.forEach((rootResult) => {
 
+            if (rootResult.numFailingTests) {
 
-                const diffImagePath = ImageSnapshotDifference.parseDiffImagePath(testResult.failureMessage);
-                const diffImageName = ImageSnapshotDifference.parseDiffImageName(testResult.failureMessage);
+                rootResult.testResults.forEach((testResult) => {
 
-                if (IO.existsSync(diffImagePath)) {
-                    IO.mkdirsSync(resultDir + Constants.IMAGE_SNAPSHOT_DIFF_DIR);
+                    testResult.failureMessages.forEach((failureMessage) => {
 
-                    const reportDiffImagePath = resultDir + Constants.IMAGE_SNAPSHOT_DIFF_DIR + diffImageName;
-                    IO.copyFileSync(diffImagePath, reportDiffImagePath);
-                }
+                        if (typeof failureMessage === "string" &&
+                         ImageSnapshotDifference.containsDiff(failureMessage)) {
+
+                         const diffImagePath = ImageSnapshotDifference.parseDiffImagePath(failureMessage);
+                         const diffImageName = ImageSnapshotDifference.parseDiffImageName(failureMessage);
+
+                         if (IO.existsSync(diffImagePath)) {
+                             IO.mkdirsSync(resultDir + Constants.IMAGE_SNAPSHOT_DIFF_DIR);
+
+                             const reportDiffImagePath = resultDir + Constants.IMAGE_SNAPSHOT_DIFF_DIR + diffImageName;
+                             IO.copyFileSync(diffImagePath, reportDiffImagePath);
+                         }
+                        }
+                    });
+                });
             }
         });
 
