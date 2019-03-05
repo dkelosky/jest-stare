@@ -1,3 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Logger tests should get a log instance 1`] = `"info"`;
+
+exports[`Logger tests should return defaults 1`] = `false`;
+
+exports[`Logger tests should return defaults 2`] = `false`;
+
+exports[`Logger tests should return defaults 3`] = `true`;
+
+exports[`Logger tests should return defaults 4`] = `true`;
+
+exports[`Logger tests should return defaults 5`] = `true`;
+
+exports[`Logger tests should return defaults 6`] = `true`;

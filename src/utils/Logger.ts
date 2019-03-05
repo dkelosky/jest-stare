@@ -146,7 +146,7 @@ export class Logger {
      * @memberof Logger
      */
     public isWarnEnabled(): boolean {
-        return Logger.LEVELS.indexOf("wanr") >= Logger.LEVELS.indexOf(this.level) ? this.on : false;
+        return Logger.LEVELS.indexOf("warn") >= Logger.LEVELS.indexOf(this.level) ? this.on : false;
     }
 
     /**
