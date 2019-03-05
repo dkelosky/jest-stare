@@ -7,6 +7,8 @@ import { Logger } from "../utils/Logger";
 import { Processor } from "../processor/Processor";
 import { IJestStareConfig } from "../processor/doc/IJestStareConfig";
 import { Constants } from "../processor/Constants";
+import { EnvVars } from "../processor/EnvVars";
+import { EnvVarService } from "../utils/EnvVarService";
 
 /**
  * Class to implement basic reporter methods
@@ -32,12 +34,20 @@ export class Reporter {
     private mLog: Logger;
 
     /**
+     * Creates an instance of EnvVars.
+     * @memberof Processor
+     */
+    private mEnvSrv: EnvVarService;
+
+    /**
      * Creates an instance of Reporter.
      * @param {GlobalConfig} mGlobalConfig - jest global config
      * @param {*} mOptions - jest options in effect
      * @memberof Reporter
      */
     constructor(public mGlobalConfig: jest.GlobalConfig, private mOptions: any) {
+        this.mEnvSrv = new EnvVarService(EnvVars.ENV_PREFIX);
+        this.logger.on = this.mEnvSrv.readBoolEnvValue("LOG");
     }
 
 
@@ -82,7 +92,7 @@ export class Reporter {
         // Logger.get.debug("onRunComplete:");
 
         // disallow results processors from a reporter invocation
-        Processor.run(results, {additionalResultsProcessors: []}, {reporter: this});
+        Processor.run(results, { additionalResultsProcessors: [] }, { reporter: this });
     }
 
     /**
