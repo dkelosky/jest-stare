@@ -5187,6 +5187,126 @@ Array [
           </pre>
         </div>
       </div>
+      <div
+        class="media text-muted pt-3 failed-test"
+      >
+        <img
+          alt=""
+          class="mr-2 rounded"
+          data-src="holder.js/32x32?theme=thumb&bg=dc3545&fg=dc3545&size=1"
+        />
+        <div
+          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <strong
+              class="text-gray-dark"
+            >
+              should fail with another image snapshot
+            </strong>
+            <small
+              class="d-block text-right mt-3"
+            >
+              0.213s
+            </small>
+          </div>
+          <span
+            class="d-block mb-2"
+          >
+            failed
+          </span>
+          <div
+            class="image-snapshot-diff"
+          >
+            <span
+              class="text-muted"
+            >
+              Expected image to match or be a close match to snapshot but was 10.4736328125% different from snapshot (429 differing pixels).
+            </span>
+            <a
+              href="image_snapshot_diff/foo-ts-image-snapshot-test-should-fail-with-another-image-snapshot-1-diff.png"
+            >
+              <img
+                src="image_snapshot_diff/foo-ts-image-snapshot-test-should-fail-with-another-image-snapshot-1-diff.png"
+              />
+            </a>
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center w-100"
+          >
+            <div />
+            <button
+              aria-controls="should-fail-with-another-image-snapshot"
+              aria-expanded="false"
+              class="btn btn-light btn-sm"
+              data-target="#should-fail-with-another-image-snapshot"
+              data-toggle="collapse"
+              type="button"
+            >
+              raw
+            </button>
+          </div>
+          <pre
+            class="collapse"
+            id="should-fail-with-another-image-snapshot"
+          >
+            <code>
+              <div>
+                <span>
+                  Error: Expected image to match or be a close match to snapshot but was 10.4736328125% different from snapshot (429 differing pixels).
+                </span>
+              </div>
+              <div>
+                <span>
+                  See diff for details: /tmp/jest-stare/__tests__/__examples__/__image_snapshots__/__diff_output__/foo-ts-image-snapshot-test-should-fail-with-another-image-snapshot-1-diff.png
+                </span>
+              </div>
+              <div>
+                <span>
+                      at Object.it (/tmp/jest-stare/__tests__/__examples__/foo.ts:17:29)
+                </span>
+              </div>
+              <div>
+                <span>
+                      at Object.asyncFn (/tmp/jest-stare/node_modules/jest-config/node_modules/jest-jasmine2/build/jasmine_async.js:82:37)
+                </span>
+              </div>
+              <div>
+                <span>
+                      at resolve (/tmp/jest-stare/node_modules/jest-config/node_modules/jest-jasmine2/build/queue_runner.js:52:12)
+                </span>
+              </div>
+              <div>
+                <span>
+                      at new Promise (&lt;anonymous&gt;)
+                </span>
+              </div>
+              <div>
+                <span>
+                      at mapper (/tmp/jest-stare/node_modules/jest-config/node_modules/jest-jasmine2/build/queue_runner.js:39:19)
+                </span>
+              </div>
+              <div>
+                <span>
+                      at promise.then (/tmp/jest-stare/node_modules/jest-config/node_modules/jest-jasmine2/build/queue_runner.js:73:82)
+                </span>
+              </div>
+              <div>
+                <span>
+                      at &lt;anonymous&gt;
+                </span>
+              </div>
+              <div>
+                <span>
+                      at process._tickCallback (internal/process/next_tick.js:188:7)
+                </span>
+              </div>
+            </code>
+          </pre>
+        </div>
+      </div>
     </div>
   </div>,
 ]

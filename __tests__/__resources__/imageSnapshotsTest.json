@@ -72,6 +72,20 @@
           "numPassingAsserts": 0,
           "status": "failed",
           "title": "should fail with image snapshot"
+        },
+        {
+          "ancestorTitles": [
+            "image snapshot test"
+          ],
+          "duration": 213,
+          "failureMessages": [
+            "Error: Expected image to match or be a close match to snapshot but was 10.4736328125% different from snapshot (429 differing pixels).\n\u001b[1m\u001b[31mSee diff for details:\u001b[39m\u001b[22m \u001b[31m/tmp/jest-stare/__tests__/__examples__/__image_snapshots__/__diff_output__/foo-ts-image-snapshot-test-should-fail-with-another-image-snapshot-1-diff.png\u001b[39m\n    at Object.it (/tmp/jest-stare/__tests__/__examples__/foo.ts:17:29)\n    at Object.asyncFn (/tmp/jest-stare/node_modules/jest-config/node_modules/jest-jasmine2/build/jasmine_async.js:82:37)\n    at resolve (/tmp/jest-stare/node_modules/jest-config/node_modules/jest-jasmine2/build/queue_runner.js:52:12)\n    at new Promise (<anonymous>)\n    at mapper (/tmp/jest-stare/node_modules/jest-config/node_modules/jest-jasmine2/build/queue_runner.js:39:19)\n    at promise.then (/tmp/jest-stare/node_modules/jest-config/node_modules/jest-jasmine2/build/queue_runner.js:73:82)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+          ],
+          "fullName": "image snapshot test should fail with another image snapshot",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "failed",
+          "title": "should fail with another image snapshot"
         }
       ],
       "sourceMaps": {},
