@@ -1,4 +1,3 @@
-import { Constants } from "../Constants";
 import { Chart, ChartConfiguration } from "chart.js";
 import { IChartData } from "../doc/IChartData";
 
