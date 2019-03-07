@@ -1,6 +1,3 @@
-import * as fs from "fs";
-import * as path from "path";
-
 describe("Demonstrate a jest-stare report", () => {
     it("should be pending", () => {
         pending();

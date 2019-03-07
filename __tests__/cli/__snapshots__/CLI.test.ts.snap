@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jest-stare cli tests should not throw error for all input args 1`] = `
+Object {
+  "field": "value",
+}
+`;
+
+exports[`jest-stare cli tests should not throw error for all input args 2`] = `
+Object {
+  "resultDir": "two",
+}
+`;
+
+exports[`jest-stare cli tests should not throw error for input args 1`] = `
+Object {
+  "field": "value",
+}
+`;
