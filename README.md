@@ -3,6 +3,7 @@
 [![CircleCI](https://circleci.com/gh/dkelosky/jest-stare.svg?style=svg)](https://circleci.com/gh/dkelosky/jest-stare)
 [![Build Status](https://travis-ci.org/dkelosky/jest-stare.svg?branch=master)](https://travis-ci.com/dkelosky/jest-stare)
 [![Codecov Coverage](https://img.shields.io/codecov/c/github/dkelosky/jest-stare/master.svg?style=flat-square)](https://codecov.io/gh/dkelosky/jest-stare/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg](https://opensource.org/licenses/MIT)
 
 # Jest HTML Reporter
 This is a Jest HTML reporter.  It takes summary test results from jest
