@@ -9,7 +9,7 @@ import * as AnsiParser from "ansi-parser";
  */
 export class ImageSnapshotDifference {
 
-    public static DIFF_INDICATOR: string = "different from snapshot";
+    public static DIFF_INDICATOR: string[] = ["different from snapshot", "image to be the same size"];
     public static DIFF_IMAGE: RegExp = /See diff for details:\s*((.*?)\.png)/;
     public static DIFF_DETAILS: RegExp = /Error: (.*)/;
 
@@ -20,7 +20,15 @@ export class ImageSnapshotDifference {
      * @memberof TestDifference
      */
     public static containsDiff(jestFailureMessage: string): boolean {
-        return jestFailureMessage.indexOf(ImageSnapshotDifference.DIFF_INDICATOR) >= 0;
+        let isFailure = false;
+        for (const indicator of ImageSnapshotDifference.DIFF_INDICATOR) {
+          if (jestFailureMessage.indexOf(indicator) >= 0) {
+            isFailure = true;
+            break;
+          }
+        }
+
+        return isFailure;
     }
 
     /**
