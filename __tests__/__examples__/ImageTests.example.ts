@@ -26,4 +26,12 @@ describe("Demonstrate a jest-stare report with image diffs", () => {
 
         expect(imageAtTest).toMatchImageSnapshot();
     });
+
+    it("should fail with different image size snapshot", () => {
+        // Stored snapshot is for A.png, so should fail
+        const referenceImage = path.resolve(__dirname, "reference_images", "A-larger.png");
+        const imageAtTest = fs.readFileSync(referenceImage);
+
+        expect(imageAtTest).toMatchImageSnapshot();
+    });
 });
