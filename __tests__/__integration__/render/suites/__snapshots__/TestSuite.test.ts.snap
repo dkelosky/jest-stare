@@ -8777,9 +8777,9 @@ Array [
                               <span
                                 class="d2h-code-line-ctn"
                               >
-                                   "breed": "beagle
+                                   "breed": "beagle"
                                 <del>
-                                  ",
+                                  ,
                                 </del>
                               </span>
                               
@@ -9137,10 +9137,7 @@ Array [
                               <span
                                 class="d2h-code-line-ctn"
                               >
-                                   "breed": "beagle
-                                <ins>
-                                  "
-                                </ins>
+                                   "breed": "beagle"
                               </span>
                               
         
