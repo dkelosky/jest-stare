@@ -1,6 +1,6 @@
 {
   "name": "jest-stare",
-  "version": "1.13.2",
+  "version": "1.14.0",
   "description": "jest html reporter (results processor) to view HTML jest results, save raw JSON, and invoke multiple reporters",
   "license": "MIT",
   "repository": "https://github.com/dkelosky/jest-stare",
@@ -104,7 +104,9 @@
       "ts",
       "js"
     ],
-    "setupFilesAfterEnv": ["<rootDir>/jest.setup.js"],
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ],
     "testEnvironment": "jsdom",
     "reporters": [
       "default",
