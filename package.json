@@ -63,7 +63,7 @@
   },
   "devDependencies": {
     "@types/chalk": "2.2.0",
-    "@types/chart.js": "2.7.42",
+    "@types/chart.js": "2.7.53",
     "@types/diff2html": "0.0.4",
     "@types/jest": "22.2.3",
     "@types/jquery": "3.3.29",
