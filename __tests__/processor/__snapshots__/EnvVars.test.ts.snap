@@ -8,6 +8,7 @@ Object {
     "three",
   ],
   "coverageLink": "www.walmart.com",
+  "disableCharts": false,
   "jestGlobalConfigJson": undefined,
   "jestStareConfigJson": "true",
   "log": false,
@@ -22,6 +23,7 @@ exports[`EnvVars tests should have an empty config for no env variables set 1`] 
 Object {
   "additionalResultsProcessors": undefined,
   "coverageLink": undefined,
+  "disableCharts": undefined,
   "jestGlobalConfigJson": undefined,
   "jestStareConfigJson": undefined,
   "log": undefined,

@@ -68,18 +68,20 @@ export class Render {
         // link to coverage if available
         Render.setCoverageLink(config);
 
-        // build suites chart
-        const suitesData = Render.buildChartsData(results.numPassedTestSuites, results.numFailedTestSuites, results.numPendingTestSuites);
-        Doughnut.createChart($("#test-suites-canvas") as JQuery<HTMLCanvasElement>, suitesData);
+        if (!config.disableCharts) {
+            // build suites chart
+            const suitesData = Render.buildChartsData(results.numPassedTestSuites, results.numFailedTestSuites, results.numPendingTestSuites);
+            Doughnut.createChart($("#test-suites-canvas") as JQuery<HTMLCanvasElement>, suitesData);
 
-        // build tests chart
-        const testsChart = Render.buildChartsData(results.numPassedTests, results.numFailedTests, results.numPendingTests);
-        Doughnut.createChart($("#tests-canvas") as JQuery<HTMLCanvasElement>, testsChart);
+            // build tests chart
+            const testsChart = Render.buildChartsData(results.numPassedTests, results.numFailedTests, results.numPendingTests);
+            Doughnut.createChart($("#tests-canvas") as JQuery<HTMLCanvasElement>, testsChart);
 
-        // base snapshot data
-        let snapshotChart = Render.buildChartsData(results.snapshot.matched, results.snapshot.unmatched);
-        snapshotChart = Render.addSnapshotChartData(results, snapshotChart);
-        Doughnut.createChart($("#snapshots-canvas") as JQuery<HTMLCanvasElement>, snapshotChart);
+            // base snapshot data
+            let snapshotChart = Render.buildChartsData(results.snapshot.matched, results.snapshot.unmatched);
+            snapshotChart = Render.addSnapshotChartData(results, snapshotChart);
+            Doughnut.createChart($("#snapshots-canvas") as JQuery<HTMLCanvasElement>, snapshotChart);
+        }
 
         // update status area
         this.updateStatusArea(results);

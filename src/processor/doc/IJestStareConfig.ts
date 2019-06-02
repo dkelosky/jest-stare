@@ -74,6 +74,13 @@ export interface IJestStareConfig {
      * @memberof IJestStareConfig
      */
     report?: boolean;
+
+    /**
+     * Set to true to hide charts in the HTML report
+     * @type {boolean}
+     * @memberof IJestStareConfig
+     */
+    disableCharts?: boolean;
 }
 
 /**
