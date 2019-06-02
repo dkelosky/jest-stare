@@ -68,7 +68,7 @@
     "@types/jest": "22.2.3",
     "@types/jquery": "3.3.29",
     "@types/mustache": "0.8.32",
-    "@types/node": "8.10.39",
+    "@types/node": "8.10.49",
     "browserify": "16.2.3",
     "codecov": "3.2.0",
     "coveralls": "3.0.3",
