@@ -82,7 +82,7 @@
     "ts-jest": "24.0.2",
     "ts-node": "8.2.0",
     "tslint": "5.12.1",
-    "tslint-config-prettier": "1.17.0",
+    "tslint-config-prettier": "1.18.0",
     "typescript": "3.5.1"
   },
   "engines": {
