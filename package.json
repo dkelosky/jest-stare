@@ -70,7 +70,7 @@
     "@types/mustache": "0.8.32",
     "@types/node": "8.10.49",
     "browserify": "16.2.3",
-    "codecov": "3.2.0",
+    "codecov": "3.5.0",
     "coveralls": "3.0.3",
     "jest": "24.8.0",
     "jest-environment-jsdom": "24.8.0",
