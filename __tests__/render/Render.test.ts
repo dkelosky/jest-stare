@@ -110,4 +110,14 @@ describe("Render tests", () => {
         expect(Doughnut.createChart).not.toBeCalled();
     });
 
+    it("should create donut charts if config has charts enabled", ()=>{
+        const results = require("../__resources__/simplePassingTests.json");
+        Doughnut.createChart = jest.fn(()=>{
+            // should be called
+        });
+        (Render as any).show(results, { disableCharts: false});
+        expect(Doughnut.createChart).toBeCalled();
+    });
+
+
 });
