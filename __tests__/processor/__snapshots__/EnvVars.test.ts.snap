@@ -8,6 +8,7 @@ Object {
     "three",
   ],
   "coverageLink": "www.walmart.com",
+  "disableCharts": false,
   "jestGlobalConfigJson": undefined,
   "jestStareConfigJson": "true",
   "log": false,
@@ -18,10 +19,28 @@ Object {
 }
 `;
 
+exports[`EnvVars tests should have a complete config for all env variables set 2`] = `
+Object {
+  "additionalResultsProcessors": Array [
+    "one",
+    "two",
+    "three",
+  ],
+  "coverageLink": "www.walmart.com",
+  "disableCharts": false,
+  "jestStareConfigJson": "true",
+  "log": false,
+  "resultDir": "some/dir",
+  "resultHtml": "some.html",
+  "resultJson": "some.json",
+}
+`;
+
 exports[`EnvVars tests should have an empty config for no env variables set 1`] = `
 Object {
   "additionalResultsProcessors": undefined,
   "coverageLink": undefined,
+  "disableCharts": undefined,
   "jestGlobalConfigJson": undefined,
   "jestStareConfigJson": undefined,
   "log": undefined,

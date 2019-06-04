@@ -21,7 +21,7 @@ export class EnvVars {
      * Creates an instance of EnvVars.
      * @memberof EnvVars
      */
-    constructor(private mEnvSrv = new EnvVarService(EnvVars.ENV_PREFIX)) {}
+    constructor(private mEnvSrv = new EnvVarService(EnvVars.ENV_PREFIX)) { }
 
     /**
      * Read all jest-stare related environmental variables
@@ -50,6 +50,7 @@ export class EnvVars {
             coverageLink: this.mEnvSrv.readEnvValue("COVERAGE_LINK"),
             report: this.mEnvSrv.readBoolEnvValue("REPORT"),
             additionalResultsProcessors,
+            disableCharts: this.mEnvSrv.readBoolEnvValue("DISABLE_CHARTS"),
         };
     }
 
@@ -102,6 +103,11 @@ export class EnvVars {
         if (envConfig.additionalResultsProcessors != null || packageJsonConfig.additionalResultsProcessors != null) {
             mergedConfig.additionalResultsProcessors =
                 envConfig.additionalResultsProcessors == null ? packageJsonConfig.additionalResultsProcessors : envConfig.additionalResultsProcessors;
+        }
+
+        if (envConfig.disableCharts != null || packageJsonConfig.disableCharts != null) {
+            mergedConfig.disableCharts =
+                envConfig.disableCharts == null ? packageJsonConfig.disableCharts : envConfig.disableCharts;
         }
 
         return mergedConfig;

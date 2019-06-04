@@ -4,10 +4,13 @@ import { Processor } from "../../src/processor/Processor";
 import { Constants } from "../../src/processor/Constants";
 import { IChartData } from "../../src/render/doc/IChartData";
 import { IJestStareConfig } from "../../src/processor/doc/IJestStareConfig";
+import { Doughnut } from "../../src/render/charts/Doughnut";
 
 const simplePassingTests: jest.AggregatedResult = require("../__resources__/simplePassingTests.json");
 const simpleFailingTests: jest.AggregatedResult = require("../__resources__/simpleFailingTests.json");
 const pendingOnlyTests: jest.AggregatedResult = require("../__resources__/pendingOnlyTests.json");
+const changedSnapshotTests: jest.AggregatedResult = require("../__resources__/changedSnapshotTests.json");
+const obsoleteSnapshotTests: jest.AggregatedResult = require("../__resources__/obsoleteSnapshotTests.json");
 
 describe("Render tests", () => {
 
@@ -100,4 +103,30 @@ describe("Render tests", () => {
         expect((Render as any).addSnapshotChartData(simpleFailingTests, chartData)).toMatchSnapshot();
     });
 
+    it("should not create donut charts if config has charts disabled", () => {
+        Doughnut.createChart = jest.fn(() => {
+            throw new Error("Should not have been called.");
+        });
+        (Render as any).show(simplePassingTests, { disableCharts: true });
+        expect(Doughnut.createChart).not.toBeCalled();
+    });
+
+    it("should create donut charts if config has charts enabled", () => {
+        Doughnut.createChart = jest.fn(() => {
+            // should be called
+        });
+        (Render as any).show(simplePassingTests, { disableCharts: false });
+        expect(Doughnut.createChart).toBeCalled();
+    });
+
+    it("should show changed snapshot chart data with changed snapshots ", () => {
+        const chartData: IChartData = (Render as any).buildChartsData(0, 0);
+        expect((Render as any).addSnapshotChartData(changedSnapshotTests, chartData)).toMatchSnapshot();
+    });
+
+
+    it("should show snapshot chart data with obsolete snapshots ", () => {
+        const chartData: IChartData = (Render as any).buildChartsData(0, 0);
+        expect((Render as any).addSnapshotChartData(obsoleteSnapshotTests, chartData)).toMatchSnapshot();
+    });
 });

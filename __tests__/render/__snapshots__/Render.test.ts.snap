@@ -138,3 +138,31 @@ Object {
 exports[`Render tests should create link to coverage report if in config 1`] = `"/some/place/index.html"`;
 
 exports[`Render tests should not create link to coverage report if not in config 1`] = `"#"`;
+
+exports[`Render tests should show changed snapshot chart data with changed snapshots  1`] = `
+Object {
+  "backgroundColor": Array [
+    "#6c757d",
+  ],
+  "data": Array [
+    1,
+  ],
+  "labels": Array [
+    "Changed",
+  ],
+}
+`;
+
+exports[`Render tests should show snapshot chart data with obsolete snapshots  1`] = `
+Object {
+  "backgroundColor": Array [
+    "#ffc107",
+  ],
+  "data": Array [
+    1,
+  ],
+  "labels": Array [
+    "Obsolete Test",
+  ],
+}
+`;

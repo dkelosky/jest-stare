@@ -65,6 +65,7 @@ Field | Environmental Variable | Default | Description | Example
 `report` |  `JEST_STARE_REPORT` |  `undefined` | boolean, set to false to suppress creating a HTML report (JSON only retained) | `"report": false`
 `additionalResultsProcessors` |  `JEST_STARE_ADDITIONAL_RESULTS_PROCESSORS` | `undefined` | add additional test result processors to produce multiple report |`"additionalResultsProcessors": ["jest-html-reporter", "jest-junit"]`
 `coverageLink` |  `JEST_STARE_COVERAGE_LINK` | `undefined` | link to coverage report if available | `"coverageLink": "../../coverage/lcov-report/index.html"`
+`disableCharts` |  `JEST_STARE_DISABLE_CHARTS` | `undefined` | hide the doughnut charts in the HTML report | `"disableCharts": true`
 
 ### API
 You can programmatically invoke jest-stare and provide jest response data via:
