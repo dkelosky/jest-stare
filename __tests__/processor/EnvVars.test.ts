@@ -27,5 +27,7 @@ describe("EnvVars tests", () => {
         process.env[JEST_STARE_DISABLE_CHARTS] = "false";
         const response = new EnvVars().read();
         expect(response).toMatchSnapshot();
+        const newResponse = new EnvVars().resolve({}, response);
+        expect(newResponse).toMatchSnapshot();
     });
 });
