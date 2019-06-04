@@ -4,6 +4,7 @@ import { Processor } from "../../src/processor/Processor";
 import { Constants } from "../../src/processor/Constants";
 import { IChartData } from "../../src/render/doc/IChartData";
 import { IJestStareConfig } from "../../src/processor/doc/IJestStareConfig";
+import { Doughnut } from "../../src/render/charts/Doughnut";
 
 const simplePassingTests: jest.AggregatedResult = require("../__resources__/simplePassingTests.json");
 const simpleFailingTests: jest.AggregatedResult = require("../__resources__/simpleFailingTests.json");
@@ -98,6 +99,15 @@ describe("Render tests", () => {
     it("should add snapshot chart data with fail examples", () => {
         const chartData: IChartData = (Render as any).buildChartsData(0, 2);
         expect((Render as any).addSnapshotChartData(simpleFailingTests, chartData)).toMatchSnapshot();
+    });
+
+    it("should not create donut charts if config has charts disabled", ()=>{
+        const results = require("../__resources__/simplePassingTests.json");
+        Doughnut.createChart = jest.fn(()=>{
+            throw new Error("Should not have been called.");
+        });
+        (Render as any).show(results, { disableCharts: true});
+        expect(Doughnut.createChart).not.toBeCalled();
     });
 
 });
