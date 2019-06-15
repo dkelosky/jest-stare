@@ -6,6 +6,7 @@ import * as fs from "fs";
 import { IO } from "../../src/utils/IO";
 // import { sep } from "path";
 const sep = "/";
+import * as path from "path";
 
 describe("IO tests", () => {
 
@@ -75,17 +76,15 @@ describe("IO tests", () => {
 
             const dir = (`one${sep}two${sep}three${sep}four`);
             IO.mkdirsSync(dir);
-            expect(fnMkDir).toHaveBeenCalledTimes(dir.split(sep).length);
+            expect(fnMkDir).toHaveBeenCalledTimes(path.resolve(dir).replace(/\\/g, sep).split(sep).length);
         });
 
         it("should be called for each directory that does not exist", () => {
             const fn = (fs.existsSync as any) as Mock<typeof fs.existsSync>;
             const dir = (`one${sep}two${sep}three${sep}four`);
 
-            fn.mockImplementation((path: fs.PathLike) => {
-                // console.log(path)
-
-                if (path === "one/" || path === "one/two/three/") {
+            fn.mockImplementation((pathToCheck: fs.PathLike) => {     
+                if (pathToCheck.toString().endsWith("one/") || pathToCheck.toString().endsWith("one/two/three/")) {
                     return false;
                 } else {
                     return true;
@@ -98,8 +97,8 @@ describe("IO tests", () => {
             });
 
             IO.mkdirsSync(dir);
-            expect(fn).toHaveBeenCalledTimes(dir.split(sep).length); // called every time
-            expect(fnMkDir).toHaveBeenCalledTimes(dir.split(sep).length / 2); // called half the time
+            expect(fn).toHaveBeenCalledTimes(path.resolve(dir).replace(/\\/g, sep).split(sep).length); // called every time
+            expect(fnMkDir).toHaveBeenCalledTimes(2); // called half the time
         });
     });
 

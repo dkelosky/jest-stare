@@ -1,4 +1,6 @@
 import * as fs from "fs";
+import * as path from "path";
+
 const pkgUp = require("pkg-up");
 
 /**
@@ -70,13 +72,16 @@ export class IO {
      */
     public static mkdirsSync(dir: string) {
 
-        let built = "";
-        const dirs = dir.split("/");
-        // dirs.shift();
-        dirs.forEach((d) => {
-            built += (d + "/");
-            IO.mkDirSync(built);
-        });
+        // we're splitting on a specific separator character, so replace \ with /
+        // before splitting
+        const dirs = path.resolve(dir).replace(/\\/g, "/").split("/");
+
+        let createDir: string = "";
+        for (const crDir of dirs) {
+
+            createDir += (crDir + "/");
+            IO.mkDirSync(createDir);
+        }
     }
 
     /**
