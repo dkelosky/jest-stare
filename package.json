@@ -62,7 +62,7 @@
     "popper.js": "^1.14.6"
   },
   "devDependencies": {
-    "@types/chart.js": "2.7.54",
+    "@types/chart.js": "2.7.55",
     "@types/diff2html": "0.0.4",
     "@types/jest": "22.2.3",
     "@types/jquery": "3.3.30",
