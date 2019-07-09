@@ -62,7 +62,6 @@
     "popper.js": "^1.14.6"
   },
   "devDependencies": {
-    "@types/chalk": "2.2.0",
     "@types/chart.js": "2.7.54",
     "@types/diff2html": "0.0.4",
     "@types/jest": "22.2.3",
