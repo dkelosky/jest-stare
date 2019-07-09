@@ -109,7 +109,7 @@
     "testEnvironment": "jsdom",
     "reporters": [
       "default",
-      "./"
+      "."
     ]
   },
   "jest-stare": {
