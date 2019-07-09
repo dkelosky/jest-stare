@@ -43,6 +43,7 @@ jobs:
           at: ~/repo
       # - run: yarn test
       - run: pwd
+      - run: ls -la
       - run: npm test
       - persist_to_workspace:
           root: ~/repo
