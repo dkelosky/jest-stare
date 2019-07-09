@@ -42,6 +42,7 @@ jobs:
       - attach_workspace:
           at: ~/repo
       # - run: yarn test
+      - run: pwd
       - run: npm test
       - persist_to_workspace:
           root: ~/repo
