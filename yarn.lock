@@ -323,10 +323,10 @@
   resolved "https://registry.yarnpkg.com/@types/chart.js/-/chart.js-2.7.55.tgz#42fa503865ccbbcebe3399d90c00125bbcafcf9a"
   integrity sha512-CACGbxPkr0vcyrZFpDAr4dqpfgu/PiHWzsKAhXdY+g72Laebjn/dijr7ExwVv9JS/99KrhtKmfJ0vBEhPTJBTQ==
 
-"@types/diff2html@0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@types/diff2html/-/diff2html-0.0.4.tgz#ccbf3299a7ad74c43de3a08729c2acdd77b0b84e"
-  integrity sha512-KTzD7FymTuPp+Eus2HxRdlVcEpQcVEG8Fs0ehRWJdUE26Fm61eO1GN4rYO2MnGk5t4QOZw0cfMVf1vNb5jn3VQ==
+"@types/diff2html@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@types/diff2html/-/diff2html-0.0.5.tgz#99de7b7a8ac77194db10ac047f7a0c86463e49a5"
+  integrity sha512-ZNANtIL5cZ/V9eDnH0P7qERxPchSSM1X6wUuOSioC+aWQE6uie/LVMO3KClOmgxLCu1fD77jy8sanYPP8wH7Yw==
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.1"
