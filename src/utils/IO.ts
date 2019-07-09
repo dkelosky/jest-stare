@@ -25,14 +25,14 @@ export class IO {
     /**
      * Wrap fs.writeFile for promise-based calling
      * @static
-     * @param {string} path - place to write to
+     * @param {string} wpath - place to write to
      * @param {*} data - content to write
      * @returns {Promise<void>} - when write is complete
      * @memberof IO
      */
-    public static writeFile(path: string, data: any): Promise<void> {
+    public static writeFile(wpath: string, data: any): Promise<void> {
         return new Promise<void>((resolve, reject) => {
-            fs.writeFile(path, data, (error) => {
+            fs.writeFile(wpath, data, (error) => {
                 if (error) {
                     reject(error);
                 }
@@ -44,13 +44,13 @@ export class IO {
     /**
      * Wrap fs.writeFile for promise-based calling
      * @static
-     * @param {string} path - place to write to
+     * @param {string} wpath - place to write to
      * @param {*} data - content to write
      * @returns {Promise<void>} - when write is complete
      * @memberof IO
      */
-    public static writeFileSync(path: string, data: any) {
-        fs.writeFileSync(path, data);
+    public static writeFileSync(wpath: string, data: any) {
+        fs.writeFileSync(wpath, data);
     }
     /**
      * Create a directory if it does not yet exist synchronously.
@@ -87,23 +87,23 @@ export class IO {
     /**
      * Read file and return to caller
      * @static
-     * @param {string} path - path to read file
+     * @param {string} wpath - path to read file
      * @returns - file contents
      * @memberof IO
      */
-    public static readFileSync(path: string) {
-        return fs.readFileSync(path).toString();
+    public static readFileSync(wpath: string) {
+        return fs.readFileSync(wpath).toString();
     }
 
     /**
      * Return whether a given file already exists
      * @static
-     * @param {string} path - path of file to check
+     * @param {string} wpath - path of file to check
      * @returns - true if file exists, false otherwise
      * @memberof IO
      */
-    public static existsSync(path: string) {
-        return fs.existsSync(path);
+    public static existsSync(wpath: string) {
+        return fs.existsSync(wpath);
     }
 
     /**

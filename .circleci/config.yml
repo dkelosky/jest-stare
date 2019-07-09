@@ -22,8 +22,10 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: yarn install
-      - run: yarn build
+      # - run: yarn install
+      # - run: yarn build
+      - run: npm install
+      - run: npm run build
 
       - save_cache:
           paths:
@@ -39,7 +41,10 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
-      - run: yarn test
+      # - run: yarn test
+      - run: pwd
+      - run: ls -la
+      - run: npm test
       - persist_to_workspace:
           root: ~/repo
           paths: .

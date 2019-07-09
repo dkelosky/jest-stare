@@ -62,7 +62,6 @@
     "popper.js": "^1.14.6"
   },
   "devDependencies": {
-    "@types/chalk": "2.2.0",
     "@types/chart.js": "2.7.54",
     "@types/diff2html": "0.0.4",
     "@types/jest": "22.2.3",
@@ -78,10 +77,10 @@
     "jest-html-reporter": "2.5.0",
     "jest-image-snapshot": "2.8.2",
     "jest-junit": "6.4.0",
-    "rimraf": "2.6.3",
+    "rimraf": "^2.6.3",
     "ts-jest": "24.0.2",
     "ts-node": "8.3.0",
-    "tslint": "5.17.0",
+    "tslint": "5.18.0",
     "tslint-config-prettier": "1.18.0",
     "typescript": "3.5.2"
   },
@@ -94,7 +93,7 @@
       "__tests__/__snapshots__/"
     ],
     "transform": {
-      ".(ts)": "ts-jest"
+      ".(ts)$": "ts-jest"
     },
     "testRegex": "__tests__.*\\.(spec|test)\\.ts$",
     "watchPathIgnorePatterns": [
