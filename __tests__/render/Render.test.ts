@@ -1,7 +1,8 @@
 import * as $ from "jquery";
 import { Render } from "../../src/render/Render";
 import { Processor } from "../../src/processor/Processor";
-import { Constants } from "../../src/processor/Constants";
+import { Constants as ProcessorConstants } from "../../src/processor/Constants";
+import { Constants as RenderConstants } from "../../src/render/Constants";
 import { IChartData } from "../../src/render/doc/IChartData";
 import { IJestStareConfig } from "../../src/processor/doc/IJestStareConfig";
 import { Doughnut } from "../../src/render/charts/Doughnut";
@@ -11,12 +12,19 @@ const simpleFailingTests: jest.AggregatedResult = require("../__resources__/simp
 const pendingOnlyTests: jest.AggregatedResult = require("../__resources__/pendingOnlyTests.json");
 const changedSnapshotTests: jest.AggregatedResult = require("../__resources__/changedSnapshotTests.json");
 const obsoleteSnapshotTests: jest.AggregatedResult = require("../__resources__/obsoleteSnapshotTests.json");
+const demoTests: jest.AggregatedResult = require("../__resources__/demoTests.json");
+
+const writeTemplate = () => {
+    /**
+     * Need css & js collocated and to use document.write to invoke scripts
+     */
+    const template = (new Processor(undefined) as any).obtainWebFile(ProcessorConstants.TEMPLATE_HTML);
+    document.write(template);
+};
 
 describe("Render tests", () => {
-
     it("should show snapshots area if snapshots", () => {
-        const template = (new Processor(undefined) as any).obtainWebFile(Constants.TEMPLATE_HTML);
-        document.write(template);
+        writeTemplate();
 
         (Render as any).updateStatusArea(simplePassingTests);
         const div = $("#snapshots-group") as JQuery<HTMLDivElement>;
@@ -24,8 +32,7 @@ describe("Render tests", () => {
     });
 
     it("should not show snapshots area if no snapshots", () => {
-        const template = (new Processor(undefined) as any).obtainWebFile(Constants.TEMPLATE_HTML);
-        document.write(template);
+        writeTemplate();
 
         (Render as any).updateStatusArea(pendingOnlyTests);
         const div = $("#snapshots-group") as JQuery<HTMLDivElement>;
@@ -34,12 +41,9 @@ describe("Render tests", () => {
     });
 
     it("should not create link to coverage report if not in config", () => {
+        writeTemplate();
 
-        const template = (new Processor(undefined) as any).obtainWebFile(Constants.TEMPLATE_HTML);
-        document.write(template);
-
-        const config: IJestStareConfig = {
-        };
+        const config: IJestStareConfig = {};
 
         (Render as any).setCoverageLink(config);
         expect($("#coverage-link").attr("href")).toMatchSnapshot();
@@ -47,12 +51,7 @@ describe("Render tests", () => {
     });
 
     it("should create link to coverage report if in config", () => {
-
-        /**
-         * Need css & js collocated and to use document.write to invoke scripts
-         */
-        const template = (new Processor(undefined) as any).obtainWebFile(Constants.TEMPLATE_HTML);
-        document.write(template);
+        writeTemplate();
 
         const config: IJestStareConfig = {
             coverageLink: "/some/place/index.html",
@@ -128,5 +127,59 @@ describe("Render tests", () => {
     it("should show snapshot chart data with obsolete snapshots ", () => {
         const chartData: IChartData = (Render as any).buildChartsData(0, 0);
         expect((Render as any).addSnapshotChartData(obsoleteSnapshotTests, chartData)).toMatchSnapshot();
+    });
+
+    describe("config.hidePassing is true", () => {
+        it("hides passing tests", () => {
+            writeTemplate();
+
+            (Render as any).show(demoTests, { hidePassing: true, disableCharts: true });
+
+            expect($("#lab-passoff-switch").is(":checked")).toBe(false);
+            expect($("#lab-failoff-switch").is(":checked")).toBe(true);
+
+            for (const elem of $(`.${RenderConstants.PASSED_TEST}`)) {
+                expect($(elem).css("display") === "none").toBe(true);
+            }
+
+            for (const elem of $(`.${RenderConstants.FAILED_TEST}`)) {
+                expect($(elem).css("display") !== "none").toBe(true);
+            }
+        });
+
+    });
+
+    describe("config.hideFailing is true", () => {
+        it("hides failing tests", () => {
+            writeTemplate();
+
+            (Render as any).show(demoTests, { hideFailing: true, disableCharts: true });
+
+            expect($("#lab-passoff-switch").is(":checked")).toBe(true);
+            expect($("#lab-failoff-switch").is(":checked")).toBe(false);
+
+            for (const elem of $(`.${RenderConstants.PASSED_TEST}`)) {
+                expect($(elem).css("display") !== "none").toBe(true);
+            }
+
+            for (const elem of $(`.${RenderConstants.FAILED_TEST}`)) {
+                expect($(elem).css("display") === "none").toBe(true);
+            }
+        });
+    });
+
+    describe("config.hidePassing and config.hideFailing are true", () => {
+        it("hides all tests", () => {
+            writeTemplate();
+
+            (Render as any).show(demoTests, { hidePassing: true, hideFailing: true, disableCharts: true });
+
+            expect($("#lab-passoff-switch").is(":checked")).toBe(false);
+            expect($("#lab-failoff-switch").is(":checked")).toBe(false);
+
+            for (const elem of $(`.${RenderConstants.PASSED_TEST}, .${RenderConstants.FAILED_TEST}, .${RenderConstants.PENDING_TEST}`)) {
+                expect($(elem).css("display") === "none").toBe(true);
+            }
+        });
     });
 });

@@ -81,6 +81,20 @@ export interface IJestStareConfig {
      * @memberof IJestStareConfig
      */
     disableCharts?: boolean;
+
+    /**
+     * Set to true to hide passing tests in the HTML report
+     * @type {boolean}
+     * @memberof IJestStareConfig
+     */
+    hidePassing?: boolean;
+
+    /**
+     * Set to true to hide failing tests in the HTML report
+     * @type {boolean}
+     * @memberof IJestStareConfig
+     */
+    hideFailing?: boolean;
 }
 
 /**

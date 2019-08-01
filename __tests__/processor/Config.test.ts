@@ -17,7 +17,9 @@ describe("Config tests", () => {
                     merge: "true",
                     resultDir: "results/jest-stare/",
                     resultHtml: "index.html",
-                    resultJson: "jest-results.json"
+                    resultJson: "jest-results.json",
+                    hidePassing: true,
+                    hideFailing: true
                 }
             };
         });
