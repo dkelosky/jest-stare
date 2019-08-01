@@ -30,7 +30,7 @@ Run tests or a test with jest and specify `jest-stare` on the `--reporters` opti
 
 Alternatively, in your `jest` config within `package.json` set `reporters` to `jest-stare` :
 
-* `"reporters: ["default", "jest-stare"]`
+* `"reporters": ["default", "jest-stare"]`
 * `"testResultsProcessor": "./node_modules/jest-stare"`
 
 `jest-stare` when used as a reporter updates the HTML report on each completed test run.  You can use this to view test output
