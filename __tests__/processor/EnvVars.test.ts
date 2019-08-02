@@ -16,6 +16,8 @@ describe("EnvVars tests", () => {
         const JEST_STARE_COVERAGE_LINK = "JEST_STARE_COVERAGE_LINK";
         const JEST_STARE_ADDITIONAL_RESULTS_PROCESSORS = "JEST_STARE_ADDITIONAL_RESULTS_PROCESSORS";
         const JEST_STARE_DISABLE_CHARTS = "JEST_STARE_DISABLE_CHARTS";
+        const JEST_STARE_HIDE_PASSING = "JEST_STARE_HIDE_PASSING";
+        const JEST_STARE_HIDE_FAILING = "JEST_STARE_HIDE_FAILING";
         process.env[JEST_STARE_RESULT_DIR] = "some/dir";
         process.env[JEST_STARE_RESULT_JSON] = "some.json";
         process.env[JEST_STARE_RESULT_HTML] = "some.html";
@@ -25,6 +27,8 @@ describe("EnvVars tests", () => {
         process.env[JEST_STARE_COVERAGE_LINK] = "www.walmart.com";
         process.env[JEST_STARE_ADDITIONAL_RESULTS_PROCESSORS] = "[\"one\", \"two\", \"three\"]";
         process.env[JEST_STARE_DISABLE_CHARTS] = "false";
+        process.env[JEST_STARE_HIDE_PASSING] = "true";
+        process.env[JEST_STARE_HIDE_FAILING] = "true";
         const response = new EnvVars().read();
         expect(response).toMatchSnapshot();
         const newResponse = new EnvVars().resolve({}, response);

@@ -51,6 +51,8 @@ export class EnvVars {
             report: this.mEnvSrv.readBoolEnvValue("REPORT"),
             additionalResultsProcessors,
             disableCharts: this.mEnvSrv.readBoolEnvValue("DISABLE_CHARTS"),
+            hidePassing: this.mEnvSrv.readBoolEnvValue("HIDE_PASSING"),
+            hideFailing: this.mEnvSrv.readBoolEnvValue("HIDE_FAILING")
         };
     }
 
@@ -108,6 +110,16 @@ export class EnvVars {
         if (envConfig.disableCharts != null || packageJsonConfig.disableCharts != null) {
             mergedConfig.disableCharts =
                 envConfig.disableCharts == null ? packageJsonConfig.disableCharts : envConfig.disableCharts;
+        }
+
+        if (envConfig.hidePassing != null || packageJsonConfig.hidePassing != null) {
+            mergedConfig.hidePassing =
+                envConfig.hidePassing == null ? packageJsonConfig.hidePassing : envConfig.hidePassing;
+        }
+
+        if (envConfig.hideFailing != null || packageJsonConfig.hideFailing != null) {
+            mergedConfig.hideFailing =
+                envConfig.hideFailing == null ? packageJsonConfig.hideFailing : envConfig.hideFailing;
         }
 
         return mergedConfig;

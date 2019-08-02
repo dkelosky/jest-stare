@@ -93,6 +93,21 @@ export class Render {
         $("#loading-info").hide();
         $("#test-results").replaceWith($(tableHtml));
 
+        // hide passing tests
+        if (config.hidePassing) {
+            $("#lab-passoff-switch").prop("checked", false);
+            $(`.${Constants.PASSED_TEST}`).hide();
+        }
+
+        // hide failing tests
+        if (config.hideFailing) {
+            $("#lab-failoff-switch").prop("checked", false);
+            $(`.${Constants.FAILED_TEST}`).hide();
+        }
+
+        // hide pending tests
+        if (config.hidePassing && config.hideFailing) { $(`.${Constants.PENDING_TEST}`).hide(); }
+
         // listen for filtering requests
         const passSwitch = new Switch(
             $("#lab-passoff-switch") as JQuery<HTMLInputElement>,

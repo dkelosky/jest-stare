@@ -1,4 +1,4 @@
-[![jest](https://facebook.github.io/jest/img/jest-badge.svg)](https://github.com/facebook/jest) 
+[![jest](https://facebook.github.io/jest/img/jest-badge.svg)](https://github.com/facebook/jest)
 [![CircleCI](https://circleci.com/gh/dkelosky/jest-stare.svg?style=svg)](https://circleci.com/gh/dkelosky/jest-stare)
 [![Travis CI](https://travis-ci.com/dkelosky/jest-stare.svg?branch=master)](https://travis-ci.com/dkelosky/jest-stare)
 [![Azure Pipelines](https://dev.azure.com/dkelosky/dkelosky/_apis/build/status/dkelosky.jest-stare?branchName=master)](https://dev.azure.com/dkelosky/dkelosky/_build/latest?definitionId=1&branchName=master)
@@ -42,7 +42,7 @@ By default, after a report is generated, output will go to `./jest-stare` and wi
 * `/js` - javascript render files
 * `/css` - css stylings
 
-### Config 
+### Config
 If you need to configure `jest-stare`, do so by adding a `jest-stare` object to your package.json, for example:
 ```typescript
 jest-stare: {
@@ -66,6 +66,8 @@ Field | Environmental Variable | Default | Description | Example
 `additionalResultsProcessors` |  `JEST_STARE_ADDITIONAL_RESULTS_PROCESSORS` | `undefined` | add additional test result processors to produce multiple report |`"additionalResultsProcessors": ["jest-html-reporter", "jest-junit"]`
 `coverageLink` |  `JEST_STARE_COVERAGE_LINK` | `undefined` | link to coverage report if available | `"coverageLink": "../../coverage/lcov-report/index.html"`
 `disableCharts` |  `JEST_STARE_DISABLE_CHARTS` | `undefined` | hide the doughnut charts in the HTML report | `"disableCharts": true`
+`hidePassing` | `JEST_STARE_HIDE_PASSING` | `undefined` | hide passing tests in the report on page load | `"hidePassing": true`
+`hideFailing` | `JEST_STARE_HIDE_FAILING` | `undefined` | hide failing tests in the report on page load | `"hideFailing": true`
 
 ### API
 You can programmatically invoke jest-stare and provide jest response data via:
@@ -83,12 +85,12 @@ processor(simplePassingTests, {log: false, resultDir: __dirname + "/output"});
 
 ### CLI
 Use the `jest-stare` CLI to create or recreate an HTML report.  You only need to supply an input JSON
-file containing the jest test results.  
+file containing the jest test results.
 
-You can invoke `jest-stare` as a CLI after installing globally via `npm install -g jest-stare`.  
+You can invoke `jest-stare` as a CLI after installing globally via `npm install -g jest-stare`.
 Or if jest-stare is a local dependency you can invoke the CLI via `npx jest-stare...`
 
-Assuming that you have a relative file to your current location in a folder "data" and 
+Assuming that you have a relative file to your current location in a folder "data" and
 "simplePassingTests.json" contains saved JSON output from a jest test invocation, you can
 run the CLI providing a single positional input jest JSON file:
 ```
