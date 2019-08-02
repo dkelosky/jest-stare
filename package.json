@@ -62,27 +62,27 @@
     "popper.js": "^1.14.6"
   },
   "devDependencies": {
-    "@types/chart.js": "2.7.55",
-    "@types/diff2html": "0.0.4",
+    "@types/chart.js": "2.7.56",
+    "@types/diff2html": "0.0.5",
     "@types/jest": "22.2.3",
     "@types/jquery": "3.3.30",
     "@types/mustache": "0.8.32",
-    "@types/node": "8.10.50",
-    "browserify": "16.2.3",
+    "@types/node": "8.10.51",
+    "browserify": "16.3.0",
     "codecov": "3.5.0",
-    "coveralls": "3.0.4",
+    "coveralls": "3.0.5",
     "jest": "24.8.0",
     "jest-environment-jsdom": "24.8.0",
     "jest-environment-node-debug": "2.0.0",
     "jest-html-reporter": "2.5.0",
     "jest-image-snapshot": "2.9.0",
-    "jest-junit": "6.4.0",
-    "rimraf": "^2.6.3",
+    "jest-junit": "7.0.0",
+    "rimraf": "2.6.3",
     "ts-jest": "24.0.2",
     "ts-node": "8.3.0",
     "tslint": "5.18.0",
     "tslint-config-prettier": "1.18.0",
-    "typescript": "3.5.2"
+    "typescript": "3.5.3"
   },
   "engines": {
     "node": ">=6.0.0"
