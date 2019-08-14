@@ -77,7 +77,7 @@
     "jest-html-reporter": "2.5.0",
     "jest-image-snapshot": "2.9.0",
     "jest-junit": "7.0.0",
-    "rimraf": "2.7.0",
+    "rimraf": "2.7.1",
     "ts-jest": "24.0.2",
     "ts-node": "8.3.0",
     "tslint": "5.18.0",
