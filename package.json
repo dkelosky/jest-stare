@@ -70,7 +70,7 @@
     "@types/node": "8.10.51",
     "browserify": "16.5.0",
     "codecov": "3.5.0",
-    "coveralls": "3.0.5",
+    "coveralls": "3.0.6",
     "jest": "24.9.0",
     "jest-environment-jsdom": "24.9.0",
     "jest-environment-node-debug": "2.0.0",
