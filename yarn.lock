@@ -347,10 +347,10 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
-"@types/chart.js@2.8.1":
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/@types/chart.js/-/chart.js-2.8.1.tgz#e1ae086edad0d664bc802e2827d786f865d533a6"
-  integrity sha512-WMxFPZWNNauENGvzNBaz7XHl+dn9HMWxd1cpNFjLt3nwLuBm1UF2xrNiBiGHQh1EMUBmmXcRktXxGFUp+XG5Sg==
+"@types/chart.js@2.8.2":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@types/chart.js/-/chart.js-2.8.2.tgz#a6d736a320ebfed816af3f53d1d4400398e362f8"
+  integrity sha512-hD04pa8xnn1hETRQBQC6suZXM0k9XMhJZ1TTI021CGVg9SX/Y10xrbNlz/kc9kUvfaxCSJDrASFS4BnmKklbfg==
 
 "@types/diff2html@0.0.5":
   version "0.0.5"
