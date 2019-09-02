@@ -2512,15 +2512,15 @@ jest-haste-map@^24.9.0:
   optionalDependencies:
     fsevents "^1.2.7"
 
-jest-html-reporter@2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/jest-html-reporter/-/jest-html-reporter-2.5.0.tgz#74a1c9bdd9ddac902dc50d81eeb78f9b962cdfec"
-  integrity sha512-28zBX65d5zYq0tG/hRZGcSWGEB13e8ZWWwvBI6VTlERoOJzIWbwGcjZQcGLCXXBL8xTMUeat+5X5C7sHGI5nmQ==
+jest-html-reporter@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/jest-html-reporter/-/jest-html-reporter-2.6.0.tgz#a21f04d33395cb73b492ed45d25223649732e3b0"
+  integrity sha512-8gkZlgyakdqHiq1n2n1KYrqTT8N41y4vkIVKSQumocpz2n9gN9NZuZqUzPPf0wBFNYKfr0UwQpXGQLB5IwKYiA==
   dependencies:
     dateformat "3.0.2"
     mkdirp "0.5.1"
     strip-ansi "3.0.1"
-    xmlbuilder "8.2.2"
+    xmlbuilder "13.0.2"
 
 jest-image-snapshot@2.9.0:
   version "2.9.0"
@@ -4887,10 +4887,10 @@ xml@^1.0.1:
   resolved "https://registry.yarnpkg.com/xml/-/xml-1.0.1.tgz#78ba72020029c5bc87b8a81a3cfcd74b4a2fc1e5"
   integrity sha1-eLpyAgApxbyHuKgaPPzXS0ovweU=
 
-xmlbuilder@8.2.2:
-  version "8.2.2"
-  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-8.2.2.tgz#69248673410b4ba42e1a6136551d2922335aa773"
-  integrity sha1-aSSGc0ELS6QuGmE2VR0pIjNap3M=
+xmlbuilder@13.0.2:
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-13.0.2.tgz#02ae33614b6a047d1c32b5389c1fdacb2bce47a7"
+  integrity sha512-Eux0i2QdDYKbdbA6AM6xE4m6ZTZr4G4xF9kahI2ukSEMCzwce2eX9WlTI5J3s+NU7hpasFsr8hWIONae7LluAQ==
 
 xtend@^4.0.0, xtend@^4.0.1, xtend@~4.0.1:
   version "4.0.2"
