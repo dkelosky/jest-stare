@@ -26,5 +26,6 @@ steps:
 - script: |
     npm install
     npm run build
-    npm run test
+    npm run coverage
+    npm run codecov
   displayName: 'npm install, build, and test'

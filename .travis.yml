@@ -4,9 +4,9 @@ node_js:
 install:
   - 'npm ci && npm run build'
 script:
-  - npm run coverage # jest test with coverage flag does coverage too
-after_script:
-  - npm run codecov
+  - npm run test # jest test with coverage flag does coverage too
+# after_script:
+  # - npm run codecov
 # deploy:
 #   provider: npm
 #   email: "dkelosky@gmail.com"
