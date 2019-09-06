@@ -6,7 +6,7 @@ install:
 script:
   - npm run coverage # jest test with coverage flag does coverage too
 after_script:
-  - npm run codecov
+  - npm run codecov #this fails
 # deploy:
 #   provider: npm
 #   email: "dkelosky@gmail.com"
