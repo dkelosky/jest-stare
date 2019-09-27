@@ -65,6 +65,9 @@ export class Render {
         const labels = [Constants.PASSED_LABEL, Constants.FAILED_LABEL];
         const backgroundColor = [Constants.PASS, Constants.FAIL];
 
+        Render.setReportTitle(config);
+        Render.setReportHeadline(config);
+
         // link to coverage if available
         Render.setCoverageLink(config);
 
@@ -147,6 +150,32 @@ export class Render {
             results.snapshot.updated === 0) {
             $("#snapshots-group").hide();
         }
+    }
+
+
+    /**
+     * Set report title if presented in jest-stare config
+     * @private
+     * @static
+     * @param {IJestStareConfig} config - jest-stare config object
+     * @memberof Render
+     */
+    private static setReportTitle(config: IJestStareConfig) {
+        const tabTitle = !isNullOrUndefined(config.reportTitle) ? config.reportTitle : "jest-stare!";
+        document.title = tabTitle;
+    }
+
+    /**
+     * Set report headline if presented in jest-stare config
+     * @private
+     * @static
+     * @param {IJestStareConfig} config - jest-stare config object
+     * @memberof Render
+     */
+    private static setReportHeadline(config: IJestStareConfig) {
+        const brandTitle =  !isNullOrUndefined(config.reportHeadline) ? config.reportHeadline : "jest-stare";
+        const a = $("#navbar-title");
+        a.text(brandTitle);
     }
 
     /**

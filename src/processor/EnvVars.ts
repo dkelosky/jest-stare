@@ -49,6 +49,8 @@ export class EnvVars {
             jestGlobalConfigJson: this.mEnvSrv.readEnvValue("GLOBAL_CONFIG_JSON"),
             coverageLink: this.mEnvSrv.readEnvValue("COVERAGE_LINK"),
             report: this.mEnvSrv.readBoolEnvValue("REPORT"),
+            reportTitle: this.mEnvSrv.readEnvValue("REPORT_TITLE"),
+            reportHeadline: this.mEnvSrv.readEnvValue("REPORT_HEADLINE"),
             additionalResultsProcessors,
             disableCharts: this.mEnvSrv.readBoolEnvValue("DISABLE_CHARTS"),
             hidePassing: this.mEnvSrv.readBoolEnvValue("HIDE_PASSING"),
@@ -86,6 +88,14 @@ export class EnvVars {
 
         if (envConfig.report != null || packageJsonConfig.report != null) {
             mergedConfig.report = envConfig.report == null ? packageJsonConfig.report : envConfig.report;
+        }
+
+        if (envConfig.reportTitle != null || packageJsonConfig.reportTitle != null) {
+            mergedConfig.reportTitle = envConfig.reportTitle == null ? packageJsonConfig.reportTitle : envConfig.reportTitle;
+        }
+
+        if (envConfig.reportHeadline != null || packageJsonConfig.reportHeadline != null) {
+            mergedConfig.reportHeadline = envConfig.reportHeadline == null ? packageJsonConfig.reportHeadline : envConfig.reportHeadline;
         }
 
         if (envConfig.jestStareConfigJson != null || packageJsonConfig.jestStareConfigJson != null) {

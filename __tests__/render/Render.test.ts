@@ -40,6 +40,46 @@ describe("Render tests", () => {
         expect(div.css("display")).toBe("none");
     });
 
+    it("should keep default report title if not in config", () => {
+        writeTemplate();
+
+        const config: IJestStareConfig = {};
+
+        (Render as any).setCoverageLink(config);
+        expect(document.title).toBe("jest-stare!");
+    });
+
+    it("should replace report title if in config", () => {
+        writeTemplate();
+
+        const config: IJestStareConfig = {
+            reportTitle: "my title",
+        };
+
+        (Render as any).setReportTitle(config);
+        expect(document.title).toBe("my title");
+    });
+
+    it("should keep default report headline if not in config", () => {
+        writeTemplate();
+
+        const config: IJestStareConfig = {};
+
+        (Render as any).setReportHeadline(config);
+        expect($("#navbar-title").text()).toBe("jest-stare");
+    });
+
+    it("should replace report headline if in config", () => {
+        writeTemplate();
+
+        const config: IJestStareConfig = {
+            reportHeadline: "my title",
+        };
+
+        (Render as any).setReportHeadline(config);
+        expect($("#navbar-title").text()).toBe("my title");
+    });
+
     it("should not create link to coverage report if not in config", () => {
         writeTemplate();
 
