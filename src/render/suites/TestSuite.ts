@@ -108,7 +108,7 @@ export class TestSuite {
             const h5 = document.createElement("h5") as HTMLHeadingElement;
             h5.classList.add("border-bottom", "pb-2", "mb-0", "display-5");
             h5.textContent = testResult.testFilePath;
-
+            div.id = testResult.testFilePath;
             div.appendChild(h5);
 
             // if a flat test report were to be used, simply
@@ -136,6 +136,7 @@ export class TestSuite {
                             h6.textContent = title;
                             nestDiv.appendChild(h6);
                             nestDiv.appendChild(element);
+                            nestDiv.id = key;
 
                             divMap.set(key, nestDiv);
 

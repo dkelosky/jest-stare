@@ -1,0 +1,537 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestSuite tests should create proper elements for large test > 500 tests 1`] = `
+Array [
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow summary"
+    id="test-summary"
+  >
+    <h5
+      class="border-bottom pb-2 display-5 summary-title"
+    >
+      Summary
+    </h5>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#jest-stare\\\\__tests__\\\\example\\\\FailingTests.test.ts"
+      >
+        <strong
+          class="summary-test-label fail"
+        >
+          FAIL
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          jest-stare\\__tests__\\example\\FailingTests.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [1/3]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#jest-stare\\\\__tests__\\\\src\\\\render\\\\Render.test.ts"
+      >
+        <strong
+          class="summary-test-label pass"
+        >
+          PASS
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          jest-stare\\__tests__\\src\\render\\Render.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [1/1]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#jest-stare\\\\__tests__\\\\src\\\\processor\\\\Processor.test.ts"
+      >
+        <strong
+          class="summary-test-label pass"
+        >
+          PASS
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          jest-stare\\__tests__\\src\\processor\\Processor.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [2/2]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#jest-stare\\\\__tests__\\\\src\\\\utils\\\\IO.test.ts"
+      >
+        <strong
+          class="summary-test-label pass"
+        >
+          PASS
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          jest-stare\\__tests__\\src\\utils\\IO.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [4/4]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#jest-stare\\\\__tests__\\\\src\\\\utils\\\\Logger.test.ts"
+      >
+        <strong
+          class="summary-test-label pass"
+        >
+          PASS
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          jest-stare\\__tests__\\src\\utils\\Logger.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [1/1]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#jest-stare\\\\__tests__\\\\src\\\\reporter\\\\Reporter.test.ts"
+      >
+        <strong
+          class="summary-test-label pass"
+        >
+          PASS
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          jest-stare\\__tests__\\src\\reporter\\Reporter.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [2/2]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+  </div>,
+]
+`;
+
+exports[`TestSuite tests should create proper elements for simple failing tests 1`] = `
+Array [
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow summary"
+    id="test-summary"
+  >
+    <h5
+      class="border-bottom pb-2 display-5 summary-title"
+    >
+      Summary
+    </h5>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\utils\\\\IO.test.ts"
+      >
+        <strong
+          class="summary-test-label fail"
+        >
+          FAIL
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [2/4]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\reporter\\\\Reporter.test.ts"
+      >
+        <strong
+          class="summary-test-label pass"
+        >
+          PASS
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          Work\\Dev\\node\\jest-stare\\__tests__\\reporter\\Reporter.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [1/1]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+  </div>,
+]
+`;
+
+exports[`TestSuite tests should create proper elements for simple passing tests 1`] = `
+Array [
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow summary"
+    id="test-summary"
+  >
+    <h5
+      class="border-bottom pb-2 display-5 summary-title"
+    >
+      Summary
+    </h5>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\utils\\\\IO.test.ts"
+      >
+        <strong
+          class="summary-test-label fail"
+        >
+          FAIL
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [4/4]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\reporter\\\\Reporter.test.ts"
+      >
+        <strong
+          class="summary-test-label fail"
+        >
+          FAIL
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          Work\\Dev\\node\\jest-stare\\__tests__\\reporter\\Reporter.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [1/1]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+  </div>,
+]
+`;
+
+exports[`TestSuite tests should create proper elements for two diffs in html 1`] = `
+Array [
+  <div
+    class="my-3 p-3 bg-white rounded box-shadow summary"
+    id="test-summary"
+  >
+    <h5
+      class="border-bottom pb-2 display-5 summary-title"
+    >
+      Summary
+    </h5>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#jest-stare\\\\__tests__\\\\example\\\\FailingTests.test.ts"
+      >
+        <strong
+          class="summary-test-label fail"
+        >
+          FAIL
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          jest-stare\\__tests__\\example\\FailingTests.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [1/3]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#jest-stare\\\\__tests__\\\\src\\\\render\\\\Render.test.ts"
+      >
+        <strong
+          class="summary-test-label pass"
+        >
+          PASS
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          jest-stare\\__tests__\\src\\render\\Render.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [1/1]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#jest-stare\\\\__tests__\\\\src\\\\processor\\\\Processor.test.ts"
+      >
+        <strong
+          class="summary-test-label pass"
+        >
+          PASS
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          jest-stare\\__tests__\\src\\processor\\Processor.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [2/2]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#jest-stare\\\\__tests__\\\\src\\\\utils\\\\IO.test.ts"
+      >
+        <strong
+          class="summary-test-label pass"
+        >
+          PASS
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          jest-stare\\__tests__\\src\\utils\\IO.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [4/4]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#jest-stare\\\\__tests__\\\\src\\\\utils\\\\Logger.test.ts"
+      >
+        <strong
+          class="summary-test-label pass"
+        >
+          PASS
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          jest-stare\\__tests__\\src\\utils\\Logger.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [1/1]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div
+      class="summary-test-suite"
+    >
+      <a
+        href="#jest-stare\\\\__tests__\\\\src\\\\reporter\\\\Reporter.test.ts"
+      >
+        <strong
+          class="summary-test-label pass"
+        >
+          PASS
+        </strong>
+        <strong
+          class="summary-test-label path"
+        >
+          jest-stare\\__tests__\\src\\reporter\\Reporter.test.ts
+        </strong>
+        <strong
+          class="summary-test-count"
+        >
+          [2/2]
+        </strong>
+      </a>
+    </div>
+    <div>
+      dummy div
+    </div>
+    <div>
+      dummy div
+    </div>
+  </div>,
+]
+`;

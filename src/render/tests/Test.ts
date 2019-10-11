@@ -146,6 +146,8 @@ export class Test {
             });
         }
 
+        firstDiv.id = titleId;
+
         return firstDiv;
     }
 }

@@ -80,13 +80,13 @@ code {
     position: absolute; top: 0; bottom: 0;
     right: 56px;
     border: 2px solid #999999; border-radius: 20px;
-    transition: all 0.3s ease-in 0s; 
+    transition: all 0.3s ease-in 0s;
 }
 .passoff-switch-checkbox:checked + .onoff-switch-label .passoff-switch-inner {
     margin-left: 0;
 }
 .passoff-switch-checkbox:checked + .onoff-switch-label .passoff-switch-switch {
-    right: 0px; 
+    right: 0px;
 }
 
 /* resuse more of this */
@@ -119,13 +119,73 @@ code {
     position: absolute; top: 0; bottom: 0;
     right: 56px;
     border: 2px solid #999999; border-radius: 20px;
-    transition: all 0.3s ease-in 0s; 
+    transition: all 0.3s ease-in 0s;
 }
 .failoff-switch-checkbox:checked + .onoff-switch-label .failoff-switch-inner {
     margin-left: 0;
 }
 .failoff-switch-checkbox:checked + .onoff-switch-label .failoff-switch-switch {
-    right: 0px; 
+    right: 0px;
+}
+
+.summary a {
+
+}
+
+.summary a:link {
+    color: black;
+}
+
+/* visited link */
+.summary a:visited {
+    color: black;
+}
+
+/* mouse over link */
+.summary a:hover {
+    color: black;
+}
+
+/* selected link */
+.summary a:active {
+    color: black;
+}
+
+.summary-test-suite {
+    margin-top: 10px;
+}
+.summary-test-count {
+    display: inline-block;
+    width: 8%;
+    text-align: right;
+}
+
+.summary-test-label {
+    display: inline-block;
+    width: 8%;
+}
+
+.summary-test-label.test{
+    text-align: right;
+    margin: 0 10px 0 0;
+}
+
+.summary-test-label.path{
+    align-self: left;
+    width: 74%;
+    display: inline-block;
+}
+
+.summary-test-label.pass {
+    color: #28a745;
+}
+
+.summary-test-label.fail {
+    color: #dc3545;
+}
+
+.summary-test-label.pending {
+    color: #ffc107;
 }
 
 .image-snapshot-diff {
