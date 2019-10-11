@@ -4440,6 +4440,7 @@ exports[`TestSuite tests should create proper elements for nested describes with
 Array [
   <div
     class="my-3 p-3 bg-white rounded box-shadow both-test"
+    id="C:\\\\Users\\\\KELDA16\\\\Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\__examples__\\\\NestedDescribeTests.example.ts"
   >
     <h5
       class="border-bottom pb-2 mb-0 display-5"
@@ -4448,6 +4449,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow both-test"
+      id="outer 0"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -4456,6 +4458,7 @@ Array [
       </h6>
       <div
         class="my-3 p-3 bg-white rounded box-shadow both-test"
+        id="outer 0.outer 1"
       >
         <h6
           class="border-bottom pb-2 mb-0 display-6"
@@ -4464,6 +4467,7 @@ Array [
         </h6>
         <div
           class="my-3 p-3 bg-white rounded box-shadow both-test"
+          id="outer 0.outer 1.outer 2"
         >
           <h6
             class="border-bottom pb-2 mb-0 display-6"
@@ -4472,6 +4476,7 @@ Array [
           </h6>
           <div
             class="media text-muted pt-3 passed-test"
+            id="should-pass"
           >
             <img
               alt=""
@@ -4504,6 +4509,7 @@ Array [
           </div>
           <div
             class="my-3 p-3 bg-white rounded box-shadow passed-test"
+            id="outer 0.outer 1.outer 2.first outer 3"
           >
             <h6
               class="border-bottom pb-2 mb-0 display-6"
@@ -4512,6 +4518,7 @@ Array [
             </h6>
             <div
               class="my-3 p-3 bg-white rounded box-shadow passed-test"
+              id="outer 0.outer 1.outer 2.first outer 3.outer 4"
             >
               <h6
                 class="border-bottom pb-2 mb-0 display-6"
@@ -4520,6 +4527,7 @@ Array [
               </h6>
               <div
                 class="media text-muted pt-3 passed-test"
+                id="should-pass"
               >
                 <img
                   alt=""
@@ -4554,6 +4562,7 @@ Array [
           </div>
           <div
             class="my-3 p-3 bg-white rounded box-shadow both-test"
+            id="outer 0.outer 1.outer 2.outer 3"
           >
             <h6
               class="border-bottom pb-2 mb-0 display-6"
@@ -4562,6 +4571,7 @@ Array [
             </h6>
             <div
               class="my-3 p-3 bg-white rounded box-shadow both-test"
+              id="outer 0.outer 1.outer 2.outer 3.outer 4"
             >
               <h6
                 class="border-bottom pb-2 mb-0 display-6"
@@ -4570,6 +4580,7 @@ Array [
               </h6>
               <div
                 class="media text-muted pt-3 passed-test"
+                id="should-pass"
               >
                 <img
                   alt=""
@@ -4602,6 +4613,7 @@ Array [
               </div>
               <div
                 class="media text-muted pt-3 failed-test"
+                id="should-fail"
               >
                 <img
                   alt=""
@@ -4726,6 +4738,7 @@ Array [
           </div>
           <div
             class="my-3 p-3 bg-white rounded box-shadow both-test"
+            id="outer 0.outer 1.outer 2.next outer 3"
           >
             <h6
               class="border-bottom pb-2 mb-0 display-6"
@@ -4734,6 +4747,7 @@ Array [
             </h6>
             <div
               class="media text-muted pt-3 passed-test"
+              id="should-be-around"
             >
               <img
                 alt=""
@@ -4766,6 +4780,7 @@ Array [
             </div>
             <div
               class="my-3 p-3 bg-white rounded box-shadow both-test"
+              id="outer 0.outer 1.outer 2.next outer 3.outer 4"
             >
               <h6
                 class="border-bottom pb-2 mb-0 display-6"
@@ -4774,6 +4789,7 @@ Array [
               </h6>
               <div
                 class="media text-muted pt-3 passed-test"
+                id="should-pass"
               >
                 <img
                   alt=""
@@ -4806,6 +4822,7 @@ Array [
               </div>
               <div
                 class="media text-muted pt-3 failed-test"
+                id="should-fail"
               >
                 <img
                   alt=""
@@ -4929,6 +4946,7 @@ Array [
             </div>
             <div
               class="media text-muted pt-3 passed-test"
+              id="should-be-around-too"
             >
               <img
                 alt=""
@@ -4962,6 +4980,7 @@ Array [
           </div>
           <div
             class="my-3 p-3 bg-white rounded box-shadow passed-test"
+            id="outer 0.outer 1.outer 2.last outer 3"
           >
             <h6
               class="border-bottom pb-2 mb-0 display-6"
@@ -4970,6 +4989,7 @@ Array [
             </h6>
             <div
               class="my-3 p-3 bg-white rounded box-shadow passed-test"
+              id="outer 0.outer 1.outer 2.last outer 3.outer 4"
             >
               <h6
                 class="border-bottom pb-2 mb-0 display-6"
@@ -4978,6 +4998,7 @@ Array [
               </h6>
               <div
                 class="media text-muted pt-3 passed-test"
+                id="should-pass"
               >
                 <img
                   alt=""
@@ -5021,6 +5042,7 @@ exports[`TestSuite tests should create proper elements for passing and failing i
 Array [
   <div
     class="my-3 p-3 bg-white rounded box-shadow both-test"
+    id="/tmp/jest-stare/__tests__/__examples__/foo.ts"
   >
     <h5
       class="border-bottom pb-2 mb-0 display-5"
@@ -5029,6 +5051,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow both-test"
+      id="image snapshot test"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -5037,6 +5060,7 @@ Array [
       </h6>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-pass-with-image-snapshot"
       >
         <img
           alt=""
@@ -5069,6 +5093,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 failed-test"
+        id="should-fail-with-image-snapshot"
       >
         <img
           alt=""
@@ -5189,6 +5214,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 failed-test"
+        id="should-fail-with-another-image-snapshot"
       >
         <img
           alt=""
@@ -5316,6 +5342,7 @@ exports[`TestSuite tests should create proper elements for pending tests 1`] = `
 Array [
   <div
     class="my-3 p-3 bg-white rounded box-shadow both-test"
+    id="C:\\\\Users\\\\KELDA16\\\\Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\__examples__\\\\PendingTests.example.ts"
   >
     <h5
       class="border-bottom pb-2 mb-0 display-5"
@@ -5324,6 +5351,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow both-test"
+      id="pending tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -5332,6 +5360,7 @@ Array [
       </h6>
       <div
         class="media text-muted pt-3 pending-test"
+        id="should-pend"
       >
         <img
           alt=""
@@ -5364,6 +5393,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-pass"
       >
         <img
           alt=""
@@ -5396,6 +5426,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 failed-test"
+        id="should-fail"
       >
         <img
           alt=""
@@ -5502,6 +5533,7 @@ exports[`TestSuite tests should create proper elements for simple failing tests 
 Array [
   <div
     class="my-3 p-3 bg-white rounded box-shadow both-test"
+    id="Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\utils\\\\IO.test.ts"
   >
     <h5
       class="border-bottom pb-2 mb-0 display-5"
@@ -5510,6 +5542,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow both-test"
+      id="IO tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -5518,6 +5551,7 @@ Array [
       </h6>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-pretend-to-write-to-a-file"
       >
         <img
           alt=""
@@ -5550,6 +5584,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-match-snapshot-with-one-field"
       >
         <img
           alt=""
@@ -5582,6 +5617,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 failed-test"
+        id="should-match-snapshot-with-two-fields"
       >
         <img
           alt=""
@@ -5741,7 +5777,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -5784,7 +5820,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -5856,7 +5892,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -5899,7 +5935,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -5942,7 +5978,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -6041,7 +6077,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -6084,7 +6120,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -6170,7 +6206,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -6213,7 +6249,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -6256,7 +6292,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -6421,6 +6457,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 failed-test"
+        id="should-match-snapshot-with-three-fields"
       >
         <img
           alt=""
@@ -6580,7 +6617,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -6666,7 +6703,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -6709,7 +6746,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -6752,7 +6789,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -6795,7 +6832,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -6894,7 +6931,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -6966,7 +7003,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -7009,7 +7046,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -7052,7 +7089,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -7095,7 +7132,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -7262,6 +7299,7 @@ Array [
   </div>,
   <div
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    id="Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\reporter\\\\Reporter.test.ts"
   >
     <h5
       class="border-bottom pb-2 mb-0 display-5"
@@ -7270,6 +7308,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
+      id="Reporter tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -7278,6 +7317,7 @@ Array [
       </h6>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-instantiate-reporter-class"
       >
         <img
           alt=""
@@ -7317,6 +7357,7 @@ exports[`TestSuite tests should create proper elements for simple passing tests 
 Array [
   <div
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    id="Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\utils\\\\IO.test.ts"
   >
     <h5
       class="border-bottom pb-2 mb-0 display-5"
@@ -7325,6 +7366,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
+      id="IO tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -7333,6 +7375,7 @@ Array [
       </h6>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-pretend-to-write-to-a-file"
       >
         <img
           alt=""
@@ -7365,6 +7408,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-match-snapshot-with-one-field"
       >
         <img
           alt=""
@@ -7397,6 +7441,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-match-snapshot-with-two-fields"
       >
         <img
           alt=""
@@ -7429,6 +7474,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-match-snapshot-with-three-fields"
       >
         <img
           alt=""
@@ -7463,6 +7509,7 @@ Array [
   </div>,
   <div
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    id="Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\reporter\\\\Reporter.test.ts"
   >
     <h5
       class="border-bottom pb-2 mb-0 display-5"
@@ -7471,6 +7518,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
+      id="Reporter tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -7479,6 +7527,7 @@ Array [
       </h6>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-instantiate-reporter-class"
       >
         <img
           alt=""
@@ -7518,6 +7567,7 @@ exports[`TestSuite tests should create proper elements for two diffs in html 1`]
 Array [
   <div
     class="my-3 p-3 bg-white rounded box-shadow both-test"
+    id="jest-stare\\\\__tests__\\\\example\\\\FailingTests.test.ts"
   >
     <h5
       class="border-bottom pb-2 mb-0 display-5"
@@ -7526,6 +7576,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow both-test"
+      id="Failing Tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -7534,6 +7585,7 @@ Array [
       </h6>
       <div
         class="media text-muted pt-3 failed-test"
+        id="should-fail-with-a-snapshot-difference"
       >
         <img
           alt=""
@@ -7693,7 +7745,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -7715,7 +7767,7 @@ Array [
                           
     
                           <td
-                            class="d2h-code-side-linenumber d2h-del d2h-change"
+                            class="d2h-code-side-linenumber d2h-del"
                           >
                             
       1
@@ -7724,12 +7776,12 @@ Array [
                           
     
                           <td
-                            class="d2h-del d2h-change"
+                            class="d2h-del"
                           >
                             
         
                             <div
-                              class="d2h-code-side-line d2h-del d2h-change"
+                              class="d2h-code-side-line d2h-del"
                             >
                               
             
@@ -7783,7 +7835,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -7826,7 +7878,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -7869,7 +7921,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -7912,7 +7964,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -7955,7 +8007,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -8054,7 +8106,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -8076,7 +8128,7 @@ Array [
                           
     
                           <td
-                            class="d2h-code-side-linenumber d2h-ins d2h-change"
+                            class="d2h-code-side-linenumber d2h-ins"
                           >
                             
       1
@@ -8085,12 +8137,12 @@ Array [
                           
     
                           <td
-                            class="d2h-ins d2h-change"
+                            class="d2h-ins"
                           >
                             
         
                             <div
-                              class="d2h-code-side-line d2h-ins d2h-change"
+                              class="d2h-code-side-line d2h-ins"
                             >
                               
             
@@ -8144,7 +8196,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -8187,7 +8239,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -8230,7 +8282,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -8273,7 +8325,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -8316,7 +8368,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -8493,6 +8545,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-be-a-placeholder"
       >
         <img
           alt=""
@@ -8525,6 +8578,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 failed-test"
+        id="should-fail-with-a-snapshot-difference-2"
       >
         <img
           alt=""
@@ -8684,7 +8738,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -8727,7 +8781,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -8749,7 +8803,7 @@ Array [
                           
     
                           <td
-                            class="d2h-code-side-linenumber d2h-del d2h-change"
+                            class="d2h-code-side-linenumber d2h-del"
                           >
                             
       2
@@ -8758,12 +8812,12 @@ Array [
                           
     
                           <td
-                            class="d2h-del d2h-change"
+                            class="d2h-del"
                           >
                             
         
                             <div
-                              class="d2h-code-side-line d2h-del d2h-change"
+                              class="d2h-code-side-line d2h-del"
                             >
                               
             
@@ -8902,7 +8956,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -8945,7 +8999,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -9044,7 +9098,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -9087,7 +9141,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -9109,7 +9163,7 @@ Array [
                           
     
                           <td
-                            class="d2h-code-side-linenumber d2h-ins d2h-change"
+                            class="d2h-code-side-linenumber d2h-ins"
                           >
                             
       2
@@ -9118,12 +9172,12 @@ Array [
                           
     
                           <td
-                            class="d2h-ins d2h-change"
+                            class="d2h-ins"
                           >
                             
         
                             <div
-                              class="d2h-code-side-line d2h-ins d2h-change"
+                              class="d2h-code-side-line d2h-ins"
                             >
                               
             
@@ -9231,7 +9285,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -9274,7 +9328,7 @@ Array [
                               <span
                                 class="d2h-code-line-prefix"
                               >
-                                 
+                                 
                               </span>
                               
             
@@ -9457,6 +9511,7 @@ Array [
   </div>,
   <div
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    id="jest-stare\\\\__tests__\\\\src\\\\render\\\\Render.test.ts"
   >
     <h5
       class="border-bottom pb-2 mb-0 display-5"
@@ -9465,6 +9520,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
+      id="Render tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -9473,6 +9529,7 @@ Array [
       </h6>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-pass"
       >
         <img
           alt=""
@@ -9507,6 +9564,7 @@ Array [
   </div>,
   <div
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    id="jest-stare\\\\__tests__\\\\src\\\\processor\\\\Processor.test.ts"
   >
     <h5
       class="border-bottom pb-2 mb-0 display-5"
@@ -9515,6 +9573,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
+      id="Processor tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -9523,6 +9582,7 @@ Array [
       </h6>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-create-a-report-form-an-input-object"
       >
         <img
           alt=""
@@ -9555,6 +9615,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-error-when-called-without-input"
       >
         <img
           alt=""
@@ -9589,6 +9650,7 @@ Array [
   </div>,
   <div
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    id="jest-stare\\\\__tests__\\\\src\\\\utils\\\\IO.test.ts"
   >
     <h5
       class="border-bottom pb-2 mb-0 display-5"
@@ -9597,6 +9659,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
+      id="IO tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -9605,6 +9668,7 @@ Array [
       </h6>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-pretend-to-write-to-a-file"
       >
         <img
           alt=""
@@ -9637,6 +9701,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-pretend-to-write-to-a-file-and-reject-promise-for-io-errors"
       >
         <img
           alt=""
@@ -9669,6 +9734,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-say-true-if-dir-exists"
       >
         <img
           alt=""
@@ -9701,6 +9767,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-false-if-dir-does-not-exist"
       >
         <img
           alt=""
@@ -9735,6 +9802,7 @@ Array [
   </div>,
   <div
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    id="jest-stare\\\\__tests__\\\\src\\\\utils\\\\Logger.test.ts"
   >
     <h5
       class="border-bottom pb-2 mb-0 display-5"
@@ -9743,6 +9811,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
+      id="Logger tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -9751,6 +9820,7 @@ Array [
       </h6>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-get-a-log-instance"
       >
         <img
           alt=""
@@ -9785,6 +9855,7 @@ Array [
   </div>,
   <div
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    id="jest-stare\\\\__tests__\\\\src\\\\reporter\\\\Reporter.test.ts"
   >
     <h5
       class="border-bottom pb-2 mb-0 display-5"
@@ -9793,6 +9864,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
+      id="Reporter tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -9801,6 +9873,7 @@ Array [
       </h6>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-instantiate-reporter-class"
       >
         <img
           alt=""
@@ -9833,6 +9906,7 @@ Array [
       </div>
       <div
         class="media text-muted pt-3 passed-test"
+        id="should-do-something"
       >
         <img
           alt=""
@@ -9872,6 +9946,7 @@ exports[`TestSuite tests should show no red box if all tests are pending 1`] = `
 Array [
   <div
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
+    id="C:\\\\Users\\\\KELDA16\\\\Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\__examples__\\\\PendingTestsOnly.example.ts"
   >
     <h5
       class="border-bottom pb-2 mb-0 display-5"
@@ -9880,6 +9955,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
+      id="pending tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -9888,6 +9964,7 @@ Array [
       </h6>
       <div
         class="media text-muted pt-3 pending-test"
+        id="should-pend"
       >
         <img
           alt=""

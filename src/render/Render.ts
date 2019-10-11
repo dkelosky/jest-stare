@@ -4,6 +4,7 @@ import { Constants } from "./Constants";
 import { Status } from "./charts/Status";
 import { Doughnut } from "./charts/Doughnut";
 import { TestSuite } from "./suites/TestSuite";
+import { TestSummary } from "./summary/TestSummary";
 import { IChartData } from "./doc/IChartData";
 import { IJestStareConfig } from "../processor/doc/IJestStareConfig";
 import { isNullOrUndefined } from "util";
@@ -95,6 +96,11 @@ export class Render {
         // hide loading and show suites
         $("#loading-info").hide();
         $("#test-results").replaceWith($(tableHtml));
+
+        if (config.reportSummary) {
+            const testSummary = TestSummary.create(results);
+            $("#test-summary").replaceWith($(testSummary));
+        }
 
         // hide passing tests
         if (config.hidePassing) {

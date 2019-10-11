@@ -80,6 +80,34 @@ describe("Render tests", () => {
         expect($("#navbar-title").text()).toBe("my title");
     });
 
+    it("should not show the report summary by default", () => {
+        writeTemplate();
+
+        const config: IJestStareConfig = {
+            disableCharts: true,
+        };
+
+        (Render as any).show(demoTests, config);
+
+        expect($("#test-summary").hasClass("d-none")).toBe(true);
+    });
+
+    it("should show the report summary when the variable is true", () => {
+        writeTemplate();
+
+        const config: IJestStareConfig = {
+            disableCharts: true,
+            reportSummary: true,
+        };
+
+        (Render as any).show(demoTests, config);
+
+        expect($("#test-summary").hasClass("d-none")).toBe(false);
+        expect($("#test-summary").hasClass("box-shadow")).toBe(true);
+
+    });
+
+
     it("should not create link to coverage report if not in config", () => {
         writeTemplate();
 

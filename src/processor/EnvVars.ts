@@ -51,6 +51,7 @@ export class EnvVars {
             report: this.mEnvSrv.readBoolEnvValue("REPORT"),
             reportTitle: this.mEnvSrv.readEnvValue("REPORT_TITLE"),
             reportHeadline: this.mEnvSrv.readEnvValue("REPORT_HEADLINE"),
+            reportSummary: this.mEnvSrv.readBoolEnvValue("REPORT_SUMMARY"),
             additionalResultsProcessors,
             disableCharts: this.mEnvSrv.readBoolEnvValue("DISABLE_CHARTS"),
             hidePassing: this.mEnvSrv.readBoolEnvValue("HIDE_PASSING"),
@@ -96,6 +97,10 @@ export class EnvVars {
 
         if (envConfig.reportHeadline != null || packageJsonConfig.reportHeadline != null) {
             mergedConfig.reportHeadline = envConfig.reportHeadline == null ? packageJsonConfig.reportHeadline : envConfig.reportHeadline;
+        }
+
+        if (envConfig.reportSummary != null || packageJsonConfig.reportSummary != null) {
+            mergedConfig.reportSummary = envConfig.reportSummary == null ? packageJsonConfig.reportSummary : envConfig.reportSummary;
         }
 
         if (envConfig.jestStareConfigJson != null || packageJsonConfig.jestStareConfigJson != null) {

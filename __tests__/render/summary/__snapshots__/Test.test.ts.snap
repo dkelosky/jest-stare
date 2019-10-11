@@ -1,0 +1,7875 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test tests should create proper elements for large test > 500 tests 1`] = `
+Array [
+  <div>
+    <a
+      href="#should-allow-us-to-create-an-instance"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to create an instance
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-create-an-instance-and-load-nothing"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to create an instance and load nothing
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-create-an-instance-without-a-logger"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to create an instance without a logger
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-create-an-instance-(directly-with-constructor)"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to create an instance (directly with constructor)
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-a-bad-logger-instance"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect a bad logger instance
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-command-definitions-when-creating-the-loader"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing command definitions when creating the loader
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-profile-manager-when-creating-the-loader"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing profile manager when creating the loader
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-load-a-required-profile"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to load a required profile
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-percolate-the-load-error-to-the-caller"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should percolate the load error to the caller
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-percolate-the-load-error-to-the-caller"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should percolate the load error to the caller
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-react-properly-if-the-profile-manager-does-not-return-an-expected-result-for-default"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should react properly if the profile manager does not return an expected result for default
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-react-properly-if-the-profile-manager-does-not-return-an-expected-result"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should react properly if the profile manager does not return an expected result
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-load-a-required-profile-by-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to load a required profile by name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-load-a-required-profile-by-name-with-a-dependency"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to load a required profile by name with a dependency
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-load-two-different-required-types"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to load two different required types
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-percolate-the-error-if-a-required-profile-for-one-type-is-not-found"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should percolate the error if a required profile for one type is not found
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-handle-multiple-loads-of-the-same-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should handle multiple loads of the same type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-install-from-the-npm-registry"
+    >
+      <span
+        class="summary-test-label test fail"
+      >
+        X
+      </span>
+      <span>
+        should install from the npm registry
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-install-an-absolute-file-path"
+    >
+      <span
+        class="summary-test-label test fail"
+      >
+        X
+      </span>
+      <span>
+        should install an absolute file path
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-install-a-relative-file-path"
+    >
+      <span
+        class="summary-test-label test fail"
+      >
+        X
+      </span>
+      <span>
+        should install a relative file path
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-install-from-a-url"
+    >
+      <span
+        class="summary-test-label test fail"
+      >
+        X
+      </span>
+      <span>
+        should install from a url
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-write-even-when-install-from-file-is-true"
+    >
+      <span
+        class="summary-test-label test fail"
+      >
+        X
+      </span>
+      <span>
+        should write even when install from file is true
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-accept-semver-properly"
+    >
+      <span
+        class="summary-test-label test fail"
+      >
+        X
+      </span>
+      <span>
+        should accept semver properly
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-merge-contents-of-previous-json-file"
+    >
+      <span
+        class="summary-test-label test fail"
+      >
+        X
+      </span>
+      <span>
+        should merge contents of previous json file
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-errors"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw errors
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-display-the-help-if-no-options-are-specified"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should display the help if no options are specified
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-display-the-version-if---version-is-specified"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should display the version if --version is specified
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-parameters"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing parameters
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-profile"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing profile
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-a-type-mismatch-when-saving-a-profile"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect a type mismatch when saving a profile
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-a-blank-name-when-creating-a-profile"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect a blank name when creating a profile
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-if-the-meta-name-was-specified-as-the-profile-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect if the meta name was specified as the profile name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-the-dependencies-are-not-an-array"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that the dependencies are not an array
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-the-dependencies-are-present,-but-name-is-missing"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that the dependencies are present, but name is missing
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-the-dependencies-are-present,-but-type-is-missing"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that the dependencies are present, but type is missing
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-a-profile-requires-a-dependency-of-a-certain-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that a profile requires a dependency of a certain type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-all-missing-required-fields-on-the-schema"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect all missing required fields on the schema
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-a-type-mismatch-from-the-schema-for-strings"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect a type mismatch from the schema for strings
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-a-type-mismatch-from-the-schema-for-booleans"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect a type mismatch from the schema for booleans
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-a-save-request-if-the-file-already-exists-and-overwrite-is-false"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail a save request if the file already exists and overwrite is false
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-a-save-request-if-an-error-is-thrown-by-write-file"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail a save request if an error is thrown by write file
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-a-save-request-if-there-is-an-error-writing-the-meta-file"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail a save request if there is an error writing the meta file
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-save-a-well-formed-profile"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to save a well-formed profile
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-save-a-profile-with-a-dependency"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to save a profile with a dependency
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-allow-us-to-overwrite-a-profile-if-overwrite-false-(or-not-specified)"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not allow us to overwrite a profile if overwrite false (or not specified)
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-allow-a-save-with-a-circular-dependency"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not allow a save with a circular dependency
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-allow-a-save-with-no-contents"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not allow a save with no contents
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-allow-us-to-save-a-profile-that-lists-dependencies-of-types-that-were-not-defined"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not allow us to save a profile that lists dependencies of types that were not defined
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-a-save-request-if-a-profile-has-more-properties-than-defined-on-the-schema"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail a save request if a profile has more properties than defined on the schema
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-if-only-one-(username-or-password)-is-passed-as-argument"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail if only one (username or password) is passed as argument
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-pass-the-save-of-credentials-assuming-the-credential-manager-was-able-to-save-them"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should pass the save of credentials assuming the Credential Manager was able to save them
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-the-save-of-credentials-assuming-the-credential-manager-was-not-able-to-save-them"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail the save of credentials assuming the Credential Manager was not able to save them
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-parms"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing parms
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-parms-with-a-missing-profile-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect parms with a missing profile name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-a-load-request-if-the-profile-is-not-found"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail a load request if the profile is not found
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-a-load-request-if-the-profile-loaded-does-not-conform-to-the-schema"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail a load request if the profile loaded does not conform to the schema
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-handle-a-read-error"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should handle a read error
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-the-load-of-a-well-formed-profile"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow the load of a well formed profile
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-load-the-default-if-requested"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should load the default if requested
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-if-the-default-doesn't-exist"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail if the default doesn't exist
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-fail-the-request-if-'fail-not-found'-is-false-and-the-profile-was-not-found"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not fail the request if 'fail not found' is false and the profile was not found
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-load-a-profile-with-one-dependency"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should load a profile with one dependency
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-load-a-profile-with-two-dependencies"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should load a profile with two dependencies
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-load-a-profile-with-two-dependencies,-one-of-which-has-it's-own-dependency"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should load a profile with two dependencies, one of which has it's own dependency
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-a-profile-load-with-two-dependencies,-one-of-which-has-it's-own-dependency-with-an-error"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail a profile load with two dependencies, one of which has it's own dependency with an error
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-a-profile-load-with-two-dependencies,-one-of-which-has-it's-own-dependency-which-is-not-found"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail a profile load with two dependencies, one of which has it's own dependency which is not found
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-a-profile-load-with-two-dependencies,-one-of-which-has-it's-own-dependency-that-is-circular"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail a profile load with two dependencies, one of which has it's own dependency that is circular
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-load-all-profiles-for-all-types"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to load all profiles for all types
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-load-a-profile-with-an-optional-dependency-that-is-not-specified"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to load a profile with an optional dependency that is not specified
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-allow-us-to-load-a-profile-with-an-optional-dependency-and-the-optional-dependency-doesn't-exist"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not allow us to load a profile with an optional dependency and the optional dependency doesn't exist
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-load-a-profile-where-an-optional-dependency-doesn't-exist-(but-fail-not-found-is-false)"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to load a profile where an optional dependency doesn't exist (but fail not found is false)
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-a-load-if-the-profile-doesn't-have-the-required-dependencies-listed-when-loaded"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail a load if the profile doesn't have the required dependencies listed when loaded
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-pass-the-gather-of-credentials-assuming-the-credential-manager-was-able-to-get-them"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should pass the gather of credentials assuming the Credential Manager was able to get them
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-the-gather-of-credentials-assuming-the-credential-manager-was-not-able-to-get-them"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail the gather of credentials assuming the Credential Manager was not able to get them
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#operations:-test-a-simple-set-of-operations-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Operations: Test a simple set of operations 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#operations:-test-for-complex-set-of-operations-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Operations: Test for complex set of operations  
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#operations:-test-for-complex-set-of-undo-operations-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Operations: Test for complex set of undo operations  
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-no-parms-when-instantiating"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect no parms when instantiating
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-the-profile-directory-is-undefined"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that the profile directory is undefined
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-the-profile-directory-is-blank"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that the profile directory is blank
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-no-type-configuration-is-supplied"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that no type configuration is supplied
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-the-type-configuration-is-an-empty-array"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that the type configuration is an empty array
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-if-the-type-is-undefined"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect if the type is undefined
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-if-the-type-is-blank"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect if the type is blank
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-a-type-not-found-within-the-configurations"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that a type not found within the configurations
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-instantiate-the-cli-profile-manager"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to instantiate the cli profile manager
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-load-all-profiles"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should load all profiles
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-ill-formed-profiles-during-a-load-all"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect ill formed profiles during a load all
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-initialize-the-environment"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should initialize the environment
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-parms-on-initialize"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing parms on initialize
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-configuration-on-initialize"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing configuration on initialize
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-profile-directory-on-initialize"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing profile directory on initialize
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-blank-profile-directory-on-initialize"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect blank profile directory on initialize
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-create-an-instance-and-read-all-configurations-from-the-meta-files"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should create an instance and read all configurations from the meta files
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-a-create-if-no-configurations-and-passed-and-none-can-be-read-from-disk"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail a create if no configurations and passed and none can be read from disk
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-the-configuration-passed-is-not-an-array"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that the configuration passed is not an array
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-only-initialize-types-not-already-defined-in-the-environment"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should only initialize types not already defined in the environment
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-a-re-initialize-of-the-environment"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow a re-initialize of the environment
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-set-the-default-in-the-meta-profile"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to set the default in the meta profile
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-a-request-to-set-the-default-if-the-profile-is-not-found"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail a request to set the default if the profile is not found
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-merge-two-simple-profiles-together,-with-the-new-profile-taking-precedence-for-same-name-fields"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should be able to merge two simple profiles together, with the new profile taking precedence for same-name fields
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-merge-dependencies-on-profiles,-while-deleting-duplicates"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should merge dependencies on profiles, while deleting duplicates
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-replace-array-type-profile-fields-(other-than-dependencies)-with-newer-versions-of-the-arrayrather-than-merging-them-(merging-them-makes-it-impossible-to-specify-new-values-whenupdating-profiles-via-cli)-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should replace array type profile fields (other than dependencies) with newer versions of the arrayrather than merging them (merging them makes it impossible to specify new values whenupdating profiles via CLI) 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-merge-on-update-if-\\"merge\\"-is-specified-on-the-parms-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should merge on update if "merge" is specified on the parms 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-perform-any-reads-if-the-arguments-do-not-indicate-to-read-from-stdin"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not perform any reads if the arguments do not indicate to read from stdin
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-return-stdin-as-part-of-the-arguments"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to return stdin as part of the arguments
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-read-stdin-if-the-type-is-not-command"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not read stdin if the type is not command
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-handle-a-stdin-read-error"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to handle a stdin read error
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#we-should-be-able-to-correctly-specify-the-options-for-our-test-command-without-an-error-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        We should be able to correctly specify the options for our test command without an error 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-specify-an-unknown-positional,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we specify an unknown positional, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-specify-multiple-unknown-positionals,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we specify multiple unknown positionals, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-omit-a-required-boolean-option,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we omit a required boolean option, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-omit-a-required-string-option,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we omit a required string option, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-specify-the---name-of-a-required-string-option,-but-no-value,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we specify the --name of a required string option, but no value, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-specify-a-conflicting-option,-the-command-should-fail.-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we specify a conflicting option, the command should fail. 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-specify-an-option-that-implies-another-option,-but-omit-the-implied-option,-the-command-should-fail.-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we specify an option that implies another option, but omit the implied option, the command should fail. 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-specify-an-option-that-implies-another-option,-and-include-the-implied-option,-the-command-should-succeed.-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we specify an option that implies another option, and include the implied option, the command should succeed. 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-specify-an-option-that-has-a-set-of-allowable-string-values,-but-specify-a-value-that-doesn't-match-any-of-the-values,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we specify an option that has a set of allowable string values, but specify a value that doesn't match any of the values, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-specify-an-option-that-has-a-set-of-allowable-string-values,-and-specify-a-value-that-matches-one-of-the-allowable-values,-the-command-should-succeed-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we specify an option that has a set of allowable string values, and specify a value that matches one of the allowable values, the command should succeed 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-don't-specify-an-option,-and-the-absence-of-that-option-implies-the-presence-of-another-option,-and-we-omit-that-option-as-well,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we don't specify an option, and the absence of that option implies the presence of another option, and we omit that option as well, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-don't-specify-an-option,-and-the-absence-of-that-option-implies-the-presence-of-another-option,-but-we-specify-that-implied-option,-the-command-should-succeed-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we don't specify an option, and the absence of that option implies the presence of another option, but we specify that implied option, the command should succeed 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-that-should-be-numerical,-but-a-non-numeric-option-is-specified,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option that should be numerical, but a non-numeric option is specified, the command should fail  
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-that-should-be-numerical,-and-we-specify-a-number,-the-command-should-succeed-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option that should be numerical, and we specify a number, the command should succeed  
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-for-which-specifying-a-certain-value-implies-another-option,-if-we-omit-the-implied-option,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option for which specifying a certain value implies another option, if we omit the implied option, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-for-which-specifying-a-certain-value-implies-another-option,-if-we-specify-the-implied-option,-the-command-should-succeed-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option for which specifying a certain value implies another option, if we specify the implied option, the command should succeed 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-with-a-max-length-of-eight-characters-and-a-minimum-of-two,-and-we-specify-a-value-that's-one-character-long,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option with a max length of eight characters and a minimum of two,  and we specify a value that's one character long, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-with-a-max-length-of-eight-characters-and-a-minimum-of-two,-and-we-specify-a-value-that's-exactly-two-characters-long,-the-command-should-succeed-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option with a max length of eight characters and a minimum of two,  and we specify a value that's exactly two characters long, the command should succeed 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-with-a-max-length-of-eight-characters-and-a-minimum-of-two,-and-we-specify-a-value-that's-exactly-eight-characters-long,-the-command-should-succeed-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option with a max length of eight characters and a minimum of two,  and we specify a value that's exactly eight characters long, the command should succeed 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-with-a-max-length-of-eight-characters-and-a-minimum-of-two,-and-we-specify-a-value-that's-nine-characters-long,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option with a max length of eight characters and a minimum of two,  and we specify a value that's nine characters long, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-with-a-max-value-of-12-and-a-minimum-of-1,-and-we-specify-0,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option with a max value of 12 and a minimum of 1,  and we specify 0, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-with-a-max-value-of-12-and-a-minimum-of-1,-and-we-specify-1,-the-command-should-succeed-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option with a max value of 12 and a minimum of 1,  and we specify 1, the command should succeed 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-with-a-max-value-of-12-and-a-minimum-of-1,-and-we-specify-1-long,-the-command-should-succeed-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option with a max value of 12 and a minimum of 1,  and we specify 1 long, the command should succeed 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-with-a-max-value-of-12-and-a-minimum-of-1,-and-we-specify-15,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option with a max value of 12 and a minimum of 1,  and we specify 15, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-that-implies-at-least-one-of-a-set-of-other-options,-if-we-specify-that-option-but-omit-all-of-the-implications,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option that implies at least one of a set of other options, if we specify that option but omit all of the implications, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-that-implies-at-least-one-of-a-set-of-other-options,-if-we-specify-that-option-and-satisfy-the-implication,-the-command-should-succeed-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option that implies at least one of a set of other options, if we specify that option and satisfy the implication, the command should succeed 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-with-multiple-conflicts,-if-we-specify-the-first-of-the-conflicting-options,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option with multiple conflicts, if we specify the first of the conflicting options, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-with-multiple-conflicts,-if-we-specify-two-of-the-conflicting-options,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option with multiple conflicts, if we specify two of the conflicting options, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-with-multiple-conflicts,-if-we-specify-all-of-the-conflicting-options,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option with multiple conflicts, if we specify all of the conflicting options, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-there-is-an-option-with-multiple-conflicts,-if-we-specify-the-last-of-the-conflicting-options,-the-command-should-fail-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If there is an option with multiple conflicts, if we specify the last of the conflicting options, the command should fail 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-specify-a-string-type-option-multiple-times,-but-otherwise-have-a-correct-command-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we specify a string type option multiple times,  but  otherwise have a correct command 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-have-a-command-with-a-number-type-positional,-and-we-try-to-specify-a-non-numeric-argument,-the-command-should-fail"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we have a command with a number-type positional, and we try to specify a non-numeric argument, the command should fail
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-have-a-command-with-a-number-type-positional,-and-we-try-to-specify-a-numeric-argument,-the-command-should-succeed"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we have a command with a number-type positional, and we try to specify a numeric argument, the command should succeed
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-take-a-handler-to-create-a-profile-from-command-line-arguments,-and-the-handler-should-be-called-and-the-resulting-profile-should-have-the-created-fields-in-it."
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should take a handler to create a profile from command line arguments, and the handler should be called and the resulting profile should have the created fields in it.
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-take-a-handler-to-update-a-profile-from-command-line-arguments,-and-the-handler-should-be-called-and-the-resulting-profile-should-have-the-created-fields-in-it."
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should take a handler to update a profile from command line arguments, and the handler should be called and the resulting profile should have the created fields in it.
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-take-a-handler-to-create-a-profile-from-command-line-arguments,-but-if-the-profile-handler-does-not-add-a-field-required-by-the-schema,-we-should-get-a-validation-error"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should take a handler to create a profile from command line arguments, but if the profile handler does not add a field required by the schema, we should get a validation error
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-still-create-a-profile-properly-without-providing-args"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should still create a profile properly without providing args
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-still-fail-profile-validation-on-creation-if-no-args-are-provided-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should still fail profile validation on creation if no args are provided 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-still-fail-profile-validation-on-update-if-no-args-are-provided-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should still fail profile validation on update if no args are provided 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-provide-a-non-existent-handler-to-create-a-profile-from-command-line-arguments,-we-should-get-a-helpful-error."
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we provide a non existent handler to create a profile from command line arguments, we should get a helpful error.
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-provide-a-non-existent-handler-to-update-a-profile-from-command-line-arguments,-we-should-get-a-helpful-error."
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we provide a non existent handler to update a profile from command line arguments, we should get a helpful error.
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-catch-errors-thrown-by-custom-profile-create-handler-and-expose-them-to-the-user"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should catch errors thrown by custom profile create handler and expose them to the user
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-catch-errors-thrown-by-custom-profile-update-handler-and-expose-them-to-the-user"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should catch errors thrown by custom profile update handler and expose them to the user
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-create-a-profile-with-dependencies-if-the-proper-command-line-arguments-are-provided"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should create a profile with dependencies if the proper command line arguments are provided
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-take-a-handler-to-update-a-profile-from-command-line-arguments,-and-the-handler-should-be-called-and-the-resulting-profile-should-have-the-created-fields-in-it."
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should take a handler to update a profile from command line arguments, and the handler should be called and the resulting profile should have the created fields in it.
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-map-option-definitions-back-to-differently-named-profile-fields-on-update"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to map option definitions back to differently named profile fields on update
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-map-option-definitions-back-to-differently-named-profile-fields-on-creation"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to map option definitions back to differently named profile fields on creation
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-provide-a-helpful-error-message-if-an-error-is-encountered-saving-the-profile-while-updating"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should provide a helpful error message if an error is encountered saving the profile while updating
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-merge-on-update-if-\\"merge\\"-is-specified-on-the-parms-and-no-cli-args-are-specfied"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should merge on update if "merge" is specified on the parms and no CLI args are specfied
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-merge-on-update-if-\\"merge\\"-is-specified-on-the-parms-and-cli-args-are-specfied"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should merge on update if "merge" is specified on the parms and CLI args are specfied
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-no-parms-are-supplied"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that no parms are supplied
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-the-parms-did-not-specify-a-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect the parms did not specify a name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-the-parms-specified-a-blank-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect the parms specified a blank name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-there-is-no-profile-of-the-specified-name-to-delete"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should  detect there is no profile of the specified name to delete
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-a-delete-where-the-profile-to-delete-is-marked-as-a-dependency-of-another-profile"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail a delete where the profile to delete is marked as a dependency of another profile
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-handle-an-error-thrown-by-delete/unlink"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to handle an error thrown by delete/unlink
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-delete-a-profile"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to delete a profile
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-the-profile-to-delete-is-marked-as-a-dependency-of-another-profile,-but-allow-delete-if-specified"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that the profile to delete is marked as a dependency of another profile, but allow delete if specified
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-pass-the-delete-of-credentials-assuming-the-credential-manager-was-able-to-delete-them"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should pass the delete of credentials assuming the Credential Manager was able to delete them
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-the-delete-of-credentials-assuming-the-credential-manager-was-not-able-to-delete-them"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail the delete of credentials assuming the Credential Manager was not able to delete them
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-work-when-passed-with-nothing"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should work when passed with nothing
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#handles-a-non-imperative-error"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        handles a non imperative error
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-propagate-an-imperativeerror-up"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should propagate an ImperativeError up
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#we-should-be-able-to-get-proper-error-messages-on-a-non-syntax-failure"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        We should be able to get proper error messages on a non syntax failure
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#we-should-be-able-to-get-proper-error-messages-on-a-syntax-failure"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        We should be able to get proper error messages on a syntax failure
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-have-a-mock-plan-with-a-failing-parent-test,-the-validation-should-fail-and-none-of-the-tasks-dependent-on-the-failing-task-should-run-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we have a mock plan with a failing parent test, the validation should fail and none of the tasks dependent on the failing task should run 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-have-a-mock-plan-with-a-parent-test-that-gets-a-warning,-the-validation-should-fail-and-none-of-the-tasks-dependent-on-the-failing-task-should-run-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we have a mock plan with a parent test that gets a warning, the validation should fail and none of the tasks dependent on the failing task should run 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-have-a-mock-plan-with-a-passing-parent-test,-one-failing-task-and-two-passing-tasks,-the-overall-result-should-be-failure-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we have a mock plan with a passing parent test,  one failing task and two passing tasks, the overall result should be failure 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-have-a-mock-plan-with-all-passing-tests,-the-result-should-be-a-successful-validation-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we have a mock plan with all passing tests, the result should be a successful validation 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-have-a-mock-plan-with-a-parent-test-that-throws-an-unexpected-exception,-the-dependent-tasks-should-still-be-skipped-and-we-should-still-get-a-report-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we have a mock plan with a parent test that throws an unexpected exception, the dependent tasks should still be skipped and we should still get a report 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-get-a-text-report-for-a-validation-plan,-the-report-should-contain-all-of-the-descriptions-for-each-task"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we get a text report for a validation plan, the report should contain all of the descriptions for each task
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-try-to-validate-with-a-plan-with-no-tasks-in-it,-an-error-should-be-thrown-to-let-profile/module-contributors-know-that-their-plan-is-invalid-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we try to validate with a plan with no tasks in it, an error should be thrown to let profile/module contributors know that their plan is invalid 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-validate-a-profile-with-a-result-description-that-is-too-long,-it-should-be-truncated-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we validate a profile with a result description that is too long, it should be truncated 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#a-failed-profile-validation-report-should-include-specified-failure-suggestions-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        a failed profile validation report should include specified failure suggestions 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-undefined-parms"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect undefined parms
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-a-type-mismatch"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect a type mismatch
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-a-that-we-are-attempting-to-use-the-meta-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect a that we are attempting to use the meta name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-a-missing-profile-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect a missing profile name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-the-dependencies-are-not-an-array"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that the dependencies are not an array
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-the-dependencies-are-present,-but-name-is-missing"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that the dependencies are present, but name is missing
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-that-the-dependencies-are-present,-but-type-is-missing"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect that the dependencies are present, but type is missing
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-that-a-profile-requires-a-dependency-of-a-certain-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect that a profile requires a dependency of a certain type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-all-missing-required-fields-on-the-schema"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect all missing required fields on the schema
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-a-type-mismatch-from-the-schema-for-strings"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect a type mismatch from the schema for strings
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-a-type-mismatch-from-the-schema-for-booleans"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect a type mismatch from the schema for booleans
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-validate-a-well-formed-profile-successfully"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should validate a well formed profile successfully
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-a-save-request-if-a-profile-has-more-properties-than-defined-on-the-schema"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail a save request if a profile has more properties than defined on the schema
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-pass-the-gather-of-credentials-assuming-the-credential-manager-was-able-to-get-them"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should pass the gather of credentials assuming the Credential Manager was able to get them
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-the-gather-of-credentials-assuming-the-credential-manager-was-not-able-to-get-them"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail the gather of credentials assuming the Credential Manager was not able to get them
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-parameters"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing parameters
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-name-parameter"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing name parameter
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-update-a-profile"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to update a profile
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-pass-the-update-of-credentials-assuming-the-credential-manager-was-able-to-save-them"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should pass the update of credentials assuming the Credential Manager was able to save them
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-the-update-of-credentials-assuming-the-credential-manager-was-not-able-to-save-them"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail the update of credentials assuming the Credential Manager was not able to save them
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-fixed"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be fixed
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-no-parms-when-instantiating"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect no parms when instantiating
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-the-profile-directory-is-undefined"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that the profile directory is undefined
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-the-profile-directory-is-blank"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that the profile directory is blank
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-no-type-configuration-is-supplied"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that no type configuration is supplied
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-the-type-configuration-is-an-empty-array"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that the type configuration is an empty array
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-if-the-type-is-undefined"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect if the type is undefined
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-if-the-type-is-blank"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect if the type is blank
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-a-type-not-found-within-the-configurations"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that a type not found within the configurations
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-instantiate-the-cli-profile-manager"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to instantiate the cli profile manager
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-a-schema-definition-document-is-attempting-to-overload-'type'"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that a schema definition document is attempting to overload 'type'
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-a-schema-definition-document-is-attempting-to-overload-'name'"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that a schema definition document is attempting to overload 'name'
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-a-schema-definition-document-is-attempting-to-overload-'dependencies'"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that a schema definition document is attempting to overload 'dependencies'
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-instantiation-if-the-meta-doesn't-have-a-default"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow instantiation if the meta doesn't have a default
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-ill-formed-meta-profile-configurations"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect ill-formed meta profile configurations
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#we-should-be-able-to-determine-if-an-option-is-specified"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        We should be able to determine if an option is specified
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#currentsegmentname-tests---expect-only-[group]-and-[command]"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        currentSegmentName tests - expect only [group] and [command]
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#we-should-be-able-to-build-the-full-command-string-from-the-definition-and-the-arguments"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        We should be able to build the full command string from the definition and the arguments
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#we-should-be-able-to-get-the-option-definition-from-the-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        We should be able to get the option definition from the name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#we-should-be-able-to-flatten-a-nested-command-tree-for-display-and-searching-purposes"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        We should be able to flatten a nested command tree for display and searching purposes
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#we-should-be-able-get-the-full-command-name-from-the-flattened-tree"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        We should be able get the full command name from the flattened tree
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-create-a-progress-bar,-an-interval-should-be-set-to-update-the-bar.-if-we-finish-the-bar,-the-interval-should-be-stopped-and-no-longer-storedin-the-command-response.-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we create a progress bar, an interval should be set to update the bar. If we finish the bar, the interval should be stopped and no longer storedin the command response. 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-our-response-object-is-in-silent-mode,-which-is-caused-for-example-by-the-user-specifying-that-they-want-a-json-response,-a-progress-bar-should-not-be-created"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If our response object is in silent mode, which is caused for example by the user specifying that they want a JSON response, a progress bar should not be created
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-for-an-undefined-key-when-we-expect-it-to-be-defined"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should throw an error for an undefined key when we expect it to be defined
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-throw-an-error-for-a-list-of-defined-keys"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should not throw an error for a list of defined keys
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-for-a-defined-key-when-the-last-one-is-undefined"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should throw an error for a defined key when the last one is undefined
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-throw-an-error-for-a-non-blank-field"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should not throw an error for a non-blank field
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-for-a-blank-field"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should throw an error for a blank field
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-for-a-defined-key-that-is-blank"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should throw an error for a defined key that is blank
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-throw-an-error-for-a-defined-key-that-is-blank"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should not throw an error for a defined key that is blank
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-throw-an-error-if-the-item-is-found-in-a-list"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should not throw an error if the item is found in a list
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-if-an-item-is-not-found-in-a-list"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should throw an error if an item is not found in a list
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-throw-an-error-for-an-undefined-key-when-we-expect-undefined"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should not throw an error for an undefined key when we expect undefined
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-for-defined-key-that-we-want-to-be-undefined"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should throw an error for defined key that we want to be undefined
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-for-defined-key-that-is-last-in-a-list-of-undefined-keys"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should throw an error for defined key that is last in a list of undefined keys
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-throw-error-if-the-type-is-correct"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not throw error if the type is correct
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-throw-error-if-the-type-is-correct"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not throw error if the type is correct
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-if-the-type-is-incorrect"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an error if the type is incorrect
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-throw-error-if-the-type-is-correct-of-a-nested-property"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not throw error if the type is correct of a nested property
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-error-if-the-type-is-not-correct-of-a-nested-property"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw error if the type is not correct of a nested property
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-error-if-the-input-is-not-an-array-and-an-array-is-expected"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw error if the input is not an array and an array is expected
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-error-if-the-input-array-is-of-length-0"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw error if the input array is of length 0
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-throw-error-if-the-input-array-is-of-length-0"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not throw error if the input array is of length 0
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-throw-error-if-the-entry-is-found"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not throw error if the entry is found
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-if-the-entry-is-not-found"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an error if the entry is NOT found
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-an-expect-failure-to-be-transformed"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow an expect failure to be transformed
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-a-custom-error-message"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow a custom error message
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-throw-error-if-the-values-are-not-equal"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not throw error if the values are not equal
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-if-the-values-are-equal-and-we're-expected-them-to-not-be-equal"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an error if the values are equal and we're expected them to not be equal
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-append-any-headers-to-a-request-by-default"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not append any headers to a request by default
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-give-an-error-when-no-session-is-provided"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should give an error when no session is provided
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-give-an-error-when-no-resource-uri-is-provided"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should give an error when no resource URI is provided
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-error-when-chunking-data-and-payload-data-are-present-in-outgoing-request"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not error when chunking data and payload data are present in outgoing request
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-error-when-headers-and-payload-data-are-present-in-outgoing-request"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not error when headers and payload data are present in outgoing request
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-error-when-data-and-end-events-are-sent"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not error when data and end events are sent
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-give-an-error-message-when-error-event-is-called"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should give an error message when error event is called
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-call-http-request-for-http-requests"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should call http request for http requests
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-call-https-request-for-https-requests"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should call https request for https requests
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-provide-a-valid-command-definition-for-the-complete-auto-generated-profile-group-if-passed-a-valid-profile-configuration-document"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should provide a valid command definition for the complete auto generated profile group if passed a valid profile configuration document
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-prepare-the-final-command-document-for-imperative-usage"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should prepare the final command document for imperative usage
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-generate-profile-options-(and-suppress-if-desired)"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to generate profile options (and suppress if desired)
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-pass-on-(and-overwrite)-profile-attributes-from-parents-to-children"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to pass on (and overwrite) profile attributes from parents to children
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-pass-on-(and-overwrite)-enablestdin-settings"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to pass on (and overwrite) enableStdin settings
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-pass-on-profile-attributes-from-parents-to-children-except-children-of-a-certain-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to pass on profile attributes from parents to children except children of a certain name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-pass-on-attributes-from-parents-to-children-and-not-erroneously-ignore-nodes"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to pass on attributes from parents to children and not erroneously ignore nodes
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-pass-on-attributes-from-parents-to-children-and-ignore-definitions-with-type-group"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to pass on attributes from parents to children and ignore definitions with type group
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-ignore-everything-if-specified"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to ignore everything if specified
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-pass-on-new-options-to-children-(and-merge-them)"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to pass on new options to children (and merge them)
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-pass-on-new-options-to-children,-merge-them,-but-ignore-groups"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to pass on new options to children, merge them, but ignore groups
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-if-a-undefined-or-null-attribute-is-being-passed-down-(error)"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect if a undefined or null attribute is being passed down (error)
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-pass-on-options-of-a-parent-to-children"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to pass on options of a parent to children
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-groups-with-undefined-children"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect groups with undefined children
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-groups-with-no-children"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect groups with no children
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-children-that-are-ill-formed"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect children that are ill-formed
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-definition-nodes-with-missing-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect definition nodes with missing type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-documents-with-missing-descriptions"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect documents with missing descriptions
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-documents-with-circular-references"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect documents with circular references
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-definitions-without-a-name-at-the-top-level"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect definitions without a name at the top level
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-definitions-without-a-name-at-a-lower-level"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect definitions without a name at a lower level
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-null-or-undefined-definitions"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect null or undefined definitions
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-options-that-are-not-an-array"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect options that are not an array
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-positionals-that-are-not-an-array"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect positionals that are not an array
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-that-a-definition-is-valid"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect that a definition is valid
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-if-an-option-has-no-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect if an option has no name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-if-an-option-has-no-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect if an option has no type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-if-an-option-has-no-description"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect if an option has no description
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-if-a-positional-has-no-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect if a positional has no name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-if-a-positional-has-no-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect if a positional has no type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-detect-if-a-positional-has-no-description"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to detect if a positional has no description
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-mark-parent-commands-that-have-all-experimental-children-as-experimental"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should mark parent commands that have all experimental children as experimental
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-mark-not-parent-commands-that-have-mixed-experimental-and-non-experimental-children-as-experimental"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should mark not parent commands that have mixed experimental and non-experimental children as experimental
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-mark-all-children-of-an-experimental-group-as-experimental-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should mark all children of an experimental group as experimental 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-when-getting-the-manager-before-init"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an error when getting the manager before init
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-when-initialize-is-called-twice"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an error when initialize is called twice
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-initialize-with-the-default-credential-manager"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should initialize with the default credential manager
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-initialize-a-classpath-that-has-no-initialize-method"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should initialize a classpath that has no initialize method
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-when-the-class-doesn't-extend-the-abstractcredentialmanager"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an error when the class doesn't extend the AbstractCredentialManager
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-handle-a-load-failure"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should handle a load failure
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-provide-a-valid-command-definition-for-the-profile-set-command-based-on-our-test-profile-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should provide a valid command definition for the profile set command based on our test profile type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#formathelpheader-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        FormatHelpHeader test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#buildhelp-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        BuildHelp test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#getoptionandaliasesstring-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        getOptionAndAliasesString test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#buildoptionmaps-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        buildOptionMaps test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#getcasesensitiveflagbyoptionname-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        getCaseSensitiveFlagByOptionName test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#renderhelp-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        renderHelp test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#explaintype-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        explainType test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-call-underlying-service-function"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should call underlying service function
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-error-if-not-given-a-config-on-initialization"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should error if not given a config on initialization
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-error-if-given-an-incomplete-config-on-initialization"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should error if given an incomplete config on initialization
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-error-if-given-a-partially-config-on-initialization"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should error if given a partially config on initialization
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-set-the-level-like-we-say"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should set the level like we say
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-call-underlying-services-for-logerror-function"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should call underlying services for logError function
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-the-correct-requested-logger-appender"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should get the correct requested logger appender
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-provide-a-valid-command-definition-for-the-profile-update-command-based-on-our-test-profile-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should provide a valid command definition for the profile update command based on our test profile type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-provide-a-valid-command-definition-for-the-profile-list-command-based-on-our-test-profile-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should provide a valid command definition for the profile list command based on our test profile type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-provide-a-valid-command-definition-for-the-profile-validate-command-based-on-our-test-profile-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should provide a valid command definition for the profile validate command based on our test profile type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-provide-a-valid-command-definition-for-the-profile-delete-command-based-on-our-test-profile-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should provide a valid command definition for the profile delete command based on our test profile type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-create-an-instance"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to create an instance
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-invalid-primary-color"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect invalid primary color
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-invalid-response-format"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect invalid response format
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-indicate-the-command-succeeded-by-default"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should indicate the command succeeded by default
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-indicate-the-response-format-default-if-nothing-was-specified"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should indicate the response format default if nothing was specified
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-indicate-the-response-format-is-json-if-specified"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should indicate the response format is JSON if specified
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-indicate-silent-mode-if-specified"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should indicate silent mode if specified
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-indicate-not-silent-mode-by-default"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should indicate not silent mode by default
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-set-the-primary-highlight-color"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to set the primary highlight color
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-set-an-error"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to set an error
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-indicate-that-the-command-failed"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to indicate that the command failed
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-indicate-that-the-command-succeeded"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to indicate that the command succeeded
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-write-to-stdout-(with-newline)-and-buffer-to-the-response-object"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should write to stdout (with newline) and buffer to the response object
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-write-to-stderr-(with-newline)-and-buffer-to-the-response-object"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should write to stderr (with newline) and buffer to the response object
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-write-to-both-stdout-and-stderr-and-buffer-to-both-respectively"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should write to both stdout and stderr and buffer to both respectively
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-write-data-to-stdout-(no-newline)-and-buffer-to-the-response-object"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should write data to stdout (no newline) and buffer to the response object
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-write-data-to-stderr-(no-newline)-and-buffer-to-the-response-object"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should write data to stderr (no newline) and buffer to the response object
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-write-error-header-messages-to-stderr-and-invoke-chalk-to-colorize-in-red"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should write error header messages to stderr and invoke chalk to colorize in red
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-write-to-stdout-(but-still-buffer)-if-silent-mode-is-enabled"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not write to stdout (but still buffer) if silent mode is enabled
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-write-to-stderr-(but-still-buffer)-if-silent-mode-is-enabled"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not write to stderr (but still buffer) if silent mode is enabled
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-write-an-error-header-to-stderr-(but-still-buffer)-if-silent-mode-is-enabled"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not write an error header to stderr (but still buffer) if silent mode is enabled
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-write-to-both-stdout-and-stderr-(but-still-buffer)-if-silent-mode-is-enabled"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not write to both stdout and stderr (but still buffer) if silent mode is enabled
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-format-messages-when-using-a-format-string-to-stdout"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should format messages when using a format string to stdout
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-format-messages-when-using-a-format-string-to-stderr"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should format messages when using a format string to stderr
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-set-a-json-message"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to set a JSON message
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-overwrite-the-message-if-set-multiple-times"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should overwrite the message if set multiple times
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-set-the-data-object-in-the-response-as-a-string"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to set the data object in the response as a string
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-set-the-data-object-in-the-response-as-an-object"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to set the data object in the response as an object
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-set-the-data-object-in-the-response-as-an-array"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to set the data object in the response as an array
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-merge-the-data-object-in-the-response-as-an-array"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to merge the data object in the response as an array
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-overwrite-the-first-object-if-set-obj-is-called-again"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should overwrite the first object if set obj is called again
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-set-the-message-and-the-data"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to set the message and the data
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-create-a-full/complex-response-and-build-the-response"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to create a full/complex response and build the response
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-create-a-full/complex-response-and-write-the-response"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to create a full/complex response and write the response
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-create-a-full/complex-response-should-not-write-if-silent-mode-is-enabled"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to create a full/complex response should not write if silent mode is enabled
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-provide-a-valid-command-definition-for-the-profile-create-command-based-on-our-test-profile-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should provide a valid command definition for the profile create command based on our test profile type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#handler-response"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Handler Response
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-provide-a-valid-command-definition-for-the-profile-show-dependencies-command-based-on-our-test-profile-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should provide a valid command definition for the profile show dependencies command based on our test profile type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-create-an-instance"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to create an instance
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-create-an-instance-and-indicate-markdown"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to create an instance and indicate markdown
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-parameters"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing parameters
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-root-command-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing root command name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-root-command-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing root command name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-root-command-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing root command name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-command-definition-when-getting-a-factory"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing command definition when getting a factory
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-command-definition-tree-when-getting-a-factory"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing command definition tree when getting a factory
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-an-instance-of-the-test-help-generator"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should return an instance of the test help generator
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#buildhelp-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        buildHelp test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#getgrouphelptext-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        getGroupHelpText test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#getcommandhelptext-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        getCommandHelpText test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#buildcommandandaliases-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        buildCommandAndAliases test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#getprintedactionsorgroups-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        getPrintedActionsOrGroups test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#buildusagediagram-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        buildUsageDiagram test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#getprintedusage-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        getPrintedUsage test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#getprintedglobaloptions-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        getPrintedGlobalOptions test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#getprinteddescription-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        getPrintedDescription test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#getprintedpositionaloptions-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        getPrintedPositionalOptions test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#getprintednonglobaloptions-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        getPrintedNonGlobalOptions test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#getprintedgroupanddescription-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        getPrintedGroupAndDescription test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#getprintedoptionoraction-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        getPrintedOptionOrAction test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#getprintedoptiongroup-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        getPrintedOptionGroup test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#getprintedexamplestext-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        getPrintedExamplesText test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#getexperimentalcommandsection-test"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        getExperimentalCommandSection test
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#constructs-properly"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Constructs Properly
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-properly-initialize-keytar"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should properly initialize keytar
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-catch-a-load-error"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should catch a load error
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-do-nothing-if-keytar-is-there"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should do nothing if keytar is there
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-load-error-if-keytar-is-missing"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw load error if keytar is missing
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-if-keytar-and-load-error-are-missing"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an error if keytar and load error are missing
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-delete-credentials"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should delete credentials
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-on-failure"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an error on failure
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-credentials"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should return credentials
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an error
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-set-credentials"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should set credentials
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-use-the-deletecredentials-method"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should use the deleteCredentials method
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-load-a-username-and-password"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should load a username and password
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-save-username:password-as-a-base64-encoded-string"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should save username:password as a base64 encoded string
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-imperative-error-when-the-username-is-missing"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an imperative error when the username is missing
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-imperative-error-when-the-username-is-empty"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an imperative error when the username is empty
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-imperative-error-when-the-password-is-missing"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an imperative error when the password is missing
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-imperative-error-when-the-password-is-empty"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an imperative error when the password is empty
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-imperative-error-when-both-the-user-and-pass-are-missing"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an imperative error when both the user and pass are missing
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-load-the-default-when-not-passed-any-configuration."
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should load the default when not passed any configuration.
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#was-passed-a-class"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        was passed a class
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#was-passed-an-absolute-path"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        was passed an absolute path
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#was-passed-a-relative-path"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        was passed a relative path
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-omit-defaulthome-from-config,-our-validation-should-throw-an-error-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we omit defaultHome from config, our validation should throw an error 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-omit-homeenvvariable-from-config,-our-validation-should-throw-an-error-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we omit homeEnvVariable from config, our validation should throw an error 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-omit-productdisplayname-from-config,-our-validation-should-throw-an-error-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we omit productDisplayName from config, our validation should throw an error 
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-omit-commandmoduleglobs-and-definitions-from-our-config,-our-validator-should-throw-an-error-"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we omit commandModuleGlobs and definitions from our config, our validator should throw an error  
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#if-we-specify-multiple-option-definitions-on-a-profile-field,-but-no-custom-create-profile-handler,-we-should-get-an-error"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        If we specify multiple option definitions on a profile field, but no custom create profile handler, we should get an error
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-create-all-profile-directories"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to create all profile directories
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-imperative-error-if-an-io-error-occurs-when-creating-profile-directories"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an Imperative Error if an IO error occurs when creating profile directories
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-read-the-meta-file"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to read the meta file
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-imperative-error-if-an-error-occurs-reading-the-meta-file"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an imperative error if an error occurs reading the meta file
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-write-a-profile"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to write a profile
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-imperative-error-if-a-write-profile-io-error-occurs"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an imperative error if a write profile IO error occurs
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-a-delete-of-a-profile"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow a delete of a profile
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-imperative-error-if-the-file-is-not-deleted"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an imperative error if the file is not deleted
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-imperative-error-if-an-io-error-occurs-during-a-delete"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an imperative error if an IO error occurs during a delete
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-us-to-check-if-a-profile-exists"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should allow us to check if a profile exists
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-imperative-error-if-an-exists-io-error-occurs"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an imperative error if an exists IO error occurs
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-write-a-meta-file"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to write a meta file
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-imperative-error-if-an-io-error-occurrs-during-writing-the-meta-file"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an imperative error if an IO error occurrs during writing the meta file
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-return-the-profile-name-from-a-file-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to return the profile name from a file name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-a-list-of-profile-types"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should return a list of profile types
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-imperative-error-if-the-read-directory-io-error-occurs"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an imperative error if the read directory IO error occurs
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-a-list-of-profile-names"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should return a list of profile names
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-imperative-error-if-an-io-error-occurs-getting-profile-names"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an imperative error if an IO error occurs getting profile names
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-read-a-profile"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to read a profile
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-imperative-error-if-a-profile-io-read-error-occurs"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an imperative error if a profile IO read error occurs
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-reject-configurations-that-don't-contain-a-\\"name\\"-field"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should reject configurations that don't contain a "name" field
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-a-complete-iconfiglogging-object-based-on-no-iimperativeconfig-input"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should return a complete IConfigLogging object based on no IImperativeConfig input
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-a-complete-iconfiglogging-object-based-on-custom-name-in-iimperativeconfig-input"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should return a complete IConfigLogging object based on custom name in IImperativeConfig input
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-a-complete-iconfiglogging-object-based-on-custom-imperative-log-level-in-iimperativeconfig-input"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should return a complete IConfigLogging object based on custom imperative log level in IImperativeConfig input
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-a-complete-iconfiglogging-object-based-on-custom-app-log-level-and-log-file-in-iimperativeconfig-input"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should return a complete IConfigLogging object based on custom app log level and log file in IImperativeConfig input
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-a-complete-iconfiglogging-object-based-on-custom-app,-imperative,-and-additional-logging-in-iimperativeconfig-input"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should return a complete IConfigLogging object based on custom app, imperative, and additional logging in IImperativeConfig input
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-a-complete-iconfiglogging-object-based-on-no-logging,-but-using-logging-keyword-in-iimperativeconfig-input"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should return a complete IConfigLogging object based on no logging, but using logging keyword in IImperativeConfig input
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-error-for-missing-api-name-in-additional-loggers"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should error for missing API name in additional loggers
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-error-invalid-level"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should error invalid level
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-error-invalid-level-on-app-or-imperative-too"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should error invalid level on app or imperative too
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-be-able-to-change-api-name-for-imperative-or-app"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should not be able to change api name for imperative or app
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-parse-a-json-object"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should parse a JSON object
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-give-a-message-for-a-failed-json-object"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should give a message for a failed JSON object
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-give-a-message-for-a-failed-json-object-with-custom-fail-message"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should give a message for a failed JSON object with custom fail message
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-give-an-error-message-for-an-undefined-input"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should give an error message for an undefined input
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-isdir"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on isDir
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-true-for-fs.stats-says-input-is-directory"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should return true for fs.stats says input is directory
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-false-for-fs.stats-says-input-is-not-directory"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should return false for fs.stats says input is not directory
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-normalizeextension"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on normalizeExtension
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-normalized-extension"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should return normalized extension
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-normalized-extension-even-if-prefixed-with-'.'"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should return normalized extension even if prefixed with '.'
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-normalized-extension-even-if-input-is-only-'.'"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should return normalized extension even if input is only '.'
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-existssync"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on existsSync
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-true-if-file-exists"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get true if file exists
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-false-if-file-doesn't-exist"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get false if file doesn't exist
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-createdirsync"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on createDirSync
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-create-a-dir-if-file-doesn't-exist"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should create a dir if file doesn't exist
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-create-a-dir-if-file-exists"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not create a dir if file exists
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-createdirssync"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on createDirsSync
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-create-several-dirs-if-dirs-do-not-exist"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should create several dirs if dirs do not exist
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-create-several-dirs-if-dirs-already-exist"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not create several dirs if dirs already exist
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-only-create-dirs-that-do-not-exist"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should only create dirs that do not exist
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-create-several-dirs-if-dirs-do-not-exist-from-input-file"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should create several dirs if dirs do not exist from input file
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-create-several-dirs-if-dirs-already-exist-from-input-file"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not create several dirs if dirs already exist from input file
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-only-create-dirs-that-do-not-exist-from-input-file"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should only create dirs that do not exist from input file
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-mkdirp"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on mkdirp
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-createdirssyncfromfilepath"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on createDirsSyncFromFilePath
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-readfilesync"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on readFileSync
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-processnewlines"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on processNewlines
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-createfilesync"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on createFileSync
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-writefileasync"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on writeFileAsync
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-writefileasync-second-parm"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on writeFileAsync second parm
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-write-a-file-asynchronously"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should write a file asynchronously
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-imperative-error-when-getting-an-io-error-writing-asynchronously"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw imperative error when getting an IO error writing asynchronously
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-writefile"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on writeFile
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-writefile-second-parm"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on writeFile second parm
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-writeobject"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on writeObject
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-writeobject-second-parm"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on writeObject second parm
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-deletefile"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on deleteFile
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-for-no-input-on-deletedir"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get an error for no input on deleteDir
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-hide---password-operand"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should hide --password operand
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-hide---authentication-operand"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should hide --authentication operand
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-hide--p-operand"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should hide -p operand
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-hide---not-secret-operand"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should not hide --not-secret operand
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-hide-password-operand"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should hide password operand
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-hide-notsecret-operand"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should not hide notSecret operand
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-store-cookie-token-requested"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should store cookie token requested
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-initialize-with-basic-type-and-required-input-data"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should initialize with basic type and required input data
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-user-and-password-from-an-auth-string"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get user and password from an auth string
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-require-user-for-'basic'-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should require user for 'basic' type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-allow-tokentype-for-'basic'-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not allow tokenType for 'basic' type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-allow-tokenvalue-for-'basic'-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not allow tokenValue for 'basic' type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-require-password-for-'basic'-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should require password for 'basic' type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-require-password-for-'tokentype'-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should require password for 'tokenType' type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-require-user-and-password-for-'token'-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not require user and password for 'token' type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-fail-to-initialize-with-minimum-data"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not fail to initialize with minimum data
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-match-non-default-port,-protocol,-secure-protocol,-and-host"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should match non-default port, protocol, secure protocol, and host
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-match-other-non-default-values"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should match other non-default values
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-require-proper-type"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should require proper type
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-require-proper-protocol"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should require proper protocol
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-to-initialize-without-minimum-data"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should fail to initialize without minimum data
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-able-to-produce-the---dash-form-of-any-options"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be able to produce the --dash-form of any options
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-a-basic-log4js-configuration-from-getdefaulticonfiglogging"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should get a basic log4js configuration from getDefaultIConfigLogging
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-add-console-appender-to-basic-log4js-configuration"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should add console appender to basic log4js configuration
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-add-file-appender-to-basic-log4js-configuration"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should add file appender to basic log4js configuration
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-add-a-console-and-file-appender-to-basic-log4js-configuration"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should add a console and file appender to basic log4js configuration
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-multiple-appenders-to-basic-log4js-configuration"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should multiple appenders to basic log4js configuration
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-use-getdefaultfilename-to-append-the-imperative-cli-home-to-a-passed-in-file-path"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should use getDefaultFileName to append the Imperative CLI home to a passed-in file path
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-use-buildfulllogfile-to-append-the-imperative-cli-home-to-a-passed-in-file-path"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should use buildFullLogFile to append the Imperative CLI home to a passed-in file path
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-fixed"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be fixed
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-should-allow-us-to-create-an-instance"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should should allow us to create an instance
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-missing-parameters"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect missing parameters
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-that-the-parameters-are-not-a-map"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect that the parameters are not a map
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-accept-a-profile-map-and-allow-us-to-retrieve-them"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should accept a profile map and allow us to retrieve them
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-a-profile-type-mismatch"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect a profile type mismatch
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-detect-a-profile-type-mismatch"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should detect a profile type mismatch
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-an-error-if-get-does-not-have-the-profile-type-in-the-map"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should throw an error if get does not have the profile type in the map
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-not-throw-an-error-if-get-does-not-have-the-profile-type-but-throw-not-found-is-false"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should not throw an error if get does not have the profile type but throw not found is false
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-accept-a-profile-map-and-allow-us-to-retreive-by-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should accept a profile map and allow us to retreive by name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-fixed"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be fixed
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-for-checking-if-a-level-is-valid"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should allow for checking if a level is valid
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-set-a-valid-level-and-not-set-and-invalid-one"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should set a valid level and not set and invalid one
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-throw-error-if-setting-invalid-level"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should throw error if setting invalid level
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-turning-off-colors"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should allow turning off colors
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-allow-turning-off-prefix"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should allow turning off prefix
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-call-stdout-and-stderr-three-times-each"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should call stdout and stderr three times each
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-construct-the-profile-root-directory"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should construct the profile root directory
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-flatten-dependencies"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should flatten dependencies
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-all-type-names"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get all type names
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-construct-the-profile-option-name"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should construct the profile option name
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-construct-the-profile-option-alias"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should construct the profile option alias
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-construct-the-option-and-alias"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should construct the option and alias
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-invoke-all-next-ticks-in-the-proper-order"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should invoke all next ticks in the proper order
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-initialize-properly"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should initialize properly
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-an-error-report"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        Should get an error report
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-a-config-with-an-empty-overrides"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should return a config with an empty overrides
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-return-a-config-with-the-passed-overrides"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should return a config with the passed overrides
+      </span>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Test tests should create proper elements for simple failing tests 1`] = `
+Array [
+  <div>
+    <a
+      href="#should-pretend-to-write-to-a-file"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should pretend to write to a file
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-match-snapshot-with-one-field"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should match snapshot with one field
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-match-snapshot-with-two-fields"
+    >
+      <span
+        class="summary-test-label test fail"
+      >
+        X
+      </span>
+      <span>
+        should match snapshot with two fields
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-match-snapshot-with-three-fields"
+    >
+      <span
+        class="summary-test-label test fail"
+      >
+        X
+      </span>
+      <span>
+        should match snapshot with three fields
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-instantiate-reporter-class"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should instantiate Reporter class
+      </span>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Test tests should create proper elements for simple passing tests 1`] = `
+Array [
+  <div>
+    <a
+      href="#should-pretend-to-write-to-a-file"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should pretend to write to a file
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-match-snapshot-with-one-field"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should match snapshot with one field
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-match-snapshot-with-two-fields"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should match snapshot with two fields
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-match-snapshot-with-three-fields"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should match snapshot with three fields
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-instantiate-reporter-class"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should instantiate Reporter class
+      </span>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Test tests should create proper elements for two diffs in html 1`] = `
+Array [
+  <div>
+    <a
+      href="#should-fail-with-a-snapshot-difference"
+    >
+      <span
+        class="summary-test-label test fail"
+      >
+        X
+      </span>
+      <span>
+        should fail with a snapshot difference
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-be-a-placeholder"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should be a placeholder
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-fail-with-a-snapshot-difference-2"
+    >
+      <span
+        class="summary-test-label test fail"
+      >
+        X
+      </span>
+      <span>
+        should fail with a snapshot difference 2
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-pass"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should pass
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-create-a-report-form-an-input-object"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should create a report form an input object
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-error-when-called-without-input"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should error when called without input
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-pretend-to-write-to-a-file"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should pretend to write to a file
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-pretend-to-write-to-a-file-and-reject-promise-for-io-errors"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should pretend to write to a file and reject promise for IO errors
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-say-true-if-dir-exists"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should say true if dir exists
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-false-if-dir-does-not-exist"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should false if dir does not exist
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-get-a-log-instance"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should get a log instance
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-instantiate-reporter-class"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should instantiate Reporter class
+      </span>
+    </a>
+  </div>,
+  <div>
+    <a
+      href="#should-do-something"
+    >
+      <span
+        class="summary-test-label test pass"
+      >
+        ✓
+      </span>
+      <span>
+        should do something
+      </span>
+    </a>
+  </div>,
+]
+`;

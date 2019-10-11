@@ -4,6 +4,7 @@ exports[`Test tests should create proper elements for large test > 500 tests 1`]
 Array [
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-create-an-instance"
   >
     <img
       alt=""
@@ -36,6 +37,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-create-an-instance-and-load-nothing"
   >
     <img
       alt=""
@@ -68,6 +70,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-create-an-instance-without-a-logger"
   >
     <img
       alt=""
@@ -100,6 +103,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-create-an-instance-(directly-with-constructor)"
   >
     <img
       alt=""
@@ -132,6 +136,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-a-bad-logger-instance"
   >
     <img
       alt=""
@@ -164,6 +169,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-command-definitions-when-creating-the-loader"
   >
     <img
       alt=""
@@ -196,6 +202,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-profile-manager-when-creating-the-loader"
   >
     <img
       alt=""
@@ -228,6 +235,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-load-a-required-profile"
   >
     <img
       alt=""
@@ -260,6 +268,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-percolate-the-load-error-to-the-caller"
   >
     <img
       alt=""
@@ -292,6 +301,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-percolate-the-load-error-to-the-caller"
   >
     <img
       alt=""
@@ -324,6 +334,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-react-properly-if-the-profile-manager-does-not-return-an-expected-result-for-default"
   >
     <img
       alt=""
@@ -356,6 +367,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-react-properly-if-the-profile-manager-does-not-return-an-expected-result"
   >
     <img
       alt=""
@@ -388,6 +400,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-load-a-required-profile-by-name"
   >
     <img
       alt=""
@@ -420,6 +433,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-load-a-required-profile-by-name-with-a-dependency"
   >
     <img
       alt=""
@@ -452,6 +466,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-load-two-different-required-types"
   >
     <img
       alt=""
@@ -484,6 +499,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-percolate-the-error-if-a-required-profile-for-one-type-is-not-found"
   >
     <img
       alt=""
@@ -516,6 +532,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-handle-multiple-loads-of-the-same-type"
   >
     <img
       alt=""
@@ -548,6 +565,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 failed-test"
+    id="should-install-from-the-npm-registry"
   >
     <img
       alt=""
@@ -652,6 +670,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 failed-test"
+    id="should-install-an-absolute-file-path"
   >
     <img
       alt=""
@@ -756,6 +775,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 failed-test"
+    id="should-install-a-relative-file-path"
   >
     <img
       alt=""
@@ -860,6 +880,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 failed-test"
+    id="should-install-from-a-url"
   >
     <img
       alt=""
@@ -964,6 +985,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 failed-test"
+    id="should-write-even-when-install-from-file-is-true"
   >
     <img
       alt=""
@@ -1068,6 +1090,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 failed-test"
+    id="should-accept-semver-properly"
   >
     <img
       alt=""
@@ -1172,6 +1195,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 failed-test"
+    id="should-merge-contents-of-previous-json-file"
   >
     <img
       alt=""
@@ -1276,6 +1300,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-errors"
   >
     <img
       alt=""
@@ -1308,6 +1333,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-display-the-help-if-no-options-are-specified"
   >
     <img
       alt=""
@@ -1340,6 +1366,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-display-the-version-if---version-is-specified"
   >
     <img
       alt=""
@@ -1372,6 +1399,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-parameters"
   >
     <img
       alt=""
@@ -1404,6 +1432,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-profile"
   >
     <img
       alt=""
@@ -1436,6 +1465,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-a-type-mismatch-when-saving-a-profile"
   >
     <img
       alt=""
@@ -1468,6 +1498,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-a-blank-name-when-creating-a-profile"
   >
     <img
       alt=""
@@ -1500,6 +1531,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-if-the-meta-name-was-specified-as-the-profile-name"
   >
     <img
       alt=""
@@ -1532,6 +1564,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-the-dependencies-are-not-an-array"
   >
     <img
       alt=""
@@ -1564,6 +1597,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-the-dependencies-are-present,-but-name-is-missing"
   >
     <img
       alt=""
@@ -1596,6 +1630,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-the-dependencies-are-present,-but-type-is-missing"
   >
     <img
       alt=""
@@ -1628,6 +1663,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-a-profile-requires-a-dependency-of-a-certain-type"
   >
     <img
       alt=""
@@ -1660,6 +1696,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-all-missing-required-fields-on-the-schema"
   >
     <img
       alt=""
@@ -1692,6 +1729,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-a-type-mismatch-from-the-schema-for-strings"
   >
     <img
       alt=""
@@ -1724,6 +1762,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-a-type-mismatch-from-the-schema-for-booleans"
   >
     <img
       alt=""
@@ -1756,6 +1795,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-a-save-request-if-the-file-already-exists-and-overwrite-is-false"
   >
     <img
       alt=""
@@ -1788,6 +1828,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-a-save-request-if-an-error-is-thrown-by-write-file"
   >
     <img
       alt=""
@@ -1820,6 +1861,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-a-save-request-if-there-is-an-error-writing-the-meta-file"
   >
     <img
       alt=""
@@ -1852,6 +1894,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-save-a-well-formed-profile"
   >
     <img
       alt=""
@@ -1884,6 +1927,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-save-a-profile-with-a-dependency"
   >
     <img
       alt=""
@@ -1916,6 +1960,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-allow-us-to-overwrite-a-profile-if-overwrite-false-(or-not-specified)"
   >
     <img
       alt=""
@@ -1948,6 +1993,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-allow-a-save-with-a-circular-dependency"
   >
     <img
       alt=""
@@ -1980,6 +2026,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-allow-a-save-with-no-contents"
   >
     <img
       alt=""
@@ -2012,6 +2059,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-allow-us-to-save-a-profile-that-lists-dependencies-of-types-that-were-not-defined"
   >
     <img
       alt=""
@@ -2044,6 +2092,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-a-save-request-if-a-profile-has-more-properties-than-defined-on-the-schema"
   >
     <img
       alt=""
@@ -2076,6 +2125,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-if-only-one-(username-or-password)-is-passed-as-argument"
   >
     <img
       alt=""
@@ -2108,6 +2158,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-pass-the-save-of-credentials-assuming-the-credential-manager-was-able-to-save-them"
   >
     <img
       alt=""
@@ -2140,6 +2191,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-the-save-of-credentials-assuming-the-credential-manager-was-not-able-to-save-them"
   >
     <img
       alt=""
@@ -2172,6 +2224,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-parms"
   >
     <img
       alt=""
@@ -2204,6 +2257,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-parms-with-a-missing-profile-name"
   >
     <img
       alt=""
@@ -2236,6 +2290,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-a-load-request-if-the-profile-is-not-found"
   >
     <img
       alt=""
@@ -2268,6 +2323,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-a-load-request-if-the-profile-loaded-does-not-conform-to-the-schema"
   >
     <img
       alt=""
@@ -2300,6 +2356,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-handle-a-read-error"
   >
     <img
       alt=""
@@ -2332,6 +2389,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-the-load-of-a-well-formed-profile"
   >
     <img
       alt=""
@@ -2364,6 +2422,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-load-the-default-if-requested"
   >
     <img
       alt=""
@@ -2396,6 +2455,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-if-the-default-doesn't-exist"
   >
     <img
       alt=""
@@ -2428,6 +2488,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-fail-the-request-if-'fail-not-found'-is-false-and-the-profile-was-not-found"
   >
     <img
       alt=""
@@ -2460,6 +2521,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-load-a-profile-with-one-dependency"
   >
     <img
       alt=""
@@ -2492,6 +2554,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-load-a-profile-with-two-dependencies"
   >
     <img
       alt=""
@@ -2524,6 +2587,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-load-a-profile-with-two-dependencies,-one-of-which-has-it's-own-dependency"
   >
     <img
       alt=""
@@ -2556,6 +2620,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-a-profile-load-with-two-dependencies,-one-of-which-has-it's-own-dependency-with-an-error"
   >
     <img
       alt=""
@@ -2588,6 +2653,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-a-profile-load-with-two-dependencies,-one-of-which-has-it's-own-dependency-which-is-not-found"
   >
     <img
       alt=""
@@ -2620,6 +2686,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-a-profile-load-with-two-dependencies,-one-of-which-has-it's-own-dependency-that-is-circular"
   >
     <img
       alt=""
@@ -2652,6 +2719,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-load-all-profiles-for-all-types"
   >
     <img
       alt=""
@@ -2684,6 +2752,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-load-a-profile-with-an-optional-dependency-that-is-not-specified"
   >
     <img
       alt=""
@@ -2716,6 +2785,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-allow-us-to-load-a-profile-with-an-optional-dependency-and-the-optional-dependency-doesn't-exist"
   >
     <img
       alt=""
@@ -2748,6 +2818,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-load-a-profile-where-an-optional-dependency-doesn't-exist-(but-fail-not-found-is-false)"
   >
     <img
       alt=""
@@ -2780,6 +2851,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-a-load-if-the-profile-doesn't-have-the-required-dependencies-listed-when-loaded"
   >
     <img
       alt=""
@@ -2812,6 +2884,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-pass-the-gather-of-credentials-assuming-the-credential-manager-was-able-to-get-them"
   >
     <img
       alt=""
@@ -2844,6 +2917,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-the-gather-of-credentials-assuming-the-credential-manager-was-not-able-to-get-them"
   >
     <img
       alt=""
@@ -2876,6 +2950,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="operations:-test-a-simple-set-of-operations-"
   >
     <img
       alt=""
@@ -2908,6 +2983,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="operations:-test-for-complex-set-of-operations-"
   >
     <img
       alt=""
@@ -2940,6 +3016,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="operations:-test-for-complex-set-of-undo-operations-"
   >
     <img
       alt=""
@@ -2972,6 +3049,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-no-parms-when-instantiating"
   >
     <img
       alt=""
@@ -3004,6 +3082,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-the-profile-directory-is-undefined"
   >
     <img
       alt=""
@@ -3036,6 +3115,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-the-profile-directory-is-blank"
   >
     <img
       alt=""
@@ -3068,6 +3148,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-no-type-configuration-is-supplied"
   >
     <img
       alt=""
@@ -3100,6 +3181,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-the-type-configuration-is-an-empty-array"
   >
     <img
       alt=""
@@ -3132,6 +3214,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-if-the-type-is-undefined"
   >
     <img
       alt=""
@@ -3164,6 +3247,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-if-the-type-is-blank"
   >
     <img
       alt=""
@@ -3196,6 +3280,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-a-type-not-found-within-the-configurations"
   >
     <img
       alt=""
@@ -3228,6 +3313,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-instantiate-the-cli-profile-manager"
   >
     <img
       alt=""
@@ -3260,6 +3346,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-load-all-profiles"
   >
     <img
       alt=""
@@ -3292,6 +3379,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-ill-formed-profiles-during-a-load-all"
   >
     <img
       alt=""
@@ -3324,6 +3412,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-initialize-the-environment"
   >
     <img
       alt=""
@@ -3356,6 +3445,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-parms-on-initialize"
   >
     <img
       alt=""
@@ -3388,6 +3478,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-configuration-on-initialize"
   >
     <img
       alt=""
@@ -3420,6 +3511,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-profile-directory-on-initialize"
   >
     <img
       alt=""
@@ -3452,6 +3544,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-blank-profile-directory-on-initialize"
   >
     <img
       alt=""
@@ -3484,6 +3577,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-create-an-instance-and-read-all-configurations-from-the-meta-files"
   >
     <img
       alt=""
@@ -3516,6 +3610,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-a-create-if-no-configurations-and-passed-and-none-can-be-read-from-disk"
   >
     <img
       alt=""
@@ -3548,6 +3643,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-the-configuration-passed-is-not-an-array"
   >
     <img
       alt=""
@@ -3580,6 +3676,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-only-initialize-types-not-already-defined-in-the-environment"
   >
     <img
       alt=""
@@ -3612,6 +3709,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-a-re-initialize-of-the-environment"
   >
     <img
       alt=""
@@ -3644,6 +3742,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-set-the-default-in-the-meta-profile"
   >
     <img
       alt=""
@@ -3676,6 +3775,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-a-request-to-set-the-default-if-the-profile-is-not-found"
   >
     <img
       alt=""
@@ -3708,6 +3808,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-merge-two-simple-profiles-together,-with-the-new-profile-taking-precedence-for-same-name-fields"
   >
     <img
       alt=""
@@ -3740,6 +3841,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-merge-dependencies-on-profiles,-while-deleting-duplicates"
   >
     <img
       alt=""
@@ -3772,6 +3874,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-replace-array-type-profile-fields-(other-than-dependencies)-with-newer-versions-of-the-arrayrather-than-merging-them-(merging-them-makes-it-impossible-to-specify-new-values-whenupdating-profiles-via-cli)-"
   >
     <img
       alt=""
@@ -3804,6 +3907,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-merge-on-update-if-\\"merge\\"-is-specified-on-the-parms-"
   >
     <img
       alt=""
@@ -3836,6 +3940,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-perform-any-reads-if-the-arguments-do-not-indicate-to-read-from-stdin"
   >
     <img
       alt=""
@@ -3868,6 +3973,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-return-stdin-as-part-of-the-arguments"
   >
     <img
       alt=""
@@ -3900,6 +4006,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-read-stdin-if-the-type-is-not-command"
   >
     <img
       alt=""
@@ -3932,6 +4039,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-handle-a-stdin-read-error"
   >
     <img
       alt=""
@@ -3964,6 +4072,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="we-should-be-able-to-correctly-specify-the-options-for-our-test-command-without-an-error-"
   >
     <img
       alt=""
@@ -3996,6 +4105,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-specify-an-unknown-positional,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4028,6 +4138,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-specify-multiple-unknown-positionals,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4060,6 +4171,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-omit-a-required-boolean-option,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4092,6 +4204,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-omit-a-required-string-option,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4124,6 +4237,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-specify-the---name-of-a-required-string-option,-but-no-value,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4156,6 +4270,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-specify-a-conflicting-option,-the-command-should-fail.-"
   >
     <img
       alt=""
@@ -4188,6 +4303,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-specify-an-option-that-implies-another-option,-but-omit-the-implied-option,-the-command-should-fail.-"
   >
     <img
       alt=""
@@ -4220,6 +4336,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-specify-an-option-that-implies-another-option,-and-include-the-implied-option,-the-command-should-succeed.-"
   >
     <img
       alt=""
@@ -4252,6 +4369,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-specify-an-option-that-has-a-set-of-allowable-string-values,-but-specify-a-value-that-doesn't-match-any-of-the-values,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4284,6 +4402,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-specify-an-option-that-has-a-set-of-allowable-string-values,-and-specify-a-value-that-matches-one-of-the-allowable-values,-the-command-should-succeed-"
   >
     <img
       alt=""
@@ -4316,6 +4435,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-don't-specify-an-option,-and-the-absence-of-that-option-implies-the-presence-of-another-option,-and-we-omit-that-option-as-well,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4348,6 +4468,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-don't-specify-an-option,-and-the-absence-of-that-option-implies-the-presence-of-another-option,-but-we-specify-that-implied-option,-the-command-should-succeed-"
   >
     <img
       alt=""
@@ -4380,6 +4501,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-that-should-be-numerical,-but-a-non-numeric-option-is-specified,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4412,6 +4534,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-that-should-be-numerical,-and-we-specify-a-number,-the-command-should-succeed-"
   >
     <img
       alt=""
@@ -4444,6 +4567,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-for-which-specifying-a-certain-value-implies-another-option,-if-we-omit-the-implied-option,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4476,6 +4600,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-for-which-specifying-a-certain-value-implies-another-option,-if-we-specify-the-implied-option,-the-command-should-succeed-"
   >
     <img
       alt=""
@@ -4508,6 +4633,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-with-a-max-length-of-eight-characters-and-a-minimum-of-two,-and-we-specify-a-value-that's-one-character-long,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4540,6 +4666,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-with-a-max-length-of-eight-characters-and-a-minimum-of-two,-and-we-specify-a-value-that's-exactly-two-characters-long,-the-command-should-succeed-"
   >
     <img
       alt=""
@@ -4572,6 +4699,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-with-a-max-length-of-eight-characters-and-a-minimum-of-two,-and-we-specify-a-value-that's-exactly-eight-characters-long,-the-command-should-succeed-"
   >
     <img
       alt=""
@@ -4604,6 +4732,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-with-a-max-length-of-eight-characters-and-a-minimum-of-two,-and-we-specify-a-value-that's-nine-characters-long,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4636,6 +4765,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-with-a-max-value-of-12-and-a-minimum-of-1,-and-we-specify-0,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4668,6 +4798,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-with-a-max-value-of-12-and-a-minimum-of-1,-and-we-specify-1,-the-command-should-succeed-"
   >
     <img
       alt=""
@@ -4700,6 +4831,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-with-a-max-value-of-12-and-a-minimum-of-1,-and-we-specify-1-long,-the-command-should-succeed-"
   >
     <img
       alt=""
@@ -4732,6 +4864,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-with-a-max-value-of-12-and-a-minimum-of-1,-and-we-specify-15,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4764,6 +4897,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-that-implies-at-least-one-of-a-set-of-other-options,-if-we-specify-that-option-but-omit-all-of-the-implications,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4796,6 +4930,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-that-implies-at-least-one-of-a-set-of-other-options,-if-we-specify-that-option-and-satisfy-the-implication,-the-command-should-succeed-"
   >
     <img
       alt=""
@@ -4828,6 +4963,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-with-multiple-conflicts,-if-we-specify-the-first-of-the-conflicting-options,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4860,6 +4996,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-with-multiple-conflicts,-if-we-specify-two-of-the-conflicting-options,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4892,6 +5029,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-with-multiple-conflicts,-if-we-specify-all-of-the-conflicting-options,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4924,6 +5062,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-there-is-an-option-with-multiple-conflicts,-if-we-specify-the-last-of-the-conflicting-options,-the-command-should-fail-"
   >
     <img
       alt=""
@@ -4956,6 +5095,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-specify-a-string-type-option-multiple-times,-but-otherwise-have-a-correct-command-"
   >
     <img
       alt=""
@@ -4988,6 +5128,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-have-a-command-with-a-number-type-positional,-and-we-try-to-specify-a-non-numeric-argument,-the-command-should-fail"
   >
     <img
       alt=""
@@ -5020,6 +5161,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-have-a-command-with-a-number-type-positional,-and-we-try-to-specify-a-numeric-argument,-the-command-should-succeed"
   >
     <img
       alt=""
@@ -5052,6 +5194,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-take-a-handler-to-create-a-profile-from-command-line-arguments,-and-the-handler-should-be-called-and-the-resulting-profile-should-have-the-created-fields-in-it."
   >
     <img
       alt=""
@@ -5084,6 +5227,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-take-a-handler-to-update-a-profile-from-command-line-arguments,-and-the-handler-should-be-called-and-the-resulting-profile-should-have-the-created-fields-in-it."
   >
     <img
       alt=""
@@ -5116,6 +5260,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-take-a-handler-to-create-a-profile-from-command-line-arguments,-but-if-the-profile-handler-does-not-add-a-field-required-by-the-schema,-we-should-get-a-validation-error"
   >
     <img
       alt=""
@@ -5148,6 +5293,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-still-create-a-profile-properly-without-providing-args"
   >
     <img
       alt=""
@@ -5180,6 +5326,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-still-fail-profile-validation-on-creation-if-no-args-are-provided-"
   >
     <img
       alt=""
@@ -5212,6 +5359,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-still-fail-profile-validation-on-update-if-no-args-are-provided-"
   >
     <img
       alt=""
@@ -5244,6 +5392,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-provide-a-non-existent-handler-to-create-a-profile-from-command-line-arguments,-we-should-get-a-helpful-error."
   >
     <img
       alt=""
@@ -5276,6 +5425,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-provide-a-non-existent-handler-to-update-a-profile-from-command-line-arguments,-we-should-get-a-helpful-error."
   >
     <img
       alt=""
@@ -5308,6 +5458,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-catch-errors-thrown-by-custom-profile-create-handler-and-expose-them-to-the-user"
   >
     <img
       alt=""
@@ -5340,6 +5491,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-catch-errors-thrown-by-custom-profile-update-handler-and-expose-them-to-the-user"
   >
     <img
       alt=""
@@ -5372,6 +5524,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-create-a-profile-with-dependencies-if-the-proper-command-line-arguments-are-provided"
   >
     <img
       alt=""
@@ -5404,6 +5557,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-take-a-handler-to-update-a-profile-from-command-line-arguments,-and-the-handler-should-be-called-and-the-resulting-profile-should-have-the-created-fields-in-it."
   >
     <img
       alt=""
@@ -5436,6 +5590,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-map-option-definitions-back-to-differently-named-profile-fields-on-update"
   >
     <img
       alt=""
@@ -5468,6 +5623,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-map-option-definitions-back-to-differently-named-profile-fields-on-creation"
   >
     <img
       alt=""
@@ -5500,6 +5656,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-provide-a-helpful-error-message-if-an-error-is-encountered-saving-the-profile-while-updating"
   >
     <img
       alt=""
@@ -5532,6 +5689,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-merge-on-update-if-\\"merge\\"-is-specified-on-the-parms-and-no-cli-args-are-specfied"
   >
     <img
       alt=""
@@ -5564,6 +5722,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-merge-on-update-if-\\"merge\\"-is-specified-on-the-parms-and-cli-args-are-specfied"
   >
     <img
       alt=""
@@ -5596,6 +5755,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-no-parms-are-supplied"
   >
     <img
       alt=""
@@ -5628,6 +5788,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-the-parms-did-not-specify-a-name"
   >
     <img
       alt=""
@@ -5660,6 +5821,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-the-parms-specified-a-blank-name"
   >
     <img
       alt=""
@@ -5692,6 +5854,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-there-is-no-profile-of-the-specified-name-to-delete"
   >
     <img
       alt=""
@@ -5724,6 +5887,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-a-delete-where-the-profile-to-delete-is-marked-as-a-dependency-of-another-profile"
   >
     <img
       alt=""
@@ -5756,6 +5920,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-handle-an-error-thrown-by-delete/unlink"
   >
     <img
       alt=""
@@ -5788,6 +5953,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-delete-a-profile"
   >
     <img
       alt=""
@@ -5820,6 +5986,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-the-profile-to-delete-is-marked-as-a-dependency-of-another-profile,-but-allow-delete-if-specified"
   >
     <img
       alt=""
@@ -5852,6 +6019,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-pass-the-delete-of-credentials-assuming-the-credential-manager-was-able-to-delete-them"
   >
     <img
       alt=""
@@ -5884,6 +6052,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-the-delete-of-credentials-assuming-the-credential-manager-was-not-able-to-delete-them"
   >
     <img
       alt=""
@@ -5916,6 +6085,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-work-when-passed-with-nothing"
   >
     <img
       alt=""
@@ -5948,6 +6118,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="handles-a-non-imperative-error"
   >
     <img
       alt=""
@@ -5980,6 +6151,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-propagate-an-imperativeerror-up"
   >
     <img
       alt=""
@@ -6012,6 +6184,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="we-should-be-able-to-get-proper-error-messages-on-a-non-syntax-failure"
   >
     <img
       alt=""
@@ -6044,6 +6217,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="we-should-be-able-to-get-proper-error-messages-on-a-syntax-failure"
   >
     <img
       alt=""
@@ -6076,6 +6250,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-have-a-mock-plan-with-a-failing-parent-test,-the-validation-should-fail-and-none-of-the-tasks-dependent-on-the-failing-task-should-run-"
   >
     <img
       alt=""
@@ -6108,6 +6283,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-have-a-mock-plan-with-a-parent-test-that-gets-a-warning,-the-validation-should-fail-and-none-of-the-tasks-dependent-on-the-failing-task-should-run-"
   >
     <img
       alt=""
@@ -6140,6 +6316,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-have-a-mock-plan-with-a-passing-parent-test,-one-failing-task-and-two-passing-tasks,-the-overall-result-should-be-failure-"
   >
     <img
       alt=""
@@ -6172,6 +6349,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-have-a-mock-plan-with-all-passing-tests,-the-result-should-be-a-successful-validation-"
   >
     <img
       alt=""
@@ -6204,6 +6382,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-have-a-mock-plan-with-a-parent-test-that-throws-an-unexpected-exception,-the-dependent-tasks-should-still-be-skipped-and-we-should-still-get-a-report-"
   >
     <img
       alt=""
@@ -6236,6 +6415,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-get-a-text-report-for-a-validation-plan,-the-report-should-contain-all-of-the-descriptions-for-each-task"
   >
     <img
       alt=""
@@ -6268,6 +6448,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-try-to-validate-with-a-plan-with-no-tasks-in-it,-an-error-should-be-thrown-to-let-profile/module-contributors-know-that-their-plan-is-invalid-"
   >
     <img
       alt=""
@@ -6300,6 +6481,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-validate-a-profile-with-a-result-description-that-is-too-long,-it-should-be-truncated-"
   >
     <img
       alt=""
@@ -6332,6 +6514,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="a-failed-profile-validation-report-should-include-specified-failure-suggestions-"
   >
     <img
       alt=""
@@ -6364,6 +6547,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-undefined-parms"
   >
     <img
       alt=""
@@ -6396,6 +6580,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-a-type-mismatch"
   >
     <img
       alt=""
@@ -6428,6 +6613,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-a-that-we-are-attempting-to-use-the-meta-name"
   >
     <img
       alt=""
@@ -6460,6 +6646,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-a-missing-profile-name"
   >
     <img
       alt=""
@@ -6492,6 +6679,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-the-dependencies-are-not-an-array"
   >
     <img
       alt=""
@@ -6524,6 +6712,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-the-dependencies-are-present,-but-name-is-missing"
   >
     <img
       alt=""
@@ -6556,6 +6745,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-that-the-dependencies-are-present,-but-type-is-missing"
   >
     <img
       alt=""
@@ -6588,6 +6778,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-that-a-profile-requires-a-dependency-of-a-certain-type"
   >
     <img
       alt=""
@@ -6620,6 +6811,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-all-missing-required-fields-on-the-schema"
   >
     <img
       alt=""
@@ -6652,6 +6844,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-a-type-mismatch-from-the-schema-for-strings"
   >
     <img
       alt=""
@@ -6684,6 +6877,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-a-type-mismatch-from-the-schema-for-booleans"
   >
     <img
       alt=""
@@ -6716,6 +6910,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-validate-a-well-formed-profile-successfully"
   >
     <img
       alt=""
@@ -6748,6 +6943,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-a-save-request-if-a-profile-has-more-properties-than-defined-on-the-schema"
   >
     <img
       alt=""
@@ -6780,6 +6976,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-pass-the-gather-of-credentials-assuming-the-credential-manager-was-able-to-get-them"
   >
     <img
       alt=""
@@ -6812,6 +7009,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-the-gather-of-credentials-assuming-the-credential-manager-was-not-able-to-get-them"
   >
     <img
       alt=""
@@ -6844,6 +7042,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-parameters"
   >
     <img
       alt=""
@@ -6876,6 +7075,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-name-parameter"
   >
     <img
       alt=""
@@ -6908,6 +7108,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-update-a-profile"
   >
     <img
       alt=""
@@ -6940,6 +7141,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-pass-the-update-of-credentials-assuming-the-credential-manager-was-able-to-save-them"
   >
     <img
       alt=""
@@ -6972,6 +7174,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-the-update-of-credentials-assuming-the-credential-manager-was-not-able-to-save-them"
   >
     <img
       alt=""
@@ -7004,6 +7207,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-fixed"
   >
     <img
       alt=""
@@ -7036,6 +7240,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-no-parms-when-instantiating"
   >
     <img
       alt=""
@@ -7068,6 +7273,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-the-profile-directory-is-undefined"
   >
     <img
       alt=""
@@ -7100,6 +7306,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-the-profile-directory-is-blank"
   >
     <img
       alt=""
@@ -7132,6 +7339,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-no-type-configuration-is-supplied"
   >
     <img
       alt=""
@@ -7164,6 +7372,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-the-type-configuration-is-an-empty-array"
   >
     <img
       alt=""
@@ -7196,6 +7405,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-if-the-type-is-undefined"
   >
     <img
       alt=""
@@ -7228,6 +7438,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-if-the-type-is-blank"
   >
     <img
       alt=""
@@ -7260,6 +7471,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-a-type-not-found-within-the-configurations"
   >
     <img
       alt=""
@@ -7292,6 +7504,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-instantiate-the-cli-profile-manager"
   >
     <img
       alt=""
@@ -7324,6 +7537,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-a-schema-definition-document-is-attempting-to-overload-'type'"
   >
     <img
       alt=""
@@ -7356,6 +7570,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-a-schema-definition-document-is-attempting-to-overload-'name'"
   >
     <img
       alt=""
@@ -7388,6 +7603,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-a-schema-definition-document-is-attempting-to-overload-'dependencies'"
   >
     <img
       alt=""
@@ -7420,6 +7636,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-instantiation-if-the-meta-doesn't-have-a-default"
   >
     <img
       alt=""
@@ -7452,6 +7669,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-ill-formed-meta-profile-configurations"
   >
     <img
       alt=""
@@ -7484,6 +7702,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="we-should-be-able-to-determine-if-an-option-is-specified"
   >
     <img
       alt=""
@@ -7516,6 +7735,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="currentsegmentname-tests---expect-only-[group]-and-[command]"
   >
     <img
       alt=""
@@ -7548,6 +7768,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="we-should-be-able-to-build-the-full-command-string-from-the-definition-and-the-arguments"
   >
     <img
       alt=""
@@ -7580,6 +7801,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="we-should-be-able-to-get-the-option-definition-from-the-name"
   >
     <img
       alt=""
@@ -7612,6 +7834,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="we-should-be-able-to-flatten-a-nested-command-tree-for-display-and-searching-purposes"
   >
     <img
       alt=""
@@ -7644,6 +7867,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="we-should-be-able-get-the-full-command-name-from-the-flattened-tree"
   >
     <img
       alt=""
@@ -7676,6 +7900,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-create-a-progress-bar,-an-interval-should-be-set-to-update-the-bar.-if-we-finish-the-bar,-the-interval-should-be-stopped-and-no-longer-storedin-the-command-response.-"
   >
     <img
       alt=""
@@ -7708,6 +7933,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-our-response-object-is-in-silent-mode,-which-is-caused-for-example-by-the-user-specifying-that-they-want-a-json-response,-a-progress-bar-should-not-be-created"
   >
     <img
       alt=""
@@ -7740,6 +7966,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-for-an-undefined-key-when-we-expect-it-to-be-defined"
   >
     <img
       alt=""
@@ -7772,6 +7999,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-throw-an-error-for-a-list-of-defined-keys"
   >
     <img
       alt=""
@@ -7804,6 +8032,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-for-a-defined-key-when-the-last-one-is-undefined"
   >
     <img
       alt=""
@@ -7836,6 +8065,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-throw-an-error-for-a-non-blank-field"
   >
     <img
       alt=""
@@ -7868,6 +8098,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-for-a-blank-field"
   >
     <img
       alt=""
@@ -7900,6 +8131,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-for-a-defined-key-that-is-blank"
   >
     <img
       alt=""
@@ -7932,6 +8164,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-throw-an-error-for-a-defined-key-that-is-blank"
   >
     <img
       alt=""
@@ -7964,6 +8197,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-throw-an-error-if-the-item-is-found-in-a-list"
   >
     <img
       alt=""
@@ -7996,6 +8230,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-if-an-item-is-not-found-in-a-list"
   >
     <img
       alt=""
@@ -8028,6 +8263,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-throw-an-error-for-an-undefined-key-when-we-expect-undefined"
   >
     <img
       alt=""
@@ -8060,6 +8296,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-for-defined-key-that-we-want-to-be-undefined"
   >
     <img
       alt=""
@@ -8092,6 +8329,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-for-defined-key-that-is-last-in-a-list-of-undefined-keys"
   >
     <img
       alt=""
@@ -8124,6 +8362,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-throw-error-if-the-type-is-correct"
   >
     <img
       alt=""
@@ -8156,6 +8395,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-throw-error-if-the-type-is-correct"
   >
     <img
       alt=""
@@ -8188,6 +8428,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-if-the-type-is-incorrect"
   >
     <img
       alt=""
@@ -8220,6 +8461,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-throw-error-if-the-type-is-correct-of-a-nested-property"
   >
     <img
       alt=""
@@ -8252,6 +8494,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-error-if-the-type-is-not-correct-of-a-nested-property"
   >
     <img
       alt=""
@@ -8284,6 +8527,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-error-if-the-input-is-not-an-array-and-an-array-is-expected"
   >
     <img
       alt=""
@@ -8316,6 +8560,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-error-if-the-input-array-is-of-length-0"
   >
     <img
       alt=""
@@ -8348,6 +8593,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-throw-error-if-the-input-array-is-of-length-0"
   >
     <img
       alt=""
@@ -8380,6 +8626,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-throw-error-if-the-entry-is-found"
   >
     <img
       alt=""
@@ -8412,6 +8659,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-if-the-entry-is-not-found"
   >
     <img
       alt=""
@@ -8444,6 +8692,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-an-expect-failure-to-be-transformed"
   >
     <img
       alt=""
@@ -8476,6 +8725,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-a-custom-error-message"
   >
     <img
       alt=""
@@ -8508,6 +8758,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-throw-error-if-the-values-are-not-equal"
   >
     <img
       alt=""
@@ -8540,6 +8791,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-if-the-values-are-equal-and-we're-expected-them-to-not-be-equal"
   >
     <img
       alt=""
@@ -8572,6 +8824,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-append-any-headers-to-a-request-by-default"
   >
     <img
       alt=""
@@ -8604,6 +8857,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-give-an-error-when-no-session-is-provided"
   >
     <img
       alt=""
@@ -8636,6 +8890,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-give-an-error-when-no-resource-uri-is-provided"
   >
     <img
       alt=""
@@ -8668,6 +8923,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-error-when-chunking-data-and-payload-data-are-present-in-outgoing-request"
   >
     <img
       alt=""
@@ -8700,6 +8956,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-error-when-headers-and-payload-data-are-present-in-outgoing-request"
   >
     <img
       alt=""
@@ -8732,6 +8989,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-error-when-data-and-end-events-are-sent"
   >
     <img
       alt=""
@@ -8764,6 +9022,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-give-an-error-message-when-error-event-is-called"
   >
     <img
       alt=""
@@ -8796,6 +9055,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-call-http-request-for-http-requests"
   >
     <img
       alt=""
@@ -8828,6 +9088,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-call-https-request-for-https-requests"
   >
     <img
       alt=""
@@ -8860,6 +9121,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-provide-a-valid-command-definition-for-the-complete-auto-generated-profile-group-if-passed-a-valid-profile-configuration-document"
   >
     <img
       alt=""
@@ -8892,6 +9154,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-prepare-the-final-command-document-for-imperative-usage"
   >
     <img
       alt=""
@@ -8924,6 +9187,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-generate-profile-options-(and-suppress-if-desired)"
   >
     <img
       alt=""
@@ -8956,6 +9220,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-pass-on-(and-overwrite)-profile-attributes-from-parents-to-children"
   >
     <img
       alt=""
@@ -8988,6 +9253,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-pass-on-(and-overwrite)-enablestdin-settings"
   >
     <img
       alt=""
@@ -9020,6 +9286,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-pass-on-profile-attributes-from-parents-to-children-except-children-of-a-certain-name"
   >
     <img
       alt=""
@@ -9052,6 +9319,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-pass-on-attributes-from-parents-to-children-and-not-erroneously-ignore-nodes"
   >
     <img
       alt=""
@@ -9084,6 +9352,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-pass-on-attributes-from-parents-to-children-and-ignore-definitions-with-type-group"
   >
     <img
       alt=""
@@ -9116,6 +9385,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-ignore-everything-if-specified"
   >
     <img
       alt=""
@@ -9148,6 +9418,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-pass-on-new-options-to-children-(and-merge-them)"
   >
     <img
       alt=""
@@ -9180,6 +9451,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-pass-on-new-options-to-children,-merge-them,-but-ignore-groups"
   >
     <img
       alt=""
@@ -9212,6 +9484,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-if-a-undefined-or-null-attribute-is-being-passed-down-(error)"
   >
     <img
       alt=""
@@ -9244,6 +9517,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-pass-on-options-of-a-parent-to-children"
   >
     <img
       alt=""
@@ -9276,6 +9550,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-groups-with-undefined-children"
   >
     <img
       alt=""
@@ -9308,6 +9583,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-groups-with-no-children"
   >
     <img
       alt=""
@@ -9340,6 +9616,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-children-that-are-ill-formed"
   >
     <img
       alt=""
@@ -9372,6 +9649,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-definition-nodes-with-missing-type"
   >
     <img
       alt=""
@@ -9404,6 +9682,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-documents-with-missing-descriptions"
   >
     <img
       alt=""
@@ -9436,6 +9715,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-documents-with-circular-references"
   >
     <img
       alt=""
@@ -9468,6 +9748,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-definitions-without-a-name-at-the-top-level"
   >
     <img
       alt=""
@@ -9500,6 +9781,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-definitions-without-a-name-at-a-lower-level"
   >
     <img
       alt=""
@@ -9532,6 +9814,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-null-or-undefined-definitions"
   >
     <img
       alt=""
@@ -9564,6 +9847,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-options-that-are-not-an-array"
   >
     <img
       alt=""
@@ -9596,6 +9880,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-positionals-that-are-not-an-array"
   >
     <img
       alt=""
@@ -9628,6 +9913,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-that-a-definition-is-valid"
   >
     <img
       alt=""
@@ -9660,6 +9946,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-if-an-option-has-no-name"
   >
     <img
       alt=""
@@ -9692,6 +9979,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-if-an-option-has-no-type"
   >
     <img
       alt=""
@@ -9724,6 +10012,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-if-an-option-has-no-description"
   >
     <img
       alt=""
@@ -9756,6 +10045,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-if-a-positional-has-no-name"
   >
     <img
       alt=""
@@ -9788,6 +10078,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-if-a-positional-has-no-type"
   >
     <img
       alt=""
@@ -9820,6 +10111,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-detect-if-a-positional-has-no-description"
   >
     <img
       alt=""
@@ -9852,6 +10144,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-mark-parent-commands-that-have-all-experimental-children-as-experimental"
   >
     <img
       alt=""
@@ -9884,6 +10177,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-mark-not-parent-commands-that-have-mixed-experimental-and-non-experimental-children-as-experimental"
   >
     <img
       alt=""
@@ -9916,6 +10210,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-mark-all-children-of-an-experimental-group-as-experimental-"
   >
     <img
       alt=""
@@ -9948,6 +10243,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-when-getting-the-manager-before-init"
   >
     <img
       alt=""
@@ -9980,6 +10276,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-when-initialize-is-called-twice"
   >
     <img
       alt=""
@@ -10012,6 +10309,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-initialize-with-the-default-credential-manager"
   >
     <img
       alt=""
@@ -10044,6 +10342,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-initialize-a-classpath-that-has-no-initialize-method"
   >
     <img
       alt=""
@@ -10076,6 +10375,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-when-the-class-doesn't-extend-the-abstractcredentialmanager"
   >
     <img
       alt=""
@@ -10108,6 +10408,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-handle-a-load-failure"
   >
     <img
       alt=""
@@ -10140,6 +10441,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-provide-a-valid-command-definition-for-the-profile-set-command-based-on-our-test-profile-type"
   >
     <img
       alt=""
@@ -10172,6 +10474,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="formathelpheader-test"
   >
     <img
       alt=""
@@ -10204,6 +10507,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="buildhelp-test"
   >
     <img
       alt=""
@@ -10236,6 +10540,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="getoptionandaliasesstring-test"
   >
     <img
       alt=""
@@ -10268,6 +10573,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="buildoptionmaps-test"
   >
     <img
       alt=""
@@ -10300,6 +10606,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="getcasesensitiveflagbyoptionname-test"
   >
     <img
       alt=""
@@ -10332,6 +10639,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="renderhelp-test"
   >
     <img
       alt=""
@@ -10364,6 +10672,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="explaintype-test"
   >
     <img
       alt=""
@@ -10396,6 +10705,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-call-underlying-service-function"
   >
     <img
       alt=""
@@ -10428,6 +10738,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-error-if-not-given-a-config-on-initialization"
   >
     <img
       alt=""
@@ -10460,6 +10771,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-error-if-given-an-incomplete-config-on-initialization"
   >
     <img
       alt=""
@@ -10492,6 +10804,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-error-if-given-a-partially-config-on-initialization"
   >
     <img
       alt=""
@@ -10524,6 +10837,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-set-the-level-like-we-say"
   >
     <img
       alt=""
@@ -10556,6 +10870,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-call-underlying-services-for-logerror-function"
   >
     <img
       alt=""
@@ -10588,6 +10903,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-the-correct-requested-logger-appender"
   >
     <img
       alt=""
@@ -10620,6 +10936,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-provide-a-valid-command-definition-for-the-profile-update-command-based-on-our-test-profile-type"
   >
     <img
       alt=""
@@ -10652,6 +10969,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-provide-a-valid-command-definition-for-the-profile-list-command-based-on-our-test-profile-type"
   >
     <img
       alt=""
@@ -10684,6 +11002,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-provide-a-valid-command-definition-for-the-profile-validate-command-based-on-our-test-profile-type"
   >
     <img
       alt=""
@@ -10716,6 +11035,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-provide-a-valid-command-definition-for-the-profile-delete-command-based-on-our-test-profile-type"
   >
     <img
       alt=""
@@ -10748,6 +11068,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-create-an-instance"
   >
     <img
       alt=""
@@ -10780,6 +11101,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-invalid-primary-color"
   >
     <img
       alt=""
@@ -10812,6 +11134,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-invalid-response-format"
   >
     <img
       alt=""
@@ -10844,6 +11167,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-indicate-the-command-succeeded-by-default"
   >
     <img
       alt=""
@@ -10876,6 +11200,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-indicate-the-response-format-default-if-nothing-was-specified"
   >
     <img
       alt=""
@@ -10908,6 +11233,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-indicate-the-response-format-is-json-if-specified"
   >
     <img
       alt=""
@@ -10940,6 +11266,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-indicate-silent-mode-if-specified"
   >
     <img
       alt=""
@@ -10972,6 +11299,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-indicate-not-silent-mode-by-default"
   >
     <img
       alt=""
@@ -11004,6 +11332,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-set-the-primary-highlight-color"
   >
     <img
       alt=""
@@ -11036,6 +11365,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-set-an-error"
   >
     <img
       alt=""
@@ -11068,6 +11398,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-indicate-that-the-command-failed"
   >
     <img
       alt=""
@@ -11100,6 +11431,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-indicate-that-the-command-succeeded"
   >
     <img
       alt=""
@@ -11132,6 +11464,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-write-to-stdout-(with-newline)-and-buffer-to-the-response-object"
   >
     <img
       alt=""
@@ -11164,6 +11497,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-write-to-stderr-(with-newline)-and-buffer-to-the-response-object"
   >
     <img
       alt=""
@@ -11196,6 +11530,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-write-to-both-stdout-and-stderr-and-buffer-to-both-respectively"
   >
     <img
       alt=""
@@ -11228,6 +11563,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-write-data-to-stdout-(no-newline)-and-buffer-to-the-response-object"
   >
     <img
       alt=""
@@ -11260,6 +11596,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-write-data-to-stderr-(no-newline)-and-buffer-to-the-response-object"
   >
     <img
       alt=""
@@ -11292,6 +11629,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-write-error-header-messages-to-stderr-and-invoke-chalk-to-colorize-in-red"
   >
     <img
       alt=""
@@ -11324,6 +11662,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-write-to-stdout-(but-still-buffer)-if-silent-mode-is-enabled"
   >
     <img
       alt=""
@@ -11356,6 +11695,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-write-to-stderr-(but-still-buffer)-if-silent-mode-is-enabled"
   >
     <img
       alt=""
@@ -11388,6 +11728,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-write-an-error-header-to-stderr-(but-still-buffer)-if-silent-mode-is-enabled"
   >
     <img
       alt=""
@@ -11420,6 +11761,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-write-to-both-stdout-and-stderr-(but-still-buffer)-if-silent-mode-is-enabled"
   >
     <img
       alt=""
@@ -11452,6 +11794,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-format-messages-when-using-a-format-string-to-stdout"
   >
     <img
       alt=""
@@ -11484,6 +11827,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-format-messages-when-using-a-format-string-to-stderr"
   >
     <img
       alt=""
@@ -11516,6 +11860,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-set-a-json-message"
   >
     <img
       alt=""
@@ -11548,6 +11893,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-overwrite-the-message-if-set-multiple-times"
   >
     <img
       alt=""
@@ -11580,6 +11926,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-set-the-data-object-in-the-response-as-a-string"
   >
     <img
       alt=""
@@ -11612,6 +11959,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-set-the-data-object-in-the-response-as-an-object"
   >
     <img
       alt=""
@@ -11644,6 +11992,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-set-the-data-object-in-the-response-as-an-array"
   >
     <img
       alt=""
@@ -11676,6 +12025,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-merge-the-data-object-in-the-response-as-an-array"
   >
     <img
       alt=""
@@ -11708,6 +12058,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-overwrite-the-first-object-if-set-obj-is-called-again"
   >
     <img
       alt=""
@@ -11740,6 +12091,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-set-the-message-and-the-data"
   >
     <img
       alt=""
@@ -11772,6 +12124,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-create-a-full/complex-response-and-build-the-response"
   >
     <img
       alt=""
@@ -11804,6 +12157,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-create-a-full/complex-response-and-write-the-response"
   >
     <img
       alt=""
@@ -11836,6 +12190,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-create-a-full/complex-response-should-not-write-if-silent-mode-is-enabled"
   >
     <img
       alt=""
@@ -11868,6 +12223,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-provide-a-valid-command-definition-for-the-profile-create-command-based-on-our-test-profile-type"
   >
     <img
       alt=""
@@ -11900,6 +12256,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="handler-response"
   >
     <img
       alt=""
@@ -11932,6 +12289,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-provide-a-valid-command-definition-for-the-profile-show-dependencies-command-based-on-our-test-profile-type"
   >
     <img
       alt=""
@@ -11964,6 +12322,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-create-an-instance"
   >
     <img
       alt=""
@@ -11996,6 +12355,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-create-an-instance-and-indicate-markdown"
   >
     <img
       alt=""
@@ -12028,6 +12388,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-parameters"
   >
     <img
       alt=""
@@ -12060,6 +12421,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-root-command-name"
   >
     <img
       alt=""
@@ -12092,6 +12454,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-root-command-name"
   >
     <img
       alt=""
@@ -12124,6 +12487,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-root-command-name"
   >
     <img
       alt=""
@@ -12156,6 +12520,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-command-definition-when-getting-a-factory"
   >
     <img
       alt=""
@@ -12188,6 +12553,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-command-definition-tree-when-getting-a-factory"
   >
     <img
       alt=""
@@ -12220,6 +12586,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-an-instance-of-the-test-help-generator"
   >
     <img
       alt=""
@@ -12252,6 +12619,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="buildhelp-test"
   >
     <img
       alt=""
@@ -12284,6 +12652,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="getgrouphelptext-test"
   >
     <img
       alt=""
@@ -12316,6 +12685,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="getcommandhelptext-test"
   >
     <img
       alt=""
@@ -12348,6 +12718,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="buildcommandandaliases-test"
   >
     <img
       alt=""
@@ -12380,6 +12751,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="getprintedactionsorgroups-test"
   >
     <img
       alt=""
@@ -12412,6 +12784,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="buildusagediagram-test"
   >
     <img
       alt=""
@@ -12444,6 +12817,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="getprintedusage-test"
   >
     <img
       alt=""
@@ -12476,6 +12850,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="getprintedglobaloptions-test"
   >
     <img
       alt=""
@@ -12508,6 +12883,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="getprinteddescription-test"
   >
     <img
       alt=""
@@ -12540,6 +12916,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="getprintedpositionaloptions-test"
   >
     <img
       alt=""
@@ -12572,6 +12949,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="getprintednonglobaloptions-test"
   >
     <img
       alt=""
@@ -12604,6 +12982,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="getprintedgroupanddescription-test"
   >
     <img
       alt=""
@@ -12636,6 +13015,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="getprintedoptionoraction-test"
   >
     <img
       alt=""
@@ -12668,6 +13048,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="getprintedoptiongroup-test"
   >
     <img
       alt=""
@@ -12700,6 +13081,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="getprintedexamplestext-test"
   >
     <img
       alt=""
@@ -12732,6 +13114,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="getexperimentalcommandsection-test"
   >
     <img
       alt=""
@@ -12764,6 +13147,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="constructs-properly"
   >
     <img
       alt=""
@@ -12796,6 +13180,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-properly-initialize-keytar"
   >
     <img
       alt=""
@@ -12828,6 +13213,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-catch-a-load-error"
   >
     <img
       alt=""
@@ -12860,6 +13246,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-do-nothing-if-keytar-is-there"
   >
     <img
       alt=""
@@ -12892,6 +13279,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-load-error-if-keytar-is-missing"
   >
     <img
       alt=""
@@ -12924,6 +13312,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-if-keytar-and-load-error-are-missing"
   >
     <img
       alt=""
@@ -12956,6 +13345,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-delete-credentials"
   >
     <img
       alt=""
@@ -12988,6 +13378,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-on-failure"
   >
     <img
       alt=""
@@ -13020,6 +13411,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-credentials"
   >
     <img
       alt=""
@@ -13052,6 +13444,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error"
   >
     <img
       alt=""
@@ -13084,6 +13477,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-set-credentials"
   >
     <img
       alt=""
@@ -13116,6 +13510,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-use-the-deletecredentials-method"
   >
     <img
       alt=""
@@ -13148,6 +13543,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-load-a-username-and-password"
   >
     <img
       alt=""
@@ -13180,6 +13576,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-save-username:password-as-a-base64-encoded-string"
   >
     <img
       alt=""
@@ -13212,6 +13609,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-imperative-error-when-the-username-is-missing"
   >
     <img
       alt=""
@@ -13244,6 +13642,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-imperative-error-when-the-username-is-empty"
   >
     <img
       alt=""
@@ -13276,6 +13675,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-imperative-error-when-the-password-is-missing"
   >
     <img
       alt=""
@@ -13308,6 +13708,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-imperative-error-when-the-password-is-empty"
   >
     <img
       alt=""
@@ -13340,6 +13741,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-imperative-error-when-both-the-user-and-pass-are-missing"
   >
     <img
       alt=""
@@ -13372,6 +13774,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-load-the-default-when-not-passed-any-configuration."
   >
     <img
       alt=""
@@ -13404,6 +13807,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="was-passed-a-class"
   >
     <img
       alt=""
@@ -13436,6 +13840,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="was-passed-an-absolute-path"
   >
     <img
       alt=""
@@ -13468,6 +13873,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="was-passed-a-relative-path"
   >
     <img
       alt=""
@@ -13500,6 +13906,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-omit-defaulthome-from-config,-our-validation-should-throw-an-error-"
   >
     <img
       alt=""
@@ -13532,6 +13939,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-omit-homeenvvariable-from-config,-our-validation-should-throw-an-error-"
   >
     <img
       alt=""
@@ -13564,6 +13972,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-omit-productdisplayname-from-config,-our-validation-should-throw-an-error-"
   >
     <img
       alt=""
@@ -13596,6 +14005,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-omit-commandmoduleglobs-and-definitions-from-our-config,-our-validator-should-throw-an-error-"
   >
     <img
       alt=""
@@ -13628,6 +14038,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="if-we-specify-multiple-option-definitions-on-a-profile-field,-but-no-custom-create-profile-handler,-we-should-get-an-error"
   >
     <img
       alt=""
@@ -13660,6 +14071,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-create-all-profile-directories"
   >
     <img
       alt=""
@@ -13692,6 +14104,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-imperative-error-if-an-io-error-occurs-when-creating-profile-directories"
   >
     <img
       alt=""
@@ -13724,6 +14137,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-read-the-meta-file"
   >
     <img
       alt=""
@@ -13756,6 +14170,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-imperative-error-if-an-error-occurs-reading-the-meta-file"
   >
     <img
       alt=""
@@ -13788,6 +14203,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-write-a-profile"
   >
     <img
       alt=""
@@ -13820,6 +14236,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-imperative-error-if-a-write-profile-io-error-occurs"
   >
     <img
       alt=""
@@ -13852,6 +14269,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-a-delete-of-a-profile"
   >
     <img
       alt=""
@@ -13884,6 +14302,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-imperative-error-if-the-file-is-not-deleted"
   >
     <img
       alt=""
@@ -13916,6 +14335,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-imperative-error-if-an-io-error-occurs-during-a-delete"
   >
     <img
       alt=""
@@ -13948,6 +14368,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-us-to-check-if-a-profile-exists"
   >
     <img
       alt=""
@@ -13980,6 +14401,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-imperative-error-if-an-exists-io-error-occurs"
   >
     <img
       alt=""
@@ -14012,6 +14434,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-write-a-meta-file"
   >
     <img
       alt=""
@@ -14044,6 +14467,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-imperative-error-if-an-io-error-occurrs-during-writing-the-meta-file"
   >
     <img
       alt=""
@@ -14076,6 +14500,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-return-the-profile-name-from-a-file-name"
   >
     <img
       alt=""
@@ -14108,6 +14533,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-a-list-of-profile-types"
   >
     <img
       alt=""
@@ -14140,6 +14566,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-imperative-error-if-the-read-directory-io-error-occurs"
   >
     <img
       alt=""
@@ -14172,6 +14599,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-a-list-of-profile-names"
   >
     <img
       alt=""
@@ -14204,6 +14632,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-imperative-error-if-an-io-error-occurs-getting-profile-names"
   >
     <img
       alt=""
@@ -14236,6 +14665,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-read-a-profile"
   >
     <img
       alt=""
@@ -14268,6 +14698,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-imperative-error-if-a-profile-io-read-error-occurs"
   >
     <img
       alt=""
@@ -14300,6 +14731,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-reject-configurations-that-don't-contain-a-\\"name\\"-field"
   >
     <img
       alt=""
@@ -14332,6 +14764,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-a-complete-iconfiglogging-object-based-on-no-iimperativeconfig-input"
   >
     <img
       alt=""
@@ -14364,6 +14797,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-a-complete-iconfiglogging-object-based-on-custom-name-in-iimperativeconfig-input"
   >
     <img
       alt=""
@@ -14396,6 +14830,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-a-complete-iconfiglogging-object-based-on-custom-imperative-log-level-in-iimperativeconfig-input"
   >
     <img
       alt=""
@@ -14428,6 +14863,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-a-complete-iconfiglogging-object-based-on-custom-app-log-level-and-log-file-in-iimperativeconfig-input"
   >
     <img
       alt=""
@@ -14460,6 +14896,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-a-complete-iconfiglogging-object-based-on-custom-app,-imperative,-and-additional-logging-in-iimperativeconfig-input"
   >
     <img
       alt=""
@@ -14492,6 +14929,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-a-complete-iconfiglogging-object-based-on-no-logging,-but-using-logging-keyword-in-iimperativeconfig-input"
   >
     <img
       alt=""
@@ -14524,6 +14962,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-error-for-missing-api-name-in-additional-loggers"
   >
     <img
       alt=""
@@ -14556,6 +14995,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-error-invalid-level"
   >
     <img
       alt=""
@@ -14588,6 +15028,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-error-invalid-level-on-app-or-imperative-too"
   >
     <img
       alt=""
@@ -14620,6 +15061,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-be-able-to-change-api-name-for-imperative-or-app"
   >
     <img
       alt=""
@@ -14652,6 +15094,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-parse-a-json-object"
   >
     <img
       alt=""
@@ -14684,6 +15127,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-give-a-message-for-a-failed-json-object"
   >
     <img
       alt=""
@@ -14716,6 +15160,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-give-a-message-for-a-failed-json-object-with-custom-fail-message"
   >
     <img
       alt=""
@@ -14748,6 +15193,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-give-an-error-message-for-an-undefined-input"
   >
     <img
       alt=""
@@ -14780,6 +15226,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-isdir"
   >
     <img
       alt=""
@@ -14812,6 +15259,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-true-for-fs.stats-says-input-is-directory"
   >
     <img
       alt=""
@@ -14844,6 +15292,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-false-for-fs.stats-says-input-is-not-directory"
   >
     <img
       alt=""
@@ -14876,6 +15325,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-normalizeextension"
   >
     <img
       alt=""
@@ -14908,6 +15358,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-normalized-extension"
   >
     <img
       alt=""
@@ -14940,6 +15391,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-normalized-extension-even-if-prefixed-with-'.'"
   >
     <img
       alt=""
@@ -14972,6 +15424,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-normalized-extension-even-if-input-is-only-'.'"
   >
     <img
       alt=""
@@ -15004,6 +15457,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-existssync"
   >
     <img
       alt=""
@@ -15036,6 +15490,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-true-if-file-exists"
   >
     <img
       alt=""
@@ -15068,6 +15523,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-false-if-file-doesn't-exist"
   >
     <img
       alt=""
@@ -15100,6 +15556,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-createdirsync"
   >
     <img
       alt=""
@@ -15132,6 +15589,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-create-a-dir-if-file-doesn't-exist"
   >
     <img
       alt=""
@@ -15164,6 +15622,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-create-a-dir-if-file-exists"
   >
     <img
       alt=""
@@ -15196,6 +15655,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-createdirssync"
   >
     <img
       alt=""
@@ -15228,6 +15688,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-create-several-dirs-if-dirs-do-not-exist"
   >
     <img
       alt=""
@@ -15260,6 +15721,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-create-several-dirs-if-dirs-already-exist"
   >
     <img
       alt=""
@@ -15292,6 +15754,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-only-create-dirs-that-do-not-exist"
   >
     <img
       alt=""
@@ -15324,6 +15787,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-create-several-dirs-if-dirs-do-not-exist-from-input-file"
   >
     <img
       alt=""
@@ -15356,6 +15820,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-create-several-dirs-if-dirs-already-exist-from-input-file"
   >
     <img
       alt=""
@@ -15388,6 +15853,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-only-create-dirs-that-do-not-exist-from-input-file"
   >
     <img
       alt=""
@@ -15420,6 +15886,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-mkdirp"
   >
     <img
       alt=""
@@ -15452,6 +15919,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-createdirssyncfromfilepath"
   >
     <img
       alt=""
@@ -15484,6 +15952,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-readfilesync"
   >
     <img
       alt=""
@@ -15516,6 +15985,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-processnewlines"
   >
     <img
       alt=""
@@ -15548,6 +16018,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-createfilesync"
   >
     <img
       alt=""
@@ -15580,6 +16051,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-writefileasync"
   >
     <img
       alt=""
@@ -15612,6 +16084,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-writefileasync-second-parm"
   >
     <img
       alt=""
@@ -15644,6 +16117,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-write-a-file-asynchronously"
   >
     <img
       alt=""
@@ -15676,6 +16150,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-imperative-error-when-getting-an-io-error-writing-asynchronously"
   >
     <img
       alt=""
@@ -15708,6 +16183,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-writefile"
   >
     <img
       alt=""
@@ -15740,6 +16216,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-writefile-second-parm"
   >
     <img
       alt=""
@@ -15772,6 +16249,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-writeobject"
   >
     <img
       alt=""
@@ -15804,6 +16282,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-writeobject-second-parm"
   >
     <img
       alt=""
@@ -15836,6 +16315,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-deletefile"
   >
     <img
       alt=""
@@ -15868,6 +16348,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-for-no-input-on-deletedir"
   >
     <img
       alt=""
@@ -15900,6 +16381,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-hide---password-operand"
   >
     <img
       alt=""
@@ -15932,6 +16414,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-hide---authentication-operand"
   >
     <img
       alt=""
@@ -15964,6 +16447,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-hide--p-operand"
   >
     <img
       alt=""
@@ -15996,6 +16480,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-hide---not-secret-operand"
   >
     <img
       alt=""
@@ -16028,6 +16513,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-hide-password-operand"
   >
     <img
       alt=""
@@ -16060,6 +16546,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-hide-notsecret-operand"
   >
     <img
       alt=""
@@ -16092,6 +16579,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-store-cookie-token-requested"
   >
     <img
       alt=""
@@ -16124,6 +16612,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-initialize-with-basic-type-and-required-input-data"
   >
     <img
       alt=""
@@ -16156,6 +16645,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-user-and-password-from-an-auth-string"
   >
     <img
       alt=""
@@ -16188,6 +16678,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-require-user-for-'basic'-type"
   >
     <img
       alt=""
@@ -16220,6 +16711,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-allow-tokentype-for-'basic'-type"
   >
     <img
       alt=""
@@ -16252,6 +16744,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-allow-tokenvalue-for-'basic'-type"
   >
     <img
       alt=""
@@ -16284,6 +16777,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-require-password-for-'basic'-type"
   >
     <img
       alt=""
@@ -16316,6 +16810,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-require-password-for-'tokentype'-type"
   >
     <img
       alt=""
@@ -16348,6 +16843,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-require-user-and-password-for-'token'-type"
   >
     <img
       alt=""
@@ -16380,6 +16876,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-fail-to-initialize-with-minimum-data"
   >
     <img
       alt=""
@@ -16412,6 +16909,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-match-non-default-port,-protocol,-secure-protocol,-and-host"
   >
     <img
       alt=""
@@ -16444,6 +16942,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-match-other-non-default-values"
   >
     <img
       alt=""
@@ -16476,6 +16975,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-require-proper-type"
   >
     <img
       alt=""
@@ -16508,6 +17008,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-require-proper-protocol"
   >
     <img
       alt=""
@@ -16540,6 +17041,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-fail-to-initialize-without-minimum-data"
   >
     <img
       alt=""
@@ -16572,6 +17074,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-able-to-produce-the---dash-form-of-any-options"
   >
     <img
       alt=""
@@ -16604,6 +17107,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-a-basic-log4js-configuration-from-getdefaulticonfiglogging"
   >
     <img
       alt=""
@@ -16636,6 +17140,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-add-console-appender-to-basic-log4js-configuration"
   >
     <img
       alt=""
@@ -16668,6 +17173,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-add-file-appender-to-basic-log4js-configuration"
   >
     <img
       alt=""
@@ -16700,6 +17206,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-add-a-console-and-file-appender-to-basic-log4js-configuration"
   >
     <img
       alt=""
@@ -16732,6 +17239,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-multiple-appenders-to-basic-log4js-configuration"
   >
     <img
       alt=""
@@ -16764,6 +17272,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-use-getdefaultfilename-to-append-the-imperative-cli-home-to-a-passed-in-file-path"
   >
     <img
       alt=""
@@ -16796,6 +17305,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-use-buildfulllogfile-to-append-the-imperative-cli-home-to-a-passed-in-file-path"
   >
     <img
       alt=""
@@ -16828,6 +17338,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-fixed"
   >
     <img
       alt=""
@@ -16860,6 +17371,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-should-allow-us-to-create-an-instance"
   >
     <img
       alt=""
@@ -16892,6 +17404,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-missing-parameters"
   >
     <img
       alt=""
@@ -16924,6 +17437,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-that-the-parameters-are-not-a-map"
   >
     <img
       alt=""
@@ -16956,6 +17470,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-accept-a-profile-map-and-allow-us-to-retrieve-them"
   >
     <img
       alt=""
@@ -16988,6 +17503,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-a-profile-type-mismatch"
   >
     <img
       alt=""
@@ -17020,6 +17536,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-detect-a-profile-type-mismatch"
   >
     <img
       alt=""
@@ -17052,6 +17569,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-an-error-if-get-does-not-have-the-profile-type-in-the-map"
   >
     <img
       alt=""
@@ -17084,6 +17602,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-not-throw-an-error-if-get-does-not-have-the-profile-type-but-throw-not-found-is-false"
   >
     <img
       alt=""
@@ -17116,6 +17635,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-accept-a-profile-map-and-allow-us-to-retreive-by-name"
   >
     <img
       alt=""
@@ -17148,6 +17668,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-fixed"
   >
     <img
       alt=""
@@ -17180,6 +17701,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-for-checking-if-a-level-is-valid"
   >
     <img
       alt=""
@@ -17212,6 +17734,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-set-a-valid-level-and-not-set-and-invalid-one"
   >
     <img
       alt=""
@@ -17244,6 +17767,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-throw-error-if-setting-invalid-level"
   >
     <img
       alt=""
@@ -17276,6 +17800,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-turning-off-colors"
   >
     <img
       alt=""
@@ -17308,6 +17833,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-allow-turning-off-prefix"
   >
     <img
       alt=""
@@ -17340,6 +17866,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-call-stdout-and-stderr-three-times-each"
   >
     <img
       alt=""
@@ -17372,6 +17899,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-construct-the-profile-root-directory"
   >
     <img
       alt=""
@@ -17404,6 +17932,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-flatten-dependencies"
   >
     <img
       alt=""
@@ -17436,6 +17965,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-all-type-names"
   >
     <img
       alt=""
@@ -17468,6 +17998,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-construct-the-profile-option-name"
   >
     <img
       alt=""
@@ -17500,6 +18031,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-construct-the-profile-option-alias"
   >
     <img
       alt=""
@@ -17532,6 +18064,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-construct-the-option-and-alias"
   >
     <img
       alt=""
@@ -17564,6 +18097,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-invoke-all-next-ticks-in-the-proper-order"
   >
     <img
       alt=""
@@ -17596,6 +18130,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-initialize-properly"
   >
     <img
       alt=""
@@ -17628,6 +18163,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-an-error-report"
   >
     <img
       alt=""
@@ -17660,6 +18196,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-a-config-with-an-empty-overrides"
   >
     <img
       alt=""
@@ -17692,6 +18229,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-return-a-config-with-the-passed-overrides"
   >
     <img
       alt=""
@@ -17729,6 +18267,7 @@ exports[`Test tests should create proper elements for simple failing tests 1`] =
 Array [
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-pretend-to-write-to-a-file"
   >
     <img
       alt=""
@@ -17761,6 +18300,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-match-snapshot-with-one-field"
   >
     <img
       alt=""
@@ -17793,6 +18333,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 failed-test"
+    id="should-match-snapshot-with-two-fields"
   >
     <img
       alt=""
@@ -17952,7 +18493,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -17995,7 +18536,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -18067,7 +18608,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -18110,7 +18651,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -18153,7 +18694,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -18252,7 +18793,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -18295,7 +18836,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -18381,7 +18922,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -18424,7 +18965,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -18467,7 +19008,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -18632,6 +19173,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 failed-test"
+    id="should-match-snapshot-with-three-fields"
   >
     <img
       alt=""
@@ -18791,7 +19333,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -18877,7 +19419,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -18920,7 +19462,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -18963,7 +19505,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -19006,7 +19548,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -19105,7 +19647,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -19177,7 +19719,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -19220,7 +19762,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -19263,7 +19805,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -19306,7 +19848,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -19471,6 +20013,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-instantiate-reporter-class"
   >
     <img
       alt=""
@@ -19508,6 +20051,7 @@ exports[`Test tests should create proper elements for simple passing tests 1`] =
 Array [
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-pretend-to-write-to-a-file"
   >
     <img
       alt=""
@@ -19540,6 +20084,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-match-snapshot-with-one-field"
   >
     <img
       alt=""
@@ -19572,6 +20117,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-match-snapshot-with-two-fields"
   >
     <img
       alt=""
@@ -19604,6 +20150,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-match-snapshot-with-three-fields"
   >
     <img
       alt=""
@@ -19636,6 +20183,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-instantiate-reporter-class"
   >
     <img
       alt=""
@@ -19673,6 +20221,7 @@ exports[`Test tests should create proper elements for two diffs in html 1`] = `
 Array [
   <div
     class="media text-muted pt-3 failed-test"
+    id="should-fail-with-a-snapshot-difference"
   >
     <img
       alt=""
@@ -19832,7 +20381,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -19854,7 +20403,7 @@ Array [
                       
     
                       <td
-                        class="d2h-code-side-linenumber d2h-del d2h-change"
+                        class="d2h-code-side-linenumber d2h-del"
                       >
                         
       1
@@ -19863,12 +20412,12 @@ Array [
                       
     
                       <td
-                        class="d2h-del d2h-change"
+                        class="d2h-del"
                       >
                         
         
                         <div
-                          class="d2h-code-side-line d2h-del d2h-change"
+                          class="d2h-code-side-line d2h-del"
                         >
                           
             
@@ -19922,7 +20471,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -19965,7 +20514,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -20008,7 +20557,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -20051,7 +20600,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -20094,7 +20643,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -20193,7 +20742,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -20215,7 +20764,7 @@ Array [
                       
     
                       <td
-                        class="d2h-code-side-linenumber d2h-ins d2h-change"
+                        class="d2h-code-side-linenumber d2h-ins"
                       >
                         
       1
@@ -20224,12 +20773,12 @@ Array [
                       
     
                       <td
-                        class="d2h-ins d2h-change"
+                        class="d2h-ins"
                       >
                         
         
                         <div
-                          class="d2h-code-side-line d2h-ins d2h-change"
+                          class="d2h-code-side-line d2h-ins"
                         >
                           
             
@@ -20283,7 +20832,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -20326,7 +20875,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -20369,7 +20918,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -20412,7 +20961,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -20455,7 +21004,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -20632,6 +21181,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-be-a-placeholder"
   >
     <img
       alt=""
@@ -20664,6 +21214,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 failed-test"
+    id="should-fail-with-a-snapshot-difference-2"
   >
     <img
       alt=""
@@ -20823,7 +21374,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -20866,7 +21417,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -20888,7 +21439,7 @@ Array [
                       
     
                       <td
-                        class="d2h-code-side-linenumber d2h-del d2h-change"
+                        class="d2h-code-side-linenumber d2h-del"
                       >
                         
       2
@@ -20897,12 +21448,12 @@ Array [
                       
     
                       <td
-                        class="d2h-del d2h-change"
+                        class="d2h-del"
                       >
                         
         
                         <div
-                          class="d2h-code-side-line d2h-del d2h-change"
+                          class="d2h-code-side-line d2h-del"
                         >
                           
             
@@ -21041,7 +21592,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -21084,7 +21635,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -21183,7 +21734,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -21226,7 +21777,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -21248,7 +21799,7 @@ Array [
                       
     
                       <td
-                        class="d2h-code-side-linenumber d2h-ins d2h-change"
+                        class="d2h-code-side-linenumber d2h-ins"
                       >
                         
       2
@@ -21257,12 +21808,12 @@ Array [
                       
     
                       <td
-                        class="d2h-ins d2h-change"
+                        class="d2h-ins"
                       >
                         
         
                         <div
-                          class="d2h-code-side-line d2h-ins d2h-change"
+                          class="d2h-code-side-line d2h-ins"
                         >
                           
             
@@ -21370,7 +21921,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -21413,7 +21964,7 @@ Array [
                           <span
                             class="d2h-code-line-prefix"
                           >
-                             
+                             
                           </span>
                           
             
@@ -21594,6 +22145,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-pass"
   >
     <img
       alt=""
@@ -21626,6 +22178,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-create-a-report-form-an-input-object"
   >
     <img
       alt=""
@@ -21658,6 +22211,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-error-when-called-without-input"
   >
     <img
       alt=""
@@ -21690,6 +22244,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-pretend-to-write-to-a-file"
   >
     <img
       alt=""
@@ -21722,6 +22277,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-pretend-to-write-to-a-file-and-reject-promise-for-io-errors"
   >
     <img
       alt=""
@@ -21754,6 +22310,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-say-true-if-dir-exists"
   >
     <img
       alt=""
@@ -21786,6 +22343,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-false-if-dir-does-not-exist"
   >
     <img
       alt=""
@@ -21818,6 +22376,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-get-a-log-instance"
   >
     <img
       alt=""
@@ -21850,6 +22409,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-instantiate-reporter-class"
   >
     <img
       alt=""
@@ -21882,6 +22442,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
+    id="should-do-something"
   >
     <img
       alt=""
