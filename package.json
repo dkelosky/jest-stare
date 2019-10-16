@@ -109,19 +109,17 @@
     "testEnvironment": "jsdom",
     "reporters": [
       "default",
-      "./"
+      ["./", {
+        "resultDir": "results/jest-stare",
+        "reportTitle" : "jest-stare!",
+        "additionalResultsProcessors": [
+          "jest-html-reporter"
+        ],
+        "coverageLink": "../../coverage/lcov-report/index.html",
+        "jestStareConfigJson": "jest-stare.json",
+        "jestGlobalConfigJson": "globalStuff.json"
+      }]
     ]
-  },
-  "jest-stare": {
-    "resultDir": "results/jest-stare",
-    "additionalResultsProcessors": [
-      "jest-html-reporter",
-      "jest-junit"
-    ],
-    "reportSummary": "true",
-    "coverageLink": "../../coverage/lcov-report/index.html",
-    "jestStareConfigJson": "jest-stare.json",
-    "jestGlobalConfigJson": "globalStuff.json"
   },
   "jest-html-reporter": {
     "outputPath": "results/jest-html-reporter/index.html"

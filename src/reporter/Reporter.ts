@@ -45,7 +45,7 @@ export class Reporter {
      * @param {*} mOptions - jest options in effect
      * @memberof Reporter
      */
-    constructor(public mGlobalConfig: jest.GlobalConfig, private mOptions: any) {
+    constructor(public mGlobalConfig: jest.GlobalConfig, private mOptions: IJestStareConfig) {
         this.mEnvSrv = new EnvVarService(EnvVars.ENV_PREFIX);
         this.logger.on = this.mEnvSrv.readBoolEnvValue("LOG");
     }
@@ -58,7 +58,16 @@ export class Reporter {
      * @memberof Reporter
      */
     public onRunStart(results: jest.AggregatedResult, options: ReporterOnStartOptions) {
-        Processor.run(results, { additionalResultsProcessors: [], log: false }, { reporter: this });
+        // disallow results processors from a reporter invocation
+        if (Object.entries(this.mOptions).length === 0 && this.mOptions.constructor === Object) {
+            // use jest-stare config from package.json
+            Processor.run(results, { additionalResultsProcessors: [], log: false }, { reporter: this });
+        } else {
+            // use config through jest config
+            this.mOptions.additionalResultsProcessors = [];
+            this.mOptions.log = false;
+            Processor.run(results, this.mOptions, { reporter: this });
+        }
         this.logger.info(Constants.LOGO + Constants.REPORTER_WRITTING + this.jestStareConfig.resultDir + Constants.SUFFIX);
     }
 
@@ -79,7 +88,16 @@ export class Reporter {
      * @memberof Reporter
      */
     public onTestResult(test: Test, testResult: TestResult, results: jest.AggregatedResult) {
-        Processor.run(results, { additionalResultsProcessors: [], log: false }, { reporter: this });
+        // disallow results processors from a reporter invocation
+        if (Object.entries(this.mOptions).length === 0 && this.mOptions.constructor === Object) {
+            // use jest-stare config from package.json
+            Processor.run(results, { additionalResultsProcessors: [], log: false }, { reporter: this });
+        } else {
+            // use config through jest config
+            this.mOptions.additionalResultsProcessors = [];
+            this.mOptions.log = false;
+            Processor.run(results, this.mOptions, { reporter: this });
+        }
     }
 
     /**
@@ -89,10 +107,15 @@ export class Reporter {
      * @memberof Reporter
      */
     public onRunComplete(contexts: Set<Context>, results: jest.AggregatedResult) {
-        // Logger.get.debug("onRunComplete:");
-
         // disallow results processors from a reporter invocation
-        Processor.run(results, { additionalResultsProcessors: [] }, { reporter: this });
+        if (Object.entries(this.mOptions).length === 0 && this.mOptions.constructor === Object) {
+            // use jest-stare config from package.json
+            Processor.run(results, { additionalResultsProcessors: [] }, { reporter: this });
+        } else {
+            // use config through jest config
+            this.mOptions.additionalResultsProcessors = [];
+            Processor.run(results, this.mOptions, { reporter: this });
+        }
     }
 
     /**
@@ -111,7 +134,6 @@ export class Reporter {
     public set jestStareConfig(config: IJestStareConfig) {
         this.mJestStareConfig = config;
     }
-
 
     /**
      * Set logger instance
