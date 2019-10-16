@@ -59,7 +59,8 @@
     "moment": "^2.23.0",
     "mustache": "^3.0.0",
     "pkg-up": "^3.0.0",
-    "popper.js": "^1.14.6"
+    "popper.js": "^1.14.6",
+    "yargs": "^14.2.0"
   },
   "devDependencies": {
     "@types/chart.js": "2.8.7",
