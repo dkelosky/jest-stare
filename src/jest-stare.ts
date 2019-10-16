@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 import { CLI } from "./cli/CLI";
 
-CLI.run(process.argv);
+CLI.run(process.argv.slice(2));
