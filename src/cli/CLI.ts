@@ -20,7 +20,7 @@ export class CLI {
      */
     public static run(argv: string[]) {
         const args = yargs
-            .usage("$0 <testResults> [resultDir]", "jest-stare CLI", y =>
+            .usage("$0 <testResults> [resultDir]", "jest-stare CLI", (y) =>
                 y
                     .positional("testResults", { type: "string" })
                     .positional("resultDir", { type: "string" })
@@ -35,22 +35,22 @@ export class CLI {
             .strict()
             .parse(argv);
 
-        let config: IJestStareConfig = {};
+        const config: IJestStareConfig = {};
 
-        if (isNullOrUndefined(args["testResults"])) {
+        if (isNullOrUndefined(args.testResults)) {
             Logger.get.error(Constants.NO_CLI_INPUT);
             throw new Error();
         }
 
-        if (!isNullOrUndefined(args["resultDir"])) {
-            config.resultDir = args["resultDir"] as string;
+        if (!isNullOrUndefined(args.resultDir)) {
+            config.resultDir = args.resultDir as string;
         }
 
         if (!isNullOrUndefined(args.coverageLink)) {
             config.coverageLink = args.coverageLink;
         }
 
-        const results = IO.readFileSync(args["testResults"] as string);
+        const results = IO.readFileSync(args.testResults as string);
         Processor.run(JSON.parse(results), config);
     }
 }
