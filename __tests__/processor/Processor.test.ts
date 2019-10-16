@@ -17,11 +17,11 @@ describe("Processor tests", () => {
     it("should accept override config on input and not log when requested not to", () => {
         const log = new Logger();
 
-        (log as any).writeStdout = jest.fn<string>((msg: string) => {
+        (log as any).writeStdout = jest.fn<string, [string]>((msg: string) => {
             return msg;
         });
 
-        (log as any).writeStderr = jest.fn<string>((msg: string) => {
+        (log as any).writeStderr = jest.fn<string, [string]>((msg: string) => {
             return msg;
         });
 
@@ -34,11 +34,11 @@ describe("Processor tests", () => {
     it("should accept override config on input and log when requested to", () => {
         const log = new Logger();
 
-        (log as any).writeStdout = jest.fn<string>((msg: string) => {
+        (log as any).writeStdout = jest.fn<string, [string]>((msg: string) => {
             return msg;
         });
 
-        (log as any).writeStderr = jest.fn<string>((msg: string) => {
+        (log as any).writeStderr = jest.fn<string, [string]>((msg: string) => {
             return msg;
         });
 
@@ -52,11 +52,11 @@ describe("Processor tests", () => {
     it("should accept override html and JSON file name", async () => {
         const log = new Logger();
 
-        (log as any).writeStdout = jest.fn<string>((msg: string) => {
+        (log as any).writeStdout = jest.fn<string, [string]>((msg: string) => {
             return msg;
         });
 
-        (log as any).writeStderr = jest.fn<string>((msg: string) => {
+        (log as any).writeStderr = jest.fn<string, [string]>((msg: string) => {
             return msg;
         });
 
