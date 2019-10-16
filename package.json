@@ -49,6 +49,7 @@
     "watch:test": "jest --watch"
   },
   "dependencies": {
+    "@types/jest": "^24.0.19",
     "ansi-parser": "^3.2.9",
     "bootstrap": "^4.3.1",
     "chalk": "^2.4.2",
@@ -63,9 +64,7 @@
     "yargs": "^14.2.0"
   },
   "devDependencies": {
-    "@types/chart.js": "2.8.7",
     "@types/diff2html": "0.0.5",
-    "@types/jest": "22.2.3",
     "@types/jquery": "3.3.31",
     "@types/mustache": "0.8.32",
     "@types/node": "8.10.55",
