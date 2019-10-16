@@ -1,6 +1,6 @@
 {
   "name": "jest-stare",
-  "version": "1.22.0",
+  "version": "1.23.0",
   "description": "jest html reporter (results processor) to view HTML jest results, save raw JSON, and invoke multiple reporters",
   "license": "MIT",
   "repository": "https://github.com/dkelosky/jest-stare",
@@ -109,16 +109,19 @@
     "testEnvironment": "jsdom",
     "reporters": [
       "default",
-      ["./", {
-        "resultDir": "results/jest-stare",
-        "reportTitle" : "jest-stare!",
-        "additionalResultsProcessors": [
-          "jest-html-reporter"
-        ],
-        "coverageLink": "../../coverage/lcov-report/index.html",
-        "jestStareConfigJson": "jest-stare.json",
-        "jestGlobalConfigJson": "globalStuff.json"
-      }]
+      [
+        "./",
+        {
+          "resultDir": "results/jest-stare",
+          "reportTitle": "jest-stare!",
+          "additionalResultsProcessors": [
+            "jest-html-reporter"
+          ],
+          "coverageLink": "../../coverage/lcov-report/index.html",
+          "jestStareConfigJson": "jest-stare.json",
+          "jestGlobalConfigJson": "globalStuff.json"
+        }
+      ]
     ]
   },
   "jest-html-reporter": {
