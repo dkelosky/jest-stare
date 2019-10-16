@@ -84,8 +84,8 @@ describe("jest-stare cli tests", () => {
         const someObject = `{"field": "value"}`;
 
         const runSpy = jest
-            .spyOn(Processor, "run")
-            .mockImplementation(() => {});
+            .spyOn(Processor as any, "run") // TODO(Kelosky): remove cast
+            .mockImplementation(() => { });
         (IO as any).readFileSync = jest.fn(() => someObject);
 
         try {
