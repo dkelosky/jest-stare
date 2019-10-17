@@ -43,7 +43,29 @@ By default, after a report is generated, output will go to `./jest-stare` and wi
 * `/css` - css stylings
 
 ### Config
-If you need to configure `jest-stare`, do so by adding a `jest-stare` object to your package.json, for example:
+
+You can configure custom reporters by passing the `jest-stare` config as a [second argument](https://jestjs.io/docs/en/configuration#reporters-array-modulename-modulename-options):
+
+```json
+    "reporters": [
+      "default",
+      [
+        "jest-stare",
+        {
+          "resultDir": "results/jest-stare",
+          "reportTitle": "jest-stare!",
+          "additionalResultsProcessors": [
+            "jest-html-reporter"
+          ],
+          "coverageLink": "../../coverage/lcov-report/index.html",
+          "jestStareConfigJson": "jest-stare.json",
+          "jestGlobalConfigJson": "globalStuff.json"
+        }
+      ]
+    ]
+```
+
+Or, do so by adding a `jest-stare` object to your package.json, for example:
 ```typescript
 jest-stare: {
     ...
