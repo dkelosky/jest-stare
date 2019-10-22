@@ -1,7 +1,8 @@
-## Dev Testing
+# Dev Testing
 
-Development Building / Testing
-If you'd like to submit a Pull Request, here are some basic steps to test out code changes.  Suggestions and improvements are welcome!
+##Development Building / Testing
+
+If you'd like to submit a Pull Request, here are some basic steps to test changes.  Suggestions and improvements are welcome!
 
 ### First time setup
 
@@ -21,7 +22,7 @@ If there is a problem with a certain HTML report rendering for some user, you ca
 
 ### Create a Test Report for Screenshots
 
-Perhaps you want a report with forced failures to see what the UI would look like, you can do this by running tests in the `__examples__`,folder, for example:
+If you want a report with forced failures to see what the UI would look like, you can do this by running tests in the `__examples__`,folder, for example:
 
 `npm run build && jest --testRegex __tests__.*\\.example\\.ts$ Passing`
 
