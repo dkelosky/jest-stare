@@ -4,6 +4,7 @@
 [![Azure Pipelines](https://dev.azure.com/dkelosky/dkelosky/_apis/build/status/dkelosky.jest-stare?branchName=master)](https://dev.azure.com/dkelosky/dkelosky/_build/latest?definitionId=1&branchName=master)
 [![Codecov Coverage](https://img.shields.io/codecov/c/github/dkelosky/jest-stare/master.svg?style=flat-square)](https://codecov.io/gh/dkelosky/jest-stare/)
 [![npm version](https://badge.fury.io/js/jest-stare.svg)](https://badge.fury.io/js/jest-stare)
+[![downloads](https://img.shields.io/npm/dm/jest-stare)](https://www.npmjs.com/package/jest-stare)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Jest HTML Reporter
