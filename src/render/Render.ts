@@ -115,20 +115,34 @@ export class Render {
         }
 
         // hide pending tests
-        if (config.hidePassing && config.hideFailing) { $(`.${Constants.PENDING_TEST}`).hide(); }
+        if (config.hidePending) {
+            $("#lab-pendingoff-switch").prop("checked", false);
+            $(`.${Constants.PENDING_TEST}`).hide();
+        }
 
-        // listen for filtering requests
-        const passSwitch = new Switch(
-            $("#lab-passoff-switch") as JQuery<HTMLInputElement>,
-            $("." + Constants.PASSED_TEST) as JQuery<HTMLDivElement>,
-            $("#lab-failoff-switch") as JQuery<HTMLInputElement>,
-            $("." + Constants.BOTH_TEST) as JQuery<HTMLDivElement>);
 
-        const failSwitch = new Switch(
-            $("#lab-failoff-switch") as JQuery<HTMLInputElement>,
-            $("." + Constants.FAILED_TEST) as JQuery<HTMLDivElement>,
-            $("#lab-passoff-switch") as JQuery<HTMLInputElement>,
-            $("." + Constants.BOTH_TEST) as JQuery<HTMLDivElement>);
+        const allCheckArray = new Array<JQuery<HTMLInputElement>>();
+        allCheckArray.push($("#lab-passoff-switch") as JQuery<HTMLInputElement>);
+        allCheckArray.push($("#lab-failoff-switch") as JQuery<HTMLInputElement>);
+        allCheckArray.push($("#lab-pendingoff-switch") as JQuery<HTMLInputElement>);
+
+        const allStylesArray = [Constants.PASSED_TEST, Constants.FAILED_TEST, Constants.PENDING_TEST];
+        const allSwitchArray = ["#lab-passoff-switch", "#lab-failoff-switch", "#lab-pendingoff-switch"];
+
+        allStylesArray.forEach((style, index) => {
+            const checksMinusCurrentOne = allCheckArray.slice();
+            checksMinusCurrentOne.splice(index, 1);
+
+            const stylesMinusCurrentOne = allStylesArray.slice();
+            stylesMinusCurrentOne.splice(index, 1);
+            const switchElement = new Switch(
+                $(allSwitchArray[index]) as JQuery<HTMLInputElement>,
+                $("." + style) as JQuery<HTMLDivElement>,
+                style,
+                checksMinusCurrentOne,
+                stylesMinusCurrentOne
+            );
+        });
     }
 
     /**

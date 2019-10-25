@@ -205,6 +205,7 @@ describe("Render tests", () => {
 
             expect($("#lab-passoff-switch").is(":checked")).toBe(false);
             expect($("#lab-failoff-switch").is(":checked")).toBe(true);
+            expect($("#lab-pendingoff-switch").is(":checked")).toBe(true);
 
             for (const elem of $(`.${RenderConstants.PASSED_TEST}`)) {
                 expect($(elem).css("display") === "none").toBe(true);
@@ -225,6 +226,7 @@ describe("Render tests", () => {
 
             expect($("#lab-passoff-switch").is(":checked")).toBe(true);
             expect($("#lab-failoff-switch").is(":checked")).toBe(false);
+            expect($("#lab-pendingoff-switch").is(":checked")).toBe(true);
 
             for (const elem of $(`.${RenderConstants.PASSED_TEST}`)) {
                 expect($(elem).css("display") !== "none").toBe(true);
@@ -236,16 +238,17 @@ describe("Render tests", () => {
         });
     });
 
-    describe("config.hidePassing and config.hideFailing are true", () => {
-        it("hides all tests", () => {
+    describe("config.hidePending are true", () => {
+        it("hides pending tests", () => {
             writeTemplate();
 
-            (Render as any).show(demoTests, { hidePassing: true, hideFailing: true, disableCharts: true });
+            (Render as any).show(demoTests, { hidePending: true, disableCharts: true });
 
-            expect($("#lab-passoff-switch").is(":checked")).toBe(false);
-            expect($("#lab-failoff-switch").is(":checked")).toBe(false);
+            expect($("#lab-passoff-switch").is(":checked")).toBe(true);
+            expect($("#lab-failoff-switch").is(":checked")).toBe(true);
+            expect($("#lab-pendingoff-switch").is(":checked")).toBe(false);
 
-            for (const elem of $(`.${RenderConstants.PASSED_TEST}, .${RenderConstants.FAILED_TEST}, .${RenderConstants.PENDING_TEST}`)) {
+            for (const elem of $(`.${RenderConstants.PENDING_TEST}`)) {
                 expect($(elem).css("display") === "none").toBe(true);
             }
         });

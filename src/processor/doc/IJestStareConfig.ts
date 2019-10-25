@@ -115,6 +115,13 @@ export interface IJestStareConfig {
      * @memberof IJestStareConfig
      */
     hideFailing?: boolean;
+
+    /**
+     * Set to true to hide pending tests in the HTML report
+     * @type {boolean}
+     * @memberof IJestStareConfig
+     */
+    hidePending?: boolean;
 }
 
 /**

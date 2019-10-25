@@ -42,60 +42,11 @@ export class TestSuite {
                 }
             }
 
-            // TODO(Kelosky): set for pending
-            let testStatusClass; // = Constants.PASSED_TEST;
+            let testStatusClass;
 
             const testSectionStatus: Map<string, string> = new Map<string, string>();
             for (const result of testResult.testResults) {
-
-                // mark overall status for a suite
-                if (result.status === Constants.TEST_STATUS_FAIL) {
-                    if (testStatusClass === Constants.BOTH_TEST) {
-                        // do nothing
-                    } else if (testStatusClass === Constants.PASSED_TEST) {
-                        testStatusClass = Constants.BOTH_TEST;
-                    } else {
-                        testStatusClass = Constants.FAILED_TEST; // overall
-                    }
-                    // mark all lower test sections as containing a failed test for filtering
-                    for (let index = 0; index < result.ancestorTitles.length; index++) {
-                        const titlesCopy = result.ancestorTitles.slice();
-                        titlesCopy.splice(index + 1);
-                        const key = titlesCopy.join(TestSuite.JOIN_CHAR);
-                        if (testSectionStatus.has(key)) {
-                            if (testSectionStatus.get(key) === Constants.PASSED_TEST) {
-                                testSectionStatus.set(key, Constants.BOTH_TEST);
-                            }
-                        } else {
-                            testSectionStatus.set(key, Constants.FAILED_TEST);
-                        }
-                    }
-                }
-                // mark overall status for a suite
-                if (result.status === Constants.TEST_STATUS_PASS) {
-                    if (testStatusClass === Constants.BOTH_TEST) {
-                        // do nothing
-                    }
-                    else if (testStatusClass === Constants.FAILED_TEST) {
-                        testStatusClass = Constants.BOTH_TEST;
-                    } else {
-                        testStatusClass = Constants.PASSED_TEST;
-                    }
-
-                    // mark all lower test sections as containing a passed test for filtering
-                    for (let index = 0; index < result.ancestorTitles.length; index++) {
-                        const titlesCopy = result.ancestorTitles.slice();
-                        titlesCopy.splice(index + 1);
-                        const key = titlesCopy.join(TestSuite.JOIN_CHAR);
-                        if (testSectionStatus.has(key)) {
-                            if (testSectionStatus.get(key) === Constants.FAILED_TEST) {
-                                testSectionStatus.set(key, Constants.BOTH_TEST);
-                            }
-                        } else {
-                            testSectionStatus.set(key, Constants.PASSED_TEST);
-                        }
-                    }
-                }
+                testStatusClass = TestSuite.asignStatus(testStatusClass, result, testSectionStatus);
             }
 
             if (testStatusClass === undefined) {
@@ -159,4 +110,49 @@ export class TestSuite {
 
         return elements;
     }
+
+    public static asignStatus(testStatusClass: string, result: jest.AssertionResult, testSectionStatus: Map<string, string>) {
+        const currentStatus = TestSuite.getStatusClassFromJestStatus(result.status);
+        if (!testStatusClass) {
+            testStatusClass = currentStatus;
+        } else if (testStatusClass !== currentStatus) {
+            testStatusClass = TestSuite.mixStatus(currentStatus, testStatusClass);
+        } else {
+            testStatusClass = currentStatus;
+        }
+        // mark all lower test sections as containing a failed test for filtering
+        for (let index = 0; index < result.ancestorTitles.length; index++) {
+            const titlesCopy = result.ancestorTitles.slice();
+            titlesCopy.splice(index + 1);
+            const key = titlesCopy.join(TestSuite.JOIN_CHAR);
+            if (testSectionStatus.has(key)) {
+                if (testStatusClass !== currentStatus) {
+                    testSectionStatus.set(key, TestSuite.mixStatus(currentStatus, testStatusClass));
+                } else {
+                    testSectionStatus.set(key, currentStatus);
+                }
+            } else {
+                testSectionStatus.set(key, currentStatus);
+            }
+        }
+        return testStatusClass;
+    }
+
+    private static getStatusClassFromJestStatus(jestStatus: string) {
+        if (jestStatus === Constants.TEST_STATUS_PEND) {
+            return Constants.PENDING_TEST;
+        } else if (jestStatus === Constants.TEST_STATUS_FAIL) {
+            return Constants.FAILED_TEST;
+        } else {
+            return Constants.PASSED_TEST;
+        }
+    }
+
+    private static mixStatus(currentStatus: string, oldStatus: string) {
+        const statusArray = oldStatus.split(TestSuite.JOIN_CHAR);
+        statusArray.push(currentStatus);
+        const sortedUniqueStatusArray = [...new Set(statusArray)].sort();
+        return sortedUniqueStatusArray.join(TestSuite.JOIN_CHAR);
+    }
+
 }
