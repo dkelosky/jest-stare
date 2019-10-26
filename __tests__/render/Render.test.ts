@@ -253,4 +253,24 @@ describe("Render tests", () => {
             }
         });
     });
+
+    describe("couple of hide are true", () => {
+        it("hides pending tests", () => {
+            writeTemplate();
+
+            (Render as any).show(demoTests, { hideFailing: true, hidePending: true, disableCharts: true });
+
+            expect($("#lab-passoff-switch").is(":checked")).toBe(true);
+            expect($("#lab-failoff-switch").is(":checked")).toBe(false);
+            expect($("#lab-pendingoff-switch").is(":checked")).toBe(false);
+
+            for (const elem of $(`.${RenderConstants.PENDING_TEST}`)) {
+                expect($(elem).css("display") === "none").toBe(true);
+            }
+
+            for (const elem of $(`${RenderConstants.FAILED_TEST}\\.${RenderConstants.PENDING_TEST}`)) {
+                expect($(elem).css("display") === "none").toBe(true);
+            }
+        });
+    });
 });

@@ -120,6 +120,22 @@ export class Render {
             $(`.${Constants.PENDING_TEST}`).hide();
         }
 
+        if (config.hideFailing && config.hidePassing) {
+            $(`.${Constants.FAILED_TEST}\\.${Constants.PASSED_TEST}`).hide();
+        }
+
+        if (config.hidePending && config.hidePassing) {
+            $(`.${Constants.PASSED_TEST}\\.${Constants.PENDING_TEST}`).hide();
+        }
+
+        if (config.hideFailing && config.hidePending) {
+            $(`.${Constants.FAILED_TEST}\\.${Constants.PENDING_TEST}`).hide();
+        }
+
+        if (config.hideFailing && config.hidePassing && config.hidePending) {
+            $(`.${Constants.FAILED_TEST}\\.${Constants.PASSED_TEST}\\.${Constants.PENDING_TEST}`).hide();
+        }
+
 
         const allCheckArray = new Array<JQuery<HTMLInputElement>>();
         allCheckArray.push($("#lab-passoff-switch") as JQuery<HTMLInputElement>);
