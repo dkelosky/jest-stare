@@ -11,6 +11,7 @@ Object {
   "hideFailing": true,
   "hidePassing": true,
   "jestStareConfigJson": "jest-stare.json",
+  "reportSummary": true,
   "resultDir": "results/jest-stare//",
   "resultHtml": "index.html",
   "resultJson": "jest-results.json",

@@ -14,9 +14,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#jest-stare\\\\__tests__\\\\example\\\\FailingTests.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label fail"
         >
@@ -46,9 +44,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\render\\\\Render.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label pass"
         >
@@ -72,9 +68,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\processor\\\\Processor.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label pass"
         >
@@ -101,9 +95,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\utils\\\\IO.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label pass"
         >
@@ -136,9 +128,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\utils\\\\Logger.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label pass"
         >
@@ -162,9 +152,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\reporter\\\\Reporter.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label pass"
         >
@@ -206,9 +194,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\utils\\\\IO.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label fail"
         >
@@ -241,9 +227,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\reporter\\\\Reporter.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label pass"
         >
@@ -282,9 +266,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\utils\\\\IO.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label fail"
         >
@@ -317,9 +299,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\reporter\\\\Reporter.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label fail"
         >
@@ -358,9 +338,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#jest-stare\\\\__tests__\\\\example\\\\FailingTests.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label fail"
         >
@@ -390,9 +368,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\render\\\\Render.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label pass"
         >
@@ -416,9 +392,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\processor\\\\Processor.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label pass"
         >
@@ -445,9 +419,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\utils\\\\IO.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label pass"
         >
@@ -480,9 +452,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\utils\\\\Logger.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label pass"
         >
@@ -506,9 +476,7 @@ Array [
     <div
       class="summary-test-suite"
     >
-      <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\reporter\\\\Reporter.test.ts"
-      >
+      <a>
         <strong
           class="summary-test-label pass"
         >

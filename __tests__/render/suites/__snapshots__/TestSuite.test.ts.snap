@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TestSuite tests should create proper elements for large test > 500 tests 1`] = `
+exports[`TestSuite tests Snapshots should create proper elements for large test > 500 tests 1`] = `
 Array [
   <div
-    class="my-3 p-3 bg-white rounded box-shadow both-test"
+    class="my-3 p-3 bg-white rounded box-shadow failed-test.passed-test"
     id="jest-stare\\\\__tests__\\\\example\\\\FailingTests.test.ts"
   >
     <h5
@@ -12,7 +12,7 @@ Array [
       jest-stare\\__tests__\\example\\FailingTests.test.ts
     </h5>
     <div
-      class="my-3 p-3 bg-white rounded box-shadow both-test"
+      class="my-3 p-3 bg-white rounded box-shadow failed-test.passed-test"
       id="Failing Tests"
     >
       <h6
@@ -164,10 +164,10 @@ Array [
 ]
 `;
 
-exports[`TestSuite tests should create proper elements for simple failing tests 1`] = `
+exports[`TestSuite tests Snapshots should create proper elements for simple failing tests 1`] = `
 Array [
   <div
-    class="my-3 p-3 bg-white rounded box-shadow both-test"
+    class="my-3 p-3 bg-white rounded box-shadow failed-test.passed-test"
     id="Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\utils\\\\IO.test.ts"
   >
     <h5
@@ -176,7 +176,7 @@ Array [
       Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts
     </h5>
     <div
-      class="my-3 p-3 bg-white rounded box-shadow both-test"
+      class="my-3 p-3 bg-white rounded box-shadow failed-test.passed-test"
       id="IO tests"
     >
       <h6
@@ -224,7 +224,7 @@ Array [
 ]
 `;
 
-exports[`TestSuite tests should create proper elements for simple passing tests 1`] = `
+exports[`TestSuite tests Snapshots should create proper elements for simple passing tests 1`] = `
 Array [
   <div
     class="my-3 p-3 bg-white rounded box-shadow passed-test"
@@ -284,10 +284,10 @@ Array [
 ]
 `;
 
-exports[`TestSuite tests should create proper elements for two diffs in html 1`] = `
+exports[`TestSuite tests Snapshots should create proper elements for two diffs in html 1`] = `
 Array [
   <div
-    class="my-3 p-3 bg-white rounded box-shadow both-test"
+    class="my-3 p-3 bg-white rounded box-shadow failed-test.passed-test"
     id="jest-stare\\\\__tests__\\\\example\\\\FailingTests.test.ts"
   >
     <h5
@@ -296,7 +296,7 @@ Array [
       jest-stare\\__tests__\\example\\FailingTests.test.ts
     </h5>
     <div
-      class="my-3 p-3 bg-white rounded box-shadow both-test"
+      class="my-3 p-3 bg-white rounded box-shadow failed-test.passed-test"
       id="Failing Tests"
     >
       <h6

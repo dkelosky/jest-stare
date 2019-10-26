@@ -80,8 +80,8 @@ export class TestSummary {
             const testCount = document.createElement("strong") as HTMLSpanElement;
             testCount.classList.add("summary-test-count");
             testCount.textContent = passingTestsCount;
-            testFileLink.href = "#" + testResult.testFilePath;
 
+            testFileLink.href = "#" + testResult.testFilePath;
             testFileLink.appendChild(testStatus);
             testFileLink.appendChild(testFileLine);
             testFileLink.appendChild(testCount);
