@@ -85,8 +85,9 @@ describe("Switch tests", () => {
         const navSwitch = new Switch(
             $(checkbox) as JQuery<HTMLInputElement>,
             $("." + toggleClass) as JQuery<HTMLDivElement>,
-            $(addtnlCheckbox) as JQuery<HTMLInputElement>,
-            $("." + addtnlToggleClass) as JQuery<HTMLDivElement>);
+            toggleClass,
+            [$(addtnlCheckbox) as JQuery<HTMLInputElement>],
+            [addtnlToggleClass]);
 
         // uncheck & div should be hidden
         $("#checkbox").prop("checked", false).trigger("change");

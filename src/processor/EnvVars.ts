@@ -55,7 +55,8 @@ export class EnvVars {
             additionalResultsProcessors,
             disableCharts: this.mEnvSrv.readBoolEnvValue("DISABLE_CHARTS"),
             hidePassing: this.mEnvSrv.readBoolEnvValue("HIDE_PASSING"),
-            hideFailing: this.mEnvSrv.readBoolEnvValue("HIDE_FAILING")
+            hideFailing: this.mEnvSrv.readBoolEnvValue("HIDE_FAILING"),
+            hidePending: this.mEnvSrv.readBoolEnvValue("HIDE_PENDING")
         };
     }
 
@@ -137,6 +138,11 @@ export class EnvVars {
                 envConfig.hideFailing == null ? packageJsonConfig.hideFailing : envConfig.hideFailing;
         }
 
+
+        if (envConfig.hidePending != null || packageJsonConfig.hidePending != null) {
+            mergedConfig.hidePending =
+                envConfig.hidePending == null ? packageJsonConfig.hidePending : envConfig.hidePending;
+        }
         return mergedConfig;
     }
 }
