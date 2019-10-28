@@ -3,13 +3,11 @@
 exports[`Processor tests should accept override html and JSON file name 1`] = `
 Object {
   "jestStareConfig": Object {
-    "reportSummary": true,
     "resultDir": "./jest-stare/",
     "resultHtml": "index.html",
     "resultJson": "jest-results.json",
   },
   "rawJestStareConfig": "{
-  \\"reportSummary\\": true,
   \\"resultDir\\": \\"./jest-stare/\\",
   \\"resultHtml\\": \\"index.html\\",
   \\"resultJson\\": \\"jest-results.json\\"
@@ -306,7 +304,6 @@ Object {
 exports[`Processor tests should accept override html and JSON file name 2`] = `
 Object {
   "jestStareConfig": Object {
-    "reportSummary": true,
     "resultDir": "./jest-stare/",
     "resultHtml": "test.html",
     "resultJson": "test.json",
@@ -314,7 +311,6 @@ Object {
   "rawJestStareConfig": "{
   \\"resultHtml\\": \\"test.html\\",
   \\"resultJson\\": \\"test.json\\",
-  \\"reportSummary\\": true,
   \\"resultDir\\": \\"./jest-stare/\\"
 }",
   "rawResults": "{

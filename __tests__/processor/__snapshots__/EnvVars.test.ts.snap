@@ -60,7 +60,7 @@ Object {
   "log": undefined,
   "report": undefined,
   "reportHeadline": undefined,
-  "reportSummary": true,
+  "reportSummary": undefined,
   "reportTitle": undefined,
   "resultDir": undefined,
   "resultHtml": undefined,
