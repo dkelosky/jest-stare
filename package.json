@@ -61,7 +61,7 @@
     "mustache": "^3.0.0",
     "pkg-up": "^3.0.0",
     "popper.js": "^1.14.6",
-    "yargs": "^14.2.0"
+    "yargs": "^15.0.0"
   },
   "devDependencies": {
     "@types/diff2html": "0.0.5",
