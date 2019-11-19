@@ -75,7 +75,7 @@
     "jest-environment-jsdom": "24.9.0",
     "jest-environment-node-debug": "2.0.0",
     "jest-html-reporter": "2.7.0",
-    "jest-image-snapshot": "2.11.0",
+    "jest-image-snapshot": "2.11.1",
     "jest-junit": "9.0.0",
     "rimraf": "3.0.0",
     "ts-jest": "24.1.0",
