@@ -66,6 +66,8 @@ You can configure custom reporters by passing the `jest-stare` config as a [seco
     ]
 ```
 
+> Note: `testResultsProcessor` will not use config options specified in the way above
+
 Or, do so by adding a `jest-stare` object to your package.json, for example:
 ```typescript
 jest-stare: {
