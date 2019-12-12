@@ -40,6 +40,14 @@ export class Reporter {
     private mEnvSrv: EnvVarService;
 
     /**
+     * Saved invocation log option
+     * @private
+     * @type {boolean}
+     * @memberof Reporter
+     */
+    private mLogOption: boolean;
+
+    /**
      * Creates an instance of Reporter.
      * @param {GlobalConfig} mGlobalConfig - jest global config
      * @param {*} mOptions - jest options in effect
@@ -65,6 +73,7 @@ export class Reporter {
         } else {
             // use config through jest config
             this.mOptions.additionalResultsProcessors = [];
+            this.mLogOption = this.mOptions.log;
             this.mOptions.log = false;
             Processor.run(results, this.mOptions, { reporter: this });
         }
@@ -95,7 +104,7 @@ export class Reporter {
         } else {
             // use config through jest config
             this.mOptions.additionalResultsProcessors = [];
-            this.mOptions.log = false;
+            // this.mOptions.log = false;
             Processor.run(results, this.mOptions, { reporter: this });
         }
     }
@@ -114,6 +123,7 @@ export class Reporter {
         } else {
             // use config through jest config
             this.mOptions.additionalResultsProcessors = [];
+            this.mOptions.log = this.mLogOption;
             Processor.run(results, this.mOptions, { reporter: this });
         }
     }
