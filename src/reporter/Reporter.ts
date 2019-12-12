@@ -123,7 +123,7 @@ export class Reporter {
         } else {
             // use config through jest config
             this.mOptions.additionalResultsProcessors = [];
-            this.mOptions.log = this.mLogOption;;
+            this.mOptions.log = this.mLogOption;
             Processor.run(results, this.mOptions, { reporter: this });
         }
     }
