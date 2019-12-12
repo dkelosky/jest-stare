@@ -204,7 +204,7 @@ export class Processor {
             try {
                 require(processor)(jestTestData);
                 this.logger.info(Constants.LOGO + " passed results to additional processor " +
-                    chalk.default.white("\"" + processor + "\"") + Constants.SUFFIX);
+                    chalk.white("\"" + processor + "\"") + Constants.SUFFIX);
             } catch (e) {
                 this.logger.error("Error executing additional processor: \"" + processor + "\" " + e);
             }

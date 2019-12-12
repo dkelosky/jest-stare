@@ -19,14 +19,14 @@ export class Constants {
      * @static
      * @memberof Constants
      */
-    public static readonly LOGO = chalk.default.green("**  ") + chalk.default.green("jest") + chalk.default.yellow("-") + chalk.default.red("stare");
+    public static readonly LOGO = chalk.green("**  ") + chalk.green("jest") + chalk.yellow("-") + chalk.red("stare");
 
     /**
      * Suffix for logo
      * @static
      * @memberof Constants
      */
-    public static readonly SUFFIX = chalk.default.green("\t**");
+    public static readonly SUFFIX = chalk.green("\t**");
 
     /**
      * Default jest-stare results directory
