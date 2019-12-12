@@ -52,7 +52,7 @@
     "@types/jest": "^24.0.19",
     "ansi-parser": "^3.2.9",
     "bootstrap": "^4.3.1",
-    "chalk": "^2.4.2",
+    "chalk": "^3.0.0",
     "chart.js": "^2.7.3",
     "diff2html": "^2.9.0",
     "holderjs": "^2.9.6",
