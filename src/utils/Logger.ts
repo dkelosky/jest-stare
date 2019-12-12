@@ -183,7 +183,7 @@ export class Logger {
             adjustedMessage = this.buildPrefix("TRACE") + message;
         }
         if (this.color) {
-            adjustedMessage = chalk.default.cyan(adjustedMessage);
+            adjustedMessage = chalk.cyan(adjustedMessage);
         }
         return this.writeStdout(adjustedMessage, args);
     }
@@ -204,7 +204,7 @@ export class Logger {
             adjustedMessage = this.buildPrefix("DEBUG") + message;
         }
         if (this.color) {
-            adjustedMessage = chalk.default.green(adjustedMessage);
+            adjustedMessage = chalk.green(adjustedMessage);
         }
         return this.writeStdout(adjustedMessage, args);
     }
@@ -225,7 +225,7 @@ export class Logger {
             adjustedMessage = this.buildPrefix("INFO") + message;
         }
         if (this.color) {
-            adjustedMessage = chalk.default.blue(adjustedMessage);
+            adjustedMessage = chalk.blue(adjustedMessage);
         }
         return this.writeStdout(adjustedMessage, args);
     }
@@ -246,7 +246,7 @@ export class Logger {
             adjustedMessage = this.buildPrefix("WARN") + message;
         }
         if (this.color) {
-            adjustedMessage = chalk.default.yellow(adjustedMessage);
+            adjustedMessage = chalk.yellow(adjustedMessage);
         }
         return this.writeStderr(adjustedMessage, args);
     }
@@ -267,7 +267,7 @@ export class Logger {
             adjustedMessage = this.buildPrefix("ERROR") + message;
         }
         if (this.color) {
-            adjustedMessage = chalk.default.red(adjustedMessage);
+            adjustedMessage = chalk.red(adjustedMessage);
         }
         return this.writeStderr(adjustedMessage, args);
     }
@@ -288,7 +288,7 @@ export class Logger {
             adjustedMessage = this.buildPrefix("FATAL") + message;
         }
         if (this.color) {
-            adjustedMessage = chalk.default.magenta(adjustedMessage);
+            adjustedMessage = chalk.magenta(adjustedMessage);
         }
         return this.writeStderr(adjustedMessage, args);
     }
