@@ -49,7 +49,11 @@ export class Config {
         if (config.resultDir == null) {
             config.resultDir = Constants.DEFAULT_RESULTS_DIR;
         }
-        config.resultDir += "/"; // append an extra slash in case the user didn't add one
+
+        if (config.resultDir[config.resultDir.length - 1] !== "/") {
+            config.resultDir += "/"; // append an extra slash in case the user didn't add one
+        }
+
 
         // suppress logging if requested
         // NOTE(Kelosky): must be first, to suppress all logging
