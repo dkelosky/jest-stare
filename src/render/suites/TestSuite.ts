@@ -59,6 +59,7 @@ export class TestSuite {
             const h5 = document.createElement("h5") as HTMLHeadingElement;
             h5.classList.add("border-bottom", "pb-2", "mb-0", "display-5");
             h5.textContent = testResult.testFilePath;
+            h5.setAttribute("data-toggle", "collapse");
             div.id = testResult.testFilePath;
             div.appendChild(h5);
 
@@ -94,6 +95,7 @@ export class TestSuite {
 
                             if (index === 0) {
                                 div.appendChild(nestDiv);
+                                console.log(`nest ${key}`)
                             } else {
                                 titlesCopy.pop();
                                 let parentKey = titlesCopy.join(TestSuite.JOIN_CHAR);
