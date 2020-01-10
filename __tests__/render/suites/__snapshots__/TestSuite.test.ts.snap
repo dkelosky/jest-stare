@@ -13,7 +13,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow failed-test.passed-test"
-      id="Failing Tests"
+      id="Failing-Tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -42,7 +42,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
-      id="Render tests"
+      id="Render-tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -65,7 +65,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
-      id="Processor tests"
+      id="Processor-tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -91,7 +91,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
-      id="IO tests"
+      id="IO-tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -123,7 +123,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
-      id="Logger tests"
+      id="Logger-tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -146,7 +146,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
-      id="Reporter tests"
+      id="Reporter-tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -177,7 +177,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow failed-test.passed-test"
-      id="IO tests"
+      id="IO-tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -209,7 +209,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
-      id="Reporter tests"
+      id="Reporter-tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -237,7 +237,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
-      id="IO tests"
+      id="IO-tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -269,7 +269,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
-      id="Reporter tests"
+      id="Reporter-tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -297,7 +297,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow failed-test.passed-test"
-      id="Failing Tests"
+      id="Failing-Tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -326,7 +326,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
-      id="Render tests"
+      id="Render-tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -349,7 +349,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
-      id="Processor tests"
+      id="Processor-tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -375,7 +375,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
-      id="IO tests"
+      id="IO-tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -407,7 +407,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
-      id="Logger tests"
+      id="Logger-tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"
@@ -430,7 +430,7 @@ Array [
     </h5>
     <div
       class="my-3 p-3 bg-white rounded box-shadow passed-test"
-      id="Reporter tests"
+      id="Reporter-tests"
     >
       <h6
         class="border-bottom pb-2 mb-0 display-6"

@@ -75,7 +75,8 @@ export class TestSuite {
 
                         const titlesCopy = test.ancestorTitles.slice();
                         titlesCopy.splice(index + 1);
-                        const key = titlesCopy.join(TestSuite.JOIN_CHAR);
+                        let key = titlesCopy.join(TestSuite.JOIN_CHAR);
+                        key = key.replace(/\s+/g, "-");
                         if (divMap.has(key)) {
                             divMap.get(key).appendChild(element);
                         } else {
@@ -95,7 +96,8 @@ export class TestSuite {
                                 div.appendChild(nestDiv);
                             } else {
                                 titlesCopy.pop();
-                                const parentKey = titlesCopy.join(TestSuite.JOIN_CHAR);
+                                let parentKey = titlesCopy.join(TestSuite.JOIN_CHAR);
+                                parentKey = parentKey.replace(/\s+/g, "-");
                                 divMap.get(parentKey).appendChild(nestDiv);
                             }
                         }
@@ -124,7 +126,8 @@ export class TestSuite {
         for (let index = 0; index < result.ancestorTitles.length; index++) {
             const titlesCopy = result.ancestorTitles.slice();
             titlesCopy.splice(index + 1);
-            const key = titlesCopy.join(TestSuite.JOIN_CHAR);
+            let key = titlesCopy.join(TestSuite.JOIN_CHAR);
+            key = key.replace(/\s+/g, "-");
             if (testSectionStatus.has(key)) {
                 if (testStatusClass !== currentStatus) {
                     testSectionStatus.set(key, TestSuite.mixStatus(currentStatus, testStatusClass));
