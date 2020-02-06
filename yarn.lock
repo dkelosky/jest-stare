@@ -545,10 +545,10 @@
   dependencies:
     "@types/sizzle" "*"
 
-"@types/mustache@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@types/mustache/-/mustache-3.2.0.tgz#9bf5557a9114b04ce914add3e484294d4d9b8cdd"
-  integrity sha512-wpzYsmClHJ/QDHo2gIlzaN3lzIK2VI7/+mgT9R48iQwWTrb+mGEVX06FfDgBEcM1OpfpsS1gQ0bAUGECwDiStw==
+"@types/mustache@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@types/mustache/-/mustache-4.0.0.tgz#8db01fdff5210646a9d8819ad2aca0ccb5fef12a"
+  integrity sha512-AVBOcLJenbpCIJcHUvGWj+YMlaiwcFlGK1YEH2mePXkB5B/vQLrFkHG9IpBH71mXnkbibc4V8Nnn1wJSxcgCEA==
 
 "@types/node@12.12.24":
   version "12.12.24"
@@ -3361,10 +3361,10 @@ ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-mustache@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/mustache/-/mustache-3.0.1.tgz#873855f23aa8a95b150fb96d9836edbc5a1d248a"
-  integrity sha512-jFI/4UVRsRYdUbuDTKT7KzfOp7FiD5WzYmmwNwXyUVypC0xjoTL78Fqc0jHUPIvvGD+6DQSPHIt1NE7D1ArsqA==
+mustache@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/mustache/-/mustache-4.0.0.tgz#7f02465dbb5b435859d154831c032acdfbbefb31"
+  integrity sha512-FJgjyX/IVkbXBXYUwH+OYwQKqWpFPLaLVESd70yHjSDunwzV2hZOoTBvPf4KLoxesUzzyfTH6F784Uqd7Wm5yA==
 
 nanomatch@^1.2.9:
   version "1.2.13"
