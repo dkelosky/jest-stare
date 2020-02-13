@@ -67,7 +67,7 @@
     "@types/diff2html": "0.0.5",
     "@types/jquery": "3.3.32",
     "@types/mustache": "4.0.0",
-    "@types/node": "12.12.24",
+    "@types/node": "12.12.27",
     "browserify": "16.5.0",
     "codecov": "3.6.5",
     "coveralls": "3.0.9",
