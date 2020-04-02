@@ -86,7 +86,7 @@ describe("Switch tests", () => {
             $(checkbox) as JQuery<HTMLInputElement>,
             $("." + toggleClass) as JQuery<HTMLDivElement>,
             toggleClass,
-            [$(addtnlCheckbox) as JQuery<HTMLInputElement>],
+            [$(addtnlCheckbox)] as JQuery<HTMLInputElement>[],
             [addtnlToggleClass]);
 
         // uncheck & div should be hidden

@@ -66,6 +66,7 @@ export class Test {
 
         // NOTE(Kelosky): technically, this may not be unique, but it's unlikely to be the case
         const titleId = innerTestResult.title.replace(/\s+/g, "-").toLowerCase();
+        const diffId = titleId + "-diff";
         thirdDiv.appendChild(strong);
 
         const small = document.createElement("small") as HTMLElement;
@@ -111,9 +112,9 @@ export class Test {
             button.classList.add("btn", "btn-light", "btn-sm");
             button.type = "button";
             button.setAttribute("data-toggle", "collapse");
-            button.setAttribute("data-target", "#" + titleId);
+            button.setAttribute("data-target", "#" + diffId);
             button.setAttribute("aria-expanded", "false");
-            button.setAttribute("aria-controls", titleId);
+            button.setAttribute("aria-controls", diffId);
             button.textContent = "raw";
             collapseDiv.appendChild(button);
 
@@ -123,7 +124,7 @@ export class Test {
             if (show) {
                 pre.classList.add("show");
             }
-            pre.id = titleId;
+            pre.id = diffId;
 
             const code = document.createElement("code") as HTMLElement;
             pre.appendChild(code);

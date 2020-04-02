@@ -37,7 +37,7 @@ describe("Test tests", () => {
         expect(elements).toMatchSnapshot();
     });
 
-    it("should create proper elements for large test > 500 tests", () => {
+    it("should create proper elements for large test more than 500 tests", () => {
         const elements: HTMLElement[] = [];
         largeTests.testResults.forEach((testResult) => {
             testResult.testResults.forEach((test) => {

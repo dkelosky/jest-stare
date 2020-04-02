@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TestSuite tests Snapshots should create proper elements for large test > 500 tests 1`] = `
+exports[`TestSuite tests Snapshots should create proper elements for large test more than 500 tests 1`] = `
 Array [
   <div
     class="my-3 p-3 bg-white rounded box-shadow failed-test.passed-test"

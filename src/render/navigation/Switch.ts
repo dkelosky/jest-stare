@@ -40,7 +40,7 @@ export class Switch {
      */
     constructor(
         checkBox: JQuery<HTMLInputElement>, divClass: JQuery<HTMLDivElement>, divClassName?: string,
-        addtnlCheckBoxArray?: Array<JQuery<HTMLInputElement>>, addtnlClassNameArray?: string[]) {
+        addtnlCheckBoxArray?: JQuery<HTMLInputElement>[], addtnlClassNameArray?: string[]) {
             this.activateFilters(checkBox, divClass, divClassName, addtnlCheckBoxArray, addtnlClassNameArray);
     }
 
@@ -56,7 +56,7 @@ export class Switch {
      */
     private activateFilters(
         checkBox: JQuery<HTMLInputElement>, divClass: JQuery<HTMLDivElement>, divClassName?: string,
-        addtnlCheckBoxArray?: Array<JQuery<HTMLInputElement>>, addtnlClassNameArray?: string[]) {
+        addtnlCheckBoxArray?: JQuery<HTMLInputElement>[], addtnlClassNameArray?: string[]) {
             checkBox.change(() => {
                 if (checkBox.is(":checked")) {
                     divClass.show();

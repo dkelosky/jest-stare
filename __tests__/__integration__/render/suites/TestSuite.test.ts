@@ -27,7 +27,7 @@ describe("TestSuite tests", () => {
         expect(TestSuite.create(pendingOnlyTests)).toMatchSnapshot();
     });
 
-    it("should create proper elements for large test > 500 tests", () => {
+    it("should create proper elements for large test more than 500 tests", () => {
         // expect(TestSuite.create(largeTests)).toMatchSnapshot();
         pending();
     });
