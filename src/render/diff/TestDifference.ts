@@ -35,12 +35,11 @@ export class TestDifference {
      */
     public static generate(jestFailureMessage: string): HTMLElement {
         const jestDiff = TestDifference.isolateDiff(jestFailureMessage);
-
-        const diffHtml = diff2html.Diff2Html.getPrettyHtml(
-            jestDiff,
+        const diffjson = diff2html.parse(jestDiff);
+        const diffHtml = diff2html.html(
+            diffjson,
             {
-                inputFormat: "diff",
-                showFiles: false,
+                drawFileList: false,
                 outputFormat: "side-by-side",
                 matching: "lines"
             }
@@ -75,7 +74,11 @@ export class TestDifference {
         }
         const changesIndicator = `\n@@ -0,${snapshotChanges} +0,${receivedChanges} @@\n`;
         isolated = isolated.replace("- Snapshot", "--- Snapshot");
-        isolated = isolated.replace("+ Received", "+++ Received" + changesIndicator);
-        return isolated;
+        // isolated = isolated.replace("+ Received  + 7", "+++ Received  + 7" + changesIndicator);
+        isolated = isolated.replace("+ Received", "+++ Received");
+        const lines = isolated.split(/\r?\n/g);
+        lines.splice(2, 0, changesIndicator);
+        // return isolated;
+        return lines.join(`\n`);
     }
 }
