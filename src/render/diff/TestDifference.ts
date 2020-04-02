@@ -62,7 +62,6 @@ export class TestDifference {
         const beginIndex = jestFailureMessage.search(TestDifference.DIFF_INDICATOR);
         const endIndex = jestFailureMessage.search(TestDifference.DIFF_END_INDICATOR);
         let isolated = jestFailureMessage.substring(beginIndex, endIndex);
-
         // get a rough count of the changes in the file
         let snapshotChanges = 0;
         let receivedChanges = 0;

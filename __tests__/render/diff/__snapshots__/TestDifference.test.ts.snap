@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestDifference tests should return isolated diff 1`] = `
+"--- Snapshot  - 2
++++ Received
+@@ -0,2 +0,3 @@
+  + 2
+  {-   \\"name\\": \\"floppy\\",
++   \\"name\\": \\"Amet ad commodo ad aliquip elit excepteur laboris. Aliqua consequat exercitation Lorem incididunt esse nulla eiusmod labore eu magna consequat enim enim dolore. Do in reprehenderit qui sint aliquip quis tempor laborum sint quis.Deserunt sunt veniam magna eiusmod adipisicing incididunt pariatur incididunt elit dolore nostrud sit nostrud. Mollit eu ut ea irure consectetur quis. Ullamco aliqua laboris ipsum et laboris in culpa in ea et do. Velit qui ullamco tempor excepteur aute duis exercitation consectetur deserunt enim.Reprehenderit veniam qui eiusmod ipsum consectetur non. Sint nulla Lorem esse fugiat quis deserunt consequat consequat deserunt sunt qui. Officia commodo irure Lorem dolore qui mollit. Consequat ea tempor occaecat ex irure consequat dolore minim ipsum. Occaecat dolor consequat cupidatat consequat.\\",
+-   \\"breed\\": \\"beagle\\",
++   \\"breed\\": \\"corgi\\",
+    \\"height\\": 1,
+    \\"color\\": \\"brown and white\\"
+  }
+    at Object.it (C:dev
+odejeststarebackup__tests____examples__FailingTests.example.ts:11:57)
+    at Object.asyncJestTest (C:dev
+odejeststarebackup
+ode_modulesjest
+ode_modulesjest-jasmine2uildjasmineAsyncInstall.js:100:37)
+    at resolve (C:dev
+odejeststarebackup
+ode_modulesjest
+ode_modulesjest-jasmine2uildqueueRunner.js:45:12)
+    at new Promise (<anonymous>)
+    at mapper (C:dev
+odejeststarebackup
+ode_modulesjest
+ode_modulesjest-jasmine2uildqueueRunner.js:28:19)
+    at promise.then (C:dev
+odejeststarebackup
+ode_modulesjest
+ode_modulesjest-jasmine2uildqueueRunner.js:75:41)
+    "
+`;
