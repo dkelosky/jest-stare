@@ -12,7 +12,7 @@ export class TestDifference {
      * If this appears in a failure message, it is the beginning of a snapshot
      * diff.
      */
-    public static DIFF_INDICATOR: RegExp = /- Snapshot\s*\n\s*\+ Received/g;
+    public static DIFF_INDICATOR: RegExp = /- Snapshot\s*(\-\s*[0-9]+)?\n\s*\+ Received\s*(\+\s*[0-9]+)/g;
 
     public static DIFF_END_INDICATOR: RegExp = /(at .*? \(.*?:[0-9]+:[0-9]+\)\s)/g;
 
@@ -36,11 +36,12 @@ export class TestDifference {
     public static generate(jestFailureMessage: string): HTMLElement {
         const jestDiff = TestDifference.isolateDiff(jestFailureMessage);
 
-        const diffHtml = diff2html.Diff2Html.getPrettyHtml(
-            jestDiff,
+        const diffjson = diff2html.parse(jestDiff);
+        const diffHtml = diff2html.html(
+            diffjson,
             {
-                inputFormat: "diff",
-                showFiles: false,
+                // inputFormat: "diff",
+                // showFiles: false,
                 outputFormat: "side-by-side",
                 matching: "lines"
             }

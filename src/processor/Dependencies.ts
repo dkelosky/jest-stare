@@ -23,7 +23,7 @@ export class Dependencies {
             targetDir: Constants.JS_DIR
         },
         {
-            requireDir: "diff2html/dist/",
+            requireDir: "diff2html/bundles/js/",
             file: "diff2html.min.js",
             targetDir: Constants.JS_DIR
         },
@@ -45,7 +45,7 @@ export class Dependencies {
             targetDir: Constants.CSS_DIR
         },
         {
-            requireDir: "diff2html/dist/",
+            requireDir: "diff2html/bundles/css/",
             file: "diff2html.min.css",
             targetDir: Constants.CSS_DIR
         },
