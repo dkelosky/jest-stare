@@ -28,7 +28,7 @@ describe("TestSuite tests", () => {
         expect(TestSummary.create(twoSideBySideFailDiffTests)).toMatchSnapshot();
     });
 
-    it("should create proper elements for large test > 500 tests", () => {
+    it("should create proper elements for large test more than 500 tests", () => {
         expect(TestSummary.create(twoSideBySideFailDiffTests)).toMatchSnapshot();
     });
 });

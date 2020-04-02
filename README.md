@@ -2,6 +2,7 @@
 [![CircleCI](https://circleci.com/gh/dkelosky/jest-stare.svg?style=svg)](https://circleci.com/gh/dkelosky/jest-stare)
 [![Travis CI](https://travis-ci.com/dkelosky/jest-stare.svg?branch=master)](https://travis-ci.com/dkelosky/jest-stare)
 [![Azure Pipelines](https://dev.azure.com/dkelosky/dkelosky/_apis/build/status/dkelosky.jest-stare?branchName=master)](https://dev.azure.com/dkelosky/dkelosky/_build/latest?definitionId=1&branchName=master)
+![Node.js CI](https://github.com/dkelosky/jest-stare/workflows/Node.js%20CI/badge.svg)
 [![Codecov Coverage](https://img.shields.io/codecov/c/github/dkelosky/jest-stare/master.svg?style=flat-square)](https://codecov.io/gh/dkelosky/jest-stare/)
 [![npm version](https://badge.fury.io/js/jest-stare.svg)](https://badge.fury.io/js/jest-stare)
 [![downloads](https://img.shields.io/npm/dm/jest-stare)](https://www.npmjs.com/package/jest-stare)
