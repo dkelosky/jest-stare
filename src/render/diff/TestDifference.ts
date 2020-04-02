@@ -12,7 +12,7 @@ export class TestDifference {
      * If this appears in a failure message, it is the beginning of a snapshot
      * diff.
      */
-    public static DIFF_INDICATOR: RegExp = /- Snapshot\s*\n\s*\+ Received/g;
+    public static DIFF_INDICATOR: RegExp = /- Snapshot\s*(\-\s*[0-9]+)?\n\s*\+ Received\s*(\+\s*[0-9]+)/g;
 
     public static DIFF_END_INDICATOR: RegExp = /(at .*? \(.*?:[0-9]+:[0-9]+\)\s)/g;
 
@@ -62,7 +62,6 @@ export class TestDifference {
         const beginIndex = jestFailureMessage.search(TestDifference.DIFF_INDICATOR);
         const endIndex = jestFailureMessage.search(TestDifference.DIFF_END_INDICATOR);
         let isolated = jestFailureMessage.substring(beginIndex, endIndex);
-
         // get a rough count of the changes in the file
         let snapshotChanges = 0;
         let receivedChanges = 0;
@@ -76,7 +75,7 @@ export class TestDifference {
         }
         const changesIndicator = `\n@@ -0,${snapshotChanges} +0,${receivedChanges} @@\n`;
         isolated = isolated.replace("- Snapshot", "--- Snapshot");
-        isolated = isolated.replace("+ Received\n", "+++ Received" + changesIndicator);
+        isolated = isolated.replace("+ Received", "+++ Received" + changesIndicator);
         return isolated;
     }
 }
