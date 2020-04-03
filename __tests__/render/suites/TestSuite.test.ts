@@ -3,10 +3,11 @@ jest.mock("../../../src/render/tests/Test");
 import { TestSuite } from "../../../src/render/suites/TestSuite";
 import { Test } from "../../../src/render/tests/Test";
 import { Constants } from "../../../src/render/Constants";
+import { AggregatedResult, Status } from "@jest/test-result"
 
-const simplePassingTests: jest.AggregatedResult = require("../../__resources__/simplePassingTests.json");
-const simpleFailingTests: jest.AggregatedResult = require("../../__resources__/simpleFailingTests.json");
-const twoSideBySideFailDiffTests: jest.AggregatedResult = require("../../__resources__/twoSideBySideFailDiffTests.json");
+const simplePassingTests: AggregatedResult = require("../../__resources__/simplePassingTests.json");
+const simpleFailingTests: AggregatedResult = require("../../__resources__/simpleFailingTests.json");
+const twoSideBySideFailDiffTests: AggregatedResult = require("../../__resources__/twoSideBySideFailDiffTests.json");
 // const largeTests: jest.AggregatedResult = require("../../__resources__/largeTests.json");
 
 // mock out the individual tests within describe blocks
@@ -16,7 +17,7 @@ const twoSideBySideFailDiffTests: jest.AggregatedResult = require("../../__resou
     return div;
 });
 
-const createTestResult = (status: jest.Status) => {
+const createTestResult = (status: Status) => {
         return {
             status,
             ancestorTitles: ["ancestor"],

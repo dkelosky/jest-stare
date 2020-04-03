@@ -1,13 +1,14 @@
 import { TestSuite } from "../../../../src/render/suites/TestSuite";
+import { AggregatedResult } from "@jest/test-result"
 
-const simplePassingTests: jest.AggregatedResult = require("../../../__resources__/simplePassingTests.json");
-const simpleFailingTests: jest.AggregatedResult = require("../../../__resources__/simpleFailingTests.json");
-const twoSideBySideFailDiffTests: jest.AggregatedResult = require("../../../__resources__/twoSideBySideFailDiffTests.json");
-const nestedDescribeTests: jest.AggregatedResult = require("../../../__resources__/nestedDescribeTests.json");
-const pendingTests: jest.AggregatedResult = require("../../../__resources__/pendingTests.json");
-const pendingOnlyTests: jest.AggregatedResult = require("../../../__resources__/pendingOnlyTests.json");
-const assertionRestultsTests: jest.AggregatedResult = require("../../../__resources__/assertionRestultsTests.json");
-const imageSnapshotTests: jest.AggregatedResult = require("../../../__resources__/imageSnapshotsTest.json");
+const simplePassingTests: AggregatedResult = require("../../../__resources__/simplePassingTests.json");
+const simpleFailingTests: AggregatedResult = require("../../../__resources__/simpleFailingTests.json");
+const twoSideBySideFailDiffTests: AggregatedResult = require("../../../__resources__/twoSideBySideFailDiffTests.json");
+const nestedDescribeTests: AggregatedResult = require("../../../__resources__/nestedDescribeTests.json");
+const pendingTests: AggregatedResult = require("../../../__resources__/pendingTests.json");
+const pendingOnlyTests: AggregatedResult = require("../../../__resources__/pendingOnlyTests.json");
+const assertionRestultsTests: AggregatedResult = require("../../../__resources__/assertionRestultsTests.json");
+const imageSnapshotTests: AggregatedResult = require("../../../__resources__/imageSnapshotsTest.json");
 
 describe("TestSuite tests", () => {
 

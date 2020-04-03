@@ -2,6 +2,7 @@ import { Constants } from "../Constants";
 import * as AnsiParser from "ansi-parser";
 import { TestDifference } from "../diff/TestDifference";
 import { ImageSnapshotDifference } from "../diff/ImageSnapshotDifference";
+import { TestResult } from "@jest/types";
 
 /**
  * Create elements for a test
@@ -18,7 +19,7 @@ export class Test {
      * @returns {HTMLDivElement} - populated element
      * @memberof Test
      */
-    public static create(innerTestResult: jest.AssertionResult): HTMLElement {
+    public static create(innerTestResult: TestResult.AssertionResult): HTMLElement {
         let color = Constants.PASS_RAW;
         let testStatusClass = Constants.PASSED_TEST;
         let failed = false;

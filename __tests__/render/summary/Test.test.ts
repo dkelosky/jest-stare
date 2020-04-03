@@ -1,9 +1,10 @@
 import { Test } from "../../../src/render/summary/Test";
+import { AggregatedResult } from "@jest/test-result"
 
-const simplePassingTests: jest.AggregatedResult = require("../../__resources__/simplePassingTests.json");
-const simpleFailingTests: jest.AggregatedResult = require("../../__resources__/simpleFailingTests.json");
-const twoSideBySideFailDiffTests: jest.AggregatedResult = require("../../__resources__/twoSideBySideFailDiffTests.json");
-const largeTests: jest.AggregatedResult = require("../../__resources__/largeTests.json");
+const simplePassingTests: AggregatedResult = require("../../__resources__/simplePassingTests.json");
+const simpleFailingTests: AggregatedResult = require("../../__resources__/simpleFailingTests.json");
+const twoSideBySideFailDiffTests: AggregatedResult = require("../../__resources__/twoSideBySideFailDiffTests.json");
+const largeTests: AggregatedResult = require("../../__resources__/largeTests.json");
 
 describe("Test tests", () => {
 

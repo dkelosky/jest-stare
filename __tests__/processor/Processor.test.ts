@@ -5,8 +5,9 @@ import { Processor } from "../../src/processor/Processor";
 import { Logger } from "../../src/utils/Logger";
 import { ISubstitute } from "../../src/processor/doc/ISubstitute";
 import { Constants } from "../../src/processor/Constants";
+import { AggregatedResult } from "@jest/test-result"
 
-const simplePassingTests: jest.AggregatedResult = require("../__resources__/simplePassingTests.json");
+const simplePassingTests: AggregatedResult = require("../__resources__/simplePassingTests.json");
 
 describe("Processor tests", () => {
 

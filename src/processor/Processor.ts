@@ -12,6 +12,7 @@ import { isNullOrUndefined } from "util";
 import { IProcessParms } from "./doc/IProcessParms";
 import { Config } from "./Config";
 import { ImageSnapshotDifference } from "../render/diff/ImageSnapshotDifference";
+import { AggregatedResult } from "@jest/test-result";
 
 /**
  * Class to post process jest output and summarize information in an html file
@@ -29,7 +30,7 @@ export class Processor {
      * @returns - returns input results object
      * @memberof Processor
      */
-    public static run(results: jest.AggregatedResult, explicitConfig?: IJestStareConfig, parms?: IProcessParms) {
+    public static run(results: AggregatedResult, explicitConfig?: IJestStareConfig, parms?: IProcessParms) {
 
         return new Processor(results, explicitConfig, parms).generate();
     }
@@ -49,7 +50,7 @@ export class Processor {
      * @param {IProcessParms} [mProcessParms] - parms object to control process behavior
      * @memberof Processor
      */
-    constructor(private mResults: jest.AggregatedResult, private mExplicitConfig?: IJestStareConfig, private mProcessParms?: IProcessParms) {
+    constructor(private mResults: AggregatedResult, private mExplicitConfig?: IJestStareConfig, private mProcessParms?: IProcessParms) {
     }
 
     /**
@@ -97,7 +98,7 @@ export class Processor {
      * @param resultDir
      * @param parms
      */
-    private collectImageSnapshots(resultDir: string, results: jest.AggregatedResult) {
+    private collectImageSnapshots(resultDir: string, results: AggregatedResult) {
         results.testResults.forEach((rootResult) => {
 
             if (rootResult.numFailingTests) {
@@ -194,7 +195,7 @@ export class Processor {
      *                     to forward the data to
      * @memberof Processor
      */
-    private execute(jestTestData: jest.AggregatedResult, processors: string[]): void {
+    private execute(jestTestData: AggregatedResult, processors: string[]): void {
         for (const processor of processors) {
             if (processor === Constants.NAME) {
                 this.logger.error("Error: In order to avoid infinite loops, " +

@@ -1,4 +1,5 @@
 import {Test} from "./Test";
+import { AggregatedResult } from "@jest/test-result";
 
 /**
  * Create test summary
@@ -20,7 +21,7 @@ export class TestSummary {
      * @returns {HTMLElement[]} - populated html elements
      * @memberof TestSummary
      */
-    public static create(results: jest.AggregatedResult): HTMLElement[] {
+    public static create(results: AggregatedResult): HTMLElement[] {
         const elements: HTMLElement[] = [];
 
         const div = document.createElement("div") as HTMLDivElement;

@@ -13,7 +13,10 @@
     ],
     "no-submodule-imports": [
       true,
-      "bootstrap/dist/js/bootstrap.bundle.min.js"
+      "bootstrap/dist/js/bootstrap.bundle.min.js",
+      "@jest/reporters",
+      "@jest/types",
+      "@jest/test-result"
     ],
     "no-magic-numbers": [
       true,

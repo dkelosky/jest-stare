@@ -1,4 +1,5 @@
 import { Constants } from "../Constants";
+import { AssertionResult } from "@jest/test-result";
 
 /**
  * Create elements for a test
@@ -15,7 +16,7 @@ export class Test {
      * @returns {HTMLDivElement} - populated element
      * @memberof Test
      */
-    public static create(innerTestResult: jest.AssertionResult): HTMLElement {
+    public static create(innerTestResult: AssertionResult): HTMLElement {
         const containerDiv = document.createElement("div") as HTMLDivElement;
 
         const anchor = document.createElement("a") as HTMLAnchorElement;

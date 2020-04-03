@@ -6,13 +6,14 @@ import { Constants as RenderConstants } from "../../src/render/Constants";
 import { IChartData } from "../../src/render/doc/IChartData";
 import { IJestStareConfig } from "../../src/processor/doc/IJestStareConfig";
 import { Doughnut } from "../../src/render/charts/Doughnut";
+import { AggregatedResult } from "@jest/test-result"
 
-const simplePassingTests: jest.AggregatedResult = require("../__resources__/simplePassingTests.json");
-const simpleFailingTests: jest.AggregatedResult = require("../__resources__/simpleFailingTests.json");
-const pendingOnlyTests: jest.AggregatedResult = require("../__resources__/pendingOnlyTests.json");
-const changedSnapshotTests: jest.AggregatedResult = require("../__resources__/changedSnapshotTests.json");
-const obsoleteSnapshotTests: jest.AggregatedResult = require("../__resources__/obsoleteSnapshotTests.json");
-const demoTests: jest.AggregatedResult = require("../__resources__/demoTests.json");
+const simplePassingTests: AggregatedResult = require("../__resources__/simplePassingTests.json");
+const simpleFailingTests: AggregatedResult = require("../__resources__/simpleFailingTests.json");
+const pendingOnlyTests: AggregatedResult = require("../__resources__/pendingOnlyTests.json");
+const changedSnapshotTests: AggregatedResult = require("../__resources__/changedSnapshotTests.json");
+const obsoleteSnapshotTests: AggregatedResult = require("../__resources__/obsoleteSnapshotTests.json");
+const demoTests: AggregatedResult = require("../__resources__/demoTests.json");
 
 const writeTemplate = () => {
     /**
