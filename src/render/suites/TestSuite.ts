@@ -1,5 +1,6 @@
 import { Constants } from "../Constants";
 import { Test } from "../tests/Test";
+import { AggregatedResult, AssertionResult } from "@jest/test-result";
 
 /**
  * Create test suites
@@ -21,7 +22,7 @@ export class TestSuite {
      * @returns {HTMLElement[]} - populated html elements
      * @memberof TestSuite
      */
-    public static create(results: jest.AggregatedResult): HTMLElement[] {
+    public static create(results: AggregatedResult): HTMLElement[] {
         const elements: HTMLElement[] = [];
 
         results.testResults.forEach((testResult) => {
@@ -111,7 +112,7 @@ export class TestSuite {
         return elements;
     }
 
-    public static asignStatus(testStatusClass: string, result: jest.AssertionResult, testSectionStatus: Map<string, string>) {
+    public static asignStatus(testStatusClass: string, result: AssertionResult, testSectionStatus: Map<string, string>) {
         const currentStatus = TestSuite.getStatusClassFromJestStatus(result.status);
         if (!testStatusClass) {
             testStatusClass = currentStatus;

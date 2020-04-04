@@ -8,6 +8,8 @@ import { TestSummary } from "./summary/TestSummary";
 import { IChartData } from "./doc/IChartData";
 import { IJestStareConfig } from "../processor/doc/IJestStareConfig";
 import { isNullOrUndefined } from "util";
+import { AggregatedResult } from "@jest/test-result";
+import { Config } from "@jest/types";
 
 /**
  * Adjust DOM to display JSON data
@@ -25,10 +27,10 @@ export class Render {
     public static init() {
         document.addEventListener("DOMContentLoaded", () => {
             const config: IJestStareConfig = JSON.parse($("#test-config").text());
-            const results: jest.AggregatedResult = JSON.parse($("#test-results").text());
+            const results: AggregatedResult = JSON.parse($("#test-results").text());
 
             try {
-                const globalConfig: jest.GlobalConfig = JSON.parse($("#test-global-config").text());
+                const globalConfig: Config.InitialOptions = JSON.parse($("#test-global-config").text());
                 const regex = new RegExp(Render.escapeRegExp(globalConfig.rootDir), "g");
                 results.testResults.forEach((testResult) => {
                     testResult.testFilePath = testResult.testFilePath.replace(regex, "");
@@ -61,7 +63,7 @@ export class Render {
      * @param {IJestStareConfig} config - jest stare config
      * @memberof Render
      */
-    private static show(results: jest.AggregatedResult, config: IJestStareConfig) {
+    private static show(results: AggregatedResult, config: IJestStareConfig) {
 
         const labels = [Constants.PASSED_LABEL, Constants.FAILED_LABEL];
         const backgroundColor = [Constants.PASS, Constants.FAIL];
@@ -168,7 +170,7 @@ export class Render {
      * @param {jest.AggregatedResult} results
      * @memberof Render
      */
-    private static updateStatusArea(results: jest.AggregatedResult) {
+    private static updateStatusArea(results: AggregatedResult) {
         Status.setResultsClass(
             $("#test-suites-results") as JQuery<HTMLParagraphElement>,
             results.numPassedTestSuites, results.numTotalTestSuites - results.numPassedTestSuites - results.numPendingTestSuites);
@@ -276,7 +278,7 @@ export class Render {
      * @returns {IChartData} - completed snapshot chart
      * @memberof Render
      */
-    private static addSnapshotChartData(results: jest.AggregatedResult, snapshotChart: IChartData): IChartData {
+    private static addSnapshotChartData(results: AggregatedResult, snapshotChart: IChartData): IChartData {
 
         // add info about added snapshots if present
         if (results.snapshot.filesAdded > 0) {
