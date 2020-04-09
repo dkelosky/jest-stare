@@ -34,3 +34,37 @@ ode_modulesjest
 ode_modulesjest-jasmine2uildqueueRunner.js:75:41)
     "
 `;
+
+exports[`TestDifference tests should return isolated diff for older version 1`] = `
+"--- Snapshot
++++ Received
+
+@@ -0,2 +0,2 @@
+
+  Object {
+    \\"firstKey\\": \\"firstValue\\",
+-   \\"secondKey\\": \\"secondValue\\",
++   \\"secondKey\\": \\"wrongValue\\",
+  }
+    at Object.it (C:Dev
+odejest-stare__tests____examples__DemoTests.example.ts:11:69)
+    at Object.asyncFn (C:Dev
+odejest-stare
+ode_modulesjest-config
+ode_modulesjest-jasmine2uildjasmine_async.js:129:432)
+    at resolve (C:Dev
+odejest-stare
+ode_modulesjest-config
+ode_modulesjest-jasmine2uildqueue_runner.js:51:12)
+    at new Promise (<anonymous>)
+    at mapper (C:Dev
+odejest-stare
+ode_modulesjest-config
+ode_modulesjest-jasmine2uildqueue_runner.js:40:274)
+    at promise.then (C:Dev
+odejest-stare
+ode_modulesjest-config
+ode_modulesjest-jasmine2uildqueue_runner.js:83:39)
+    at <anonymous>
+    "
+`;
