@@ -1,2074 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TestSuite tests should create proper elements for assertion results 1`] = `
-Array [
-  <div
-    class="my-3 p-3 bg-white rounded box-shadow passed-test"
-  >
-    <h5
-      class="border-bottom pb-2 mb-0 display-5"
-    />
-    <div
-      class="my-3 p-3 bg-white rounded box-shadow passed-test"
-    >
-      <h6
-        class="border-bottom pb-2 mb-0 display-6"
-      >
-        Logger tests
-      </h6>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should get a log instance
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    class="my-3 p-3 bg-white rounded box-shadow passed-test"
-  >
-    <h5
-      class="border-bottom pb-2 mb-0 display-5"
-    />
-    <div
-      class="my-3 p-3 bg-white rounded box-shadow passed-test"
-    >
-      <h6
-        class="border-bottom pb-2 mb-0 display-6"
-      >
-        EnvVarService tests
-      </h6>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should read my env value
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should not find unset env value
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should read my env value that is boolean set to true
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should read my env value that is boolean set to false
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should not find my env value that is not set
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    class="my-3 p-3 bg-white rounded box-shadow passed-test"
-  >
-    <h5
-      class="border-bottom pb-2 mb-0 display-5"
-    />
-    <div
-      class="my-3 p-3 bg-white rounded box-shadow passed-test"
-    >
-      <h6
-        class="border-bottom pb-2 mb-0 display-6"
-      >
-        EnvVars tests
-      </h6>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should have an empty config for no env variables set
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should have a complete config for all env variables set
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    class="my-3 p-3 bg-white rounded box-shadow passed-test"
-  >
-    <h5
-      class="border-bottom pb-2 mb-0 display-5"
-    />
-    <div
-      class="my-3 p-3 bg-white rounded box-shadow passed-test"
-    >
-      <h6
-        class="border-bottom pb-2 mb-0 display-6"
-      >
-        Processor tests
-      </h6>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should accept override config on input and not log when requested not to
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should accept override config on input and log when requested to
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should accept override html and JSON file name
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create a report form an input object
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create file names correctly when default 'resultDir' is used
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should error when called without input
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    class="my-3 p-3 bg-white rounded box-shadow passed-test"
-  >
-    <h5
-      class="border-bottom pb-2 mb-0 display-5"
-    />
-    <div
-      class="my-3 p-3 bg-white rounded box-shadow passed-test"
-    >
-      <h6
-        class="border-bottom pb-2 mb-0 display-6"
-      >
-        Doughnut tests
-      </h6>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should do something
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    class="my-3 p-3 bg-white rounded box-shadow passed-test"
-  >
-    <h5
-      class="border-bottom pb-2 mb-0 display-5"
-    />
-    <div
-      class="my-3 p-3 bg-white rounded box-shadow passed-test"
-    >
-      <h6
-        class="border-bottom pb-2 mb-0 display-6"
-      >
-        Switch tests
-      </h6>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should change classes shown when toggled
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should change classes shown when toggled and change classes for a second toggle too
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    class="my-3 p-3 bg-white rounded box-shadow passed-test"
-  >
-    <h5
-      class="border-bottom pb-2 mb-0 display-5"
-    />
-    <div
-      class="my-3 p-3 bg-white rounded box-shadow passed-test"
-    >
-      <h6
-        class="border-bottom pb-2 mb-0 display-6"
-      >
-        entry tests
-      </h6>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should call processor when not using 'new'
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should call reporter when using 'new'
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    class="my-3 p-3 bg-white rounded box-shadow passed-test"
-  >
-    <h5
-      class="border-bottom pb-2 mb-0 display-5"
-    />
-    <div
-      class="my-3 p-3 bg-white rounded box-shadow passed-test"
-    >
-      <h6
-        class="border-bottom pb-2 mb-0 display-6"
-      >
-        IO tests
-      </h6>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should pretend to write to a file
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should pretend to write to a file and reject promise for IO errors
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should say true if dir exists
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should false if dir does not exist
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should read return an empty object if no package.json is found
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should read return a populated object if package.json is found
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    class="my-3 p-3 bg-white rounded box-shadow passed-test"
-  >
-    <h5
-      class="border-bottom pb-2 mb-0 display-5"
-    />
-    <div
-      class="my-3 p-3 bg-white rounded box-shadow passed-test"
-    >
-      <h6
-        class="border-bottom pb-2 mb-0 display-6"
-      >
-        Render tests
-      </h6>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should not create link to coverage report if not in config
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create link to coverage report if in config
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should build chart data with no examples
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should build chart data with fail examples
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should build chart data with pass examples
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should build chart data with passing, pending, and failing examples
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should build chart data with pending and fail examples only
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should build chart data with pass and fail examples
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should add snapshot chart data with no examples
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should add snapshot chart data with pass examples
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should add snapshot chart data with fail examples
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    class="my-3 p-3 bg-white rounded box-shadow passed-test"
-  >
-    <h5
-      class="border-bottom pb-2 mb-0 display-5"
-    />
-    <div
-      class="my-3 p-3 bg-white rounded box-shadow passed-test"
-    >
-      <h6
-        class="border-bottom pb-2 mb-0 display-6"
-      >
-        TestSuite tests
-      </h6>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create proper elements for simple passing tests
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create proper elements for simple failing tests
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create proper elements for two diffs in html
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create proper elements for large test &gt; 500 tests
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    class="my-3 p-3 bg-white rounded box-shadow passed-test"
-  >
-    <h5
-      class="border-bottom pb-2 mb-0 display-5"
-    />
-    <div
-      class="my-3 p-3 bg-white rounded box-shadow passed-test"
-    >
-      <h6
-        class="border-bottom pb-2 mb-0 display-6"
-      >
-        jest-stare cli tests
-      </h6>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    class="my-3 p-3 bg-white rounded box-shadow passed-test"
-  >
-    <h5
-      class="border-bottom pb-2 mb-0 display-5"
-    />
-    <div
-      class="my-3 p-3 bg-white rounded box-shadow passed-test"
-    >
-      <h6
-        class="border-bottom pb-2 mb-0 display-6"
-      >
-        TestSuite tests
-      </h6>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create proper elements for simple passing tests
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create proper elements for simple failing tests
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create proper elements for two diffs in html
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create proper elements for large test &gt; 500 tests
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create proper elements for nested describes with reused names
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create proper elements for pending tests
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    class="my-3 p-3 bg-white rounded box-shadow passed-test"
-  >
-    <h5
-      class="border-bottom pb-2 mb-0 display-5"
-    />
-    <div
-      class="my-3 p-3 bg-white rounded box-shadow passed-test"
-    >
-      <h6
-        class="border-bottom pb-2 mb-0 display-6"
-      >
-        Status tests
-      </h6>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should set proper class for passed tests
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should set proper class for failed tests
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should set proper class for passed and failed tests
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    class="my-3 p-3 bg-white rounded box-shadow passed-test"
-  >
-    <h5
-      class="border-bottom pb-2 mb-0 display-5"
-    />
-    <div
-      class="my-3 p-3 bg-white rounded box-shadow passed-test"
-    >
-      <h6
-        class="border-bottom pb-2 mb-0 display-6"
-      >
-        Test tests
-      </h6>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create proper elements for simple passing tests
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create proper elements for simple failing tests
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create proper elements for two diffs in html
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should create proper elements for large test &gt; 500 tests
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    class="my-3 p-3 bg-white rounded box-shadow passed-test"
-  >
-    <h5
-      class="border-bottom pb-2 mb-0 display-5"
-    />
-    <div
-      class="my-3 p-3 bg-white rounded box-shadow passed-test"
-    >
-      <h6
-        class="border-bottom pb-2 mb-0 display-6"
-      >
-        Config tests
-      </h6>
-      <div
-        class="media text-muted pt-3 passed-test"
-      >
-        <img
-          alt=""
-          class="mr-2 rounded"
-          data-src="holder.js/32x32?theme=thumb&bg=28a745&fg=28a745&size=1"
-        />
-        <div
-          class="media-body pb-3 mb-0 small lh-125 border-bottom overflow-auto"
-        >
-          <div
-            class="d-flex justify-content-between align-items-center w-100"
-          >
-            <strong
-              class="text-gray-dark"
-            >
-              should be able to read a config
-            </strong>
-            <small
-              class="d-block text-right mt-3"
-            >
-              NaNs
-            </small>
-          </div>
-          <span
-            class="d-block mb-2"
-          >
-            passed
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-]
-`;
-
 exports[`TestSuite tests should create proper elements for nested describes with reused names 1`] = `
 Array [
   <div
@@ -3426,6 +1357,705 @@ Array [
                 failed
               </span>
               <div
+                class="d2h-wrapper"
+              >
+                
+    
+                <div
+                  class="d2h-file-wrapper"
+                  data-lang=""
+                  id="d2h-418891"
+                >
+                  
+    
+                  <div
+                    class="d2h-file-header"
+                  >
+                    
+      
+                    <span
+                      class="d2h-file-name-wrapper"
+                    >
+                      
+    
+                      <svg
+                        aria-hidden="true"
+                        class="d2h-icon"
+                        height="16"
+                        version="1.1"
+                        viewBox="0 0 12 16"
+                        width="12"
+                      >
+                        
+        
+                        <path
+                          d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"
+                        />
+                        
+    
+                      </svg>
+                          
+                      <span
+                        class="d2h-file-name"
+                      >
+                        Snapshot → Received
+                      </span>
+                      
+    
+                      <span
+                        class="d2h-tag d2h-moved d2h-moved-tag"
+                      >
+                        RENAMED
+                      </span>
+                    </span>
+                    
+    
+                  </div>
+                  
+    
+                  <div
+                    class="d2h-files-diff"
+                  >
+                    
+        
+                    <div
+                      class="d2h-file-side-diff"
+                    >
+                      
+            
+                      <div
+                        class="d2h-code-wrapper"
+                      >
+                        
+                
+                        <table
+                          class="d2h-diff-table"
+                        >
+                          
+                    
+                          <tbody
+                            class="d2h-diff-tbody"
+                          >
+                            
+                    
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-info"
+                              />
+                              
+    
+                              <td
+                                class="d2h-info"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-info"
+                                >
+                                  @@ -0,1 +0,2 @@
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      0
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     Object {
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      1
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "name": "someone",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
+                              >
+                                
+      
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx d2h-emptyplaceholder"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                    <br />
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      2
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "password": "secret",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      3
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     }
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      4
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            
+                    
+                          </tbody>
+                          
+                
+                        </table>
+                        
+            
+                      </div>
+                      
+        
+                    </div>
+                    
+        
+                    <div
+                      class="d2h-file-side-diff"
+                    >
+                      
+            
+                      <div
+                        class="d2h-code-wrapper"
+                      >
+                        
+                
+                        <table
+                          class="d2h-diff-table"
+                        >
+                          
+                    
+                          <tbody
+                            class="d2h-diff-tbody"
+                          >
+                            
+                    
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-info"
+                              />
+                              
+    
+                              <td
+                                class="d2h-info"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-info"
+                                />
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      0
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     Object {
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      1
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "name": "someone",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-ins"
+                              >
+                                
+      2
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-ins"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-ins"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                    +
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "newThing": "here",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      3
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "password": "secret",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      4
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     }
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      5
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            
+                    
+                          </tbody>
+                          
+                
+                        </table>
+                        
+            
+                      </div>
+                      
+        
+                    </div>
+                    
+    
+                  </div>
+                  
+
+                </div>
+                
+
+              </div>
+              <div
                 class="d-flex justify-content-between align-items-center w-100"
               >
                 <div />
@@ -3441,7 +2071,7 @@ Array [
                 </button>
               </div>
               <pre
-                class="collapse show"
+                class="collapse"
                 id="should-match-snapshot-with-two-fields-diff"
               >
                 <code>
@@ -3581,6 +2211,705 @@ Array [
                 failed
               </span>
               <div
+                class="d2h-wrapper"
+              >
+                
+    
+                <div
+                  class="d2h-file-wrapper"
+                  data-lang=""
+                  id="d2h-418891"
+                >
+                  
+    
+                  <div
+                    class="d2h-file-header"
+                  >
+                    
+      
+                    <span
+                      class="d2h-file-name-wrapper"
+                    >
+                      
+    
+                      <svg
+                        aria-hidden="true"
+                        class="d2h-icon"
+                        height="16"
+                        version="1.1"
+                        viewBox="0 0 12 16"
+                        width="12"
+                      >
+                        
+        
+                        <path
+                          d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"
+                        />
+                        
+    
+                      </svg>
+                          
+                      <span
+                        class="d2h-file-name"
+                      >
+                        Snapshot → Received
+                      </span>
+                      
+    
+                      <span
+                        class="d2h-tag d2h-moved d2h-moved-tag"
+                      >
+                        RENAMED
+                      </span>
+                    </span>
+                    
+    
+                  </div>
+                  
+    
+                  <div
+                    class="d2h-files-diff"
+                  >
+                    
+        
+                    <div
+                      class="d2h-file-side-diff"
+                    >
+                      
+            
+                      <div
+                        class="d2h-code-wrapper"
+                      >
+                        
+                
+                        <table
+                          class="d2h-diff-table"
+                        >
+                          
+                    
+                          <tbody
+                            class="d2h-diff-tbody"
+                          >
+                            
+                    
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-info"
+                              />
+                              
+    
+                              <td
+                                class="d2h-info"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-info"
+                                >
+                                  @@ -0,2 +0,1 @@
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      0
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     Object {
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-del"
+                              >
+                                
+      1
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-del"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-del"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                    -
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "data": "sample",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      2
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "name": "someone",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      3
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "password": "secret",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      4
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     }
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      5
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            
+                    
+                          </tbody>
+                          
+                
+                        </table>
+                        
+            
+                      </div>
+                      
+        
+                    </div>
+                    
+        
+                    <div
+                      class="d2h-file-side-diff"
+                    >
+                      
+            
+                      <div
+                        class="d2h-code-wrapper"
+                      >
+                        
+                
+                        <table
+                          class="d2h-diff-table"
+                        >
+                          
+                    
+                          <tbody
+                            class="d2h-diff-tbody"
+                          >
+                            
+                    
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-info"
+                              />
+                              
+    
+                              <td
+                                class="d2h-info"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-info"
+                                />
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      0
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     Object {
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
+                              >
+                                
+      
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx d2h-emptyplaceholder"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                    <br />
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      1
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "name": "someone",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      2
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "password": "secret",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      3
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     }
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      4
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            
+                    
+                          </tbody>
+                          
+                
+                        </table>
+                        
+            
+                      </div>
+                      
+        
+                    </div>
+                    
+    
+                  </div>
+                  
+
+                </div>
+                
+
+              </div>
+              <div
                 class="d-flex justify-content-between align-items-center w-100"
               >
                 <div />
@@ -3596,7 +2925,7 @@ Array [
                 </button>
               </div>
               <pre
-                class="collapse show"
+                class="collapse"
                 id="should-match-snapshot-with-three-fields-diff"
               >
                 <code>
@@ -4172,6 +3501,799 @@ Array [
                 failed
               </span>
               <div
+                class="d2h-wrapper"
+              >
+                
+    
+                <div
+                  class="d2h-file-wrapper"
+                  data-lang=""
+                  id="d2h-418891"
+                >
+                  
+    
+                  <div
+                    class="d2h-file-header"
+                  >
+                    
+      
+                    <span
+                      class="d2h-file-name-wrapper"
+                    >
+                      
+    
+                      <svg
+                        aria-hidden="true"
+                        class="d2h-icon"
+                        height="16"
+                        version="1.1"
+                        viewBox="0 0 12 16"
+                        width="12"
+                      >
+                        
+        
+                        <path
+                          d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"
+                        />
+                        
+    
+                      </svg>
+                          
+                      <span
+                        class="d2h-file-name"
+                      >
+                        Snapshot → Received
+                      </span>
+                      
+    
+                      <span
+                        class="d2h-tag d2h-moved d2h-moved-tag"
+                      >
+                        RENAMED
+                      </span>
+                    </span>
+                    
+    
+                  </div>
+                  
+    
+                  <div
+                    class="d2h-files-diff"
+                  >
+                    
+        
+                    <div
+                      class="d2h-file-side-diff"
+                    >
+                      
+            
+                      <div
+                        class="d2h-code-wrapper"
+                      >
+                        
+                
+                        <table
+                          class="d2h-diff-table"
+                        >
+                          
+                    
+                          <tbody
+                            class="d2h-diff-tbody"
+                          >
+                            
+                    
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-info"
+                              />
+                              
+    
+                              <td
+                                class="d2h-info"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-info"
+                                >
+                                  @@ -0,2 +0,2 @@
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      0
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     "{
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-del d2h-change"
+                              >
+                                
+      1
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-del d2h-change"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-del d2h-change"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                    -
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "name": "
+                                    <del>
+                                      test
+                                    </del>
+                                    ",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      2
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "breed": "beagle",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      3
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "height": 1,
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      4
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "color": "brown and yellow"
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      5
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     }"
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      6
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            
+                    
+                          </tbody>
+                          
+                
+                        </table>
+                        
+            
+                      </div>
+                      
+        
+                    </div>
+                    
+        
+                    <div
+                      class="d2h-file-side-diff"
+                    >
+                      
+            
+                      <div
+                        class="d2h-code-wrapper"
+                      >
+                        
+                
+                        <table
+                          class="d2h-diff-table"
+                        >
+                          
+                    
+                          <tbody
+                            class="d2h-diff-tbody"
+                          >
+                            
+                    
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-info"
+                              />
+                              
+    
+                              <td
+                                class="d2h-info"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-info"
+                                />
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      0
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     "{
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-ins d2h-change"
+                              >
+                                
+      1
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-ins d2h-change"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-ins d2h-change"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                    +
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "name": "
+                                    <ins>
+                                      nest
+                                    </ins>
+                                    ",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      2
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "breed": "beagle",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      3
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "height": 1,
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      4
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "color": "brown and yellow"
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      5
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     }"
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      6
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            
+                    
+                          </tbody>
+                          
+                
+                        </table>
+                        
+            
+                      </div>
+                      
+        
+                    </div>
+                    
+    
+                  </div>
+                  
+
+                </div>
+                
+
+              </div>
+              <div
                 class="d-flex justify-content-between align-items-center w-100"
               >
                 <div />
@@ -4187,7 +4309,7 @@ Array [
                 </button>
               </div>
               <pre
-                class="collapse show"
+                class="collapse"
                 id="should-fail-with-a-snapshot-difference-diff"
               >
                 <code>
@@ -4372,6 +4494,794 @@ Array [
                 failed
               </span>
               <div
+                class="d2h-wrapper"
+              >
+                
+    
+                <div
+                  class="d2h-file-wrapper"
+                  data-lang=""
+                  id="d2h-418891"
+                >
+                  
+    
+                  <div
+                    class="d2h-file-header"
+                  >
+                    
+      
+                    <span
+                      class="d2h-file-name-wrapper"
+                    >
+                      
+    
+                      <svg
+                        aria-hidden="true"
+                        class="d2h-icon"
+                        height="16"
+                        version="1.1"
+                        viewBox="0 0 12 16"
+                        width="12"
+                      >
+                        
+        
+                        <path
+                          d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"
+                        />
+                        
+    
+                      </svg>
+                          
+                      <span
+                        class="d2h-file-name"
+                      >
+                        Snapshot → Received
+                      </span>
+                      
+    
+                      <span
+                        class="d2h-tag d2h-moved d2h-moved-tag"
+                      >
+                        RENAMED
+                      </span>
+                    </span>
+                    
+    
+                  </div>
+                  
+    
+                  <div
+                    class="d2h-files-diff"
+                  >
+                    
+        
+                    <div
+                      class="d2h-file-side-diff"
+                    >
+                      
+            
+                      <div
+                        class="d2h-code-wrapper"
+                      >
+                        
+                
+                        <table
+                          class="d2h-diff-table"
+                        >
+                          
+                    
+                          <tbody
+                            class="d2h-diff-tbody"
+                          >
+                            
+                    
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-info"
+                              />
+                              
+    
+                              <td
+                                class="d2h-info"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-info"
+                                >
+                                  @@ -0,4 +0,2 @@
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      0
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     "{
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      1
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "name": "test",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-del d2h-change"
+                              >
+                                
+      2
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-del d2h-change"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-del d2h-change"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                    -
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "breed": "beagle"
+                                    <del>
+                                      ,
+                                    </del>
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-del"
+                              >
+                                
+      3
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-del"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-del"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                    -
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "height": 1,
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-del"
+                              >
+                                
+      4
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-del"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-del"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                    -
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "color": "brown and yellow"
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      5
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     }"
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      6
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            
+                    
+                          </tbody>
+                          
+                
+                        </table>
+                        
+            
+                      </div>
+                      
+        
+                    </div>
+                    
+        
+                    <div
+                      class="d2h-file-side-diff"
+                    >
+                      
+            
+                      <div
+                        class="d2h-code-wrapper"
+                      >
+                        
+                
+                        <table
+                          class="d2h-diff-table"
+                        >
+                          
+                    
+                          <tbody
+                            class="d2h-diff-tbody"
+                          >
+                            
+                    
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-info"
+                              />
+                              
+    
+                              <td
+                                class="d2h-info"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-info"
+                                />
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      0
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     "{
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      1
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "name": "test",
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-ins d2h-change"
+                              >
+                                
+      2
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-ins d2h-change"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-ins d2h-change"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                    +
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       "breed": "beagle"
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
+                              >
+                                
+      
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx d2h-emptyplaceholder"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                    <br />
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
+                              >
+                                
+      
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx d2h-emptyplaceholder"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                    <br />
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      3
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                     }"
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            <tr>
+                              
+    
+                              <td
+                                class="d2h-code-side-linenumber d2h-cntx"
+                              >
+                                
+      4
+    
+                              </td>
+                              
+    
+                              <td
+                                class="d2h-cntx"
+                              >
+                                
+        
+                                <div
+                                  class="d2h-code-side-line d2h-cntx"
+                                >
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-prefix"
+                                  >
+                                     
+                                  </span>
+                                  
+            
+                                  <span
+                                    class="d2h-code-line-ctn"
+                                  >
+                                       
+                                  </span>
+                                  
+        
+                                </div>
+                                
+    
+                              </td>
+                              
+
+                            </tr>
+                            
+                    
+                          </tbody>
+                          
+                
+                        </table>
+                        
+            
+                      </div>
+                      
+        
+                    </div>
+                    
+    
+                  </div>
+                  
+
+                </div>
+                
+
+              </div>
+              <div
                 class="d-flex justify-content-between align-items-center w-100"
               >
                 <div />
@@ -4387,7 +5297,7 @@ Array [
                 </button>
               </div>
               <pre
-                class="collapse show"
+                class="collapse"
                 id="should-fail-with-a-snapshot-difference-2-diff"
               >
                 <code>
