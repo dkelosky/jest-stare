@@ -1,6 +1,6 @@
 import { Constants } from "../Constants";
 import { Test } from "../tests/Test";
-import { AggregatedResult, AssertionResult } from "@jest/test-result";
+import { AggregatedResult, AssertionResult, TestResult } from "@jest/test-result";
 
 /**
  * Create test suites
@@ -54,14 +54,8 @@ export class TestSuite {
                 testStatusClass = Constants.PASSED_TEST;
             }
 
-            const div = document.createElement("div") as HTMLDivElement;
-            div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
-
-            const h5 = document.createElement("h5") as HTMLHeadingElement;
-            h5.classList.add("border-bottom", "pb-2", "mb-0", "display-5");
-            h5.textContent = testResult.testFilePath;
-            div.id = testResult.testFilePath;
-            div.appendChild(h5);
+            // Using Bootstrap Accordion to allow for expanding and collapsing sections by testFilePath  
+            const accordionCard = TestSuite.buildAccordionCard(testResult, testStatusClass)
 
             // if a flat test report were to be used, simply
             // testResult.testResults.forEach((test) => {
@@ -93,7 +87,7 @@ export class TestSuite {
                             divMap.set(key, nestDiv);
 
                             if (index === 0) {
-                                div.appendChild(nestDiv);
+                                accordionCard.querySelector('.card-body').appendChild(nestDiv);
                             } else {
                                 titlesCopy.pop();
                                 const parentKey = titlesCopy.join(TestSuite.JOIN_CHAR);
@@ -102,11 +96,11 @@ export class TestSuite {
                         }
                     });
                 } else {
-                    div.appendChild(element);
+                    accordionCard.querySelector('.card-body').appendChild(element);
                 }
             });
 
-            elements.push(div);
+            elements.push(accordionCard);
         });
 
         return elements;
@@ -154,6 +148,83 @@ export class TestSuite {
         statusArray.push(currentStatus);
         const sortedUniqueStatusArray = [...new Set(statusArray)].sort();
         return sortedUniqueStatusArray.join(TestSuite.JOIN_CHAR);
+    }
+
+    private static buildAccordionCard(testResult: TestResult, testStatusClass: string){
+        // Following the Bootstrap Accordion Example https://getbootstrap.com/docs/4.0/components/collapse/
+        // each spec/test file will have it's own card in the accordion
+        const accordionCard = document.createElement("div") as HTMLDivElement;
+        accordionCard.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", "card", testStatusClass);
+
+        const cardHeader = TestSuite.buildAccordionCardHeader(testResult.testFilePath, testResult.numPassingTests, testResult.numFailingTests, testResult.numPendingTests);
+        accordionCard.appendChild(cardHeader);
+
+        const cardBody = TestSuite.buildAccordionCardBody(testResult.testFilePath);
+        accordionCard.appendChild(cardBody)
+
+        return accordionCard
+    }
+
+    private static buildAccordionCardHeader(testFilePath: string, passCount: Number, failCount: Number, pendingCount: Number){
+        const fileName = TestSuite.sanitizeFilePath(testFilePath)
+        const cardHeader = document.createElement("div") as HTMLDivElement;
+        cardHeader.classList.add("card-header");
+        cardHeader.id = `${fileName}_header`;
+
+        const h5 = document.createElement("h5") as HTMLHeadingElement;
+        h5.classList.add("border-bottom", "pb-2", "mb-0", "display-5");
+
+        const btn = document.createElement("button") as HTMLButtonElement;
+        btn.classList.add("btn", "btn-block");
+        btn.setAttribute("data-toggle", "collapse");
+        btn.setAttribute("data-target",`#${fileName}_detail`);
+        btn.textContent = testFilePath;
+
+        const resultCounts = document.createElement("div") as HTMLDivElement;
+        const passBadge = document.createElement("span") as HTMLSpanElement;
+        passBadge.classList.add("badge", "badge-success", "border");
+        passBadge.textContent = passCount.toString();
+        resultCounts.appendChild(passBadge);
+
+        const failBadge = document.createElement("span") as HTMLSpanElement;
+        failBadge.classList.add("badge", "badge-danger", "border");
+        failBadge.textContent = failCount.toString();
+        resultCounts.appendChild(failBadge);
+
+        const skipBadge = document.createElement("span") as HTMLSpanElement;
+        skipBadge.classList.add("badge", "badge-warning", "border");
+        skipBadge.textContent = pendingCount.toString();
+        resultCounts.appendChild(skipBadge);
+
+        btn.appendChild(resultCounts);
+        h5.appendChild(btn);
+        
+        cardHeader.appendChild(h5);
+        return cardHeader;
+    }
+
+    private static buildAccordionCardBody(testFilePath: string){
+        const fileName = TestSuite.sanitizeFilePath(testFilePath)
+        const cardContainer = document.createElement("div") as HTMLDivElement;
+        cardContainer.classList.add("collapse");
+        cardContainer.setAttribute("data-parent","#accordion");
+        cardContainer.id = `${fileName}_detail`;
+
+        const cardBody = document.createElement("div") as HTMLDivElement;
+        cardBody.classList.add("card-body");
+        cardContainer.appendChild(cardBody);
+     
+        return cardContainer;
+    }
+
+    /**
+     * Provides a sanitized version of the Test File Path free from characters
+     * that would violate contraints on element id attributes
+     * @param testFilePath Path for the test/spec file from the JSON Results
+     * @returns {String} 
+     */
+    private static sanitizeFilePath(testFilePath: string){
+        return testFilePath.replace(/(\/)|\\|(:)|(\s)|\.|(@)/g, '_')
     }
 
 }
