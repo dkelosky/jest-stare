@@ -37,7 +37,7 @@ export class EnvVars {
             } catch (e) {
                 Logger.get.error("Could not parse additional results processors value." +
                     "It should be a JSON string of an array of strings, like the following: " +
-                    JSON.stringify(["jest-html-reporter"]) + "\n You specified: " + additionalResultsProcessorsValue);
+                    JSON.stringify(["jest-junit"]) + "\n You specified: " + additionalResultsProcessorsValue);
             }
         }
         return {

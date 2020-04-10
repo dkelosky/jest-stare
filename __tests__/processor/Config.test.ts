@@ -8,8 +8,7 @@ describe("Config tests", () => {
             return {
                 "jest-stare": {
                     additionalResultsProcessors: [
-                        "jest-html-reporter",
-                        "jestjunit",
+                        "jest-junit",
                         "also-one-that-doesnt-exist"
                     ],
                     coverageLink: "../../coverage/lcov-report/index.html",

@@ -81,7 +81,7 @@ export interface IJestStareConfig {
     /**
      * An array of additional package names to use as testResultsProcessors
      * This way you can produce other reports from the same data
-     * using other packages such as jest-html-reporter
+     * using other packages such as jest-junit
      * @type {string[]}
      * @memberof IJestStareConfig
      */

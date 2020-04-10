@@ -61,7 +61,7 @@ You can configure custom reporters by passing the `jest-stare` config as a [seco
           "resultDir": "results/jest-stare",
           "reportTitle": "jest-stare!",
           "additionalResultsProcessors": [
-            "jest-html-reporter"
+            "jest-junit"
           ],
           "coverageLink": "../../coverage/lcov-report/index.html",
           "jestStareConfigJson": "jest-stare.json",
@@ -98,7 +98,7 @@ Field | Environmental Variable | Default | Description | Example
 `reportTitle` |  `JEST_STARE_REPORT_TITLE` |  `jest-stare!` | string, indicate the title of the report | `"reportTitle": "my title"`
 `reportHeadline` |  `JEST_STARE_REPORT_HEADLINE` |  `jest-stare` | string, indicate the headline of the report | `"reportHeadline": "my headline"`
 `reportSummary` |  `JEST_STARE_REPORT_SUMMARY` |  `undefined` | boolean, shows the report summary | `"reportSummary": true`
-`additionalResultsProcessors` |  `JEST_STARE_ADDITIONAL_RESULTS_PROCESSORS` | `undefined` | add additional test result processors to produce multiple report |`"additionalResultsProcessors": ["jest-html-reporter", "jest-junit"]`
+`additionalResultsProcessors` |  `JEST_STARE_ADDITIONAL_RESULTS_PROCESSORS` | `undefined` | add additional test result processors to produce multiple report |`"additionalResultsProcessors": ["jest-junit"]`
 `coverageLink` |  `JEST_STARE_COVERAGE_LINK` | `undefined` | link to coverage report if available | `"coverageLink": "../../coverage/lcov-report/index.html"`
 `disableCharts` |  `JEST_STARE_DISABLE_CHARTS` | `undefined` | hide the doughnut charts in the HTML report | `"disableCharts": true`
 `hidePassing` | `JEST_STARE_HIDE_PASSING` | `undefined` | hide passing tests in the report on page load | `"hidePassing": true`

@@ -191,7 +191,7 @@ export class Processor {
      * @param jestTestData - input passed to jest-stare
      * @param {IResultsProcessorInput} jestTestData - input passed to jest-stare
      * @param {string[]} processors - processors
-     * @param processors - list of test results processors (e.g. ["jest-html-reporter"])
+     * @param processors - list of test results processors (e.g. ["jest-junit"])
      *                     to forward the data to
      * @memberof Processor
      */
