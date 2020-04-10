@@ -9,12 +9,14 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Jest HTML Reporter
+
 This is a Jest HTML reporter.  It takes summary test results from jest
 and parses them into an HTML file for improved readability and filtering.
 
-![Sample](images/newSampleReport.png "Sample Report")
+![Sample](images/newestSampleReport.png "Sample Report")
 
 ## Features
+
 * filter on pass / failed tests
 * side-by-side snapshot diff
 * chart-summarized information
@@ -25,6 +27,7 @@ and parses them into an HTML file for improved readability and filtering.
 * [api](#api)
 
 ## Usage
+
 Run tests or a test with jest and specify `jest-stare` on the `--reporters` option:
 
 * `jest --reporters default jest-stare`
@@ -39,6 +42,7 @@ Alternatively, in your `jest` config within `package.json` set `reporters` to `j
 that is incomplete (before each test suite completes).  Refresh your browser to see new tests as each suite completes.
 
 By default, after a report is generated, output will go to `./jest-stare` and will contain:
+
 * `index.html` - html report
 * `jest-results.json` - raw jest json data
 * `/js` - javascript render files
@@ -70,6 +74,7 @@ You can configure custom reporters by passing the `jest-stare` config as a [seco
 > Note: `testResultsProcessor` will not use config options specified in the way above
 
 Or, do so by adding a `jest-stare` object to your package.json, for example:
+
 ```typescript
 jest-stare: {
     ...
@@ -101,7 +106,9 @@ Field | Environmental Variable | Default | Description | Example
 `hidePending` | `JEST_STARE_HIDE_PENDING` | `undefined` | hide pending tests in the report on page load | `"hidePending": true`
 
 ### API
+
 You can programmatically invoke jest-stare and provide jest response data via:
+
 ```typescript
 // require jest-stare
 const processor = require("jest-stare");
@@ -115,6 +122,7 @@ processor(simplePassingTests, {log: false, resultDir: __dirname + "/output"});
 ```
 
 ### CLI
+
 Use the `jest-stare` CLI to create or recreate an HTML report.  You only need to supply an input JSON
 file containing the jest test results.
 
@@ -124,28 +132,34 @@ Or if jest-stare is a local dependency you can invoke the CLI via `npx jest-star
 Assuming that you have a relative file to your current location in a folder "data" and
 "simplePassingTests.json" contains saved JSON output from a jest test invocation, you can
 run the CLI providing a single positional input jest JSON file:
+
 ```
 jest-stare data/simplePassingTests.json
 ```
 
 Optionally you can control where the report will be stored using a second positional:
+
 ```
 jest-stare data/simplePassingTests.json c:/users/myId/desktop/output
 ```
 
 The command response takes a form of:
+
 ```
 jest-stare was called with programmatic config
 **  jest-stare: wrote output report to c:/users/myId/desktop/output/index.html  **
 ```
 
 ### Jest Watch
+
 Because jest-stare writes *.js files when generating a report, you may get an infinite loop when using
 `jest-stare` and `jest --watch`.  Samples of the problem are documented here:
+
 * https://github.com/facebook/jest/issues/3923
 * https://github.com/facebook/jest/issues/2516
 
 To get around this problem, consider excluding `jest-stare` *.js files from watch via something like this:
+
 ```json
     "watchPathIgnorePatterns": [
       ".*jest-stare.*\\.js"
@@ -157,9 +171,11 @@ To get around this problem, consider excluding `jest-stare` *.js files from watc
 See [contributing](/CONTRIBUTING.md).
 
 ## Acknowledgements
-Thanks to [dogboydog](https://github.com/dogboydog) for additions to configuration!
+
+Thanks to [dogboydog](https://github.com/dogboydog) and others for additions!
 
 This project is based on:
+
 * [jQuery](https://jquery.com/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Holder.js](http://holderjs.com/)

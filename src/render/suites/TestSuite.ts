@@ -54,7 +54,7 @@ export class TestSuite {
                 testStatusClass = Constants.PASSED_TEST;
             }
 
-            // Using Bootstrap Accordion to allow for expanding and collapsing sections by testFilePath  
+            // Using Bootstrap Accordion to allow for expanding and collapsing sections by testFilePath
             const accordionCard = TestSuite.buildAccordionCard(testResult, testStatusClass)
 
             // if a flat test report were to be used, simply
@@ -150,13 +150,14 @@ export class TestSuite {
         return sortedUniqueStatusArray.join(TestSuite.JOIN_CHAR);
     }
 
-    private static buildAccordionCard(testResult: TestResult, testStatusClass: string){
+    private static buildAccordionCard(testResult: TestResult, testStatusClass: string) {
         // Following the Bootstrap Accordion Example https://getbootstrap.com/docs/4.0/components/collapse/
         // each spec/test file will have it's own card in the accordion
         const accordionCard = document.createElement("div") as HTMLDivElement;
         accordionCard.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", "card", testStatusClass);
 
-        const cardHeader = TestSuite.buildAccordionCardHeader(testResult.testFilePath, testResult.numPassingTests, testResult.numFailingTests, testResult.numPendingTests);
+        const cardHeader = TestSuite.buildAccordionCardHeader(
+            testResult.testFilePath, testResult.numPassingTests, testResult.numFailingTests, testResult.numPendingTests);
         accordionCard.appendChild(cardHeader);
 
         const cardBody = TestSuite.buildAccordionCardBody(testResult.testFilePath);
@@ -165,7 +166,7 @@ export class TestSuite {
         return accordionCard
     }
 
-    private static buildAccordionCardHeader(testFilePath: string, passCount: Number, failCount: Number, pendingCount: Number){
+    private static buildAccordionCardHeader(testFilePath: string, passCount: number, failCount: number, pendingCount: number) {
         const fileName = TestSuite.sanitizeFilePath(testFilePath)
         const cardHeader = document.createElement("div") as HTMLDivElement;
         cardHeader.classList.add("card-header");
@@ -177,7 +178,7 @@ export class TestSuite {
         const btn = document.createElement("button") as HTMLButtonElement;
         btn.classList.add("btn", "btn-block");
         btn.setAttribute("data-toggle", "collapse");
-        btn.setAttribute("data-target",`#${fileName}_detail`);
+        btn.setAttribute("data-target", `#${fileName}_detail`);
         btn.textContent = testFilePath;
 
         const resultCounts = document.createElement("div") as HTMLDivElement;
@@ -198,22 +199,22 @@ export class TestSuite {
 
         btn.appendChild(resultCounts);
         h5.appendChild(btn);
-        
+
         cardHeader.appendChild(h5);
         return cardHeader;
     }
 
-    private static buildAccordionCardBody(testFilePath: string){
+    private static buildAccordionCardBody(testFilePath: string) {
         const fileName = TestSuite.sanitizeFilePath(testFilePath)
         const cardContainer = document.createElement("div") as HTMLDivElement;
         cardContainer.classList.add("collapse");
-        cardContainer.setAttribute("data-parent","#accordion");
+        cardContainer.setAttribute("data-parent", "#accordion");
         cardContainer.id = `${fileName}_detail`;
 
         const cardBody = document.createElement("div") as HTMLDivElement;
         cardBody.classList.add("card-body");
         cardContainer.appendChild(cardBody);
-     
+
         return cardContainer;
     }
 
@@ -221,9 +222,9 @@ export class TestSuite {
      * Provides a sanitized version of the Test File Path free from characters
      * that would violate contraints on element id attributes
      * @param testFilePath Path for the test/spec file from the JSON Results
-     * @returns {String} 
+     * @returns {String}
      */
-    private static sanitizeFilePath(testFilePath: string){
+    private static sanitizeFilePath(testFilePath: string) {
         return testFilePath.replace(/(\/)|\\|(:)|(\s)|\.|(@)/g, '_')
     }
 
