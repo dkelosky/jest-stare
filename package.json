@@ -73,7 +73,7 @@
     "@types/node": "12.12.34",
     "browserify": "16.5.1",
     "codecov": "3.6.5",
-    "coveralls": "3.0.13",
+    "coveralls": "3.1.0",
     "jest": "25.4.0",
     "jest-environment-jsdom": "25.4.0",
     "jest-environment-node-debug": "2.0.0",
