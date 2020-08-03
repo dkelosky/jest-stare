@@ -71,7 +71,7 @@
     "@types/jquery": "3.3.38",
     "@types/mustache": "4.0.1",
     "@types/node": "12.12.34",
-    "browserify": "16.5.1",
+    "browserify": "16.5.2",
     "codecov": "3.7.1",
     "coveralls": "3.1.0",
     "jest": "25.5.4",
