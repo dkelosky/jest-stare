@@ -58,7 +58,7 @@
     "holderjs": "^2.9.6",
     "moment": "^2.23.0",
     "mustache": "^4.0.0",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "pkg-up": "^3.0.0",
     "popper.js": "^1.14.6",
     "@jest/reporters": "^25.2.6",
