@@ -6,6 +6,7 @@
     "numPendingTestSuites": 0,
     "numPendingTests": 0,
     "numRuntimeErrorTestSuites": 0,
+    "numTodoTests": 0,
     "numTotalTestSuites": 2,
     "numTotalTests": 5,
     "snapshot": {
@@ -32,6 +33,7 @@
             "numFailingTests": 2,
             "numPassingTests": 2,
             "numPendingTests": 0,
+            "numTodoTests": 0,
             "perfStats": {
                 "end": 1518610930755,
                 "start": 1518610928709
@@ -110,6 +112,7 @@
             "numFailingTests": 0,
             "numPassingTests": 1,
             "numPendingTests": 0,
+            "numTodoTests": 0,
             "perfStats": {
                 "end": 1518610930851,
                 "start": 1518610930792

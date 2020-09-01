@@ -6,8 +6,9 @@
     "numPendingTestSuites": 0,
     "numPendingTests": 1,
     "numRuntimeErrorTestSuites": 0,
+    "numTodoTests": 1,
     "numTotalTestSuites": 2,
-    "numTotalTests": 6,
+    "numTotalTests": 7,
     "snapshot": {
         "added": 1,
         "didUpdate": false,
@@ -32,6 +33,7 @@
             "numFailingTests": 1,
             "numPassingTests": 3,
             "numPendingTests": 1,
+            "numTodoTests": 1,
             "perfStats": {
                 "end": 1525356574112,
                 "start": 1525356570130
@@ -108,7 +110,19 @@
                     "numPassingAsserts": 0,
                     "status": "passed",
                     "title": "should add a snapshot"
-                }
+                },
+                {
+                    "ancestorTitles": [
+                        "Demonstrate a jest-stare report"
+                    ],
+                    "duration": 0,
+                    "failureMessages": [],
+                    "fullName": "Demonstrate a jest-stare report todo",
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "status": "todo",
+                    "title": "should be able to have a todo"
+                  }
             ],
             "sourceMaps": {},
             "skipped": false,
@@ -120,6 +134,7 @@
             "numFailingTests": 0,
             "numPassingTests": 1,
             "numPendingTests": 0,
+            "numTodoTests": 0,
             "perfStats": {
                 "end": 1525356574392,
                 "start": 1525356574292

@@ -6,6 +6,7 @@
     "numPendingTestSuites": "0",
     "numPendingTests": "0",
     "numRuntimeErrorTestSuites": "0",
+    "numTodoTests": "0",
     "numTotalTestSuites": "2",
     "numTotalTests": "5",
     "snapshot": {
@@ -32,6 +33,7 @@
             "numFailingTests": "0",
             "numPassingTests": "4",
             "numPendingTests": "0",
+            "numTodoTests": "0",
             "perfStats": {
                 "end": "1518610841037",
                 "start": "1518610839170"
@@ -106,6 +108,7 @@
             "numFailingTests": "0",
             "numPassingTests": "1",
             "numPendingTests": "0",
+            "numTodoTests": "0",
             "perfStats": {
                 "end": "1518610841123",
                 "start": "1518610841057"
