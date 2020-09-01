@@ -122,6 +122,13 @@ export interface IJestStareConfig {
      * @memberof IJestStareConfig
      */
     hidePending?: boolean;
+
+    /**
+     * Set to true to hide todo tests in the HTML report
+     * @type {boolean}
+     * @memberof IJestStareConfig
+     */
+    hideTodo?: boolean;
 }
 
 /**
