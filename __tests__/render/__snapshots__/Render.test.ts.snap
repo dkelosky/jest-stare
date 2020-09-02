@@ -135,6 +135,80 @@ Object {
 }
 `;
 
+exports[`Render tests should build chart data with todo and passing examples 1`] = `
+Object {
+  "backgroundColor": Array [
+    "#28a745",
+    "#17a2b8",
+  ],
+  "data": Array [
+    1,
+    1,
+  ],
+  "labels": Array [
+    "Passed",
+    "Todo",
+  ],
+}
+`;
+
+exports[`Render tests should build chart data with todo examples only 1`] = `
+Object {
+  "backgroundColor": Array [
+    "#17a2b8",
+  ],
+  "data": Array [
+    1,
+  ],
+  "labels": Array [
+    "Todo",
+  ],
+}
+`;
+
+exports[`Render tests should build chart data with todo, passing, and failing examples 1`] = `
+Object {
+  "backgroundColor": Array [
+    "#28a745",
+    "#dc3545",
+    "#17a2b8",
+  ],
+  "data": Array [
+    1,
+    1,
+    1,
+  ],
+  "labels": Array [
+    "Passed",
+    "Failed",
+    "Todo",
+  ],
+}
+`;
+
+exports[`Render tests should build chart data with todo, passing, failing, and pending examples 1`] = `
+Object {
+  "backgroundColor": Array [
+    "#28a745",
+    "#dc3545",
+    "#ffc107",
+    "#17a2b8",
+  ],
+  "data": Array [
+    1,
+    1,
+    1,
+    1,
+  ],
+  "labels": Array [
+    "Passed",
+    "Failed",
+    "Pending",
+    "Todo",
+  ],
+}
+`;
+
 exports[`Render tests should create link to coverage report if in config 1`] = `"/some/place/index.html"`;
 
 exports[`Render tests should not create link to coverage report if not in config 1`] = `"#"`;

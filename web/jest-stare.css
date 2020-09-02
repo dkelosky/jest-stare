@@ -114,6 +114,18 @@ code {
     text-align: right;
 }
 
+.todo.off-switch-inner:before {
+    content: "TODO";
+    padding-left: 10px;
+    background-color: #17a2b8; color: #FFFFFF;
+}
+.todo.off-switch-inner:after {
+    content: "TODO";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+
 .summary a {
 
 }
@@ -172,6 +184,10 @@ code {
 
 .summary-test-label.pending {
     color: #ffc107;
+}
+
+.summary-test-label.todo {
+    color: #17a2b8;
 }
 
 .image-snapshot-diff {

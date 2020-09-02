@@ -34,6 +34,11 @@ Array [
             >
               0
             </span>
+            <span
+              class="badge badge-info border"
+            >
+              0
+            </span>
           </div>
         </button>
       </h5>
@@ -673,6 +678,11 @@ Array [
             >
               0
             </span>
+            <span
+              class="badge badge-info border"
+            >
+              0
+            </span>
           </div>
         </button>
       </h5>
@@ -1010,6 +1020,11 @@ Array [
             >
               1
             </span>
+            <span
+              class="badge badge-info border"
+            >
+              0
+            </span>
           </div>
         </button>
       </h5>
@@ -1235,6 +1250,11 @@ Array [
             </span>
             <span
               class="badge badge-warning border"
+            >
+              0
+            </span>
+            <span
+              class="badge badge-info border"
             >
               0
             </span>
@@ -3069,6 +3089,11 @@ Array [
             >
               0
             </span>
+            <span
+              class="badge badge-info border"
+            >
+              0
+            </span>
           </div>
         </button>
       </h5>
@@ -3161,6 +3186,11 @@ Array [
             </span>
             <span
               class="badge badge-warning border"
+            >
+              0
+            </span>
+            <span
+              class="badge badge-info border"
             >
               0
             </span>
@@ -3353,6 +3383,11 @@ Array [
             >
               0
             </span>
+            <span
+              class="badge badge-info border"
+            >
+              0
+            </span>
           </div>
         </button>
       </h5>
@@ -3445,6 +3480,11 @@ Array [
             </span>
             <span
               class="badge badge-warning border"
+            >
+              0
+            </span>
+            <span
+              class="badge badge-info border"
             >
               0
             </span>
@@ -5457,6 +5497,11 @@ Array [
             >
               0
             </span>
+            <span
+              class="badge badge-info border"
+            >
+              0
+            </span>
           </div>
         </button>
       </h5>
@@ -5544,6 +5589,11 @@ Array [
             </span>
             <span
               class="badge badge-warning border"
+            >
+              0
+            </span>
+            <span
+              class="badge badge-info border"
             >
               0
             </span>
@@ -5667,6 +5717,11 @@ Array [
             </span>
             <span
               class="badge badge-warning border"
+            >
+              0
+            </span>
+            <span
+              class="badge badge-info border"
             >
               0
             </span>
@@ -5859,6 +5914,11 @@ Array [
             >
               0
             </span>
+            <span
+              class="badge badge-info border"
+            >
+              0
+            </span>
           </div>
         </button>
       </h5>
@@ -5946,6 +6006,11 @@ Array [
             </span>
             <span
               class="badge badge-warning border"
+            >
+              0
+            </span>
+            <span
+              class="badge badge-info border"
             >
               0
             </span>
@@ -6076,6 +6141,11 @@ Array [
               class="badge badge-warning border"
             >
               1
+            </span>
+            <span
+              class="badge badge-info border"
+            >
+              0
             </span>
           </div>
         </button>

@@ -34,6 +34,10 @@ export class Test {
                 color = Constants.PENDING_RAW;
                 testStatusClass = Constants.PENDING_TEST;
                 break;
+            case Constants.TEST_STATUS_TODO:
+                color = Constants.TODO_RAW;
+                testStatusClass = Constants.TODO_TEST;
+                break;
             case Constants.TEST_STATUS_PASS:
                 break;
             default:

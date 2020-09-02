@@ -157,7 +157,7 @@ export class TestSuite {
         accordionCard.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", "card", testStatusClass);
 
         const cardHeader = TestSuite.buildAccordionCardHeader(
-            testResult.testFilePath, testResult.numPassingTests, testResult.numFailingTests, testResult.numPendingTests);
+            testResult.testFilePath, testResult.numPassingTests, testResult.numFailingTests, testResult.numPendingTests, testResult.numTodoTests);
         accordionCard.appendChild(cardHeader);
 
         const cardBody = TestSuite.buildAccordionCardBody(testResult.testFilePath);
@@ -166,7 +166,7 @@ export class TestSuite {
         return accordionCard
     }
 
-    private static buildAccordionCardHeader(testFilePath: string, passCount: number, failCount: number, pendingCount: number) {
+    private static buildAccordionCardHeader(testFilePath: string, passCount: number, failCount: number, pendingCount: number, todoCount: number) {
         const fileName = TestSuite.sanitizeFilePath(testFilePath)
         const cardHeader = document.createElement("div") as HTMLDivElement;
         cardHeader.classList.add("card-header");
@@ -196,6 +196,11 @@ export class TestSuite {
         skipBadge.classList.add("badge", "badge-warning", "border");
         skipBadge.textContent = pendingCount.toString();
         resultCounts.appendChild(skipBadge);
+
+        const todoBadge = document.createElement("span") as HTMLSpanElement;
+        todoBadge.classList.add("badge", "badge-info", "border");
+        todoBadge.textContent = todoCount.toString();
+        resultCounts.appendChild(todoBadge);
 
         btn.appendChild(resultCounts);
         h5.appendChild(btn);

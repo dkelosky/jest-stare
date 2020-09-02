@@ -6,6 +6,7 @@
     "numPendingTestSuites": 0,
     "numPendingTests": 0,
     "numRuntimeErrorTestSuites": 0,
+    "numTodoTests": 0,
     "numTotalTestSuites": 6,
     "numTotalTests": 13,
     "snapshot": {
@@ -32,6 +33,7 @@
             "numFailingTests": 2,
             "numPassingTests": 1,
             "numPendingTests": 0,
+            "numTodoTests": 0,
             "perfStats": {
                 "end": 1519452974122,
                 "start": 1519452972163
@@ -98,6 +100,7 @@
             "numFailingTests": 0,
             "numPassingTests": 1,
             "numPendingTests": 0,
+            "numTodoTests": 0,
             "perfStats": {
                 "end": 1519452974581,
                 "start": 1519452974154
@@ -136,6 +139,7 @@
             "numFailingTests": 0,
             "numPassingTests": 2,
             "numPendingTests": 0,
+            "numTodoTests": 0,
             "perfStats": {
                 "end": 1519452974718,
                 "start": 1519452974590
@@ -186,6 +190,7 @@
             "numFailingTests": 0,
             "numPassingTests": 4,
             "numPendingTests": 0,
+            "numTodoTests": 0,
             "perfStats": {
                 "end": 1519452974810,
                 "start": 1519452974734
@@ -260,6 +265,7 @@
             "numFailingTests": 0,
             "numPassingTests": 1,
             "numPendingTests": 0,
+            "numTodoTests": 0,
             "perfStats": {
                 "end": 1519452974874,
                 "start": 1519452974817
@@ -298,6 +304,7 @@
             "numFailingTests": 0,
             "numPassingTests": 2,
             "numPendingTests": 0,
+            "numTodoTests": 0,
             "perfStats": {
                 "end": 1519452974966,
                 "start": 1519452974889

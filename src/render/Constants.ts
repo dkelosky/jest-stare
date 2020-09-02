@@ -27,6 +27,13 @@ export class Constants {
     public static readonly PENDING_LABEL = "Pending";
 
     /**
+     * Label for todo tests
+     * @static
+     * @memberof Constants
+     */
+    public static readonly TODO_LABEL = "Todo";
+
+    /**
      * Label for obsolete info
      * @static
      * @memberof Constants
@@ -89,6 +96,13 @@ export class Constants {
      * @memberof Constants
      */
     public static readonly TEST_STATUS_PEND = "pending";
+
+    /**
+     * Todo jest status
+     * @static
+     * @memberof Constants
+     */
+    public static readonly TEST_STATUS_TODO = "todo";
 
     /**
      * Obsolete snapshot file
@@ -157,6 +171,14 @@ export class Constants {
     public static readonly PENDING = "#" + Constants.PENDING_RAW; // btn-warning
 
     /**
+     * Todo color
+     * @static
+     * @memberof Constants
+     */
+    public static readonly TODO_RAW = "17a2b8";
+    public static readonly TODO = "#" + Constants.TODO_RAW;
+
+    /**
      * Passed test class
      * @static
      * @memberof Constants
@@ -176,4 +198,11 @@ export class Constants {
      * @memberof Constants
      */
     public static readonly PENDING_TEST = "pending-test";
+
+     /**
+     * Pending test class
+     * @static
+     * @memberof Constants
+     */
+    public static readonly TODO_TEST = "todo-test";
 }

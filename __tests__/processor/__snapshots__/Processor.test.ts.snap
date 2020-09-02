@@ -20,6 +20,7 @@ Object {
   \\"numPendingTestSuites\\": \\"0\\",
   \\"numPendingTests\\": \\"0\\",
   \\"numRuntimeErrorTestSuites\\": \\"0\\",
+  \\"numTodoTests\\": \\"0\\",
   \\"numTotalTestSuites\\": \\"2\\",
   \\"numTotalTests\\": \\"5\\",
   \\"snapshot\\": {
@@ -46,6 +47,7 @@ Object {
       \\"numFailingTests\\": \\"0\\",
       \\"numPassingTests\\": \\"4\\",
       \\"numPendingTests\\": \\"0\\",
+      \\"numTodoTests\\": \\"0\\",
       \\"perfStats\\": {
         \\"end\\": \\"1518610841037\\",
         \\"start\\": \\"1518610839170\\"
@@ -120,6 +122,7 @@ Object {
       \\"numFailingTests\\": \\"0\\",
       \\"numPassingTests\\": \\"1\\",
       \\"numPendingTests\\": \\"0\\",
+      \\"numTodoTests\\": \\"0\\",
       \\"perfStats\\": {
         \\"end\\": \\"1518610841123\\",
         \\"start\\": \\"1518610841057\\"
@@ -163,6 +166,7 @@ Object {
     "numPendingTestSuites": "0",
     "numPendingTests": "0",
     "numRuntimeErrorTestSuites": "0",
+    "numTodoTests": "0",
     "numTotalTestSuites": "2",
     "numTotalTests": "5",
     "snapshot": Object {
@@ -190,6 +194,7 @@ Object {
         "numFailingTests": "0",
         "numPassingTests": "4",
         "numPendingTests": "0",
+        "numTodoTests": "0",
         "perfStats": Object {
           "end": "1518610841037",
           "start": "1518610839170",
@@ -264,6 +269,7 @@ Object {
         "numFailingTests": "0",
         "numPassingTests": "1",
         "numPendingTests": "0",
+        "numTodoTests": "0",
         "perfStats": Object {
           "end": "1518610841123",
           "start": "1518610841057",
@@ -321,6 +327,7 @@ Object {
   \\"numPendingTestSuites\\": \\"0\\",
   \\"numPendingTests\\": \\"0\\",
   \\"numRuntimeErrorTestSuites\\": \\"0\\",
+  \\"numTodoTests\\": \\"0\\",
   \\"numTotalTestSuites\\": \\"2\\",
   \\"numTotalTests\\": \\"5\\",
   \\"snapshot\\": {
@@ -347,6 +354,7 @@ Object {
       \\"numFailingTests\\": \\"0\\",
       \\"numPassingTests\\": \\"4\\",
       \\"numPendingTests\\": \\"0\\",
+      \\"numTodoTests\\": \\"0\\",
       \\"perfStats\\": {
         \\"end\\": \\"1518610841037\\",
         \\"start\\": \\"1518610839170\\"
@@ -421,6 +429,7 @@ Object {
       \\"numFailingTests\\": \\"0\\",
       \\"numPassingTests\\": \\"1\\",
       \\"numPendingTests\\": \\"0\\",
+      \\"numTodoTests\\": \\"0\\",
       \\"perfStats\\": {
         \\"end\\": \\"1518610841123\\",
         \\"start\\": \\"1518610841057\\"
@@ -464,6 +473,7 @@ Object {
     "numPendingTestSuites": "0",
     "numPendingTests": "0",
     "numRuntimeErrorTestSuites": "0",
+    "numTodoTests": "0",
     "numTotalTestSuites": "2",
     "numTotalTests": "5",
     "snapshot": Object {
@@ -491,6 +501,7 @@ Object {
         "numFailingTests": "0",
         "numPassingTests": "4",
         "numPendingTests": "0",
+        "numTodoTests": "0",
         "perfStats": Object {
           "end": "1518610841037",
           "start": "1518610839170",
@@ -565,6 +576,7 @@ Object {
         "numFailingTests": "0",
         "numPassingTests": "1",
         "numPendingTests": "0",
+        "numTodoTests": "0",
         "perfStats": Object {
           "end": "1518610841123",
           "start": "1518610841057",
@@ -611,6 +623,7 @@ Object {
   "numPendingTestSuites": "0",
   "numPendingTests": "0",
   "numRuntimeErrorTestSuites": "0",
+  "numTodoTests": "0",
   "numTotalTestSuites": "2",
   "numTotalTests": "5",
   "snapshot": Object {
@@ -638,6 +651,7 @@ Object {
       "numFailingTests": "0",
       "numPassingTests": "4",
       "numPendingTests": "0",
+      "numTodoTests": "0",
       "perfStats": Object {
         "end": "1518610841037",
         "start": "1518610839170",
@@ -712,6 +726,7 @@ Object {
       "numFailingTests": "0",
       "numPassingTests": "1",
       "numPendingTests": "0",
+      "numTodoTests": "0",
       "perfStats": Object {
         "end": "1518610841123",
         "start": "1518610841057",

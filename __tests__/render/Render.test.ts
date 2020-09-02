@@ -156,6 +156,22 @@ describe("Render tests", () => {
         expect((Render as any).buildChartsData(1, 2)).toMatchSnapshot();
     });
 
+    it("should build chart data with todo examples only", () => {
+        expect((Render as any).buildChartsData(0,0,0,1)).toMatchSnapshot();
+    })
+
+    it("should build chart data with todo and passing examples", () => {
+        expect((Render as any).buildChartsData(1,0,0,1)).toMatchSnapshot();
+    })
+
+    it("should build chart data with todo, passing, and failing examples", () => {
+        expect((Render as any).buildChartsData(1,1,0,1)).toMatchSnapshot();
+    })
+
+    it("should build chart data with todo, passing, failing, and pending examples", () => {
+        expect((Render as any).buildChartsData(1,1,1,1)).toMatchSnapshot();
+    })
+
     it("should add snapshot chart data with no examples", () => {
         const chartData: IChartData = (Render as any).buildChartsData(0, 0);
         expect((Render as any).addSnapshotChartData(simplePassingTests, chartData)).toMatchSnapshot();
@@ -254,6 +270,24 @@ describe("Render tests", () => {
             }
         });
     });
+
+    describe("config.hideTodo are true", () => {
+        it("hides todo tests", () => {
+            writeTemplate();
+
+            (Render as any).show(demoTests, { hideTodo: true, disableCharts: true });
+
+            expect($("#lab-passoff-switch").is(":checked")).toBe(true);
+            expect($("#lab-failoff-switch").is(":checked")).toBe(true);
+            expect($("#lab-pendingoff-switch").is(":checked")).toBe(true);
+            expect($("#lab-todooff-switch").is(":checked")).toBe(false);
+
+            for (const elem of $(`.${RenderConstants.TODO_TEST}`)) {
+                expect($(elem).css("display") === "none").toBe(true);
+            }
+        });
+    });
+
 
     describe("couple of hide are true", () => {
         it("hides pending tests", () => {

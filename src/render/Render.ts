@@ -80,7 +80,7 @@ export class Render {
             Doughnut.createChart($("#test-suites-canvas") as JQuery<HTMLCanvasElement>, suitesData);
 
             // build tests chart
-            const testsChart = Render.buildChartsData(results.numPassedTests, results.numFailedTests, results.numPendingTests);
+            const testsChart = Render.buildChartsData(results.numPassedTests, results.numFailedTests, results.numPendingTests, results.numTodoTests);
             Doughnut.createChart($("#tests-canvas") as JQuery<HTMLCanvasElement>, testsChart);
 
             // base snapshot data
@@ -122,6 +122,12 @@ export class Render {
             $(`.${Constants.PENDING_TEST}`).hide();
         }
 
+        // hide todo tests
+        if (config.hideTodo) {
+            $("#lab-todooff-switch").prop("checked", false);
+            $(`.${Constants.TODO_TEST}`).hide();
+        }
+
         if (config.hideFailing && config.hidePassing) {
             $(`.${Constants.FAILED_TEST}\\.${Constants.PASSED_TEST}`).hide();
         }
@@ -143,9 +149,10 @@ export class Render {
         allCheckArray.push($("#lab-passoff-switch") as JQuery<HTMLInputElement>);
         allCheckArray.push($("#lab-failoff-switch") as JQuery<HTMLInputElement>);
         allCheckArray.push($("#lab-pendingoff-switch") as JQuery<HTMLInputElement>);
+        allCheckArray.push($("#lab-todooff-switch") as JQuery<HTMLInputElement>);
 
-        const allStylesArray = [Constants.PASSED_TEST, Constants.FAILED_TEST, Constants.PENDING_TEST];
-        const allSwitchArray = ["#lab-passoff-switch", "#lab-failoff-switch", "#lab-pendingoff-switch"];
+        const allStylesArray = [Constants.PASSED_TEST, Constants.FAILED_TEST, Constants.PENDING_TEST, Constants.TODO_TEST];
+        const allSwitchArray = ["#lab-passoff-switch", "#lab-failoff-switch", "#lab-pendingoff-switch", "#lab-todooff-switch"];
 
         allStylesArray.forEach((style, index) => {
             const checksMinusCurrentOne = allCheckArray.slice();
@@ -241,7 +248,7 @@ export class Render {
      * @returns {IChartData} - populated chart data object
      * @memberof Render
      */
-    private static buildChartsData(passedTests: number, failedTests: number, pendingTests?: number): IChartData {
+    private static buildChartsData(passedTests: number, failedTests: number, pendingTests?: number, todoTests?: number): IChartData {
         const chartData: IChartData = {
             labels: [],
             backgroundColor: [],
@@ -264,6 +271,12 @@ export class Render {
             chartData.labels.push(Constants.PENDING_LABEL);
             chartData.backgroundColor.push(Constants.PENDING);
             chartData.data.push(pendingTests);
+        }
+
+        if (todoTests > 0) {
+            chartData.labels.push(Constants.TODO_LABEL);
+            chartData.backgroundColor.push(Constants.TODO);
+            chartData.data.push(todoTests);
         }
 
         return chartData;
