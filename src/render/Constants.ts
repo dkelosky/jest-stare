@@ -199,7 +199,7 @@ export class Constants {
      */
     public static readonly PENDING_TEST = "pending-test";
 
-     /**
+    /**
      * Pending test class
      * @static
      * @memberof Constants
