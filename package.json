@@ -80,7 +80,7 @@
     "jest-image-snapshot": "4.2.0",
     "jest-junit": "11.1.0",
     "rimraf": "3.0.2",
-    "ts-jest": "26.4.0",
+    "ts-jest": "26.4.1",
     "ts-node": "9.0.0",
     "tslint": "6.1.3",
     "tslint-config-prettier": "1.18.0",
