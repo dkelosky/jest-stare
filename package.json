@@ -68,7 +68,7 @@
   },
   "devDependencies": {
     "@types/diff2html": "0.0.5",
-    "@types/jquery": "3.5.1",
+    "@types/jquery": "3.5.3",
     "@types/mustache": "4.0.1",
     "@types/node": "12.12.34",
     "browserify": "16.5.2",
