@@ -3,7 +3,7 @@ jest.mock("../../../src/render/tests/Test");
 import { TestSuite } from "../../../src/render/suites/TestSuite";
 import { Test } from "../../../src/render/tests/Test";
 import { Constants } from "../../../src/render/Constants";
-import { AggregatedResult, Status } from "@jest/test-result"
+import { AggregatedResult, AssertionResult, Status } from "@jest/test-result"
 import { showCompletionScript } from "yargs";
 
 const simplePassingTests: AggregatedResult = require("../../__resources__/simplePassingTests.json");
@@ -18,7 +18,7 @@ const twoSideBySideFailDiffTests: AggregatedResult = require("../../__resources_
     return div;
 });
 
-const createTestResult = (status: Status) => {
+const createTestResult = (status: Status): AssertionResult => {
         return {
             status,
             ancestorTitles: ["ancestor"],
@@ -26,6 +26,7 @@ const createTestResult = (status: Status) => {
             fullName: "",
             numPassingAsserts: 0,
             title: "",
+            failureDetails: ["blah"]
         };
 };
 
