@@ -52,7 +52,7 @@
     "@jest/reporters": "^26.0.0",
     "@jest/test-result": "^26.0.0",
     "@jest/types": "^26.0.0",
-    "@types/jest": "^26.0.12",
+    "@types/jest": "^26.0.15",
     "ansi-parser": "^3.2.10",
     "bootstrap": "^4.5.2",
     "chalk": "^4.1.0",
