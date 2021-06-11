@@ -90,7 +90,6 @@ Field | Environmental Variable | Default | Description | Example
 `resultDir` | `JEST_STARE_RESULT_DIR` | `jest-stare` | set the results directory | `"resultDir": "results/jest-stare"`
 `resultJson` |  `JEST_STARE_RESULT_JSON` | `jest-results.json` | indicate the raw JSON results file name | `"resultJson": "data.json"`
 `resultHtml` |  `JEST_STARE_RESULT_HTML` | `index.html` | indicate the main html file name | `"resultHtml": "main.html"`
-`resultHtml` |  `JEST_STARE_RESULT_HTML` | `index.html` | indicate the main html file name | `"resultHtml": "main.html"`
 `log` |  `JEST_STARE_LOG` | `true` | specify whether or not jest-stare should log to the console | `"log": false`
 `jestStareConfigJson` |  `JEST_STARE_CONFIG_JSON` |  `undefined` | request to save jest-stare config raw JSON results in the file name | `"jestStareConfigJson": "jest-stare-config.json"`
 `jestGlobalConfigJson` |  `JEST_STARE_GLOBAL_CONFIG_JSON` |  `undefined` | request to save global config results in the file name | `"jestGlobalConfigJson": "global-config.json"`
