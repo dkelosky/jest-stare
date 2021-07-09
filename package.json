@@ -77,7 +77,7 @@
     "jest": "26.6.3",
     "jest-environment-jsdom": "26.6.2",
     "jest-environment-node-debug": "2.0.0",
-    "jest-image-snapshot": "4.5.0",
+    "jest-image-snapshot": "4.5.1",
     "jest-junit": "12.2.0",
     "rimraf": "3.0.2",
     "ts-jest": "26.5.6",
