@@ -70,7 +70,7 @@
     "@types/diff2html": "0.0.5",
     "@types/jquery": "3.5.6",
     "@types/mustache": "4.1.2",
-    "@types/node": "12.20.17",
+    "@types/node": "12.20.18",
     "browserify": "17.0.0",
     "codecov": "3.8.3",
     "coveralls": "3.1.1",
