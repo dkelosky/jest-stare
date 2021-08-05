@@ -44,7 +44,11 @@ jobs:
       # - run: yarn test
       - run: pwd
       - run: ls -la
-      - run: npm test
+      - run:
+          command: Run tests
+          name: npm test
+          environment:
+            NODE_OPTIONS: --max_old_space_size=8192
       - persist_to_workspace:
           root: ~/repo
           paths: .
