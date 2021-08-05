@@ -17,8 +17,8 @@ describe("IO tests", () => {
 
     it("should pretend to write to a file", async () => {
         const fn = (fs.writeFile as any) as Mock<ReturnType<typeof fs.writeFile>, Parameters<typeof fs.writeFile>>;
-        fn.mockImplementation((path: string, data: any, callback: (err?: Error) => void) => {
-            callback();
+        fn.mockImplementation((path: number | fs.PathLike, data: string | ArrayBufferView, callback: fs.NoParamCallback) => {
+            callback(undefined);
         });
 
         let error;
@@ -32,7 +32,7 @@ describe("IO tests", () => {
 
     it("should pretend to write to a file and reject promise for IO errors", async () => {
         const fn = (fs.writeFile as any) as Mock<ReturnType<typeof fs.writeFile>, Parameters<typeof fs.writeFile>>;
-        fn.mockImplementation((path: string, data: any, callback: (err?: Error) => void) => {
+        fn.mockImplementation((path: number | fs.PathLike, data: string | ArrayBufferView, callback: fs.NoParamCallback) => {
             const ioError = new Error("Pretend IO message");
             callback(ioError);
         });
@@ -55,8 +55,9 @@ describe("IO tests", () => {
             });
 
             const fnMkDir = (fs.mkdirSync as any) as Mock<ReturnType<typeof fs.mkdirSync>, Parameters<typeof fs.mkdirSync>>;
-            fnMkDir.mockImplementation((path: fs.PathLike, mode?: string | number) => {
+            fnMkDir.mockImplementation((path: fs.PathLike, options?: fs.Mode | fs.MakeDirectoryOptions) => {
                 // do nothing
+                return "";
             });
 
             const dir = (`one${sep}two${sep}three${sep}four`);
@@ -71,8 +72,8 @@ describe("IO tests", () => {
             });
 
             const fnMkDir = (fs.mkdirSync as any) as Mock<ReturnType<typeof fs.mkdirSync>, Parameters<typeof fs.mkdirSync>>;
-            fnMkDir.mockImplementation((path: fs.PathLike, mode?: string | number) => {
-                // do nothing
+            fnMkDir.mockImplementation((path: fs.PathLike, options?: fs.Mode | fs.MakeDirectoryOptions) => {
+                return "";
             });
 
             const dir = (`one${sep}two${sep}three${sep}four`);
@@ -93,8 +94,8 @@ describe("IO tests", () => {
             });
 
             const fnMkDir = (fs.mkdirSync as any) as Mock<ReturnType<typeof fs.mkdirSync>, Parameters<typeof fs.mkdirSync>>;
-            fnMkDir.mockImplementation((path: fs.PathLike, mode?: string | number) => {
-                // do nothing
+            fnMkDir.mockImplementation((path: fs.PathLike, options?: fs.Mode | fs.MakeDirectoryOptions) => {
+                return "";
             });
 
             IO.mkdirsSync(dir);
@@ -122,8 +123,8 @@ describe("IO tests", () => {
                 return false;
             });
             const fnMkDir = (fs.mkdirSync as any) as Mock<ReturnType<typeof fs.mkdirSync>, Parameters<typeof fs.mkdirSync>>;
-            fnMkDir.mockImplementation((path: fs.PathLike, mode?: string | number) => {
-                // do nothing
+            fnMkDir.mockImplementation((path: fs.PathLike, options?: fs.Mode | fs.MakeDirectoryOptions) => {
+                return "";
             });
 
             IO.mkDirSync("blah/blah");
@@ -136,8 +137,8 @@ describe("IO tests", () => {
                 return true;
             });
             const fnMkDir = (fs.mkdirSync as any) as Mock<ReturnType<typeof fs.mkdirSync>, Parameters<typeof fs.mkdirSync>>;
-            fnMkDir.mockImplementation((path: fs.PathLike, mode?: string | number) => {
-                // do nothing
+            fnMkDir.mockImplementation((path: fs.PathLike, options?: fs.Mode | fs.MakeDirectoryOptions) => {
+                return "";
             });
 
             IO.mkDirSync("blah/blah");
@@ -200,7 +201,7 @@ describe("IO tests", () => {
     it("should read return a populated object if package.json is found", () => {
         pkgUp.sync = jest.fn(() => "some/path");
         const fn = (fs.readFileSync as any) as Mock<ReturnType<typeof fs.readFileSync>, Parameters<typeof fs.readFileSync>>;
-        fn.mockImplementation((path: fs.PathLike) => {
+        fn.mockImplementation((path: number | fs.PathLike, options?: BufferEncoding | (fs.BaseEncodingOptions & { flag?: string; })) => {
             return "{\"data\": \"value\"}";
         });
         const result = IO.readPackageJson();
