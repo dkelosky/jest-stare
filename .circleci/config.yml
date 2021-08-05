@@ -7,11 +7,11 @@ version: 2
 defaults: &defaults
   working_directory: ~/repo
   docker:
-    - image: circleci/node:16.5.0
+    - image: circleci/node:16.6.1
 
 jobs:
   build:
-    <<: *defaults 
+    <<: *defaults
     steps:
       - checkout
 
@@ -35,9 +35,9 @@ jobs:
       - persist_to_workspace:
           root: ~/repo
           paths: .
-          
+
   test:
-    <<: *defaults 
+    <<: *defaults
     steps:
       - attach_workspace:
           at: ~/repo
@@ -48,7 +48,7 @@ jobs:
       - persist_to_workspace:
           root: ~/repo
           paths: .
-          
+
   deploy:
     <<: *defaults
     steps:
