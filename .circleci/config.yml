@@ -45,8 +45,8 @@ jobs:
       - run: pwd
       - run: ls -la
       - run:
-          command: Run tests
-          name: npm test
+          name: Run tests
+          command: npm test
           environment:
             NODE_OPTIONS: --max_old_space_size=8192
       - persist_to_workspace:
