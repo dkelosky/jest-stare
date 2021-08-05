@@ -18415,6 +18415,23 @@ Array [
               </span>
             </span>
             
+
+            <label
+              class="d2h-file-collapse"
+            >
+              
+    
+              <input
+                class="d2h-file-collapse-input"
+                name="viewed"
+                type="checkbox"
+                value="viewed"
+              />
+              
+    Viewed
+
+            </label>
+            
     
           </div>
           
@@ -18458,7 +18475,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-info"
+                          class="d2h-code-side-line"
                         >
                           @@ -0,1 +0,2 @@
                         </div>
@@ -18486,7 +18503,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -18529,7 +18546,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -18572,7 +18589,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
+                          class="d2h-code-side-line d2h-code-side-emptyplaceholder"
                         >
                           
             
@@ -18615,7 +18632,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -18658,7 +18675,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -18701,7 +18718,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -18774,7 +18791,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-info"
+                          class="d2h-code-side-line"
                         />
                         
     
@@ -18800,7 +18817,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -18843,7 +18860,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -18886,7 +18903,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-ins"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -18929,7 +18946,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -18972,7 +18989,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -19015,7 +19032,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -19269,6 +19286,23 @@ Array [
               </span>
             </span>
             
+
+            <label
+              class="d2h-file-collapse"
+            >
+              
+    
+              <input
+                class="d2h-file-collapse-input"
+                name="viewed"
+                type="checkbox"
+                value="viewed"
+              />
+              
+    Viewed
+
+            </label>
+            
     
           </div>
           
@@ -19312,7 +19346,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-info"
+                          class="d2h-code-side-line"
                         >
                           @@ -0,2 +0,1 @@
                         </div>
@@ -19340,7 +19374,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -19383,7 +19417,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-del"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -19426,7 +19460,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -19469,7 +19503,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -19512,7 +19546,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -19555,7 +19589,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -19628,7 +19662,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-info"
+                          class="d2h-code-side-line"
                         />
                         
     
@@ -19654,7 +19688,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -19697,7 +19731,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
+                          class="d2h-code-side-line d2h-code-side-emptyplaceholder"
                         >
                           
             
@@ -19740,7 +19774,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -19783,7 +19817,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -19826,7 +19860,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -19869,7 +19903,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -20331,6 +20365,23 @@ Array [
               </span>
             </span>
             
+
+            <label
+              class="d2h-file-collapse"
+            >
+              
+    
+              <input
+                class="d2h-file-collapse-input"
+                name="viewed"
+                type="checkbox"
+                value="viewed"
+              />
+              
+    Viewed
+
+            </label>
+            
     
           </div>
           
@@ -20374,7 +20425,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-info"
+                          class="d2h-code-side-line"
                         >
                           @@ -0,2 +0,2 @@
                         </div>
@@ -20402,7 +20453,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -20445,7 +20496,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-del d2h-change"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -20492,7 +20543,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -20535,7 +20586,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -20578,7 +20629,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -20621,7 +20672,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -20664,7 +20715,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -20737,7 +20788,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-info"
+                          class="d2h-code-side-line"
                         />
                         
     
@@ -20763,7 +20814,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -20806,7 +20857,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-ins d2h-change"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -20853,7 +20904,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -20896,7 +20947,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -20939,7 +20990,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -20982,7 +21033,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -21025,7 +21076,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -21324,6 +21375,23 @@ Array [
               </span>
             </span>
             
+
+            <label
+              class="d2h-file-collapse"
+            >
+              
+    
+              <input
+                class="d2h-file-collapse-input"
+                name="viewed"
+                type="checkbox"
+                value="viewed"
+              />
+              
+    Viewed
+
+            </label>
+            
     
           </div>
           
@@ -21367,7 +21435,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-info"
+                          class="d2h-code-side-line"
                         >
                           @@ -0,4 +0,2 @@
                         </div>
@@ -21395,7 +21463,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -21438,7 +21506,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -21481,7 +21549,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-del d2h-change"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -21527,7 +21595,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-del"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -21570,7 +21638,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-del"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -21613,7 +21681,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -21656,7 +21724,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -21729,7 +21797,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-info"
+                          class="d2h-code-side-line"
                         />
                         
     
@@ -21755,7 +21823,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -21798,7 +21866,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -21841,7 +21909,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-ins d2h-change"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -21884,7 +21952,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
+                          class="d2h-code-side-line d2h-code-side-emptyplaceholder"
                         >
                           
             
@@ -21927,7 +21995,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-code-side-emptyplaceholder d2h-cntx d2h-emptyplaceholder"
+                          class="d2h-code-side-line d2h-code-side-emptyplaceholder"
                         >
                           
             
@@ -21970,7 +22038,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             
@@ -22013,7 +22081,7 @@ Array [
                         
         
                         <div
-                          class="d2h-code-side-line d2h-cntx"
+                          class="d2h-code-side-line"
                         >
                           
             

@@ -28,7 +28,7 @@ describe("TestSuite tests", () => {
         expect(TestSuite.create(pendingOnlyTests)).toMatchSnapshot();
     });
 
-    it("should create proper elements for large test more than 500 tests", () => {
+    xit("should create proper elements for large test more than 500 tests", () => {
         // expect(TestSuite.create(largeTests)).toMatchSnapshot();
         pending();
     });
@@ -41,7 +41,7 @@ describe("TestSuite tests", () => {
         expect(TestSuite.create(pendingTests)).toMatchSnapshot();
     });
 
-    it("should create proper elements for assertion results", () => {
+    xit("should create proper elements for assertion results", () => {
         // TODO(Kelosky): remove pending to test - issues console messages so
         // marking as pending for now
         pending();
