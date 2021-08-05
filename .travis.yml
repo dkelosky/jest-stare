@@ -1,6 +1,7 @@
 language: node_js
 node_js:
-  - 'lts/*' # use latest stable nodejs version
+  - '16' # use latest stable nodejs version
+  # - 'lts/*' # use latest stable nodejs version
 install:
   - 'npm ci && npm run build'
 script:
@@ -14,7 +15,7 @@ after_script:
 #   skip_cleanup: true
   # before push:
   # git add .
-  # git commit -m "blah" 
+  # git commit -m "blah"
   # npm version xxxxxx
   # git push --tags to deploy
   # npm version prepatch 0.0.1-0 # git push --tags
