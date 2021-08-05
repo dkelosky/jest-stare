@@ -18,7 +18,8 @@
     "removeComments": true,
     "inlineSourceMap": true,
     "typeRoots": [
-      "./node_modules/@types"
+      "./node_modules/@types",
+      "./node_modules/@jest",
     ]
   },
   "include": [
