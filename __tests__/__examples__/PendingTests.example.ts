@@ -1,6 +1,6 @@
 describe("pending tests", () => {
-    it("should pend", () => {
-        pending();
+    it.todo("should pend", () => {
+       // pending
     });
     it("should pass", () => {
         // pass

@@ -6,7 +6,8 @@
     "types": [
       "node",
       "jquery",
-      "jest"
+      "jest",
+      "jest-image-snapshot"
     ],
     "lib": [
       "es6",
