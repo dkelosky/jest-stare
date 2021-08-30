@@ -7,7 +7,7 @@ version: 2
 defaults: &defaults
   working_directory: ~/repo
   docker:
-    - image: circleci/node:16.7.0
+    - image: circleci/node:16.8.0
 
 jobs:
   build:
