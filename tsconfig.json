@@ -6,7 +6,8 @@
     "types": [
       "node",
       "jquery",
-      "jest"
+      "jest",
+      "offscreencanvas"
     ],
     "lib": [
       "es6",
