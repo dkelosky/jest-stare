@@ -68,7 +68,7 @@
   },
   "devDependencies": {
     "@types/diff2html": "0.0.5",
-    "@types/jquery": "3.5.6",
+    "@types/jquery": "3.5.8",
     "@types/mustache": "4.1.2",
     "@types/node": "14.17.27",
     "@types/offscreencanvas": "2019.6.4",
