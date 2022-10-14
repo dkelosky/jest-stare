@@ -54,7 +54,7 @@
     "@jest/types": "^27.0.0",
     "@types/jest": "^27.0.0",
     "ansi-parser": "^3.2.10",
-    "bootstrap": "^4.5.2",
+    "bootstrap": "^5.0.0",
     "chalk": "^4.1.0",
     "chart.js": "^3.0.0",
     "diff2html": "^3.1.18",
