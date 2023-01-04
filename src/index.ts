@@ -1,2 +1,4 @@
 import { entry } from "./entry";
-module.exports = entry;
+import { Reporter } from "./reporter/Reporter";
+
+module.exports = { entry, Reporter };
