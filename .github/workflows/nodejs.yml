@@ -32,8 +32,8 @@ jobs:
         CI: true
     - run: yarn install --frozen-lockfile
     - run: yarn pack --filename=release.tgz
-    - name: Create tag
-      uses: Klemensas/action-autotag@stable
+    - uses: actions/checkout@v3
+    - uses: Klemensas/action-autotag@stable
       id: update_tag
       with:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
