@@ -1,4 +1,4 @@
-name: package ci flow
+name: publish to npm
 
 on: push
 
@@ -11,11 +11,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://npm.pkg.github.com
       - name: Install deps
         run: npm install
         env:
-            NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+            NODE_AUTH_TOKEN: ${{secrets.REPO_TOKEN}}
       - name: Lint
         run: npm run lint
 
@@ -32,11 +32,11 @@ jobs:
         - uses: actions/setup-node@v3
           with:
               node-version: 16
-              registry-url: https://registry.npmjs.org/
+              registry-url: https://npm.pkg.github.com
         - run: npm ci
-        - run: npm publish --access public
+        - run: npm publish
           env:
-              NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+              NODE_AUTH_TOKEN: ${{secrets.REPO_TOKEN}}
 
   publish-alpha:
     name: Publish alpha to registry
@@ -51,11 +51,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://npm.pkg.github.com
       - name: Patching package.json to have commit hash as an alpha version
         run: jq '.version = .version + "-alpha.${{github.sha}}"' package.json > tmp.json && mv tmp.json package.json
       - name: Publishing alpha package
-        run: npm publish --tag alpha --access public
+        run: npm publish --tag alpha
         env:
-            NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+            NODE_AUTH_TOKEN: ${{secrets.REPO_TOKEN}}
 
