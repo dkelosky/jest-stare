@@ -15,7 +15,7 @@ jobs:
       - name: Install deps
         run: npm install
         env:
-            NODE_AUTH_TOKEN: ${{secrets.SECRET_JEST_REPORTER_CLASSIC}}
+            NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: Lint
         run: npm run lint
 
@@ -36,7 +36,7 @@ jobs:
         - run: npm ci
         - run: npm publish
           env:
-              NODE_AUTH_TOKEN: ${{secrets.SECRET_JEST_REPORTER_CLASSIC}}
+              NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
   publish-alpha:
     name: Publish alpha to registry
@@ -56,5 +56,5 @@ jobs:
       - name: Publishing alpha package
         run: npm publish --tag alpha
         env:
-            NODE_AUTH_TOKEN: ${{secrets.SECRET_JEST_REPORTER_CLASSIC}}
+            NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
