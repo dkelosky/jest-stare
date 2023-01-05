@@ -11,7 +11,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: https://npm.pkg.github.com/
+          registry-url: https://registry.npmjs.org/
       - name: Install deps
         run: npm install
         env:
@@ -32,19 +32,11 @@ jobs:
         - uses: actions/setup-node@v3
           with:
               node-version: 16
-              registry-url: https://npm.pkg.github.com/
+              registry-url: https://registry.npmjs.org/
         - run: npm ci
         - run: npm publish
           env:
               NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-  configure-npm:
-    name: Configure npm
-    steps:
-        - run: |
-                echo '//npm.pkg.github.com//:_authToken=${GITHUB_TOKEN}' > .npmrc
-                cat .npmrc
-          env:
-            NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   publish-alpha:
     name: Publish alpha to registry
@@ -58,7 +50,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: https://npm.pkg.github.com/
+          registry-url: https://registry.npmjs.org/
       - name: Patching package.json to have commit hash as an alpha version
         run: jq '.version = .version + "-alpha.${{github.sha}}"' package.json > tmp.json && mv tmp.json package.json
       - name: Publishing alpha package
