@@ -32,11 +32,12 @@ jobs:
         CI: true
     - run: yarn install --frozen-lockfile
     - run: yarn pack --filename=release.tgz
-    - uses: Klemensas/action-autotag@stable
-        id: update_tag
-        with:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          tag_prefix: "v"
+    - name: Create tag
+      uses: Klemensas/action-autotag@stable
+      id: update_tag
+      with:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        tag_prefix: "v"
     - name: Create Release
       if: steps.update_tag.outputs.tagname
       uses: actions/create-release@v1
