@@ -14,6 +14,8 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - name: Install deps
         run: npm install
+        env:
+            NODE_AUTH_TOKEN: ${{secrets.SECRET_JEST_REPORTER}}
       - name: Lint
         run: npm run lint
 
@@ -30,6 +32,8 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - name: Publishing package
         run: npm publish
+        env:
+            NODE_AUTH_TOKEN: ${{secrets.SECRET_JEST_REPORTER}}
 
   publish-alpha:
     name: Publish alpha to registry
@@ -45,4 +49,6 @@ jobs:
         run: jq '.version = .version + "-alpha.${{github.sha}}"' package.json > tmp.json && mv tmp.json package.json
       - name: Publishing alpha package
         run: npm publish --tag alpha
+        env:
+            NODE_AUTH_TOKEN: ${{secrets.SECRET_JEST_REPORTER}}
 
