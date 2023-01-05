@@ -1,6 +1,6 @@
 name: publish to npmjs
 
-on: push
+on: dispatch
 
 jobs:
   test-and-lint:
@@ -44,7 +44,7 @@ jobs:
     permissions:
         packages: write
         contents: read
-    if: "contains(github.event.head_commit.message, 'chore(): alpha')"
+    if: "contains(github.event.head_commit.message, 'chore(): alpha npmjs')"
     steps:
       - uses: actions/checkout@v3
 
@@ -55,7 +55,7 @@ jobs:
       - name: Patching package.json to have commit hash as an alpha version
         run: jq '.version = .version + "-alpha.${{github.sha}}"' package.json > tmp.json && mv tmp.json package.json
       - name: Publishing alpha package
-        run: npm publish --tag alpha --access public
+        run: npm publish --tag alpha npmjs --access public
         env:
             NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
