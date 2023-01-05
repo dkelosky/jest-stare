@@ -31,7 +31,7 @@ jobs:
       env:
         CI: true
     - run: yarn install --frozen-lockfile
-    - run: yarn pack --filename=release.tgz
+    - run: yarn pack --filename=package.tgz
     - uses: actions/checkout@v3
     - uses: Klemensas/action-autotag@master
       id: update_tag
