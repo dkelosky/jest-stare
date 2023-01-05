@@ -1,6 +1,6 @@
 {
   "name": "@geiserman/jest-tests-results-reporter",
-  "version": "2.4.18",
+  "version": "2.4.19",
   "description": "jest html reporter (results processor) to view HTML jest results, save raw JSON, and invoke multiple reporters",
   "license": "MIT",
   "repository": "https://github.com/geiserman/jest-tests-results-reporter",
