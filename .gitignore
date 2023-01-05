@@ -1,10 +1,7 @@
-coverage/
-node_modules/
-npm-debug.log
-.nyc_output
-lib
-lib_test
-jest-stare
-results
-notes.txt
 .idea
+.vscode
+**/build/*
+node_modules
+yarn.lock
+.DS_store
+logs
