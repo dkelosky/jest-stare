@@ -31,7 +31,7 @@ jobs:
       env:
         CI: true
   publish:
-      needs: test-and-lint
+      needs: build
       runs-on: ubuntu-latest
       name: Publish to registry
       permissions:
