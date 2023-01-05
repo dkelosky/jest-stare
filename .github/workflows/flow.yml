@@ -51,6 +51,12 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
+      -   name: Configure npm
+              run: |
+                  echo '//npm.pkg.github.com//:_authToken=${GITHUB_TOKEN}' > .npmrc
+                  cat .npmrc
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Patching package.json to have commit hash as an alpha version
         run: jq '.version = .version + "-alpha.${{github.sha}}"' package.json > tmp.json && mv tmp.json package.json
       - name: Publishing alpha package
