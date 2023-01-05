@@ -1,6 +1,6 @@
 {
   "name": "jest-stare",
-  "version": "2.4.4",
+  "version": "2.4.5",
   "description": "jest html reporter (results processor) to view HTML jest results, save raw JSON, and invoke multiple reporters",
   "license": "MIT",
   "repository": "https://github.com/dkelosky/jest-stare",
