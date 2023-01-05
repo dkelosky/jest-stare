@@ -20,24 +20,30 @@ jobs:
         run: npm run lint
 
   publish:
-    name: Publish to registry
-    runs-on: ubuntu-latest
     needs: test-and-lint
+    runs-on: ubuntu-latest
+    name: Publish to registry
+    permissions:
+        packages: write
+        contents: read
     if: github.ref == 'refs/heads/master'
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          registry-url: https://npm.pkg.github.com/
-      - name: Publishing package
-        run: npm publish
-        env:
-            NODE_AUTH_TOKEN: ${{secrets.SECRET_JEST_REPORTER}}
+        - uses: actions/checkout@v3
+        - uses: actions/setup-node@v3
+          with:
+              node-version: 16
+              registry-url: https://npm.pkg.github.com/
+        - run: npm ci
+        - run: npm publish
+          env:
+              NODE_AUTH_TOKEN: ${{secrets.SECRET_JEST_REPORTER}}
 
   publish-alpha:
     name: Publish alpha to registry
     runs-on: ubuntu-latest
+    permissions:
+        packages: write
+        contents: read
     if: "contains(github.event.head_commit.message, 'chore(): alpha')"
     steps:
       - uses: actions/checkout@v3

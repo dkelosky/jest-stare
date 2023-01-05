@@ -131,5 +131,8 @@
     "titleTemplate": "{classname}-{title}",
     "ancestorSeparator": " › ",
     "usePathForSuiteName": "true"
-  }
+  },
+    "publishConfig": {
+        "@geiserman:registry": "https://npm.pkg.github.com"
+    }
 }
