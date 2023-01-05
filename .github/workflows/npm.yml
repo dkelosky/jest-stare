@@ -1,6 +1,6 @@
 name: publish to npm
 
-on: push
+on: dispatch
 
 jobs:
   test-and-lint:
