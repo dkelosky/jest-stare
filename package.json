@@ -1,9 +1,9 @@
 {
-  "name": "jest-stare",
+  "name": "jest-tests-results-reporter",
   "version": "2.4.9",
   "description": "jest html reporter (results processor) to view HTML jest results, save raw JSON, and invoke multiple reporters",
   "license": "MIT",
-  "repository": "https://github.com/dkelosky/jest-stare",
+  "repository": "https://github.com/geiserman/jest-tests-results-reporter",
   "author": {
     "name": "dan kelosky",
     "email": "",
@@ -133,6 +133,6 @@
     "usePathForSuiteName": "true"
   },
   "publishConfig": {
-    "@geiserman:registry": "https://npm.pkg.github.com"
+    "@geiserman:registry": "https://registry.npmjs.org"
   }
 }
