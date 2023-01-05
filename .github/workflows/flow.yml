@@ -55,7 +55,7 @@ jobs:
       - name: Patching package.json to have commit hash as an alpha version
         run: jq '.version = .version + "-alpha.${{github.sha}}"' package.json > tmp.json && mv tmp.json package.json
       - name: Publishing alpha package
-        run: npm publish --tag alpha
+        run: npm publish --tag alpha --access public
         env:
             NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
