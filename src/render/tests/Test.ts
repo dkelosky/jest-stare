@@ -116,8 +116,8 @@ export class Test {
             const button = document.createElement("button") as HTMLButtonElement;
             button.classList.add("btn", "btn-light", "btn-sm");
             button.type = "button";
-            button.setAttribute("data-toggle", "collapse");
-            button.setAttribute("data-target", "#" + diffId);
+            button.setAttribute("data-bs-toggle", "collapse");
+            button.setAttribute("data-bs-target", "#" + diffId);
             button.setAttribute("aria-expanded", "false");
             button.setAttribute("aria-controls", diffId);
             button.textContent = "raw";

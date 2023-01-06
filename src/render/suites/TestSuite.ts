@@ -170,6 +170,7 @@ export class TestSuite {
         const fileName = TestSuite.sanitizeFilePath(testFilePath)
         const cardHeader = document.createElement("div") as HTMLDivElement;
         cardHeader.classList.add("card-header");
+        cardHeader.classList.add("text-center");
         cardHeader.id = `${fileName}_header`;
 
         const h5 = document.createElement("h5") as HTMLHeadingElement;
@@ -177,28 +178,28 @@ export class TestSuite {
 
         const btn = document.createElement("button") as HTMLButtonElement;
         btn.classList.add("btn", "btn-block");
-        btn.setAttribute("data-toggle", "collapse");
-        btn.setAttribute("data-target", `#${fileName}_detail`);
+        btn.setAttribute("data-bs-toggle", "collapse");
+        btn.setAttribute("data-bs-target", `#${fileName}_detail`);
         btn.textContent = testFilePath;
 
         const resultCounts = document.createElement("div") as HTMLDivElement;
         const passBadge = document.createElement("span") as HTMLSpanElement;
-        passBadge.classList.add("badge", "badge-success", "border");
+        passBadge.classList.add("badge", "bg-success", "border");
         passBadge.textContent = passCount.toString();
         resultCounts.appendChild(passBadge);
 
         const failBadge = document.createElement("span") as HTMLSpanElement;
-        failBadge.classList.add("badge", "badge-danger", "border");
+        failBadge.classList.add("badge", "bg-danger", "border");
         failBadge.textContent = failCount.toString();
         resultCounts.appendChild(failBadge);
 
         const skipBadge = document.createElement("span") as HTMLSpanElement;
-        skipBadge.classList.add("badge", "badge-warning", "border");
+        skipBadge.classList.add("badge", "bg-warning", "border");
         skipBadge.textContent = pendingCount.toString();
         resultCounts.appendChild(skipBadge);
 
         const todoBadge = document.createElement("span") as HTMLSpanElement;
-        todoBadge.classList.add("badge", "badge-info", "border");
+        todoBadge.classList.add("badge", "bg-info", "border");
         todoBadge.textContent = todoCount.toString();
         resultCounts.appendChild(todoBadge);
 
