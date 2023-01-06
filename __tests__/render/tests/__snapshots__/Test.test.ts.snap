@@ -602,8 +602,8 @@ Array [
           aria-controls="should-install-from-the-npm-registry-diff"
           aria-expanded="false"
           class="btn btn-light btn-sm"
-          data-target="#should-install-from-the-npm-registry-diff"
-          data-toggle="collapse"
+          data-bs-target="#should-install-from-the-npm-registry-diff"
+          data-bs-toggle="collapse"
           type="button"
         >
           raw
@@ -707,8 +707,8 @@ Array [
           aria-controls="should-install-an-absolute-file-path-diff"
           aria-expanded="false"
           class="btn btn-light btn-sm"
-          data-target="#should-install-an-absolute-file-path-diff"
-          data-toggle="collapse"
+          data-bs-target="#should-install-an-absolute-file-path-diff"
+          data-bs-toggle="collapse"
           type="button"
         >
           raw
@@ -812,8 +812,8 @@ Array [
           aria-controls="should-install-a-relative-file-path-diff"
           aria-expanded="false"
           class="btn btn-light btn-sm"
-          data-target="#should-install-a-relative-file-path-diff"
-          data-toggle="collapse"
+          data-bs-target="#should-install-a-relative-file-path-diff"
+          data-bs-toggle="collapse"
           type="button"
         >
           raw
@@ -917,8 +917,8 @@ Array [
           aria-controls="should-install-from-a-url-diff"
           aria-expanded="false"
           class="btn btn-light btn-sm"
-          data-target="#should-install-from-a-url-diff"
-          data-toggle="collapse"
+          data-bs-target="#should-install-from-a-url-diff"
+          data-bs-toggle="collapse"
           type="button"
         >
           raw
@@ -1022,8 +1022,8 @@ Array [
           aria-controls="should-write-even-when-install-from-file-is-true-diff"
           aria-expanded="false"
           class="btn btn-light btn-sm"
-          data-target="#should-write-even-when-install-from-file-is-true-diff"
-          data-toggle="collapse"
+          data-bs-target="#should-write-even-when-install-from-file-is-true-diff"
+          data-bs-toggle="collapse"
           type="button"
         >
           raw
@@ -1127,8 +1127,8 @@ Array [
           aria-controls="should-accept-semver-properly-diff"
           aria-expanded="false"
           class="btn btn-light btn-sm"
-          data-target="#should-accept-semver-properly-diff"
-          data-toggle="collapse"
+          data-bs-target="#should-accept-semver-properly-diff"
+          data-bs-toggle="collapse"
           type="button"
         >
           raw
@@ -1232,8 +1232,8 @@ Array [
           aria-controls="should-merge-contents-of-previous-json-file-diff"
           aria-expanded="false"
           class="btn btn-light btn-sm"
-          data-target="#should-merge-contents-of-previous-json-file-diff"
-          data-toggle="collapse"
+          data-bs-target="#should-merge-contents-of-previous-json-file-diff"
+          data-bs-toggle="collapse"
           type="button"
         >
           raw
@@ -19086,8 +19086,8 @@ Array [
           aria-controls="should-match-snapshot-with-two-fields-diff"
           aria-expanded="false"
           class="btn btn-light btn-sm"
-          data-target="#should-match-snapshot-with-two-fields-diff"
-          data-toggle="collapse"
+          data-bs-target="#should-match-snapshot-with-two-fields-diff"
+          data-bs-toggle="collapse"
           type="button"
         >
           raw
@@ -19957,8 +19957,8 @@ Array [
           aria-controls="should-match-snapshot-with-three-fields-diff"
           aria-expanded="false"
           class="btn btn-light btn-sm"
-          data-target="#should-match-snapshot-with-three-fields-diff"
-          data-toggle="collapse"
+          data-bs-target="#should-match-snapshot-with-three-fields-diff"
+          data-bs-toggle="collapse"
           type="button"
         >
           raw
@@ -21130,8 +21130,8 @@ Array [
           aria-controls="should-fail-with-a-snapshot-difference-diff"
           aria-expanded="false"
           class="btn btn-light btn-sm"
-          data-target="#should-fail-with-a-snapshot-difference-diff"
-          data-toggle="collapse"
+          data-bs-target="#should-fail-with-a-snapshot-difference-diff"
+          data-bs-toggle="collapse"
           type="button"
         >
           raw
@@ -22135,8 +22135,8 @@ Array [
           aria-controls="should-fail-with-a-snapshot-difference-2-diff"
           aria-expanded="false"
           class="btn btn-light btn-sm"
-          data-target="#should-fail-with-a-snapshot-difference-2-diff"
-          data-toggle="collapse"
+          data-bs-target="#should-fail-with-a-snapshot-difference-2-diff"
+          data-bs-toggle="collapse"
           type="button"
         >
           raw

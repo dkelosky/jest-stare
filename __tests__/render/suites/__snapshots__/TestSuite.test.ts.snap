@@ -6,7 +6,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card failed-test.passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___example_FailingTests_test_ts_header"
     >
       <h5
@@ -14,28 +14,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___example_FailingTests_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___example_FailingTests_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\example\\FailingTests.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               1
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               2
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -77,7 +77,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___src_render_Render_test_ts_header"
     >
       <h5
@@ -85,28 +85,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___src_render_Render_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___src_render_Render_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\src\\render\\Render.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               1
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -142,7 +142,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___src_processor_Processor_test_ts_header"
     >
       <h5
@@ -150,28 +150,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___src_processor_Processor_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___src_processor_Processor_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\src\\processor\\Processor.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               2
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -210,7 +210,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___src_utils_IO_test_ts_header"
     >
       <h5
@@ -218,28 +218,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___src_utils_IO_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___src_utils_IO_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\src\\utils\\IO.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               4
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -284,7 +284,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___src_utils_Logger_test_ts_header"
     >
       <h5
@@ -292,28 +292,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___src_utils_Logger_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___src_utils_Logger_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\src\\utils\\Logger.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               1
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -349,7 +349,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___src_reporter_Reporter_test_ts_header"
     >
       <h5
@@ -357,28 +357,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___src_reporter_Reporter_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___src_reporter_Reporter_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\src\\reporter\\Reporter.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               2
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -422,7 +422,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card failed-test.passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="Work_Dev_node_jest-stare___tests___utils_IO_test_ts_header"
     >
       <h5
@@ -430,28 +430,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#Work_Dev_node_jest-stare___tests___utils_IO_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#Work_Dev_node_jest-stare___tests___utils_IO_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               2
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               2
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -496,7 +496,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="Work_Dev_node_jest-stare___tests___reporter_Reporter_test_ts_header"
     >
       <h5
@@ -504,28 +504,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#Work_Dev_node_jest-stare___tests___reporter_Reporter_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#Work_Dev_node_jest-stare___tests___reporter_Reporter_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           Work\\Dev\\node\\jest-stare\\__tests__\\reporter\\Reporter.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               1
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -566,7 +566,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="Work_Dev_node_jest-stare___tests___utils_IO_test_ts_header"
     >
       <h5
@@ -574,28 +574,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#Work_Dev_node_jest-stare___tests___utils_IO_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#Work_Dev_node_jest-stare___tests___utils_IO_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               4
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -640,7 +640,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="Work_Dev_node_jest-stare___tests___reporter_Reporter_test_ts_header"
     >
       <h5
@@ -648,28 +648,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#Work_Dev_node_jest-stare___tests___reporter_Reporter_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#Work_Dev_node_jest-stare___tests___reporter_Reporter_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           Work\\Dev\\node\\jest-stare\\__tests__\\reporter\\Reporter.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               1
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -710,7 +710,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card failed-test.passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___example_FailingTests_test_ts_header"
     >
       <h5
@@ -718,28 +718,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___example_FailingTests_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___example_FailingTests_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\example\\FailingTests.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               1
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               2
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -781,7 +781,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___src_render_Render_test_ts_header"
     >
       <h5
@@ -789,28 +789,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___src_render_Render_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___src_render_Render_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\src\\render\\Render.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               1
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -846,7 +846,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___src_processor_Processor_test_ts_header"
     >
       <h5
@@ -854,28 +854,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___src_processor_Processor_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___src_processor_Processor_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\src\\processor\\Processor.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               2
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -914,7 +914,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___src_utils_IO_test_ts_header"
     >
       <h5
@@ -922,28 +922,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___src_utils_IO_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___src_utils_IO_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\src\\utils\\IO.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               4
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -988,7 +988,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___src_utils_Logger_test_ts_header"
     >
       <h5
@@ -996,28 +996,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___src_utils_Logger_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___src_utils_Logger_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\src\\utils\\Logger.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               1
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -1053,7 +1053,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___src_reporter_Reporter_test_ts_header"
     >
       <h5
@@ -1061,28 +1061,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___src_reporter_Reporter_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___src_reporter_Reporter_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\src\\reporter\\Reporter.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               2
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>

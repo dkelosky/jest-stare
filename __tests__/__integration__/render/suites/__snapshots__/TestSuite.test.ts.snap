@@ -6,7 +6,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card failed-test.passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="C__Users_KELDA16_Work_Dev_node_jest-stare___tests_____examples___NestedDescribeTests_example_ts_header"
     >
       <h5
@@ -14,28 +14,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#C__Users_KELDA16_Work_Dev_node_jest-stare___tests_____examples___NestedDescribeTests_example_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#C__Users_KELDA16_Work_Dev_node_jest-stare___tests_____examples___NestedDescribeTests_example_ts_detail"
+          data-bs-toggle="collapse"
         >
           C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\__examples__\\NestedDescribeTests.example.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               7
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               2
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -254,8 +254,8 @@ Array [
                           aria-controls="should-fail-diff"
                           aria-expanded="false"
                           class="btn btn-light btn-sm"
-                          data-target="#should-fail-diff"
-                          data-toggle="collapse"
+                          data-bs-target="#should-fail-diff"
+                          data-bs-toggle="collapse"
                           type="button"
                         >
                           raw
@@ -463,8 +463,8 @@ Array [
                           aria-controls="should-fail-diff"
                           aria-expanded="false"
                           class="btn btn-light btn-sm"
-                          data-target="#should-fail-diff"
-                          data-toggle="collapse"
+                          data-bs-target="#should-fail-diff"
+                          data-bs-toggle="collapse"
                           type="button"
                         >
                           raw
@@ -650,7 +650,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card failed-test.passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="_tmp_jest-stare___tests_____examples___foo_ts_header"
     >
       <h5
@@ -658,28 +658,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#_tmp_jest-stare___tests_____examples___foo_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#_tmp_jest-stare___tests_____examples___foo_ts_detail"
+          data-bs-toggle="collapse"
         >
           /tmp/jest-stare/__tests__/__examples__/foo.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               1
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               1
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -792,8 +792,8 @@ Array [
                   aria-controls="should-fail-with-image-snapshot-diff"
                   aria-expanded="false"
                   class="btn btn-light btn-sm"
-                  data-target="#should-fail-with-image-snapshot-diff"
-                  data-toggle="collapse"
+                  data-bs-target="#should-fail-with-image-snapshot-diff"
+                  data-bs-toggle="collapse"
                   type="button"
                 >
                   raw
@@ -913,8 +913,8 @@ Array [
                   aria-controls="should-fail-with-another-image-snapshot-diff"
                   aria-expanded="false"
                   class="btn btn-light btn-sm"
-                  data-target="#should-fail-with-another-image-snapshot-diff"
-                  data-toggle="collapse"
+                  data-bs-target="#should-fail-with-another-image-snapshot-diff"
+                  data-bs-toggle="collapse"
                   type="button"
                 >
                   raw
@@ -992,7 +992,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card failed-test.passed-test.pending-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="C__Users_KELDA16_Work_Dev_node_jest-stare___tests_____examples___PendingTests_example_ts_header"
     >
       <h5
@@ -1000,28 +1000,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#C__Users_KELDA16_Work_Dev_node_jest-stare___tests_____examples___PendingTests_example_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#C__Users_KELDA16_Work_Dev_node_jest-stare___tests_____examples___PendingTests_example_ts_detail"
+          data-bs-toggle="collapse"
         >
           C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\__examples__\\PendingTests.example.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               1
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               1
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               1
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -1151,8 +1151,8 @@ Array [
                   aria-controls="should-fail-diff"
                   aria-expanded="false"
                   class="btn btn-light btn-sm"
-                  data-target="#should-fail-diff"
-                  data-toggle="collapse"
+                  data-bs-target="#should-fail-diff"
+                  data-bs-toggle="collapse"
                   type="button"
                 >
                   raw
@@ -1225,7 +1225,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card failed-test.passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="Work_Dev_node_jest-stare___tests___utils_IO_test_ts_header"
     >
       <h5
@@ -1233,28 +1233,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#Work_Dev_node_jest-stare___tests___utils_IO_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#Work_Dev_node_jest-stare___tests___utils_IO_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               2
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               2
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -2100,8 +2100,8 @@ Array [
                   aria-controls="should-match-snapshot-with-two-fields-diff"
                   aria-expanded="false"
                   class="btn btn-light btn-sm"
-                  data-target="#should-match-snapshot-with-two-fields-diff"
-                  data-toggle="collapse"
+                  data-bs-target="#should-match-snapshot-with-two-fields-diff"
+                  data-bs-toggle="collapse"
                   type="button"
                 >
                   raw
@@ -2971,8 +2971,8 @@ Array [
                   aria-controls="should-match-snapshot-with-three-fields-diff"
                   aria-expanded="false"
                   class="btn btn-light btn-sm"
-                  data-target="#should-match-snapshot-with-three-fields-diff"
-                  data-toggle="collapse"
+                  data-bs-target="#should-match-snapshot-with-three-fields-diff"
+                  data-bs-toggle="collapse"
                   type="button"
                 >
                   raw
@@ -3095,7 +3095,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="Work_Dev_node_jest-stare___tests___reporter_Reporter_test_ts_header"
     >
       <h5
@@ -3103,28 +3103,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#Work_Dev_node_jest-stare___tests___reporter_Reporter_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#Work_Dev_node_jest-stare___tests___reporter_Reporter_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           Work\\Dev\\node\\jest-stare\\__tests__\\reporter\\Reporter.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               1
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -3195,7 +3195,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="Work_Dev_node_jest-stare___tests___utils_IO_test_ts_header"
     >
       <h5
@@ -3203,28 +3203,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#Work_Dev_node_jest-stare___tests___utils_IO_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#Work_Dev_node_jest-stare___tests___utils_IO_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               4
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -3389,7 +3389,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="Work_Dev_node_jest-stare___tests___reporter_Reporter_test_ts_header"
     >
       <h5
@@ -3397,28 +3397,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#Work_Dev_node_jest-stare___tests___reporter_Reporter_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#Work_Dev_node_jest-stare___tests___reporter_Reporter_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           Work\\Dev\\node\\jest-stare\\__tests__\\reporter\\Reporter.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               1
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -3489,7 +3489,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card failed-test.passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___example_FailingTests_test_ts_header"
     >
       <h5
@@ -3497,28 +3497,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___example_FailingTests_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___example_FailingTests_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\example\\FailingTests.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               1
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               2
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -4392,8 +4392,8 @@ Array [
                   aria-controls="should-fail-with-a-snapshot-difference-diff"
                   aria-expanded="false"
                   class="btn btn-light btn-sm"
-                  data-target="#should-fail-with-a-snapshot-difference-diff"
-                  data-toggle="collapse"
+                  data-bs-target="#should-fail-with-a-snapshot-difference-diff"
+                  data-bs-toggle="collapse"
                   type="button"
                 >
                   raw
@@ -5397,8 +5397,8 @@ Array [
                   aria-controls="should-fail-with-a-snapshot-difference-2-diff"
                   aria-expanded="false"
                   class="btn btn-light btn-sm"
-                  data-target="#should-fail-with-a-snapshot-difference-2-diff"
-                  data-toggle="collapse"
+                  data-bs-target="#should-fail-with-a-snapshot-difference-2-diff"
+                  data-bs-toggle="collapse"
                   type="button"
                 >
                   raw
@@ -5537,7 +5537,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___src_render_Render_test_ts_header"
     >
       <h5
@@ -5545,28 +5545,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___src_render_Render_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___src_render_Render_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\src\\render\\Render.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               1
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -5632,7 +5632,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___src_processor_Processor_test_ts_header"
     >
       <h5
@@ -5640,28 +5640,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___src_processor_Processor_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___src_processor_Processor_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\src\\processor\\Processor.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               2
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -5760,7 +5760,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___src_utils_IO_test_ts_header"
     >
       <h5
@@ -5768,28 +5768,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___src_utils_IO_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___src_utils_IO_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\src\\utils\\IO.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               4
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -5954,7 +5954,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___src_utils_Logger_test_ts_header"
     >
       <h5
@@ -5962,28 +5962,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___src_utils_Logger_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___src_utils_Logger_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\src\\utils\\Logger.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               1
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -6049,7 +6049,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card passed-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="jest-stare___tests___src_reporter_Reporter_test_ts_header"
     >
       <h5
@@ -6057,28 +6057,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#jest-stare___tests___src_reporter_Reporter_test_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#jest-stare___tests___src_reporter_Reporter_test_ts_detail"
+          data-bs-toggle="collapse"
         >
           jest-stare\\__tests__\\src\\reporter\\Reporter.test.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               2
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               0
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
@@ -6182,7 +6182,7 @@ Array [
     class="my-3 p-3 bg-white rounded box-shadow card pending-test"
   >
     <div
-      class="card-header"
+      class="card-header text-center"
       id="C__Users_KELDA16_Work_Dev_node_jest-stare___tests_____examples___PendingTestsOnly_example_ts_header"
     >
       <h5
@@ -6190,28 +6190,28 @@ Array [
       >
         <button
           class="btn btn-block"
-          data-target="#C__Users_KELDA16_Work_Dev_node_jest-stare___tests_____examples___PendingTestsOnly_example_ts_detail"
-          data-toggle="collapse"
+          data-bs-target="#C__Users_KELDA16_Work_Dev_node_jest-stare___tests_____examples___PendingTestsOnly_example_ts_detail"
+          data-bs-toggle="collapse"
         >
           C:\\Users\\KELDA16\\Work\\Dev\\node\\jest-stare\\__tests__\\__examples__\\PendingTestsOnly.example.ts
           <div>
             <span
-              class="badge badge-success border"
+              class="badge bg-success border"
             >
               0
             </span>
             <span
-              class="badge badge-danger border"
+              class="badge bg-danger border"
             >
               0
             </span>
             <span
-              class="badge badge-warning border"
+              class="badge bg-warning border"
             >
               1
             </span>
             <span
-              class="badge badge-info border"
+              class="badge bg-info border"
             >
               0
             </span>
