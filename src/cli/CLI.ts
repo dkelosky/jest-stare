@@ -1,4 +1,3 @@
-import { isNullOrUndefined } from "util";
 import { IJestStareConfig } from "../processor/doc/IJestStareConfig";
 import { Logger } from "../utils/Logger";
 import { Constants } from "../processor/Constants";
@@ -37,20 +36,20 @@ export class CLI {
 
         const config: IJestStareConfig = {};
 
-        if (isNullOrUndefined(args.testResults)) {
+        if ((args as any).testResults == null) {
             Logger.get.error(Constants.NO_CLI_INPUT);
             throw new Error();
         }
 
-        if (!isNullOrUndefined(args.resultDir)) {
-            config.resultDir = args.resultDir as string;
+        if ((args as any).resultDir != null) {
+            config.resultDir = (args as any).resultDir as string;
         }
 
-        if (!isNullOrUndefined(args.coverageLink)) {
-            config.coverageLink = args.coverageLink;
+        if ((args as any).coverageLink != null) {
+            config.coverageLink = (args as any).coverageLink;
         }
 
-        const results = IO.readFileSync(args.testResults as string);
+        const results = IO.readFileSync((args as any).testResults as string);
         Processor.run(JSON.parse(results), config);
     }
 }

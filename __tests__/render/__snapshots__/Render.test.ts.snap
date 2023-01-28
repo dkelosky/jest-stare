@@ -1,44 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Render tests should add snapshot chart data with fail examples 1`] = `
-Object {
-  "backgroundColor": Array [
+{
+  "backgroundColor": [
     "#dc3545",
   ],
-  "data": Array [
+  "data": [
     2,
   ],
-  "labels": Array [
+  "labels": [
     "Failed",
   ],
 }
 `;
 
 exports[`Render tests should add snapshot chart data with no examples 1`] = `
-Object {
-  "backgroundColor": Array [
+{
+  "backgroundColor": [
     "#007bff",
   ],
-  "data": Array [
+  "data": [
     "1",
   ],
-  "labels": Array [
+  "labels": [
     "Added",
   ],
 }
 `;
 
 exports[`Render tests should add snapshot chart data with pass examples 1`] = `
-Object {
-  "backgroundColor": Array [
+{
+  "backgroundColor": [
     "#28a745",
     "#007bff",
   ],
-  "data": Array [
+  "data": [
     2,
     "1",
   ],
-  "labels": Array [
+  "labels": [
     "Passed",
     "Added",
   ],
@@ -46,38 +46,38 @@ Object {
 `;
 
 exports[`Render tests should build chart data with fail examples 1`] = `
-Object {
-  "backgroundColor": Array [
+{
+  "backgroundColor": [
     "#dc3545",
   ],
-  "data": Array [
+  "data": [
     1,
   ],
-  "labels": Array [
+  "labels": [
     "Failed",
   ],
 }
 `;
 
 exports[`Render tests should build chart data with no examples 1`] = `
-Object {
-  "backgroundColor": Array [],
-  "data": Array [],
-  "labels": Array [],
+{
+  "backgroundColor": [],
+  "data": [],
+  "labels": [],
 }
 `;
 
 exports[`Render tests should build chart data with pass and fail examples 1`] = `
-Object {
-  "backgroundColor": Array [
+{
+  "backgroundColor": [
     "#28a745",
     "#dc3545",
   ],
-  "data": Array [
+  "data": [
     1,
     2,
   ],
-  "labels": Array [
+  "labels": [
     "Passed",
     "Failed",
   ],
@@ -85,32 +85,32 @@ Object {
 `;
 
 exports[`Render tests should build chart data with pass examples 1`] = `
-Object {
-  "backgroundColor": Array [
+{
+  "backgroundColor": [
     "#28a745",
   ],
-  "data": Array [
+  "data": [
     1,
   ],
-  "labels": Array [
+  "labels": [
     "Passed",
   ],
 }
 `;
 
 exports[`Render tests should build chart data with passing, pending, and failing examples 1`] = `
-Object {
-  "backgroundColor": Array [
+{
+  "backgroundColor": [
     "#28a745",
     "#dc3545",
     "#ffc107",
   ],
-  "data": Array [
+  "data": [
     1,
     2,
     1,
   ],
-  "labels": Array [
+  "labels": [
     "Passed",
     "Failed",
     "Pending",
@@ -119,16 +119,16 @@ Object {
 `;
 
 exports[`Render tests should build chart data with pending and fail examples only 1`] = `
-Object {
-  "backgroundColor": Array [
+{
+  "backgroundColor": [
     "#dc3545",
     "#ffc107",
   ],
-  "data": Array [
+  "data": [
     1,
     1,
   ],
-  "labels": Array [
+  "labels": [
     "Failed",
     "Pending",
   ],
@@ -136,16 +136,16 @@ Object {
 `;
 
 exports[`Render tests should build chart data with todo and passing examples 1`] = `
-Object {
-  "backgroundColor": Array [
+{
+  "backgroundColor": [
     "#28a745",
     "#17a2b8",
   ],
-  "data": Array [
+  "data": [
     1,
     1,
   ],
-  "labels": Array [
+  "labels": [
     "Passed",
     "Todo",
   ],
@@ -153,32 +153,32 @@ Object {
 `;
 
 exports[`Render tests should build chart data with todo examples only 1`] = `
-Object {
-  "backgroundColor": Array [
+{
+  "backgroundColor": [
     "#17a2b8",
   ],
-  "data": Array [
+  "data": [
     1,
   ],
-  "labels": Array [
+  "labels": [
     "Todo",
   ],
 }
 `;
 
 exports[`Render tests should build chart data with todo, passing, and failing examples 1`] = `
-Object {
-  "backgroundColor": Array [
+{
+  "backgroundColor": [
     "#28a745",
     "#dc3545",
     "#17a2b8",
   ],
-  "data": Array [
+  "data": [
     1,
     1,
     1,
   ],
-  "labels": Array [
+  "labels": [
     "Passed",
     "Failed",
     "Todo",
@@ -187,20 +187,20 @@ Object {
 `;
 
 exports[`Render tests should build chart data with todo, passing, failing, and pending examples 1`] = `
-Object {
-  "backgroundColor": Array [
+{
+  "backgroundColor": [
     "#28a745",
     "#dc3545",
     "#ffc107",
     "#17a2b8",
   ],
-  "data": Array [
+  "data": [
     1,
     1,
     1,
     1,
   ],
-  "labels": Array [
+  "labels": [
     "Passed",
     "Failed",
     "Pending",
@@ -214,28 +214,28 @@ exports[`Render tests should create link to coverage report if in config 1`] = `
 exports[`Render tests should not create link to coverage report if not in config 1`] = `"#"`;
 
 exports[`Render tests should show changed snapshot chart data with changed snapshots  1`] = `
-Object {
-  "backgroundColor": Array [
+{
+  "backgroundColor": [
     "#6c757d",
   ],
-  "data": Array [
+  "data": [
     1,
   ],
-  "labels": Array [
+  "labels": [
     "Changed",
   ],
 }
 `;
 
 exports[`Render tests should show snapshot chart data with obsolete snapshots  1`] = `
-Object {
-  "backgroundColor": Array [
+{
+  "backgroundColor": [
     "#ffc107",
   ],
-  "data": Array [
+  "data": [
     1,
   ],
-  "labels": Array [
+  "labels": [
     "Obsolete Test",
   ],
 }

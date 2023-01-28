@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Config tests should be able to read a config 1`] = `
-Object {
-  "additionalResultsProcessors": Array [
+{
+  "additionalResultsProcessors": [
     "jest-junit",
     "also-one-that-doesnt-exist",
   ],

@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EnvVars tests should have a complete config for all env variables set 1`] = `
-Object {
-  "additionalResultsProcessors": Array [
+{
+  "additionalResultsProcessors": [
     "one",
     "two",
     "three",
@@ -26,8 +26,8 @@ Object {
 `;
 
 exports[`EnvVars tests should have a complete config for all env variables set 2`] = `
-Object {
-  "additionalResultsProcessors": Array [
+{
+  "additionalResultsProcessors": [
     "one",
     "two",
     "three",
@@ -48,7 +48,7 @@ Object {
 `;
 
 exports[`EnvVars tests should have an empty config for no env variables set 1`] = `
-Object {
+{
   "additionalResultsProcessors": undefined,
   "coverageLink": undefined,
   "disableCharts": undefined,

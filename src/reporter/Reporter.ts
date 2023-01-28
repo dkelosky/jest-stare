@@ -6,11 +6,10 @@ import { EnvVars } from "../processor/EnvVars";
 import { EnvVarService } from "../utils/EnvVarService";
 import { Config } from "@jest/types";
 import { AggregatedResult, TestResult } from "@jest/test-result";
-import { Test, Context, ReporterOnStartOptions } from "@jest/reporters"
+import { Test, ReporterOnStartOptions } from "@jest/reporters"
 
 // import Test = jest.Test;
 // import ReporterOnStartOptions = Config.ReporterOnStartOptions;
-// import Context = jest.Context;
 
 /**
  * Class to implement basic reporter methods
@@ -117,7 +116,7 @@ export class Reporter {
      * @param {IResultsProcessorInput} results - jest summarized results
      * @memberof Reporter
      */
-    public onRunComplete(contexts: Set<Context>, results: AggregatedResult) {
+    public onRunComplete(unused, results: AggregatedResult) {
         // disallow results processors from a reporter invocation
         if (Object.entries(this.mOptions).length === 0 && this.mOptions.constructor === Object) {
             // use jest-stare config from package.json

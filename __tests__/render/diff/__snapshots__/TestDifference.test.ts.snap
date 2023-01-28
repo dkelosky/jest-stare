@@ -6,12 +6,12 @@ exports[`TestDifference tests should return isolated diff 1`] = `
 
 @@ -0,2 +0,3 @@
 
-  {-   \\"name\\": \\"floppy\\",
-+   \\"name\\": \\"Amet ad commodo ad aliquip elit excepteur laboris. Aliqua consequat exercitation Lorem incididunt esse nulla eiusmod labore eu magna consequat enim enim dolore. Do in reprehenderit qui sint aliquip quis tempor laborum sint quis.Deserunt sunt veniam magna eiusmod adipisicing incididunt pariatur incididunt elit dolore nostrud sit nostrud. Mollit eu ut ea irure consectetur quis. Ullamco aliqua laboris ipsum et laboris in culpa in ea et do. Velit qui ullamco tempor excepteur aute duis exercitation consectetur deserunt enim.Reprehenderit veniam qui eiusmod ipsum consectetur non. Sint nulla Lorem esse fugiat quis deserunt consequat consequat deserunt sunt qui. Officia commodo irure Lorem dolore qui mollit. Consequat ea tempor occaecat ex irure consequat dolore minim ipsum. Occaecat dolor consequat cupidatat consequat.\\",
--   \\"breed\\": \\"beagle\\",
-+   \\"breed\\": \\"corgi\\",
-    \\"height\\": 1,
-    \\"color\\": \\"brown and white\\"
+  {-   "name": "floppy",
++   "name": "Amet ad commodo ad aliquip elit excepteur laboris. Aliqua consequat exercitation Lorem incididunt esse nulla eiusmod labore eu magna consequat enim enim dolore. Do in reprehenderit qui sint aliquip quis tempor laborum sint quis.Deserunt sunt veniam magna eiusmod adipisicing incididunt pariatur incididunt elit dolore nostrud sit nostrud. Mollit eu ut ea irure consectetur quis. Ullamco aliqua laboris ipsum et laboris in culpa in ea et do. Velit qui ullamco tempor excepteur aute duis exercitation consectetur deserunt enim.Reprehenderit veniam qui eiusmod ipsum consectetur non. Sint nulla Lorem esse fugiat quis deserunt consequat consequat deserunt sunt qui. Officia commodo irure Lorem dolore qui mollit. Consequat ea tempor occaecat ex irure consequat dolore minim ipsum. Occaecat dolor consequat cupidatat consequat.",
+-   "breed": "beagle",
++   "breed": "corgi",
+    "height": 1,
+    "color": "brown and white"
   }
     at Object.it (C:dev
 odejeststarebackup__tests____examples__FailingTests.example.ts:11:57)
@@ -42,9 +42,9 @@ exports[`TestDifference tests should return isolated diff for older version 1`] 
 @@ -0,2 +0,2 @@
 
   Object {
-    \\"firstKey\\": \\"firstValue\\",
--   \\"secondKey\\": \\"secondValue\\",
-+   \\"secondKey\\": \\"wrongValue\\",
+    "firstKey": "firstValue",
+-   "secondKey": "secondValue",
++   "secondKey": "wrongValue",
   }
     at Object.it (C:Dev
 odejest-stare__tests____examples__DemoTests.example.ts:11:69)

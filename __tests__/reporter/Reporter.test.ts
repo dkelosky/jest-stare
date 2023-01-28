@@ -2,7 +2,7 @@ import { Processor } from "../../src/processor/Processor";
 import { Reporter } from "../../src/reporter/Reporter";
 import { AggregatedResult, TestResult } from "@jest/test-result"
 import { Config } from "@jest/types"
-import { Test, Context, ReporterOnStartOptions } from "@jest/reporters"
+import { Test, ReporterOnStartOptions } from "@jest/reporters"
 
 describe("Reporter tests", () => {
     it("should test the repoter runs without crashing", () => {
@@ -24,7 +24,7 @@ describe("Reporter tests", () => {
         const testResults: TestResult = undefined;
         rep.onTestResult(test, testResults, agg);
 
-        const context: Set<Context> = undefined;
+        const context = undefined;
         rep.onRunComplete(context, agg);
 
         const callCount = 3;
