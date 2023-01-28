@@ -201,7 +201,7 @@ describe("IO tests", () => {
     it("should read return a populated object if package.json is found", () => {
         pkgUp.sync = jest.fn(() => "some/path");
         const fn = (fs.readFileSync as any) as Mock<ReturnType<typeof fs.readFileSync>, Parameters<typeof fs.readFileSync>>;
-        fn.mockImplementation((path: number | fs.PathLike, options?: BufferEncoding | (fs.BaseEncodingOptions & { flag?: string; })) => {
+        fn.mockImplementation((path: any) => {
             return "{\"data\": \"value\"}";
         });
         const result = IO.readPackageJson();

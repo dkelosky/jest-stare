@@ -1,0 +1,2215 @@
+{
+  "numFailedTestSuites": 2,
+  "numFailedTests": 3,
+  "numPassedTestSuites": 17,
+  "numPassedTests": 102,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 2,
+  "numRuntimeErrorTestSuites": 1,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 19,
+  "numTotalTests": 107,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": true,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 11,
+    "matched": 14,
+    "total": 63,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 49
+  },
+  "startTime": 1674927713410,
+  "success": false,
+  "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 2,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927725373,
+        "runtime": 8936,
+        "slow": true,
+        "start": 1674927716437
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 3
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\processor\\EnvVars.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "EnvVars tests"
+          ],
+          "duration": 27,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "EnvVars tests should have an empty config for no env variables set",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should have an empty config for no env variables set"
+        },
+        {
+          "ancestorTitles": [
+            "EnvVars tests"
+          ],
+          "duration": 24,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "EnvVars tests should have a complete config for all env variables set",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should have a complete config for all env variables set"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 4,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927725483,
+        "runtime": 8953,
+        "slow": true,
+        "start": 1674927716530
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 4
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\render\\summary\\TestSummary.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "TestSuite tests"
+          ],
+          "duration": 43,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests should create proper elements for simple passing tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for simple passing tests"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests"
+          ],
+          "duration": 15,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests should create proper elements for simple failing tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for simple failing tests"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests"
+          ],
+          "duration": 15,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests should create proper elements for two diffs in html",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for two diffs in html"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests"
+          ],
+          "duration": 12,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests should create proper elements for large test more than 500 tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for large test more than 500 tests"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 5,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927725603,
+        "runtime": 9103,
+        "slow": true,
+        "start": 1674927716500
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 2
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\render\\diff\\TestDifference.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "TestDifference tests"
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestDifference tests should return false if no diff",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return false if no diff"
+        },
+        {
+          "ancestorTitles": [
+            "TestDifference tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestDifference tests should return true if diff",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return true if diff"
+        },
+        {
+          "ancestorTitles": [
+            "TestDifference tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestDifference tests should return true if diff for old version",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return true if diff for old version"
+        },
+        {
+          "ancestorTitles": [
+            "TestDifference tests"
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestDifference tests should return isolated diff",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return isolated diff"
+        },
+        {
+          "ancestorTitles": [
+            "TestDifference tests"
+          ],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestDifference tests should return isolated diff for older version",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return isolated diff for older version"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 14,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927725644,
+        "runtime": 9204,
+        "slow": true,
+        "start": 1674927716440
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 1,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 2
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "IO tests"
+          ],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "IO tests should pretend to write to a file",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should pretend to write to a file"
+        },
+        {
+          "ancestorTitles": [
+            "IO tests"
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "IO tests should pretend to write to a file and reject promise for IO errors",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should pretend to write to a file and reject promise for IO errors"
+        },
+        {
+          "ancestorTitles": [
+            "IO tests",
+            "mkdirsSync tests"
+          ],
+          "duration": 11,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "IO tests mkdirsSync tests should not be called for each directory if all exist",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should not be called for each directory if all exist"
+        },
+        {
+          "ancestorTitles": [
+            "IO tests",
+            "mkdirsSync tests"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "IO tests mkdirsSync tests should be called for each directory if non exist",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should be called for each directory if non exist"
+        },
+        {
+          "ancestorTitles": [
+            "IO tests",
+            "mkdirsSync tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "IO tests mkdirsSync tests should be called for each directory that does not exist",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should be called for each directory that does not exist"
+        },
+        {
+          "ancestorTitles": [
+            "IO tests",
+            "writeFileSync tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "IO tests writeFileSync tests should call fs writeFileSync",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should call fs writeFileSync"
+        },
+        {
+          "ancestorTitles": [
+            "IO tests",
+            "mkDirSync tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "IO tests mkDirSync tests should be called if dir does not exist",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should be called if dir does not exist"
+        },
+        {
+          "ancestorTitles": [
+            "IO tests",
+            "mkDirSync tests"
+          ],
+          "duration": 18,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "IO tests mkDirSync tests should not be called if dir does exist",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should not be called if dir does exist"
+        },
+        {
+          "ancestorTitles": [
+            "IO tests",
+            "unlinkSync tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "IO tests unlinkSync tests should not be called if dir does not exist",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should not be called if dir does not exist"
+        },
+        {
+          "ancestorTitles": [
+            "IO tests",
+            "unlinkSync tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "IO tests unlinkSync tests should be called if dir exists",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should be called if dir exists"
+        },
+        {
+          "ancestorTitles": [
+            "IO tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "IO tests should say true if dir exists",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should say true if dir exists"
+        },
+        {
+          "ancestorTitles": [
+            "IO tests"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "IO tests should false if dir does not exist",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should false if dir does not exist"
+        },
+        {
+          "ancestorTitles": [
+            "IO tests"
+          ],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "IO tests should read return an empty object if no package.json is found",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should read return an empty object if no package.json is found"
+        },
+        {
+          "ancestorTitles": [
+            "IO tests"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "IO tests should read return a populated object if package.json is found",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should read return a populated object if package.json is found"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 6,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927725769,
+        "runtime": 9290,
+        "slow": true,
+        "start": 1674927716479
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 4
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\render\\suites\\TestSuite.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "TestSuite tests",
+            "Snapshots"
+          ],
+          "duration": 49,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests Snapshots should create proper elements for simple passing tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for simple passing tests"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests",
+            "Snapshots"
+          ],
+          "duration": 15,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests Snapshots should create proper elements for simple failing tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for simple failing tests"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests",
+            "Snapshots"
+          ],
+          "duration": 50,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests Snapshots should create proper elements for two diffs in html",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for two diffs in html"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests",
+            "Snapshots"
+          ],
+          "duration": 44,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests Snapshots should create proper elements for large test more than 500 tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for large test more than 500 tests"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests"
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests should assign test status correctly when all are the same",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should assign test status correctly when all are the same"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests should assign test status correctly when are different",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should assign test status correctly when are different"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 3,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927725924,
+        "runtime": 9510,
+        "slow": true,
+        "start": 1674927716414
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\cli\\CLI.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "jest-stare cli tests"
+          ],
+          "duration": 43,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "jest-stare cli tests should throw error when no test result path given",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should throw error when no test result path given"
+        },
+        {
+          "ancestorTitles": [
+            "jest-stare cli tests"
+          ],
+          "duration": 6,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m[Error]\u001b[39m",
+                "pass": true
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m[Error]\u001b[39m\n    at Object.<anonymous> (C:\\dev\\node\\jest-stare\\__tests__\\cli\\CLI.test.ts:51:27)\n    at Promise.then.completed (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\utils.js:290:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\utils.js:223:10)\n    at _callCircusTest (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\run.js:248:40)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at _runTest (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\run.js:184:3)\n    at _runTestsForDescribeBlock (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\run.js:86:9)\n    at _runTestsForDescribeBlock (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\run.js:81:9)\n    at run (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\run.js:26:3)\n    at runAndTransformResultsToJestFormat (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:120:21)\n    at jestAdapter (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\dev\\node\\jest-stare\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\dev\\node\\jest-stare\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\dev\\node\\jest-stare\\node_modules\\jest-runner\\build\\testWorker.js:106:12)"
+          ],
+          "fullName": "jest-stare cli tests should not throw error for input args",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "should not throw error for input args"
+        },
+        {
+          "ancestorTitles": [
+            "jest-stare cli tests"
+          ],
+          "duration": 11,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m[Error]\u001b[39m",
+                "pass": true
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m[Error]\u001b[39m\n    at Object.<anonymous> (C:\\dev\\node\\jest-stare\\__tests__\\cli\\CLI.test.ts:77:27)\n    at Promise.then.completed (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\utils.js:290:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\utils.js:223:10)\n    at _callCircusTest (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\run.js:248:40)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at _runTest (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\run.js:184:3)\n    at _runTestsForDescribeBlock (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\run.js:86:9)\n    at _runTestsForDescribeBlock (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\run.js:81:9)\n    at run (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\run.js:26:3)\n    at runAndTransformResultsToJestFormat (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:120:21)\n    at jestAdapter (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\dev\\node\\jest-stare\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\dev\\node\\jest-stare\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\dev\\node\\jest-stare\\node_modules\\jest-runner\\build\\testWorker.js:106:12)"
+          ],
+          "fullName": "jest-stare cli tests should not throw error for all input args",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "should not throw error for all input args"
+        },
+        {
+          "ancestorTitles": [
+            "jest-stare cli tests"
+          ],
+          "duration": 6,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m[Error]\u001b[39m",
+                "pass": true
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m[Error]\u001b[39m\n    at Object.<anonymous> (C:\\dev\\node\\jest-stare\\__tests__\\cli\\CLI.test.ts:97:27)\n    at Promise.then.completed (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\utils.js:290:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\utils.js:223:10)\n    at _callCircusTest (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\run.js:248:40)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at _runTest (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\run.js:184:3)\n    at _runTestsForDescribeBlock (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\run.js:86:9)\n    at _runTestsForDescribeBlock (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\run.js:81:9)\n    at run (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\run.js:26:3)\n    at runAndTransformResultsToJestFormat (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:120:21)\n    at jestAdapter (C:\\dev\\node\\jest-stare\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\dev\\node\\jest-stare\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\dev\\node\\jest-stare\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\dev\\node\\jest-stare\\node_modules\\jest-runner\\build\\testWorker.js:106:12)"
+          ],
+          "fullName": "jest-stare cli tests allow coverageLink config setting to be set via the command line",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "allow coverageLink config setting to be set via the command line"
+        }
+      ],
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mjest-stare cli tests › should not throw error for input args\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\n    Received: \u001b[31m[Error]\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 49 |\u001b[39m         }\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 50 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 51 |\u001b[39m         expect(error)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeDefined()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 52 |\u001b[39m         expect(\u001b[33mProcessor\u001b[39m\u001b[33m.\u001b[39mrun)\u001b[33m.\u001b[39mtoBeCalled()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 53 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 54 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36m__tests__/cli/CLI.test.ts\u001b[39m\u001b[0m\u001b[2m:51:27)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mjest-stare cli tests › should not throw error for all input args\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\n    Received: \u001b[31m[Error]\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 75 |\u001b[39m         }\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 76 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 77 |\u001b[39m         expect(error)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeDefined()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 78 |\u001b[39m         expect(\u001b[33mProcessor\u001b[39m\u001b[33m.\u001b[39mrun)\u001b[33m.\u001b[39mtoBeCalled()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 79 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 80 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36m__tests__/cli/CLI.test.ts\u001b[39m\u001b[0m\u001b[2m:77:27)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mjest-stare cli tests › allow coverageLink config setting to be set via the command line\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\n    Received: \u001b[31m[Error]\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m  95 |\u001b[39m         }\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m  96 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m  97 |\u001b[39m         expect(error)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeDefined()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m     |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m  98 |\u001b[39m         expect(\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m  99 |\u001b[39m             runSpy\u001b[33m.\u001b[39mmock\u001b[33m.\u001b[39mcalls\u001b[33m.\u001b[39mfind(args \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 100 |\u001b[39m                 \u001b[36mconst\u001b[39m config \u001b[33m=\u001b[39m args[\u001b[35m1\u001b[39m] \u001b[36mas\u001b[39m \u001b[33mIJestStareConfig\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36m__tests__/cli/CLI.test.ts\u001b[39m\u001b[0m\u001b[2m:97:27)\u001b[22m\u001b[2m\u001b[22m\n"
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 6,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927725898,
+        "runtime": 9463,
+        "slow": true,
+        "start": 1674927716435
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 1,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 3
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\processor\\Processor.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Processor tests"
+          ],
+          "duration": 37,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Processor tests should accept override config on input and not log when requested not to",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should accept override config on input and not log when requested not to"
+        },
+        {
+          "ancestorTitles": [
+            "Processor tests"
+          ],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Processor tests should accept override config on input and log when requested to",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should accept override config on input and log when requested to"
+        },
+        {
+          "ancestorTitles": [
+            "Processor tests"
+          ],
+          "duration": 41,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Processor tests should accept override html and JSON file name",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 4,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should accept override html and JSON file name"
+        },
+        {
+          "ancestorTitles": [
+            "Processor tests"
+          ],
+          "duration": 6,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Processor tests should create a report form an input object",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create a report form an input object"
+        },
+        {
+          "ancestorTitles": [
+            "Processor tests"
+          ],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Processor tests should create file names correctly when default 'resultDir' is used",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create file names correctly when default 'resultDir' is used"
+        },
+        {
+          "ancestorTitles": [
+            "Processor tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Processor tests should error when called without input",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should error when called without input"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 7,
+      "numPendingTests": 2,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927726189,
+        "runtime": 9722,
+        "slow": true,
+        "start": 1674927716467
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 7
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\__integration__\\render\\suites\\TestSuite.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "TestSuite tests"
+          ],
+          "duration": 70,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests should create proper elements for simple passing tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for simple passing tests"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests"
+          ],
+          "duration": 281,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests should create proper elements for simple failing tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for simple failing tests"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests"
+          ],
+          "duration": 244,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests should create proper elements for two diffs in html",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for two diffs in html"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests"
+          ],
+          "duration": 11,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests should show no red box if all tests are pending",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should show no red box if all tests are pending"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests"
+          ],
+          "duration": null,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests should create proper elements for large test more than 500 tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "pending",
+          "title": "should create proper elements for large test more than 500 tests"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests"
+          ],
+          "duration": 67,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests should create proper elements for nested describes with reused names",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for nested describes with reused names"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests"
+          ],
+          "duration": 23,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests should create proper elements for pending tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for pending tests"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests"
+          ],
+          "duration": null,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests should create proper elements for assertion results",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "pending",
+          "title": "should create proper elements for assertion results"
+        },
+        {
+          "ancestorTitles": [
+            "TestSuite tests"
+          ],
+          "duration": 21,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TestSuite tests should create proper elements for passing and failing image snapshots",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for passing and failing image snapshots"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 4,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927726247,
+        "runtime": 9760,
+        "slow": true,
+        "start": 1674927716487
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 4
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\render\\summary\\Test.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Test tests"
+          ],
+          "duration": 39,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Test tests should create proper elements for simple passing tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for simple passing tests"
+        },
+        {
+          "ancestorTitles": [
+            "Test tests"
+          ],
+          "duration": 12,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Test tests should create proper elements for simple failing tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for simple failing tests"
+        },
+        {
+          "ancestorTitles": [
+            "Test tests"
+          ],
+          "duration": 18,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Test tests should create proper elements for two diffs in html",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for two diffs in html"
+        },
+        {
+          "ancestorTitles": [
+            "Test tests"
+          ],
+          "duration": 513,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Test tests should create proper elements for large test > 500 tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for large test > 500 tests"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927726439,
+        "runtime": 850,
+        "slow": false,
+        "start": 1674927725589
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 1
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\processor\\Config.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Config tests"
+          ],
+          "duration": 12,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Config tests should be able to read a config",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should be able to read a config"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 5,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927726460,
+        "runtime": 659,
+        "slow": false,
+        "start": 1674927725801
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\utils\\EnvVarService.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "EnvVarService tests"
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "EnvVarService tests should read my env value",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should read my env value"
+        },
+        {
+          "ancestorTitles": [
+            "EnvVarService tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "EnvVarService tests should not find unset env value",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should not find unset env value"
+        },
+        {
+          "ancestorTitles": [
+            "EnvVarService tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "EnvVarService tests should read my env value that is boolean set to true",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should read my env value that is boolean set to true"
+        },
+        {
+          "ancestorTitles": [
+            "EnvVarService tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "EnvVarService tests should read my env value that is boolean set to false",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should read my env value that is boolean set to false"
+        },
+        {
+          "ancestorTitles": [
+            "EnvVarService tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "EnvVarService tests should not find my env value that is not set",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should not find my env value that is not set"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 2,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927726650,
+        "runtime": 959,
+        "slow": false,
+        "start": 1674927725691
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\render\\navigation\\Switch.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Switch tests"
+          ],
+          "duration": 108,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Switch tests should change classes shown when toggled",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should change classes shown when toggled"
+        },
+        {
+          "ancestorTitles": [
+            "Switch tests"
+          ],
+          "duration": 44,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Switch tests should change classes shown when toggled and change classes for a second toggle too",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 7,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should change classes shown when toggled and change classes for a second toggle too"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 3,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927726693,
+        "runtime": 803,
+        "slow": false,
+        "start": 1674927725890
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 3,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\render\\charts\\Status.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Status tests"
+          ],
+          "duration": 9,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Status tests should set proper class for passed tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should set proper class for passed tests"
+        },
+        {
+          "ancestorTitles": [
+            "Status tests"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Status tests should set proper class for failed tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should set proper class for failed tests"
+        },
+        {
+          "ancestorTitles": [
+            "Status tests"
+          ],
+          "duration": 13,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Status tests should set proper class for passed and failed tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should set proper class for passed and failed tests"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 3,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927726773,
+        "runtime": 641,
+        "slow": false,
+        "start": 1674927726132
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 7,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\utils\\Logger.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Logger tests"
+          ],
+          "duration": 7,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Logger tests should get a log instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should get a log instance"
+        },
+        {
+          "ancestorTitles": [
+            "Logger tests"
+          ],
+          "duration": 6,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Logger tests should return defaults",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 6,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return defaults"
+        },
+        {
+          "ancestorTitles": [
+            "Logger tests"
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Logger tests should call some functions for writing",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should call some functions for writing"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 4,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927726978,
+        "runtime": 10540,
+        "slow": true,
+        "start": 1674927716438
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 4
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\render\\tests\\Test.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Test tests"
+          ],
+          "duration": 30,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Test tests should create proper elements for simple passing tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for simple passing tests"
+        },
+        {
+          "ancestorTitles": [
+            "Test tests"
+          ],
+          "duration": 239,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Test tests should create proper elements for simple failing tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for simple failing tests"
+        },
+        {
+          "ancestorTitles": [
+            "Test tests"
+          ],
+          "duration": 244,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Test tests should create proper elements for two diffs in html",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for two diffs in html"
+        },
+        {
+          "ancestorTitles": [
+            "Test tests"
+          ],
+          "duration": 855,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Test tests should create proper elements for large test more than 500 tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create proper elements for large test more than 500 tests"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927726987,
+        "runtime": 726,
+        "slow": false,
+        "start": 1674927726261
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\render\\charts\\Doughnut.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Doughnut tests"
+          ],
+          "duration": 10,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Doughnut tests should call new on chart",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should call new on chart"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 2,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927727000,
+        "runtime": 963,
+        "slow": false,
+        "start": 1674927726037
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\entry.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "entry tests"
+          ],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "entry tests should call processor when not using 'new'",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should call processor when not using 'new'"
+        },
+        {
+          "ancestorTitles": [
+            "entry tests"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "entry tests should call reporter when using 'new'",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should call reporter when using 'new'"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "failureMessage": "  \u001b[1m● \u001b[22mTest suite failed to run\n\n    \u001b[96m__tests__/reporter/Reporter.test.ts\u001b[0m:\u001b[93m5\u001b[0m:\u001b[93m16\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2305: \u001b[0mModule '\"@jest/reporters\"' has no exported member 'Context'.\n\n    \u001b[7m5\u001b[0m import { Test, Context, ReporterOnStartOptions } from \"@jest/reporters\"\n    \u001b[7m \u001b[0m \u001b[91m               ~~~~~~~\u001b[0m\n",
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 0,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 0,
+        "runtime": 0,
+        "slow": false,
+        "start": 0
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testExecError": "\u001b[96m__tests__/reporter/Reporter.test.ts\u001b[0m:\u001b[93m5\u001b[0m:\u001b[93m16\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2305: \u001b[0mModule '\"@jest/reporters\"' has no exported member 'Context'.\n\n\u001b[7m5\u001b[0m import { Test, Context, ReporterOnStartOptions } from \"@jest/reporters\"\n\u001b[7m \u001b[0m \u001b[91m               ~~~~~~~\u001b[0m",
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\reporter\\Reporter.test.ts",
+      "testResults": []
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 32,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1674927727413,
+        "runtime": 10979,
+        "slow": true,
+        "start": 1674927716434
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 2,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 15
+      },
+      "testFilePath": "C:\\dev\\node\\jest-stare\\__tests__\\render\\Render.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 189,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should show snapshots area if snapshots",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should show snapshots area if snapshots"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 82,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should not show snapshots area if no snapshots",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should not show snapshots area if no snapshots"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 62,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should keep default report title if not in config",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should keep default report title if not in config"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 40,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should replace report title if in config",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should replace report title if in config"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 46,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should keep default report headline if not in config",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should keep default report headline if not in config"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 35,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should replace report headline if in config",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should replace report headline if in config"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 194,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should not show the report summary by default",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should not show the report summary by default"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 103,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should show the report summary when the variable is true",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should show the report summary when the variable is true"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 27,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should not create link to coverage report if not in config",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should not create link to coverage report if not in config"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 23,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should create link to coverage report if in config",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create link to coverage report if in config"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should build chart data with no examples",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should build chart data with no examples"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should build chart data with fail examples",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should build chart data with fail examples"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should build chart data with pass examples",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should build chart data with pass examples"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should build chart data with passing, pending, and failing examples",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should build chart data with passing, pending, and failing examples"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should build chart data with pending and fail examples only",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should build chart data with pending and fail examples only"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should build chart data with pass and fail examples",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should build chart data with pass and fail examples"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should build chart data with todo examples only",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should build chart data with todo examples only"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should build chart data with todo and passing examples",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should build chart data with todo and passing examples"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should build chart data with todo, passing, and failing examples",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should build chart data with todo, passing, and failing examples"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should build chart data with todo, passing, failing, and pending examples",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should build chart data with todo, passing, failing, and pending examples"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should add snapshot chart data with no examples",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should add snapshot chart data with no examples"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should add snapshot chart data with pass examples",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should add snapshot chart data with pass examples"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should add snapshot chart data with fail examples",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should add snapshot chart data with fail examples"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 11,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should not create donut charts if config has charts disabled",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should not create donut charts if config has charts disabled"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 13,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should create donut charts if config has charts enabled",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create donut charts if config has charts enabled"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should show changed snapshot chart data with changed snapshots ",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should show changed snapshot chart data with changed snapshots "
+        },
+        {
+          "ancestorTitles": [
+            "Render tests"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests should show snapshot chart data with obsolete snapshots ",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should show snapshot chart data with obsolete snapshots "
+        },
+        {
+          "ancestorTitles": [
+            "Render tests",
+            "config.hidePassing is true"
+          ],
+          "duration": 108,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests config.hidePassing is true hides passing tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 10,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "hides passing tests"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests",
+            "config.hideFailing is true"
+          ],
+          "duration": 61,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests config.hideFailing is true hides failing tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 10,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "hides failing tests"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests",
+            "config.hidePending are true"
+          ],
+          "duration": 53,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests config.hidePending are true hides pending tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 4,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "hides pending tests"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests",
+            "config.hideTodo are true"
+          ],
+          "duration": 40,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests config.hideTodo are true hides todo tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 5,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "hides todo tests"
+        },
+        {
+          "ancestorTitles": [
+            "Render tests",
+            "couple of hide are true"
+          ],
+          "duration": 41,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Render tests couple of hide are true hides pending tests",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 4,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "hides pending tests"
+        }
+      ],
+      "failureMessage": null
+    }
+  ],
+  "wasInterrupted": false
+}

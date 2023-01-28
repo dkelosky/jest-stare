@@ -1,4 +1,4 @@
-import { Chart, ChartConfiguration } from "chart.js";
+import { Chart, ChartConfiguration, registerables } from "chart.js";
 import { IChartData } from "../doc/IChartData";
 
 /**
@@ -18,6 +18,8 @@ export class Doughnut {
      * @memberof Doughnut
      */
     public static createChart(canvas: JQuery<HTMLCanvasElement>, chartData: IChartData) {
+
+        Chart.register(...registerables);
 
         const doughnut = "doughnut";
 

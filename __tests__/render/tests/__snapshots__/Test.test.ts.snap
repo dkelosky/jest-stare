@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test tests should create proper elements for large test more than 500 tests 1`] = `
-Array [
+[
   <div
     class="media text-muted pt-3 passed-test"
     id="should-allow-us-to-create-an-instance"
@@ -3907,7 +3907,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
-    id="should-merge-on-update-if-\\"merge\\"-is-specified-on-the-parms-"
+    id="should-merge-on-update-if-"merge"-is-specified-on-the-parms-"
   >
     <img
       alt=""
@@ -5689,7 +5689,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
-    id="should-merge-on-update-if-\\"merge\\"-is-specified-on-the-parms-and-no-cli-args-are-specfied"
+    id="should-merge-on-update-if-"merge"-is-specified-on-the-parms-and-no-cli-args-are-specfied"
   >
     <img
       alt=""
@@ -5722,7 +5722,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
-    id="should-merge-on-update-if-\\"merge\\"-is-specified-on-the-parms-and-cli-args-are-specfied"
+    id="should-merge-on-update-if-"merge"-is-specified-on-the-parms-and-cli-args-are-specfied"
   >
     <img
       alt=""
@@ -14731,7 +14731,7 @@ Array [
   </div>,
   <div
     class="media text-muted pt-3 passed-test"
-    id="should-reject-configurations-that-don't-contain-a-\\"name\\"-field"
+    id="should-reject-configurations-that-don't-contain-a-"name"-field"
   >
     <img
       alt=""
@@ -18264,7 +18264,7 @@ Array [
 `;
 
 exports[`Test tests should create proper elements for simple failing tests 1`] = `
-Array [
+[
   <div
     class="media text-muted pt-3 passed-test"
     id="should-pretend-to-write-to-a-file"
@@ -20110,7 +20110,7 @@ Array [
 `;
 
 exports[`Test tests should create proper elements for simple passing tests 1`] = `
-Array [
+[
   <div
     class="media text-muted pt-3 passed-test"
     id="should-pretend-to-write-to-a-file"
@@ -20280,7 +20280,7 @@ Array [
 `;
 
 exports[`Test tests should create proper elements for two diffs in html 1`] = `
-Array [
+[
   <div
     class="media text-muted pt-3 failed-test"
     id="should-fail-with-a-snapshot-difference"

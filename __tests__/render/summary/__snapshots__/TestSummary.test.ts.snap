@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TestSuite tests should create proper elements for large test more than 500 tests 1`] = `
-Array [
+[
   <div
     class="my-3 p-3 bg-white rounded box-shadow summary"
     id="test-summary"
@@ -15,7 +15,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#jest-stare\\\\__tests__\\\\example\\\\FailingTests.test.ts"
+        href="#jest-stare\\__tests__\\example\\FailingTests.test.ts"
       >
         <strong
           class="summary-test-label fail"
@@ -47,7 +47,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\render\\\\Render.test.ts"
+        href="#jest-stare\\__tests__\\src\\render\\Render.test.ts"
       >
         <strong
           class="summary-test-label pass"
@@ -73,7 +73,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\processor\\\\Processor.test.ts"
+        href="#jest-stare\\__tests__\\src\\processor\\Processor.test.ts"
       >
         <strong
           class="summary-test-label pass"
@@ -102,7 +102,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\utils\\\\IO.test.ts"
+        href="#jest-stare\\__tests__\\src\\utils\\IO.test.ts"
       >
         <strong
           class="summary-test-label pass"
@@ -137,7 +137,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\utils\\\\Logger.test.ts"
+        href="#jest-stare\\__tests__\\src\\utils\\Logger.test.ts"
       >
         <strong
           class="summary-test-label pass"
@@ -163,7 +163,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\reporter\\\\Reporter.test.ts"
+        href="#jest-stare\\__tests__\\src\\reporter\\Reporter.test.ts"
       >
         <strong
           class="summary-test-label pass"
@@ -193,7 +193,7 @@ Array [
 `;
 
 exports[`TestSuite tests should create proper elements for simple failing tests 1`] = `
-Array [
+[
   <div
     class="my-3 p-3 bg-white rounded box-shadow summary"
     id="test-summary"
@@ -207,7 +207,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\utils\\\\IO.test.ts"
+        href="#Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts"
       >
         <strong
           class="summary-test-label fail"
@@ -242,7 +242,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\reporter\\\\Reporter.test.ts"
+        href="#Work\\Dev\\node\\jest-stare\\__tests__\\reporter\\Reporter.test.ts"
       >
         <strong
           class="summary-test-label pass"
@@ -269,7 +269,7 @@ Array [
 `;
 
 exports[`TestSuite tests should create proper elements for simple passing tests 1`] = `
-Array [
+[
   <div
     class="my-3 p-3 bg-white rounded box-shadow summary"
     id="test-summary"
@@ -283,7 +283,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\utils\\\\IO.test.ts"
+        href="#Work\\Dev\\node\\jest-stare\\__tests__\\utils\\IO.test.ts"
       >
         <strong
           class="summary-test-label fail"
@@ -318,7 +318,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#Work\\\\Dev\\\\node\\\\jest-stare\\\\__tests__\\\\reporter\\\\Reporter.test.ts"
+        href="#Work\\Dev\\node\\jest-stare\\__tests__\\reporter\\Reporter.test.ts"
       >
         <strong
           class="summary-test-label fail"
@@ -345,7 +345,7 @@ Array [
 `;
 
 exports[`TestSuite tests should create proper elements for two diffs in html 1`] = `
-Array [
+[
   <div
     class="my-3 p-3 bg-white rounded box-shadow summary"
     id="test-summary"
@@ -359,7 +359,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#jest-stare\\\\__tests__\\\\example\\\\FailingTests.test.ts"
+        href="#jest-stare\\__tests__\\example\\FailingTests.test.ts"
       >
         <strong
           class="summary-test-label fail"
@@ -391,7 +391,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\render\\\\Render.test.ts"
+        href="#jest-stare\\__tests__\\src\\render\\Render.test.ts"
       >
         <strong
           class="summary-test-label pass"
@@ -417,7 +417,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\processor\\\\Processor.test.ts"
+        href="#jest-stare\\__tests__\\src\\processor\\Processor.test.ts"
       >
         <strong
           class="summary-test-label pass"
@@ -446,7 +446,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\utils\\\\IO.test.ts"
+        href="#jest-stare\\__tests__\\src\\utils\\IO.test.ts"
       >
         <strong
           class="summary-test-label pass"
@@ -481,7 +481,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\utils\\\\Logger.test.ts"
+        href="#jest-stare\\__tests__\\src\\utils\\Logger.test.ts"
       >
         <strong
           class="summary-test-label pass"
@@ -507,7 +507,7 @@ Array [
       class="summary-test-suite"
     >
       <a
-        href="#jest-stare\\\\__tests__\\\\src\\\\reporter\\\\Reporter.test.ts"
+        href="#jest-stare\\__tests__\\src\\reporter\\Reporter.test.ts"
       >
         <strong
           class="summary-test-label pass"
