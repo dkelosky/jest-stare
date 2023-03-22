@@ -80,7 +80,7 @@
     "jest-environment-node-debug": "2.0.0",
     "jest-image-snapshot": "6.1.0",
     "jest-junit": "15",
-    "rimraf": "3.0.2",
+    "rimraf": "4.4.1",
     "ts-jest": "29.0.5",
     "ts-node": "10.9.1",
     "tslint": "6.1.3",
