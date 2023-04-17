@@ -79,7 +79,7 @@
     "jest-environment-jsdom": "29.4.1",
     "jest-environment-node-debug": "2.0.0",
     "jest-image-snapshot": "6.1.0",
-    "jest-junit": "15",
+    "jest-junit": "16",
     "rimraf": "3.0.2",
     "ts-jest": "29.0.5",
     "ts-node": "10.9.1",
