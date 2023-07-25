@@ -4,7 +4,7 @@
 [![Azure Pipelines](https://dev.azure.com/dkelosky/dkelosky/_apis/build/status/dkelosky.jest-stare?branchName=master)](https://dev.azure.com/dkelosky/dkelosky/_build/latest?definitionId=1&branchName=master)
 ![Node.js CI](https://github.com/dkelosky/jest-stare/workflows/Node.js%20CI/badge.svg)
 [![Codecov Coverage](https://img.shields.io/codecov/c/github/dkelosky/jest-stare/master.svg?style=flat-square)](https://codecov.io/gh/dkelosky/jest-stare/)
-[![jest](https://facebook.github.io/jest/img/jest-badge.svg)](https://github.com/facebook/jest)
+[![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
 [![npm version](https://badge.fury.io/js/jest-stare.svg)](https://badge.fury.io/js/jest-stare)
 [![downloads](https://img.shields.io/npm/dm/jest-stare)](https://www.npmjs.com/package/jest-stare)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
