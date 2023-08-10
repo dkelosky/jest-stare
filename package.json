@@ -57,7 +57,7 @@
     "bootstrap": "^5.0.0",
     "chalk": "^4.1.0",
     "chart.js": "^4.1.2",
-    "diff2html": "^3.1.18",
+    "diff2html": "^3.4.40",
     "holderjs": "^2.9.7",
     "jquery": "^3.5.1",
     "moment": "^2.27.0",

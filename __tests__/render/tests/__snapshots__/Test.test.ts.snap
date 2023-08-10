@@ -18792,7 +18792,9 @@ exports[`Test tests should create proper elements for simple failing tests 1`] =
         
                         <div
                           class="d2h-code-side-line"
-                        />
+                        >
+                           
+                        </div>
                         
     
                       </td>
@@ -19663,7 +19665,9 @@ exports[`Test tests should create proper elements for simple failing tests 1`] =
         
                         <div
                           class="d2h-code-side-line"
-                        />
+                        >
+                           
+                        </div>
                         
     
                       </td>
@@ -20789,7 +20793,9 @@ exports[`Test tests should create proper elements for two diffs in html 1`] = `
         
                         <div
                           class="d2h-code-side-line"
-                        />
+                        >
+                           
+                        </div>
                         
     
                       </td>
@@ -21798,7 +21804,9 @@ exports[`Test tests should create proper elements for two diffs in html 1`] = `
         
                         <div
                           class="d2h-code-side-line"
-                        />
+                        >
+                           
+                        </div>
                         
     
                       </td>
