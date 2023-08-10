@@ -1806,7 +1806,9 @@ exports[`TestSuite tests should create proper elements for simple failing tests 
         
                                 <div
                                   class="d2h-code-side-line"
-                                />
+                                >
+                                   
+                                </div>
                                 
     
                               </td>
@@ -2677,7 +2679,9 @@ exports[`TestSuite tests should create proper elements for simple failing tests 
         
                                 <div
                                   class="d2h-code-side-line"
-                                />
+                                >
+                                   
+                                </div>
                                 
     
                               </td>
@@ -4051,7 +4055,9 @@ exports[`TestSuite tests should create proper elements for two diffs in html 1`]
         
                                 <div
                                   class="d2h-code-side-line"
-                                />
+                                >
+                                   
+                                </div>
                                 
     
                               </td>
@@ -5060,7 +5066,9 @@ exports[`TestSuite tests should create proper elements for two diffs in html 1`]
         
                                 <div
                                   class="d2h-code-side-line"
-                                />
+                                >
+                                   
+                                </div>
                                 
     
                               </td>
