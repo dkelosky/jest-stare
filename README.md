@@ -28,6 +28,21 @@ and parses them into an HTML file for improved readability and filtering.
 * [cli](#cli)
 * [api](#api)
 
+## Installation
+
+Using [npm](https://www.npmjs.com/):
+
+```sh
+$ npm i --save-dev jest-stare
+```
+
+Using [yarn](https://yarnpkg.com/):
+
+```sh
+$ yarn add --dev jest-stare
+```
+
+
 ## Usage
 
 Run tests or a test with jest and specify `jest-stare` on the `--reporters` option:
