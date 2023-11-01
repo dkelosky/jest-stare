@@ -70,7 +70,7 @@
     "@types/diff2html": "0.0.5",
     "@types/jquery": "3.5.16",
     "@types/mustache": "4.2.2",
-    "@types/node": "^18.11.18",
+    "@types/node": "^20.0.0",
     "@types/offscreencanvas": "2019.7.0",
     "browserify": "17.0.0",
     "codecov": "3.8.3",
