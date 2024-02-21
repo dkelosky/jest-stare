@@ -14,7 +14,7 @@ export class TestDifference {
      */
     public static DIFF_INDICATOR: RegExp = /- Snapshot\s*(\-\s*[0-9]+)?\n\s*\+ Received\s*(\+\s*[0-9]+)?/g;
 
-    public static DIFF_END_INDICATOR: RegExp = /(at .*? \(.*?:[0-9]+:[0-9]+\)\s)/g;
+    public static DIFF_END_INDICATOR: RegExp = /(at .*? \(.*?:[0-9]+:[0-9]+\)(\s|$))/g;
 
     /**
      * Test whether a failure message contains a diff that we can render
