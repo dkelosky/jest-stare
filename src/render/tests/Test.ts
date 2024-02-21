@@ -88,68 +88,69 @@ export class Test {
         secondDiv.appendChild(span);
 
         if (failed) {
+            for (let i = 0; i < innerTestResult.failureMessages.length; ++i) {
+                const failureId = `${diffId}_${i}`;
+                const failMessage: string = AnsiParser.removeAnsi(innerTestResult.failureMessages[i]);
+                const failMessageSplit = failMessage.split("\n");
 
-            const failMessage: string = AnsiParser.removeAnsi(innerTestResult.failureMessages[0]);
-            const failMessageSplit = failMessage.split("\n");
+                let show = true;
 
-            let show = true;
-
-            // does the failure message contain a snapshot difference?
-            if (failMessage.search(TestDifference.DIFF_INDICATOR) >= 0) {
-                const diffHtml = TestDifference.generate(failMessage);
-                secondDiv.appendChild(diffHtml);
-                show = false;
-            }
-
-            if (ImageSnapshotDifference.containsDiff(failMessage)) {
-                const diffHtml = ImageSnapshotDifference.generate(failMessage);
-                secondDiv.appendChild(diffHtml);
-                show = false;
-            }
-
-            const collapseDiv = document.createElement("div") as HTMLDivElement;
-            collapseDiv.classList.add("d-flex", "justify-content-between", "align-items-center", "w-100");
-            const worthlessDiv = document.createElement("div") as HTMLDivElement;
-            secondDiv.appendChild(collapseDiv);
-            collapseDiv.appendChild(worthlessDiv);
-
-            const button = document.createElement("button") as HTMLButtonElement;
-            button.classList.add("btn", "btn-light", "btn-sm");
-            button.type = "button";
-            button.setAttribute("data-bs-toggle", "collapse");
-            button.setAttribute("data-bs-target", "#" + diffId);
-            button.setAttribute("aria-expanded", "false");
-            button.setAttribute("aria-controls", diffId);
-            button.textContent = "raw";
-            collapseDiv.appendChild(button);
-
-            const pre = document.createElement("pre") as HTMLPreElement;
-            secondDiv.appendChild(pre);
-            pre.classList.add("collapse");
-            if (show) {
-                pre.classList.add("show");
-            }
-            pre.id = diffId;
-
-            const code = document.createElement("code") as HTMLElement;
-            pre.appendChild(code);
-
-
-            failMessageSplit.forEach((entry, index) => {
-                const codeSpan = document.createElement("span") as HTMLSpanElement;
-                if (entry[0] === "+") {
-                    codeSpan.setAttribute("style", "color:" + Constants.PASS);
-                    codeSpan.textContent = entry;
-                } else if (entry[0] === "-") {
-                    codeSpan.setAttribute("style", "color:" + Constants.FAIL);
-                    codeSpan.textContent = entry;
-                } else {
-                    codeSpan.textContent = entry;
+                // does the failure message contain a snapshot difference?
+                if (failMessage.search(TestDifference.DIFF_INDICATOR) >= 0) {
+                    const diffHtml = TestDifference.generate(failMessage);
+                    secondDiv.appendChild(diffHtml);
+                    show = false;
                 }
-                const spanDiv = document.createElement("div") as HTMLDivElement;
-                spanDiv.appendChild(codeSpan);
-                code.appendChild(spanDiv);
-            });
+
+                if (ImageSnapshotDifference.containsDiff(failMessage)) {
+                    const diffHtml = ImageSnapshotDifference.generate(failMessage);
+                    secondDiv.appendChild(diffHtml);
+                    show = false;
+                }
+
+                const collapseDiv = document.createElement("div") as HTMLDivElement;
+                collapseDiv.classList.add("d-flex", "justify-content-between", "align-items-center", "w-100");
+                const worthlessDiv = document.createElement("div") as HTMLDivElement;
+                secondDiv.appendChild(collapseDiv);
+                collapseDiv.appendChild(worthlessDiv);
+
+                const button = document.createElement("button") as HTMLButtonElement;
+                button.classList.add("btn", "btn-light", "btn-sm");
+                button.type = "button";
+                button.setAttribute("data-bs-toggle", "collapse");
+                button.setAttribute("data-bs-target", `#${failureId}`);
+                button.setAttribute("aria-expanded", "false");
+                button.setAttribute("aria-controls", diffId);
+                button.textContent = "raw";
+                collapseDiv.appendChild(button);
+
+                const pre = document.createElement("pre") as HTMLPreElement;
+                secondDiv.appendChild(pre);
+                pre.classList.add("collapse");
+                if (show) {
+                    pre.classList.add("show");
+                }
+                pre.id = failureId;
+
+                const code = document.createElement("code") as HTMLElement;
+                pre.appendChild(code);
+
+                failMessageSplit.forEach((entry, index) => {
+                    const codeSpan = document.createElement("span") as HTMLSpanElement;
+                    if (entry[0] === "+") {
+                        codeSpan.setAttribute("style", "color:" + Constants.PASS);
+                        codeSpan.textContent = entry;
+                    } else if (entry[0] === "-") {
+                        codeSpan.setAttribute("style", "color:" + Constants.FAIL);
+                        codeSpan.textContent = entry;
+                    } else {
+                        codeSpan.textContent = entry;
+                    }
+                    const spanDiv = document.createElement("div") as HTMLDivElement;
+                    spanDiv.appendChild(codeSpan);
+                    code.appendChild(spanDiv);
+                });
+            }
         }
 
         firstDiv.id = titleId;
