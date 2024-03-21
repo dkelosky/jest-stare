@@ -67,7 +67,7 @@
     "yargs": "^17.0.0"
   },
   "devDependencies": {
-    "@types/diff2html": "0.0.5",
+    "@types/diff2html": "3.0.0",
     "@types/jquery": "3.5.16",
     "@types/mustache": "4.2.2",
     "@types/node": "^18.11.18",
