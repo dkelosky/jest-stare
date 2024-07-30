@@ -2,7 +2,7 @@
 <!-- [![Travis CI](https://travis-ci.com/dkelosky/jest-stare.svg?branch=master)](https://travis-ci.com/dkelosky/jest-stare) -->
 <!-- Builds have been temporarily disabled for public repositories due to a negative credit balance. Please go to the Plan page to replenish your credit balance or alter your Consume paid credits for OSS setting. -->
 [![Azure Pipelines](https://dev.azure.com/dkelosky/dkelosky/_apis/build/status/dkelosky.jest-stare?branchName=master)](https://dev.azure.com/dkelosky/dkelosky/_build/latest?definitionId=1&branchName=master)
-![Node.js CI](https://github.com/dkelosky/jest-stare/actions/workflows/Node.js%20CI/badge.svg)
+![Node.js CI](https://github.com/dkelosky/jest-stare/actions/workflows/nodejs.yml/badge.svg)
 [![Codecov Coverage](https://img.shields.io/codecov/c/github/dkelosky/jest-stare/master.svg?style=flat-square)](https://codecov.io/gh/dkelosky/jest-stare/)
 [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
 [![npm version](https://badge.fury.io/js/jest-stare.svg)](https://badge.fury.io/js/jest-stare)
