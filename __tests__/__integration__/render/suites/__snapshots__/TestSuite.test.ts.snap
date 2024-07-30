@@ -1377,7 +1377,7 @@ exports[`TestSuite tests should create proper elements for simple failing tests 
                 failed
               </span>
               <div
-                class="d2h-wrapper"
+                class="d2h-wrapper d2h-light-color-scheme"
               >
                 
     
@@ -2250,7 +2250,7 @@ exports[`TestSuite tests should create proper elements for simple failing tests 
                 failed
               </span>
               <div
-                class="d2h-wrapper"
+                class="d2h-wrapper d2h-light-color-scheme"
               >
                 
     
@@ -3579,7 +3579,7 @@ exports[`TestSuite tests should create proper elements for two diffs in html 1`]
                 failed
               </span>
               <div
-                class="d2h-wrapper"
+                class="d2h-wrapper d2h-light-color-scheme"
               >
                 
     
@@ -4591,7 +4591,7 @@ exports[`TestSuite tests should create proper elements for two diffs in html 1`]
                 failed
               </span>
               <div
-                class="d2h-wrapper"
+                class="d2h-wrapper d2h-light-color-scheme"
               >
                 
     

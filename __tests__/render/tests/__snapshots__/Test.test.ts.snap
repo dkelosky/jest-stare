@@ -18363,7 +18363,7 @@ exports[`Test tests should create proper elements for simple failing tests 1`] =
         failed
       </span>
       <div
-        class="d2h-wrapper"
+        class="d2h-wrapper d2h-light-color-scheme"
       >
         
     
@@ -19236,7 +19236,7 @@ exports[`Test tests should create proper elements for simple failing tests 1`] =
         failed
       </span>
       <div
-        class="d2h-wrapper"
+        class="d2h-wrapper d2h-light-color-scheme"
       >
         
     
@@ -20317,7 +20317,7 @@ exports[`Test tests should create proper elements for two diffs in html 1`] = `
         failed
       </span>
       <div
-        class="d2h-wrapper"
+        class="d2h-wrapper d2h-light-color-scheme"
       >
         
     
@@ -21329,7 +21329,7 @@ exports[`Test tests should create proper elements for two diffs in html 1`] = `
         failed
       </span>
       <div
-        class="d2h-wrapper"
+        class="d2h-wrapper d2h-light-color-scheme"
       >
         
     
